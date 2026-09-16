@@ -2,9 +2,9 @@
  "month": "2026-09",
  "calls": {
   "COMPOSIO_SEARCH_WEB": 34,
-  "COMPOSIO_SEARCH_FETCH_URL_CONTENT": 104,
-  "COMPOSIO_SEARCH_DUCK_DUCK_GO": 145
+  "COMPOSIO_SEARCH_FETCH_URL_CONTENT": 116,
+  "COMPOSIO_SEARCH_DUCK_DUCK_GO": 158
  },
- "premium_usd": 0.3864,
+ "premium_usd": 0.3996,
  "note": "calls before the ledger existed estimated from smoke-test logs"
 }
