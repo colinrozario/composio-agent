@@ -1,5 +1,5 @@
 {
- "checked_urls": 4,
+ "checked_urls": 19,
  "needed_browser": 0,
  "by_app": {
   "salesforce": {
@@ -73,6 +73,302 @@
     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
     "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
+   }
+  },
+  "hubspot": {
+   "one_liner": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.hubspot.com/ai-tools/mcp",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/ai-tools/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.hubspot.com/docs",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs",
+    "flags": []
+   }
+  },
+  "pipedrive": {
+   "one_liner": {
+    "url": "https://www.pipedrive.com/en/features/crm-api",
+    "status": 200,
+    "final_url": "https://www.pipedrive.com/en/features/crm-api",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.pipedrive.com/",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   }
+  },
+  "attio": {
+   "one_liner": {
+    "url": "https://attio.com/platform/developers",
+    "status": 200,
+    "final_url": "https://attio.com/platform/developers",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.attio.com/rest-api/guides/authentication",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/guides/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://attio.com/pricing",
+    "status": 200,
+    "final_url": "https://attio.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://attio.com/pricing",
+    "status": 200,
+    "final_url": "https://attio.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.attio.com/rest-api/overview",
+    "status": 200,
+    "final_url": "https://docs.attio.com/rest-api/overview",
+    "flags": []
+   }
+  },
+  "podio": {
+   "one_liner": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.podio.com/authentication",
+    "status": 200,
+    "final_url": "https://developers.podio.com/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://rollout.com/integration-guides/podio/api-essentials",
+    "status": 200,
+    "final_url": "https://rollout.com/integration-guides/podio/api-essentials",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.podio.com/",
+    "status": 200,
+    "final_url": "https://developers.podio.com/",
     "flags": []
    }
   },

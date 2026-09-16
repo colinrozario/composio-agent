@@ -1,0 +1,908 @@
+[
+ {
+  "id": 1,
+  "slug": "salesforce",
+  "name": "Salesforce",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Enterprise customer relationship management platform with robust REST and GraphQL APIs.",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "api_type": {
+    "value": "rest_and_graphql",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   },
+   "docs_url": {
+    "value": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://2creative.ca/how-to-set-up-a-free-salesforce-developer-account/",
+   "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+   "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_quickstart_steps_obtain_dev_org.htm",
+   "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+   "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+   "https://developer.salesforce.com/free-trials",
+   "https://github.com/modelcontextprotocol",
+   "https://github.com/salesforcecli/mcp",
+   "https://help.salesforce.com/s/articleView?id=005298906&language=en_US&type=1",
+   "https://help.salesforce.com/s/articleView?id=platform.platform_o_manage_api_tokens.htm&language=en_US&type=5",
+   "https://install.salesforce.org/accounts/signup/",
+   "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+   "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+   "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/salesforce_chatter_rest_api.pdf",
+   "https://s2-labs.com/blog/set-up-free-salesforce-developer-edition-account/",
+   "https://sainisalesforce.com/how-to-authenticate-salesforce-rest-apis-from-within-salesforce/",
+   "https://www.apexhours.com/how-to-create-a-free-salesforce-developer-account/",
+   "https://www.integrate.io/blog/salesforce-rest-api-integration/",
+   "https://www.postman.com/salesforce-developers/salesforce-developers/collection/b32utmu/salesforce-platform-apis",
+   "https://www.salesforce.com/agentforce/mcp-support/model-context-protocol/",
+   "https://www.salesforce.com/platform/free-trial/signup/",
+   "https://www.salesforceben.com/salesforce-model-context-protocol-explained-how-mcp-bridges-ai-and-your-crm/",
+   "https://www.salesforcetutorial.com/salesforce-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "second_model_disagreement:auth_methods,api_type"
+  ],
+  "human_corrected": [],
+  "category": "CRM and Sales",
+  "category_id": "crm_sales",
+  "hint": "salesforce.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "salesforce",
+   "composio_name": "Salesforce",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "S2S_OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 185.0,
+   "triggers_count": 7.0,
+   "categories": [
+    "crm",
+    "contact management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 2,
+  "slug": "hubspot",
+  "name": "HubSpot",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "All-in-one CRM platform featuring APIs for managing contacts, deals, marketing, and customer service.",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/ai-tools/mcp"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   },
+   "docs_url": {
+    "value": "https://developers.hubspot.com/docs",
+    "confidence": "high",
+    "source_url": "https://developers.hubspot.com/docs"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://developers.hubspot.com/ai-tools",
+   "https://developers.hubspot.com/ai-tools/mcp",
+   "https://developers.hubspot.com/blog/optimizing-developer-docs-in-the-age-of-ai-our-mintlify-migration-story",
+   "https://developers.hubspot.com/changelog/mcp-server-beta",
+   "https://developers.hubspot.com/changelog/public-beta-self-service-mcp-auth-apps-for-the-hubspot-remote-mcp-server",
+   "https://developers.hubspot.com/docs",
+   "https://developers.hubspot.com/docs/apps/developer-platform/add-features/mcp-server",
+   "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+   "https://developers.hubspot.com/postman",
+   "https://insightsalesglobal.com/blog/hubspot-api",
+   "https://insightsalesglobal.com/blog/hubspot-api-authentication",
+   "https://moldstud.com/articles/p-essential-guide-to-hubspot-api-documentation-navigating-for-developers",
+   "https://moldstud.com/articles/p-how-to-set-up-hubspot-api-authentication-a-developers-guide",
+   "https://widelly.com/blog/hubspot-api-guide-developers/",
+   "https://www.apideck.com/blog/how-to-connect-with-the-hubspot-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "CRM and Sales",
+  "category_id": "crm_sales",
+  "hint": "hubspot.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "hubspot",
+   "composio_name": "HubSpot",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 262.0,
+   "triggers_count": 2.0,
+   "categories": [
+    "crm",
+    "marketing automation"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 3,
+  "slug": "pipedrive",
+  "name": "Pipedrive",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based sales platform and web/mobile CRM for managing leads and deals.",
+    "confidence": "high",
+    "source_url": "https://www.pipedrive.com/en/features/crm-api"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://developers.pipedrive.com/"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+   },
+   "docs_url": {
+    "value": "https://developers.pipedrive.com/docs/api/v1",
+    "confidence": "high",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apihunt.io/apis/pipedrive",
+   "https://apitracker.io/a/pipedrive",
+   "https://cvshealth.sabacloud.com/",
+   "https://developers.linkapi.solutions/docs/pipedrive",
+   "https://developers.pipedrive.com/",
+   "https://developers.pipedrive.com/docs/api/v1",
+   "https://entrackr.com/news/cardless-payments-platform-piston-raises-15-mn-in-series-a-led-by-fpv-ventures-12516055",
+   "https://homepage-webapp.savvasrealize.com/",
+   "https://myaccount.elsevier.com/",
+   "https://myavailability.starbucks.com/",
+   "https://onlineaccess.edwardjones.com/",
+   "https://pipedrive.readme.io/do/docs/getting-started",
+   "https://pipedrive.readme.io/docs/about-the-marketplace",
+   "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+   "https://pipedrive.readme.io/docs/developer-hub",
+   "https://pipedrive.readme.io/docs/developer-sandbox-account",
+   "https://pipedrive.readme.io/docs/faq",
+   "https://pipedrive.readme.io/docs/getting-started",
+   "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+   "https://pipedrive.readme.io/docs/marketplace-registering-a-private-app",
+   "https://pipedrive.readme.io/docs/marketplace-registering-the-app",
+   "https://www.ezpassnh.com/login",
+   "https://www.pipedrive.com/en/features/crm-api",
+   "https://www.youtube.com/shorts/BNmC0IuBtt0"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "CRM and Sales",
+  "category_id": "crm_sales",
+  "hint": "pipedrive.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "pipedrive",
+   "composio_name": "Pipedrive",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 400.0,
+   "triggers_count": 3.0,
+   "categories": [
+    "crm",
+    "sales & crm"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 4,
+  "slug": "attio",
+  "name": "Attio",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A flexible, data-driven CRM platform with a robust REST API for managing custom objects and workflows.",
+    "confidence": "high",
+    "source_url": "https://attio.com/platform/developers"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/guides/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://attio.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://attio.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   },
+   "docs_url": {
+    "value": "https://docs.attio.com/rest-api/overview",
+    "confidence": "high",
+    "source_url": "https://docs.attio.com/rest-api/overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apitracker.io/a/attio",
+   "https://atlas.attio.com/pricing-is-a-product",
+   "https://attio.com/",
+   "https://attio.com/help",
+   "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+   "https://attio.com/platform/developers",
+   "https://attio.com/pricing",
+   "https://attio.com/pricing?category=services&gclid=CjwKCAiAgbiQBh",
+   "https://blog.coffee.ai/attio-crm-public-api-docs",
+   "https://build.attio.com/api",
+   "https://docs.attio.com/docs/oauth/authorize",
+   "https://docs.attio.com/docs/oauth/introspect",
+   "https://docs.attio.com/docs/overview",
+   "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+   "https://docs.attio.com/rest-api/guides/authentication",
+   "https://docs.attio.com/rest-api/overview",
+   "https://docs.attio.com/sdk/overview",
+   "https://docs.attio.com/sdk/server/connections/connections",
+   "https://docs.attio.com/sdk/server/connections/get-user-connection",
+   "https://docs.attio.com/sdk/server/connections/get-workspace-connection",
+   "https://docs.attio.com/sdk/system/platform",
+   "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "CRM and Sales",
+  "category_id": "crm_sales",
+  "hint": "attio.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "attio",
+   "composio_name": "Attio",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 100.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "crm"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 6,
+  "slug": "podio",
+  "name": "Podio",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Work management platform providing a complete REST API for workspaces, apps, and items.",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://rollout.com/integration-guides/podio/api-essentials"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   },
+   "docs_url": {
+    "value": "https://developers.podio.com/",
+    "confidence": "high",
+    "source_url": "https://developers.podio.com/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apitracker.io/a/podio",
+   "https://developers.podio.com/",
+   "https://developers.podio.com/authentication",
+   "https://developers.podio.com/doc/reference",
+   "https://docs.elastic.io/components/podio/",
+   "https://podio.github.io/podio-android/authentication/",
+   "https://podio.github.io/podio-js/authentication/",
+   "https://public-api.org/api/428/podio",
+   "https://publicapi.dev/podio-api",
+   "https://publicapis.io/podio-api",
+   "https://rollout.com/integration-guides/podio/api-essentials",
+   "https://www.progress.com/podio/documentation/using-podio/podio-and-other-services/podio-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "CRM and Sales",
+  "category_id": "crm_sales",
+  "hint": "podio.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 58,
+  "slug": "sherlock",
+  "name": "Sherlock",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Hunt down social media accounts by username across social networks.",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "auth_methods": {
+    "value": [
+     "none"
+    ],
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "access_path": {
+    "value": "not_applicable_local",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "api_type": {
+    "value": "cli_only",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "api_breadth": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "base_url_model": {
+    "value": "not_applicable",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "toolkit_bucket": {
+    "value": "local_or_sandbox_toolkit",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "test_account": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "main_blocker": {
+    "value": "Sherlock is a command-line utility and Python library without a hosted remote API.",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   },
+   "docs_url": {
+    "value": "https://github.com/sherlock-project/sherlock",
+    "confidence": "high",
+    "source_url": "https://github.com/sherlock-project/sherlock"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://github.com/orgs/sherlock-project/repositories",
+   "https://github.com/sherlock-project",
+   "https://github.com/sherlock-project/sherlock",
+   "https://github.com/sherlock-project/sherlock/releases",
+   "https://github.com/sherlock-project/sherlock/tree/master/.github",
+   "https://github.com/sherlock-project/sherlock/tree/master?search=1",
+   "https://sherlockproject.xyz/",
+   "https://sherlockproject.xyz/installation"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "second_model_disagreement:access_path,test_account"
+  ],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "github.com/sherlock-project/sherlock",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 5,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 0,
+    "test": 0
+   },
+   "tier": "local_toolkit"
+  }
+ },
+ {
+  "id": 84,
+  "slug": "paygent_connect",
+  "name": "Paygent Connect",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:09:54+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Payment infrastructure allowing AI agents to create, fund, and manage virtual cards via MCP/API.",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "med",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "med",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "med",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "docs_quality": {
+    "value": "partial_or_thin",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "med",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   },
+   "docs_url": {
+    "value": "https://api.paygent.tech/docs",
+    "confidence": "high",
+    "source_url": "https://api.paygent.tech/docs"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://api.paygent.tech/",
+   "https://api.paygent.tech/docs",
+   "https://docs.paygent.to/reference/api-reference/",
+   "https://docs.paygent.to/reference/sdk-reference/",
+   "https://docs.withpaygent.com/",
+   "https://docs.withpaygent.com/api-reference/customers-api",
+   "https://docs.withpaygent.com/cli/get-started/quickstart",
+   "https://docs.withpaygent.com/documentation/guides/best-practices",
+   "https://docs.withpaygent.com/documentation/introduction/how-it-works",
+   "https://docs.withpaygent.com/documentation/introduction/key-features",
+   "https://docs.withpaygent.com/documentation/introduction/plans",
+   "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+   "https://docs.withpaygent.com/documentation/introduction/who-should-use-paygent",
+   "https://gopaygent.com/",
+   "https://gopaygent.com/developers/sdk",
+   "https://paygent.tech/",
+   "https://paygent.tech/about",
+   "https://paygent.tech/contact",
+   "https://paygent.tech/paygent-token",
+   "https://paygent.tech/roadmap"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "second_model_disagreement:auth_methods,api_type,official_mcp,test_account"
+  ],
+  "human_corrected": [],
+  "category": "Finance and Fintech",
+  "category_id": "finance",
+  "hint": "paygent (NMI-powered)",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 3,
+    "docs": 1,
+    "breadth": 1,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ }
+]

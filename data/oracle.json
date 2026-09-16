@@ -1,13 +1,16 @@
 {
  "summary": {
   "pass1": {
-   "n": 1,
-   "exact": 0.0,
+   "n": 4,
+   "exact": 0.25,
    "overlap": 1.0,
-   "oracle_subset": 0.0
+   "oracle_subset": 0.75
   },
   "final": {
-   "n": 0
+   "n": 4,
+   "exact": 0.25,
+   "overlap": 1.0,
+   "oracle_subset": 0.75
   }
  },
  "by_app": {
@@ -23,6 +26,104 @@
     "exact": false,
     "overlap": true,
     "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   }
+  },
+  "hubspot": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "pipedrive": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "attio": {
+   "pass1": {
+    "agent": [
+     "basic",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "basic",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
    }
   }
  },

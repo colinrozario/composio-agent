@@ -1,0 +1,11 @@
+# App buildability research (100 apps)
+> Auth, access gates, API surface and a 0-9 buildability score for 100 SaaS apps, verified against docs, a second model, Composio's catalog and a human sample.
+
+## Data
+- [data.json](/data.json): full dataset with per-field confidence and source URLs
+- [data.md](/data.md): the same matrix as a markdown table
+
+## Schema
+- Each field: value, confidence (high|med|low), source_url
+- score.total 0-9 = credential(0-3) + docs(0-2) + breadth(0-2) + test account(0-2)
+- tiers: build_now 7-9, build_with_friction 4-6, needs_outreach 0-3, local_toolkit (CLI, no hosted API)

@@ -1,0 +1,158 @@
+{
+ "totals": {
+  "apps": 7,
+  "in_composio": 4,
+  "not_in_composio": 3,
+  "buildable_now_not_in_composio": 2
+ },
+ "auth": [
+  [
+   "oauth2",
+   5
+  ],
+  [
+   "api_key",
+   3
+  ],
+  [
+   "bearer_token",
+   2
+  ],
+  [
+   "basic",
+   1
+  ],
+  [
+   "none",
+   1
+  ]
+ ],
+ "tiers": {
+  "build_now": 6,
+  "local_toolkit": 1
+ },
+ "access_path": [
+  [
+   "self_serve_free",
+   6
+  ],
+  [
+   "not_applicable_local",
+   1
+  ]
+ ],
+ "tier_by_category": {
+  "CRM and Sales": {
+   "build_now": 5
+  },
+  "Data, SEO and Scraping": {
+   "local_toolkit": 1
+  },
+  "Finance and Fintech": {
+   "build_now": 1
+  }
+ },
+ "patterns": [
+  {
+   "key": "app_review_gate",
+   "count": 0,
+   "apps": [],
+   "headline": "App review is the real gate, not auth",
+   "so_what": "TODO"
+  },
+  {
+   "key": "paid_to_use",
+   "count": 0,
+   "apps": [],
+   "headline": "Free to read, paid to call",
+   "so_what": "TODO"
+  },
+  {
+   "key": "per_tenant_host",
+   "count": 2,
+   "apps": [
+    "Pipedrive",
+    "Salesforce"
+   ],
+   "headline": "Every customer has a different host",
+   "so_what": "TODO"
+  },
+  {
+   "key": "graphql_only",
+   "count": 0,
+   "apps": [],
+   "headline": "GraphQL-only: easy auth, hard tool shapes",
+   "so_what": "TODO"
+  },
+  {
+   "key": "official_mcp",
+   "count": 3,
+   "apps": [
+    "HubSpot",
+    "Paygent Connect",
+    "Salesforce"
+   ],
+   "headline": "Vendor MCP already exists",
+   "so_what": "TODO"
+  },
+  {
+   "key": "local_toolkit",
+   "count": 1,
+   "apps": [
+    "Sherlock"
+   ],
+   "headline": "Not APIs at all: local toolkits",
+   "so_what": "TODO"
+  },
+  {
+   "key": "dark",
+   "count": 0,
+   "apps": [],
+   "headline": "Close to no public developer surface",
+   "so_what": "TODO"
+  }
+ ],
+ "build_queue": {
+  "build_now": [
+   {
+    "name": "Salesforce",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "HubSpot",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Pipedrive",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Attio",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Podio",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Paygent Connect",
+    "score": 7,
+    "in_composio": false
+   }
+  ],
+  "build_with_friction": [],
+  "needs_outreach": [],
+  "local_toolkit": [
+   {
+    "name": "Sherlock",
+    "score": 5,
+    "in_composio": false
+   }
+  ]
+ }
+}
