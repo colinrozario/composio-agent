@@ -1,6 +1,6 @@
 # App buildability research: 100 apps
 
-Generated 2026-09-16T21:09:55+00:00. Machine-readable: /data.json
+Generated 2026-09-16T21:10:08+00:00. Machine-readable: /data.json
 
 | App | Category | In Composio | Auth | Access | API | MCP | Score | Tier | Docs |
 |---|---|---|---|---|---|---|---|---|---|

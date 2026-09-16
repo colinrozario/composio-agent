@@ -1,0 +1,101 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Zendesk\nCategory: Support and Helpdesk\nHint (may be misleading, verify it): zendesk.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "***REDACTED***",
+   "https://aeroleads.com/blog/zendesk-sell-api-base-url-setup-configuration/",
+   "https://alidasupport.zendesk.com/hc/en-us/articles/45342150237076-URL-structure",
+   "https://apitracker.io/a/zendesk",
+   "https://corepiper.com/blog/zendesk-api-pricing/",
+   "https://cxsupporthub.zendesk.com/hc/en-us/articles/22532629471900-How-can-I-authenticate-API-requests",
+   "https://data-everything.github.io/MCP-Platform/server-templates/zendesk/",
+   "https://developer.zendesk.com/api-reference/",
+   "https://developer.zendesk.com/api-reference/introduction/doc-conventions/",
+   "https://developer.zendesk.com/api-reference/sales-crm/rate-limits/",
+   "https://developer.zendesk.com/documentation/authentication/",
+   "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+   "https://github.com/mattcoatsworth/zendesk-mcp-server",
+   "https://github.com/reminia/zendesk-mcp-server",
+   "https://mcp.so/servers/zendesk-mcp-server",
+   "https://mcpservers.org/servers/reminia/zendesk-mcp-server",
+   "https://support.zendesk.com/hc/en-us/articles/10241391983130-Workflow-How-to-normalize-Zendesk-ticket-data-for-AI-models",
+   "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows",
+   "https://support.zendesk.com/hc/en-us/articles/11140184354970-Announcing-endpoint-changes-for-the-Ultimate-Public-API",
+   "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+   "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+   "https://www.eesel.ai/blog/zendesk-api",
+   "https://www.eesel.ai/blog/zendesk-api-authentication-and-scopes",
+   "https://www.eesel.ai/blog/zendesk-api-rate-limit-requests-per-minute",
+   "https://www.usecarly.com/blog/zendesk-mcp/",
+   "https://www.zendesk.com/company/agreements-and-terms/zendesk-developer-terms/",
+   "https://www.zendesk.com/in/company/agreements-and-terms/application-developer-api-license-agreement/",
+   "https://www.zendesk.com/marketplace/apps/support/1191848/mcp-server/",
+   "https://z3n-ai-interactive.zendesk.com/hc/en-us/articles/24992827639837-API-Endpoints-and-Integration",
+   "https://z3n-zentech.zendesk.com/hc/en-us/articles/1500007230882-ZenTech-API-Overview"
+  ],
+  "fetched_urls": [
+   "https://developer.zendesk.com/api-reference/introduction/doc-conventions/",
+   "https://developer.zendesk.com/documentation/authentication/",
+   "https://www.zendesk.com/support/pricing/"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Zendesk API authentication methods developer documentation"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Zendesk API access requirements for developers pricing"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Zendesk official MCP server"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Zendesk API base URL structure"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developer.zendesk.com/documentation/authentication/",
+      "https://www.zendesk.com/support/pricing/",
+      "https://developer.zendesk.com/api-reference/introduction/doc-conventions/"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "turns": 4,
+  "backend": "gemini",
+  "model": "gemini-3.1-flash-lite"
+ }
+}

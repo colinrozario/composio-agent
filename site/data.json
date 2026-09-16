@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T21:09:55+00:00",
+  "generated_at": "2026-09-16T21:10:08+00:00",
   "demo": false,
   "repo": "https://github.com/colinrozario/composio-agent",
   "headline_text": "Composio already ships 4 of the 7 apps researched so far. Of the 3 it doesn't, 2 look buildable now.",
@@ -18,14 +18,14 @@
    "count": 0,
    "apps": [],
    "headline": "App review is the real gate, not auth",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "paid_to_use",
    "count": 0,
    "apps": [],
    "headline": "Free to read, paid to call",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "per_tenant_host",
@@ -35,14 +35,14 @@
     "Salesforce"
    ],
    "headline": "Every customer has a different host",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "graphql_only",
    "count": 0,
    "apps": [],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "official_mcp",
@@ -53,7 +53,7 @@
     "Salesforce"
    ],
    "headline": "Vendor MCP already exists",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "local_toolkit",
@@ -62,14 +62,14 @@
     "Sherlock"
    ],
    "headline": "Not APIs at all: local toolkits",
-   "so_what": "TODO"
+   "so_what": ""
   },
   {
    "key": "dark",
    "count": 0,
    "apps": [],
    "headline": "Close to no public developer surface",
-   "so_what": "TODO"
+   "so_what": ""
   }
  ],
  "build_queue": {

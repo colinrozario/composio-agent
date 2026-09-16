@@ -1,0 +1,115 @@
+{
+ "id": 11,
+ "slug": "zendesk",
+ "name": "Zendesk",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:10:02+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based customer support software platform featuring a comprehensive REST API for ticket management.",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/documentation/authentication/"
+  },
+  "access_path": {
+   "value": "self_serve_trial",
+   "confidence": "high",
+   "source_url": "https://www.zendesk.com/support/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://www.zendesk.com/marketplace/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/introduction/doc-conventions/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.zendesk.com/support/pricing/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "docs_url": {
+   "value": "https://developer.zendesk.com/api-reference/",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "official_mcp"
+ ],
+ "search_urls": [
+  "***REDACTED***",
+  "https://aeroleads.com/blog/zendesk-sell-api-base-url-setup-configuration/",
+  "https://alidasupport.zendesk.com/hc/en-us/articles/45342150237076-URL-structure",
+  "https://apitracker.io/a/zendesk",
+  "https://corepiper.com/blog/zendesk-api-pricing/",
+  "https://cxsupporthub.zendesk.com/hc/en-us/articles/22532629471900-How-can-I-authenticate-API-requests",
+  "https://data-everything.github.io/MCP-Platform/server-templates/zendesk/",
+  "https://developer.zendesk.com/api-reference/",
+  "https://developer.zendesk.com/api-reference/introduction/doc-conventions/",
+  "https://developer.zendesk.com/api-reference/sales-crm/rate-limits/",
+  "https://developer.zendesk.com/documentation/authentication/",
+  "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+  "https://github.com/mattcoatsworth/zendesk-mcp-server",
+  "https://github.com/reminia/zendesk-mcp-server",
+  "https://mcp.so/servers/zendesk-mcp-server",
+  "https://mcpservers.org/servers/reminia/zendesk-mcp-server",
+  "https://support.zendesk.com/hc/en-us/articles/10241391983130-Workflow-How-to-normalize-Zendesk-ticket-data-for-AI-models",
+  "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows",
+  "https://support.zendesk.com/hc/en-us/articles/11140184354970-Announcing-endpoint-changes-for-the-Ultimate-Public-API",
+  "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+  "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+  "https://www.eesel.ai/blog/zendesk-api",
+  "https://www.eesel.ai/blog/zendesk-api-authentication-and-scopes",
+  "https://www.eesel.ai/blog/zendesk-api-rate-limit-requests-per-minute",
+  "https://www.usecarly.com/blog/zendesk-mcp/",
+  "https://www.zendesk.com/company/agreements-and-terms/zendesk-developer-terms/",
+  "https://www.zendesk.com/in/company/agreements-and-terms/application-developer-api-license-agreement/",
+  "https://www.zendesk.com/marketplace/apps/support/1191848/mcp-server/",
+  "https://z3n-ai-interactive.zendesk.com/hc/en-us/articles/24992827639837-API-Endpoints-and-Integration",
+  "https://z3n-zentech.zendesk.com/hc/en-us/articles/1500007230882-ZenTech-API-Overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ }
+}
