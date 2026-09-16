@@ -1,0 +1,107 @@
+{
+ "id": 9,
+ "slug": "copper",
+ "name": "Copper",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:47:44+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "CRM for managing leads, contacts, companies, and sales pipelines integrated with Google Workspace.",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/introduction/authentication.html"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/introduction/authentication.html"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://glama.ai/mcp/servers/dazanza/copper-mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips"
+  },
+  "main_blocker": {
+   "value": "None found; API key generation is self-serve from any paid Copper account with no formal review process documented.",
+   "confidence": "med",
+   "source_url": "https://developer.copper.com/introduction/authentication.html"
+  },
+  "docs_url": {
+   "value": "https://developer.copper.com/",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aeroleads.com/blog/copper-crm-api-build-custom-integrations-2026/",
+  "https://apitracker.io/a/copper",
+  "https://authpipe.dev/providers/copper/",
+  "https://developer.copper.co/api-reference/authentication",
+  "https://developer.copper.com/",
+  "https://developer.copper.com/introduction/authentication.html",
+  "https://developer.copper.com/introduction/oauth/flow.html",
+  "https://developers.apideck.com/apis/crm/copper",
+  "https://developers.linkapi.solutions/docs/copper",
+  "https://docs.copper.co/",
+  "https://glama.ai/mcp/servers/dazanza/copper-mcp",
+  "https://glama.ai/mcp/servers/hasankhadra/copper-mcp",
+  "https://help.zoho.com/portal/en/kb/creator/developer-guide/microservices/connector-references/articles/copper-connector-references",
+  "https://mcp.pipedream.com/app/copper",
+  "https://mcpmarket.com/server/copper-crm",
+  "https://n8n.io/workflows/5315-let-ai-agents-run-your-crm-with-copper-tool-mcp-server-all-32-operations/",
+  "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+  "https://support.copper.com/en/collections/9574908-developer-resources-and-api",
+  "https://support.ipaas.com/en/articles/13311335-copper-crm-installation-instructions",
+  "https://truto.one/blog/integrate-copper",
+  "https://usecopper.com/docs/api_basics/authentication",
+  "https://www.apideck.com/integrations/copper",
+  "https://www.apideck.com/mcp-server/copper",
+  "https://www.appypieautomate.ai/integrate/mcp/copper-crm",
+  "https://www.crmchirp.com/2024/08/07/copper-crm-api-guide/",
+  "https://www.getguru.com/reference/copper-crm-mcp",
+  "https://www.mcpbundles.com/skills/copper",
+  "https://www.unifyapps.com/docs/undefined/copper-crm",
+  "https://www.usecopper.com/docs"
+ ],
+ "backend": "claude_cli"
+}
