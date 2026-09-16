@@ -7,7 +7,7 @@ import asyncio, json, re, sys
 import httpx
 from bs4 import BeautifulSoup
 from common import (DATA, RAW, MODEL_PRIMARY, GRADED_FIELDS, seed, first, load, save, prompt,
-                    ask, extract_json, enum_text, now, gather_limited)
+                    ask, extract_json, enum_text, now, gather_limited, latest)
 
 MAX_CHARS_PER_PAGE = 12000
 
@@ -88,9 +88,12 @@ async def regrade(c, app, rec, fields):
             name=app["name"], fields=", ".join(fields),
             previous=json.dumps({f: rec["fields"].get(f) for f in fields}, indent=1),
             pages="\n\n".join(f"### {u}\n{t}" for u, t in usable.items()), enums=enum_text())
-        text, _ = await ask(p, MODEL_PRIMARY, web_search=False)
-        try: out["result"] = extract_json(text)
-        except Exception as e: out["result"], out["note"] = {}, f"parse_error {e}"
+        try:
+            text, _ = await ask(p, MODEL_PRIMARY, web_search=False)
+            out["result"] = extract_json(text)
+        except (Exception, SystemExit) as e:
+            print(f"[grounded] {app['name']:<28} FAILED {type(e).__name__}: {str(e)[:120]}")
+            return None  # not saved, so a rerun retries it
     save(RAW/"pass2_grounded"/app["slug"]/f"{out['researched_at'].replace(':','')}.json", out)
     print(f"[grounded] {app['name']:<28} fields={len(fields)} pages={len(usable)}")
     return out
@@ -104,7 +107,7 @@ async def main(only):
             rec = first("pass1", app["slug"])
             if not rec: continue
             fields = flagged_fields(app["slug"], rec, linkcheck, oracle)
-            if fields: jobs.append(regrade(c, app, rec, fields))
+            if fields and not latest("pass2_grounded", app["slug"]): jobs.append(regrade(c, app, rec, fields))
         print(f"{len(jobs)} apps flagged for grounded re-ask")
         await gather_limited(jobs)
     modes = list(FETCH_MODE.values())

@@ -1,7 +1,8 @@
 """Vercel Python function: POST {"name": "..."} -> pass 1 schema for an app not in the 100.
-Same prompt and schema as the batch agent. In-memory cache + crude per-IP rate limit
+Same prompt, schema and validation as the batch agent, but on the Gemini free tier (LIVE_MODEL):
+a serverless function can't run the Claude Code CLI that the batch run used. In-memory cache + crude per-IP rate limit
 (best effort on serverless; put Upstash/KV behind it if you need it to be strict)."""
-import asyncio, json, re, sys, time
+import asyncio, json, os, re, sys, time
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/"src"))
@@ -30,9 +31,10 @@ class handler(BaseHTTPRequestHandler):
             pass1_research.OUT = common.RAW/"pass1"
             app = {"id": 0, "slug": re.sub(r"[^a-z0-9]+", "_", key).strip("_"), "name": name,
                    "category": "unknown (live request)", "hint": "none given"}
-            rec = asyncio.run(pass1_research.research_one(app))
-            out = {k: rec[k] for k in ("name", "model", "researched_at", "fields", "schema_problems", "uncited_sources")}
+            model = os.getenv("LIVE_MODEL", "gemini-2.5-flash")
+            rec = asyncio.run(pass1_research.research_one(app, model=model))
+            out = {k: rec.get(k) for k in ("name", "model", "backend", "researched_at", "fields", "schema_problems", "uncited_sources")}
             CACHE[key] = out
             self._send(200, out)
         except Exception as e:
-            self._send(500, {"error": type(e).__name__})
+            self._send(500, {"error": type(e).__name__, "detail": str(e)[:200]})

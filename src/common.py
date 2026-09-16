@@ -18,9 +18,9 @@ FIELDS = SCHEMA["properties"]["fields"]["required"]
 GRADED_FIELDS = ["auth_methods", "access_path", "api_type", "api_breadth", "official_mcp",
                  "base_url_model", "toolkit_bucket", "docs_quality", "test_account"]
 
-MODEL_PRIMARY = os.getenv("MODEL_PRIMARY", "claude-sonnet-5")
-MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "claude-haiku-4-5")
-CONCURRENCY = int(os.getenv("CONCURRENCY", "6"))
+MODEL_PRIMARY = os.getenv("MODEL_PRIMARY", "sonnet")               # Claude Code CLI alias -> subscription
+MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "gemini-2.5-flash")  # Gemini free tier
+CONCURRENCY = int(os.getenv("CONCURRENCY", "3"))
 
 def now() -> str: return datetime.now(timezone.utc).isoformat(timespec="seconds")
 def load(p: Path, default=None):
@@ -59,6 +59,8 @@ def extract_json(text: str) -> dict:
     if not last: raise ValueError("no JSON object in reply")
     return json.loads(text[last[0]:last[1]])
 
+NEGATIVE_VALUES = {"unknown", "none", "none_public", "none_found", "no_public_api", "not_applicable"}
+
 def validate_fields(fields: dict) -> list[str]:
     """Return a list of schema problems (missing fields, bad enums, missing sources)."""
     problems = []
@@ -72,7 +74,8 @@ def validate_fields(fields: dict) -> list[str]:
             problems.append(f"{f}: bad enum {x['value']}")
         if x.get("confidence") not in ("high", "med", "low"):
             problems.append(f"{f}: bad confidence")
-        if vals != ["unknown"] and not x.get("source_url"):
+        # Absence can't be cited: negative findings (no docs, no API, no MCP) may have a null source.
+        if not x.get("source_url") and not set(map(str, vals)) <= NEGATIVE_VALUES and f != "main_blocker":
             problems.append(f"{f}: no source_url")
     return problems
 
@@ -85,50 +88,147 @@ def norm(field: str, value):
     return str(value).strip().lower() if value is not None else ""
 
 # ---------- LLM ----------
-_client = None
-def client():
-    global _client
-    if _client is None:
-        from anthropic import AsyncAnthropic
-        _client = AsyncAnthropic()
-    return _client
+# Three interchangeable backends, picked from the model name:
+#   gemini-*                          Gemini API (free tier) with Google Search grounding
+#   claude-* AND ANTHROPIC_API_KEY    Anthropic API with the server-side web_search tool (paid credits)
+#   anything else (sonnet, opus)      Claude Code CLI in headless mode (`claude -p`), runs on a Claude subscription
+class RateLimited(Exception): pass
 
-def search_tool(model: str, max_uses: int) -> dict:
-    """Dynamic-filtering web search needs Sonnet/Opus 4.6+; Haiku 4.5 only has the basic variant."""
-    version = "web_search_20250305" if "haiku" in model else "web_search_20260209"
-    return {"type": version, "name": "web_search", "max_uses": max_uses}
+def backend(model: str) -> str:
+    if model.startswith("gemini"): return "gemini"
+    if model.startswith("claude-") and os.getenv("ANTHROPIC_API_KEY"): return "anthropic_api"
+    return "claude_cli"
 
 async def ask(prompt_text: str, model: str, web_search: bool, max_uses: int = 6, retries: int = 4) -> tuple[str, dict]:
-    """Call the model. Returns (final text, raw response dict). Web search uses the server tool.
-    Server tools can stop with pause_turn; we resend the partial turn until it finishes."""
-    tools = [search_tool(model, max_uses)] if web_search else None
-    messages = [{"role": "user", "content": prompt_text}]
+    """Call the model. Returns (final text, raw transcript dict with `search_urls` = URLs search really returned)."""
+    b = backend(model)
+    fn = {"gemini": _ask_gemini, "anthropic_api": _ask_anthropic_api, "claude_cli": _ask_claude_cli}[b]
+    for attempt in range(retries):
+        try:
+            text, raw = await fn(prompt_text, model, web_search, max_uses)
+            raw.update(backend=b, model=model)
+            return text, raw
+        except RateLimited as e:  # free tiers and subscriptions: back off hard
+            if attempt == retries - 1: raise
+            wait = 60 * (attempt + 1)
+            print(f"[{b}] rate limited ({e}); sleeping {wait}s")
+            await asyncio.sleep(wait)
+        except Exception:
+            if attempt == retries - 1: raise
+            await asyncio.sleep(2 ** attempt * 5)
+
+# --- Claude Code CLI (subscription, no API credits) ---
+CLI_BLOCKED_TOOLS = ["Bash", "PowerShell", "Edit", "Write", "Read", "Glob", "Grep", "Agent", "Task",
+                     "NotebookEdit", "TodoWrite", "Skill"]
+CLI_SYSTEM = ("You are a non-interactive research worker inside a batch pipeline. Never ask questions. "
+              "Use at most {n} web searches. Your final message must contain only the requested JSON.")
+CLI_SLOTS = asyncio.Semaphore(int(os.getenv("CLI_CONCURRENCY", "3")))
+
+def _links_from_search_result(text: str) -> list[str]:
+    """Claude Code's WebSearch result embeds `Links: [{"title":..,"url":..}, ...]`."""
+    urls = []
+    for m in re.finditer(r"Links:\s*(\[.*?\])\s*(?:\n|$)", text):
+        try: urls += [x["url"] for x in json.loads(m.group(1)) if x.get("url")]
+        except (json.JSONDecodeError, TypeError): pass
+    return urls
+
+async def _ask_claude_cli(prompt_text, model, web_search, max_uses):
+    import shutil, tempfile
+    exe = os.getenv("CLAUDE_BIN") or shutil.which("claude")
+    if not exe: raise SystemExit("`claude` CLI not found. Install Claude Code and run `claude` once to log in.")
+    if exe.lower().endswith(".cmd"):  # npm shim: cmd.exe re-parses args and breaks quoting; call the real binary
+        real = Path(exe).parent/"node_modules"/"@anthropic-ai"/"claude-code"/"bin"/"claude.exe"
+        if real.exists(): exe = str(real)
+    blocked = CLI_BLOCKED_TOOLS + ([] if web_search else ["WebSearch", "WebFetch"])
+    args = [exe, "-p", "--model", model, "--output-format", "stream-json", "--verbose", "--no-session-persistence",
+            "--append-system-prompt", CLI_SYSTEM.format(n=max_uses if web_search else 0)]
+    if web_search: args += ["--allowedTools", "WebSearch", "WebFetch"]
+    args += ["--disallowedTools", *blocked]
+    # Strip API credentials so the CLI uses the logged-in subscription, never paid API credits.
+    env = {k: v for k, v in os.environ.items() if k not in ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")}
+    async with CLI_SLOTS:
+        proc = await asyncio.create_subprocess_exec(*args, stdin=asyncio.subprocess.PIPE, stdout=asyncio.subprocess.PIPE,
+                                                    stderr=asyncio.subprocess.PIPE, cwd=tempfile.gettempdir(), env=env)
+        try:
+            out, err = await asyncio.wait_for(proc.communicate(prompt_text.encode("utf-8")), timeout=900)
+        except asyncio.TimeoutError:
+            proc.kill(); raise RuntimeError("claude CLI timed out")
+    events, search_urls, fetched_urls, final = [], [], [], None
+    for line in out.decode("utf-8", errors="replace").splitlines():
+        try: e = json.loads(line)
+        except json.JSONDecodeError: continue
+        events.append(e)
+        content = (e.get("message") or {}).get("content")
+        if e.get("type") == "assistant" and isinstance(content, list):
+            fetched_urls += [b["input"]["url"] for b in content
+                             if b.get("type") == "tool_use" and b.get("name") == "WebFetch" and b.get("input", {}).get("url")]
+        if e.get("type") == "user" and isinstance(content, list):
+            for b in content:
+                if b.get("type") == "tool_result":
+                    c = b.get("content")
+                    text = c if isinstance(c, str) else " ".join(x.get("text", "") for x in c or [] if isinstance(x, dict))
+                    search_urls += _links_from_search_result(text)
+        if e.get("type") == "result": final = e
+    if not final:
+        msg = err.decode("utf-8", errors="replace")[-500:]
+        if re.search(r"rate.?limit|usage limit|429", msg, re.I): raise RateLimited(msg.strip()[:120])
+        raise RuntimeError(f"claude CLI produced no result: {msg}")
+    if final.get("is_error"):
+        detail = str(final.get("result") or final.get("api_error_status"))
+        if re.search(r"rate.?limit|usage limit|429", detail, re.I): raise RateLimited(detail[:120])
+        raise RuntimeError(f"claude CLI error: {detail[:300]}")
+    return final.get("result") or "", {"search_urls": sorted(set(search_urls)), "fetched_urls": sorted(set(fetched_urls)),
+                                       "num_turns": final.get("num_turns"), "events": events}
+
+# --- Gemini API (free tier) ---
+_gemini = None
+GEMINI_SLOTS = asyncio.Semaphore(int(os.getenv("GEMINI_CONCURRENCY", "2")))
+
+async def _ask_gemini(prompt_text, model, web_search, max_uses):
+    global _gemini
+    from google import genai
+    from google.genai import types, errors
+    if _gemini is None:
+        if not (os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")):
+            raise SystemExit("Set GEMINI_API_KEY in .env (free key from https://aistudio.google.com/apikey)")
+        _gemini = genai.Client()
+    cfg = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())] if web_search else None)
+    async with GEMINI_SLOTS:
+        try:
+            r = await _gemini.aio.models.generate_content(model=model, contents=prompt_text, config=cfg)
+        except errors.APIError as e:
+            if e.code == 429: raise RateLimited(str(e)[:120])
+            raise
+    gm = r.candidates[0].grounding_metadata if r.candidates else None
+    chunks = [{"uri": c.web.uri, "title": c.web.title, "domain": c.web.domain}
+              for c in (gm.grounding_chunks or []) if c.web] if gm else []
+    return r.text or "", {"search_queries": list(gm.web_search_queries or []) if gm else [],
+                          "grounding_chunks": chunks, "search_urls": [c["uri"] for c in chunks if c["uri"]]}
+
+# --- Anthropic API (paid; only used if a key is set and a full claude-* model id is given) ---
+async def _ask_anthropic_api(prompt_text, model, web_search, max_uses):
+    from anthropic import AsyncAnthropic
+    version = "web_search_20250305" if "haiku" in model else "web_search_20260209"
+    kw = dict(model=model, max_tokens=16000, messages=[{"role": "user", "content": prompt_text}])
+    if web_search: kw["tools"] = [{"type": version, "name": "web_search", "max_uses": max_uses}]
     blocks = []
-    for _ in range(5):  # pause_turn continuations
-        for attempt in range(retries):
-            try:
-                kw = dict(model=model, max_tokens=16000, messages=messages)
-                if tools: kw["tools"] = tools
-                r = await client().messages.create(**kw)
-                break
-            except Exception:  # rate limits, overloads, transient network (SDK already retried twice)
-                if attempt == retries - 1: raise
-                await asyncio.sleep(2 ** attempt * 5)
-        dump = r.model_dump()
-        blocks += dump["content"]
+    for _ in range(5):  # server tools can stop with pause_turn; resend the partial turn
+        r = await AsyncAnthropic().messages.create(**kw)
+        blocks += r.model_dump()["content"]
         if r.stop_reason != "pause_turn": break
-        messages = [messages[0], {"role": "assistant", "content": r.content}]
-    dump["content"] = blocks  # full transcript across continuations, so searched_urls sees every result
-    text = "".join(b.get("text", "") for b in blocks if b.get("type") == "text")
-    return text, dump
+        kw["messages"] = [kw["messages"][0], {"role": "assistant", "content": r.content}]
+    urls = [x.get("url") for b in blocks if b.get("type") == "web_search_tool_result" and isinstance(b.get("content"), list)
+            for x in b["content"] if x.get("url")]
+    return "".join(b.get("text", "") for b in blocks if b.get("type") == "text"), {"search_urls": urls, "content": blocks}
+
+def url_key(u: str) -> str:
+    """Compare URLs loosely: scheme, www, trailing slash and #fragment don't matter."""
+    u = re.sub(r"^https?://(www\.)?", "", (u or "").strip().lower()).split("#")[0]
+    return u.rstrip("/")
 
 def searched_urls(raw: dict) -> set[str]:
-    """URLs the web_search tool actually returned. Citing anything outside this set = likely invented."""
-    urls = set()
-    for b in raw.get("content", []):
-        if b.get("type") == "web_search_tool_result" and isinstance(b.get("content"), list):
-            urls.update(x.get("url") for x in b["content"] if x.get("url"))
-    return urls
+    """URL keys the search tool actually returned (or the agent actually fetched). Citing anything else = likely invented."""
+    return {url_key(u) for u in list(raw.get("search_urls", [])) + list(raw.get("fetched_urls", []))}
 
 async def gather_limited(coros, limit=CONCURRENCY):
     sem = asyncio.Semaphore(limit)

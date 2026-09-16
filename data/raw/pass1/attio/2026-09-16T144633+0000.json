@@ -1,0 +1,112 @@
+{
+ "id": 4,
+ "slug": "attio",
+ "name": "Attio",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:46:33+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Attio is a customizable, real-time relational CRM for sales and go-to-market teams.",
+   "confidence": "high",
+   "source_url": "https://attio.com"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/guides/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://attio.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "med",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/mcp/overview"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://attio.com/pricing"
+  },
+  "main_blocker": {
+   "value": "None for single-workspace use via API key; publishing a multi-tenant OAuth integration to Attio's App Store likely requires additional review, though this was not explicitly documented in pages found.",
+   "confidence": "med",
+   "source_url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth"
+  },
+  "docs_url": {
+   "value": "https://docs.attio.com/rest-api/overview",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner"
+ ],
+ "search_urls": [
+  "https://aisotools.com/pricing/attio",
+  "https://apigene.ai/mcp/official/attio",
+  "https://apitracker.io/a/attio",
+  "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+  "https://attio.com/pricing",
+  "https://docs.attio.com/mcp/overview",
+  "https://docs.attio.com/rest-api/guides/authentication",
+  "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+  "https://docs.dust.tt/docs/attio-mcp",
+  "https://docs.stacksync.com/api-proxy/attio",
+  "https://github.com/kesslerio/attio-mcp-server",
+  "https://github.com/kesslerio/attio-mcp-server/blob/main/docs/guides/oauth-authentication.md",
+  "https://marketbetter.ai/blog/attio-crm-pricing-breakdown-2026/",
+  "https://mcpservers.org/servers/hmk/attio-mcp-server",
+  "https://novlini.io/blog/attio-mcp-complete-guide-to-the-model-context-protocol-(definition-use-cases-pricing-alternatives)",
+  "https://rubygems.org/gems/attio-ruby/versions/0.1.3",
+  "https://rubygems.org/gems/attio-ruby?locale=ja",
+  "https://saaslens.app/tools/attio",
+  "https://syncgtm.com/blog/attio-review",
+  "https://tonsofskills.com/skills/attio-install-auth/",
+  "https://www-stacksync-com.translate.goog/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq",
+  "https://www.apideck.com/integrations/attio",
+  "https://www.authencio.com/blog/attio-crm-review-features-pricing-customization-alternatives",
+  "https://www.automationjinn.com/blog/attio-api-guide",
+  "https://www.automationjinn.com/blog/attio-pricing-explained",
+  "https://www.coffee.ai/articles/attio-crm-pricing-vs-coffee",
+  "https://www.coffee.ai/articles/attio-crm-public-api-docs",
+  "https://www.scalekit.com/blog/attio-mcp-vs-api",
+  "https://www.stacksync.com/blog/attio-crm-2025-review-features-pros-cons-pricing",
+  "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api",
+  "https://www.usecarly.com/blog/attio-mcp/"
+ ],
+ "backend": "claude_cli"
+}

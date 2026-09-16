@@ -1,0 +1,112 @@
+{
+ "id": 6,
+ "slug": "podio",
+ "name": "Podio",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:47:07+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Customizable cloud work-management platform with CRM-style apps for tracking business data",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/index/faq"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc/items"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "med",
+   "source_url": "https://docs.sharefile.com/en-us/podio/using-podio/general-features/podio-mcp-server.html"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://developers.podio.com/doc"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://developers.podio.com/index/faq"
+  },
+  "main_blocker": {
+   "value": "none - self-serve OAuth app registration is free, API is free for all account tiers, and a full REST reference plus an official MCP server exist",
+   "confidence": "med",
+   "source_url": "https://developers.podio.com/index/faq"
+  },
+  "docs_url": {
+   "value": "https://developers.podio.com/doc",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/doc"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apiant.com/connect/Podio-to-MCP",
+  "https://apis.io/apis/podio/rest-api/",
+  "https://developers.podio.com/",
+  "https://developers.podio.com/authentication",
+  "https://developers.podio.com/authentication/app_auth",
+  "https://developers.podio.com/authentication/server_side",
+  "https://developers.podio.com/doc",
+  "https://developers.podio.com/doc/applications",
+  "https://developers.podio.com/doc/items",
+  "https://developers.podio.com/doc/items/find-referenceable-items-22485",
+  "https://developers.podio.com/doc/items/get-app-values-22455",
+  "https://developers.podio.com/doc/items/get-item-22360",
+  "https://developers.podio.com/doc/items/get-item-references-22439",
+  "https://developers.podio.com/doc/items/update-item-reference-7421495",
+  "https://developers.podio.com/doc/oauth-authorization",
+  "https://developers.podio.com/doc/oauth-authorization/client-info-22357",
+  "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+  "https://developers.podio.com/doc/oauth-authorization/get-scope-342360687",
+  "https://developers.podio.com/doc/reference",
+  "https://developers.podio.com/examples",
+  "https://developers.podio.com/index/faq",
+  "https://developers.podio.com/index/limits",
+  "https://docs.sharefile.com/en-us/podio/using-podio/general-features/podio-mcp-server.html",
+  "https://mcp.pipedream.com/app/podio",
+  "https://publicapi.dev/podio-api",
+  "https://rapidapi.com/hi/eipiai-eipiai-default/api/music-identify/pricing",
+  "https://rapidapi.com/it/apidojo/api/photomath1/pricing",
+  "https://rapidapi.com/ru/apiroots-apiroots-default/api/job-listings/pricing",
+  "https://rollout.com/integration-guides/podio/api-essentials",
+  "https://viasocket.com/mcp/podio",
+  "https://www.activepieces.com/mcp/podio",
+  "https://www.stackone.com/connectors/podio/",
+  "https://www.stitchflow.com/user-management/podio/api",
+  "https://zapier.com/mcp/podia",
+  "https://zapier.com/mcp/podio"
+ ],
+ "backend": "claude_cli"
+}

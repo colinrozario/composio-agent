@@ -1,0 +1,231 @@
+{
+ "checked_urls": 14,
+ "needed_browser": 0,
+ "by_app": {
+  "salesforce": {
+   "one_liner": {
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "flags": []
+   }
+  },
+  "pipedrive": {
+   "one_liner": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://www.pipedrive.com/en/features/mcp-server",
+    "status": 200,
+    "final_url": "https://www.pipedrive.com/en/features/mcp-server",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://pipedrive.readme.io/docs/how-to-get-the-company-domain",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/how-to-get-the-company-domain",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/developer-sandbox-account",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+    "status": 200,
+    "final_url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.pipedrive.com/docs/api/v1",
+    "status": 200,
+    "final_url": "https://developers.pipedrive.com/docs/api/v1",
+    "flags": []
+   }
+  },
+  "sherlock": {
+   "one_liner": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/Burnsedia/sherlock-mcp",
+    "status": 200,
+    "final_url": "https://github.com/Burnsedia/sherlock-mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   }
+  }
+ },
+ "flagged": {}
+}

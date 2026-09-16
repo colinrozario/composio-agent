@@ -1,0 +1,1352 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web search. Prefer the vendor's own developer docs,\nAPI reference, pricing page, and app-review/partner pages over blogs or aggregators.\n\nApp: Zoho CRM\nCategory: CRM and Sales\nHint (may be misleading, verify it): zoho.com/crm\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a page you actually saw in search results for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://aiproductivity.ai/guides/zoho-crm-api-developer-guide/",
+   "https://codroiditlabs.com/zoho-crm-api-tutorial/",
+   "https://deepwiki.com/zoho/crm-oas",
+   "https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata",
+   "https://github.com/junnaisystems/zoho-crm-mcp",
+   "https://github.com/zoho/crm-oas",
+   "https://glama.ai/mcp/servers/integrations/zoho",
+   "https://glama.ai/mcp/servers/whiteside-daniel/zohocrm-mcpserver/schema",
+   "https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits",
+   "https://help.zoho.com/portal/zh/community/topic/zoho-crm-with-built-in-mcp-support",
+   "https://pipeline.zoominfo.com/sales/zoho-crm-api",
+   "https://smart-webtech.com/guide/zoho-api-setup-to-integrations/",
+   "https://www.folk.app/articles/zoho-crm-mcp",
+   "https://www.getknit.dev/blog/zoho-crm-api-integration-guide-oauth-2-0-use-cases-step-by-step-tutorial",
+   "https://www.getknit.dev/mcp-servers/zoho-crm-mcp-server",
+   "https://www.leadcrm.io/blog/zoho-api-key/",
+   "https://www.zoho.com/bookings/help/api/v1/domain-specificapiurls.html",
+   "https://www.zoho.com/campaigns/help/developers/data-centers.html",
+   "https://www.zoho.com/commerce/api/multiple-data-centers.html",
+   "https://www.zoho.com/contracts/api/understanding-the-basics/data-centers-vs-base-uri-structure.html",
+   "https://www.zoho.com/crm/developer/docs/",
+   "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/scopes.html",
+   "https://www.zoho.com/crm/developer/docs/api/v8/whats-new.html",
+   "https://www.zoho.com/crm/developer/mcp.html",
+   "https://www.zoho.com/developer/help/api/api-limits.html",
+   "https://www.zoho.com/developer/help/api/getmodules.html",
+   "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+   "https://zoho-crm-api.readthedocs.io/en/latest/configuration/"
+  ],
+  "fetched_urls": [],
+  "num_turns": 7,
+  "events": [
+   {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\Users\\colin\\AppData\\Local\\Temp",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "tools": [
+     "CronCreate",
+     "CronDelete",
+     "CronList",
+     "DesignSync",
+     "EnterWorktree",
+     "ExitWorktree",
+     "ListAgents",
+     "Monitor",
+     "PushNotification",
+     "RemoteTrigger",
+     "ReportFindings",
+     "ScheduleWakeup",
+     "SendMessage",
+     "TaskOutput",
+     "TaskStop",
+     "ToolSearch",
+     "WebFetch",
+     "WebSearch"
+    ],
+    "mcp_servers": [
+     {
+      "name": "claude.ai Google Drive",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Gmail",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Google Calendar",
+      "status": "needs-auth"
+     }
+    ],
+    "model": "claude-sonnet-5",
+    "permissionMode": "default",
+    "slash_commands": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator",
+     "advisor",
+     "agents",
+     "auto-mode-setup",
+     "autocompact",
+     "clear",
+     "color",
+     "compact",
+     "config",
+     "output-style",
+     "context",
+     "effort",
+     "fast",
+     "heapdump",
+     "init",
+     "mcp",
+     "import",
+     "model",
+     "__remote-workflow",
+     "workflow-launch-exec",
+     "reload-plugins",
+     "reload-skills",
+     "rename",
+     "ultrareview",
+     "security-review",
+     "usage-credits",
+     "extra-usage",
+     "usage",
+     "insights",
+     "recap",
+     "skill-doctor",
+     "goal",
+     "design-consent",
+     "design-revoke",
+     "list-agents",
+     "team-onboarding"
+    ],
+    "terminal_slash_commands": [
+     "doctor",
+     "color",
+     "reload-plugins"
+    ],
+    "apiKeySource": "none",
+    "claude_code_version": "2.1.273",
+    "output_style": "default",
+    "agents": [
+     "claude",
+     "Explore",
+     "general-purpose",
+     "Plan",
+     "statusline-setup"
+    ],
+    "skills": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator"
+    ],
+    "plugins": [
+     {
+      "name": "andrej-karpathy-skills",
+      "path": "C:\\Users\\colin\\.claude\\plugins\\cache\\karpathy-skills\\andrej-karpathy-skills\\1.0.0",
+      "source": "andrej-karpathy-skills@karpathy-skills",
+      "version": "1.0.0"
+     }
+    ],
+    "capabilities": [
+     "interrupt_receipt_v1",
+     "interrupt_cancel_queued_v1",
+     "msg_lifecycle_v1"
+    ],
+    "analytics_disabled": false,
+    "product_feedback_disabled": false,
+    "uuid": "7ccdc704-2bcd-469f-87f7-e11fc61f5846",
+    "memory_paths": {
+     "auto": "C:\\Users\\colin\\.claude\\projects\\C--Users-colin-AppData-Local-Temp\\memory\\"
+    },
+    "messaging_socket_path": "\\\\.\\pipe\\LOCAL\\cc-msg-963180600af2b29ae8500c40e5f87dd0",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "powershell_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.7,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "4c547b69-ee8d-4f7f-a683-77112b61a35c",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JMo1eX94zMo7PgG1gx",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EqgCCqgBCBEYAipAf15wJ/9hVspYbtvSOY+08NIPX6bJBsG09zEecvDTT8J6mKjTcX9F9SjSfGEvonRVzyiqYb3B8EGQz1DPkzac9zIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAc/XqtUGsAECEgxdDYS74fOhcZu65HsaDNX6gswr2RsWLDRfICIw51P+rMsxji1bzM2nz/sUn1AfCvMp/EUdyb85B1lXvVb9OZSYv7g4V2nVrHoBdZldKi1P4tm5mVSI4UxV2MoH0I/gptHIdRtritlvYpvbOYeCVhDlrPpkLzNg8anFg5EYAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2101,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2101
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "92e66c1c-8663-4c72-b1da-6feedbc06824",
+    "timestamp": "2026-09-16T14:46:37.185Z",
+    "request_id": "req_011Cf7JMnaLxZ2yDXoGy6CuU"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JMo1eX94zMo7PgG1gx",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01GjMRsniEMcGULuDMF18NQQ",
+       "name": "ToolSearch",
+       "input": {
+        "query": "select:WebSearch",
+        "max_results": 3
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2101,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2101
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "37ebade1-90d7-44de-8cd5-2a32da57aa28",
+    "timestamp": "2026-09-16T14:46:37.213Z",
+    "request_id": "req_011Cf7JMnaLxZ2yDXoGy6CuU",
+    "wire_tool_inputs": {
+     "toolu_01GjMRsniEMcGULuDMF18NQQ": {
+      "query": "select:WebSearch",
+      "max_results": 3
+     }
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "type": "tool_result",
+       "tool_use_id": "toolu_01GjMRsniEMcGULuDMF18NQQ",
+       "content": [
+        {
+         "type": "tool_reference",
+         "tool_name": "WebSearch"
+        }
+       ]
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "ac3486ec-567d-4616-b9ee-2dd2a71c9fa8",
+    "timestamp": "2026-09-16T14:46:37.223Z",
+    "tool_use_result": {
+     "matches": [
+      "WebSearch"
+     ],
+     "query": "select:WebSearch",
+     "total_deferred_tools": 14
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.7,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "4645e561-7438-439c-8818-74a5adde5392",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JMxJzcRzdq8ZXFYuEz",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01EWxmUfQfdTBHn47r1dWUFu",
+       "name": "WebSearch",
+       "input": {
+        "query": "Zoho CRM API documentation OAuth v8"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 819,
+      "cache_read_input_tokens": 14408,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 819
+      },
+      "output_tokens": 17,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "a4e93175-2a24-4067-810d-9f64e7ff76dc",
+    "timestamp": "2026-09-16T14:46:39.289Z",
+    "request_id": "req_011Cf7JMx65zPhKBzK5enpSY",
+    "wire_tool_inputs": {
+     "toolu_01EWxmUfQfdTBHn47r1dWUFu": {
+      "query": "Zoho CRM API documentation OAuth v8"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JMxJzcRzdq8ZXFYuEz",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01CkG1tJFrwiX59eafWwgdfc",
+       "name": "WebSearch",
+       "input": {
+        "query": "Zoho CRM API rate limits pricing free edition access"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 819,
+      "cache_read_input_tokens": 14408,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 819
+      },
+      "output_tokens": 17,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "7dd35731-b019-470d-8399-03c55e30663a",
+    "timestamp": "2026-09-16T14:46:39.661Z",
+    "request_id": "req_011Cf7JMx65zPhKBzK5enpSY",
+    "wire_tool_inputs": {
+     "toolu_01CkG1tJFrwiX59eafWwgdfc": {
+      "query": "Zoho CRM API rate limits pricing free edition access"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.69,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "6c2d449c-4b35-46b8-8166-55945ea8084d",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.71,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "33acf91b-da4c-49ba-bd41-88c3b0c7fa64",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01EWxmUfQfdTBHn47r1dWUFu",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Zoho CRM API documentation OAuth v8\"\n\nLinks: [{\"title\":\"OAuth 2.0 Authentication | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html\"},{\"title\":\"GitHub - zoho/crm-oas: ZohoCRM API's OAS Files · GitHub\",\"url\":\"https://github.com/zoho/crm-oas\"},{\"title\":\"Authorization Request | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html\"},{\"title\":\"Zoho CRM API: Features, Limits & ZoomInfo [July 2026]\",\"url\":\"https://pipeline.zoominfo.com/sales/zoho-crm-api\"},{\"title\":\"Scopes | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/scopes.html\"},{\"title\":\"Zoho CRM API Integration Guide: OAuth 2.0, Use Cases & Step-by-Step Tutorial\",\"url\":\"https://www.getknit.dev/blog/zoho-crm-api-integration-guide-oauth-2-0-use-cases-step-by-step-tutorial\"},{\"title\":\"Zoho CRM API Tutorial: 7 Powerful Steps for OAuth, REST, Bulk and Webhooks (2026 Complete Guide)\",\"url\":\"https://codroiditlabs.com/zoho-crm-api-tutorial/\"},{\"title\":\"zoho/crm-oas | DeepWiki\",\"url\":\"https://deepwiki.com/zoho/crm-oas\"}]\n\nI found relevant documentation about Zoho CRM API v8 OAuth. Here are the key findings:\n\n## OAuth Overview\n\nThe Zoho CRM API uses the OAuth 2.0 protocol for authentication, which is an industry-standard protocol specification that enables third-party applications (clients) to gain delegated access to protected resources in Zoho via an API.\n\n## Key OAuth Resources\n\n**Official Documentation:**\n- Official reference at zoho.com/crm/developer/docs/api/v8/\n- OAuth Overview: https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html\n- Authorization Request: https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html\n- Scopes: https://www.zoho.com/crm/developer/docs/api/v8/scopes.html\n\n## Authentication Details\n\nThe Zoho CRM APIs use the authorization code grant type to provide access to protected resources. \n\nScopes limit the level of access given to a client for protected resources and enable a user to provide delegated access to a client. You can set specific permissions, like read, create, update or delete, for each module.\n\nAccess tokens are short-lived bearer tokens with 1 hour validity used in the Authorization header for every API call.\n\n## Additional Resources\n\nThe Zoho CRM OpenAPI Specification (OAS) v8.0 repository provides the OpenAPI Specification files for Zoho CRM APIs, enabling developers to seamlessly integrate Zoho CRM with their applications using standardized API definitions. You can access this at https://github.com/zoho/crm-oas\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "6074a0b8-9364-441c-9075-f5cf0fcdbe6c",
+    "timestamp": "2026-09-16T14:46:46.968Z",
+    "tool_use_result": {
+     "query": "Zoho CRM API documentation OAuth v8",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_019Bs9uGrHxwkTAJKRxJbfpk",
+       "content": [
+        {
+         "title": "OAuth 2.0 Authentication | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+        },
+        {
+         "title": "GitHub - zoho/crm-oas: ZohoCRM API's OAS Files · GitHub",
+         "url": "https://github.com/zoho/crm-oas"
+        },
+        {
+         "title": "Authorization Request | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html"
+        },
+        {
+         "title": "Zoho CRM API: Features, Limits & ZoomInfo [July 2026]",
+         "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api"
+        },
+        {
+         "title": "Scopes | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/scopes.html"
+        },
+        {
+         "title": "Zoho CRM API Integration Guide: OAuth 2.0, Use Cases & Step-by-Step Tutorial",
+         "url": "https://www.getknit.dev/blog/zoho-crm-api-integration-guide-oauth-2-0-use-cases-step-by-step-tutorial"
+        },
+        {
+         "title": "Zoho CRM API Tutorial: 7 Powerful Steps for OAuth, REST, Bulk and Webhooks (2026 Complete Guide)",
+         "url": "https://codroiditlabs.com/zoho-crm-api-tutorial/"
+        },
+        {
+         "title": "zoho/crm-oas | DeepWiki",
+         "url": "https://deepwiki.com/zoho/crm-oas"
+        }
+       ]
+      },
+      "I found relevant documentation about Zoho CRM API v8 OAuth. Here are the key findings:\n\n## OAuth Overview\n\nThe Zoho CRM API uses the OAuth 2.0 protocol for authentication, which is an industry-standard protocol specification that enables third-party applications (clients) to gain delegated access to protected resources in Zoho via an API.\n\n## Key OAuth Resources\n\n**Official Documentation:**\n- Official reference at zoho.com/crm/developer/docs/api/v8/\n- OAuth Overview: https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html\n- Authorization Request: https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html\n- Scopes: https://www.zoho.com/crm/developer/docs/api/v8/scopes.html\n\n## Authentication Details\n\nThe Zoho CRM APIs use the authorization code grant type to provide access to protected resources. \n\nScopes limit the level of access given to a client for protected resources and enable a user to provide delegated access to a client. You can set specific permissions, like read, create, update or delete, for each module.\n\nAccess tokens are short-lived bearer tokens with 1 hour validity used in the Authorization header for every API call.\n\n## Additional Resources\n\nThe Zoho CRM OpenAPI Specification (OAS) v8.0 repository provides the OpenAPI Specification files for Zoho CRM APIs, enabling developers to seamlessly integrate Zoho CRM with their applications using standardized API definitions. You can access this at https://github.com/zoho/crm-oas"
+     ],
+     "durationSeconds": 7.647228,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01CkG1tJFrwiX59eafWwgdfc",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Zoho CRM API rate limits pricing free edition access\"\n\nLinks: [{\"title\":\"Zoho CRM API: Features, Limits & ZoomInfo [July 2026]\",\"url\":\"https://pipeline.zoominfo.com/sales/zoho-crm-api\"},{\"title\":\"Zoho CRM Pricing and Editions - Free for 3 users\",\"url\":\"https://www.zoho.com/en-us/crm/zohocrm-pricing.html\"},{\"title\":\"Kaizen #34 - API Credits\",\"url\":\"https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits\"},{\"title\":\"Increase API Credits from the Dashboard | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html\"},{\"title\":\"Limits - API | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html\"},{\"title\":\"API Limits - Zoho CRM\",\"url\":\"https://www.zoho.com/developer/help/api/api-limits.html\"}]\n\nI've found information about Zoho CRM API rate limits, pricing, and free edition access. Here are the key findings:\n\n## Free Edition API Access\n\nZoho CRM bundles API access into every plan, including the Free Edition, which provides up to 3 users with 5,000 API credits per day. The free edition supports 5000 API calls/day.\n\n## Rate Limits\n\nThere are no per-minute or per-second rate limits; limits rest on the concurrent request count and the rolling daily credit pool. A sub-concurrency limit of 10 applies across all editions for compute-heavy operations including COQL queries, Convert Lead, bulk insert/update/upsert with more than 10 records, Send Mail, Search from a function, and Composite API calls.\n\n## Pricing and Add-on Credits\n\nOrganizations may purchase add-on credits to handle additional credit requirements, contactable at support@zohocrm.com. Pricing follows tiered tariff slabs, with $0.14 for the first 25,000 credits and $0.06 for the next 50,000 credits.\n\n## Credit Deduction\n\nEach API call made will result in a reduction of 1 credit, though for some APIs credit reduction would be different (for example, a \"Convert Lead API\" will reduce 5 credits for a single API call).\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "f9f3109e-46d2-4ff8-b95c-fea12ac54ebe",
+    "timestamp": "2026-09-16T14:46:47.423Z",
+    "tool_use_result": {
+     "query": "Zoho CRM API rate limits pricing free edition access",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_013LJ52dmLxvNfxZbG9rgQ9g",
+       "content": [
+        {
+         "title": "Zoho CRM API: Features, Limits & ZoomInfo [July 2026]",
+         "url": "https://pipeline.zoominfo.com/sales/zoho-crm-api"
+        },
+        {
+         "title": "Zoho CRM Pricing and Editions - Free for 3 users",
+         "url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+        },
+        {
+         "title": "Kaizen #34 - API Credits",
+         "url": "https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits"
+        },
+        {
+         "title": "Increase API Credits from the Dashboard | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html"
+        },
+        {
+         "title": "Limits - API | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+        },
+        {
+         "title": "API Limits - Zoho CRM",
+         "url": "https://www.zoho.com/developer/help/api/api-limits.html"
+        }
+       ]
+      },
+      "I've found information about Zoho CRM API rate limits, pricing, and free edition access. Here are the key findings:\n\n## Free Edition API Access\n\nZoho CRM bundles API access into every plan, including the Free Edition, which provides up to 3 users with 5,000 API credits per day. The free edition supports 5000 API calls/day.\n\n## Rate Limits\n\nThere are no per-minute or per-second rate limits; limits rest on the concurrent request count and the rolling daily credit pool. A sub-concurrency limit of 10 applies across all editions for compute-heavy operations including COQL queries, Convert Lead, bulk insert/update/upsert with more than 10 records, Send Mail, Search from a function, and Composite API calls.\n\n## Pricing and Add-on Credits\n\nOrganizations may purchase add-on credits to handle additional credit requirements, contactable at support@zohocrm.com. Pricing follows tiered tariff slabs, with $0.14 for the first 25,000 credits and $0.06 for the next 50,000 credits.\n\n## Credit Deduction\n\nEach API call made will result in a reduction of 1 credit, though for some APIs credit reduction would be different (for example, a \"Convert Lead API\" will reduce 5 credits for a single API call)."
+     ],
+     "durationSeconds": 7.758311900000001,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "ba96f7ec-5f29-45d0-90f3-0c455860b2eb"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 120,
+    "estimated_tokens_delta": 70,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "5eedce92-c4c3-40ed-8abb-5182aaed5900"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JNiMsnfb7XJu6AzDSq",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EtgDCqgBCBEYAipAbMQFV+apm8znlxl7H0txNOzDpUyvSnWkF5bJWwSQd0Hr1LWBKUeFFKnodFPyFXyRB0spMc1HlwT3JdodlDor3DIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAdzXqtUGsAECEgyYXQ3K66+ODW32GAQaDDpPDhijmM/q3+KK+CIwbpfxSo9ZMUTY8NBFsZ74Bz0cqxdgvVDqMrtxLo/tDdeFOUVCTn518qlIWDN7OeiSKtwBJb5Qcb80Ss47hBbYNuqgJ2WeUlXFxJ/42pafIm+DJ1Jqi/ewQYATB0ar2my9v64MVOcgkL01ZY0IrLeUXeIuggDOgkQyRxrbfMnsV43Y3sXbcZmaApP8UZvPS0cadEbajlVNEHY0VWmGootHSa1yf/gdxFDXzgdsH/nH97D+YJKX/LGc/1ERZO0LwZod7FGyK8/PfE8s7rBuQNJnlfWhnxZDLat1QGE1ErZHxL/atj1RI1tVfppGKJLk2MqRR4D3b4r+qd6PAGO7fNpgoh04ysAxO7EDetJuJ0kt4RgB"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2225,
+      "cache_read_input_tokens": 15227,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2225
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "195122c6-0488-4db8-9c3d-b5c3efd7e8c9",
+    "timestamp": "2026-09-16T14:46:50.562Z",
+    "request_id": "req_011Cf7JNhrrkifAsL2Qh9aR7"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JNiMsnfb7XJu6AzDSq",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_014nZy8T14iZA18CWbj6P7oK",
+       "name": "WebSearch",
+       "input": {
+        "query": "Zoho CRM MCP server official"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2225,
+      "cache_read_input_tokens": 15227,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2225
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "0c723e2d-b22d-4262-8823-ae30074dbd5a",
+    "timestamp": "2026-09-16T14:46:50.706Z",
+    "request_id": "req_011Cf7JNhrrkifAsL2Qh9aR7",
+    "wire_tool_inputs": {
+     "toolu_014nZy8T14iZA18CWbj6P7oK": {
+      "query": "Zoho CRM MCP server official"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JNiMsnfb7XJu6AzDSq",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01FCLTqQW4e2kFNT8agK15oe",
+       "name": "WebSearch",
+       "input": {
+        "query": "Zoho CRM API base URL data center zohoapis.com .eu .in .com.au"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2225,
+      "cache_read_input_tokens": 15227,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2225
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "320d72e6-3822-4191-ba03-5f7f2d8c7883",
+    "timestamp": "2026-09-16T14:46:51.155Z",
+    "request_id": "req_011Cf7JNhrrkifAsL2Qh9aR7",
+    "wire_tool_inputs": {
+     "toolu_01FCLTqQW4e2kFNT8agK15oe": {
+      "query": "Zoho CRM API base URL data center zohoapis.com .eu .in .com.au"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.72,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "0946e7ae-8107-411d-bb2b-8a31f86d718d",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.73,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "3e89376c-3cae-4754-995b-6f6c6366a85f",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01FCLTqQW4e2kFNT8agK15oe",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Zoho CRM API base URL data center zohoapis.com .eu .in .com.au\"\n\nLinks: [{\"title\":\"Multi DC Support | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html\"},{\"title\":\"Configuration - Zoho CRM API - Read the Docs\",\"url\":\"https://zoho-crm-api.readthedocs.io/en/latest/configuration/\"},{\"title\":\"Data Centers vs Base URI Structure\",\"url\":\"https://www.zoho.com/contracts/api/understanding-the-basics/data-centers-vs-base-uri-structure.html\"},{\"title\":\"Zoho Commerce | API Documentation | Multiple Data Centers\",\"url\":\"https://www.zoho.com/commerce/api/multiple-data-centers.html\"},{\"title\":\"How to Find and Use Your Zoho API Token (OAuth) for Zoho CRM\",\"url\":\"https://www.leadcrm.io/blog/zoho-api-key/\"},{\"title\":\"Zoho CRM API: OAuth, Endpoints, Integration Guide 2026\",\"url\":\"https://aiproductivity.ai/guides/zoho-crm-api-developer-guide/\"},{\"title\":\"zoho/crm-oas | DeepWiki\",\"url\":\"https://deepwiki.com/zoho/crm-oas\"},{\"title\":\"Complete Zoho API Guide: From Setup to Integrations\",\"url\":\"https://smart-webtech.com/guide/zoho-api-setup-to-integrations/\"},{\"title\":\"Domain-specific API URLs\",\"url\":\"https://www.zoho.com/bookings/help/api/v1/domain-specificapiurls.html\"},{\"title\":\"Data Centers\",\"url\":\"https://www.zoho.com/campaigns/help/developers/data-centers.html\"}]\n\nBased on the search results, here's the information about Zoho CRM API base URLs for different data centers:\n\n## Regional API Base URLs\n\nThe standard endpoints are zohoapis.com (US), zohoapis.eu (EU), zohoapis.in (India), zohoapis.com.au (Australia), zohoapis.com.cn (China), zohoapis.jp (Japan), and zohoapis.ca (Canada).\n\n## Base URL Pattern\n\nAll endpoints use the template https://zohoapis.{dc}/crm/{version}, where `{dc}` is the data center code and `{version}` is the API version (such as v6, v7, or v8).\n\n## Key Points\n\n- The API domain URL varies for each data center.\n- By default, the ZohoCRMRestClient connects to the https://www.zohoapis.com data center.\n- Use your region's Zoho Accounts base URL consistently for the authorize and token endpoints; mixing DCs leads to errors.\n\nFor example, to access the EU data center, you would use `https://www.zohoapis.eu/crm/v8/` instead of the US endpoint.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "5f037251-48f1-4b8d-b0ba-2abefae6e6e6",
+    "timestamp": "2026-09-16T14:46:57.110Z",
+    "tool_use_result": {
+     "query": "Zoho CRM API base URL data center zohoapis.com .eu .in .com.au",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01K8HNx4pXikKoheMsTNjank",
+       "content": [
+        {
+         "title": "Multi DC Support | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html"
+        },
+        {
+         "title": "Configuration - Zoho CRM API - Read the Docs",
+         "url": "https://zoho-crm-api.readthedocs.io/en/latest/configuration/"
+        },
+        {
+         "title": "Data Centers vs Base URI Structure",
+         "url": "https://www.zoho.com/contracts/api/understanding-the-basics/data-centers-vs-base-uri-structure.html"
+        },
+        {
+         "title": "Zoho Commerce | API Documentation | Multiple Data Centers",
+         "url": "https://www.zoho.com/commerce/api/multiple-data-centers.html"
+        },
+        {
+         "title": "How to Find and Use Your Zoho API Token (OAuth) for Zoho CRM",
+         "url": "https://www.leadcrm.io/blog/zoho-api-key/"
+        },
+        {
+         "title": "Zoho CRM API: OAuth, Endpoints, Integration Guide 2026",
+         "url": "https://aiproductivity.ai/guides/zoho-crm-api-developer-guide/"
+        },
+        {
+         "title": "zoho/crm-oas | DeepWiki",
+         "url": "https://deepwiki.com/zoho/crm-oas"
+        },
+        {
+         "title": "Complete Zoho API Guide: From Setup to Integrations",
+         "url": "https://smart-webtech.com/guide/zoho-api-setup-to-integrations/"
+        },
+        {
+         "title": "Domain-specific API URLs",
+         "url": "https://www.zoho.com/bookings/help/api/v1/domain-specificapiurls.html"
+        },
+        {
+         "title": "Data Centers",
+         "url": "https://www.zoho.com/campaigns/help/developers/data-centers.html"
+        }
+       ]
+      },
+      "Based on the search results, here's the information about Zoho CRM API base URLs for different data centers:\n\n## Regional API Base URLs\n\nThe standard endpoints are zohoapis.com (US), zohoapis.eu (EU), zohoapis.in (India), zohoapis.com.au (Australia), zohoapis.com.cn (China), zohoapis.jp (Japan), and zohoapis.ca (Canada).\n\n## Base URL Pattern\n\nAll endpoints use the template https://zohoapis.{dc}/crm/{version}, where `{dc}` is the data center code and `{version}` is the API version (such as v6, v7, or v8).\n\n## Key Points\n\n- The API domain URL varies for each data center.\n- By default, the ZohoCRMRestClient connects to the https://www.zohoapis.com data center.\n- Use your region's Zoho Accounts base URL consistently for the authorize and token endpoints; mixing DCs leads to errors.\n\nFor example, to access the EU data center, you would use `https://www.zohoapis.eu/crm/v8/` instead of the US endpoint."
+     ],
+     "durationSeconds": 5.951396300000001,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_014nZy8T14iZA18CWbj6P7oK",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Zoho CRM MCP server official\"\n\nLinks: [{\"title\":\"GitHub - junnaisystems/Zoho-CRM-MCP: A comprehensive Model Context Protocol server for Zoho CRM integration - Built by Jennifer Ugo of JunnAI · GitHub\",\"url\":\"https://github.com/junnaisystems/zoho-crm-mcp\"},{\"title\":\"Zoho CRM MCP: How It Works & Alternatives\",\"url\":\"https://www.folk.app/articles/zoho-crm-mcp\"},{\"title\":\"GitHub - CDataSoftware/zoho-crm-mcp-server-by-cdata: This read-only MCP Server allows you to connect to Zoho CRM data from Claude Desktop through CData JDBC Drivers. For full CRUD support, check out the first managed MCP platform: CData Connect AI (https://www.cdata.com/ai/). · GitHub\",\"url\":\"https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata\"},{\"title\":\"Knit - MCP Servers Zoho CRM\",\"url\":\"https://www.getknit.dev/mcp-servers/zoho-crm-mcp-server\"},{\"title\":\"MCP for Zoho CRM: AI Agent Servers for Secure CRM Access\",\"url\":\"https://www.zoho.com/crm/developer/mcp.html\"},{\"title\":\"Zoho CRM with Built-In MCP Support\",\"url\":\"https://help.zoho.com/portal/zh/community/topic/zoho-crm-with-built-in-mcp-support\"},{\"title\":\"Best Zoho MCP Servers\",\"url\":\"https://glama.ai/mcp/servers/integrations/zoho\"},{\"title\":\"Zoho CRM MCP Server\",\"url\":\"https://glama.ai/mcp/servers/whiteside-daniel/zohocrm-mcpserver/schema\"}]\n\nBased on the search results, here's what I found about the Zoho CRM MCP server:\n\n## Official Zoho CRM MCP Server\n\nZoho offers four composable MCP servers that give AI agents secure, scoped access to Zoho CRM. Zoho CRM now provides built-in support for Model Context Protocol (MCP), enabling AI tools to connect and perform CRM actions using natural language.\n\n### Key Features\n\nZoho CRM MCP servers act as a bridge between AI agents and Zoho CRM, exposing CRM capabilities as callable tools, allowing AI agents to interpret user prompts, map them to the right CRM actions, and execute them within the context of your CRM account.\n\n### Available Servers\n\nThe Zoho CRM MCP servers are available as pre-built servers designed to cover key CRM capabilities, with currently five servers available, each focused on a specific area of CRM functionality. One example is the Data Insights server, which offers read-only access to query and analyze CRM data, search records, monitor pipelines, and identify trends.\n\n### Access and Setup\n\nNo code is required for basic use—just pick your servers, authenticate, and start prompting. You can add the config into any MCP compatible client such as Cursor, Claude Desktop, VS Code, or Windsurf.\n\nThe official Zoho CRM MCP servers are available at https://www.zoho.com/crm/developer/mcp.html.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "9b2f696e-e503-451f-8c44-77dbd782e2c7",
+    "timestamp": "2026-09-16T14:46:57.915Z",
+    "tool_use_result": {
+     "query": "Zoho CRM MCP server official",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01W7aumL2FXt6TsJQuGaWdUR",
+       "content": [
+        {
+         "title": "GitHub - junnaisystems/Zoho-CRM-MCP: A comprehensive Model Context Protocol server for Zoho CRM integration - Built by Jennifer Ugo of JunnAI · GitHub",
+         "url": "https://github.com/junnaisystems/zoho-crm-mcp"
+        },
+        {
+         "title": "Zoho CRM MCP: How It Works & Alternatives",
+         "url": "https://www.folk.app/articles/zoho-crm-mcp"
+        },
+        {
+         "title": "GitHub - CDataSoftware/zoho-crm-mcp-server-by-cdata: This read-only MCP Server allows you to connect to Zoho CRM data from Claude Desktop through CData JDBC Drivers. For full CRUD support, check out the first managed MCP platform: CData Connect AI (https://www.cdata.com/ai/). · GitHub",
+         "url": "https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata"
+        },
+        {
+         "title": "Knit - MCP Servers Zoho CRM",
+         "url": "https://www.getknit.dev/mcp-servers/zoho-crm-mcp-server"
+        },
+        {
+         "title": "MCP for Zoho CRM: AI Agent Servers for Secure CRM Access",
+         "url": "https://www.zoho.com/crm/developer/mcp.html"
+        },
+        {
+         "title": "Zoho CRM with Built-In MCP Support",
+         "url": "https://help.zoho.com/portal/zh/community/topic/zoho-crm-with-built-in-mcp-support"
+        },
+        {
+         "title": "Best Zoho MCP Servers",
+         "url": "https://glama.ai/mcp/servers/integrations/zoho"
+        },
+        {
+         "title": "Zoho CRM MCP Server",
+         "url": "https://glama.ai/mcp/servers/whiteside-daniel/zohocrm-mcpserver/schema"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about the Zoho CRM MCP server:\n\n## Official Zoho CRM MCP Server\n\nZoho offers four composable MCP servers that give AI agents secure, scoped access to Zoho CRM. Zoho CRM now provides built-in support for Model Context Protocol (MCP), enabling AI tools to connect and perform CRM actions using natural language.\n\n### Key Features\n\nZoho CRM MCP servers act as a bridge between AI agents and Zoho CRM, exposing CRM capabilities as callable tools, allowing AI agents to interpret user prompts, map them to the right CRM actions, and execute them within the context of your CRM account.\n\n### Available Servers\n\nThe Zoho CRM MCP servers are available as pre-built servers designed to cover key CRM capabilities, with currently five servers available, each focused on a specific area of CRM functionality. One example is the Data Insights server, which offers read-only access to query and analyze CRM data, search records, monitor pipelines, and identify trends.\n\n### Access and Setup\n\nNo code is required for basic use—just pick your servers, authenticate, and start prompting. You can add the config into any MCP compatible client such as Cursor, Claude Desktop, VS Code, or Windsurf.\n\nThe official Zoho CRM MCP servers are available at https://www.zoho.com/crm/developer/mcp.html."
+     ],
+     "durationSeconds": 7.204285700000001,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "8ef62672-bfed-4e9e-8692-6c04c15b4dec"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 100,
+    "estimated_tokens_delta": 50,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "39ed66be-5a0e-44ad-a579-a440220cca59"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 250,
+    "estimated_tokens_delta": 150,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "cba02f11-dffa-4781-ba4b-b8fd5d5f7bc5"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 350,
+    "estimated_tokens_delta": 100,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "30d631be-9993-4f4e-8d34-6ec34a7d3ca5"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 500,
+    "estimated_tokens_delta": 150,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "450e6ec3-3dbc-44af-8d88-4d156d6dd61c"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JPVGqxyhPbSL7Sod5k",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EowOCqgBCBEYAipAaoOGBYhecBelW89VpFqkfg09LeQK7ndKNrfUBPY1UH3xBMgNudo4KDCOJttxvJubRg6vCMpzQjPOZr8ZjEX2kTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAevXqtUGsAECEgza9DDt6mktqf1HyFQaDImTvPISIHGEKV6MrCIw4kaON3Ea6RfHJeXAzM7IVjKDhmF64gbKrFjINynNLpP4rIcqI5NRGHF7WgPXu7n6KpAMqHAbSLRJ2wR3JcBDpvzpi1LsW9kCOjMa/amG1/v2yoD61LbRtwDqP9BIxSqEdMD+Pc+EYZh/Neo5rmNGsN7t6kUcF5jiIbEe58OY5U7uEk1Nd1R1ABiJMyOcHfbXeeYkgXtMUw0aUpWDuZoSFAVwAAceYOLkUZ0WPAYTaWDpn37rrdTLDuePr1r137oCA0LJ9o2tDvToUZS6aGjnqHAr5dqGtdeO2HKsy6h1r0fXrFE0PnXCTjHBaK8Y+lUR0pdz21G+ejayNSYFwJj6jLCPUBw7tkamK9rFHWoruS+3LG49F6jvEYKVGVuSVQQRalFKijc1hBljQp05XecAvA2Yd5MKZEk6ectpDo4zg65OT7TXLPkyjrMDPdR89MMNnJPTJOtZ2eTLtVJF+FXKhFZOAEGXyWX5PD9xlwL9cgr9Y6htJmhF2PEi19zL1Jb6LgeOvPKqTsGSOxztuof0P//VeWiM0usu1Lo0SkW52GZqy+tu6Pil8Lclo9LecHk/oZ+K/y6gZDzg6WjmKgB6QdeM4IzOGxMR0Zo0tFBIuTfwhdXv2YGg5OTkomzEglVsFNCEA3z6b5mEANSYpgKVIvpiGuHqtzlUS/MHzCNhzp3BNbRH1frXTfiVCDeBzJMrVTxTACCof8AvYqnQREoTPmgH1ytW8Uk0GLn2zKJsBjlE+gZl54AjAx/AkpJQJqJ60gEzkjBNAtGgo9TAd0GebwUATfXgG9tBpCwT90cpM4IEn4GfsvmPbhFgX8MQRZaMNbxbz42cf7KqFJdqbkw+0eJBpXZp+taeiRnJ42yJpoV7jmiXzmdK53vc/anJgjKmaT2/euFf3Z3PnIUT0bhz/P9H82Jm4t9BczLTpTJM1KpSkFHoiW3i4/0SF+njDl6Ulp2EGpyc5U030Rw+Psv5EUJdJQHBejQYIvFJObxmxGUkF4vBpFglho/7vuXh66ADOoN/e70JeHaJTFq9UgMSiJ64MWOqf7aY4IpErIbJX2ySFMK9CDVFNCuOdFyJAnP1W70P9fScUseeUyfYJCj7j/8r1VuJqK2Ay64zHqpPCs+d5nSFIromqmzsvFdyoBNWZPQIfX9MAj6tD/5a8B4nu1xp7ZuxfqJrO6T+ah2E+sn4P7Inag9+pb9Yykhmlsnc/XGAzq8Y0fisWAzbdw0UjB3RJNToYAUIXrXbtg8HsPRvHbKKooYzhHfuEosU3CF0Nhk06vxPLqQuPuzKmfx694Zn9NzHH+fwOQmBTsUnrUAlEl8ywq4Gq/OOp8KUWy6oV4VdD+u6mXjveSdy79/Ac8ogJ/PQqzb8wfa0AuMmluahoUnAyNdD7NnFyLHmV1prIM5on012GZQTlolQu3pZ+310/IErQXw5jWOz3a53oV77ynGA5eLDnYFnXgfb/I3dS4jYbsfClpe7MKSlhstmjDbWPLQLLC6bdX0hja1jAPRTgQKIDA8c70MSQWmo9ML90Jn9a3Iq1tzu+dKH42B9OCTdVkY2mnusIKjyg/ubQ6oAz+g8GmAg+CRiTe4tBsJ1gC2I1L9MlGeulqsn1CvsMdpPRxqdlk/77xZUgvoAamZKtaN9LHAFfj8Agdk8IeqOeNFIxEcYSBoYMv0PKTL+rq4qRs6YDJE2SBN586gWz5p+4nmWBuf1hKzy+FLGmK8d45Pm+Zrm+mr8gHNyVSgnksqvS/dhIAM4cBjEemBNzBs3/iGoAZ/belwkRyJ6aI1q5doRNtmC+wRPIh9V38d5lzsGzYqbp2uYjmePqMVl9qUn8cGauCKP57/sO4KLOfS2uWqwo3JnhTY72Zl1emBwcU8wWuWrrwJRtD9Hys6hIIaC5KhCMkbK8gcCQw6iFGkFVWYttVvjOaV4Nf8NQrp6321SpZDtZRmw2BKZmYiU4yTYncllK7JHqnc/CwAK2/bB0NsH93U3olEGB3bPSxgaRykVYPiVYNCx9SRemBGXcxCW4fehrJ5vvrqPyGA4frzJAjVslHwk26ELVtynxONfhnwuNMUMEhIVb09BFJPLH2Yc8xHbcXsMviAt9pzwoeMEjxwmaGShGNQeD+GX1ggJkRfJRRgB"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2468,
+      "cache_read_input_tokens": 17452,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2468
+      },
+      "output_tokens": 6,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "dfeabdfc-053f-4b26-9de2-f2e51ca11a6c",
+    "timestamp": "2026-09-16T14:47:05.888Z",
+    "request_id": "req_011Cf7JPUnKkLs1r8F6Hqapu"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JPVGqxyhPbSL7Sod5k",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_018GLpSXWDsYUL5MmE2ce4uL",
+       "name": "WebSearch",
+       "input": {
+        "query": "Zoho CRM API v8 developer documentation overview modules reference"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2468,
+      "cache_read_input_tokens": 17452,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2468
+      },
+      "output_tokens": 6,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "c8efe41c-76a1-4e33-8ce1-1cdb7911c97b",
+    "timestamp": "2026-09-16T14:47:06.206Z",
+    "request_id": "req_011Cf7JPUnKkLs1r8F6Hqapu",
+    "wire_tool_inputs": {
+     "toolu_018GLpSXWDsYUL5MmE2ce4uL": {
+      "query": "Zoho CRM API v8 developer documentation overview modules reference"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.74,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "177cc990-2a5d-4a36-af8a-76768693e0d3",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_018GLpSXWDsYUL5MmE2ce4uL",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Zoho CRM API v8 developer documentation overview modules reference\"\n\nLinks: [{\"title\":\"APIs and References | Zoho CRM V8 APIs\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},{\"title\":\"What's New in V8? | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/whats-new.html\"},{\"title\":\"Get Modules API | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html\"},{\"title\":\"Zoho CRM V8 APIs\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/\"},{\"title\":\"Module Metadata - API | Zoho CRM API | V8\",\"url\":\"https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html\"},{\"title\":\"Zoho Platform API | Developer Help - Zoho CRM\",\"url\":\"https://www.zoho.com/developer/help/api/getmodules.html\"},{\"title\":\"Developer Resources | Zoho CRM\",\"url\":\"https://www.zoho.com/crm/developer/docs/\"}]\n\nBased on the web search results, here's an overview of the Zoho CRM API v8 developer documentation:\n\n## Overview\n\nThe APIs and References page acts as a comprehensive table of contents for all Zoho CRM APIs, allowing you to find all APIs in one location for easier navigation and reference.\n\n## Key Capabilities\n\nYou can fetch the metadata of modules, fields, layouts, custom views, and related lists, and perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.\n\n## Modules Reference\n\nThe Modules API documentation covers several key operations:\n\n- Get Modules - Retrieve the list of all the modules available in your CRM account.\n- Get a Specific Module - Get the metadata for a specific module.\n- Create a Custom Module - Create a new custom module in Zoho CRM.\n- Update a Custom Module - Update a custom module in Zoho CRM.\n\n## Fields and Metadata Operations\n\nThe API also allows you to:\n\n- Get Fields - Get the metadata of fields of a module such as the labels, API name, data type etc.\n- Create Custom Fields - Create custom fields in a module.\n- Update Custom Fields - Update custom fields in a module.\n- Delete a Custom Field - Delete a custom field from a module.\n\n## Recent Enhancements\n\nZoho introduced OpenAPI Specification (OAS) 3.0.0, a standardized format that provides a structured and user-friendly way to explore Zoho CRM APIs with OAS files.\n\nFor the complete documentation, you can visit the official Zoho CRM API v8 documentation at: https://www.zoho.com/crm/developer/docs/api/v8/\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "f8dc8e90-0fbb-404d-b1a1-5564d755f212",
+    "timestamp": "2026-09-16T14:47:13.990Z",
+    "tool_use_result": {
+     "query": "Zoho CRM API v8 developer documentation overview modules reference",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_019ukYvq6mDkfLviydoeBouu",
+       "content": [
+        {
+         "title": "APIs and References | Zoho CRM V8 APIs",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+        },
+        {
+         "title": "What's New in V8? | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/whats-new.html"
+        },
+        {
+         "title": "Get Modules API | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html"
+        },
+        {
+         "title": "Zoho CRM V8 APIs",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+        },
+        {
+         "title": "Module Metadata - API | Zoho CRM API | V8",
+         "url": "https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html"
+        },
+        {
+         "title": "Zoho Platform API | Developer Help - Zoho CRM",
+         "url": "https://www.zoho.com/developer/help/api/getmodules.html"
+        },
+        {
+         "title": "Developer Resources | Zoho CRM",
+         "url": "https://www.zoho.com/crm/developer/docs/"
+        }
+       ]
+      },
+      "Based on the web search results, here's an overview of the Zoho CRM API v8 developer documentation:\n\n## Overview\n\nThe APIs and References page acts as a comprehensive table of contents for all Zoho CRM APIs, allowing you to find all APIs in one location for easier navigation and reference.\n\n## Key Capabilities\n\nYou can fetch the metadata of modules, fields, layouts, custom views, and related lists, and perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.\n\n## Modules Reference\n\nThe Modules API documentation covers several key operations:\n\n- Get Modules - Retrieve the list of all the modules available in your CRM account.\n- Get a Specific Module - Get the metadata for a specific module.\n- Create a Custom Module - Create a new custom module in Zoho CRM.\n- Update a Custom Module - Update a custom module in Zoho CRM.\n\n## Fields and Metadata Operations\n\nThe API also allows you to:\n\n- Get Fields - Get the metadata of fields of a module such as the labels, API name, data type etc.\n- Create Custom Fields - Create custom fields in a module.\n- Update Custom Fields - Update custom fields in a module.\n- Delete a Custom Field - Delete a custom field from a module.\n\n## Recent Enhancements\n\nZoho introduced OpenAPI Specification (OAS) 3.0.0, a standardized format that provides a structured and user-friendly way to explore Zoho CRM APIs with OAS files.\n\nFor the complete documentation, you can visit the official Zoho CRM API v8 documentation at: https://www.zoho.com/crm/developer/docs/api/v8/"
+     ],
+     "durationSeconds": 7.780660000000004,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JQft79hFR4Vjn4XUim",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text",
+       "text": "```json\n{\n  \"one_liner\": {\"value\": \"Cloud CRM for managing leads, contacts, deals, and sales pipelines.\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/\"},\n  \"auth_methods\": {\"value\": [\"oauth2\"], \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html\"},\n  \"access_path\": {\"value\": \"self_serve_free\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/mcp.html\"},\n  \"base_url_model\": {\"value\": \"regional\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"med\", \"source_url\": \"https://www.zoho.com/en-us/crm/zohocrm-pricing.html\"},\n  \"main_blocker\": {\"value\": \"none - free edition includes 5,000 API credits/day with self-serve OAuth2 client registration.\", \"confidence\": \"med\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html\"},\n  \"docs_url\": {\"value\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"}\n}\n```"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1691,
+      "cache_read_input_tokens": 19920,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1691
+      },
+      "output_tokens": 1,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "uuid": "0d2d8c52-6e19-4867-bd91-83f083ad991e",
+    "timestamp": "2026-09-16T14:47:21.183Z",
+    "request_id": "req_011Cf7JQfPq37qmtZ7DAfN3Z"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.76,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "f5676446-9bd2-4202-bec1-f578d15f1209",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24"
+   },
+   {
+    "duration_api_ms": 61488,
+    "stop_reason": "end_turn",
+    "session_id": "893e5157-16f4-4a03-8d9b-a534c576db24",
+    "total_cost_usd": 0.19081979999999998,
+    "usage": {
+     "input_tokens": 10,
+     "cache_creation_input_tokens": 9304,
+     "cache_read_input_tokens": 79314,
+     "output_tokens": 1925,
+     "output_tokens_details": {
+      "thinking_tokens": 657
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9304,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 853,
+       "cache_read_input_tokens": 19920,
+       "cache_creation_input_tokens": 1691,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1691
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "modelUsage": {
+     "claude-haiku-4-5-20251001": {
+      "inputTokens": 55611,
+      "outputTokens": 2572,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 5,
+      "costUSD": 0.11847099999999999,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     },
+     "claude-sonnet-5": {
+      "inputTokens": 10,
+      "outputTokens": 1925,
+      "cacheReadInputTokens": 79314,
+      "cacheCreationInputTokens": 9304,
+      "webSearchRequests": 0,
+      "costUSD": 0.07234879999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 657,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+     "spawned": 0,
+     "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+     },
+     "started_in_background": 0,
+     "max_depth": 0,
+     "spawned_by_subagents": 0,
+     "completed": 0,
+     "failed": 0,
+     "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+     },
+     "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+     },
+     "by_type": {}
+    },
+    "is_error": false,
+    "num_turns": 7,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "```json\n{\n  \"one_liner\": {\"value\": \"Cloud CRM for managing leads, contacts, deals, and sales pipelines.\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/\"},\n  \"auth_methods\": {\"value\": [\"oauth2\"], \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html\"},\n  \"access_path\": {\"value\": \"self_serve_free\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/mcp.html\"},\n  \"base_url_model\": {\"value\": \"regional\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"med\", \"source_url\": \"https://www.zoho.com/en-us/crm/zohocrm-pricing.html\"},\n  \"main_blocker\": {\"value\": \"none - free edition includes 5,000 API credits/day with self-serve OAuth2 client registration.\", \"confidence\": \"med\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html\"},\n  \"docs_url\": {\"value\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\", \"confidence\": \"high\", \"source_url\": \"https://www.zoho.com/crm/developer/docs/api/v8/api-references.html\"}\n}\n```",
+    "ttft_ms": 2360,
+    "type": "result",
+    "duration_ms": 46381,
+    "uuid": "1d70619a-8a8f-417f-9165-d07fb0a33cf4",
+    "ttft_stream_ms": 1769,
+    "time_to_request_ms": 66,
+    "first_content_frame_ms": 1769,
+    "queued_turn_count": 0,
+    "result_index": 0
+   }
+  ],
+  "backend": "claude_cli",
+  "model": "sonnet"
+ }
+}

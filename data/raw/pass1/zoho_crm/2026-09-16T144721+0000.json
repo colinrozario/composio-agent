@@ -1,0 +1,114 @@
+{
+ "id": 7,
+ "slug": "zoho_crm",
+ "name": "Zoho CRM",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:47:21+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud CRM for managing leads, contacts, deals, and sales pipelines.",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+  },
+  "main_blocker": {
+   "value": "none - free edition includes 5,000 API credits/day with self-serve OAuth2 client registration.",
+   "confidence": "med",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+  },
+  "docs_url": {
+   "value": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aiproductivity.ai/guides/zoho-crm-api-developer-guide/",
+  "https://codroiditlabs.com/zoho-crm-api-tutorial/",
+  "https://deepwiki.com/zoho/crm-oas",
+  "https://github.com/CDataSoftware/zoho-crm-mcp-server-by-cdata",
+  "https://github.com/junnaisystems/zoho-crm-mcp",
+  "https://github.com/zoho/crm-oas",
+  "https://glama.ai/mcp/servers/integrations/zoho",
+  "https://glama.ai/mcp/servers/whiteside-daniel/zohocrm-mcpserver/schema",
+  "https://help.zoho.com/portal/en/community/topic/kaizen-34-api-credits",
+  "https://help.zoho.com/portal/zh/community/topic/zoho-crm-with-built-in-mcp-support",
+  "https://pipeline.zoominfo.com/sales/zoho-crm-api",
+  "https://smart-webtech.com/guide/zoho-api-setup-to-integrations/",
+  "https://www.folk.app/articles/zoho-crm-mcp",
+  "https://www.getknit.dev/blog/zoho-crm-api-integration-guide-oauth-2-0-use-cases-step-by-step-tutorial",
+  "https://www.getknit.dev/mcp-servers/zoho-crm-mcp-server",
+  "https://www.leadcrm.io/blog/zoho-api-key/",
+  "https://www.zoho.com/bookings/help/api/v1/domain-specificapiurls.html",
+  "https://www.zoho.com/campaigns/help/developers/data-centers.html",
+  "https://www.zoho.com/commerce/api/multiple-data-centers.html",
+  "https://www.zoho.com/contracts/api/understanding-the-basics/data-centers-vs-base-uri-structure.html",
+  "https://www.zoho.com/crm/developer/docs/",
+  "https://www.zoho.com/crm/developer/docs/api/v8/",
+  "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/module-meta.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/modules-api.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/multi-dc.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/scopes.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/whats-new.html",
+  "https://www.zoho.com/crm/developer/mcp.html",
+  "https://www.zoho.com/developer/help/api/api-limits.html",
+  "https://www.zoho.com/developer/help/api/getmodules.html",
+  "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+  "https://zoho-crm-api.readthedocs.io/en/latest/configuration/"
+ ],
+ "backend": "claude_cli"
+}

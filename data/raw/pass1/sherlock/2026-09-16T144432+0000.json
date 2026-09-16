@@ -1,0 +1,106 @@
+{
+ "id": 58,
+ "slug": "sherlock",
+ "name": "Sherlock",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:44:32+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Open-source CLI tool to find usernames across 400+ social networks (OSINT)",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "auth_methods": {
+   "value": [
+    "none"
+   ],
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "access_path": {
+   "value": "not_applicable_local",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_type": {
+   "value": "cli_only",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_breadth": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://github.com/Burnsedia/sherlock-mcp"
+  },
+  "base_url_model": {
+   "value": "not_applicable",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "toolkit_bucket": {
+   "value": "local_or_sandbox_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_quality": {
+   "value": "partial_or_thin",
+   "confidence": "med",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "main_blocker": {
+   "value": "Sherlock is a local Python CLI tool with no vendor-hosted API; an experimental sherlock-project/api existed but is unmaintained since 2021, so there is no official hosted API to build a remote toolkit against.",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_url": {
+   "value": "https://github.com/sherlock-project/sherlock",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "auth_methods",
+  "access_path",
+  "api_type",
+  "api_breadth",
+  "base_url_model",
+  "toolkit_bucket",
+  "docs_quality",
+  "test_account",
+  "main_blocker",
+  "docs_url"
+ ],
+ "search_urls": [
+  "https://apify.com/futurizerush/sherlock/api/mcp",
+  "https://apify.com/misceres/sherlock",
+  "https://bellingcat.gitbook.io/toolkit/more/all-tools/sherlock",
+  "https://github.com/Burnsedia/sherlock-mcp",
+  "https://github.com/NuroDev/sherlock",
+  "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+  "https://github.com/modulexcite/sherlock-1",
+  "https://github.com/p27ZuH6CNAdzr/dotnet-sherlock-mcp",
+  "https://github.com/phillipxkang/sherlock",
+  "https://github.com/sherlock-project",
+  "https://github.com/sherlock-project/sherlock/discussions/2270",
+  "https://glama.ai/mcp/servers/Burnsedia/sherlock-mcp",
+  "https://glama.ai/mcp/servers/H4RR1SON/sherlock-mcp",
+  "https://langdb.ai/app/mcp-servers/sherlock-domains-mcp-f7e92b15-118f-47b3-ab09-b2903c232d02/",
+  "https://mcp.so/servers/sherlock-mcp",
+  "https://mcpservers.org/servers/jcucci/dotnet-sherlock-mcp",
+  "https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f",
+  "https://twistedcircuits.substack.com/p/sherlock-the-osint-tool-to-discover"
+ ]
+}

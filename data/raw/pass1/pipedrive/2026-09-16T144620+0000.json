@@ -1,0 +1,125 @@
+{
+ "id": 3,
+ "slug": "pipedrive",
+ "name": "Pipedrive",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:46:20+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud CRM for managing sales pipelines, deals, contacts, and activities.",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "med",
+   "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.pipedrive.com/en/features/mcp-server"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/how-to-get-the-company-domain"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+  },
+  "main_blocker": {
+   "value": "none for API-token/private-app use; public OAuth apps distributed via the Marketplace require Pipedrive's app review before production scopes go live.",
+   "confidence": "med",
+   "source_url": "https://pipedrive.readme.io/docs/marketplace-app-approval-process"
+  },
+  "docs_url": {
+   "value": "https://developers.pipedrive.com/docs/api/v1",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/pipedrive",
+  "https://blog.coupler.io/pipedrive-api-guide/",
+  "https://community.pipedrive.com/discussion/11170/sandbox-for-testing-existing-account",
+  "https://composio.dev/auth/pipedrive",
+  "https://devcommunity.pipedrive.com/t/clarification-on-marketplace-app-approval/3018",
+  "https://devcommunity.pipedrive.com/t/oauth-authorization-step-4-and-step-5-getting-the-tokens/7821",
+  "https://devcommunity.pipedrive.com/t/open-source-pipedrive-mcp-server-155-tools-v2-first-mit/20392",
+  "https://devcommunity.pipedrive.com/t/pipedrive-mcp-server/20195",
+  "https://devcommunity.pipedrive.com/t/queries-around-api-authentication-current-baseurl-tokens/5662",
+  "https://devcommunity.pipedrive.com/t/sandbox-developer-accounts/330",
+  "https://devcommunity.pipedrive.com/t/testing-automations-with-a-sandbox-account/7328",
+  "https://developers.pipedrive.com/",
+  "https://developers.pipedrive.com/docs/api/v1",
+  "https://developers.pipedrive.com/docs/api/v1/Oauth",
+  "https://developers.pipedrive.com/tutorials/adding-a-product-pipedrive-api",
+  "https://developers.pipedrive.com/tutorials/adding-organizations-to-pipedrive",
+  "https://developers.pipedrive.com/tutorials/build-your-first-pipedrive-hello-world-app",
+  "https://developers.pipedrive.com/tutorials/create-a-deal-pipedrive-api",
+  "https://developers.pipedrive.com/tutorials/get-deals-pipedrive-api",
+  "https://developers.pipedrive.com/tutorials/getting-details-of-a-deal-pipedrive-api",
+  "https://docs.celigo.com/hc/en-us/articles/360058262111-Set-up-an-OAuth-2-0-connection-to-Pipedrive",
+  "https://github.com/WillDent/pipedrive-mcp-server",
+  "https://glama.ai/mcp/servers/CDataSoftware/pipedrive-mcp-server-by-cdata/tree/78600ffd3ad1190bc406c9906ed2ea4e755c1a9f/src",
+  "https://mcp.pipedream.com/app/pipedrive",
+  "https://mcp.so/servers/pipedrive-mcp-server",
+  "https://mcpmarket.com/server/pipedrive-1",
+  "https://medium.com/pipedrive-engineering/getting-your-marketplace-app-approved-on-the-first-review-is-it-even-possible-628b7e5eca47",
+  "https://openpublicapis.com/api/pipedrive-api",
+  "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+  "https://pipedrive.readme.io/docs/core-api-concepts-requests",
+  "https://pipedrive.readme.io/docs/developer-hub",
+  "https://pipedrive.readme.io/docs/developer-sandbox-account",
+  "https://pipedrive.readme.io/docs/how-to-get-the-company-domain",
+  "https://pipedrive.readme.io/docs/marketplace-app-approval-process",
+  "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+  "https://pipedrive.readme.io/docs/marketplace-manager",
+  "https://pipedrive.readme.io/docs/marketplace-oauth-api",
+  "https://pipedrive.readme.io/docs/marketplace-oauth-authorization",
+  "https://pipedrive.readme.io/docs/marketplace-registering-the-app",
+  "https://pipedrive.readme.io/docs/marketplace-vendor-agreement",
+  "https://resourify.com/resources/pipedrive-free-trial",
+  "https://unified.to/blog/how_to_get_your_oauth_2_credentials_in_pipedrive",
+  "https://www.acucoders.com/guides/pipedrive-sandbox-setup/",
+  "https://www.guideflow.com/tutorial/how-to-start-a-free-trial-account-in-pipedrive",
+  "https://www.pipedrive.com/en/features/mcp-server",
+  "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+  "https://www.pipedrive.com/en/register"
+ ],
+ "backend": "claude_cli"
+}

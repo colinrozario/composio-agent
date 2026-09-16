@@ -1,0 +1,112 @@
+{
+ "id": 2,
+ "slug": "hubspot",
+ "name": "HubSpot",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:46:31+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "CRM platform with REST APIs for contacts, deals, companies, tickets, and marketing objects",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "med",
+   "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/guides/api/crm/objects/contacts"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/ai-tools/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://community.hubspot.com/t5/APIs-Integrations/Using-Developer-Test-Account-trial-to-test-API-with-Private-App/m-p/707683"
+  },
+  "main_blocker": {
+   "value": "none for basic use; private apps need a regular (free or paid) portal, and some CRM scopes/objects are gated behind paid Hub tiers, while public OAuth apps for the App Marketplace require HubSpot app review",
+   "confidence": "med",
+   "source_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"
+  },
+  "docs_url": {
+   "value": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/hubspot-api/",
+  "https://apievangelist.com/2026/08/25/hubspot-oauth-but-create-the-app-by-hand/",
+  "https://community.hubspot.com/t5/APIs-Integrations/How-can-I-get-private-app-ID-associated-with-the-token/td-p/837902",
+  "https://community.hubspot.com/t5/APIs-Integrations/How-to-generate-an-access-token-and-refresh-token-in-HubSpot/m-p/674041",
+  "https://community.hubspot.com/t5/APIs-Integrations/Using-Developer-Test-Account-trial-to-test-API-with-Private-App/m-p/707683",
+  "https://community.hubspot.com/t5/APIs-Integrations/Where-to-find-private-app-access-token/m-p/765606",
+  "https://developers.hubspot.com/ai-tools/mcp",
+  "https://developers.hubspot.com/blog/how-to-build-a-custom-object-using-private-apps",
+  "https://developers.hubspot.com/changelog/mcp-server-beta",
+  "https://developers.hubspot.com/docs/api-reference/latest/overview",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/working-with-oauth",
+  "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+  "https://developers.hubspot.com/docs/guides/api/crm/objects/contacts",
+  "https://docs.gitlab.com/ee/user/application_security/dast/browser/checks/798.60.html",
+  "https://docs.n8n.io/integrations/builtin/credentials/hubspot",
+  "https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/marketing-automation/hubspot",
+  "https://github.com/HubSpot/sample-apps-oauth",
+  "https://github.com/baryhuang/mcp-hubspot",
+  "https://glama.ai/mcp/servers/@KaranThink41/hubspot_private_app/blob/adadd9b61341b16740ae01735a1b3719beefa027/README.md",
+  "https://glama.ai/mcp/servers/@dynamic/hubspot-mcp/blob/bce54ec04946257eb5b4eaf5f9a3dd72131a6f57/hubspot_mcp/client.py",
+  "https://glama.ai/mcp/servers/integrations/hubspot",
+  "https://glama.ai/mcp/servers/peakmojo/mcp-hubspot",
+  "https://insightsalesglobal.com/blog/hubspot-api-authentication",
+  "https://mcpservers.org/servers/shinzo-labs/hubspot-mcp",
+  "https://sfailabs.com/guides/how-to-get-hubspot-api-key",
+  "https://www.apideck.com/blog/how-to-connect-with-the-hubspot-api",
+  "https://www.apideck.com/blog/how-to-get-your-hubspot-api-key",
+  "https://www.docuwriter.ai/posts/hubspot-api-docs",
+  "https://www.getknit.dev/blog/hubspot-api-directory-oD0RSt",
+  "https://www.postman.com/hubspot/hubspot-developer-use-cases/collection/7m0c4ho/crm-a-developer-s-guide-to-hubspot-crm-objects",
+  "https://www.postman.com/hubspot/hubspot-developer-use-cases/documentation/7m0c4ho/crm-a-developer-s-guide-to-hubspot-crm-objects",
+  "https://www.reform.app/blog/setup-oauth-hubspot-api",
+  "https://www.scalekit.com/blog/hubspot-mcp-vs-api"
+ ],
+ "backend": "claude_cli"
+}

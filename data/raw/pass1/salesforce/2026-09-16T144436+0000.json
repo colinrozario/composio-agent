@@ -1,0 +1,108 @@
+{
+ "id": 1,
+ "slug": "salesforce",
+ "name": "Salesforce",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:44:36+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud CRM platform for managing sales, service, and marketing data via API",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token",
+    "jwt"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html"
+  },
+  "main_blocker": {
+   "value": "Real production orgs need Enterprise Edition or higher (or a paid API add-on) since Starter/Free/Professional Suite editions lack API access by default, though a free Developer Edition org is available for testing.",
+   "confidence": "med",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm"
+  },
+  "docs_url": {
+   "value": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials",
+  "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+  "https://developer.salesforce.com/blogs/2025/10/salesforce-hosted-mcp-servers-are-in-beta-today",
+  "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_editions.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_res/intro_oauth_and_connected_apps.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_rest.meta/bi_dev_guide_rest/bi_rest_authentication.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/intro_using_oauth.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/quickstart_connecting.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm",
+  "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+  "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+  "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+  "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html",
+  "https://enway.com/journal/salesforce-consultants/salesforce-editions-explained-comprehensive-comparison-key-differences/",
+  "https://eshopsync.com/salesforce-rest-api-developer-guide/",
+  "https://github.com/tsmztech/mcp-server-salesforce",
+  "https://glama.ai/mcp/servers/integrations/salesforce",
+  "https://help.salesforce.com/s/articleView?id=000199268&language=en_US&type=1",
+  "https://help.salesforce.com/s/articleView?id=000386929&language=en_US&type=1",
+  "https://help.salesforce.com/s/articleView?id=platform.hosted_mcp_servers.htm&language=en_US&type=5",
+  "https://help.zoho.com/portal/en/kb/forms/user-guide/integrations/salesforce/articles/api-access-in-salesforce",
+  "https://mcpservers.org/servers/JereSalguero30/mcp-server-salesforce",
+  "https://monitor.biology.washington.edu/how-to-access-salesforce-developer-edition-account",
+  "https://www.oreilly.com/library/view/salesforce-platform-app/9781785283697/ch01s04.html"
+ ]
+}

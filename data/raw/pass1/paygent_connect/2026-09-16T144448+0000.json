@@ -1,0 +1,122 @@
+{
+ "id": 84,
+ "slug": "paygent_connect",
+ "name": "Paygent Connect",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:44:48+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "auth_methods": {
+   "value": [
+    "unknown"
+   ],
+   "confidence": "low",
+   "source_url": null
+  },
+  "access_path": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "api_type": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "api_breadth": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "official_mcp": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "base_url_model": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "toolkit_bucket": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "docs_quality": {
+   "value": "none_public",
+   "confidence": "low",
+   "source_url": null
+  },
+  "test_account": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "main_blocker": {
+   "value": "Could not verify 'Paygent Connect' as a distinct, existing product; no vendor page, docs, or NMI partner listing found under this name. The hint linking it to NMI could not be confirmed — the closest matches found were an unrelated Japanese payment gateway 'Paygent Co. Ltd.' (paygent.co.jp, no NMI relation) and an unrelated AI-agent payment site 'paygent.net'/'PayGent x402', none of which self-identify as 'Paygent Connect' powered by NMI.",
+   "confidence": "low",
+   "source_url": null
+  },
+  "docs_url": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  }
+ },
+ "schema_problems": [
+  "docs_quality: no source_url",
+  "main_blocker: no source_url"
+ ],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://altstack.jp/en/services/payment-providers/paygent/",
+  "https://api.paygent.tech/",
+  "https://b2binpay.com/en/news/payment-gateway-api",
+  "https://commercetech.com/nmi-payment-gateway/",
+  "https://documentation.ixopay.com/adapters/paygent",
+  "https://en.wikipedia.org/wiki/Chase_Payment_Solutions",
+  "https://en.wikipedia.org/wiki/Payment_processor",
+  "https://en.wikipedia.org/wiki/Payment_service_provider",
+  "https://en.wikipedia.org/wiki/Payrexx_AG",
+  "https://github.com/chenjianeng0201/paygent/blob/master/README.md",
+  "https://github.com/jinzhu/paygent/blob/master/lib/paygent/service.rb",
+  "https://isvpaymentintegration.com/reviews/nmi/",
+  "https://knowledge.antom.com/merchant-payment-processing-and-merchant-services-explained",
+  "https://merchantpayconnect.com/services/",
+  "https://messari.io/project/paygent/profile",
+  "https://paygent.net/",
+  "https://paykings.com/blog/nmi-payment-gateway/",
+  "https://paymentcloudinc.com/online/payment-gateways/nmi/",
+  "https://paytrace.net/",
+  "https://pkg.go.dev/github.com/conku/gomerchant/gateways/paygent",
+  "https://pkg.go.dev/github.com/kisrobot/gomerchant/gateways/paygent",
+  "https://pkg.go.dev/github.com/qor/gomerchant/gateways/paygent",
+  "https://pkg.go.dev/github.com/qxs820624/qor/gomerchant/gateways/paygent",
+  "https://pkg.go.dev/github.com/simonedbarber/gomerchant/gateways/paygent",
+  "https://signaturepayments.com/nmi-payment-gateway/",
+  "https://wordpress.org/plugins/woocommerce-for-paygent-payment-main/",
+  "https://www.chargebee.com/docs/payments/2.0/payment-gateways-and-configuration/nmi",
+  "https://www.chase.com/business/payments",
+  "https://www.ixopay.com/blog/payment-gateway-apis-explained-how-merchants-integrate-payments",
+  "https://www.linkedin.com/company/nmipayments",
+  "https://www.magecloud.net/marketplace/extension/paygent-multi-payment-gateway-integration/",
+  "https://www.nmi.com/",
+  "https://www.nmi.com/blog/isv-merchant-acquiring-101-the-basics/",
+  "https://www.nmi.com/blog/isvs-turn-payments-from-a-cost-center-to-a-profit-center/",
+  "https://www.nmi.com/blog/monetizing-payments-for-software-vendors-with-partner-enabled-model/",
+  "https://www.nmi.com/blog/the-typical-isvs-payments-integration-evolution-journey/",
+  "https://www.nmi.com/developers/sdks-apis/",
+  "https://www.nmi.com/logins/",
+  "https://www.paytia.com/glossary/payment-gateway-api",
+  "https://www.softwareadvice.com/product/520989-Payment-Gateway/",
+  "https://www.spreedly.com/blog/payment-gateway-apis",
+  "https://www.swipesum.com/insights/the-complete-guide-to-nmi-payment-gateway-solutions",
+  "https://www.voiceaispace.com/tool/paygent"
+ ]
+}

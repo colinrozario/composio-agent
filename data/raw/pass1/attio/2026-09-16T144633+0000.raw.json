@@ -1,0 +1,1440 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web search. Prefer the vendor's own developer docs,\nAPI reference, pricing page, and app-review/partner pages over blogs or aggregators.\n\nApp: Attio\nCategory: CRM and Sales\nHint (may be misleading, verify it): attio.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a page you actually saw in search results for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://aisotools.com/pricing/attio",
+   "https://apigene.ai/mcp/official/attio",
+   "https://apitracker.io/a/attio",
+   "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+   "https://attio.com/pricing",
+   "https://docs.attio.com/mcp/overview",
+   "https://docs.attio.com/rest-api/guides/authentication",
+   "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth",
+   "https://docs.dust.tt/docs/attio-mcp",
+   "https://docs.stacksync.com/api-proxy/attio",
+   "https://github.com/kesslerio/attio-mcp-server",
+   "https://github.com/kesslerio/attio-mcp-server/blob/main/docs/guides/oauth-authentication.md",
+   "https://marketbetter.ai/blog/attio-crm-pricing-breakdown-2026/",
+   "https://mcpservers.org/servers/hmk/attio-mcp-server",
+   "https://novlini.io/blog/attio-mcp-complete-guide-to-the-model-context-protocol-(definition-use-cases-pricing-alternatives)",
+   "https://rubygems.org/gems/attio-ruby/versions/0.1.3",
+   "https://rubygems.org/gems/attio-ruby?locale=ja",
+   "https://saaslens.app/tools/attio",
+   "https://syncgtm.com/blog/attio-review",
+   "https://tonsofskills.com/skills/attio-install-auth/",
+   "https://www-stacksync-com.translate.goog/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq",
+   "https://www.apideck.com/integrations/attio",
+   "https://www.authencio.com/blog/attio-crm-review-features-pricing-customization-alternatives",
+   "https://www.automationjinn.com/blog/attio-api-guide",
+   "https://www.automationjinn.com/blog/attio-pricing-explained",
+   "https://www.coffee.ai/articles/attio-crm-pricing-vs-coffee",
+   "https://www.coffee.ai/articles/attio-crm-public-api-docs",
+   "https://www.scalekit.com/blog/attio-mcp-vs-api",
+   "https://www.stacksync.com/blog/attio-crm-2025-review-features-pros-cons-pricing",
+   "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api",
+   "https://www.usecarly.com/blog/attio-mcp/"
+  ],
+  "fetched_urls": [
+   "https://docs.attio.com/rest-api/guides/authentication",
+   "https://docs.attio.com/rest-api/overview"
+  ],
+  "num_turns": 8,
+  "events": [
+   {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\Users\\colin\\AppData\\Local\\Temp",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "tools": [
+     "CronCreate",
+     "CronDelete",
+     "CronList",
+     "DesignSync",
+     "EnterWorktree",
+     "ExitWorktree",
+     "ListAgents",
+     "Monitor",
+     "PushNotification",
+     "RemoteTrigger",
+     "ReportFindings",
+     "ScheduleWakeup",
+     "SendMessage",
+     "TaskOutput",
+     "TaskStop",
+     "ToolSearch",
+     "WebFetch",
+     "WebSearch"
+    ],
+    "mcp_servers": [
+     {
+      "name": "claude.ai Google Drive",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Gmail",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Google Calendar",
+      "status": "needs-auth"
+     }
+    ],
+    "model": "claude-sonnet-5",
+    "permissionMode": "default",
+    "slash_commands": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator",
+     "advisor",
+     "agents",
+     "auto-mode-setup",
+     "autocompact",
+     "clear",
+     "color",
+     "compact",
+     "config",
+     "output-style",
+     "context",
+     "effort",
+     "fast",
+     "heapdump",
+     "init",
+     "mcp",
+     "import",
+     "model",
+     "__remote-workflow",
+     "workflow-launch-exec",
+     "reload-plugins",
+     "reload-skills",
+     "rename",
+     "ultrareview",
+     "security-review",
+     "usage-credits",
+     "extra-usage",
+     "usage",
+     "insights",
+     "recap",
+     "skill-doctor",
+     "goal",
+     "design-consent",
+     "design-revoke",
+     "list-agents",
+     "team-onboarding"
+    ],
+    "terminal_slash_commands": [
+     "doctor",
+     "color",
+     "reload-plugins"
+    ],
+    "apiKeySource": "none",
+    "claude_code_version": "2.1.273",
+    "output_style": "default",
+    "agents": [
+     "claude",
+     "Explore",
+     "general-purpose",
+     "Plan",
+     "statusline-setup"
+    ],
+    "skills": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator"
+    ],
+    "plugins": [
+     {
+      "name": "andrej-karpathy-skills",
+      "path": "C:\\Users\\colin\\.claude\\plugins\\cache\\karpathy-skills\\andrej-karpathy-skills\\1.0.0",
+      "source": "andrej-karpathy-skills@karpathy-skills",
+      "version": "1.0.0"
+     }
+    ],
+    "capabilities": [
+     "interrupt_receipt_v1",
+     "interrupt_cancel_queued_v1",
+     "msg_lifecycle_v1"
+    ],
+    "analytics_disabled": false,
+    "product_feedback_disabled": false,
+    "uuid": "6e908631-3c93-44f7-b6bb-a944316b1b01",
+    "memory_paths": {
+     "auto": "C:\\Users\\colin\\.claude\\projects\\C--Users-colin-AppData-Local-Temp\\memory\\"
+    },
+    "messaging_socket_path": "\\\\.\\pipe\\LOCAL\\cc-msg-3c833f34b1e665956eb99c1ceaafef14",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "powershell_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.62,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "57287c68-1fd6-4958-8297-e0ed4a7708e3",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JHnKcEe8EDuTC3uhgB",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EqwCCqgBCBEYAipA/Em61chPFrYyogqETQACa2dQQED08tX85lx6RnXkdIUI91tm892r7LZ0Wvxt9m8xrUSeroccU+0MS+4dBPlx6TIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAZjXqtUGsAECEgyuYweo26JT6lMaCCUaDJEJvMHFb4WbYoBWvCIw6IrlCDSaDEHJNz9GsudSjnCfiQ0axrItCzYKg9RxnsTDtihP//V0HVtoz5d6t5TzKjGiZDr8vvNrydHx4UcLw0jXRlFQyvGjXNP2PM8Lj1lYFe9bq0K5+VUcghXrNtT+qeTeGAE="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2093,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2093
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "c6382d28-714e-4706-bee5-752c47ce603e",
+    "timestamp": "2026-09-16T14:45:42.957Z",
+    "request_id": "req_011Cf7JHmrKfJTCHtfSXDyKo"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JHnKcEe8EDuTC3uhgB",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01KZgEcQQ8Mj6AyiUumJACJp",
+       "name": "ToolSearch",
+       "input": {
+        "query": "select:WebSearch,WebFetch",
+        "max_results": 5
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2093,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2093
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "ba241bb8-a665-4750-8616-6c7e19463d41",
+    "timestamp": "2026-09-16T14:45:43.168Z",
+    "request_id": "req_011Cf7JHmrKfJTCHtfSXDyKo",
+    "wire_tool_inputs": {
+     "toolu_01KZgEcQQ8Mj6AyiUumJACJp": {
+      "query": "select:WebSearch,WebFetch",
+      "max_results": 5
+     }
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "type": "tool_result",
+       "tool_use_id": "toolu_01KZgEcQQ8Mj6AyiUumJACJp",
+       "content": [
+        {
+         "type": "tool_reference",
+         "tool_name": "WebSearch"
+        },
+        {
+         "type": "tool_reference",
+         "tool_name": "WebFetch"
+        }
+       ]
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "fdc9ab86-5b83-46b0-add6-48684a4b85ec",
+    "timestamp": "2026-09-16T14:45:43.177Z",
+    "tool_use_result": {
+     "matches": [
+      "WebSearch",
+      "WebFetch"
+     ],
+     "query": "select:WebSearch,WebFetch",
+     "total_deferred_tools": 14
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JHyoAZkPiZaiBDJDHa",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_016bQ4pecysdJvpeJ1h4Evep",
+       "name": "WebSearch",
+       "input": {
+        "query": "Attio API documentation reference OAuth"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1557,
+      "cache_read_input_tokens": 14400,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1557
+      },
+      "output_tokens": 22,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "970c120b-2a2d-4c60-906d-a3f851054bd2",
+    "timestamp": "2026-09-16T14:45:45.562Z",
+    "request_id": "req_011Cf7JHyK9LHxMqiRNvik2J",
+    "wire_tool_inputs": {
+     "toolu_016bQ4pecysdJvpeJ1h4Evep": {
+      "query": "Attio API documentation reference OAuth"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JHyoAZkPiZaiBDJDHa",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01DaTq8F3rAvEEMCAnr9r75N",
+       "name": "WebSearch",
+       "input": {
+        "query": "Attio API rate limits authentication api key OAuth developers.attio.com"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1557,
+      "cache_read_input_tokens": 14400,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1557
+      },
+      "output_tokens": 22,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "ea238cf5-334f-4306-b2db-b19a7f42f1fe",
+    "timestamp": "2026-09-16T14:45:45.863Z",
+    "request_id": "req_011Cf7JHyK9LHxMqiRNvik2J",
+    "wire_tool_inputs": {
+     "toolu_01DaTq8F3rAvEEMCAnr9r75N": {
+      "query": "Attio API rate limits authentication api key OAuth developers.attio.com"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.63,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "c3d7b7b7-430e-4f8a-ad2f-7658eb9c4ba8",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01DaTq8F3rAvEEMCAnr9r75N",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Attio API rate limits authentication api key OAuth developers.attio.com\"\n\nLinks: [{\"title\":\"Attio MCP vs Attio API for Agentic Tool Calling\",\"url\":\"https://www.scalekit.com/blog/attio-mcp-vs-api\"},{\"title\":\"Attio API Guide: Developer Account Setup, API Keys and ...\",\"url\":\"https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api\"},{\"title\":\"Attio API - Developer docs, APIs, SDKs, and auth. | API Tracker\",\"url\":\"https://apitracker.io/a/attio\"},{\"title\":\"Authenticating requests - Attio Docs\",\"url\":\"https://docs.attio.com/rest-api/guides/authentication\"},{\"title\":\"Attio API vs MCP vs App SDK: Which Should You Build On?\",\"url\":\"https://www.automationjinn.com/blog/attio-api-guide\"},{\"title\":\"Does Attio CRM Offer Public API Documentation? Guide 2026\",\"url\":\"https://www.coffee.ai/articles/attio-crm-public-api-docs\"},{\"title\":\"Attio API: Keys, Auth, and Developer Setup\",\"url\":\"https://www-stacksync-com.translate.goog/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq\"}]\n\nBased on the search results, here's what I found about Attio API rate limits, authentication, and API key/OAuth information:\n\n## Rate Limits\n\nAttio API rate limits allow 100 read requests per second and 25 write requests per second, with HTTP 429 returned when limits are exceeded. Exceeding these limits returns HTTP 429 Too Many Requests with a Retry-After header.\n\n## Authentication\n\nAuthentication accepts any bearer token in the Authorization header. Two token types matter: a workspace API key generated under Workspace Settings, and a per-user OAuth 2.0 access token from the Authorization Code flow.\n\nAttio implements the standard OAuth 2.0 specification.\n\n## API Key Generation\n\nIf you only need a token for a single workspace, you can generate an API key in the developer settings page of your apps.\n\n## Developer Documentation\n\nThe Attio API docs are at developers.attio.com/docs.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "16410fb2-6ced-4612-a516-250f30a45677",
+    "timestamp": "2026-09-16T14:45:50.889Z",
+    "tool_use_result": {
+     "query": "Attio API rate limits authentication api key OAuth developers.attio.com",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01D2XNxWHAjDwdR9kdymftWK",
+       "content": [
+        {
+         "title": "Attio MCP vs Attio API for Agentic Tool Calling",
+         "url": "https://www.scalekit.com/blog/attio-mcp-vs-api"
+        },
+        {
+         "title": "Attio API Guide: Developer Account Setup, API Keys and ...",
+         "url": "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+        },
+        {
+         "title": "Attio API - Developer docs, APIs, SDKs, and auth. | API Tracker",
+         "url": "https://apitracker.io/a/attio"
+        },
+        {
+         "title": "Authenticating requests - Attio Docs",
+         "url": "https://docs.attio.com/rest-api/guides/authentication"
+        },
+        {
+         "title": "Attio API vs MCP vs App SDK: Which Should You Build On?",
+         "url": "https://www.automationjinn.com/blog/attio-api-guide"
+        },
+        {
+         "title": "Does Attio CRM Offer Public API Documentation? Guide 2026",
+         "url": "https://www.coffee.ai/articles/attio-crm-public-api-docs"
+        },
+        {
+         "title": "Attio API: Keys, Auth, and Developer Setup",
+         "url": "https://www-stacksync-com.translate.goog/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=rq"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about Attio API rate limits, authentication, and API key/OAuth information:\n\n## Rate Limits\n\nAttio API rate limits allow 100 read requests per second and 25 write requests per second, with HTTP 429 returned when limits are exceeded. Exceeding these limits returns HTTP 429 Too Many Requests with a Retry-After header.\n\n## Authentication\n\nAuthentication accepts any bearer token in the Authorization header. Two token types matter: a workspace API key generated under Workspace Settings, and a per-user OAuth 2.0 access token from the Authorization Code flow.\n\nAttio implements the standard OAuth 2.0 specification.\n\n## API Key Generation\n\nIf you only need a token for a single workspace, you can generate an API key in the developer settings page of your apps.\n\n## Developer Documentation\n\nThe Attio API docs are at developers.attio.com/docs."
+     ],
+     "durationSeconds": 5.021496699999999,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_016bQ4pecysdJvpeJ1h4Evep",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Attio API documentation reference OAuth\"\n\nLinks: [{\"title\":\"Attio API Integration | Apideck\",\"url\":\"https://www.apideck.com/integrations/attio\"},{\"title\":\"Attio | API Proxy | Stacksync Documentation\",\"url\":\"https://docs.stacksync.com/api-proxy/attio\"},{\"title\":\"Attio API - Developer docs, APIs, SDKs, and auth. | API Tracker\",\"url\":\"https://apitracker.io/a/attio\"},{\"title\":\"Connect an app to Attio through OAuth - Attio Docs\",\"url\":\"https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth\"},{\"title\":\"Does Attio CRM Offer Public API Documentation? Guide 2026\",\"url\":\"https://www.coffee.ai/articles/attio-crm-public-api-docs\"},{\"title\":\"attio-mcp-server/docs/guides/oauth-authentication.md at main · kesslerio/attio-mcp-server\",\"url\":\"https://github.com/kesslerio/attio-mcp-server/blob/main/docs/guides/oauth-authentication.md\"},{\"title\":\"Attio API Guide: Developer Account Setup, API Keys and ...\",\"url\":\"https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api\"},{\"title\":\"attio-install-auth - Agent Skill\",\"url\":\"https://tonsofskills.com/skills/attio-install-auth/\"},{\"title\":\"RubyGems Navigation menu\",\"url\":\"https://rubygems.org/gems/attio-ruby?locale=ja\"},{\"title\":\"RubyGems Navigation menu\",\"url\":\"https://rubygems.org/gems/attio-ruby/versions/0.1.3\"}]\n\nBased on the search results, here's what I found about Attio API documentation and OAuth:\n\n## Official Documentation\nAttio CRM provides comprehensive public API documentation at developers.attio.com as of April 2026. The documentation covers REST endpoints, GraphQL support, webhook configuration, and authentication methods including OAuth 2.0 and API tokens.\n\n## Authentication Methods\nThere are two ways to authenticate with Attio: access tokens, or OAuth. Access tokens are scoped to a single workspace, while OAuth is only required if you plan on publishing an integration.\n\n## OAuth Implementation\nTo make a request to the Attio API, you need to call the right endpoint and pass in an OAuth token in the Authorization header. To add support for OAuth, your code needs access to the OAuth client ID and client secret, which you can find in the OAuth tab in your app's settings.\n\n## API Reference\nThe Attio API docs are at developers.attio.com/docs. They cover authentication, available endpoints, object references (users, workspaces, records), attribute types, and rate limiting rules.\n\nYou can access the full API documentation directly at **developers.attio.com** to get complete reference information about OAuth and other authentication methods.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "a2e8d7ac-1a05-4bd7-a28a-020d72213640",
+    "timestamp": "2026-09-16T14:45:51.851Z",
+    "tool_use_result": {
+     "query": "Attio API documentation reference OAuth",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01T8NFqDKM9sSbLwPbkdMENf",
+       "content": [
+        {
+         "title": "Attio API Integration | Apideck",
+         "url": "https://www.apideck.com/integrations/attio"
+        },
+        {
+         "title": "Attio | API Proxy | Stacksync Documentation",
+         "url": "https://docs.stacksync.com/api-proxy/attio"
+        },
+        {
+         "title": "Attio API - Developer docs, APIs, SDKs, and auth. | API Tracker",
+         "url": "https://apitracker.io/a/attio"
+        },
+        {
+         "title": "Connect an app to Attio through OAuth - Attio Docs",
+         "url": "https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth"
+        },
+        {
+         "title": "Does Attio CRM Offer Public API Documentation? Guide 2026",
+         "url": "https://www.coffee.ai/articles/attio-crm-public-api-docs"
+        },
+        {
+         "title": "attio-mcp-server/docs/guides/oauth-authentication.md at main · kesslerio/attio-mcp-server",
+         "url": "https://github.com/kesslerio/attio-mcp-server/blob/main/docs/guides/oauth-authentication.md"
+        },
+        {
+         "title": "Attio API Guide: Developer Account Setup, API Keys and ...",
+         "url": "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+        },
+        {
+         "title": "attio-install-auth - Agent Skill",
+         "url": "https://tonsofskills.com/skills/attio-install-auth/"
+        },
+        {
+         "title": "RubyGems Navigation menu",
+         "url": "https://rubygems.org/gems/attio-ruby?locale=ja"
+        },
+        {
+         "title": "RubyGems Navigation menu",
+         "url": "https://rubygems.org/gems/attio-ruby/versions/0.1.3"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about Attio API documentation and OAuth:\n\n## Official Documentation\nAttio CRM provides comprehensive public API documentation at developers.attio.com as of April 2026. The documentation covers REST endpoints, GraphQL support, webhook configuration, and authentication methods including OAuth 2.0 and API tokens.\n\n## Authentication Methods\nThere are two ways to authenticate with Attio: access tokens, or OAuth. Access tokens are scoped to a single workspace, while OAuth is only required if you plan on publishing an integration.\n\n## OAuth Implementation\nTo make a request to the Attio API, you need to call the right endpoint and pass in an OAuth token in the Authorization header. To add support for OAuth, your code needs access to the OAuth client ID and client secret, which you can find in the OAuth tab in your app's settings.\n\n## API Reference\nThe Attio API docs are at developers.attio.com/docs. They cover authentication, available endpoints, object references (users, workspaces, records), attribute types, and rate limiting rules.\n\nYou can access the full API documentation directly at **developers.attio.com** to get complete reference information about OAuth and other authentication methods."
+     ],
+     "durationSeconds": 6.2844857,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "26e8294e-f00c-4cca-8150-0019b83d7a15"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 153,
+    "estimated_tokens_delta": 103,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "29a2b313-d16d-480d-b448-dbd068870a19"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JJcEuuCoQgixjisqoL",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "Et0ECqgBCBEYAipAVbdYsOmN5YEz7jtDbrbPYHzBBaV5cVOknp/PzCYhs1kk/tDjXPtx14P4/qlfOuFnQgjI+IlviRV3oTAHkwjZJDIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAaXXqtUGsAECEgz8i9DFjv0xGxHTQTEaDF/DImQDxDFj0uf3vCIwZGadfrbchXI7OXi9/FXB/rfqV7e5K6ThAy0+wV1HkeEpr9TtWvLmcCCN+lGCSaDEKuECzGU3z8mIZP5eoDjEiGEm1bg6OtEgpLpUwWWS6ksKp1jnIOpPfFPtigLuNYrGSjRGZPvBED23DoeX3Jt+iBvHQN5sAMsZiN/5b4q4xT9KDz1Ra14K3FU76hI5nJCUusXdWhK5ccaOiQS59AiScv6ZZaqMNslpy7mORrheJdhBX5ZUXF0aGgOwKP6qnqSLgE0hMzQuTOYZz5W5ElWSNSonoNYjaAMa+WGfvcNq/UCPi3FTUA0ung9KeC16+fp8Fm7A05E56k+y3ksOqNbXYPbitvXgpIuu0TfaZkiNeiWVS8TYdEKyQ01S583/n4YYKkAwiElCQjXQhW1BY4quwKLkXL/T7p3UorBZIXHbpM0WPZqilphWp5CWYZEVCmEMTbRo566RzHhJahEUyB74BSwfZ2k0QvCtXv0VUNmT/8k+EDLIVLp46xMYAyu7sCProOA2A3HH8bQzGc4PM+RosJmGaRoYAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2115,
+      "cache_read_input_tokens": 15957,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2115
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "446f445b-a559-4514-90d5-09122ebedd9f",
+    "timestamp": "2026-09-16T14:45:55.505Z",
+    "request_id": "req_011Cf7JJc1m4QgWYNyTtjz4i"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JJcEuuCoQgixjisqoL",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01RuwmjLDpTb1TeWCaLsb997",
+       "name": "WebFetch",
+       "input": {
+        "url": "https://docs.attio.com/rest-api/overview",
+        "prompt": "Describe the Attio API: is it REST or GraphQL, what authentication methods (API key, OAuth2), what objects/endpoints exist, is there a free tier/sandbox, pricing plan requirements to access API, and any mention of MCP server."
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2115,
+      "cache_read_input_tokens": 15957,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2115
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "62afcc24-803d-44ba-adb0-5cdc69e892c0",
+    "timestamp": "2026-09-16T14:45:56.853Z",
+    "request_id": "req_011Cf7JJc1m4QgWYNyTtjz4i",
+    "wire_tool_inputs": {
+     "toolu_01RuwmjLDpTb1TeWCaLsb997": {
+      "url": "https://docs.attio.com/rest-api/overview",
+      "prompt": "Describe the Attio API: is it REST or GraphQL, what authentication methods (API key, OAuth2), what objects/endpoints exist, is there a free tier/sandbox, pricing plan requirements to access API, and any mention of MCP server."
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JJcEuuCoQgixjisqoL",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01Y34mZNKCm3yJMYBi4NCfKa",
+       "name": "WebSearch",
+       "input": {
+        "query": "Attio official MCP server documentation"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2115,
+      "cache_read_input_tokens": 15957,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2115
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "0629324c-bdac-4c2c-8ece-9a8d0e146295",
+    "timestamp": "2026-09-16T14:45:56.895Z",
+    "request_id": "req_011Cf7JJc1m4QgWYNyTtjz4i",
+    "wire_tool_inputs": {
+     "toolu_01Y34mZNKCm3yJMYBi4NCfKa": {
+      "query": "Attio official MCP server documentation"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.64,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "545923f9-aef7-4270-87cb-cb1c1aa01706",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.65,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "23e21313-4efe-468f-a2fc-7346c1fddb5e",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01RuwmjLDpTb1TeWCaLsb997",
+       "type": "tool_result",
+       "content": "# Attio API Overview\n\n**API Type:** REST-based, exchanging JSON over HTTPS.\n\n**Authentication:** The documentation mentions OAuth2 flow support (\"Building an OAuth flow for your app\"), plus guidance on \"how to authenticate requests,\" though specific details aren't provided in this excerpt.\n\n**Objects/Endpoints:** The content references general \"record and entry API queries\" with filtering and sorting capabilities, but doesn't enumerate specific endpoints in this overview section. It directs users to \"reference documentation\" for detailed endpoint information.\n\n**Free Tier/Sandbox:** No information provided in this content.\n\n**Pricing Requirements:** Not discussed in the excerpt shown.\n\n**MCP Server:** No mention of MCP (Model Context Protocol) server in the provided content.\n\n**Key Resource:** The documentation suggests fetching a complete index at `https://docs.attio.com/llms.txt` to \"discover all available pages before exploring further,\" which would contain more comprehensive API details than this overview section."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "65657339-aff6-4c6d-8c30-4d73e221cc30",
+    "timestamp": "2026-09-16T14:46:01.665Z",
+    "tool_use_result": {
+     "bytes": 1144,
+     "code": 200,
+     "codeText": "OK",
+     "result": "# Attio API Overview\n\n**API Type:** REST-based, exchanging JSON over HTTPS.\n\n**Authentication:** The documentation mentions OAuth2 flow support (\"Building an OAuth flow for your app\"), plus guidance on \"how to authenticate requests,\" though specific details aren't provided in this excerpt.\n\n**Objects/Endpoints:** The content references general \"record and entry API queries\" with filtering and sorting capabilities, but doesn't enumerate specific endpoints in this overview section. It directs users to \"reference documentation\" for detailed endpoint information.\n\n**Free Tier/Sandbox:** No information provided in this content.\n\n**Pricing Requirements:** Not discussed in the excerpt shown.\n\n**MCP Server:** No mention of MCP (Model Context Protocol) server in the provided content.\n\n**Key Resource:** The documentation suggests fetching a complete index at `https://docs.attio.com/llms.txt` to \"discover all available pages before exploring further,\" which would contain more comprehensive API details than this overview section.",
+     "durationMs": 4804,
+     "url": "https://docs.attio.com/rest-api/overview"
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01Y34mZNKCm3yJMYBi4NCfKa",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Attio official MCP server documentation\"\n\nLinks: [{\"title\":\"Attio\",\"url\":\"https://docs.dust.tt/docs/attio-mcp\"},{\"title\":\"Attio MCP - Attio Docs\",\"url\":\"https://docs.attio.com/mcp/overview\"},{\"title\":\"Attio MCP Server | Awesome MCP Servers\",\"url\":\"https://mcpservers.org/servers/hmk/attio-mcp-server\"},{\"title\":\"GitHub - kesslerio/attio-mcp-server: Attio Model Context Protocol (MCP) server implementation · GitHub\",\"url\":\"https://github.com/kesslerio/attio-mcp-server\"},{\"title\":\"Attio MCP: Complete Guide to the Model Context Protocol (Definition, Use Cases, Pricing, Alternatives) | Novlini\",\"url\":\"https://novlini.io/blog/attio-mcp-complete-guide-to-the-model-context-protocol-(definition-use-cases-pricing-alternatives)\"},{\"title\":\"Attio MCP: The Official Server and What It Can Do\",\"url\":\"https://www.usecarly.com/blog/attio-mcp/\"},{\"title\":\"Attio MCP Server - Official Setup Guide | Apigene\",\"url\":\"https://apigene.ai/mcp/official/attio\"}]\n\nBased on the search results, here's what I found about the Attio official MCP server documentation:\n\n## Overview\n\nAttio MCP is Attio's hosted MCP server that gives AI tools secure access to your Attio workspace. It's designed to work seamlessly with popular AI assistants like Claude, ChatGPT, Cursor, and more.\n\n## Official Documentation Location\n\nThe official documentation is available at:\n- **Primary endpoint**: https://mcp.attio.com/mcp\n- Complete documentation index available at: /llms.txt\n- Attio also provides an MCP server for documentation at https://docs.attio.com/mcp\n\n## Key Features\n\nIt's a hosted, remote server at mcp.attio.com/mcp that lets any MCP-compatible AI tool read and write your CRM — people, companies, deals, tasks, notes, and lists — through a one-time OAuth login, no API keys and no code.\n\nAttio maintains an official hosted server at mcp.attio.com/mcp, and it authenticates you as your own Attio user, so the AI gets exactly the permissions your account already has: reads are auto-approved, and writes ask for confirmation.\n\n## Available Tools\n\nSome of the key capabilities include:\n- Search records, retrieve records by IDs, create records, upsert records, and create notes\n\nFor the complete and authoritative tool list and full schema details, see Attio's official MCP documentation.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "2b721a62-e89a-410d-b3e7-333e35779049",
+    "timestamp": "2026-09-16T14:46:04.793Z",
+    "tool_use_result": {
+     "query": "Attio official MCP server documentation",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01HHT6gDJCCahUjrZc1QTW9q",
+       "content": [
+        {
+         "title": "Attio",
+         "url": "https://docs.dust.tt/docs/attio-mcp"
+        },
+        {
+         "title": "Attio MCP - Attio Docs",
+         "url": "https://docs.attio.com/mcp/overview"
+        },
+        {
+         "title": "Attio MCP Server | Awesome MCP Servers",
+         "url": "https://mcpservers.org/servers/hmk/attio-mcp-server"
+        },
+        {
+         "title": "GitHub - kesslerio/attio-mcp-server: Attio Model Context Protocol (MCP) server implementation · GitHub",
+         "url": "https://github.com/kesslerio/attio-mcp-server"
+        },
+        {
+         "title": "Attio MCP: Complete Guide to the Model Context Protocol (Definition, Use Cases, Pricing, Alternatives) | Novlini",
+         "url": "https://novlini.io/blog/attio-mcp-complete-guide-to-the-model-context-protocol-(definition-use-cases-pricing-alternatives)"
+        },
+        {
+         "title": "Attio MCP: The Official Server and What It Can Do",
+         "url": "https://www.usecarly.com/blog/attio-mcp/"
+        },
+        {
+         "title": "Attio MCP Server - Official Setup Guide | Apigene",
+         "url": "https://apigene.ai/mcp/official/attio"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about the Attio official MCP server documentation:\n\n## Overview\n\nAttio MCP is Attio's hosted MCP server that gives AI tools secure access to your Attio workspace. It's designed to work seamlessly with popular AI assistants like Claude, ChatGPT, Cursor, and more.\n\n## Official Documentation Location\n\nThe official documentation is available at:\n- **Primary endpoint**: https://mcp.attio.com/mcp\n- Complete documentation index available at: /llms.txt\n- Attio also provides an MCP server for documentation at https://docs.attio.com/mcp\n\n## Key Features\n\nIt's a hosted, remote server at mcp.attio.com/mcp that lets any MCP-compatible AI tool read and write your CRM — people, companies, deals, tasks, notes, and lists — through a one-time OAuth login, no API keys and no code.\n\nAttio maintains an official hosted server at mcp.attio.com/mcp, and it authenticates you as your own Attio user, so the AI gets exactly the permissions your account already has: reads are auto-approved, and writes ask for confirmation.\n\n## Available Tools\n\nSome of the key capabilities include:\n- Search records, retrieve records by IDs, create records, upsert records, and create notes\n\nFor the complete and authoritative tool list and full schema details, see Attio's official MCP documentation."
+     ],
+     "durationSeconds": 7.894129699999998,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "fe2d94ed-1367-4e2e-b755-1b327d63b2d3"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 100,
+    "estimated_tokens_delta": 50,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "fa99b4dc-8265-4716-a2fc-ccf504553f25"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 205,
+    "estimated_tokens_delta": 105,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "31908fcc-7730-4596-82df-04c2e2157757"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JKa3ENSeYN9QMdDfBH",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "Eq0GCqgBCBEYAipATb9Z7eba3qo+BImTN6PTk9UyDojIRriA4tF5VevnoL0gFHZHdHyDew4hKPlPEBdldoxxyN0LqKK6kkNH6KvmvzIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAbLXqtUGsAECEgyhOZgDP7WDoeI1xpIaDJg3pFtVrSvZ+q2UlSIwHTQNePK9SNVlr1vdyi1CzeUd+xpMH0v4CxLCtdD/UE15Z5TqZjSvrHjfKorKUDylKrEE4M36Tod5Mn4Mg7i1vqRfjZXGGcqnqkCP6cp9baWx5cYlxJtYxBf45GBHnNz980iS8MbNRso7scKDZ17KzU38/QyS3HLYPFl36t57g2iM1A5yZDuw1SywUYAlcvJzxmwkUOzse4B9bm60VpVTXRIFFfzaWWn89QHA2OJRJkW3e7Tv2RBmrZb5VWXg5BlMlVAUeb4TPqamPCHkfdmUepRwOnBo5v+SSFnjjNDgNce1Sc7dWxhoPokSqm4gxcOK+5/2Gnfdg7nXuwwSPRgmOyXtQSOjxoK7mUSjtOD8+ikn1qeW1/nHg99btw/dabxpjOh/3rGrqXXgSVtLMPGsKfRIrmcJvMmoz0Mw+Rynrab4jwAoWy6z6vxrI51zSUk42zZFkgyWAUyrUNSkyZVc43j/v4PlYigfaQvgikMWQMOj5ig5SFo1I7kE+eFCgnV7c1llXNVi1gXMiaHU4vM8f9zAmt/FX+0u9Pk+YdD2TEMmCpws9zD4xJ+5tl+0g0EI+qShhLdhRSmDnYmYHEKZ7QVilH+AAkOsSW8pLjAqtJd0K8f3nEGBmGhkGj2+JdlpfOalOdneYlFnj0HsURR7b0Tb10gyJaJPeb+6Uk9CSITzdHobEXqw2oir96QmkpkJVOLMB+7GsYHn4IwarTjw84gXqbm7gk6CtLG04ZJ+0Ju8HLZBR2NHq6EuaEED97FGLllgFslGPw81yZ5IKkZOFFiCBT+UTz9PFN7t/v+hyBuvYfEUGAE="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1727,
+      "cache_read_input_tokens": 18072,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1727
+      },
+      "output_tokens": 8,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "8ca1f201-74a5-4f41-93c2-bbeef1238d89",
+    "timestamp": "2026-09-16T14:46:08.870Z",
+    "request_id": "req_011Cf7JKZcfyrYgiGz2P9MQM"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JKa3ENSeYN9QMdDfBH",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_014PpTqN7Uwi7A4CsFJV5qrF",
+       "name": "WebSearch",
+       "input": {
+        "query": "Attio pricing plans free plan API access included"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1727,
+      "cache_read_input_tokens": 18072,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1727
+      },
+      "output_tokens": 8,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "d22bf43f-ce29-4b63-8c53-ec8127cf1931",
+    "timestamp": "2026-09-16T14:46:08.997Z",
+    "request_id": "req_011Cf7JKZcfyrYgiGz2P9MQM",
+    "wire_tool_inputs": {
+     "toolu_014PpTqN7Uwi7A4CsFJV5qrF": {
+      "query": "Attio pricing plans free plan API access included"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.66,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "8f39730f-7e12-494c-ab67-790625a50c6b",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_014PpTqN7Uwi7A4CsFJV5qrF",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Attio pricing plans free plan API access included\"\n\nLinks: [{\"title\":\"Attio plans and features | Attio Help Center\",\"url\":\"https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features\"},{\"title\":\"Plans & Pricing | Attio\",\"url\":\"https://attio.com/pricing\"},{\"title\":\"Attio CRM Review 2026: Real Pricing, Features, Limits\",\"url\":\"https://www.stacksync.com/blog/attio-crm-2025-review-features-pros-cons-pricing\"},{\"title\":\"Attio CRM Pricing 2026: Complete Breakdown vs Coffee AI\",\"url\":\"https://www.coffee.ai/articles/attio-crm-pricing-vs-coffee\"},{\"title\":\"Attio CRM Pricing 2026: Free, $29 & $69/Seat — Real Cost Per Plan | Blog | MarketBetter\",\"url\":\"https://marketbetter.ai/blog/attio-crm-pricing-breakdown-2026/\"},{\"title\":\"Attio Review 2026: Modern CRM for Data Teams — Pricing | SyncGTM\",\"url\":\"https://syncgtm.com/blog/attio-review\"},{\"title\":\"Attio Pricing Explained (2026): What You'll Actually Pay\",\"url\":\"https://www.automationjinn.com/blog/attio-pricing-explained\"},{\"title\":\"Attio Review 2026 — Pricing, Features & 2 Alternatives | SaaSLens\",\"url\":\"https://saaslens.app/tools/attio\"},{\"title\":\"Attio CRM Review 2026: Features, Pricing & Top Alternatives\",\"url\":\"https://www.authencio.com/blog/attio-crm-review-features-pricing-customization-alternatives\"},{\"title\":\"Attio Pricing 2026: Plans, Costs & Free Options | AISO Tools\",\"url\":\"https://aisotools.com/pricing/attio\"}]\n\nBased on the search results, here's what I found regarding Attio's pricing plans and API access:\n\n## API Access on Free Plan\n\nApps in Attio's App Store and access to Attio's API are available on all Attio plans. This means API access is included in the free plan.\n\n## Free Plan Details\n\nThe Free plan is for teams with less than 3 people, and comes with 100 seat credits and 250 workspace credits per month, plus real-time syncing and automatic enrichment. The free plan also includes 50,000 record capacity.\n\n## Paid Plans\n\n- **Plus Plan**: $29/seat/month billed annually, or $36 billed monthly\n- **Pro Plan**: $69/seat/month billed annually, or $86 billed monthly\n- **Enterprise**: Custom-quoted, typically $100-150+/seat for larger teams\n\n## Important Note on API Access\n\nWhile API access is available on all plans, it's worth noting that API access requires approval and comes with rate limits, typically around 1,000 calls per hour.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "8b5501de-6824-4647-bc1b-f3200d851c83",
+    "timestamp": "2026-09-16T14:46:15.377Z",
+    "tool_use_result": {
+     "query": "Attio pricing plans free plan API access included",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_012oq661rHFk4Cm42qSmkRQq",
+       "content": [
+        {
+         "title": "Attio plans and features | Attio Help Center",
+         "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features"
+        },
+        {
+         "title": "Plans & Pricing | Attio",
+         "url": "https://attio.com/pricing"
+        },
+        {
+         "title": "Attio CRM Review 2026: Real Pricing, Features, Limits",
+         "url": "https://www.stacksync.com/blog/attio-crm-2025-review-features-pros-cons-pricing"
+        },
+        {
+         "title": "Attio CRM Pricing 2026: Complete Breakdown vs Coffee AI",
+         "url": "https://www.coffee.ai/articles/attio-crm-pricing-vs-coffee"
+        },
+        {
+         "title": "Attio CRM Pricing 2026: Free, $29 & $69/Seat — Real Cost Per Plan | Blog | MarketBetter",
+         "url": "https://marketbetter.ai/blog/attio-crm-pricing-breakdown-2026/"
+        },
+        {
+         "title": "Attio Review 2026: Modern CRM for Data Teams — Pricing | SyncGTM",
+         "url": "https://syncgtm.com/blog/attio-review"
+        },
+        {
+         "title": "Attio Pricing Explained (2026): What You'll Actually Pay",
+         "url": "https://www.automationjinn.com/blog/attio-pricing-explained"
+        },
+        {
+         "title": "Attio Review 2026 — Pricing, Features & 2 Alternatives | SaaSLens",
+         "url": "https://saaslens.app/tools/attio"
+        },
+        {
+         "title": "Attio CRM Review 2026: Features, Pricing & Top Alternatives",
+         "url": "https://www.authencio.com/blog/attio-crm-review-features-pricing-customization-alternatives"
+        },
+        {
+         "title": "Attio Pricing 2026: Plans, Costs & Free Options | AISO Tools",
+         "url": "https://aisotools.com/pricing/attio"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found regarding Attio's pricing plans and API access:\n\n## API Access on Free Plan\n\nApps in Attio's App Store and access to Attio's API are available on all Attio plans. This means API access is included in the free plan.\n\n## Free Plan Details\n\nThe Free plan is for teams with less than 3 people, and comes with 100 seat credits and 250 workspace credits per month, plus real-time syncing and automatic enrichment. The free plan also includes 50,000 record capacity.\n\n## Paid Plans\n\n- **Plus Plan**: $29/seat/month billed annually, or $36 billed monthly\n- **Pro Plan**: $69/seat/month billed annually, or $86 billed monthly\n- **Enterprise**: Custom-quoted, typically $100-150+/seat for larger teams\n\n## Important Note on API Access\n\nWhile API access is available on all plans, it's worth noting that API access requires approval and comes with rate limits, typically around 1,000 calls per hour."
+     ],
+     "durationSeconds": 6.376354300000003,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "6067af86-8e91-457e-8715-aeff514cc413"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 100,
+    "estimated_tokens_delta": 50,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "5034c60c-94c5-46ca-9103-57e46e4e9c98"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 250,
+    "estimated_tokens_delta": 150,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "3d6935df-0420-45dd-9024-94e6d072fb92"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 323,
+    "estimated_tokens_delta": 73,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "d75ea913-5e61-4254-bbd9-4cb6fcbe60aa"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JLMCM3WwwQUjTrNnRs",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EoMKCqgBCBEYAipAzYkBTQ1GO3o98uLjiy/wMk0nZ05QexY16RzCOvx1G0IjuZZucHPiUyi8ZjkX8g1kWnqnOdqW44c9H2+656wEZDIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAb7XqtUGsAECEgzM2heP4jcjdysFBNEaDLkKzPbkGg7/2AY3rCIweqr2McITKiaLCjnzof/4jTQvIhf/641O+BAQTaT2zaR8DlcwAz5Vw+dhz2oDQqWzKocIWgrfThQOlBKX3bS2frbbjsyLcG1DB9T66oBhEL24dLMpK+sQEQh7dAMs/W0B/NH9dF/1tL5z2jLqT0019H7L4aHy3X8B35BW29DOvMr/bJjwPHE8LV92W2DjYGWexbdIkUop0LAvLtgdN/AFlV7/f+a6aBYrLepK3AXjQ9Vx25FwWfg5Q05oOG/hloiSmMvvYr+/HXUN+L8oaEMXSeuoOVkHyKqo0E4HFiyM8STHIGb8XtydobusW1JxktJoT1FD3bGRTE29excDlq9aBhwI+sixnPcu760vUsSbVYBiasoMIfK4E5uVdIRyiOHTLyVd7/i/1kwLcg8VtAIiQExPKiHqX/PqArB5rNvdvekE0ZylJt0uOB5pIwea8tL8n9SG5ATyYH9wTOxrZ6DCaW5NIMca06a5sIN69aBln7K6Nf9ay81qiOuOyh15lFAbxHL3Yn0szgw3Eh3HiaR4t82vsqMpANNIGABRCp3n6sTPDhcjrLoUfBfxlTuXJDk68LgxpZ+ygsSFh+skfPsIYLGzi0BdENAWbHx9h96M+9zy+ArbKEmcegVJ1xxLCkSQoqwcExFoh/iP0XXkYcvX0tJFoc4f45nO16jBsA9cdNayvr+rdHTwmN3fZn3D/jwSWgHyYaEYHMsObuekyuRhrzMfDiMhFxla07/NWQsMYJqeW5NiCzxX2jPp9mg4wqd1KvqoJHMHJB1fEo6ZuZBTURiUGJixgA329Q9TFkTseHZL81OaQEeJXjpuVgu2pFRF5dllEWy/pULdeIZlfhf7Wwp7C++99UG78IfQi+qW6Y0eHPge19NTT4eSz2DYa+YsZwSh+qtlB1m47p4mmbhznj8zghjL+k2jIGx4UJ2Py7THn3tKB+AsJmL/HlStBD7jtEiHfJKixAJuUdP8EMDmftTvh9GkoP0LnCo9SMMgiKapUb6CPrtfjwP1VMKYlgth3BD/eVVh6oNARQCuewImLL7lT5ffko6OwYHK7GWVAygniHMxwgEL2dYfzN+UsmTXb8z8pHNGOtutQWu2q2h8TM9c/tkJZBPTiVqxTAApPhygFTdbAYIUG70ugCkbsqHEH673/p9QALgjl9XaW47gKcH5FInNE5VR5OCkrJIkR5R/5F2Y1Bmw2G/KPaorCdq4h2VVEshDEeQ6KJS6LpX92ojXsSo383PGf0pyWZ1YPvCKLc7Pnru+hDUzGw4ttXpMBypyHz8Xg46sBuimrDl9DQ7ojNq6qg80NVzdAz9Wp44bdRSpCDSBw3tzVie7+bGv7sJILXbOaxp4kjPYvI11JwBgDl7UbSxNtusDpchTNeCjxNblUKpx/1p0rYH9knL9hzMDKWaf2ozGWbXg0RZukAU96O1SWGDiU6cYAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1316,
+      "cache_read_input_tokens": 19799,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1316
+      },
+      "output_tokens": 4,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "6d96e31a-819e-47cf-8e40-bd59d9e25132",
+    "timestamp": "2026-09-16T14:46:20.848Z",
+    "request_id": "req_011Cf7JLLmYRrYNPQqFjf5aZ"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JLMCM3WwwQUjTrNnRs",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_015r2FLRwrgdrXteEFU3ogRn",
+       "name": "WebFetch",
+       "input": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "prompt": "What authentication methods does Attio API support (API key, OAuth2)? Does OAuth require app review to publish? Any details on scopes."
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1316,
+      "cache_read_input_tokens": 19799,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1316
+      },
+      "output_tokens": 4,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "0ab40e96-bfd2-4863-b35f-c6d8c18a6bcd",
+    "timestamp": "2026-09-16T14:46:21.838Z",
+    "request_id": "req_011Cf7JLLmYRrYNPQqFjf5aZ",
+    "wire_tool_inputs": {
+     "toolu_015r2FLRwrgdrXteEFU3ogRn": {
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "prompt": "What authentication methods does Attio API support (API key, OAuth2)? Does OAuth require app review to publish? Any details on scopes."
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.68,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "c2274cc8-ec8a-4c4f-926a-c483c95923ea",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.69,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "c5251062-e448-4069-89e4-cc7e1cab7064",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_015r2FLRwrgdrXteEFU3ogRn",
+       "type": "tool_result",
+       "content": "# Attio API Authentication Methods\n\n**Supported Methods:**\nAttio supports two authentication approaches:\n\n1. **OAuth 2.0** - Recommended for multi-workspace applications. The platform \"implements the standard OAuth 2.0 specification\" and provides dedicated authorize, token exchange, and introspect endpoints.\n\n2. **API Key** - For single-workspace scenarios, developers can manually generate workspace-specific API keys through the developer settings page.\n\n**Token Usage:**\nBoth methods use identical request formatting—pass your token in the `Authorization` header as `Bearer <access_token>`. HTTP Basic Authentication is also supported as an alternative.\n\n**Scopes:**\nAccess control is managed through scopes that \"control the resources that the token has access to and the actions that can be performed.\" The scope requirements are identical between OAuth and API key tokens. For OAuth tokens, scopes are configured in the Developer console, while API key scopes are set during token generation and can be modified afterward.\n\n**App Review:**\nThe provided documentation does not address whether OAuth requires app review for publication—this information isn't included in the content supplied."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "8ccd0df8-a95c-4989-9325-2d848df24a9a",
+    "timestamp": "2026-09-16T14:46:26.210Z",
+    "tool_use_result": {
+     "bytes": 2671,
+     "code": 200,
+     "codeText": "OK",
+     "result": "# Attio API Authentication Methods\n\n**Supported Methods:**\nAttio supports two authentication approaches:\n\n1. **OAuth 2.0** - Recommended for multi-workspace applications. The platform \"implements the standard OAuth 2.0 specification\" and provides dedicated authorize, token exchange, and introspect endpoints.\n\n2. **API Key** - For single-workspace scenarios, developers can manually generate workspace-specific API keys through the developer settings page.\n\n**Token Usage:**\nBoth methods use identical request formatting—pass your token in the `Authorization` header as `Bearer <access_token>`. HTTP Basic Authentication is also supported as an alternative.\n\n**Scopes:**\nAccess control is managed through scopes that \"control the resources that the token has access to and the actions that can be performed.\" The scope requirements are identical between OAuth and API key tokens. For OAuth tokens, scopes are configured in the Developer console, while API key scopes are set during token generation and can be modified afterward.\n\n**App Review:**\nThe provided documentation does not address whether OAuth requires app review for publication—this information isn't included in the content supplied.",
+     "durationMs": 4367,
+     "url": "https://docs.attio.com/rest-api/guides/authentication"
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JM9Z8fyqDgaXcRJKpA",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text",
+       "text": "Enough information gathered to finalize the answer.\n\n```json\n{\n  \"one_liner\": {\"value\": \"Attio is a customizable, real-time relational CRM for sales and go-to-market teams.\", \"confidence\": \"high\", \"source_url\": \"https://attio.com\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"api_key\", \"bearer_token\"], \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/guides/authentication\"},\n  \"access_path\": {\"value\": \"self_serve_free\", \"confidence\": \"high\", \"source_url\": \"https://attio.com/pricing\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/mcp/overview\"},\n  \"base_url_model\": {\"value\": \"fixed\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"med\", \"source_url\": \"https://attio.com/pricing\"},\n  \"main_blocker\": {\"value\": \"None for single-workspace use via API key; publishing a multi-tenant OAuth integration to Attio's App Store likely requires additional review, though this was not explicitly documented in pages found.\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth\"},\n  \"docs_url\": {\"value\": \"https://docs.attio.com/rest-api/overview\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"}\n}\n```"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 856,
+      "cache_read_input_tokens": 21115,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 856
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "uuid": "2ae22618-b080-4bf8-b99c-f53b9a30c2ea",
+    "timestamp": "2026-09-16T14:46:33.283Z",
+    "request_id": "req_011Cf7JM976TUBnk8eUsQGYp"
+   },
+   {
+    "duration_api_ms": 61681,
+    "stop_reason": "end_turn",
+    "session_id": "b9f0055d-b4e6-4c11-9516-81eabc7c9905",
+    "total_cost_usd": 0.178448,
+    "usage": {
+     "input_tokens": 12,
+     "cache_creation_input_tokens": 9664,
+     "cache_read_input_tokens": 101650,
+     "output_tokens": 2023,
+     "output_tokens_details": {
+      "thinking_tokens": 630
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 9664,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 753,
+       "cache_read_input_tokens": 21115,
+       "cache_creation_input_tokens": 856,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 856
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "modelUsage": {
+     "claude-haiku-4-5-20251001": {
+      "inputTokens": 48278,
+      "outputTokens": 2186,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 4,
+      "costUSD": 0.099208,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     },
+     "claude-sonnet-5": {
+      "inputTokens": 12,
+      "outputTokens": 2023,
+      "cacheReadInputTokens": 101650,
+      "cacheCreationInputTokens": 9664,
+      "webSearchRequests": 0,
+      "costUSD": 0.07924,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 630,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+     "spawned": 0,
+     "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+     },
+     "started_in_background": 0,
+     "max_depth": 0,
+     "spawned_by_subagents": 0,
+     "completed": 0,
+     "failed": 0,
+     "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+     },
+     "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+     },
+     "by_type": {}
+    },
+    "is_error": false,
+    "num_turns": 8,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "Enough information gathered to finalize the answer.\n\n```json\n{\n  \"one_liner\": {\"value\": \"Attio is a customizable, real-time relational CRM for sales and go-to-market teams.\", \"confidence\": \"high\", \"source_url\": \"https://attio.com\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"api_key\", \"bearer_token\"], \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/guides/authentication\"},\n  \"access_path\": {\"value\": \"self_serve_free\", \"confidence\": \"high\", \"source_url\": \"https://attio.com/pricing\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/mcp/overview\"},\n  \"base_url_model\": {\"value\": \"fixed\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"med\", \"source_url\": \"https://attio.com/pricing\"},\n  \"main_blocker\": {\"value\": \"None for single-workspace use via API key; publishing a multi-tenant OAuth integration to Attio's App Store likely requires additional review, though this was not explicitly documented in pages found.\", \"confidence\": \"med\", \"source_url\": \"https://docs.attio.com/rest-api/tutorials/connect-an-app-through-oauth\"},\n  \"docs_url\": {\"value\": \"https://docs.attio.com/rest-api/overview\", \"confidence\": \"high\", \"source_url\": \"https://docs.attio.com/rest-api/overview\"}\n}\n```",
+    "ttft_ms": 2544,
+    "type": "result",
+    "duration_ms": 52901,
+    "uuid": "2bab88ab-67e0-413b-b9a0-22703c91fd0e",
+    "ttft_stream_ms": 1949,
+    "time_to_request_ms": 48,
+    "first_content_frame_ms": 1950,
+    "queued_turn_count": 0,
+    "result_index": 0
+   }
+  ],
+  "backend": "claude_cli",
+  "model": "sonnet"
+ }
+}

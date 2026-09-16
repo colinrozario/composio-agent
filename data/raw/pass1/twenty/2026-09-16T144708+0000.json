@@ -1,0 +1,106 @@
+{
+ "id": 5,
+ "slug": "twenty",
+ "name": "Twenty",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:47:08+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Open-source CRM with REST/GraphQL APIs for managing contacts, companies, and deals",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://twenty.com/pricing"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://github.com/twentyhq/twenty/issues/12953"
+  },
+  "base_url_model": {
+   "value": "self_hosted_or_customer_host",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "med",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://twenty.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none - self-serve API key from Settings works on both free self-hosted and cloud trial; only an official MCP server is missing, community ones exist",
+   "confidence": "med",
+   "source_url": "https://github.com/twentyhq/twenty/issues/12953"
+  },
+  "docs_url": {
+   "value": "https://docs.twenty.com/developers/extend/api",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aiskill.market/skills/twenty-crm",
+  "https://alternativeto.net/software/twenty-crm",
+  "https://alternativeto.net/software/twenty-crm/about",
+  "https://comparetiers.com/tools/twenty",
+  "https://deepwiki.com/mhenry3164/twenty-crm-mcp-server/9.1-environment-variables",
+  "https://dev.to/beton/twenty-crm-pricing-teardown-2026-c32",
+  "https://docs.twenty.com/developers/extend/api",
+  "https://docs.twenty.com/developers/self-host/self-host",
+  "https://github.com/api-evangelist/twenty",
+  "https://github.com/api-evangelist/twenty-crm",
+  "https://github.com/jezweb/twenty-mcp",
+  "https://github.com/jezweb/twenty-mcp/blob/main/OAUTH.md",
+  "https://github.com/mhenry3164/twenty-crm-mcp-server",
+  "https://github.com/twentyhq/twenty/issues/10283",
+  "https://github.com/twentyhq/twenty/issues/12953",
+  "https://github.com/twentyhq/twenty/issues/8980",
+  "https://glama.ai/mcp/servers/0xfabrica/twentycrm-mcp",
+  "https://glama.ai/mcp/servers/iteramind/twenty-mcp-iteramind",
+  "https://grok-wiki.com/public/wiki/twentyhq-twenty-7ed82e5a21f6",
+  "https://lobehub.com/mcp/igorwarzocha-twenty-mcp-server",
+  "https://lobehub.com/mcp/mhenry3164-twenty-crm-mcp-server",
+  "https://makerstack.co/reviews/twenty-crm-review/",
+  "https://mcpmarket.com/tools/skills/twenty-crm-integration-1",
+  "https://opsily.com/hosting/twenty-crm/twenty-crm-pricing",
+  "https://propicked.com/saas/twenty-crm/pricing",
+  "https://terminalskills.io/skills/twenty-crm",
+  "https://twenty.com/pricing",
+  "https://www.taskrhino.ca/blog/twenty-crm-vs-salesforce/"
+ ],
+ "backend": "claude_cli"
+}

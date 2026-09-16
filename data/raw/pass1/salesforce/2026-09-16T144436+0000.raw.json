@@ -1,0 +1,1080 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web search. Prefer the vendor's own developer docs,\nAPI reference, pricing page, and app-review/partner pages over blogs or aggregators.\n\nApp: Salesforce\nCategory: CRM and Sales\nHint (may be misleading, verify it): salesforce.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a page you actually saw in search results for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials",
+   "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+   "https://developer.salesforce.com/blogs/2025/10/salesforce-hosted-mcp-servers-are-in-beta-today",
+   "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+   "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_editions.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_res/intro_oauth_and_connected_apps.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_rest.meta/bi_dev_guide_rest/bi_rest_authentication.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/intro_using_oauth.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/quickstart_connecting.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm",
+   "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html",
+   "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+   "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html",
+   "https://enway.com/journal/salesforce-consultants/salesforce-editions-explained-comprehensive-comparison-key-differences/",
+   "https://eshopsync.com/salesforce-rest-api-developer-guide/",
+   "https://github.com/tsmztech/mcp-server-salesforce",
+   "https://glama.ai/mcp/servers/integrations/salesforce",
+   "https://help.salesforce.com/s/articleView?id=000199268&language=en_US&type=1",
+   "https://help.salesforce.com/s/articleView?id=000386929&language=en_US&type=1",
+   "https://help.salesforce.com/s/articleView?id=platform.hosted_mcp_servers.htm&language=en_US&type=5",
+   "https://help.zoho.com/portal/en/kb/forms/user-guide/integrations/salesforce/articles/api-access-in-salesforce",
+   "https://mcpservers.org/servers/JereSalguero30/mcp-server-salesforce",
+   "https://monitor.biology.washington.edu/how-to-access-salesforce-developer-edition-account",
+   "https://www.oreilly.com/library/view/salesforce-platform-app/9781785283697/ch01s04.html"
+  ],
+  "fetched_urls": [],
+  "num_turns": 5,
+  "events": [
+   {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\Users\\colin\\AppData\\Local\\Temp",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "tools": [
+     "CronCreate",
+     "CronDelete",
+     "CronList",
+     "DesignSync",
+     "EnterWorktree",
+     "ExitWorktree",
+     "ListAgents",
+     "Monitor",
+     "PushNotification",
+     "RemoteTrigger",
+     "ReportFindings",
+     "ScheduleWakeup",
+     "SendMessage",
+     "TaskOutput",
+     "TaskStop",
+     "ToolSearch",
+     "WebFetch",
+     "WebSearch"
+    ],
+    "mcp_servers": [
+     {
+      "name": "claude.ai Google Drive",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Gmail",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Google Calendar",
+      "status": "needs-auth"
+     }
+    ],
+    "model": "claude-sonnet-5",
+    "permissionMode": "default",
+    "slash_commands": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator",
+     "advisor",
+     "agents",
+     "auto-mode-setup",
+     "autocompact",
+     "clear",
+     "color",
+     "compact",
+     "config",
+     "output-style",
+     "context",
+     "effort",
+     "fast",
+     "heapdump",
+     "init",
+     "mcp",
+     "import",
+     "model",
+     "__remote-workflow",
+     "workflow-launch-exec",
+     "reload-plugins",
+     "reload-skills",
+     "rename",
+     "ultrareview",
+     "security-review",
+     "usage-credits",
+     "extra-usage",
+     "usage",
+     "insights",
+     "recap",
+     "skill-doctor",
+     "goal",
+     "design-consent",
+     "design-revoke",
+     "list-agents",
+     "team-onboarding"
+    ],
+    "terminal_slash_commands": [
+     "doctor",
+     "color",
+     "reload-plugins"
+    ],
+    "apiKeySource": "none",
+    "claude_code_version": "2.1.273",
+    "output_style": "default",
+    "agents": [
+     "claude",
+     "Explore",
+     "general-purpose",
+     "Plan",
+     "statusline-setup"
+    ],
+    "skills": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator"
+    ],
+    "plugins": [
+     {
+      "name": "andrej-karpathy-skills",
+      "path": "C:\\Users\\colin\\.claude\\plugins\\cache\\karpathy-skills\\andrej-karpathy-skills\\1.0.0",
+      "source": "andrej-karpathy-skills@karpathy-skills",
+      "version": "1.0.0"
+     }
+    ],
+    "capabilities": [
+     "interrupt_receipt_v1",
+     "interrupt_cancel_queued_v1",
+     "msg_lifecycle_v1"
+    ],
+    "analytics_disabled": false,
+    "product_feedback_disabled": false,
+    "uuid": "8fd80806-da68-4dd5-833d-0c4fd3c303c9",
+    "memory_paths": {
+     "auto": "C:\\Users\\colin\\.claude\\projects\\C--Users-colin-AppData-Local-Temp\\memory\\"
+    },
+    "messaging_socket_path": "\\\\.\\pipe\\LOCAL\\cc-msg-163eff7e5f2e5f3d0971c4385617bc14",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "powershell_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.53,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.03,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "7b9ad2f7-9ace-4429-9879-7ac447afca45",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JAdgWFK8gzgwkJZCm3",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EvwCCqgBCBEYAipA4BccoT5CVHUTLo/tkA3/8jvEVVNZ3dU8nPEhb+6jmolPJevbHTB2Sq/i7l/HBuHlpVyLzBWoLF6uifmAKf5y1TIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAbfWqtUGsAECEgwH9e7sN12IvWFeCs8aDO1bYGIpjsvqIXqr3SIwtn7Mgb+coRKtnSNk5zlKg8MEGoBwO0KrIuquIjBifiAHOflePbyN7BeQcMV8IXcpKoABYfCDZX+71rAr7Jkc16u5jy2CLnyzyJ9saEOyv7/iOmSnG+425sLbVEfvV6wIyUaxXXfuO1wVdcolYHHC1uVv//gSdsMVIBCh6iVEJg3J3up2Mm/uoFq+Y4VGJWqLrnr4F9EINA3dqa7i0PFLkppOlY9J3jFp8JY4CvX7zVeHiR4YAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 14404,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 14404
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "e82eb3ba-adf9-401c-862a-14289b123b89",
+    "timestamp": "2026-09-16T14:44:05.686Z",
+    "request_id": "req_011Cf7JAdCEHyvaavyJZ6869"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JAdgWFK8gzgwkJZCm3",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_013CRqfE3TKo6XUBoD5EZAGR",
+       "name": "ToolSearch",
+       "input": {
+        "query": "select:WebSearch",
+        "max_results": 3
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 14404,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 14404
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "a72e1cc9-5101-4547-85c4-3b0d06db4fa4",
+    "timestamp": "2026-09-16T14:44:05.700Z",
+    "request_id": "req_011Cf7JAdCEHyvaavyJZ6869",
+    "wire_tool_inputs": {
+     "toolu_013CRqfE3TKo6XUBoD5EZAGR": {
+      "query": "select:WebSearch",
+      "max_results": 3
+     }
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "type": "tool_result",
+       "tool_use_id": "toolu_013CRqfE3TKo6XUBoD5EZAGR",
+       "content": [
+        {
+         "type": "tool_reference",
+         "tool_name": "WebSearch"
+        }
+       ]
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "3542356f-3d27-4bd3-9d9a-0b82181e6142",
+    "timestamp": "2026-09-16T14:44:05.707Z",
+    "tool_use_result": {
+     "matches": [
+      "WebSearch"
+     ],
+     "query": "select:WebSearch",
+     "total_deferred_tools": 14
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JAo3aCXxduLfVz9rCf",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_013VxCZvxx4qSo7hx2dHVHhz",
+       "name": "WebSearch",
+       "input": {
+        "query": "Salesforce REST API developer documentation authentication OAuth 2026"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 840,
+      "cache_read_input_tokens": 14404,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 840
+      },
+      "output_tokens": 18,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "3969239f-cfb2-4240-8856-82ffeaea2ca1",
+    "timestamp": "2026-09-16T14:44:07.317Z",
+    "request_id": "req_011Cf7JAncWyEMeMkkXa2ujZ",
+    "wire_tool_inputs": {
+     "toolu_013VxCZvxx4qSo7hx2dHVHhz": {
+      "query": "Salesforce REST API developer documentation authentication OAuth 2026"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JAo3aCXxduLfVz9rCf",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_017GFMxBF4Guysky2iqyce3E",
+       "name": "WebSearch",
+       "input": {
+        "query": "Salesforce official MCP server"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 840,
+      "cache_read_input_tokens": 14404,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 840
+      },
+      "output_tokens": 18,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "d85f328a-43b4-47cf-8fc0-50af3b55942c",
+    "timestamp": "2026-09-16T14:44:07.550Z",
+    "request_id": "req_011Cf7JAncWyEMeMkkXa2ujZ",
+    "wire_tool_inputs": {
+     "toolu_017GFMxBF4Guysky2iqyce3E": {
+      "query": "Salesforce official MCP server"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.55,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "d13b93ff-14b2-4d86-bd60-d4ba48d21b27",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_013VxCZvxx4qSo7hx2dHVHhz",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Salesforce REST API developer documentation authentication OAuth 2026\"\n\nLinks: [{\"title\":\"OAuth and Connect REST API | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html\"},{\"title\":\"Step Two: Set Up Authentication | REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm\"},{\"title\":\"OAuth and Connect REST API | Connect REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/intro_using_oauth.htm\"},{\"title\":\"Invoke REST APIs with the Salesforce Integration User and OAuth Client Credentials | Salesforce Developers Blog\",\"url\":\"https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials\"},{\"title\":\"Authorization Through External Client Apps or Connected Apps and OAuth 2.0 | REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},{\"title\":\"Connect REST API Authorization | CRM Analytics REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_rest.meta/bi_dev_guide_rest/bi_rest_authentication.htm\"},{\"title\":\"Step Three: Connect to Connect REST API Using OAuth | Connect REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/quickstart_connecting.htm\"},{\"title\":\"Step Two: Set Up Authentication | Quick Start | REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"},{\"title\":\"Salesforce REST API Developer Guide\",\"url\":\"https://eshopsync.com/salesforce-rest-api-developer-guide/\"},{\"title\":\"Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_res/intro_oauth_and_connected_apps.htm\"}]\n\nI've completed the web search for Salesforce REST API authentication OAuth documentation. Here are the key findings:\n\n## Overview\n\nTo implement authorization for REST API, use either an external client app or a connected app and an OAuth 2.0 authorization flow.\n\n## Authentication Requirements\n\nTo successfully send requests, REST API requires an access token obtained by authentication. On successful authorization, the client application receives access and refresh tokens.\n\n## OAuth Flows\n\nOAuth has multiple authentication flows. There are several steps in each authentication flow, as dictated by the OAuth standard and the type of application trying to access Salesforce.\n\nAuthenticate each application using the OAuth client credentials flow, which is intended for server-to-server connections.\n\n## Getting Started\n\nYou can create and authenticate against your own connected app, or use Salesforce CLI for convenience, which is a connected app that requires no work to configure.\n\nThe search results point to the official Salesforce Developers documentation, which provides comprehensive guides on OAuth setup and REST API authentication. The primary documentation sources are hosted at `developer.salesforce.com` and include step-by-step guides for implementation.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "ad14c302-55f4-480c-8d2a-776a24256bba",
+    "timestamp": "2026-09-16T14:44:13.919Z",
+    "tool_use_result": {
+     "query": "Salesforce REST API developer documentation authentication OAuth 2026",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01Kn6mZ1Leath9hs22jSC8t5",
+       "content": [
+        {
+         "title": "OAuth and Connect REST API | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html"
+        },
+        {
+         "title": "Step Two: Set Up Authentication | REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart_oauth.htm"
+        },
+        {
+         "title": "OAuth and Connect REST API | Connect REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/intro_using_oauth.htm"
+        },
+        {
+         "title": "Invoke REST APIs with the Salesforce Integration User and OAuth Client Credentials | Salesforce Developers Blog",
+         "url": "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials"
+        },
+        {
+         "title": "Authorization Through External Client Apps or Connected Apps and OAuth 2.0 | REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+        },
+        {
+         "title": "Connect REST API Authorization | CRM Analytics REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_rest.meta/bi_dev_guide_rest/bi_rest_authentication.htm"
+        },
+        {
+         "title": "Step Three: Connect to Connect REST API Using OAuth | Connect REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/quickstart_connecting.htm"
+        },
+        {
+         "title": "Step Two: Set Up Authentication | Quick Start | REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html"
+        },
+        {
+         "title": "Salesforce REST API Developer Guide",
+         "url": "https://eshopsync.com/salesforce-rest-api-developer-guide/"
+        },
+        {
+         "title": "Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_res/intro_oauth_and_connected_apps.htm"
+        }
+       ]
+      },
+      "I've completed the web search for Salesforce REST API authentication OAuth documentation. Here are the key findings:\n\n## Overview\n\nTo implement authorization for REST API, use either an external client app or a connected app and an OAuth 2.0 authorization flow.\n\n## Authentication Requirements\n\nTo successfully send requests, REST API requires an access token obtained by authentication. On successful authorization, the client application receives access and refresh tokens.\n\n## OAuth Flows\n\nOAuth has multiple authentication flows. There are several steps in each authentication flow, as dictated by the OAuth standard and the type of application trying to access Salesforce.\n\nAuthenticate each application using the OAuth client credentials flow, which is intended for server-to-server connections.\n\n## Getting Started\n\nYou can create and authenticate against your own connected app, or use Salesforce CLI for convenience, which is a connected app that requires no work to configure.\n\nThe search results point to the official Salesforce Developers documentation, which provides comprehensive guides on OAuth setup and REST API authentication. The primary documentation sources are hosted at `developer.salesforce.com` and include step-by-step guides for implementation."
+     ],
+     "durationSeconds": 6.597133,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.56,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "b113dca4-521b-4eeb-ab78-1791c3797dce",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_017GFMxBF4Guysky2iqyce3E",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Salesforce official MCP server\"\n\nLinks: [{\"title\":\"Introducing MCP Support Across Salesforce | Salesforce Developers Blog\",\"url\":\"https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce\"},{\"title\":\"Standard Servers | Reference | Hosted MCP Servers | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html\"},{\"title\":\"Salesforce Hosted MCP Servers Are in Beta Today | Salesforce Developers Blog\",\"url\":\"https://developer.salesforce.com/blogs/2025/10/salesforce-hosted-mcp-servers-are-in-beta-today\"},{\"title\":\"Get Started | Hosted MCP Servers | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html\"},{\"title\":\"Salesforce DX MCP Server and Tools | Salesforce DX Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm\"},{\"title\":\"Salesforce Hosted MCP Servers Are Now Generally Available | Salesforce Developers Blog\",\"url\":\"https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available\"},{\"title\":\"Salesforce Hosted MCP Servers (Beta)\",\"url\":\"https://help.salesforce.com/s/articleView?id=platform.hosted_mcp_servers.htm&language=en_US&type=5\"},{\"title\":\"Salesforce MCP Server | Awesome MCP Servers\",\"url\":\"https://mcpservers.org/servers/JereSalguero30/mcp-server-salesforce\"},{\"title\":\"GitHub - tsmztech/mcp-server-salesforce: Salesforce MCP Server · GitHub\",\"url\":\"https://github.com/tsmztech/mcp-server-salesforce\"},{\"title\":\"Best Salesforce MCP Servers\",\"url\":\"https://glama.ai/mcp/servers/integrations/salesforce\"}]\n\nBased on the search results, here's what I found about Salesforce's official MCP server:\n\n## Salesforce Hosted MCP Servers\n\nSalesforce Hosted MCP Servers are now generally available (GA), enabling AI agents to securely access your Salesforce data across every Enterprise Edition org and above.\n\nA hosted MCP server is a Salesforce-managed endpoint that exposes your org's logic and assets — data, flows, Apex actions, queries, and more — to any AI client that speaks MCP, with Salesforce handling hosting, authentication, and permission enforcement automatically.\n\n### Key Features:\n\n- Any compatible AI client—Claude, ChatGPT, Cursor, or a custom agent—can connect to a Salesforce org and act on behalf of authorized users.\n\n- Your existing permissions automatically apply — CRUD, FLS, sharing rules, and all other controls, with every transaction running as the authenticated user.\n\n- You can use prebuilt standard servers for the Agentforce 360 Platform, Tableau Next, Data 360 SQL, and more — or configure custom servers that expose your flows, Apex actions, and Named Query APIs.\n\n## Salesforce DX MCP Server\n\nAdditionally, the DX MCP server includes over 60 MCP tools for various Salesforce features, such as DevOps, LWC development, and code analysis.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "017418b3-1391-4474-969f-627d2f7e66fa",
+    "timestamp": "2026-09-16T14:44:14.658Z",
+    "tool_use_result": {
+     "query": "Salesforce official MCP server",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01XCjPH1if4Z5LX6C2fLundo",
+       "content": [
+        {
+         "title": "Introducing MCP Support Across Salesforce | Salesforce Developers Blog",
+         "url": "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce"
+        },
+        {
+         "title": "Standard Servers | Reference | Hosted MCP Servers | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html"
+        },
+        {
+         "title": "Salesforce Hosted MCP Servers Are in Beta Today | Salesforce Developers Blog",
+         "url": "https://developer.salesforce.com/blogs/2025/10/salesforce-hosted-mcp-servers-are-in-beta-today"
+        },
+        {
+         "title": "Get Started | Hosted MCP Servers | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+        },
+        {
+         "title": "Salesforce DX MCP Server and Tools | Salesforce DX Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp.htm"
+        },
+        {
+         "title": "Salesforce Hosted MCP Servers Are Now Generally Available | Salesforce Developers Blog",
+         "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available"
+        },
+        {
+         "title": "Salesforce Hosted MCP Servers (Beta)",
+         "url": "https://help.salesforce.com/s/articleView?id=platform.hosted_mcp_servers.htm&language=en_US&type=5"
+        },
+        {
+         "title": "Salesforce MCP Server | Awesome MCP Servers",
+         "url": "https://mcpservers.org/servers/JereSalguero30/mcp-server-salesforce"
+        },
+        {
+         "title": "GitHub - tsmztech/mcp-server-salesforce: Salesforce MCP Server · GitHub",
+         "url": "https://github.com/tsmztech/mcp-server-salesforce"
+        },
+        {
+         "title": "Best Salesforce MCP Servers",
+         "url": "https://glama.ai/mcp/servers/integrations/salesforce"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about Salesforce's official MCP server:\n\n## Salesforce Hosted MCP Servers\n\nSalesforce Hosted MCP Servers are now generally available (GA), enabling AI agents to securely access your Salesforce data across every Enterprise Edition org and above.\n\nA hosted MCP server is a Salesforce-managed endpoint that exposes your org's logic and assets — data, flows, Apex actions, queries, and more — to any AI client that speaks MCP, with Salesforce handling hosting, authentication, and permission enforcement automatically.\n\n### Key Features:\n\n- Any compatible AI client—Claude, ChatGPT, Cursor, or a custom agent—can connect to a Salesforce org and act on behalf of authorized users.\n\n- Your existing permissions automatically apply — CRUD, FLS, sharing rules, and all other controls, with every transaction running as the authenticated user.\n\n- You can use prebuilt standard servers for the Agentforce 360 Platform, Tableau Next, Data 360 SQL, and more — or configure custom servers that expose your flows, Apex actions, and Named Query APIs.\n\n## Salesforce DX MCP Server\n\nAdditionally, the DX MCP server includes over 60 MCP tools for various Salesforce features, such as DevOps, LWC development, and code analysis."
+     ],
+     "durationSeconds": 7.103609799999999,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "da243904-b6af-4c25-b51f-9ca1b79801db"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 147,
+    "estimated_tokens_delta": 97,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "fc3123b8-6a70-431d-9566-1639ac83498d"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JBUpEcAxaMwDgzY9mp",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EsYECqgBCBEYAipANtoYq6DaLfPOhyYhYamBiWwNI/R5DG2wW9OiCf5hDhgaoaZGRM2ddWZJTeGZaI3pua0UBzB/h+z9Eddl6pOplzIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAcPWqtUGsAECEgxEansb3X+2KLsM2QQaDJd25Y1JdztrpnZTciIwMc4RpgUCsQbKzNweabXLEDEpnPL5ZDONw30QzJQghCRezIJZq1ypD8lQHWYpWwhQKsoCkaJoGo8xu8RG57jBiKIgkXLNMZhc3UDmoBfwwvydeDAuEYLK0Q0u59w3xkaglWcUx2Y1Mcq2L6SPo9LYFagYBxpDG+PUozlKGkB7J0awPWqddwLbuAQ3GMGDTsiDbang8KP7OWROfMxx7T4JhJszwYhQ7B77gqdixWig5WpLrorllCLM/QnhshuFCFFVXzy6ZuQmK2OcdddmEZt+fswdsjSXrsg0H6ahanGIdbk4YJzLLDKiY2Tt0bUNTWXG3JlExiFvwfUgGSe+H73ppIIWogvhJKXAVsUTu8G42yc+11RXX/th/GxV7UCEIIcRPXb7uwd0Z5cZuVRhW4qoHKoU4T3u8C+XzzNAYOD4srXPmCh0oEZqbZBzS8qJ4V9fK5F/M5fLk+HnQ294xrYFRPGEmbbrTuixL6OQNHjlOEwISdyKEMyhcTipG5U+GAE="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2877,
+      "cache_read_input_tokens": 15244,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2877
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "f0774a9c-b0ae-4910-8b21-5e6c4544b352",
+    "timestamp": "2026-09-16T14:44:17.626Z",
+    "request_id": "req_011Cf7JBTSsZuFzJRYrmPP7x"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JBUpEcAxaMwDgzY9mp",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01CfyE9vJkajWQfEGkXdg4Nz",
+       "name": "WebSearch",
+       "input": {
+        "query": "Salesforce Developer Edition free sandbox API access which editions include API"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2877,
+      "cache_read_input_tokens": 15244,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2877
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "794d72f7-4840-4cfc-af32-10782d3108f2",
+    "timestamp": "2026-09-16T14:44:18.000Z",
+    "request_id": "req_011Cf7JBTSsZuFzJRYrmPP7x",
+    "wire_tool_inputs": {
+     "toolu_01CfyE9vJkajWQfEGkXdg4Nz": {
+      "query": "Salesforce Developer Edition free sandbox API access which editions include API"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.57,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "36f44913-9532-4504-8348-aaa0c6ec72b5",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.58,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.04,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "86a9c224-f4b7-414b-b604-cec2c5f23d42",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01CfyE9vJkajWQfEGkXdg4Nz",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Salesforce Developer Edition free sandbox API access which editions include API\"\n\nLinks: [{\"title\":\"Salesforce Editions Comparison: Plans & Pricing Explained\",\"url\":\"https://enway.com/journal/salesforce-consultants/salesforce-editions-explained-comprehensive-comparison-key-differences/\"},{\"title\":\"How to Find Your Salesforce Edition and API Version | Salesforce Help\",\"url\":\"https://help.salesforce.com/s/articleView?id=000199268&language=en_US&type=1\"},{\"title\":\"Step One: Sign up for Salesforce Developer Edition | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html\"},{\"title\":\"Developer Edition or Sandbox Environment? | Getting Started With Mobile SDK for iOS and Android | Mobile SDK Development Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html\"},{\"title\":\"Supported Editions and Required Permissions | REST API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},{\"title\":\"Supported Salesforce Editions | Metadata API Developer Guide | Salesforce Developers\",\"url\":\"https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_editions.htm\"},{\"title\":\"How to Find Your Salesforce Edition and API Version\",\"url\":\"https://help.salesforce.com/s/articleView?id=000386929&language=en_US&type=1\"},{\"title\":\"The Easy Information to Unlocking Your Salesforce Developer Version Account\",\"url\":\"https://monitor.biology.washington.edu/how-to-access-salesforce-developer-edition-account\"},{\"title\":\"Salesforce editions\",\"url\":\"https://www.oreilly.com/library/view/salesforce-platform-app/9781785283697/ch01s04.html\"},{\"title\":\"Salesforce Integration | API access in Salesforce - Zoho Forms\",\"url\":\"https://help.zoho.com/portal/en/kb/forms/user-guide/integrations/salesforce/articles/api-access-in-salesforce\"}]\n\nBased on the search results, here's what I found about Salesforce Developer Edition, sandboxes, and API access:\n\n## Developer Edition & API Access\n\nDeveloper Edition provides sandbox-like access for free, but is limited to development/testing purposes only. Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development.\n\n## Which Editions Include API Access\n\nTo use Salesforce API, your organization must be on one of the following editions (the API is enabled by default): Enterprise Edition, Unlimited Edition, Developer Edition, and Performance Edition. Additionally, Pro Suite can add API access as an optional $25/user/month add-on, while Starter Suite and the Free Suite do not include API access in any form.\n\n## Sandbox Availability by Edition\n\n- A partial sandbox (for configuration testing) is first available in the Enterprise Edition.\n- A full sandbox (for code development and testing with production data volumes) becomes available in the Unlimited Edition.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "05536422-ea60-4422-9661-03b8346328bc",
+    "timestamp": "2026-09-16T14:44:23.796Z",
+    "tool_use_result": {
+     "query": "Salesforce Developer Edition free sandbox API access which editions include API",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01Bu7yFvJMYxajR569dScjbM",
+       "content": [
+        {
+         "title": "Salesforce Editions Comparison: Plans & Pricing Explained",
+         "url": "https://enway.com/journal/salesforce-consultants/salesforce-editions-explained-comprehensive-comparison-key-differences/"
+        },
+        {
+         "title": "How to Find Your Salesforce Edition and API Version | Salesforce Help",
+         "url": "https://help.salesforce.com/s/articleView?id=000199268&language=en_US&type=1"
+        },
+        {
+         "title": "Step One: Sign up for Salesforce Developer Edition | Connect REST API Developer Guide | Connect REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html"
+        },
+        {
+         "title": "Developer Edition or Sandbox Environment? | Getting Started With Mobile SDK for iOS and Android | Mobile SDK Development Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html"
+        },
+        {
+         "title": "Supported Editions and Required Permissions | REST API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm"
+        },
+        {
+         "title": "Supported Salesforce Editions | Metadata API Developer Guide | Salesforce Developers",
+         "url": "https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_editions.htm"
+        },
+        {
+         "title": "How to Find Your Salesforce Edition and API Version",
+         "url": "https://help.salesforce.com/s/articleView?id=000386929&language=en_US&type=1"
+        },
+        {
+         "title": "The Easy Information to Unlocking Your Salesforce Developer Version Account",
+         "url": "https://monitor.biology.washington.edu/how-to-access-salesforce-developer-edition-account"
+        },
+        {
+         "title": "Salesforce editions",
+         "url": "https://www.oreilly.com/library/view/salesforce-platform-app/9781785283697/ch01s04.html"
+        },
+        {
+         "title": "Salesforce Integration | API access in Salesforce - Zoho Forms",
+         "url": "https://help.zoho.com/portal/en/kb/forms/user-guide/integrations/salesforce/articles/api-access-in-salesforce"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about Salesforce Developer Edition, sandboxes, and API access:\n\n## Developer Edition & API Access\n\nDeveloper Edition provides sandbox-like access for free, but is limited to development/testing purposes only. Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development.\n\n## Which Editions Include API Access\n\nTo use Salesforce API, your organization must be on one of the following editions (the API is enabled by default): Enterprise Edition, Unlimited Edition, Developer Edition, and Performance Edition. Additionally, Pro Suite can add API access as an optional $25/user/month add-on, while Starter Suite and the Free Suite do not include API access in any form.\n\n## Sandbox Availability by Edition\n\n- A partial sandbox (for configuration testing) is first available in the Enterprise Edition.\n- A full sandbox (for code development and testing with production data volumes) becomes available in the Unlimited Edition."
+     ],
+     "durationSeconds": 5.792573099999999,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "a7520fb2-8da8-46c2-b383-fd6e4d77a443"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 150,
+    "estimated_tokens_delta": 100,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "e40ca738-2669-4f08-9612-5da7c33a4b9a"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 250,
+    "estimated_tokens_delta": 100,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "735b97b5-7291-42f9-89fb-20bf701596b9"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 350,
+    "estimated_tokens_delta": 100,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "abba1400-4cd7-4dd4-948d-851558e51001"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 389,
+    "estimated_tokens_delta": 39,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "af861d2f-088c-48b4-8add-fb0c21a045ad"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JC7w9saAWdK7tUBRgm",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "Eo0MCqgBCBEYAipAFBPmFsr1NMa2/6iSoDtwn5rpMdnjnnODH6zo+KyU2plEKQWa5sBPCc6ezvWHPgqr+FFdqaJmUgSebq0ozQsNajIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAc/WqtUGsAECEgyHnatIC4fD0794Iv4aDOaHsfLNKRzlK4gdZCIwUnXfX/GOjD3KlFz5LNOaepovTk5mShpDB6X5LulcDA1UuY+QwPDvMzysmkrJZ7rxKpEKjR+BBlqhg+PuaA5YyR8/ecYYeR4zx129/ielBjA8VZM1BkNIjmgkulwhMcHf9ViwGv0Lr8pz1kb9aJMUBiqGpVH0U2zgwYtBXdINqvR1ljklRDq3uypL/uKxHM46jdUPe8TXZIWmvbQK3UJ+4AcPexQo9wX4lfN5s23vBl9c/2GDUOk+zcliDO+pTNq8P82mvDP0yWgj3PmZaKR91TseDmCdMRYMsokcAlCqj2cjEiJK8ag/8zy3OCi8FYCHgx1kxbfvno4qw8a1uzWsfP58ieM5a/XbfNfa7/0KUJOWZTqTsWHvRalgZIBGYzdSHlypWSCXeJnP2XLF+1pnNzbjIkHS8M2QAn2dyFU3w8u6P2QKDFhhK19dLNhX63VlabHmkxdG5Ydpom355Y33j/Ev23fM9KsiLliRuCG6RoBLZipFXcwSeNcfwohEMTaqgZqvsxEa7gxYnhSl80cCRJhO82wpQCGLOnBciKhNJ3lBRwDjXCxLpAOMLJe3YUfjaA9XQnK2FFQGteQvXhiu7S+sNjPAIeQpuZXeZ49m6h3213G7DsCz2vWatmlc8AbiQ97XsZvOUViaBSzIu0v8XUNaSB1t2EveQKMruGMBpu8/xGcBma+Q5lIUqSR4nVFlis/WLshqXmcC5l89dNRk2TvXiJaNAyFWzhBSPPBfEB+F+UBI3Lzj1K6VMUoPAQsR/7z/2pwwzuWofwHVaBu3YMm7qk1q8hraBKW4vUzMZZn01P+SqzQaWL4miDd5IKPIzfwvo85SrZOVzbxpLUv64lj5JntzqEBlbRKM4FDdW1F6+iYwIH0jVJ2ZZia16BP8a5LFsh1y95k+H0Q0pNNtO5rDhY7ZVVvk9jlVwvnrguVjTHy5K2G7CgjccGYlOqPYGZi4LEh2WHrdIAJXJfmS00oI8iZ1AYMJomT2oOgfF8rSciBCFtVsuC14Lk3zcGYZjhNT2aFqKjQ6o3nj06GotDdo5DMwhuUw14JxJSBoLcWdbssMp58gQOq3iF+SAPaMumlMcvZO4GU9wc1zXmmUiDOyoQB8lq+qCjtnSENDfoWEgMLnK6r0tVzgJZDFRr8M+5LEqfnac2jrzZEJ6JzacKlV5Xh9Gua042m846CSGZdz6p/cVwPmEr0eYhXfevCKIWcH3e9iQPHkYnEuh2fEPKtRCg9LSdmNFYGllfAK9N6nRfai0ezhSzG4zbmaMHxbKzHhE3LMkQv8zeBaGvlKb7c+GTxeFAhdMXJkVnk2z4JBlvDt8JvMWPcMx/SGAfsjEG12UfwfUI27WDZ5s9s/HQbOmSXA/xNs1rROW4aJPKVW3jmurkpLnvSXufaryfiTfB04ScS2Fl1lPA9y3y0C51r9OzYhrxcpDhAPB/CsQolw8aCLP+3Qs+zwK8BXIoUgxO3xMccrQhhQS8iS5nWlyE++Yp9vZ36jVDJwKODS6aX8r8AdeSwSNdXea6KnBxZFZB9PVRvPHhJDSffO4j8DRASGbpOJf3705H5/t7xHdXkvvargE9XFi9JIyPNfbXalW9QafcgjJEDzWz2BMeZ5R/Y9z6zI5awh57qCRVB3ctb6JEGYvsu68ulLT9xH/KuCI3biZftG3OtNlbVXOEaK4W0eMYXUCFY9zuk/p7cAf0XiTmBMTHLTZ/l3zlivl6/LRTNHO5TIA8tEsNAFs5K5mqrLlwLGHs5iIaIAa5+1XDie9C4xVz1ZtRPyzoltmqiFfdfuRxgB"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1426,
+      "cache_read_input_tokens": 18121,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1426
+      },
+      "output_tokens": 6,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "0af291a2-8b43-4a28-842f-62698a2b49cd",
+    "timestamp": "2026-09-16T14:44:29.174Z",
+    "request_id": "req_011Cf7JC7h1TqZpa2vAb8jtd"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JC7w9saAWdK7tUBRgm",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text",
+       "text": "```json\n{\n  \"one_liner\": {\"value\": \"Cloud CRM platform for managing sales, service, and marketing data via API\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"bearer_token\", \"jwt\"], \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"access_path\": {\"value\": \"paid_plan_required\", \"confidence\": \"med\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"api_type\": {\"value\": \"rest_and_graphql\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available\"},\n  \"base_url_model\": {\"value\": \"per_tenant_subdomain\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html\"},\n  \"main_blocker\": {\"value\": \"Real production orgs need Enterprise Edition or higher (or a paid API add-on) since Starter/Free/Professional Suite editions lack API access by default, though a free Developer Edition org is available for testing.\", \"confidence\": \"med\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"docs_url\": {\"value\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"}\n}\n```"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1426,
+      "cache_read_input_tokens": 18121,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1426
+      },
+      "output_tokens": 6,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "uuid": "a379ec59-505a-4b89-8200-7e58e1ee3e28",
+    "timestamp": "2026-09-16T14:44:36.248Z",
+    "request_id": "req_011Cf7JC7h1TqZpa2vAb8jtd"
+   },
+   {
+    "duration_api_ms": 40616,
+    "stop_reason": "end_turn",
+    "session_id": "b20aaaf1-2c6e-4328-856a-d6b66132f7bf",
+    "total_cost_usd": 0.1734978,
+    "usage": {
+     "input_tokens": 8,
+     "cache_creation_input_tokens": 19547,
+     "cache_read_input_tokens": 47769,
+     "output_tokens": 1917,
+     "output_tokens_details": {
+      "thinking_tokens": 518
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 19547,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1504,
+       "cache_read_input_tokens": 18121,
+       "cache_creation_input_tokens": 1426,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1426
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "modelUsage": {
+     "claude-haiku-4-5-20251001": {
+      "inputTokens": 30465,
+      "outputTokens": 1221,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 3,
+      "costUSD": 0.06657,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     },
+     "claude-sonnet-5": {
+      "inputTokens": 8,
+      "outputTokens": 1917,
+      "cacheReadInputTokens": 47769,
+      "cacheCreationInputTokens": 19547,
+      "webSearchRequests": 0,
+      "costUSD": 0.1069278,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 518,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+     "spawned": 0,
+     "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+     },
+     "started_in_background": 0,
+     "max_depth": 0,
+     "spawned_by_subagents": 0,
+     "completed": 0,
+     "failed": 0,
+     "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+     },
+     "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+     },
+     "by_type": {}
+    },
+    "is_error": false,
+    "num_turns": 5,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "```json\n{\n  \"one_liner\": {\"value\": \"Cloud CRM platform for managing sales, service, and marketing data via API\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"bearer_token\", \"jwt\"], \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"access_path\": {\"value\": \"paid_plan_required\", \"confidence\": \"med\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"api_type\": {\"value\": \"rest_and_graphql\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/intro_using_oauth.html\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available\"},\n  \"base_url_model\": {\"value\": \"per_tenant_subdomain\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"test_account\": {\"value\": \"free_tier_or_sandbox\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html\"},\n  \"main_blocker\": {\"value\": \"Real production orgs need Enterprise Edition or higher (or a paid API add-on) since Starter/Free/Professional Suite editions lack API access by default, though a free Developer Edition org is available for testing.\", \"confidence\": \"med\", \"source_url\": \"https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm\"},\n  \"docs_url\": {\"value\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\", \"confidence\": \"high\", \"source_url\": \"https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html\"}\n}\n```",
+    "ttft_ms": 2255,
+    "type": "result",
+    "duration_ms": 32850,
+    "uuid": "c46bff8d-f134-4535-8d0c-9620948d1339",
+    "ttft_stream_ms": 1063,
+    "time_to_request_ms": 57,
+    "first_content_frame_ms": 1063,
+    "queued_turn_count": 0,
+    "result_index": 0
+   }
+  ],
+  "backend": "claude_cli",
+  "model": "sonnet"
+ }
+}
