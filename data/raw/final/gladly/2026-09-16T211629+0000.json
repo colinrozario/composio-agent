@@ -1,0 +1,111 @@
+{
+ "id": 20,
+ "slug": "gladly",
+ "name": "Gladly",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Customer service platform API for managing customer profile data, conversations, and timelines.",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "auth_methods": {
+   "value": [
+    "basic",
+    "jwt"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "med",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "test_account": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://developer.gladly.com/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  },
+  "docs_url": {
+   "value": "https://developer.gladly.com/rest/",
+   "confidence": "high",
+   "source_url": "https://developer.gladly.com/rest/"
+  }
+ },
+ "schema_problems": [
+  "test_account: bad enum paid_plan_required"
+ ],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aiwiki.io/tools/gladly/docs",
+  "https://apihunt.io/apis/gladly",
+  "https://apitracker.io/a/gladly",
+  "https://developer.gladly.com/",
+  "https://developer.gladly.com/?param=chatbotize",
+  "https://developer.gladly.com/android-sdk/10-com.gladly.androidchatsdk/-gladly/initialize.html",
+  "https://developer.gladly.com/android-sdk/20-com.gladly.androidchatsdk.models/-settings/index.html",
+  "https://developer.gladly.com/android-sdk/20-com.gladly.androidchatsdk.models/-sidekick-event/-s-d-k-initialized.html",
+  "https://developer.gladly.com/android-sdk/20-com.gladly.androidchatsdk.models/index.html",
+  "https://developer.gladly.com/android-sdk/index.html",
+  "https://developer.gladly.com/chat/",
+  "https://developer.gladly.com/chat/Gladly.html",
+  "https://developer.gladly.com/chat/index.html",
+  "https://developer.gladly.com/rest/",
+  "https://developer.gladly.com/rest/index.html",
+  "https://developer.gladly.com/tutorials/",
+  "https://developer.gladly.com/tutorials/asana/",
+  "https://github.com/gladly",
+  "https://github.com/gladly/rest-api-examples",
+  "https://help.gladly.com/",
+  "https://help.gladly.com/developer-tutorials/docs/developer-tutorials",
+  "https://help.gladly.com/developer-tutorials/docs/getting-started-with-gladly-app-platform",
+  "https://help.gladly.com/developer-tutorials/docs/rest-api-tutorial",
+  "https://www.findapi.dev/api/gladly",
+  "https://www.gladly.ai/gladly-developer-platform/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 6,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

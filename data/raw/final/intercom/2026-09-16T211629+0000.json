@@ -1,0 +1,114 @@
+{
+ "id": 12,
+ "slug": "intercom",
+ "name": "Intercom",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "AI-first customer service platform for messaging, support, and customer data management.",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://www.intercom.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/guides/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/guides/mcp"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.intercom.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/"
+  },
+  "docs_url": {
+   "value": "https://developers.intercom.com/docs",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/intercom-api/",
+  "https://cloudstride.io/intercom/pricing/",
+  "https://costbench.com/software/ai-customer-support-apis/intercom-api/",
+  "https://deepwiki.com/intercom/python-intercom/3.2-authentication-and-configuration",
+  "https://developers.intercom.com/",
+  "https://developers.intercom.com/docs",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/building-successful-apps",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+  "https://developers.intercom.com/docs/guides/fin-custom-helpdesk/authentication",
+  "https://developers.intercom.com/docs/guides/mcp",
+  "https://developers.intercom.com/docs/references/introduction",
+  "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+  "https://github.com/intercom/Intercom-OpenAPI",
+  "https://github.com/intercom/intercom-mcp-server",
+  "https://github.com/thatsmerana/intercom-marketplace-authentication-guide",
+  "https://growthmethod.com/intercom-mcp-server/",
+  "https://integrations.sh/intercom.com/intercom-rest-api/",
+  "https://mcpservers.org/servers/intercom-mcp",
+  "https://mcpservers.org/servers/intercom-remote-mcp",
+  "https://tryglen.com/mcp/servers/intercom",
+  "https://www.findapi.dev/api/intercom-api",
+  "https://www.intercom.com/help/en/articles/6615543-setting-up-data-connectors-authentication",
+  "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+  "https://www.intercom.com/help/en/collections/3510275-api-integration",
+  "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+  "https://www.intercom.com/pricing",
+  "https://www.intercom.com/pricing/calculator",
+  "https://www.usecarly.com/blog/intercom-mcp/",
+  "https://www.voiceflow.com/blog/intercom-pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

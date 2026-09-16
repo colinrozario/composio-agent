@@ -1,0 +1,107 @@
+{
+ "id": 51,
+ "slug": "dataforseo",
+ "name": "DataForSEO",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Provides comprehensive SEO and marketing data APIs for search, keywords, and domain analysis.",
+   "confidence": "high",
+   "source_url": "https://dataforseo.com/apis"
+  },
+  "auth_methods": {
+   "value": [
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.dataforseo.com/v3/auth/"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://dataforseo.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.dataforseo.com/v3/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://dataforseo.com/apis"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://dataforseo.com/model-context-protocol"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.dataforseo.com/v3/auth/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://dataforseo.com/model-context-protocol"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.dataforseo.com/v3/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://docs.dataforseo.com/v3/auth/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": null
+  },
+  "docs_url": {
+   "value": "https://docs.dataforseo.com/v3/",
+   "confidence": "high",
+   "source_url": "https://docs.dataforseo.com/v3/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agricidaniel.github.io/dataforseo-brain/entities/ent-dataforseo-mcp-server",
+  "https://costbench.com/software/seo-tools/dataforseo/",
+  "https://dataforseo.com/",
+  "https://dataforseo.com/apis",
+  "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+  "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+  "https://dataforseo.com/model-context-protocol",
+  "https://dataforseo.com/pricing",
+  "https://dataforseo.com/pricing-archive",
+  "https://dataforseo.com/pricing-list",
+  "https://dataforseo.com/pricing/serp",
+  "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+  "https://dataforseo.com/update/updated-pricing-in-v3",
+  "https://deepwiki.com/dataforseo/PythonClient/4.1-authentication-methods",
+  "https://docs.dataforseo.com/v3/",
+  "https://docs.dataforseo.com/v3/auth/",
+  "https://github.com/Skobyn/dataforseo-mcp-server",
+  "https://github.com/arnikanord/dataforseo-wiki/blob/main/auth.md",
+  "https://github.com/dataforseo/mcp-server-typescript",
+  "https://mcp.so/servers/mcp-server-typescript",
+  "https://mindcloud.co/docs/universal/rest/dataforseo/latest/introduction/authentication",
+  "https://pagespeed.dataforseo.com/help-center/category/mcp",
+  "https://pypi.org/project/dataforseo-mcp-server/",
+  "https://www.postman.com/docs-dataforseo/dataforseo-api-v3/overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

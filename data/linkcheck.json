@@ -1,6 +1,6 @@
 {
- "checked_urls": 92,
- "needed_browser": 0,
+ "checked_urls": 158,
+ "needed_browser": 1,
  "by_app": {
   "salesforce": {
    "one_liner": {
@@ -1589,6 +1589,250 @@
     "flags": []
    }
   },
+  "zoho_cliq": {
+   "one_liner": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "flags": []
+   }
+  },
+  "lark": {
+   "one_liner": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "access_path": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://github.com/larksuite/lark-openapi-mcp/tree/main",
+    "status": 200,
+    "final_url": "https://github.com/larksuite/lark-openapi-mcp/tree/main",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "test_account": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "flags": [
+     "not_docs_like"
+    ]
+   }
+  },
+  "pumble": {
+   "one_liner": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "status": 200,
+    "final_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "status": 200,
+    "final_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "status": 200,
+    "final_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://pumble.com/pricing",
+    "status": 200,
+    "final_url": "https://pumble.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.pumble.com/",
+    "status": 200,
+    "final_url": "https://docs.pumble.com/",
+    "flags": []
+   }
+  },
   "discord": {
    "one_liner": {
     "url": "https://docs.discord.com/developers/docs/intro",
@@ -1673,6 +1917,92 @@
     "flags": []
    }
   },
+  "telegram": {
+   "one_liner": {
+    "url": "https://core.telegram.org/",
+    "status": 200,
+    "final_url": "https://core.telegram.org/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://core.telegram.org/bots",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "access_path": {
+    "url": "https://core.telegram.org/",
+    "status": 200,
+    "final_url": "https://core.telegram.org/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://core.telegram.org/",
+    "status": 200,
+    "final_url": "https://core.telegram.org/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://core.telegram.org/",
+    "status": 200,
+    "final_url": "https://core.telegram.org/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://core.telegram.org/bots",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://core.telegram.org/bots/api",
+    "status": 200,
+    "final_url": "https://core.telegram.org/bots/api",
+    "flags": []
+   }
+  },
   "whatsapp_business": {
    "one_liner": {
     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
@@ -1746,6 +2076,943 @@
     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
     "status": 200,
     "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   }
+  },
+  "vonage": {
+   "one_liner": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.vonage.com/en/home",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/home",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.vonage.com/en/home",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/home",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.vonage.com/en/home",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/home",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.vonage.com/en/documentation",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/documentation",
+    "flags": []
+   }
+  },
+  "google_ads": {
+   "one_liner": {
+    "url": "https://developers.google.com/google-ads/api",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.google.com/google-ads/api/docs/rest/overview",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/rest/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.google.com/google-ads/api/docs/reference/rpc",
+    "status": 404,
+    "final_url": "https://developers.google.com/google-ads/api/docs/reference/rpc",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://developers.google.com/google-ads/api",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.google.com/google-ads/api/docs/rest/overview",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/rest/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.google.com/google-ads/api",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.google.com/google-ads/api/docs/start",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.google.com/google-ads/api/docs/access-levels",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.google.com/google-ads/api",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api",
+    "flags": []
+   }
+  },
+  "meta_ads": {
+   "one_liner": {
+    "url": "https://developers.facebook.com/v2/products/marketing-api/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/v2/products/marketing-api/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "status": 500,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "flags": [
+     "http_500"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.facebook.com/docs/graph-api/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/docs/graph-api/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.facebook.com/docs/marketing-api/reference",
+    "status": 500,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "flags": [
+     "http_500"
+    ]
+   },
+   "test_account": {
+    "url": "https://developers.facebook.com/docs/marketing-api/guides/test-ad-accounts/",
+    "status": 404,
+    "final_url": "https://developers.facebook.com/docs/marketing-api/guides/test-ad-accounts/",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://developers.facebook.com/documentation/development/create-an-app/app-review/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/development/create-an-app/app-review/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.facebook.com/docs/marketing-api/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+    "flags": []
+   }
+  },
+  "linkedin_ads": {
+   "one_liner": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "access_path": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns",
+    "status": 404,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns",
+    "flags": [
+     "http_404",
+     "not_docs_like"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://github.com/modelcontextprotocol",
+    "status": 200,
+    "final_url": "https://github.com/modelcontextprotocol",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning",
+    "status": 404,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "test_account": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-09",
+    "flags": [
+     "not_docs_like"
+    ]
+   }
+  },
+  "gohighlevel": {
+   "one_liner": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+    "status": 200,
+    "final_url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/intro/index.html",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.gohighlevel.com/pricing",
+    "status": 200,
+    "final_url": "https://www.gohighlevel.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://marketplace.gohighlevel.com/docs/",
+    "status": 200,
+    "final_url": "https://marketplace.gohighlevel.com/docs/",
+    "flags": []
+   }
+  },
+  "mailchimp": {
+   "one_liner": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/api/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://mailchimp.com/developer/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/api/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/api/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://mailchimp.com/developer/marketing/api/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/api/",
+    "flags": []
+   }
+  },
+  "klaviyo": {
+   "one_liner": {
+    "url": "https://developers.klaviyo.com/en",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en",
+    "flags": [],
+    "via": "browser"
+   },
+   "auth_methods": {
+    "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "flags": []
+   }
+  },
+  "systeme_io": {
+   "one_liner": {
+    "url": "https://systeme.io/en",
+    "status": 200,
+    "final_url": "https://systeme.io/",
+    "flags": [
+     "redirect_to_homepage",
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://systeme.io/en/login",
+    "status": 200,
+    "final_url": "https://systeme.io/en/login",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "flags": []
+   }
+  },
+  "threads": {
+   "one_liner": {
+    "url": "https://developers.facebook.com/docs/threads/overview/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/overview",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/threads/get-started/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/get-started",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.facebook.com/docs/threads/get-started/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/get-started",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/threads/reference/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/reference",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.facebook.com/docs/threads/reference/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.facebook.com/docs/threads/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.facebook.com/docs/threads/overview/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.facebook.com/docs/threads/overview/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.facebook.com/docs/threads/reference/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.facebook.com/docs/threads/get-started/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/get-started",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.facebook.com/docs/threads/get-started/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads/get-started",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.facebook.com/docs/threads/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/threads",
+    "flags": []
+   }
+  },
+  "squarespace": {
+   "one_liner": {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.squarespace.com/developer-policy",
+    "status": 200,
+    "final_url": "https://www.squarespace.com/developer-policy",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.squarespace.com/",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.squarespace.com/commerce-apis/overview",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.squarespace.com/",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.squarespace.com/",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.squarespace.com/",
+    "status": 200,
+    "final_url": "https://developers.squarespace.com/",
+    "flags": []
+   }
+  },
+  "gumroad": {
+   "one_liner": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "status": 200,
+    "final_url": "https://gumroad.com/help/article/280-create-application-api",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "status": 200,
+    "final_url": "https://gumroad.com/help/article/280-create-application-api",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://gumroad.com/help/article/280-create-application-api",
+    "status": 200,
+    "final_url": "https://gumroad.com/help/article/280-create-application-api",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://gumroad.com/api",
+    "status": 200,
+    "final_url": "https://gumroad.com/api",
+    "flags": []
+   }
+  },
+  "se_ranking": {
+   "one_liner": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://github.com/seranking/",
+    "status": 200,
+    "final_url": "https://github.com/seranking/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://seranking.com/api/data/reference/",
+    "status": 200,
+    "final_url": "https://seranking.com/api/data/reference/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_url": {
+    "url": "https://seranking.com/api/data/reference/",
+    "status": 200,
+    "final_url": "https://seranking.com/api/data/reference/",
     "flags": []
    }
   },
@@ -2000,6 +3267,24 @@
     ]
    }
   },
+  "lark": {
+   "auth_methods": {
+    "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_type": {
+    "url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   }
+  },
   "discord": {
    "one_liner": {
     "url": "https://docs.discord.com/developers/docs/intro",
@@ -2049,6 +3334,146 @@
     "final_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/",
     "flags": [
      "http_404"
+    ]
+   }
+  },
+  "google_ads": {
+   "api_breadth": {
+    "url": "https://developers.google.com/google-ads/api/docs/reference/rpc",
+    "status": 404,
+    "final_url": "https://developers.google.com/google-ads/api/docs/reference/rpc",
+    "flags": [
+     "http_404"
+    ]
+   }
+  },
+  "meta_ads": {
+   "api_breadth": {
+    "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "status": 500,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "flags": [
+     "http_500"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://developers.facebook.com/docs/marketing-api/reference",
+    "status": 500,
+    "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference",
+    "flags": [
+     "http_500"
+    ]
+   },
+   "test_account": {
+    "url": "https://developers.facebook.com/docs/marketing-api/guides/test-ad-accounts/",
+    "status": 404,
+    "final_url": "https://developers.facebook.com/docs/marketing-api/guides/test-ad-accounts/",
+    "flags": [
+     "http_404"
+    ]
+   }
+  },
+  "linkedin_ads": {
+   "api_breadth": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns",
+    "status": 404,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns",
+    "flags": [
+     "http_404",
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning",
+    "status": 404,
+    "final_url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning",
+    "flags": [
+     "http_404"
+    ]
+   }
+  },
+  "systeme_io": {
+   "one_liner": {
+    "url": "https://systeme.io/en",
+    "status": 200,
+    "final_url": "https://systeme.io/",
+    "flags": [
+     "redirect_to_homepage",
+     "not_docs_like"
+    ]
+   }
+  },
+  "se_ranking": {
+   "one_liner": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "test_account": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "status": 403,
+    "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
     ]
    }
   }

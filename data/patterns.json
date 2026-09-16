@@ -1,30 +1,30 @@
 {
  "totals": {
-  "apps": 25,
-  "in_composio": 16,
-  "not_in_composio": 9,
-  "buildable_now_not_in_composio": 3
+  "apps": 44,
+  "in_composio": 26,
+  "not_in_composio": 18,
+  "buildable_now_not_in_composio": 8
  },
  "auth": [
   [
    "oauth2",
-   16
-  ],
-  [
-   "bearer_token",
-   11
+   28
   ],
   [
    "api_key",
-   9
+   19
+  ],
+  [
+   "bearer_token",
+   18
   ],
   [
    "basic",
-   5
+   9
   ],
   [
    "jwt",
-   1
+   2
   ],
   [
    "none",
@@ -32,26 +32,26 @@
   ]
  ],
  "tiers": {
-  "build_now": 16,
-  "build_with_friction": 8,
+  "build_now": 30,
+  "build_with_friction": 13,
   "local_toolkit": 1
  },
  "access_path": [
   [
    "self_serve_free",
-   13
+   23
   ],
   [
    "paid_plan_required",
-   8
+   12
+  ],
+  [
+   "app_review_required",
+   6
   ],
   [
    "self_serve_trial",
    2
-  ],
-  [
-   "app_review_required",
-   1
   ],
   [
    "not_applicable_local",
@@ -68,9 +68,20 @@
    "build_with_friction": 5
   },
   "Communications and Messaging": {
-   "build_now": 4
+   "build_now": 9,
+   "build_with_friction": 1
+  },
+  "Marketing, Ads, Email and Social": {
+   "build_now": 7,
+   "build_with_friction": 2
+  },
+  "Ecommerce": {
+   "build_with_friction": 1,
+   "build_now": 1
   },
   "Data, SEO and Scraping": {
+   "build_now": 1,
+   "build_with_friction": 1,
    "local_toolkit": 1
   },
   "Finance and Fintech": {
@@ -80,8 +91,13 @@
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 1,
+   "count": 6,
    "apps": [
+    "Google Ads",
+    "LinkedIn Ads",
+    "Meta Ads",
+    "Squarespace",
+    "Threads (Meta)",
     "WhatsApp Business"
    ],
    "headline": "App review is the real gate, not auth",
@@ -89,16 +105,20 @@
   },
   {
    "key": "paid_to_use",
-   "count": 8,
+   "count": 12,
    "apps": [
+    "Aircall",
     "Close",
     "Copper",
+    "DataForSEO",
     "DealCloud",
     "Freshdesk",
     "Gladly",
+    "GoHighLevel",
     "Intercom",
     "LiveAgent",
-    "Pylon"
+    "Pylon",
+    "SE Ranking"
    ],
    "headline": "Free to read, paid to call",
    "so_what": "TODO"
@@ -132,19 +152,26 @@
   },
   {
    "key": "official_mcp",
-   "count": 11,
+   "count": 18,
    "apps": [
+    "Aircall",
     "Close",
+    "DataForSEO",
     "Freshdesk",
     "Front",
+    "GoHighLevel",
     "Gorgias",
     "HubSpot",
     "Intercom",
+    "Klaviyo",
+    "Lark (Larksuite)",
+    "Meta Ads",
     "Paygent Connect",
     "Salesforce",
     "Slack",
     "Twenty",
-    "Twilio"
+    "Twilio",
+    "Vonage"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
@@ -219,12 +246,62 @@
     "in_composio": true
    },
    {
+    "name": "Zoho Cliq",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Lark (Larksuite)",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Discord",
     "score": 9,
     "in_composio": true
    },
    {
+    "name": "Telegram",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Vonage",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Mailchimp",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Klaviyo",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "systeme.io",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "SendGrid",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Gumroad",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Gorgias",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "Pumble",
     "score": 8,
     "in_composio": true
    },
@@ -240,6 +317,26 @@
    },
    {
     "name": "WhatsApp Business",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Google Ads",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Meta Ads",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Threads (Meta)",
+    "score": 7,
+    "in_composio": false
+   },
+   {
+    "name": "DataForSEO",
     "score": 7,
     "in_composio": true
    },
@@ -281,6 +378,26 @@
     "in_composio": false
    },
    {
+    "name": "Aircall",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "GoHighLevel",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "Squarespace",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "SE Ranking",
+    "score": 6,
+    "in_composio": false
+   },
+   {
     "name": "DealCloud",
     "score": 5,
     "in_composio": false
@@ -289,6 +406,11 @@
     "name": "Gladly",
     "score": 5,
     "in_composio": false
+   },
+   {
+    "name": "LinkedIn Ads",
+    "score": 5,
+    "in_composio": true
    }
   ],
   "needs_outreach": [],

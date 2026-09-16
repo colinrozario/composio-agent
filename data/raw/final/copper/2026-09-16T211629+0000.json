@@ -1,0 +1,113 @@
+{
+ "id": 9,
+ "slug": "copper",
+ "name": "Copper",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Google Workspace-integrated CRM with a REST API for managing sales pipelines and contacts.",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/introduction/authentication.html"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://www.copper.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "low",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.copper.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  },
+  "docs_url": {
+   "value": "https://developer.copper.com/index.html",
+   "confidence": "high",
+   "source_url": "https://developer.copper.com/index.html"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aeroleads.com/blog/copper-crm-api-build-custom-integrations-2026/",
+  "https://developer.copper.co/api-reference/authentication",
+  "https://developer.copper.co/api-reference/create-api-key",
+  "https://developer.copper.com/account-and-users/overview.html",
+  "https://developer.copper.com/index.html",
+  "https://developer.copper.com/introduction/appendix.html",
+  "https://developer.copper.com/introduction/authentication.html",
+  "https://developer.copper.com/introduction/oauth/flow.html",
+  "https://developer.copper.com/introduction/oauth/index.html",
+  "https://developer.copper.com/introduction/requests.html",
+  "https://developer.copper.com/introduction/support.html",
+  "https://developer.copper.com/tasks/create-a-new-task.html",
+  "https://developer.copper.com/webhooks/list-all-subscriptions.html",
+  "https://forms.copper.com/j/1d54JEnkXUU2BfNGC9fVec",
+  "https://partners.copper.com/plans",
+  "https://support.copper.com/en/articles/13004601-how-to-create-a-custom-copper-gpt",
+  "https://support.copper.com/en/articles/15075330-draft-personalized-emails-in-copper-with-google-gemini",
+  "https://support.copper.com/en/articles/8823238-best-practices-for-marketing-teams",
+  "https://support.copper.com/en/articles/8823270-understanding-and-using-the-activity-log",
+  "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+  "https://support.copper.com/en/articles/8823458-pass-opportunity-metrics-to-a-company-record",
+  "https://support.copper.com/en/articles/8823461-embedded-integrations",
+  "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+  "https://support.copper.com/en/articles/9047289-overview-copper-forms",
+  "https://support.copper.com/en/articles/9867146-custom-fields-customization-best-practices",
+  "https://usecopper.com/docs",
+  "https://usecopper.com/docs/api_basics/authentication",
+  "https://www.copper.com/pricing",
+  "https://www.copper.com/resources/p22"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 0
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

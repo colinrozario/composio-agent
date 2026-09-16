@@ -1,0 +1,108 @@
+{
+ "id": 13,
+ "slug": "freshdesk",
+ "name": "Freshdesk",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based customer support platform with ticketing, knowledge base, and helpdesk automation.",
+   "confidence": "high",
+   "source_url": "https://www.freshworks.com/freshdesk/pricing/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/#authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/#how_to_use"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/#how_to_use"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/"
+  },
+  "docs_url": {
+   "value": "https://developers.freshdesk.com/api/",
+   "confidence": "high",
+   "source_url": "https://developers.freshdesk.com/api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://chatsy.app/blog/freshdesk-pricing-2026",
+  "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+  "https://developers-staging.freshworks.com/docs/app-sdk/v2.3/freshdesk/advanced-tools/oauth/",
+  "https://developers.freshdesk.com/",
+  "https://developers.freshdesk.com/api/",
+  "https://developers.freshworks.com/docs/app-sdk/v3.0/service_ticket/oauth-implementation-in-apps/",
+  "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+  "https://freshdesk-mcp.com/docs/intro",
+  "https://github.com/WYRE-AI/freshdesk-mcp",
+  "https://github.com/effytech/freshdesk_mcp",
+  "https://mcpservers.org/servers/Enreign/freshdeck-mcp",
+  "https://support.freshdesk.com/support/solutions/articles/50000011661-connect-to-external-systems-using-api-actions",
+  "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+  "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+  "https://www.bolddesk.com/blogs/freshdesk-pricing",
+  "https://www.featurebase.app/blog/freshdesk-pricing",
+  "https://www.freshworks.com/freshdesk/pricing/",
+  "https://www.getmacha.com/blog/how-to-use-the-freshdesk-api",
+  "https://www.mcpforge.tech/blog/freshdesk-mcp-server-complete-setup-guide",
+  "https://www.ridgelineagency.com/insights/freshdesk-pricing-2026-complete-breakdown-of-plans-modules-and-hidden-costs",
+  "https://www.ringly.io/blog/freshdesk-pricing",
+  "https://www.sparrowdesk.com/blogs/freshdesk-pricing",
+  "https://www.stitchflow.com/user-management/freshdesk/api",
+  "https://www.usecarly.com/blog/freshdesk-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

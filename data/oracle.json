@@ -1,16 +1,16 @@
 {
  "summary": {
   "pass1": {
-   "n": 16,
-   "exact": 0.125,
-   "overlap": 0.75,
-   "oracle_subset": 0.688
+   "n": 26,
+   "exact": 0.231,
+   "overlap": 0.846,
+   "oracle_subset": 0.769
   },
   "final": {
-   "n": 16,
-   "exact": 0.125,
-   "overlap": 0.75,
-   "oracle_subset": 0.688
+   "n": 26,
+   "exact": 0.231,
+   "overlap": 0.846,
+   "oracle_subset": 0.769
   }
  },
  "by_app": {
@@ -386,6 +386,32 @@
     "composio_subset_of_agent": true
    }
   },
+  "pumble": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
   "discord": {
    "pass1": {
     "agent": [
@@ -408,6 +434,30 @@
      "oauth2"
     ],
     "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "telegram": {
+   "pass1": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": true,
     "overlap": true,
     "composio_subset_of_agent": true
    }
@@ -436,6 +486,218 @@
     "exact": false,
     "overlap": false,
     "composio_subset_of_agent": false
+   }
+  },
+  "google_ads": {
+   "pass1": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "meta_ads": {
+   "pass1": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   }
+  },
+  "linkedin_ads": {
+   "pass1": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "mailchimp": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "basic",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "basic",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "klaviyo": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "sendgrid": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "basic",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "basic",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "gumroad": {
+   "pass1": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "dataforseo": {
+   "pass1": {
+    "agent": [
+     "basic"
+    ],
+    "composio": [
+     "basic"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "basic"
+    ],
+    "composio": [
+     "basic"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
    }
   }
  },

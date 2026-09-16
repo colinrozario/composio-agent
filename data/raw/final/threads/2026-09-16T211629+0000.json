@@ -1,0 +1,97 @@
+{
+ "id": 39,
+ "slug": "threads",
+ "name": "Threads (Meta)",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "API to publish posts, manage replies, and access insights on Meta Threads.",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/overview/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "med",
+   "source_url": "https://developers.facebook.com/docs/threads/reference/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/overview/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/overview/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+  },
+  "main_blocker": {
+   "value": "Production access for non-tester users requires Meta App Review for specific permissions.",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+  },
+  "docs_url": {
+   "value": "https://developers.facebook.com/docs/threads/reference/",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/threads/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "api_type",
+  "api_breadth",
+  "official_mcp",
+  "docs_quality",
+  "docs_url"
+ ],
+ "search_urls": [
+  "https://developers.facebook.com/documentation/threads.md/",
+  "https://developers.facebook.com/documentation/threads/",
+  "https://developers.facebook.com/documentation/threads/create-posts/",
+  "https://developers.facebook.com/documentation/threads/overview/",
+  "https://developers.facebook.com/documentation/threads/reference/",
+  "https://developers.secure.facebook.com/docs/threads/reference/publishing",
+  "https://developers.secure.facebook.com/documentation/threads/get-started",
+  "https://developers.secure.facebook.com/documentation/threads/reference.md"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,111 @@
+{
+ "id": 29,
+ "slug": "aircall",
+ "name": "Aircall",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based phone system and call center software with a public REST API.",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://aircall.io/en-gb/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.aircall.io/docs/how-to-register"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://developer.aircall.io/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  },
+  "docs_url": {
+   "value": "https://developers.aircall.io/api-references",
+   "confidence": "high",
+   "source_url": "https://developers.aircall.io/api-references"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aircall.io/aircall-for-startups/",
+  "https://aircall.io/blog/best-practices/ai-voice-agent-cost/",
+  "https://aircall.io/blog/customer-experience/customer-communication-management-software/",
+  "https://aircall.io/blog/tech/voip-phone-system-pricing/",
+  "https://aircall.io/en-gb/blog/tech/best-cloud-pbx-small-business/",
+  "https://aircall.io/en-gb/pricing/",
+  "https://aircall.io/es/c/compare/aircall-vs-Twilio/",
+  "https://aircall.io/products/ai-messaging-agents/",
+  "https://bus.aircall.io/website/docs/category/documentation",
+  "https://developer-frontend-aircall.555773567328.aircall.io/api-references/",
+  "https://developer.aircall-staging.com/api-references/",
+  "https://developer.aircall.io/",
+  "https://developer.aircall.io/docs/ai-outbound-calls",
+  "https://developer.aircall.io/docs/basic-authentication",
+  "https://developer.aircall.io/docs/discover-aircall-ai",
+  "https://developer.aircall.io/docs/how-to-register",
+  "https://developer.aircall.io/docs/implement-click-to-dial",
+  "https://developer.aircall.io/docs/introduction",
+  "https://developer.aircall.io/docs/mcp-faqs",
+  "https://developer.aircall.io/docs/public-vs-private-app",
+  "https://developer.aircall.io/docs/webhooks-overview",
+  "https://developer.aircall.io/docs/what-can-you-build-with-aircall-ai",
+  "https://developer.aircall.io/llms.txt",
+  "https://developer.aircall.io/login?redirect_uri=/docs/how-to-register",
+  "https://developers.aircall.io/api-references",
+  "https://developers.aircall.io/tutorials/basic-authentication",
+  "https://support.aircall.io/en-gb/articles/10375355327517"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

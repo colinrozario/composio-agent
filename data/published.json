@@ -5,7 +5,7 @@
   "name": "Salesforce",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise customer relationship management platform with robust REST and GraphQL APIs.",
@@ -150,7 +150,7 @@
   "name": "HubSpot",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one CRM platform featuring APIs for managing contacts, deals, marketing, and customer service.",
@@ -287,7 +287,7 @@
   "name": "Pipedrive",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based sales platform and web/mobile CRM for managing leads and deals.",
@@ -429,7 +429,7 @@
   "name": "Attio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "A flexible, data-driven CRM platform with a robust REST API for managing custom objects and workflows.",
@@ -570,7 +570,7 @@
   "name": "Twenty",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Modern open-source CRM platform with customizable objects, views, workflows, and developer APIs.",
@@ -714,7 +714,7 @@
   "name": "Podio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Work management platform providing a complete REST API for workspaces, apps, and items.",
@@ -825,7 +825,7 @@
   "name": "Close",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Inside sales CRM featuring robust REST APIs and an official MCP server for AI agents.",
@@ -971,7 +971,7 @@
   "name": "Copper",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Google Workspace-integrated CRM with a REST API for managing sales pipelines and contacts.",
@@ -1100,7 +1100,7 @@
   "name": "DealCloud",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "DealCloud is a deal, relationship, and CRM management platform for financial services.",
@@ -1230,7 +1230,7 @@
   "name": "Zendesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support software platform featuring a comprehensive REST API for ticket management.",
@@ -1384,7 +1384,7 @@
   "name": "Intercom",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "AI-first customer service platform for messaging, support, and customer data management.",
@@ -1533,7 +1533,7 @@
   "name": "Freshdesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support platform with ticketing, knowledge base, and helpdesk automation.",
@@ -1674,7 +1674,7 @@
   "name": "Front",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Support and helpdesk platform featuring a robust Core REST API and MCP server.",
@@ -1816,7 +1816,7 @@
   "name": "Pylon",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Unified B2B customer support platform integrating tickets across Slack, email, and chat.",
@@ -1923,7 +1923,7 @@
   "name": "LiveAgent",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Help desk and customer support software with live chat, ticketing, and automation tools.",
@@ -2038,7 +2038,7 @@
   "name": "Plain",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "API-first customer support platform designed for B2B SaaS teams.",
@@ -2172,7 +2172,7 @@
   "name": "Help Scout",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer support platform providing APIs for mailboxes, chats, and help center documentation.",
@@ -2311,7 +2311,7 @@
   "name": "Gorgias",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Gorgias is an e-commerce helpdesk platform for managing customer support tickets and conversations.",
@@ -2454,7 +2454,7 @@
   "name": "Gladly",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer service platform API for managing customer profile data, conversations, and timelines.",
@@ -2581,7 +2581,7 @@
   "name": "Slack",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Team communication platform providing messaging, channels, file sharing, and developer APIs.",
@@ -2723,7 +2723,7 @@
   "name": "Twilio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud communications platform providing APIs for SMS, voice, video, and authentication.",
@@ -2844,12 +2844,376 @@
   }
  },
  {
+  "id": 23,
+  "slug": "zoho_cliq",
+  "name": "Zoho Cliq",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Team collaboration software providing instant messaging, audio/video calls, and file sharing.",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   },
+   "docs_url": {
+    "value": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "confidence": "high",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apidocs.cliq.com/",
+   "https://apitracker.io/a/zoho-cliq",
+   "https://help.zoho.com/portal/en/community/topic/generating-an-oauth-2-token-for-cliq",
+   "https://help.zoho.com/portal/en/community/topic/re-introducing-zoho-cliq-rest-apis-the-much-needed-glow-up",
+   "https://www.zoho.com/cliq/help/developers.html",
+   "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html",
+   "https://www.zoho.com/cliq/help/restapi/v2/httpmethods/",
+   "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+   "https://www.zoho.com/cliq/help/restapi/v2/postman/",
+   "https://www.zoho.com/cliq/help/restapi/v2/registerclient/",
+   "https://www.zoho.com/cliq/help/restapi/v3/chats/",
+   "https://www.zoho.com/cliq/help/restapi/v3/datastores/",
+   "https://www.zoho.com/cliq/help/restapi/v3/glossary/",
+   "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "https://www.zoho.com/cliq/help/restapi/v3/messageformat/",
+   "https://www.zoho.com/cliq/help/restapi/v3/messages/",
+   "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+   "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "https://www.zoho.com/cliq/help/restapi/v3/postman/",
+   "https://www.zoho.com/cliq/help/restapi/v3/reminders/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "zoho.com/cliq",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 24,
+  "slug": "lark",
+  "name": "Lark (Larksuite)",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Enterprise collaboration platform combining chat, docs, calendar, and workflow automation tools.",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://github.com/larksuite/lark-openapi-mcp/tree/main"
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   },
+   "docs_url": {
+    "value": "https://open.larksuite.com/document/home/index?lang=en-US",
+    "confidence": "high",
+    "source_url": "https://open.larksuite.com/document/home/index?lang=en-US"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://docs.larksh.com/lark-sdk/auth",
+   "https://github.com/larksuite/lark-openapi-mcp/activity",
+   "https://github.com/larksuite/lark-openapi-mcp/blob/main/README.md",
+   "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/recall-mcp/README.md",
+   "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+   "https://github.com/larksuite/lark-openapi-mcp/pulse",
+   "https://github.com/larksuite/lark-openapi-mcp/releases",
+   "https://github.com/larksuite/lark-openapi-mcp/tree/main",
+   "https://github.com/larksuite/lark-openapi-mcp/tree/main/src/mcp-server",
+   "https://open-sg.larksuite.com/document/server-docs/getting-started/api-access-token/get-",
+   "https://open-sg.larksuite.com/document/server-docs/getting-started/getting-started?lang=en-US",
+   "https://open.larkoffice.com/document/home/index",
+   "https://open.larkoffice.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/login-overview",
+   "https://open.larksuite.com/document/common-capabilities/sso/api/obtain-oauth-code",
+   "https://open.larksuite.com/document/home/index?lang=en-US"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "open.larksuite.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 25,
+  "slug": "pumble",
+  "name": "Pumble",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Team collaboration and messaging app with REST API support.",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "med",
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "med",
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "med",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://pumble.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   },
+   "docs_url": {
+    "value": "https://docs.pumble.com/",
+    "confidence": "high",
+    "source_url": "https://docs.pumble.com/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://api-ga.pumble.com/v3/api-docs/Pumble-api-v1",
+   "https://dev-docs.marketplace.cake.com/pumble/build/api-client.html",
+   "https://docs.pumble.com/",
+   "https://github.com/CAKE-com/pumble-node-sdk",
+   "https://github.com/CAKE-com/pumble-node-sdk/blob/master/docs/getting-started.md",
+   "https://mindcloud.co/docs/universal/rest/pumble/latest",
+   "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/",
+   "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+   "https://pumble.com/integrations",
+   "https://pumble.com/pricing",
+   "https://www.npmjs.com/package/pumble-sdk"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "pumble.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "pumble",
+   "composio_name": "Pumble",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 9.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "team chat",
+    "team collaboration"
+   ]
+  },
+  "score": {
+   "total": 8,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 1,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 26,
   "slug": "discord",
   "name": "Discord",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Messaging platform offering REST APIs for bots, webhooks, and user-authenticated social integrations.",
@@ -2979,12 +3343,142 @@
   }
  },
  {
+  "id": 27,
+  "slug": "telegram",
+  "name": "Telegram",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based instant messaging service providing HTTP Bot API and MTProto API.",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://core.telegram.org/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots"
+   },
+   "docs_url": {
+    "value": "https://core.telegram.org/bots/api",
+    "confidence": "high",
+    "source_url": "https://core.telegram.org/bots/api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://botapi.apimatic.dev/",
+   "https://core.telegram.org/",
+   "https://core.telegram.org/api/auth",
+   "https://core.telegram.org/api/bots",
+   "https://core.telegram.org/api/bots/ids",
+   "https://core.telegram.org/api/url-authorization",
+   "https://core.telegram.org/bots",
+   "https://core.telegram.org/bots/api",
+   "https://core.telegram.org/method/auth.importBotAuthorization",
+   "https://docs.telethon.dev/",
+   "https://github.com/tdlib/telegram-bot-api",
+   "https://github.com/yagop/node-telegram-bot-api",
+   "https://josxa.github.io/telegram-bot-api-docs/core.telegram.org/bots/api",
+   "https://tgapis.github.io/botapidocs/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "core.telegram.org",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "telegram",
+   "composio_name": "Telegram",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 18.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "team chat",
+    "notifications"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 28,
   "slug": "whatsapp_business",
   "name": "WhatsApp Business",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise messaging API for sending and receiving messages via the WhatsApp Business platform.",
@@ -3112,12 +3606,1945 @@
   }
  },
  {
+  "id": 29,
+  "slug": "aircall",
+  "name": "Aircall",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based phone system and call center software with a public REST API.",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://aircall.io/en-gb/pricing/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developer.aircall.io/docs/how-to-register"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://developer.aircall.io/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   },
+   "docs_url": {
+    "value": "https://developers.aircall.io/api-references",
+    "confidence": "high",
+    "source_url": "https://developers.aircall.io/api-references"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://aircall.io/aircall-for-startups/",
+   "https://aircall.io/blog/best-practices/ai-voice-agent-cost/",
+   "https://aircall.io/blog/customer-experience/customer-communication-management-software/",
+   "https://aircall.io/blog/tech/voip-phone-system-pricing/",
+   "https://aircall.io/en-gb/blog/tech/best-cloud-pbx-small-business/",
+   "https://aircall.io/en-gb/pricing/",
+   "https://aircall.io/es/c/compare/aircall-vs-Twilio/",
+   "https://aircall.io/products/ai-messaging-agents/",
+   "https://bus.aircall.io/website/docs/category/documentation",
+   "https://developer-frontend-aircall.555773567328.aircall.io/api-references/",
+   "https://developer.aircall-staging.com/api-references/",
+   "https://developer.aircall.io/",
+   "https://developer.aircall.io/docs/ai-outbound-calls",
+   "https://developer.aircall.io/docs/basic-authentication",
+   "https://developer.aircall.io/docs/discover-aircall-ai",
+   "https://developer.aircall.io/docs/how-to-register",
+   "https://developer.aircall.io/docs/implement-click-to-dial",
+   "https://developer.aircall.io/docs/introduction",
+   "https://developer.aircall.io/docs/mcp-faqs",
+   "https://developer.aircall.io/docs/public-vs-private-app",
+   "https://developer.aircall.io/docs/webhooks-overview",
+   "https://developer.aircall.io/docs/what-can-you-build-with-aircall-ai",
+   "https://developer.aircall.io/llms.txt",
+   "https://developer.aircall.io/login?redirect_uri=/docs/how-to-register",
+   "https://developers.aircall.io/api-references",
+   "https://developers.aircall.io/tutorials/basic-authentication",
+   "https://support.aircall.io/en-gb/articles/10375355327517"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "aircall.io",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 30,
+  "slug": "vonage",
+  "name": "Vonage",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud communications platform providing APIs for voice, messaging, video, and identity verification.",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "jwt",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/home"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "med",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/home"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/home"
+   },
+   "docs_url": {
+    "value": "https://developer.vonage.com/en/documentation",
+    "confidence": "high",
+    "source_url": "https://developer.vonage.com/en/documentation"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://api.support.vonage.com/hc/en-us/articles/21311937334812-How-to-generate-JWT-token-using-Vonage-Online-JWT-generator-tool",
+   "https://api.support.vonage.com/hc/en-us/articles/26835629333788-Deprecation-of-Query-Parameter-API-Authentication-Action-Required-Migration-to-Header-Based-Authentication",
+   "https://api.support.vonage.com/hc/en-us/categories/202622537-Developer-API",
+   "https://developer.vonage.com/en/application/overview",
+   "https://developer.vonage.com/en/documentation",
+   "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging",
+   "https://developer.vonage.com/en/home",
+   "https://developer.vonage.com/en/verify/concepts/authentication",
+   "https://developer.vonage.com/en/voice/voice-api/overview",
+   "https://github.com/Vonage/vonage-ruby-sdk",
+   "https://github.com/vonage/vonage-jwt-jdk",
+   "https://tokbox.com/developer/",
+   "https://tokbox.com/developer/get-started/",
+   "https://vonage.github.io/vonage-go-sdk/examples/jwt",
+   "https://www.vonage.com/developer-center/",
+   "https://www.vonage.com/resources/articles/jwt-authentication-explained/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Communications and Messaging",
+  "category_id": "comms",
+  "hint": "developer.vonage.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 31,
+  "slug": "google_ads",
+  "name": "Google Ads",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Programmatically manage Google Ads campaigns, reporting, and account settings.",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/rest/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/reference/rpc"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/rest/overview"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/start"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+   },
+   "main_blocker": {
+    "value": "Accessing production accounts requires applying for Basic or Standard access, which involves a manual review process.",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+   },
+   "docs_url": {
+    "value": "https://developers.google.com/google-ads/api/docs",
+    "confidence": "high",
+    "source_url": "https://developers.google.com/google-ads/api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "api_type",
+   "api_breadth",
+   "base_url_model",
+   "docs_quality"
+  ],
+  "search_urls": [
+   "https://ads-developers.googleblog.com/2026/07/passkey-authentication-requirement-for.html",
+   "https://developers.google.com/google-ads/api",
+   "https://developers.google.com/google-ads/api/docs/oauth/overview",
+   "https://github.com/google/ads-api-report-fetcher/blob/main/docs/how-to-authenticate-ads-api.md",
+   "https://groups.google.com/g/adwords-api/c/NtV89PsnwBI",
+   "https://soku.ai/blog/google-ads-api-basic-vs-standard-access",
+   "https://support.google.com/adspolicy/answer/6169371?hl=en",
+   "https://support.google.com/google-ads/answer/15235?hl=en-419"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "developers.google.com/google-ads",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "googleads",
+   "composio_name": "Google Ads",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 28.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ads & conversion"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 32,
+  "slug": "meta_ads",
+  "name": "Meta Ads",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Programmatic interface to manage, optimize, and analyze Meta advertising campaigns across Facebook and Instagram.",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/v2/products/marketing-api/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/"
+   },
+   "api_type": {
+    "value": "graph_and_rest",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/graph-api/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/reference"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/guides/test-ad-accounts/"
+   },
+   "main_blocker": {
+    "value": "Production access requires mandatory Meta App Review for advertising-related permissions.",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/documentation/development/create-an-app/app-review/"
+   },
+   "docs_url": {
+    "value": "https://developers.facebook.com/docs/marketing-api/",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/"
+   }
+  },
+  "schema_problems": [
+   "api_type: bad enum graph_and_rest"
+  ],
+  "uncited_sources": [
+   "api_breadth",
+   "base_url_model",
+   "docs_quality",
+   "test_account",
+   "main_blocker",
+   "docs_url"
+  ],
+  "search_urls": [
+   "https://adadvisor.ai/blog/best-meta-ads-mcp-server",
+   "https://adadvisor.ai/blog/meta-app-review-mcp",
+   "https://adlibrary.com/posts/meta-ads-api-integration-guide",
+   "https://adlibrary.com/posts/meta-marketing-api-guide-2026",
+   "https://adrio.ai/blog/meta-ads-mcp-setup-guide",
+   "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview/",
+   "https://developers.facebook.com/documentation/ads-commerce/marketing-api/",
+   "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization/",
+   "https://developers.facebook.com/documentation/mcp/",
+   "https://developers.facebook.com/v2/products/marketing-api/",
+   "https://developers.meta.com/",
+   "https://developers.meta.com/blog/updates-to-ads-management-standard-access-feature/",
+   "https://developers.secure.facebook.com/docs/marketing-api/reference",
+   "https://developers.secure.facebook.com/documentation/ads-commerce/marketing-api",
+   "https://developers.secure.facebook.com/social-technologies/marketing-api/",
+   "https://singhamandeep.com/facebook-ads-api-permission-app-review/",
+   "https://singhamandeep.com/meta-ads-api-approval-marketing-api-access/",
+   "https://soku.ai/blog/meta-ads-mcp-guide",
+   "https://www.adside.ai/blog/best-meta-ads-mcp",
+   "https://www.adspirer.com/blog/meta-ads-mcp",
+   "https://www.postman.com/meta/facebook-marketing-api/overview",
+   "https://www.usecarly.com/blog/meta-ads-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "developers.facebook.com/docs/marketing-apis",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "metaads",
+   "composio_name": "Meta Ads",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 65.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ads & conversion",
+    "social media marketing"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 33,
+  "slug": "linkedin_ads",
+  "name": "LinkedIn Ads",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Provides programmatic access to manage, create, and report on LinkedIn advertising campaigns.",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://github.com/modelcontextprotocol"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+   },
+   "test_account": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+   },
+   "main_blocker": {
+    "value": "Production access to the LinkedIn Marketing API requires the application to be accepted into the program via a review process.",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+   },
+   "docs_url": {
+    "value": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+    "confidence": "high",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "one_liner",
+   "api_type",
+   "api_breadth",
+   "official_mcp",
+   "base_url_model",
+   "toolkit_bucket",
+   "docs_quality",
+   "docs_url"
+  ],
+  "search_urls": [],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 0,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "learn.microsoft.com/linkedin/marketing",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "linkedin_ads",
+   "composio_name": "Linkedin Ads",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 28.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "marketing",
+    "ads & conversion"
+   ]
+  },
+  "score": {
+   "total": 5,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 0
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 34,
+  "slug": "gohighlevel",
+  "name": "GoHighLevel",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "All-in-one marketing and CRM platform providing automation, lead management, and communication tools.",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://www.gohighlevel.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/"
+   },
+   "docs_url": {
+    "value": "https://marketplace.gohighlevel.com/docs/",
+    "confidence": "high",
+    "source_url": "https://marketplace.gohighlevel.com/docs/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "test_account"
+  ],
+  "search_urls": [
+   "https://developers.gohighlevel.com/",
+   "https://expertghldevelopers.com/gohighlevel-api-documentation-the-complete-beginners-guide-2026/",
+   "https://ghl-api.lovable.app/guide",
+   "https://ghlfocus.com/gohighlevel-api-v2-token-vs-oauth/",
+   "https://ghlmcp.io/gohighlevel-mcp",
+   "https://github.com/Abrahamshal/GHL-MCP",
+   "https://github.com/GoHighLevel/highlevel-api-docs",
+   "https://github.com/GoHighLevel/highlevel-api-sdk",
+   "https://github.com/Hollman18/mcpgohighlevel.com/",
+   "https://github.com/thinkbold-solutions/GHLDOCS",
+   "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+   "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+   "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "https://help.gohighlevel.com/support/solutions/folders/48000668553",
+   "https://hylo.pro/guides/gohighlevel-api-authentication",
+   "https://ideas.gohighlevel.com/highlevel-mcp",
+   "https://marketplace.gohighlevel.com/docs/",
+   "https://marketplace.gohighlevel.com/docs/intro/index.html",
+   "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+   "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html",
+   "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+   "https://supplygem.com/gohighlevel-developer/",
+   "https://www.gohighlevel.com/post/introducing-the-mcp-server",
+   "https://www.grow-highlevel.com/blog/gohighlevel-api-guide",
+   "https://www.usecarly.com/blog/gohighlevel-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "highlevel.stoplight.io",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 35,
+  "slug": "mailchimp",
+  "name": "Mailchimp",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Marketing platform API for managing campaigns, contacts, audiences, and email automation workflows.",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key",
+     "basic",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/api/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/"
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/api/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/api/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+   },
+   "docs_url": {
+    "value": "https://mailchimp.com/developer/marketing/api/",
+    "confidence": "high",
+    "source_url": "https://mailchimp.com/developer/marketing/api/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "official_mcp"
+  ],
+  "search_urls": [
+   "https://aeroleads.com/blog/getting-started-with-mailchimp-api-developer-documentation/",
+   "https://apitracker.io/a/mailchimp",
+   "https://mailchimp.com/developer/guides/mailchimp-api-overview/",
+   "https://mailchimp.com/developer/marketing/api/",
+   "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+   "https://mailchimp.com/developer/marketing/docs/integrations/",
+   "https://mailchimp.com/developer/marketing/docs/mobile-sdk/",
+   "https://public-api.org/api/131/mailchimp"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "mailchimp.com/developer",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "mailchimp",
+   "composio_name": "Mailchimp",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 272.0,
+   "triggers_count": 4.0,
+   "categories": [
+    "email newsletters",
+    "marketing automation"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 36,
+  "slug": "klaviyo",
+  "name": "Klaviyo",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Email and SMS marketing automation platform with a comprehensive developer API.",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/docs/authenticate_"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   },
+   "docs_url": {
+    "value": "https://developers.klaviyo.com/en/reference/api_overview",
+    "confidence": "high",
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://academy.klaviyo.com/en-us/courses/interpret-api-documentation/lessons/navigate-the-developer-portal",
+   "https://academy.klaviyo.com/en-us/learning-paths/api-fundamentals-for-marketers/courses/interpret-api-documentation/lessons/navigate-the-developer-portal",
+   "https://aeroleads.com/blog/getting-started-with-klaviyo-api-developer-documentation/",
+   "https://aeroleads.com/blog/klaviyo-api-endpoints-authentication-examples/",
+   "https://developers.klaviyo.com/",
+   "https://developers.klaviyo.com/en",
+   "https://developers.klaviyo.com/en/docs/authenticate_",
+   "https://developers.klaviyo.com/en/docs/collect_email_and_sms_consent_via_api",
+   "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+   "https://developers.klaviyo.com/en/reference/api_overview",
+   "https://developers.klaviyo.com/en/reference/lists_api_overview",
+   "https://developers.klaviyo.com/en/v1-2/reference/api-overview",
+   "https://developers.klaviyo.com/en/v2023-06-15/docs/create_a_test_account",
+   "https://developers.klaviyo.com/en/v2023-07-15/reference/get_profile_segments",
+   "https://developers.klaviyo.com/en/v2023-08-15/docs/get_started",
+   "https://developers.klaviyo.com/en/v2023-09-15/docs/integrate_with_a_shopify_hydrogen_store",
+   "https://developers.klaviyo.com/en/v2024-02-15/reference/api_overview",
+   "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+   "https://developers.klaviyo.com/en/v2025-04-15/docs/glossary_index",
+   "https://developers.klaviyo.com/en/v2025-10-15/reference/api_overview",
+   "https://developers.klaviyo.com/en/v2026-04-15/reference/get_tag_ids_for_flow",
+   "https://github.com/klaviyo-labs/klaviyo-api-guides/blob/main/README.md",
+   "https://github.com/mattcoatsworth/Klaviyo-MCP-Server",
+   "https://github.com/relay-commerce/Klaviyo-MCP-Server",
+   "https://help.klaviyo.com/hc/en-us/articles/115000976672",
+   "https://help.klaviyo.com/hc/en-us/articles/360045726811",
+   "https://help.klaviyo.com/hc/en-us/articles/43506836897563",
+   "https://help.klaviyo.com/hc/en-us/articles/4405883690651",
+   "https://help.klaviyo.com/hc/en-us/articles/52533903504411",
+   "https://help.klaviyo.com/hc/en-us/articles/52833598880923",
+   "https://help.klaviyo.com/hc/en-us/sections/14542873138971",
+   "https://help.klaviyo.com/hc/en-us/sections/14542887837083",
+   "https://help.klaviyo.com/hc/en-us/sections/18138285408539",
+   "https://magnetmonster.com/blog/klaviyo-mcp-server-a-comprehensive-guide-for-marketers",
+   "https://pypi.org/project/klaviyo-mcp-server/",
+   "https://www.klaviyo.com/blog/introducing-mcp-server",
+   "https://www.klaviyo.com/newsroom/mcp-server",
+   "https://www.postman.com/klaviyo/klaviyo-developers/overview"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 5,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "developers.klaviyo.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "klaviyo",
+   "composio_name": "Klaviyo",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY",
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 225.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "marketing automation",
+    "email newsletters"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 37,
+  "slug": "systeme_io",
+  "name": "systeme.io",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "All-in-one marketing platform for sales funnels, email marketing, website building, and automation.",
+    "confidence": "high",
+    "source_url": "https://systeme.io/en"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "base_url_model": {
+    "value": "unknown",
+    "confidence": "low",
+    "source_url": null
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://systeme.io/en/login"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   },
+   "docs_url": {
+    "value": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+    "confidence": "high",
+    "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "one_liner"
+  ],
+  "search_urls": [
+   "https://docs.maton.ai/systeme",
+   "https://github.com/systemeio",
+   "https://grokipedia.com/page/Systemeio_API",
+   "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+   "https://join.systeme.io/home",
+   "https://roadmap.systeme.io/c/66-create-our-own-api",
+   "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-csharp",
+   "https://systeme.io/",
+   "https://systeme.io/en/login",
+   "https://systeme.io/help",
+   "https://unlimited.systeme.io/login-to-your-account",
+   "https://www.the-systemeio.com/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "systeme.io (funnel builder)",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 39,
+  "slug": "threads",
+  "name": "Threads (Meta)",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "API to publish posts, manage replies, and access insights on Meta Threads.",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/overview/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/reference/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "med",
+    "source_url": "https://developers.facebook.com/docs/threads/reference/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/overview/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/overview/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/reference/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+   },
+   "main_blocker": {
+    "value": "Production access for non-tester users requires Meta App Review for specific permissions.",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/get-started/"
+   },
+   "docs_url": {
+    "value": "https://developers.facebook.com/docs/threads/reference/",
+    "confidence": "high",
+    "source_url": "https://developers.facebook.com/docs/threads/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "api_type",
+   "api_breadth",
+   "official_mcp",
+   "docs_quality",
+   "docs_url"
+  ],
+  "search_urls": [
+   "https://developers.facebook.com/documentation/threads.md/",
+   "https://developers.facebook.com/documentation/threads/",
+   "https://developers.facebook.com/documentation/threads/create-posts/",
+   "https://developers.facebook.com/documentation/threads/overview/",
+   "https://developers.facebook.com/documentation/threads/reference/",
+   "https://developers.secure.facebook.com/docs/threads/reference/publishing",
+   "https://developers.secure.facebook.com/documentation/threads/get-started",
+   "https://developers.secure.facebook.com/documentation/threads/reference.md"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "developers.facebook.com/docs/threads",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 40,
+  "slug": "sendgrid",
+  "name": "SendGrid",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based email delivery service for sending transactional and marketing emails at scale.",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "bearer_token",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/en-us/products/email-api/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "official_mcp": {
+    "value": "community_only",
+    "confidence": "high",
+    "source_url": "https://github.com/recepyavuz0/sendgrid-mcp-server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/en-us/products/email-api/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   },
+   "docs_url": {
+    "value": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "confidence": "high",
+    "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+   "https://app.sendgrid.com/docs/API_Reference",
+   "https://app.sendgrid.com/docs/for_developers/sending_email/getting_started_with_sendgrid/",
+   "https://costbench.com/software/email-api/sendgrid/",
+   "https://costbench.com/software/email-api/sendgrid/free-plan/",
+   "https://github.com/modelcontextprotocol/servers",
+   "https://github.com/recepyavuz0/sendgrid-mcp-server",
+   "https://mcpservers.com/servers/garoth-sendgrid",
+   "https://mcpservers.org/servers/deyikong/sendgrid-mcp",
+   "https://mcpservers.org/servers/modelcontextprotocol/servers",
+   "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+   "https://public-api.org/api/450/sendgrid",
+   "https://publicapis.io/sendgrid-api",
+   "https://support.sendgrid.com/hc/en-us",
+   "https://www.emailsoftwareinsights.com/reviews/sendgrid/pricing/",
+   "https://www.getaiperks.com/en/ai/sendgrid-pricing-free-credits",
+   "https://www.getguru.com/reference/sendgrid-mcp",
+   "https://www.saaspricepulse.com/tools/sendgrid",
+   "https://www.sendx.io/blog/sendgrid-pricing",
+   "https://www.sequenzy.com/pricing/sendgrid",
+   "https://www.twilio.com/docs/sendgrid/api-reference",
+   "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+   "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+   "https://www.twilio.com/en-us/products/email-api/pricing"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "sendgrid.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "sendgrid",
+   "composio_name": "SendGrid",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 359.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "transactional email",
+    "email newsletters"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 46,
+  "slug": "squarespace",
+  "name": "Squarespace",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Platform for building websites, online stores, and managing commerce data via REST APIs.",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://www.squarespace.com/developer-policy"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/"
+   },
+   "docs_url": {
+    "value": "https://developers.squarespace.com/",
+    "confidence": "high",
+    "source_url": "https://developers.squarespace.com/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apihunt.io/apis/squarespace",
+   "https://apitracker.io/a/squarespace",
+   "https://claudecms.com/connect-squarespace",
+   "https://content.rollout.com/integration-guides/squarespace/sdk/step-by-step-guide-to-building-a-squarespace-api-integration-in-js",
+   "https://developer.squareup.com/docs/mcp",
+   "https://developers-preview.squarespace.com/commerce-apis/oauth.md",
+   "https://developers-preview.squarespace.com/mcp/mcp",
+   "https://developers-preview.squarespace.com/mcp/overview",
+   "https://developers.squarespace.com/",
+   "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+   "https://developers.squarespace.com/commerce-apis/overview",
+   "https://github.com/FloraSync/squarespace-mcp",
+   "https://github.com/square/square-mcp-server",
+   "https://manual.squarespace.com/developers/",
+   "https://mymcptools.com/servers/squarespace-mcp",
+   "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+   "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+   "https://whatsquare.space/blog/squarespace-api-integration",
+   "https://www.squarespace.com/developer-policy",
+   "https://www.usecarly.com/blog/square-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "developers.squarespace.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 48,
+  "slug": "gumroad",
+  "name": "Gumroad",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Gumroad provides a REST API for managing products, offer codes, sales, and account data.",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://gumroad.com/help/article/280-create-application-api"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/help/article/280-create-application-api"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://gumroad.com/api"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/help/article/280-create-application-api"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   },
+   "docs_url": {
+    "value": "https://gumroad.com/api",
+    "confidence": "high",
+    "source_url": "https://gumroad.com/api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apihunt.io/apis/gumroad",
+   "https://apitracker.io/a/gumroad",
+   "https://gumroad.com/api",
+   "https://gumroad.com/help/article/280-create-application-api",
+   "https://help.gumroad.com/docs/api/01-overview",
+   "https://rollout.com/integration-guides/gumroad",
+   "https://rollout.com/integration-guides/gumroad/api-essentials",
+   "https://www.postman.com/api-evangelist/gumroad/documentation/0gu41wl/gumroad"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "gumroad.com/api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "gumroad",
+   "composio_name": "Gumroad",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 7.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ecommerce"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 51,
+  "slug": "dataforseo",
+  "name": "DataForSEO",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Provides comprehensive SEO and marketing data APIs for search, keywords, and domain analysis.",
+    "confidence": "high",
+    "source_url": "https://dataforseo.com/apis"
+   },
+   "auth_methods": {
+    "value": [
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.dataforseo.com/v3/auth/"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://dataforseo.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.dataforseo.com/v3/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://dataforseo.com/apis"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://dataforseo.com/model-context-protocol"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.dataforseo.com/v3/auth/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://dataforseo.com/model-context-protocol"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.dataforseo.com/v3/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "med",
+    "source_url": "https://docs.dataforseo.com/v3/auth/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": null
+   },
+   "docs_url": {
+    "value": "https://docs.dataforseo.com/v3/",
+    "confidence": "high",
+    "source_url": "https://docs.dataforseo.com/v3/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://agricidaniel.github.io/dataforseo-brain/entities/ent-dataforseo-mcp-server",
+   "https://costbench.com/software/seo-tools/dataforseo/",
+   "https://dataforseo.com/",
+   "https://dataforseo.com/apis",
+   "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+   "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+   "https://dataforseo.com/model-context-protocol",
+   "https://dataforseo.com/pricing",
+   "https://dataforseo.com/pricing-archive",
+   "https://dataforseo.com/pricing-list",
+   "https://dataforseo.com/pricing/serp",
+   "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+   "https://dataforseo.com/update/updated-pricing-in-v3",
+   "https://deepwiki.com/dataforseo/PythonClient/4.1-authentication-methods",
+   "https://docs.dataforseo.com/v3/",
+   "https://docs.dataforseo.com/v3/auth/",
+   "https://github.com/Skobyn/dataforseo-mcp-server",
+   "https://github.com/arnikanord/dataforseo-wiki/blob/main/auth.md",
+   "https://github.com/dataforseo/mcp-server-typescript",
+   "https://mcp.so/servers/mcp-server-typescript",
+   "https://mindcloud.co/docs/universal/rest/dataforseo/latest/introduction/authentication",
+   "https://pagespeed.dataforseo.com/help-center/category/mcp",
+   "https://pypi.org/project/dataforseo-mcp-server/",
+   "https://www.postman.com/docs-dataforseo/dataforseo-api-v3/overview"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "docs.dataforseo.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "dataforseo",
+   "composio_name": "Dataforseo",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "BASIC"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 312.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "developer tools",
+    "marketing"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 52,
+  "slug": "se_ranking",
+  "name": "SE Ranking",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:16:29+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Provides SEO data including rankings, backlinks, keyword research, and site audits via API.",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://github.com/seranking/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://seranking.com/api/data/reference/"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+   },
+   "docs_url": {
+    "value": "https://seranking.com/api/data/reference/",
+    "confidence": "high",
+    "source_url": "https://seranking.com/api/data/reference/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://github.com/seranking/",
+   "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+   "https://help.seranking.com/hc/en-us/categories/21700778374300-API",
+   "https://seranking.com/api.html",
+   "https://seranking.com/api/data/reference/",
+   "https://www.postman.com/serankingdev/se-ranking-developers/collection/h9m6hd7/data-api",
+   "https://www.postman.com/serankingdev/se-ranking-developers/overview",
+   "https://www.riffanalytics.ai/blog/se-ranking-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "seranking.com/api",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
   "id": 58,
   "slug": "sherlock",
   "name": "Sherlock",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Hunt down social media accounts by username across social networks.",
@@ -3226,7 +5653,7 @@
   "name": "Paygent Connect",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:13:43+00:00",
+  "researched_at": "2026-09-16T21:16:29+00:00",
   "fields": {
    "one_liner": {
     "value": "Payment infrastructure allowing AI agents to create, fund, and manage virtual cards via MCP/API.",

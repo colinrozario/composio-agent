@@ -1,0 +1,97 @@
+{
+ "id": 27,
+ "slug": "telegram",
+ "name": "Telegram",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:16:29+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based instant messaging service providing HTTP Bot API and MTProto API.",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://core.telegram.org/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots"
+  },
+  "docs_url": {
+   "value": "https://core.telegram.org/bots/api",
+   "confidence": "high",
+   "source_url": "https://core.telegram.org/bots/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://botapi.apimatic.dev/",
+  "https://core.telegram.org/",
+  "https://core.telegram.org/api/auth",
+  "https://core.telegram.org/api/bots",
+  "https://core.telegram.org/api/bots/ids",
+  "https://core.telegram.org/api/url-authorization",
+  "https://core.telegram.org/bots",
+  "https://core.telegram.org/bots/api",
+  "https://core.telegram.org/method/auth.importBotAuthorization",
+  "https://docs.telethon.dev/",
+  "https://github.com/tdlib/telegram-bot-api",
+  "https://github.com/yagop/node-telegram-bot-api",
+  "https://josxa.github.io/telegram-bot-api-docs/core.telegram.org/bots/api",
+  "https://tgapis.github.io/botapidocs/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}
