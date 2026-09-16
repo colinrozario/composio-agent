@@ -4,7 +4,7 @@ Strata (recorded per row so grading can report them separately):
   random    2 per category, seeded -> unbiased estimate of accuracy
   targeted  every app still low-confidence / needing a human, plus review_flags.json priors
 The targeted stratum is deliberately hard, so never blend it into the headline number unlabelled."""
-import csv, random
+import csv, random, sys
 from common import DATA, GT, GRADED_FIELDS, seed, first, latest, load
 
 def main(seed_value=7, per_cat=2, max_targeted=15):
@@ -28,6 +28,10 @@ def main(seed_value=7, per_cat=2, max_targeted=15):
         strata[a["slug"]] = "targeted"
     GT.mkdir(exist_ok=True)
     path = GT/"human_review.csv"
+    if path.exists() and "--force" not in sys.argv:
+        with path.open(encoding="utf-8-sig", newline="") as fh:
+            if any(r.get("truth_value", "").strip() for r in csv.DictReader(fh)):
+                raise SystemExit(f"{path} already has human truth filled in; refusing to overwrite (pass --force)")
     with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["stratum", "slug", "app", "field", "pass1_value", "final_value", "final_source_url",
