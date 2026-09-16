@@ -1,0 +1,10 @@
+{
+  "_comment": "Human-written. Fill after running cluster.py and reading the app lists. Keep each line short.",
+  "app_review_gate": {"headline": "App review is the real gate, not auth", "so_what": "TODO"},
+  "paid_to_use": {"headline": "Free to read, paid to call", "so_what": "TODO"},
+  "per_tenant_host": {"headline": "Every customer has a different host", "so_what": "TODO"},
+  "graphql_only": {"headline": "GraphQL-only: easy auth, hard tool shapes", "so_what": "TODO"},
+  "official_mcp": {"headline": "Vendor MCP already exists", "so_what": "TODO"},
+  "local_toolkit": {"headline": "Not APIs at all: local toolkits", "so_what": "TODO"},
+  "dark": {"headline": "Close to no public developer surface", "so_what": "TODO"}
+}

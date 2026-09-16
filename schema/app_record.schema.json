@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "app_record.schema.json",
+  "title": "AppResearchRecord",
+  "description": "One researched app. Every field is a Finding: value + confidence + source_url. Confidence is per field, not per app.",
+  "type": "object",
+  "required": ["id", "slug", "name", "fields"],
+  "properties": {
+    "id": {"type": "integer"},
+    "slug": {"type": "string"},
+    "name": {"type": "string"},
+    "pass": {"enum": ["pass1", "pass2_grounded", "pass2_rephrased", "final"]},
+    "model": {"type": "string"},
+    "researched_at": {"type": "string", "format": "date-time"},
+    "fields": {
+      "type": "object",
+      "required": ["one_liner", "auth_methods", "access_path", "api_type", "api_breadth",
+                   "official_mcp", "base_url_model", "toolkit_bucket", "docs_quality",
+                   "test_account", "main_blocker", "docs_url"],
+      "properties": {
+        "one_liner":      {"$ref": "#/$defs/finding_string"},
+        "auth_methods":   {"$ref": "#/$defs/finding_auth"},
+        "access_path":    {"$ref": "#/$defs/finding_access"},
+        "api_type":       {"$ref": "#/$defs/finding_api_type"},
+        "api_breadth":    {"$ref": "#/$defs/finding_breadth"},
+        "official_mcp":   {"$ref": "#/$defs/finding_mcp"},
+        "base_url_model": {"$ref": "#/$defs/finding_base_url"},
+        "toolkit_bucket": {"$ref": "#/$defs/finding_bucket"},
+        "docs_quality":   {"$ref": "#/$defs/finding_docs"},
+        "test_account":   {"$ref": "#/$defs/finding_test"},
+        "main_blocker":   {"$ref": "#/$defs/finding_string"},
+        "docs_url":       {"$ref": "#/$defs/finding_string"}
+      }
+    },
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "base": {
+      "type": "object",
+      "required": ["value", "confidence", "source_url"],
+      "properties": {
+        "confidence": {"enum": ["high", "med", "low"]},
+        "source_url": {"type": ["string", "null"], "description": "URL actually read that supports this value. null only if value is 'unknown'."},
+        "evidence_quote": {"type": ["string", "null"], "maxLength": 240, "description": "Short supporting snippet (grounded pass only)."}
+      }
+    },
+    "finding_string":   {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"type": "string"}}}]},
+    "finding_auth": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {
+      "type": "array", "items": {"enum": ["oauth2", "api_key", "basic", "bearer_token", "jwt", "hmac_signature", "session_login", "none", "unknown"]}}}}]},
+    "finding_access": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "self_serve_free", "self_serve_trial", "paid_plan_required", "app_review_required",
+      "partner_or_sales_gated", "no_public_api", "not_applicable_local", "unknown"]}}}],
+      "description": "Most restrictive step needed to call the API for real (production scopes), not just to read docs."},
+    "finding_api_type": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "rest", "graphql", "rest_and_graphql", "rpc_or_sdk_only", "cli_only", "none", "unknown"]}}}]},
+    "finding_breadth": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "broad", "narrow", "single_endpoint", "none", "unknown"]}}}]},
+    "finding_mcp": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "official", "community_only", "none_found", "unknown"]}}}]},
+    "finding_base_url": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "fixed", "per_tenant_subdomain", "self_hosted_or_customer_host", "regional", "not_applicable", "unknown"]}}}]},
+    "finding_bucket": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "remote_api_toolkit", "local_or_sandbox_toolkit", "wrap_existing_mcp", "not_buildable_yet", "unknown"]}}}]},
+    "finding_docs": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "full_public_reference", "partial_or_thin", "none_public", "unknown"]}}}]},
+    "finding_test": {"allOf": [{"$ref": "#/$defs/base"}, {"properties": {"value": {"enum": [
+      "free_tier_or_sandbox", "trial_only", "none", "unknown"]}}}]}
+  }
+}

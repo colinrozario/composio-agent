@@ -1,0 +1,8 @@
+{
+  "_comment": "Human-only priors used to force apps into the manual review sample. NEVER passed to the agent, so they cannot bias pass 1.",
+  "suspected_local_cli": ["sherlock", "mermaid_cli", "higgsfield"],
+  "suspected_thin_public_surface": ["paygent_connect", "ipayx", "fanbasis", "waterfall_io"],
+  "hint_points_elsewhere": ["notebooklm"],
+  "hint_mentions_unshipped": ["consensus"],
+  "suspected_self_hosted": ["twenty"]
+}
