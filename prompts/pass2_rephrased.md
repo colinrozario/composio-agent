@@ -10,6 +10,11 @@ Questions, answer each from the vendor's current developer pages found by web se
 - Does every customer have their own host/subdomain? (base_url_model)
 - Can you test for free? (test_account)
 
+Shared definitions (so we disagree about facts, not labels):
+- A tool you install and run yourself with no hosted API: auth ["none"], access_path not_applicable_local, api_type cli_only, test_account none.
+- access_path is judged for a developer building an integration: can they get working credentials themselves?
+- Only count auth and MCP servers the vendor documents as available today (not requested, not community-built).
+
 Return ONLY a JSON object keyed by field name, each value shaped {{"value": ..., "confidence": "high|med|low", "source_url": "..."}}
 (auth_methods value is an array). Use "unknown" rather than guessing. Allowed values:
 {enums}

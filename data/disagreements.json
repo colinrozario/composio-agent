@@ -1,0 +1,65 @@
+{
+ "model": "sonnet",
+ "apps_compared": 3,
+ "failed": [],
+ "apps_with_disagreement": 3,
+ "per_field": {
+  "auth_methods": 2,
+  "access_path": 1,
+  "api_type": 2,
+  "official_mcp": 1,
+  "base_url_model": 0,
+  "test_account": 2
+ },
+ "by_app": {
+  "salesforce": {
+   "auth_methods": {
+    "pass1": [
+     "jwt",
+     "oauth2"
+    ],
+    "second": [
+     "jwt",
+     "oauth2",
+     "session_login"
+    ]
+   },
+   "api_type": {
+    "pass1": "rest_and_graphql",
+    "second": "rest"
+   }
+  },
+  "sherlock": {
+   "access_path": {
+    "pass1": "not_applicable_local",
+    "second": "no_public_api"
+   },
+   "test_account": {
+    "pass1": "none",
+    "second": "free_tier_or_sandbox"
+   }
+  },
+  "paygent_connect": {
+   "auth_methods": {
+    "pass1": [
+     "bearer_token"
+    ],
+    "second": [
+     "api_key"
+    ]
+   },
+   "api_type": {
+    "pass1": "rest",
+    "second": "rpc_or_sdk_only"
+   },
+   "official_mcp": {
+    "pass1": "none_found",
+    "second": "official"
+   },
+   "test_account": {
+    "pass1": "free_tier_or_sandbox",
+    "second": "none"
+   }
+  }
+ }
+}
