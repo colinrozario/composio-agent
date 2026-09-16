@@ -1,0 +1,292 @@
+{
+ "checked_urls": 8,
+ "needed_browser": 0,
+ "by_app": {
+  "salesforce": {
+   "one_liner": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "test_account": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   }
+  },
+  "sherlock": {
+   "one_liner": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://github.com/sherlock-project/sherlock",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   }
+  },
+  "paygent_connect": {
+   "one_liner": {
+    "url": "https://docs.paygent.to/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.paygent.to/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.paygent.to/reference/api-reference/",
+    "status": 200,
+    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "flags": []
+   }
+  }
+ },
+ "flagged": {
+  "salesforce": {
+   "one_liner": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "api_type": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "docs_url": {
+    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
+    "status": 404,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
+    "flags": [
+     "http_404"
+    ]
+   }
+  }
+ }
+}

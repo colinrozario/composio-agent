@@ -1,0 +1,31 @@
+{
+ "summary": {
+  "pass1": {
+   "n": 1,
+   "exact": 0.0,
+   "overlap": 1.0,
+   "oracle_subset": 0.0
+  },
+  "final": {
+   "n": 0
+  }
+ },
+ "by_app": {
+  "salesforce": {
+   "pass1": {
+    "agent": [
+     "jwt",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   }
+  }
+ },
+ "needs_human": []
+}

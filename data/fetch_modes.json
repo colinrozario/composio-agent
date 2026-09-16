@@ -1,0 +1,12 @@
+{
+ "composio": 5,
+ "http": 0,
+ "browser": 0,
+ "by_url": {
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm": "composio",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm": "composio",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm": "composio",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html": "composio",
+  "https://salesforce.com": "composio"
+ }
+}

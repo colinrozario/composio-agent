@@ -55,10 +55,18 @@ async def rendered_text(url):
         finally:
             await page.close()
 
-FETCH_MODE = {}  # url -> "http" | "browser", reported on the page
+FETCH_MODE = {}  # url -> "composio" | "http" | "browser", reported on the page
 
 async def page_text(c, url):
-    """Plain HTTP first; if the page is JS-rendered (near-empty text) or blocks bots, render it in Chromium."""
+    """Composio's fetch tool first (the agent's hands); then plain HTTP; then headless Chromium for JS-rendered docs."""
+    import agent
+    try:
+        res, ok = await agent.fetch_pages([url])
+        text = " ".join(p.get("text", "") for p in res.get("pages", []))
+        if ok and len(text) > 400:
+            FETCH_MODE[url] = "composio"; return text[:MAX_CHARS_PER_PAGE]
+    except (Exception, SystemExit):
+        pass
     text = None
     try:
         r = await c.get(url, follow_redirects=True)
@@ -111,8 +119,9 @@ async def main(only):
         print(f"{len(jobs)} apps flagged for grounded re-ask")
         await gather_limited(jobs)
     modes = list(FETCH_MODE.values())
-    save(DATA/"fetch_modes.json", {"http": modes.count("http"), "browser": modes.count("browser"), "by_url": FETCH_MODE})
-    print(f"pages read: {modes.count('http')} via http, {modes.count('browser')} needed the headless browser")
+    save(DATA/"fetch_modes.json", {m: modes.count(m) for m in ("composio", "http", "browser")} | {"by_url": FETCH_MODE})
+    print(f"pages read: {modes.count('composio')} via Composio, {modes.count('http')} via plain http, "
+          f"{modes.count('browser')} needed the headless browser")
     if _browser: await _browser.close()
 
 if __name__ == "__main__": asyncio.run(main(sys.argv[1:] or None))

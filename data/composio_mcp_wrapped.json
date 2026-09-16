@@ -1,0 +1,163 @@
+{
+ "close": {
+  "composio_slug": "close_mcp",
+  "tools_count": 114.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "intercom": {
+  "composio_slug": "intercom_mcp",
+  "tools_count": 15.0,
+  "auth_schemes": [
+   "API_KEY"
+  ]
+ },
+ "pylon": {
+  "composio_slug": "pylon_mcp",
+  "tools_count": 12.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "ahrefs": {
+  "composio_slug": "ahrefs_mcp",
+  "tools_count": 135.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "apify": {
+  "composio_slug": "apify_mcp",
+  "tools_count": 12.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "clay": {
+  "composio_slug": "clay_mcp",
+  "tools_count": 17.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "github": {
+  "composio_slug": "github_mcp",
+  "tools_count": 44.0,
+  "auth_schemes": [
+   "API_KEY"
+  ]
+ },
+ "vercel": {
+  "composio_slug": "vercel_mcp",
+  "tools_count": 37.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "netlify": {
+  "composio_slug": "netlify_mcp",
+  "tools_count": 9.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "cloudflare": {
+  "composio_slug": "cloudflare_mcp",
+  "tools_count": 3.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "supabase": {
+  "composio_slug": "supabase_mcp",
+  "tools_count": 32.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "datadog": {
+  "composio_slug": "datadog_mcp",
+  "tools_count": 370.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "sentry": {
+  "composio_slug": "sentry_mcp",
+  "tools_count": 9.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "notion": {
+  "composio_slug": "notion_mcp",
+  "tools_count": 42.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "linear": {
+  "composio_slug": "linear_mcp",
+  "tools_count": 78.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "monday_com": {
+  "composio_slug": "monday_mcp",
+  "tools_count": 36.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "clickup": {
+  "composio_slug": "clickup_mcp",
+  "tools_count": 58.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "stripe": {
+  "composio_slug": "stripe_mcp",
+  "tools_count": 10.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "plaid": {
+  "composio_slug": "plaid_mcp",
+  "tools_count": 5.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "otter_ai": {
+  "composio_slug": "otter_ai_mcp",
+  "tools_count": 3.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "consensus": {
+  "composio_slug": "consensus_mcp",
+  "tools_count": 1.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ },
+ "devin": {
+  "composio_slug": "devin_mcp",
+  "tools_count": 22.0,
+  "auth_schemes": [
+   "API_KEY"
+  ]
+ },
+ "higgsfield": {
+  "composio_slug": "higgsfield_mcp",
+  "tools_count": 101.0,
+  "auth_schemes": [
+   "DCR_OAUTH"
+  ]
+ }
+}
