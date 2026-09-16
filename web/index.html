@@ -136,7 +136,8 @@ button.link{font:inherit;color:var(--ink);background:none;border:0;padding:0;tex
 .table{overflow-x:auto;background:var(--sheet);border:1px solid var(--line);border-radius:10px}
 table{width:100%;border-collapse:collapse;font-size:14.5px}
 th{font-weight:500;font-size:13.5px;color:var(--quiet);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
-td{padding:12px 14px;border-bottom:1px solid var(--faint);vertical-align:top}
+td{padding:12px 14px;border-bottom:1px solid var(--faint);vertical-align:top;white-space:nowrap}
+tr.detail td{white-space:normal}
 tbody tr:last-child td{border-bottom:0}
 td.app{font-weight:600;white-space:nowrap}
 td.app small{display:block;font-weight:400;font-size:13px;color:var(--quiet)}
@@ -252,6 +253,7 @@ footer nav{display:flex;gap:18px;flex-wrap:wrap}
     <thead><tr><th></th><th>App</th><th>Composio has it</th><th>Score</th><th>Readiness</th><th>Sign-in</th><th>Getting access</th><th>Vendor MCP server</th></tr></thead>
     <tbody id="appBody"></tbody>
   </table></div>
+  <p class="more" id="appsMore"></p>
 </div></section>
 
 <section id="try"><div class="wrap intro">
@@ -438,11 +440,12 @@ function blockers(d){
       <span class="n">${p.count}</span>
       <div><h3>${esc(BLOCKER_TITLE[p.key] || p.headline)}</h3>
       <p>${esc(p.so_what || BLOCKER_NOTE[p.key] || "")}</p>
-      <p class="who">${esc(p.apps.join(", "))}</p></div>
+      <p class="who">${esc(p.apps.slice(0, 8).join(", "))}${p.apps.length > 8 ? `<span class="quiet"> and ${p.apps.length - 8} more</span>` : ""}</p></div>
     </div>`).join("") || `<p class="empty">No repeated obstacles found yet.</p>`;
 }
 
 const openRows = new Set();
+let showAllApps = false;
 function apps(d){
   const opt = (sel, items) => sel.insertAdjacentHTML("beforeend", items.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join(""));
   opt($("#fCat"), [...new Set(d.apps.map(a => a.category))].map(c => [c, c]));
@@ -464,7 +467,11 @@ function renderApps(d){
   const rows = d.apps.filter(a => (!q || a.name.toLowerCase().includes(q)) && (!c || a.category === c) && (!t || a.score.tier === t) && (!m || !a.in_composio))
     .sort((a, b) => b.score.total - a.score.total || a.name.localeCompare(b.name));
   $("#count").textContent = `${rows.length} of ${d.apps.length} apps`;
-  $("#appBody").innerHTML = rows.map(a => {
+  const CAP = 12, filtered = q || c || t || m;
+  const shown = showAllApps || filtered ? rows : rows.slice(0, CAP);
+  $("#appsMore").innerHTML = shown.length < rows.length ? `<button type="button" class="link" id="allApps">Show all ${rows.length} apps</button>` : "";
+  if ($("#allApps")) $("#allApps").onclick = () => { showAllApps = true; renderApps(d); };
+  $("#appBody").innerHTML = shown.map(a => {
     const open = openRows.has(a.slug);
     const row = `<tr class="row" data-slug="${esc(a.slug)}" tabindex="0" aria-expanded="${open}">
       <td class="toggle" aria-hidden="true">${open ? "−" : "+"}</td>
