@@ -1,0 +1,6 @@
+.venv
+data/raw
+data/archive
+site
+ground_truth
+*.raw.json

@@ -41,8 +41,11 @@ def _record(slug: str, units: int = 1):
     d = _ledger()
     d["calls"][slug] = d["calls"].get(slug, 0) + units
     d["premium_usd"] = round(d["premium_usd"] + PREMIUM_PRICE.get(slug, 0) * units, 4)
-    LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    LEDGER.write_text(json.dumps(d, indent=1), encoding="utf-8")
+    try:
+        LEDGER.parent.mkdir(parents=True, exist_ok=True)
+        LEDGER.write_text(json.dumps(d, indent=1), encoding="utf-8")
+    except OSError:  # read-only filesystem (Vercel function): skip the local ledger
+        pass
 class QuotaExhausted(Exception):
     """Daily free-tier quota is gone. Batches stop cleanly and resume tomorrow."""
 
