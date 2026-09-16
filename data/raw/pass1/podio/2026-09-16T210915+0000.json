@@ -1,0 +1,93 @@
+{
+ "id": 6,
+ "slug": "podio",
+ "name": "Podio",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:09:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Work management platform providing a complete REST API for workspaces, apps, and items.",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://rollout.com/integration-guides/podio/api-essentials"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  },
+  "docs_url": {
+   "value": "https://developers.podio.com/",
+   "confidence": "high",
+   "source_url": "https://developers.podio.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/podio",
+  "https://developers.podio.com/",
+  "https://developers.podio.com/authentication",
+  "https://developers.podio.com/doc/reference",
+  "https://docs.elastic.io/components/podio/",
+  "https://podio.github.io/podio-android/authentication/",
+  "https://podio.github.io/podio-js/authentication/",
+  "https://public-api.org/api/428/podio",
+  "https://publicapi.dev/podio-api",
+  "https://publicapis.io/podio-api",
+  "https://rollout.com/integration-guides/podio/api-essentials",
+  "https://www.progress.com/podio/documentation/using-podio/podio-and-other-services/podio-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ }
+}
