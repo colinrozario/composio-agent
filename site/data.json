@@ -1,56 +1,85 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T21:10:08+00:00",
+  "generated_at": "2026-09-16T21:13:45+00:00",
   "demo": false,
   "repo": "https://github.com/colinrozario/composio-agent",
-  "headline_text": "Composio already ships 4 of the 7 apps researched so far. Of the 3 it doesn't, 2 look buildable now.",
-  "lede_text": "Pilot run: 7 of 100 apps researched by the agent (Gemini + Composio search) with link and auth-oracle checks. The grounded re-ask, second-model diff and human-graded accuracy sample run next, so treat values as unverified."
+  "headline_text": "Composio already ships 16 of the 25 apps researched so far. Of the 9 it doesn't, 3 look buildable now.",
+  "lede_text": "Pilot run: 25 of 100 apps researched by the agent (Gemini + Composio search) with link and auth-oracle checks. The grounded re-ask, second-model diff and human-graded accuracy sample run next, so treat values as unverified."
  },
  "headline": {
-  "apps": 7,
-  "in_composio": 4,
-  "not_in_composio": 3,
-  "buildable_now_not_in_composio": 2
+  "apps": 25,
+  "in_composio": 16,
+  "not_in_composio": 9,
+  "buildable_now_not_in_composio": 3
  },
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 0,
-   "apps": [],
+   "count": 1,
+   "apps": [
+    "WhatsApp Business"
+   ],
    "headline": "App review is the real gate, not auth",
    "so_what": ""
   },
   {
    "key": "paid_to_use",
-   "count": 0,
-   "apps": [],
+   "count": 8,
+   "apps": [
+    "Close",
+    "Copper",
+    "DealCloud",
+    "Freshdesk",
+    "Gladly",
+    "Intercom",
+    "LiveAgent",
+    "Pylon"
+   ],
    "headline": "Free to read, paid to call",
    "so_what": ""
   },
   {
    "key": "per_tenant_host",
-   "count": 2,
+   "count": 10,
    "apps": [
+    "DealCloud",
+    "Freshdesk",
+    "Gladly",
+    "Gorgias",
+    "LiveAgent",
     "Pipedrive",
-    "Salesforce"
+    "Pylon",
+    "Salesforce",
+    "Twenty",
+    "Zendesk"
    ],
    "headline": "Every customer has a different host",
    "so_what": ""
   },
   {
    "key": "graphql_only",
-   "count": 0,
-   "apps": [],
+   "count": 1,
+   "apps": [
+    "Plain"
+   ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
    "so_what": ""
   },
   {
    "key": "official_mcp",
-   "count": 3,
+   "count": 11,
    "apps": [
+    "Close",
+    "Freshdesk",
+    "Front",
+    "Gorgias",
     "HubSpot",
+    "Intercom",
     "Paygent Connect",
-    "Salesforce"
+    "Salesforce",
+    "Slack",
+    "Twenty",
+    "Twilio"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": ""
@@ -95,9 +124,59 @@
     "in_composio": true
    },
    {
+    "name": "Twenty",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Podio",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Front",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Plain",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Help Scout",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Slack",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Discord",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Gorgias",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "Zendesk",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Twilio",
+    "score": 7,
+    "in_composio": false
+   },
+   {
+    "name": "WhatsApp Business",
+    "score": 7,
+    "in_composio": true
    },
    {
     "name": "Paygent Connect",
@@ -105,7 +184,48 @@
     "in_composio": false
    }
   ],
-  "build_with_friction": [],
+  "build_with_friction": [
+   {
+    "name": "Close",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Copper",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "Intercom",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Freshdesk",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Pylon",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "LiveAgent",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "DealCloud",
+    "score": 5,
+    "in_composio": false
+   },
+   {
+    "name": "Gladly",
+    "score": 5,
+    "in_composio": false
+   }
+  ],
   "needs_outreach": [],
   "local_toolkit": [
    {
@@ -118,18 +238,22 @@
  "auth": [
   [
    "oauth2",
-   5
-  ],
-  [
-   "api_key",
-   3
+   16
   ],
   [
    "bearer_token",
-   2
+   11
+  ],
+  [
+   "api_key",
+   9
   ],
   [
    "basic",
+   5
+  ],
+  [
+   "jwt",
    1
   ],
   [
@@ -139,7 +263,15 @@
  ],
  "tier_by_category": {
   "CRM and Sales": {
-   "build_now": 5
+   "build_now": 6,
+   "build_with_friction": 3
+  },
+  "Support and Helpdesk": {
+   "build_now": 5,
+   "build_with_friction": 5
+  },
+  "Communications and Messaging": {
+   "build_now": 4
   },
   "Data, SEO and Scraping": {
    "local_toolkit": 1
@@ -511,6 +643,90 @@
    }
   },
   {
+   "id": 5,
+   "name": "Twenty",
+   "slug": "twenty",
+   "category": "CRM and Sales",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Modern open-source CRM platform with customizable objects, views, workflows, and developer APIs.",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "api_type": {
+     "value": "rest_and_graphql",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp"
+    },
+    "base_url_model": {
+     "value": "self_hosted_or_customer_host",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/extend/oauth"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    },
+    "docs_url": {
+     "value": "https://docs.twenty.com/developers/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.twenty.com/developers/introduction"
+    }
+   }
+  },
+  {
    "id": 6,
    "name": "Podio",
    "slug": "podio",
@@ -590,6 +806,1443 @@
      "value": "https://developers.podio.com/",
      "confidence": "high",
      "source_url": "https://developers.podio.com/"
+    }
+   }
+  },
+  {
+   "id": 8,
+   "name": "Close",
+   "slug": "close",
+   "category": "CRM and Sales",
+   "in_composio": true,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Inside sales CRM featuring robust REST APIs and an official MCP server for AI agents.",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.close.com/api/overview/oauth-authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://www.close.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/api/overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/api/overview"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.close.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    },
+    "docs_url": {
+     "value": "https://developer.close.com/",
+     "confidence": "high",
+     "source_url": "https://developer.close.com/"
+    }
+   }
+  },
+  {
+   "id": 9,
+   "name": "Copper",
+   "slug": "copper",
+   "category": "CRM and Sales",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Google Workspace-integrated CRM with a REST API for managing sales pipelines and contacts.",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/introduction/authentication.html"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://www.copper.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "low",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://www.copper.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    },
+    "docs_url": {
+     "value": "https://developer.copper.com/index.html",
+     "confidence": "high",
+     "source_url": "https://developer.copper.com/index.html"
+    }
+   }
+  },
+  {
+   "id": 10,
+   "name": "DealCloud",
+   "slug": "dealcloud",
+   "category": "CRM and Sales",
+   "in_composio": false,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 0
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "DealCloud is a deal, relationship, and CRM management platform for financial services.",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    },
+    "official_mcp": {
+     "value": "community_only",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs/token"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "med",
+     "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+    },
+    "main_blocker": {
+     "value": "Access requires an enterprise subscription and sales-gated API credentials since there is no self-serve free tier or trial.",
+     "confidence": "high",
+     "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+    },
+    "docs_url": {
+     "value": "https://api.docs.dealcloud.com/docs",
+     "confidence": "high",
+     "source_url": "https://api.docs.dealcloud.com/docs"
+    }
+   }
+  },
+  {
+   "id": 11,
+   "name": "Zendesk",
+   "slug": "zendesk",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 2,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based customer support software platform featuring a comprehensive REST API for ticket management.",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key",
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/documentation/authentication/"
+    },
+    "access_path": {
+     "value": "self_serve_trial",
+     "confidence": "high",
+     "source_url": "https://www.zendesk.com/support/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://www.zendesk.com/marketplace/"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/introduction/doc-conventions/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.zendesk.com/support/pricing/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    },
+    "docs_url": {
+     "value": "https://developer.zendesk.com/api-reference/",
+     "confidence": "high",
+     "source_url": "https://developer.zendesk.com/api-reference/"
+    }
+   }
+  },
+  {
+   "id": 12,
+   "name": "Intercom",
+   "slug": "intercom",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "AI-first customer service platform for messaging, support, and customer data management.",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://www.intercom.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/docs"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.intercom.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/"
+    },
+    "docs_url": {
+     "value": "https://developers.intercom.com/docs",
+     "confidence": "high",
+     "source_url": "https://developers.intercom.com/"
+    }
+   }
+  },
+  {
+   "id": 13,
+   "name": "Freshdesk",
+   "slug": "freshdesk",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based customer support platform with ticketing, knowledge base, and helpdesk automation.",
+     "confidence": "high",
+     "source_url": "https://www.freshworks.com/freshdesk/pricing/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/#authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/#how_to_use"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/#how_to_use"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/"
+    },
+    "docs_url": {
+     "value": "https://developers.freshdesk.com/api/",
+     "confidence": "high",
+     "source_url": "https://developers.freshdesk.com/api/"
+    }
+   }
+  },
+  {
+   "id": 14,
+   "name": "Front",
+   "slug": "front",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Support and helpdesk platform featuring a robust Core REST API and MCP server.",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/welcome"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/welcome"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/welcome"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/welcome"
+    },
+    "docs_url": {
+     "value": "https://dev.frontapp.com/docs/welcome",
+     "confidence": "high",
+     "source_url": "https://dev.frontapp.com/docs/welcome"
+    }
+   }
+  },
+  {
+   "id": 15,
+   "name": "Pylon",
+   "slug": "pylon",
+   "category": "Support and Helpdesk",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Unified B2B customer support platform integrating tickets across Slack, email, and chat.",
+     "confidence": "high",
+     "source_url": "https://www.usepylon.com/integrations/api-webhooks"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://www.usepylon.com/blog/product-launch-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://www.usepylon.com/integrations/api-webhooks"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "med",
+     "source_url": "https://www.usepylon.com/integrations/api-webhooks"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://www.usepylon.com/blog/product-launch-api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+    },
+    "docs_url": {
+     "value": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+     "confidence": "high",
+     "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+    }
+   }
+  },
+  {
+   "id": 16,
+   "name": "LiveAgent",
+   "slug": "liveagent",
+   "category": "Support and Helpdesk",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Help desk and customer support software with live chat, ticketing, and automation tools.",
+     "confidence": "high",
+     "source_url": "https://www.liveagent.com/pricing/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/741982-API-key"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://www.liveagent.com/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.liveagent.com/pricing/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    },
+    "docs_url": {
+     "value": "https://support.liveagent.com/docs/api/v3/",
+     "confidence": "high",
+     "source_url": "https://support.liveagent.com/docs/api/v3/"
+    }
+   }
+  },
+  {
+   "id": 17,
+   "name": "Plain",
+   "slug": "plain",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation",
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "API-first customer support platform designed for B2B SaaS teams.",
+     "confidence": "high",
+     "source_url": "https://www.plain.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "api_type": {
+     "value": "graphql",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/developer"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    },
+    "docs_url": {
+     "value": "https://help.plain.com/article/api-quickstart",
+     "confidence": "high",
+     "source_url": "https://help.plain.com/article/api-quickstart"
+    }
+   }
+  },
+  {
+   "id": 18,
+   "name": "Help Scout",
+   "slug": "help_scout",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Customer support platform providing APIs for mailboxes, chats, and help center documentation.",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.helpscout.com/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://github.com/samiabid/helpscout-mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.helpscout.com/pricing/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    },
+    "docs_url": {
+     "value": "https://developer.helpscout.com/",
+     "confidence": "high",
+     "source_url": "https://developer.helpscout.com/"
+    }
+   }
+  },
+  {
+   "id": 19,
+   "name": "Gorgias",
+   "slug": "gorgias",
+   "category": "Support and Helpdesk",
+   "in_composio": true,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Gorgias is an e-commerce helpdesk platform for managing customer support tickets and conversations.",
+     "confidence": "high",
+     "source_url": "https://www.gorgias.com/pricing"
+    },
+    "auth_methods": {
+     "value": [
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.gorgias.com/reference/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.gorgias.com/reference/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.gorgias.com/reference/introduction"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://www.gorgias.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+    },
+    "docs_url": {
+     "value": "https://developers.gorgias.com/reference/introduction",
+     "confidence": "high",
+     "source_url": "https://developers.gorgias.com/reference/introduction"
+    }
+   }
+  },
+  {
+   "id": 20,
+   "name": "Gladly",
+   "slug": "gladly",
+   "category": "Support and Helpdesk",
+   "in_composio": false,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 0
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Customer service platform API for managing customer profile data, conversations, and timelines.",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "auth_methods": {
+     "value": [
+      "basic",
+      "jwt"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "med",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "test_account": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://developer.gladly.com/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    },
+    "docs_url": {
+     "value": "https://developer.gladly.com/rest/",
+     "confidence": "high",
+     "source_url": "https://developer.gladly.com/rest/"
+    }
+   }
+  },
+  {
+   "id": 21,
+   "name": "Slack",
+   "slug": "slack",
+   "category": "Communications and Messaging",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Team communication platform providing messaging, channels, file sharing, and developer APIs.",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/apis/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/authentication/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://api.slack.com/apps"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/reference/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/apis/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/ai/slack-mcp-server/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/reference/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/apis/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/reference/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://api.slack.com/apps"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://api.slack.com/apps"
+    },
+    "docs_url": {
+     "value": "https://docs.slack.dev/reference/",
+     "confidence": "high",
+     "source_url": "https://docs.slack.dev/reference/"
+    }
+   }
+  },
+  {
+   "id": 22,
+   "name": "Twilio",
+   "slug": "twilio",
+   "category": "Communications and Messaging",
+   "in_composio": false,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 2,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud communications platform providing APIs for SMS, voice, video, and authentication.",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs"
+    },
+    "auth_methods": {
+     "value": [
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/usage/api"
+    },
+    "access_path": {
+     "value": "self_serve_trial",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/usage/api"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/ai/mcp"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/ai/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/usage/api"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/ai/mcp"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs/ai/mcp"
+    },
+    "docs_url": {
+     "value": "https://www.twilio.com/docs",
+     "confidence": "high",
+     "source_url": "https://www.twilio.com/docs"
+    }
+   }
+  },
+  {
+   "id": 26,
+   "name": "Discord",
+   "slug": "discord",
+   "category": "Communications and Messaging",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Messaging platform offering REST APIs for bots, webhooks, and user-authenticated social integrations.",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/docs/intro"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/topics/oauth2"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/applications/docs"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/docs/intro"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/applications/docs"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/applications/docs"
+    },
+    "docs_url": {
+     "value": "https://docs.discord.com/developers/reference",
+     "confidence": "high",
+     "source_url": "https://docs.discord.com/developers/reference"
+    }
+   }
+  },
+  {
+   "id": 28,
+   "name": "WhatsApp Business",
+   "slug": "whatsapp_business",
+   "category": "Communications and Messaging",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation",
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Enterprise messaging API for sending and receiving messages via the WhatsApp Business platform.",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "access_path": {
+     "value": "app_review_required",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "main_blocker": {
+     "value": "Production access requires app review and business verification to initiate conversations with non-test contacts.",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+    },
+    "docs_url": {
+     "value": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+     "confidence": "high",
+     "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
     }
    }
   },

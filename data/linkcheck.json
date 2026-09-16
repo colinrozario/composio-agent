@@ -1,5 +1,5 @@
 {
- "checked_urls": 19,
+ "checked_urls": 92,
  "needed_browser": 0,
  "by_app": {
   "salesforce": {
@@ -298,6 +298,80 @@
     "flags": []
    }
   },
+  "twenty": {
+   "one_liner": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.twenty.com/developers/extend/oauth",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/extend/oauth",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.twenty.com/developers/extend/oauth",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/extend/oauth",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.twenty.com/developers/introduction",
+    "status": 200,
+    "final_url": "https://docs.twenty.com/developers/introduction",
+    "flags": []
+   }
+  },
   "podio": {
    "one_liner": {
     "url": "https://developers.podio.com/",
@@ -369,6 +443,1309 @@
     "url": "https://developers.podio.com/",
     "status": 200,
     "final_url": "https://developers.podio.com/",
+    "flags": []
+   }
+  },
+  "close": {
+   "one_liner": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.close.com/api/overview/oauth-authentication",
+    "status": 200,
+    "final_url": "https://developer.close.com/api/overview/oauth-authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.close.com/pricing",
+    "status": 200,
+    "final_url": "https://close.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.close.com/api/overview",
+    "status": 200,
+    "final_url": "https://developer.close.com/api/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.close.com/mcp",
+    "status": 200,
+    "final_url": "https://developer.close.com/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.close.com/api/overview",
+    "status": 200,
+    "final_url": "https://developer.close.com/api/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.close.com/pricing",
+    "status": 200,
+    "final_url": "https://close.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.close.com/",
+    "status": 200,
+    "final_url": "https://developer.close.com/",
+    "flags": []
+   }
+  },
+  "copper": {
+   "one_liner": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.copper.com/introduction/authentication.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/introduction/authentication.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.copper.com/pricing",
+    "status": 200,
+    "final_url": "https://www.copper.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.copper.com/pricing",
+    "status": 200,
+    "final_url": "https://www.copper.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.copper.com/index.html",
+    "status": 200,
+    "final_url": "https://developer.copper.com/index.html",
+    "flags": []
+   }
+  },
+  "dealcloud": {
+   "one_liner": {
+    "url": "https://api.docs.dealcloud.com/",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://api.docs.dealcloud.com/docs/token",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs/token",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "status": 200,
+    "final_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://api.docs.dealcloud.com/docs/token",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs/token",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "status": 200,
+    "final_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "status": 200,
+    "final_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://api.docs.dealcloud.com/docs",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/docs",
+    "flags": []
+   }
+  },
+  "zendesk": {
+   "one_liner": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.zendesk.com/documentation/authentication/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/documentation/authentication/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.zendesk.com/support/pricing/",
+    "status": 200,
+    "final_url": "https://www.zendesk.com/in/pricing/#georedirect",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://www.zendesk.com/marketplace/",
+    "status": 403,
+    "final_url": "https://www.zendesk.com/marketplace/",
+    "flags": [
+     "http_403",
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://developer.zendesk.com/api-reference/introduction/doc-conventions/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/introduction/doc-conventions/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.zendesk.com/support/pricing/",
+    "status": 200,
+    "final_url": "https://www.zendesk.com/in/pricing/#georedirect",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/",
+    "flags": []
+   }
+  },
+  "intercom": {
+   "one_liner": {
+    "url": "https://developers.intercom.com/",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.intercom.com/pricing",
+    "status": 200,
+    "final_url": "https://www.intercom.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.intercom.com/docs/guides/mcp",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/guides/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.intercom.com/docs/guides/mcp",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs/guides/mcp",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.intercom.com/docs",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/docs",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.intercom.com/pricing",
+    "status": 200,
+    "final_url": "https://www.intercom.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.intercom.com/",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.intercom.com/",
+    "status": 200,
+    "final_url": "https://developers.intercom.com/",
+    "flags": []
+   }
+  },
+  "freshdesk": {
+   "one_liner": {
+    "url": "https://www.freshworks.com/freshdesk/pricing/",
+    "status": 200,
+    "final_url": "https://www.freshworks.com/freshdesk/pricing/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.freshdesk.com/api/#authentication",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/#authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+    "status": 200,
+    "final_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.freshdesk.com/api/#how_to_use",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/#how_to_use",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.freshdesk.com/api/",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "status": 200,
+    "final_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.freshdesk.com/api/#how_to_use",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/#how_to_use",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.freshdesk.com/api/",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.freshdesk.com/api/",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+    "status": 200,
+    "final_url": "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.freshdesk.com/api/",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.freshdesk.com/api/",
+    "status": 200,
+    "final_url": "https://developers.freshdesk.com/api/",
+    "flags": []
+   }
+  },
+  "front": {
+   "one_liner": {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/core-api-overview",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://dev.frontapp.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/welcome",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/core-api-overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/core-api-overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://dev.frontapp.com/docs/mcp-server",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://dev.frontapp.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://dev.frontapp.com/docs/core-api-overview",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/core-api-overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/welcome",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/welcome",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/welcome",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://dev.frontapp.com/docs/welcome",
+    "status": 200,
+    "final_url": "https://dev.frontapp.com/docs/welcome",
+    "flags": []
+   }
+  },
+  "pylon": {
+   "one_liner": {
+    "url": "https://www.usepylon.com/integrations/api-webhooks",
+    "status": 200,
+    "final_url": "https://www.usepylon.com/integrations/api-webhooks",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.usepylon.com/blog/product-launch-api",
+    "status": 200,
+    "final_url": "https://www.usepylon.com/blog/product-launch-api",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://www.usepylon.com/integrations/api-webhooks",
+    "status": 200,
+    "final_url": "https://www.usepylon.com/integrations/api-webhooks",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://www.usepylon.com/integrations/api-webhooks",
+    "status": 200,
+    "final_url": "https://www.usepylon.com/integrations/api-webhooks",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.usepylon.com/blog/product-launch-api",
+    "status": 200,
+    "final_url": "https://www.usepylon.com/blog/product-launch-api",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "status": 200,
+    "final_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+    "flags": []
+   }
+  },
+  "liveagent": {
+   "one_liner": {
+    "url": "https://www.liveagent.com/pricing/",
+    "status": 200,
+    "final_url": "https://www.liveagent.com/pricing/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://support.liveagent.com/741982-API-key",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/741982-API-key",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.liveagent.com/pricing/",
+    "status": 200,
+    "final_url": "https://www.liveagent.com/pricing/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.liveagent.com/pricing/",
+    "status": 200,
+    "final_url": "https://www.liveagent.com/pricing/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://support.liveagent.com/docs/api/v3/",
+    "status": 200,
+    "final_url": "https://support.liveagent.com/docs/api/v3/",
+    "flags": []
+   }
+  },
+  "plain": {
+   "one_liner": {
+    "url": "https://www.plain.com/",
+    "status": 200,
+    "final_url": "https://www.plain.com/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://help.plain.com/article/developer",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "test_account": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "docs_url": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   }
+  },
+  "help_scout": {
+   "one_liner": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.helpscout.com/pricing/",
+    "status": 200,
+    "final_url": "https://www.helpscout.com/pricing/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/samiabid/helpscout-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/samiabid/helpscout-mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.helpscout.com/pricing/",
+    "status": 200,
+    "final_url": "https://www.helpscout.com/pricing/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.helpscout.com/",
+    "status": 200,
+    "final_url": "https://developer.helpscout.com/",
+    "flags": []
+   }
+  },
+  "gorgias": {
+   "one_liner": {
+    "url": "https://www.gorgias.com/pricing",
+    "status": 200,
+    "final_url": "https://www.gorgias.com/pricing",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.gorgias.com/reference/introduction",
+    "status": 200,
+    "final_url": "https://developers.gorgias.com/reference/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.gorgias.com/reference/introduction",
+    "status": 200,
+    "final_url": "https://developers.gorgias.com/reference/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.gorgias.com/reference/introduction",
+    "status": 200,
+    "final_url": "https://developers.gorgias.com/reference/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.gorgias.com/pricing",
+    "status": 200,
+    "final_url": "https://www.gorgias.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+    "status": 200,
+    "final_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.gorgias.com/reference/introduction",
+    "status": 200,
+    "final_url": "https://developers.gorgias.com/reference/introduction",
+    "flags": []
+   }
+  },
+  "gladly": {
+   "one_liner": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.gladly.com/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.gladly.com/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.gladly.com/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.gladly.com/rest/",
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/",
+    "flags": []
+   }
+  },
+  "slack": {
+   "one_liner": {
+    "url": "https://docs.slack.dev/apis/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/apis/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.slack.dev/authentication/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/authentication/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://api.slack.com/apps",
+    "status": 200,
+    "final_url": "https://api.slack.com/apps",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.slack.dev/reference/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/reference/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.slack.dev/apis/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/apis/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.slack.dev/reference/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/reference/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.slack.dev/apis/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/apis/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.slack.dev/reference/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/reference/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://api.slack.com/apps",
+    "status": 200,
+    "final_url": "https://api.slack.com/apps",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://api.slack.com/apps",
+    "status": 200,
+    "final_url": "https://api.slack.com/apps",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.slack.dev/reference/",
+    "status": 200,
+    "final_url": "https://docs.slack.dev/reference/",
+    "flags": []
+   }
+  },
+  "twilio": {
+   "one_liner": {
+    "url": "https://www.twilio.com/docs",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://www.twilio.com/docs/usage/api",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/usage/api",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.twilio.com/docs",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://www.twilio.com/docs/usage/api",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/usage/api",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/ai/mcp",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/ai/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://www.twilio.com/docs/usage/api",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/usage/api",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/ai/mcp",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://www.twilio.com/docs",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.twilio.com/docs",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/ai/mcp",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://www.twilio.com/docs",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs",
+    "flags": []
+   }
+  },
+  "discord": {
+   "one_liner": {
+    "url": "https://docs.discord.com/developers/docs/intro",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/docs/intro",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://docs.discord.com/developers/topics/oauth2",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/topics/oauth2",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "api_type": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.discord.com/developers/docs/intro",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/docs/intro",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "docs_url": {
+    "url": "https://docs.discord.com/developers/reference",
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference",
+    "flags": []
+   }
+  },
+  "whatsapp_business": {
+   "one_liner": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/",
+    "status": 404,
+    "final_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://developers.facebook.com/docs/whatsapp/",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
     "flags": []
    }
   },
@@ -521,5 +1898,159 @@
    }
   }
  },
- "flagged": {}
+ "flagged": {
+  "zendesk": {
+   "official_mcp": {
+    "url": "https://www.zendesk.com/marketplace/",
+    "status": 403,
+    "final_url": "https://www.zendesk.com/marketplace/",
+    "flags": [
+     "http_403",
+     "not_docs_like"
+    ]
+   }
+  },
+  "plain": {
+   "auth_methods": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://help.plain.com/article/developer",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "test_account": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   },
+   "docs_url": {
+    "url": "https://help.plain.com/article/api-quickstart",
+    "status": 200,
+    "final_url": "https://www.plain.com/docs/graphql/introduction",
+    "flags": [
+     "cross_domain_redirect"
+    ]
+   }
+  },
+  "discord": {
+   "one_liner": {
+    "url": "https://docs.discord.com/developers/docs/intro",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/docs/intro",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "access_path": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://docs.discord.com/developers/docs/intro",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/docs/intro",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "test_account": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://docs.discord.com/developers/applications/docs",
+    "status": 404,
+    "final_url": "https://docs.discord.com/developers/applications/docs",
+    "flags": [
+     "http_404"
+    ]
+   }
+  },
+  "whatsapp_business": {
+   "api_breadth": {
+    "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/",
+    "status": 404,
+    "final_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/",
+    "flags": [
+     "http_404"
+    ]
+   }
+  }
+ }
 }

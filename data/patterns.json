@@ -1,25 +1,29 @@
 {
  "totals": {
-  "apps": 7,
-  "in_composio": 4,
-  "not_in_composio": 3,
-  "buildable_now_not_in_composio": 2
+  "apps": 25,
+  "in_composio": 16,
+  "not_in_composio": 9,
+  "buildable_now_not_in_composio": 3
  },
  "auth": [
   [
    "oauth2",
-   5
-  ],
-  [
-   "api_key",
-   3
+   16
   ],
   [
    "bearer_token",
-   2
+   11
+  ],
+  [
+   "api_key",
+   9
   ],
   [
    "basic",
+   5
+  ],
+  [
+   "jwt",
    1
   ],
   [
@@ -28,13 +32,26 @@
   ]
  ],
  "tiers": {
-  "build_now": 6,
+  "build_now": 16,
+  "build_with_friction": 8,
   "local_toolkit": 1
  },
  "access_path": [
   [
    "self_serve_free",
-   6
+   13
+  ],
+  [
+   "paid_plan_required",
+   8
+  ],
+  [
+   "self_serve_trial",
+   2
+  ],
+  [
+   "app_review_required",
+   1
   ],
   [
    "not_applicable_local",
@@ -43,7 +60,15 @@
  ],
  "tier_by_category": {
   "CRM and Sales": {
-   "build_now": 5
+   "build_now": 6,
+   "build_with_friction": 3
+  },
+  "Support and Helpdesk": {
+   "build_now": 5,
+   "build_with_friction": 5
+  },
+  "Communications and Messaging": {
+   "build_now": 4
   },
   "Data, SEO and Scraping": {
    "local_toolkit": 1
@@ -55,42 +80,71 @@
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 0,
-   "apps": [],
+   "count": 1,
+   "apps": [
+    "WhatsApp Business"
+   ],
    "headline": "App review is the real gate, not auth",
    "so_what": "TODO"
   },
   {
    "key": "paid_to_use",
-   "count": 0,
-   "apps": [],
+   "count": 8,
+   "apps": [
+    "Close",
+    "Copper",
+    "DealCloud",
+    "Freshdesk",
+    "Gladly",
+    "Intercom",
+    "LiveAgent",
+    "Pylon"
+   ],
    "headline": "Free to read, paid to call",
    "so_what": "TODO"
   },
   {
    "key": "per_tenant_host",
-   "count": 2,
+   "count": 10,
    "apps": [
+    "DealCloud",
+    "Freshdesk",
+    "Gladly",
+    "Gorgias",
+    "LiveAgent",
     "Pipedrive",
-    "Salesforce"
+    "Pylon",
+    "Salesforce",
+    "Twenty",
+    "Zendesk"
    ],
    "headline": "Every customer has a different host",
    "so_what": "TODO"
   },
   {
    "key": "graphql_only",
-   "count": 0,
-   "apps": [],
+   "count": 1,
+   "apps": [
+    "Plain"
+   ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
    "so_what": "TODO"
   },
   {
    "key": "official_mcp",
-   "count": 3,
+   "count": 11,
    "apps": [
+    "Close",
+    "Freshdesk",
+    "Front",
+    "Gorgias",
     "HubSpot",
+    "Intercom",
     "Paygent Connect",
-    "Salesforce"
+    "Salesforce",
+    "Slack",
+    "Twenty",
+    "Twilio"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
@@ -135,9 +189,59 @@
     "in_composio": true
    },
    {
+    "name": "Twenty",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Podio",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Front",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Plain",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Help Scout",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Slack",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Discord",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Gorgias",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "Zendesk",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Twilio",
+    "score": 7,
+    "in_composio": false
+   },
+   {
+    "name": "WhatsApp Business",
+    "score": 7,
+    "in_composio": true
    },
    {
     "name": "Paygent Connect",
@@ -145,7 +249,48 @@
     "in_composio": false
    }
   ],
-  "build_with_friction": [],
+  "build_with_friction": [
+   {
+    "name": "Close",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Copper",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "Intercom",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Freshdesk",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Pylon",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "LiveAgent",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "DealCloud",
+    "score": 5,
+    "in_composio": false
+   },
+   {
+    "name": "Gladly",
+    "score": 5,
+    "in_composio": false
+   }
+  ],
   "needs_outreach": [],
   "local_toolkit": [
    {

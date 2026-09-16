@@ -1,0 +1,107 @@
+{
+ "id": 4,
+ "slug": "attio",
+ "name": "Attio",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:13:43+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A flexible, data-driven CRM platform with a robust REST API for managing custom objects and workflows.",
+   "confidence": "high",
+   "source_url": "https://attio.com/platform/developers"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/guides/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://attio.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://attio.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  },
+  "docs_url": {
+   "value": "https://docs.attio.com/rest-api/overview",
+   "confidence": "high",
+   "source_url": "https://docs.attio.com/rest-api/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/attio",
+  "https://atlas.attio.com/pricing-is-a-product",
+  "https://attio.com/",
+  "https://attio.com/help",
+  "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+  "https://attio.com/platform/developers",
+  "https://attio.com/pricing",
+  "https://attio.com/pricing?category=services&gclid=CjwKCAiAgbiQBh",
+  "https://blog.coffee.ai/attio-crm-public-api-docs",
+  "https://build.attio.com/api",
+  "https://docs.attio.com/docs/oauth/authorize",
+  "https://docs.attio.com/docs/oauth/introspect",
+  "https://docs.attio.com/docs/overview",
+  "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+  "https://docs.attio.com/rest-api/guides/authentication",
+  "https://docs.attio.com/rest-api/overview",
+  "https://docs.attio.com/sdk/overview",
+  "https://docs.attio.com/sdk/server/connections/connections",
+  "https://docs.attio.com/sdk/server/connections/get-user-connection",
+  "https://docs.attio.com/sdk/server/connections/get-workspace-connection",
+  "https://docs.attio.com/sdk/system/platform",
+  "https://www.stacksync.com/blog/how-to-get-an-attio-developer-account-and-start-working-with-attios-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

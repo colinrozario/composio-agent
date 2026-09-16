@@ -1,0 +1,96 @@
+{
+ "id": 26,
+ "slug": "discord",
+ "name": "Discord",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:12:09+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Messaging platform offering REST APIs for bots, webhooks, and user-authenticated social integrations.",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/docs/intro"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/topics/oauth2"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/applications/docs"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/docs/intro"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/applications/docs"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/applications/docs"
+  },
+  "docs_url": {
+   "value": "https://docs.discord.com/developers/reference",
+   "confidence": "high",
+   "source_url": "https://docs.discord.com/developers/reference"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "access_path",
+  "official_mcp",
+  "test_account",
+  "main_blocker"
+ ],
+ "search_urls": [
+  "https://deepwiki.com/discord/discord-api-docs/4.2-authentication-and-provisional-accounts",
+  "https://discord.com/developers/applications/docs",
+  "https://discord.com/developers/docs/social-sdk/authentication.html",
+  "https://docs.discord.com/developers/discord-social-sdk/how-to/use-with-discord-apis",
+  "https://docs.discord.com/developers/intro",
+  "https://docs.discord.com/developers/reference",
+  "https://docs.discord.com/developers/topics/oauth2",
+  "https://github.com/discord/discord-api-docs"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ }
+}

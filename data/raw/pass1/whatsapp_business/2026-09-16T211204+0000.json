@@ -1,0 +1,92 @@
+{
+ "id": 28,
+ "slug": "whatsapp_business",
+ "name": "WhatsApp Business",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:12:04+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Enterprise messaging API for sending and receiving messages via the WhatsApp Business platform.",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/whatsapp-business-account/whatsapp-business-account-api/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "main_blocker": {
+   "value": "Production access requires app review and business verification to initiate conversations with non-test contacts.",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  },
+  "docs_url": {
+   "value": "https://developers.facebook.com/docs/whatsapp/cloud-api",
+   "confidence": "high",
+   "source_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "api_breadth",
+  "official_mcp"
+ ],
+ "search_urls": [
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+  "https://developers.facebook.com/documentation/business-messaging/whatsapp/reference/whatsapp-business-account/whatsapp-business-account-api/",
+  "https://developers.secure.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+  "https://faq.whatsapp.com/5773272372736965",
+  "https://sfailabs.com/guides/how-to-get-whatsapp-business-api",
+  "https://whatsappbusiness.com/developers/developer-hub/",
+  "https://whatsappbusiness.com/resources/resource-library/api-onboarding/",
+  "https://www.wati.io/en/blog/whatsapp-api-access/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ }
+}

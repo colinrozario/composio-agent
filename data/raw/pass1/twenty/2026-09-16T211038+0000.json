@@ -1,0 +1,109 @@
+{
+ "id": 5,
+ "slug": "twenty",
+ "name": "Twenty",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:10:38+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Modern open-source CRM platform with customizable objects, views, workflows, and developer APIs.",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/oauth"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp"
+  },
+  "base_url_model": {
+   "value": "self_hosted_or_customer_host",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/extend/oauth"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  },
+  "docs_url": {
+   "value": "https://docs.twenty.com/developers/introduction",
+   "confidence": "high",
+   "source_url": "https://docs.twenty.com/developers/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://deepwiki.com/twentyhq/twenty",
+  "https://deepwiki.com/twentyhq/twenty/11-development-workflow",
+  "https://developers.twenty.com/",
+  "https://docs.maton.ai/twenty",
+  "https://docs.twenty.com/developers/contribute/capabilities/backend-development/zapier",
+  "https://docs.twenty.com/developers/extend/api",
+  "https://docs.twenty.com/developers/extend/apps/getting-started/concepts",
+  "https://docs.twenty.com/developers/extend/apps/logic/connections",
+  "https://docs.twenty.com/developers/extend/apps/operations/cli",
+  "https://docs.twenty.com/developers/extend/extend",
+  "https://docs.twenty.com/developers/extend/oauth",
+  "https://docs.twenty.com/developers/introduction",
+  "https://docs.twenty.com/developers/self-host/capabilities/setup",
+  "https://docs.twenty.com/l/de/developers/self-host/self-host",
+  "https://docs.twenty.com/l/de/getting-started/introduction",
+  "https://docs.twenty.com/l/de/user-guide/dashboards/overview",
+  "https://docs.twenty.com/l/es/developers/extend/apps/operations/cli",
+  "https://docs.twenty.com/l/es/developers/extend/oauth",
+  "https://docs.twenty.com/l/fr/developers/extend/apps/operations/cli",
+  "https://docs.twenty.com/l/fr/user-guide/layout/capabilities/navigation",
+  "https://docs.twenty.com/l/it/user-guide/dashboards/overview",
+  "https://docs.twenty.com/l/ja/user-guide/data-migration/overview",
+  "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+  "https://docs.twenty.com/user-guide/data-migration/how-tos/import-data-via-api",
+  "https://docs.twenty.com/user-guide/permissions-access/capabilities/permissions",
+  "https://github.com/twentyhq/twenty",
+  "https://github.com/twentyhq/twenty/blob/main/README.md"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 1
+ }
+}

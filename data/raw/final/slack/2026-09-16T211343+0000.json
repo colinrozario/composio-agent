@@ -1,0 +1,107 @@
+{
+ "id": 21,
+ "slug": "slack",
+ "name": "Slack",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:13:43+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Team communication platform providing messaging, channels, file sharing, and developer APIs.",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/apis/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/authentication/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://api.slack.com/apps"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/apis/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/ai/slack-mcp-server/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/reference/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/apis/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://api.slack.com/apps"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://api.slack.com/apps"
+  },
+  "docs_url": {
+   "value": "https://docs.slack.dev/reference/",
+   "confidence": "high",
+   "source_url": "https://docs.slack.dev/reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.slack.com/apps",
+  "https://api.slack.com/types",
+  "https://deepwiki.com/slackapi/node-slack-sdk/4-authentication-and-installation",
+  "https://deepwiki.com/slackapi/python-slack-sdk/7-oauth-and-authentication",
+  "https://docs.slack.dev/ai/slack-mcp-server/",
+  "https://docs.slack.dev/ai/slack-mcp-server/developing/",
+  "https://docs.slack.dev/apis/",
+  "https://docs.slack.dev/authentication/",
+  "https://docs.slack.dev/reference/",
+  "https://docs.slack.dev/tools/node-slack-sdk/oauth/",
+  "https://github.com/kazuph/mcp-slack",
+  "https://github.com/slackapi",
+  "https://knock.app/blog/how-to-authenticate-users-in-slack-using-oauth",
+  "https://public-api.org/api/1165/slack",
+  "https://reintech.io/blog/setting-up-oauth-20-authentication-for-slack-apps",
+  "https://sdt.builtbyslack.com/",
+  "https://slack-api.hexdocs.pm/api-reference.html",
+  "https://slack.com/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+  "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-Model-Context-Protocol-in-Slack",
+  "https://slack.dev/secure-data-connectivity-for-the-modern-ai-era/",
+  "https://www.postman.com/slackhq/slack-api/overview",
+  "https://www.pulsemcp.com/servers/slack",
+  "https://www.usecarly.com/blog/slack-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

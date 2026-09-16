@@ -1,0 +1,104 @@
+{
+ "id": 18,
+ "slug": "help_scout",
+ "name": "Help Scout",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:12:18+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Customer support platform providing APIs for mailboxes, chats, and help center documentation.",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.helpscout.com/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/samiabid/helpscout-mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.helpscout.com/pricing/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  },
+  "docs_url": {
+   "value": "https://developer.helpscout.com/",
+   "confidence": "high",
+   "source_url": "https://developer.helpscout.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apiterms.com/api/helpscout.com/",
+  "https://commsadvisor.com/help-scout-pricing/",
+  "https://developer.helpscout.com/",
+  "https://developer.helpscout.com/?ref=listedtools",
+  "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+  "https://docs.helpscout.com/article/1141-docs-api",
+  "https://docs.stackone.com/connectors/helpscout/guides/link-account/oauth-2-0-authorization-code",
+  "https://github.com/cyanheads/model-context-protocol-resources",
+  "https://github.com/samiabid/helpscout-mcp-server",
+  "https://integrations.sh/helpscout.com/help-scout-chat-api/",
+  "https://learn.microsoft.com/en-us/microsoft-copilot-studio/mcp-create-new-server",
+  "https://learn.microsoft.com/en-us/training/support/mcp",
+  "https://lobehub.com/mcp/drewburchfield-help-scout-mcp-server",
+  "https://modelcontextprotocol.info/docs/quickstart/guide/",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
+  "https://rollout.com/integration-guides/help-scout/how-to-build-a-public-help-scout-integration-building-the-auth-flow",
+  "https://toolradar.com/tools/help-scout/pricing",
+  "https://www.getmacha.com/blog/how-to-use-the-help-scout-api",
+  "https://www.helpscout.com/pricing/",
+  "https://www.saasworthy.com/product/help-scout/pricing",
+  "https://www.scoutos.com/integrations/mcp",
+  "https://www.stitchflow.com/user-management/help-scout/api",
+  "https://www.xpay.sh/saas-pricing/help-scout"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

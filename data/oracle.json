@@ -1,16 +1,16 @@
 {
  "summary": {
   "pass1": {
-   "n": 4,
-   "exact": 0.25,
-   "overlap": 1.0,
-   "oracle_subset": 0.75
+   "n": 16,
+   "exact": 0.125,
+   "overlap": 0.75,
+   "oracle_subset": 0.688
   },
   "final": {
-   "n": 4,
-   "exact": 0.25,
-   "overlap": 1.0,
-   "oracle_subset": 0.75
+   "n": 16,
+   "exact": 0.125,
+   "overlap": 0.75,
+   "oracle_subset": 0.688
   }
  },
  "by_app": {
@@ -125,7 +125,324 @@
     "overlap": true,
     "composio_subset_of_agent": true
    }
+  },
+  "twenty": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "close": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "zendesk": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "basic",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "basic",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "intercom": {
+   "pass1": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "freshdesk": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "front": {
+   "pass1": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   }
+  },
+  "plain": {
+   "pass1": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   }
+  },
+  "help_scout": {
+   "pass1": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "gorgias": {
+   "pass1": {
+    "agent": [
+     "basic"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "basic"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   }
+  },
+  "slack": {
+   "pass1": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "discord": {
+   "pass1": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "whatsapp_business": {
+   "pass1": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   }
   }
  },
- "needs_human": []
+ "needs_human": [
+  "front",
+  "plain",
+  "gorgias",
+  "whatsapp_business"
+ ]
 }
