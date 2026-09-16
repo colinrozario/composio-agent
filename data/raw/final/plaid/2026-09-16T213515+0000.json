@@ -1,0 +1,115 @@
+{
+ "id": 82,
+ "slug": "plaid",
+ "name": "Plaid",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Connects user bank accounts and financial data securely to applications via API.",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://plaid.com/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://plaid.com/blog/plaid-mcp-ai-assistant-claude/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://plaid.com/pricing/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://plaid.com/pricing/"
+  },
+  "docs_url": {
+   "value": "https://plaid.com/docs/api/",
+   "confidence": "high",
+   "source_url": "https://plaid.com/docs/api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aitoolpick.org/pricing/plaid/",
+  "https://blog.reviewaitool.com/2026/05/16/plaid-pricing-2026/",
+  "https://costbench.com/software/api-management/plaid/",
+  "https://docs.plaidcloud.com/",
+  "https://documenter.getpostman.com/view/26275816/2sBXVme8Mj",
+  "https://documenter.getpostman.com/view/3501516/2sAYBUDXz8",
+  "https://modelcontextprotocol.info/docs/quickstart/guide/",
+  "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
+  "https://plaid.com/blog/openai-plaid-mcp/",
+  "https://plaid.com/blog/plaid-mcp-ai-assistant-claude/",
+  "https://plaid.com/docs/account/billing/",
+  "https://plaid.com/docs/api/",
+  "https://plaid.com/docs/api/products/auth/",
+  "https://plaid.com/docs/api/products/auth/index.html.md",
+  "https://plaid.com/docs/api/products/identity/",
+  "https://plaid.com/docs/api/products/identity/index.html.md",
+  "https://plaid.com/docs/api/products/layer/",
+  "https://plaid.com/docs/auth/add-to-app/",
+  "https://plaid.com/docs/identity/add-to-app/",
+  "https://plaid.com/docs/quickstart/",
+  "https://plaid.com/docs/quickstart/index.html.md",
+  "https://plaid.com/pricing/",
+  "https://plaid.github.io/plaid-python/contents.html",
+  "https://pypi.org/project/mcp-server-plaid/",
+  "https://support.plaid.com/hc/en-us/articles/16110502116887-What-are-Plaid-s-prices-and-pricing-plans-and-how-do-they-differ",
+  "https://support.plaid.com/hc/en-us/articles/16194632655895-How-much-does-Plaid-cost-and-what-are-the-pricing-models",
+  "https://www.fintegrationfs.com/post/plaid-api-pricing-structure-and-plans",
+  "https://www.openbankingtracker.com/api-aggregators/plaid/mcp",
+  "https://www.postman.com/plaid-api/plaid/collection/v7tq47f/plaid-api-endpoints",
+  "https://www.postman.com/plaid-api/plaid/overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

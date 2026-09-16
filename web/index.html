@@ -510,7 +510,10 @@ function tryIt(){
       const r = await fetch("/api/research", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({name})});
       const j = await r.json().catch(() => ({}));
       if (r.status === 429) out.innerHTML = `<p class="msg">This network has used its research runs for the hour. Try again later.</p>`;
-      else if (!r.ok) out.innerHTML = `<p class="msg">Research didn't finish (${esc(j.error || r.status)}). Try again in a minute.</p>`;
+      else if (j.error === "not_configured") out.innerHTML = `<p class="msg">The research service is missing its API keys. Set GEMINI_API_KEY and COMPOSIO_API_KEY in the Vercel project, then redeploy.</p>`;
+      else if (j.error === "model_busy") out.innerHTML = `<p class="msg">The free AI model is at its limit right now. Try again in a few minutes.</p>`;
+      else if (r.status === 504) out.innerHTML = `<p class="msg">Research took longer than the server allows. Try again, or pick an app with public developer docs.</p>`;
+      else if (!r.ok) out.innerHTML = `<p class="msg">Research didn't finish (${esc(j.detail || j.error || r.status)}). Try again in a minute.</p>`;
       else out.innerHTML = `<h3 style="font-size:20px;margin-bottom:10px">${esc(j.name || name)}${j.cached ? ' <small class="quiet" style="font:400 13px var(--text)">saved result</small>' : ""}</h3>` + answers({fields: j.fields || {}});
     } catch (err) {
       out.innerHTML = `<p class="msg">The research service isn't reachable from this address. It runs on the deployed site.</p>`;

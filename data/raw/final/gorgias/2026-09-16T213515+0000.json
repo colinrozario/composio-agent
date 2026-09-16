@@ -1,0 +1,107 @@
+{
+ "id": 19,
+ "slug": "gorgias",
+ "name": "Gorgias",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Gorgias is an e-commerce helpdesk platform for managing customer support tickets and conversations.",
+   "confidence": "high",
+   "source_url": "https://www.gorgias.com/pricing"
+  },
+  "auth_methods": {
+   "value": [
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.gorgias.com/reference/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.gorgias.com/reference/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/rest-api-208286"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.gorgias.com/reference/introduction"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.gorgias.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+  },
+  "docs_url": {
+   "value": "https://developers.gorgias.com/reference/introduction",
+   "confidence": "high",
+   "source_url": "https://developers.gorgias.com/reference/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://developers.gorgias.com/",
+  "https://developers.gorgias.com/reference/introduction",
+  "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+  "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+  "https://docs.gorgias.com/en-US/rest-api-208286",
+  "https://github.com/benpalmer1/Gorgias-MCP-Server",
+  "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+  "https://mcp.so/servers/gorgias-mcp-server",
+  "https://mcprepository.com/mattcoatsworth/gorgias-mcp-server",
+  "https://mymcptools.com/servers/gorgias-mcp",
+  "https://pricingnow.com/question/gorgias-pricing/",
+  "https://www.gamut.so/mcp/communication/gorgias",
+  "https://www.getmacha.com/blog/gorgias-api-explained",
+  "https://www.getmacha.com/blog/how-to-use-the-gorgias-api",
+  "https://www.gorgias.com/blog-category/pricing",
+  "https://www.gorgias.com/pricing",
+  "https://www.postman.com/core-gorgias/public-workspace/documentation/0d3dyeo/gorgias-public-api",
+  "https://www.quantumdesk.com/blog/gorgias-pricing",
+  "https://www.ringly.io/blog/gorgias-api",
+  "https://www.ringly.io/blog/gorgias-developer",
+  "https://www.ringly.io/blog/gorgias-mcp-server",
+  "https://www.stitchflow.com/user-management/gorgias/api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}

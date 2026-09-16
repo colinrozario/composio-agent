@@ -1,0 +1,93 @@
+{
+ "id": 33,
+ "slug": "linkedin_ads",
+ "name": "LinkedIn Ads",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Provides programmatic access to manage, create, and report on LinkedIn advertising campaigns.",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ad-campaigns"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/modelcontextprotocol"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/protocol-versioning"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+  },
+  "main_blocker": {
+   "value": "Production access to the LinkedIn Marketing API requires the application to be accepted into the program via a review process.",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+  },
+  "docs_url": {
+   "value": "https://learn.microsoft.com/en-us/linkedin/marketing/overview",
+   "confidence": "high",
+   "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "api_type",
+  "api_breadth",
+  "official_mcp",
+  "base_url_model",
+  "toolkit_bucket",
+  "docs_quality",
+  "docs_url"
+ ],
+ "search_urls": [],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 0,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": 92,
+ "slug": "otter_ai",
+ "name": "Otter AI",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Enterprise-focused API for retrieving meeting transcripts, action items, and workspace conversation data.",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "access_path": {
+   "value": "partner_or_sales_gated",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "docs_quality": {
+   "value": "partial_or_thin",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+  },
+  "main_blocker": {
+   "value": "Access is strictly limited to Enterprise workspace customers and requires direct coordination with an account manager.",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+  },
+  "docs_url": {
+   "value": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "confidence": "high",
+   "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://connect.tryotter.com/docs/",
+  "https://connect.tryotter.com/docs/api-reference/reference/otter-api/",
+  "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+  "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+  "https://helpdesk.tryotter.com/hc/en-us/articles/22694653065107-API-Documentation",
+  "https://otter-framework.dev/docs/documentations/",
+  "https://otter-framework.dev/docs/documentations/otter-api/",
+  "https://otter.ai/api/docs/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

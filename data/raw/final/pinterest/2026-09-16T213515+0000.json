@@ -1,0 +1,107 @@
+{
+ "id": 38,
+ "slug": "pinterest",
+ "name": "Pinterest",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Manage pins, boards, ad campaigns, and merchant catalogs via Pinterest's REST API.",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/getting-started/getting-access/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/api/v5/getting-started/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/developer-tools/sandbox/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  },
+  "docs_url": {
+   "value": "https://developers.pinterest.com/docs/",
+   "confidence": "high",
+   "source_url": "https://developers.pinterest.com/docs/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "***REDACTED***",
+  "https://dev.pinterest.com/docs/dev-tools/sdk/",
+  "https://dev.pinterest.com/docs/getting-started/authentication-and-scopes/",
+  "https://developers.pinterest.com/",
+  "https://developers.pinterest.com/?up_id=50969dc",
+  "https://developers.pinterest.com/apps/connect/",
+  "https://developers.pinterest.com/docs/",
+  "https://developers.pinterest.com/docs/api-reference/conversions-api/",
+  "https://developers.pinterest.com/docs/api/v5/getting-started/",
+  "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+  "https://developers.pinterest.com/docs/developer-tools/sandbox/",
+  "https://developers.pinterest.com/docs/faqs/faqs/",
+  "https://developers.pinterest.com/docs/getting-started/",
+  "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+  "https://developers.pinterest.com/docs/getting-started/authentication/",
+  "https://developers.pinterest.com/docs/getting-started/getting-access/",
+  "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+  "https://developers.pinterest.com/docs/w/",
+  "https://developers.pinterest.com/docs/work-with-ads/create-dynamic-ctas-in-ads/",
+  "https://developers.pinterest.com/llms.txt",
+  "https://github.com/pinterest/api-quickstart",
+  "https://github.com/pinterest/api-quickstart/blob/main/README.md",
+  "https://www.postman.com/pinterest/pinterest-collections/documentation/74drksn/pinterest-rest-api-5-4-1",
+  "https://zernio.com/blog/pinterest-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

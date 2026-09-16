@@ -1,0 +1,111 @@
+{
+ "id": 75,
+ "slug": "asana",
+ "name": "Asana",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Collaborative work management platform for planning, assigning, and tracking tasks across projects.",
+   "confidence": "high",
+   "source_url": "https://asana.com/developers"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/overview"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/api-features"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/reference/rest-api-reference"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/reference/rest-api-reference"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/mcp-server"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/reference/rest-api-reference"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/overview"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/docs/overview"
+  },
+  "docs_url": {
+   "value": "https://developers.asana.com/reference/rest-api-reference",
+   "confidence": "high",
+   "source_url": "https://developers.asana.com/reference/rest-api-reference"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://asana.com/developers",
+  "https://asana.com/resources/software-requirement-document-template",
+  "https://developers.asana.com/",
+  "https://developers.asana.com/docs/api-explorer",
+  "https://developers.asana.com/docs/api-features",
+  "https://developers.asana.com/docs/authentication",
+  "https://developers.asana.com/docs/mcp-server",
+  "https://developers.asana.com/docs/oauth",
+  "https://developers.asana.com/docs/overview",
+  "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "https://developers.asana.com/jd/docs/overview",
+  "https://developers.asana.com/reference/rest-api-reference",
+  "https://forum.asana.com/c/forum-en/api/24",
+  "https://forum.asana.com/t/new-v2-mcp-server-now-generally-available/1122647",
+  "https://forum.asana.com/t/oauth-personal-access-token-api-key-how-to-get-connected-to-asana-through-our-api/814",
+  "https://github.com/Asana/openapi",
+  "https://help.asana.com/s/article/api?language=en_US",
+  "https://help.asana.com/s/article/how-to-use-asana-for-product-development?language=en_US",
+  "https://mcp.services/companies/asana/asana-mcp-server",
+  "https://mcp.so/servers/asana",
+  "https://mcpservers.org/servers/asana-mcp",
+  "https://primrose.dev/mcp/asana/auth",
+  "https://public-api.org/api/411/asana",
+  "https://tryglen.com/mcp/servers/asana",
+  "https://www.graphapp.ai/blog/unlocking-the-asana-developer-console-a-comprehensive-guide",
+  "https://www.postman.com/asana-team/asana-s-public-workspace/collection/j8tdhts/asana",
+  "https://www.usecarly.com/blog/asana-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,123 @@
+{
+ "id": 36,
+ "slug": "klaviyo",
+ "name": "Klaviyo",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Email and SMS marketing automation platform with a comprehensive developer API.",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/docs/authenticate_"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  },
+  "docs_url": {
+   "value": "https://developers.klaviyo.com/en/reference/api_overview",
+   "confidence": "high",
+   "source_url": "https://developers.klaviyo.com/en/reference/api_overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://academy.klaviyo.com/en-us/courses/interpret-api-documentation/lessons/navigate-the-developer-portal",
+  "https://academy.klaviyo.com/en-us/learning-paths/api-fundamentals-for-marketers/courses/interpret-api-documentation/lessons/navigate-the-developer-portal",
+  "https://aeroleads.com/blog/getting-started-with-klaviyo-api-developer-documentation/",
+  "https://aeroleads.com/blog/klaviyo-api-endpoints-authentication-examples/",
+  "https://developers.klaviyo.com/",
+  "https://developers.klaviyo.com/en",
+  "https://developers.klaviyo.com/en/docs/authenticate_",
+  "https://developers.klaviyo.com/en/docs/collect_email_and_sms_consent_via_api",
+  "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+  "https://developers.klaviyo.com/en/reference/api_overview",
+  "https://developers.klaviyo.com/en/reference/lists_api_overview",
+  "https://developers.klaviyo.com/en/v1-2/reference/api-overview",
+  "https://developers.klaviyo.com/en/v2023-06-15/docs/create_a_test_account",
+  "https://developers.klaviyo.com/en/v2023-07-15/reference/get_profile_segments",
+  "https://developers.klaviyo.com/en/v2023-08-15/docs/get_started",
+  "https://developers.klaviyo.com/en/v2023-09-15/docs/integrate_with_a_shopify_hydrogen_store",
+  "https://developers.klaviyo.com/en/v2024-02-15/reference/api_overview",
+  "https://developers.klaviyo.com/en/v2024-10-15/docs/create_a_test_account",
+  "https://developers.klaviyo.com/en/v2025-04-15/docs/glossary_index",
+  "https://developers.klaviyo.com/en/v2025-10-15/reference/api_overview",
+  "https://developers.klaviyo.com/en/v2026-04-15/reference/get_tag_ids_for_flow",
+  "https://github.com/klaviyo-labs/klaviyo-api-guides/blob/main/README.md",
+  "https://github.com/mattcoatsworth/Klaviyo-MCP-Server",
+  "https://github.com/relay-commerce/Klaviyo-MCP-Server",
+  "https://help.klaviyo.com/hc/en-us/articles/115000976672",
+  "https://help.klaviyo.com/hc/en-us/articles/360045726811",
+  "https://help.klaviyo.com/hc/en-us/articles/43506836897563",
+  "https://help.klaviyo.com/hc/en-us/articles/4405883690651",
+  "https://help.klaviyo.com/hc/en-us/articles/52533903504411",
+  "https://help.klaviyo.com/hc/en-us/articles/52833598880923",
+  "https://help.klaviyo.com/hc/en-us/sections/14542873138971",
+  "https://help.klaviyo.com/hc/en-us/sections/14542887837083",
+  "https://help.klaviyo.com/hc/en-us/sections/18138285408539",
+  "https://magnetmonster.com/blog/klaviyo-mcp-server-a-comprehensive-guide-for-marketers",
+  "https://pypi.org/project/klaviyo-mcp-server/",
+  "https://www.klaviyo.com/blog/introducing-mcp-server",
+  "https://www.klaviyo.com/newsroom/mcp-server",
+  "https://www.postman.com/klaviyo/klaviyo-developers/overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

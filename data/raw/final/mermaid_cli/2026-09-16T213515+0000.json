@@ -1,0 +1,91 @@
+{
+ "id": 98,
+ "slug": "mermaid_cli",
+ "name": "Mermaid CLI",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Command-line tool to render Mermaid diagrams into SVG, PNG, or PDF files.",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "auth_methods": {
+   "value": [
+    "none"
+   ],
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "access_path": {
+   "value": "not_applicable_local",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "api_type": {
+   "value": "cli_only",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "api_breadth": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "base_url_model": {
+   "value": "not_applicable",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "toolkit_bucket": {
+   "value": "local_or_sandbox_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "docs_quality": {
+   "value": "partial_or_thin",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "main_blocker": {
+   "value": "The app is a local command-line interface tool rather than a hosted web API.",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "docs_url": {
+   "value": "https://github.com/mermaid-js/mermaid-cli",
+   "confidence": "high",
+   "source_url": "https://github.com/mermaid-js/mermaid-cli"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://deepwiki.com/mermaid-js/mermaid-cli/2-installation-and-usage",
+  "https://deepwiki.com/mermaid-js/mermaid-cli/5.1-local-setup",
+  "https://formulae.brew.sh/formula/mermaid-cli",
+  "https://github.com/mermaid-js/mermaid-cli",
+  "https://github.com/mermaid-js/mermaid-cli/releases",
+  "https://mermaid.ai/open-source/config/mermaidCLI.html",
+  "https://pypi.org/project/mermaid-cli/",
+  "https://www.npmjs.com/package/@mermaid-js/mermaid-cli"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

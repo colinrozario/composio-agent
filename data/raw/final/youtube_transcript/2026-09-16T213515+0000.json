@@ -1,0 +1,89 @@
+{
+ "id": 99,
+ "slug": "youtube_transcript",
+ "name": "YouTube Transcript",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "API and MCP server for extracting YouTube transcripts and metadata for AI agents.",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/getting-started/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/getting-started/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/getting-started/"
+  },
+  "docs_url": {
+   "value": "https://transcriptapi.com/docs/api/",
+   "confidence": "high",
+   "source_url": "https://transcriptapi.com/docs/api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://github.com/ZeroPointRepo/youtube-skills",
+  "https://transcriptapi.com/docs/",
+  "https://transcriptapi.com/docs/api/",
+  "https://transcriptapi.com/docs/getting-started/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}

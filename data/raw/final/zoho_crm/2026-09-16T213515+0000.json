@@ -1,0 +1,108 @@
+{
+ "id": 7,
+ "slug": "zoho_crm",
+ "name": "Zoho CRM",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Comprehensive CRM platform with REST APIs and official MCP servers for AI agents.",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": null
+  },
+  "docs_url": {
+   "value": "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "base_url_model"
+ ],
+ "search_urls": [
+  "https://aeroleads.com/blog/zoho-crm-api-authentication-examples/",
+  "https://aiproductivity.ai/guides/zoho-crm-api-developer-guide/",
+  "https://codroiditlabs.com/zoho-crm-api-tutorial/",
+  "https://getknit.dev/blog/zoho-crm-api-integration-guide-oauth-2-0-use-cases-step-by-step-tutorial/",
+  "https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+  "https://github.com/junnaisystems/Zoho-CRM-MCP",
+  "https://growthengineer.ai/mcp-servers/zoho-crm",
+  "https://help.zohelpers.com/portal/en/kb/articles/seld-service-zoho-crm-api-limit-management",
+  "https://help.zohelpers.com/portal/en/kb/articles/zoho-crm-oauth-2-0-for-v2-apis-an-overview",
+  "https://help.zoho.com/portal/en/kb/crm/crm-reference/introduction-to-zoho-crm/articles/specifications-zoho-crm",
+  "https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide",
+  "https://pypi.org/project/zoho-crm-mcp/",
+  "https://raahconsultants.com/zoho-crm-implementation-cost/",
+  "https://www.getknit.dev/blog/zoho-crm-api-directory",
+  "https://www.usecarly.com/blog/zoho-mcp/",
+  "https://www.voiceflow.com/blog/zoho-crm",
+  "https://www.zoho.com/crm/developer/docs/api/v8/",
+  "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+  "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+  "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+  "https://www.zoho.com/crm/developer/mcp.html",
+  "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+  "https://zoho-crm-api.readthedocs.io/en/latest/authentication/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

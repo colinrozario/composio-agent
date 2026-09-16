@@ -1,0 +1,110 @@
+{
+ "id": 88,
+ "slug": "brex",
+ "name": "Brex",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Unified spend platform providing corporate cards, expense management, reimbursements, and travel APIs.",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/docs/mcp"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.brex.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/_bundle/openapi/team_api.json?download"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/docs/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/guides/authentication.md"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/guides/authentication.md"
+  },
+  "main_blocker": {
+   "value": "Requires an active Brex account and admin access to generate user tokens.",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/guides/authentication"
+  },
+  "docs_url": {
+   "value": "https://developer.brex.com/",
+   "confidence": "high",
+   "source_url": "https://developer.brex.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aitoolsatlas.ai/tools/brex/api",
+  "https://apihunt.io/apis/brex",
+  "https://apiscout.dev/apis/payments/brex",
+  "https://apitracker.io/a/brex",
+  "https://developer.brex.com/",
+  "https://developer.brex.com/_bundle/openapi/team_api.json?download",
+  "https://developer.brex.com/changelog",
+  "https://developer.brex.com/changelog.md",
+  "https://developer.brex.com/docs/mcp",
+  "https://developer.brex.com/docs/mcp.md",
+  "https://developer.brex.com/guides/authentication",
+  "https://developer.brex.com/guides/authentication.md",
+  "https://developer.brex.com/guides/checklist.md",
+  "https://developer.brex.com/guides/partner_authentication",
+  "https://developer.brex.com/guides/partner_authentication.md",
+  "https://developer.brex.com/guides/quickstart",
+  "https://developer.brex.com/guides/quickstart.md",
+  "https://developer.brex.com/index.html.md",
+  "https://developer.brex.com/openapi/fields_api/fields/createfield.md",
+  "https://developer.brex.com/openapi/team_api/companies",
+  "https://developer.brex.com/openapi/team_api/companies.md",
+  "https://netlift.app/resources/ai-costs/brex-ai-pricing-cost-and-break-even-value",
+  "https://www.brex.com/pricing",
+  "https://www.brex.com/product/api",
+  "https://www.brex.com/support/brex-api",
+  "https://www.openbankingtracker.com/provider/brex/apis"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,108 @@
+{
+ "id": 65,
+ "slug": "supabase",
+ "name": "Supabase",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "An open source Firebase alternative providing Postgres databases, auth, and APIs.",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://supabase.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/guides/ai-tools/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://supabase.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs"
+  },
+  "docs_url": {
+   "value": "https://supabase.com/docs/reference/api/introduction",
+   "confidence": "high",
+   "source_url": "https://supabase.com/docs/reference/api/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "main_blocker"
+ ],
+ "search_urls": [
+  "https://api.supabase.com/api/v1",
+  "https://dbase.to/docs/guides/getting-started/mcp",
+  "https://deepwiki.com/supabase-community/supabase-mcp/4.1-server-creation-and-configuration",
+  "https://deepwiki.com/supabase/auth/3-api-reference",
+  "https://deepwiki.com/supabase/auth/3.2-user-management-endpoints",
+  "https://docs.supabase.com/",
+  "https://github.com/Cappahccino/SB-MCP",
+  "https://github.com/orgs/supabase/discussions/20475",
+  "https://github.com/supabase/mcp",
+  "https://makerkit.dev/blog/tutorials/supabase-api-key-management",
+  "https://mcp.directory/blog/supabase-mcp-complete-guide-2026",
+  "https://mcpservers.com/servers/alexander-zuev-supabase",
+  "https://supabase.com/docs/guides/ai-tools/mcp",
+  "https://supabase.com/docs/guides/auth",
+  "https://supabase.com/docs/guides/getting-started/api-keys",
+  "https://supabase.com/docs/reference/api/introduction",
+  "https://supabase.com/features/mcp-server",
+  "https://supabase.github.io/auth/",
+  "https://www.suparbase.com/docs",
+  "https://www.suparbase.com/docs/api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

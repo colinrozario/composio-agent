@@ -1,0 +1,112 @@
+{
+ "id": 63,
+ "slug": "netlify",
+ "name": "Netlify",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Web hosting and serverless platform offering an API to manage atomic deploys, sites, and forms.",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://github.com/netlify/netlify-mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+  },
+  "docs_url": {
+   "value": "https://open-api.netlify.com/",
+   "confidence": "high",
+   "source_url": "https://open-api.netlify.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://authjs.dev/reference/core/providers/netlify",
+  "https://developers.netlify.com/sdk/reference/overview",
+  "https://developers.netlify.com/tag/api/",
+  "https://developers.netlify.com/videos/get-started-with-netlify-api/",
+  "https://docs.netlify.com/",
+  "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+  "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli",
+  "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/",
+  "https://docs.netlify.com/build/async-workloads/sending-events/",
+  "https://docs.netlify.com/build/data-and-storage/netlify-blobs",
+  "https://docs.netlify.com/build/data-and-storage/netlify-database/api/",
+  "https://docs.netlify.com/extend/building-code-agents/apis-for-code-agents",
+  "https://docs.netlify.com/extend/install-and-use/setup-guides/gpt-action",
+  "https://docs.netlify.com/manage/security/secure-access-to-sites/identity/registration-login",
+  "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens",
+  "https://github.com/netlify/context-and-tools/blob/main/",
+  "https://github.com/netlify/context-and-tools/blob/main/codex/skills/netlify-mcp-servers/references/authentication.md",
+  "https://github.com/netlify/context-and-tools/blob/main/codex/skills/netlify-mcp-servers/references/connecting-clients.md",
+  "https://github.com/netlify/context-and-tools/blob/main/skills/netlify-mcp-servers/SKILL.md",
+  "https://github.com/netlify/examples/tree/main/examples/mcp/express-mcp",
+  "https://github.com/netlify/netlify-mcp",
+  "https://github.com/netlify/netlify-mcp/blob/main/README.md",
+  "https://github.com/netlify/netlify-mcp/blob/main/netlify-mcp.ts",
+  "https://open-api.netlify.com/",
+  "https://unmasked.goodfriends.workers.dev/megan-https-docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+  "https://www.postman.com/api-evangelist/netlify/collection/19c41ec/netlify-s-api-documentation",
+  "https://www.youtube.com/watch?v=ypb7x5b83Q0"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

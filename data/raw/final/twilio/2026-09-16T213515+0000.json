@@ -1,0 +1,110 @@
+{
+ "id": 22,
+ "slug": "twilio",
+ "name": "Twilio",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud communications platform providing APIs for SMS, voice, video, and authentication.",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/usage/api"
+  },
+  "access_path": {
+   "value": "self_serve_trial",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/usage/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/usage/api"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  "docs_url": {
+   "value": "https://www.twilio.com/docs",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/twilio",
+  "https://docs.comms.twilio.com/",
+  "https://github.com/skbhati199/twilio-mcp-server",
+  "https://github.com/twilio-labs/mcp",
+  "https://github.com/twilio/twilio-oai",
+  "https://help.twilio.com/articles/43750712673819-Twilio-MCP-Model-Context-Protocol-Availability",
+  "https://live.docs.dev.twilio.com/docs/usage/api/address",
+  "https://mcprepository.com/twilio-labs/mcp",
+  "https://mcpservers.org/servers/twilio-labs/mcp",
+  "https://static0.twilio.com/docs/usage/api/usage-trigger",
+  "https://static1.twilio.com/docs/usage/api/applications",
+  "https://twilio-api.readme.io/reference/authentication",
+  "https://www.mcpworld.com/en/detail/fc59f50a750ad67678cf723d4b0d68a2",
+  "https://www.postman.com/twilio/twilio-developers/overview",
+  "https://www.twilio.com/docs",
+  "https://www.twilio.com/docs/ai/mcp",
+  "https://www.twilio.com/docs/openapi",
+  "https://www.twilio.com/docs/usage/api",
+  "https://www.twilio.com/docs/usage/api/address",
+  "https://www.twilio.com/docs/usage/api/address.md",
+  "https://www.twilio.com/docs/usage/api/address?code-language=curl&code-sample=code-list-dependent-pns-subresources&code-sdk-version=json",
+  "https://www.twilio.com/docs/usage/api/applications",
+  "https://www.twilio.com/docs/usage/api/applications.md",
+  "https://www.twilio.com/docs/usage/api/notifications-deprecated",
+  "https://www.twilio.com/docs/usage/api/usage-record.md",
+  "https://www.twilio.com/docs/usage/api/usage-trigger",
+  "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

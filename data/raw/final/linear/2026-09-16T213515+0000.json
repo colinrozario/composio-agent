@@ -1,0 +1,115 @@
+{
+ "id": 73,
+ "slug": "linear",
+ "name": "Linear",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Linear is a streamlined issue tracking and project management tool for software teams.",
+   "confidence": "high",
+   "source_url": "https://linear.app/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://linear.app/pricing"
+  },
+  "api_type": {
+   "value": "graphql",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://linear.app/docs/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://linear.app/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  },
+  "docs_url": {
+   "value": "https://linear.app/developers/graphql",
+   "confidence": "high",
+   "source_url": "https://linear.app/developers/graphql"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aitoolpick.org/blog/linear-pricing-2026/",
+  "https://aitoolsatlas.ai/tools/linear-api",
+  "https://aitoolsatlas.ai/tools/linear-api/pricing",
+  "https://apiterms.com/api/linear.app/",
+  "https://blog.n8n.io/api-authentication-methods/",
+  "https://comparetiers.com/tools/linear",
+  "https://deepwiki.com/cline/linear-mcp/2.1-authentication-methods",
+  "https://devwithtools.org/blog/api-authentication-methods",
+  "https://github.com/ascend42/linear-cli-paradigm-version/blob/main/docs/authentication.md",
+  "https://github.com/jerhadf/linear-mcp-server",
+  "https://github.com/linear/linear",
+  "https://github.com/linear/linear/blob/master/docs/API.md",
+  "https://github.com/schpet/linear-cli/blob/main/docs/authentication.md",
+  "https://github.com/xuwenhao/x-linear-cli/blob/main/docs/authentication.md",
+  "https://growthmethod.com/linear-mcp-server/",
+  "https://linear.app/developers",
+  "https://linear.app/developers/advanced-usage",
+  "https://linear.app/developers/graphql",
+  "https://linear.app/developers/oauth-actor-authorization",
+  "https://linear.app/developers/sdk",
+  "https://linear.app/docs",
+  "https://linear.app/docs/api-and-webhooks",
+  "https://linear.app/docs/billing-and-plans",
+  "https://linear.app/docs/mcp",
+  "https://linear.app/docs/mcp.md",
+  "https://linear.app/pricing",
+  "https://mcpservers.org/remote-mcp-servers/linear",
+  "https://mcpservers.org/servers/linear-mcp",
+  "https://pricingping.com/linear-pricing/",
+  "https://www.gamut.so/blog/linear-mcp-server-guide",
+  "https://www.usecarly.com/blog/linear-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

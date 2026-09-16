@@ -1,0 +1,101 @@
+{
+ "id": 56,
+ "slug": "firecrawl",
+ "name": "Firecrawl",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Turns websites into clean Markdown and structured data for AI agents.",
+   "confidence": "high",
+   "source_url": "https://www.firecrawl.dev/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.firecrawl.dev/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "med",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://github.com/firecrawl/firecrawl-mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.firecrawl.dev/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.firecrawl.dev/pricing"
+  },
+  "docs_url": {
+   "value": "https://docs.firecrawl.dev/api-reference/introduction",
+   "confidence": "high",
+   "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://crawlcrawl.com/blog/firecrawl-api",
+  "https://deepwiki.com/firecrawl/firecrawl-mcp-server",
+  "https://docs.firecrawl.dev/api-reference/introduction",
+  "https://docs.firecrawl.dev/api-reference/v2-introduction",
+  "https://docs.firecrawl.dev/mcp-server",
+  "https://docs.firecrawl.dev/use-cases/developers-mcp",
+  "https://firecrawldocs.com/",
+  "https://github.com/danieldunderfelt/documentation-mcp-server",
+  "https://github.com/firecrawl/firecrawl-mcp-server",
+  "https://mcpcursor.com/server/firecrawl-mcp",
+  "https://skillsplayground.com/mcps/firecrawl-firecrawl-mcp-server/",
+  "https://webscraping.ai/blog/firecrawl-guide",
+  "https://www.firecrawl.dev/",
+  "https://www.firecrawl.dev/blog/firecrawl-mcp-chatgpt",
+  "https://www.firecrawl.dev/pricing",
+  "https://www.modern-datatools.com/tools/firecrawl-cli/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}

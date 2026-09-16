@@ -1,0 +1,101 @@
+{
+ "id": 2,
+ "slug": "hubspot",
+ "name": "HubSpot",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "All-in-one CRM platform featuring APIs for managing contacts, deals, marketing, and customer service.",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/ai-tools/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  },
+  "docs_url": {
+   "value": "https://developers.hubspot.com/docs",
+   "confidence": "high",
+   "source_url": "https://developers.hubspot.com/docs"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://developers.hubspot.com/ai-tools",
+  "https://developers.hubspot.com/ai-tools/mcp",
+  "https://developers.hubspot.com/blog/optimizing-developer-docs-in-the-age-of-ai-our-mintlify-migration-story",
+  "https://developers.hubspot.com/changelog/mcp-server-beta",
+  "https://developers.hubspot.com/changelog/public-beta-self-service-mcp-auth-apps-for-the-hubspot-remote-mcp-server",
+  "https://developers.hubspot.com/docs",
+  "https://developers.hubspot.com/docs/apps/developer-platform/add-features/mcp-server",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+  "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "https://developers.hubspot.com/postman",
+  "https://insightsalesglobal.com/blog/hubspot-api",
+  "https://insightsalesglobal.com/blog/hubspot-api-authentication",
+  "https://moldstud.com/articles/p-essential-guide-to-hubspot-api-documentation-navigating-for-developers",
+  "https://moldstud.com/articles/p-how-to-set-up-hubspot-api-authentication-a-developers-guide",
+  "https://widelly.com/blog/hubspot-api-guide-developers/",
+  "https://www.apideck.com/blog/how-to-connect-with-the-hubspot-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

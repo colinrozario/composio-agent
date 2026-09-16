@@ -1,0 +1,93 @@
+{
+ "id": 94,
+ "slug": "consensus",
+ "name": "Consensus",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "An API providing programmatic search and retrieval for over 220 million peer-reviewed academic papers.",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/api-get-started"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/api-get-started"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/api-get-started"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  },
+  "docs_url": {
+   "value": "https://docs.consensus.app/core-features/api",
+   "confidence": "high",
+   "source_url": "https://docs.consensus.app/core-features/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/consensus-api/",
+  "https://ai-consensus.ai/docs",
+  "https://aiwiki.io/tools/consensus/docs",
+  "https://consensus.app/home/api/",
+  "https://docs.consensus.app/api-get-started",
+  "https://docs.consensus.app/core-features/api",
+  "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+  "https://support.goconsensus.com/consensus-api-documents"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

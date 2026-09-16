@@ -1,0 +1,98 @@
+{
+ "id": 44,
+ "slug": "salesforce_commerce_cloud",
+ "name": "Salesforce Commerce Cloud",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based e-commerce platform offering REST APIs for storefronts, orders, and products.",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+  },
+  "access_path": {
+   "value": "partner_or_sales_gated",
+   "confidence": "med",
+   "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c"
+  },
+  "main_blocker": {
+   "value": "Production API usage and environment provisioning require commercial partnership or enterprise sales engagement.",
+   "confidence": "med",
+   "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+  },
+  "docs_url": {
+   "value": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/develop.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+  "https://developer.salesforce.com/docs/commerce/commerce-api/references",
+  "https://github.com/SalesforceCommerceCloud/commerce-sdk",
+  "https://help.salesforce.com/s/articleView?id=cc.b2c_shopping_agent_scapi_auth_intro.htm&language=en_US&type=5",
+  "https://help.salesforce.com/s/articleView?id=commerce.b2c_rn_26_1_unified_dev_doc.htm&language=en_US&type=5",
+  "https://help.salesforce.com/s/articleView?id=commerce.sf_commerce_api_release_notes.htm&language=en_US&type=5",
+  "https://salesforcecommercecloud.github.io/b2c-dev-doc/",
+  "https://salesforcecommercecloud.github.io/b2c-developer-tooling/cli/slas.html",
+  "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication.html",
+  "https://salesforcecommercecloud.github.io/commerce-sdk/",
+  "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+  "https://trailhead.salesforce.com/content/learn/modules/guided-shopping-for-b2c-commerce-storefronts/connect-your-salesforce-org-to-b2c-commerce",
+  "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

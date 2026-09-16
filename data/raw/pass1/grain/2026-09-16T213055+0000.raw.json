@@ -1,0 +1,122 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Grain\nCategory: AI, Research and Media-native\nHint (may be misleading, verify it): grain.com (meeting notes)\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://apitracker.io/a/grain-co",
+   "https://azure.microsoft.com/en-us/pricing/details/githubenterprise/",
+   "https://context7.com/websites/developers_grain/llms.txt",
+   "https://developers.grain.com/",
+   "https://developers.grain.com/mcp",
+   "https://docs.cloud.google.com/channel/docs/concepts/workspace/products-skus",
+   "https://docs.grainfinance.co/api-reference/introduction",
+   "https://docs.grainfinance.co/webhooks",
+   "https://docs.grainledger.com/intro",
+   "https://docs.grainledger.com/organizations",
+   "https://docs.grainledger.com/quickstart",
+   "https://github.com/BrainGridAI/grain-cli",
+   "https://github.com/enterprise/trial",
+   "https://github.com/organizations/enterprise_plan",
+   "https://grafana.com/docs/grafana/latest/introduction/grafana-enterprise/",
+   "https://grafana.com/pricing/",
+   "https://grain.com/integrations",
+   "https://grainvm.com/docs/main/",
+   "https://improvado.io/docs/grain",
+   "https://knowledge.workspace.google.com/admin/getting-started/editions/compare-enterprise-editions",
+   "https://mindcloud.co/docs/universal/rest/grain/latest/introduction/authentication",
+   "https://n8n.io/integrations/webhook/and/grain/",
+   "https://nango.mintlify.dev/docs/integrations/all/grain-api-key",
+   "https://semarize.com/resources/get-your-data/grain",
+   "https://support.grain.com/en/articles/15297887-export-meetings",
+   "https://support.grain.com/en/articles/15507288-grain-api",
+   "https://workspace.google.com/enterprise/",
+   "https://www.generalinput.com/apps/grain",
+   "https://www.workload.co/api/grain/integrations/webhook/"
+  ],
+  "fetched_urls": [
+   "https://developers.grain.com/",
+   "https://support.grain.com/en/articles/15507288-grain-api"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Grain API developer docs docs.grain.com"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Grain api integration webhook grain.com"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "site:developers.grain.com"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "site:support.grain.com \"Grain API\""
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "\"Grain API\" auth OR api_key OR oauth grain.com"
+    },
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "web_search",
+    "args": {
+     "query": "site:grain.com/pricing api OR developer OR plan"
+    },
+    "ok": false
+   },
+   {
+    "turn": 2,
+    "tool": "web_search",
+    "args": {
+     "query": "site:developers.grain.com pricing OR plan OR enterprise"
+    },
+    "ok": true
+   },
+   {
+    "turn": 3,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 4,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developers.grain.com/",
+      "https://support.grain.com/en/articles/15507288-grain-api"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 6,
+   "read_pages": 1
+  },
+  "turns": 6,
+  "backend": "gemini",
+  "model": "gemini-3.5-flash-lite"
+ }
+}

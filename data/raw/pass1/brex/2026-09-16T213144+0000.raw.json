@@ -1,0 +1,105 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Brex\nCategory: Finance and Fintech\nHint (may be misleading, verify it): developer.brex.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://aitoolsatlas.ai/tools/brex/api",
+   "https://apihunt.io/apis/brex",
+   "https://apiscout.dev/apis/payments/brex",
+   "https://apitracker.io/a/brex",
+   "https://developer.brex.com/",
+   "https://developer.brex.com/_bundle/openapi/team_api.json?download",
+   "https://developer.brex.com/changelog",
+   "https://developer.brex.com/changelog.md",
+   "https://developer.brex.com/docs/mcp",
+   "https://developer.brex.com/docs/mcp.md",
+   "https://developer.brex.com/guides/authentication",
+   "https://developer.brex.com/guides/authentication.md",
+   "https://developer.brex.com/guides/checklist.md",
+   "https://developer.brex.com/guides/partner_authentication",
+   "https://developer.brex.com/guides/partner_authentication.md",
+   "https://developer.brex.com/guides/quickstart",
+   "https://developer.brex.com/guides/quickstart.md",
+   "https://developer.brex.com/index.html.md",
+   "https://developer.brex.com/openapi/fields_api/fields/createfield.md",
+   "https://developer.brex.com/openapi/team_api/companies",
+   "https://developer.brex.com/openapi/team_api/companies.md",
+   "https://netlift.app/resources/ai-costs/brex-ai-pricing-cost-and-break-even-value",
+   "https://www.brex.com/pricing",
+   "https://www.brex.com/product/api",
+   "https://www.brex.com/support/brex-api",
+   "https://www.openbankingtracker.com/provider/brex/apis"
+  ],
+  "fetched_urls": [
+   "https://developer.brex.com/docs/mcp",
+   "https://developer.brex.com/guides/authentication",
+   "https://www.brex.com/pricing"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Brex developer documentation API reference auth"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Brex API access developer dashboard pricing"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "site:developer.brex.com base URL"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "site:developer.brex.com authentication bearer token api_key"
+    },
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "web_search",
+    "args": {
+     "query": "site:developer.brex.com docs/mcp"
+    },
+    "ok": true
+   },
+   {
+    "turn": 3,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 4,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developer.brex.com/guides/authentication",
+      "https://developer.brex.com/docs/mcp",
+      "https://www.brex.com/pricing"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 5,
+   "read_pages": 1
+  },
+  "turns": 6,
+  "backend": "gemini",
+  "model": "gemini-3.5-flash-lite"
+ }
+}

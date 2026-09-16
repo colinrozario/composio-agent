@@ -1,0 +1,105 @@
+{
+ "id": 78,
+ "slug": "coda",
+ "name": "Coda",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Collaborative platform for building documents, apps, and data-driven projects.",
+   "confidence": "high",
+   "source_url": "https://coda.io/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://coda.io/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://coda.io/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  },
+  "docs_url": {
+   "value": "https://coda.io/developers",
+   "confidence": "high",
+   "source_url": "https://coda.io/developers"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aiwiki.io/tools/coda/docs",
+  "https://apis.io/apis/coda/coda-account-api/",
+  "https://apis.io/apis/coda/coda-docs-api/",
+  "https://apis.io/security/coda/coda-authentication/",
+  "https://coda.io/",
+  "https://coda.io/@documentation",
+  "https://coda.io/apis/v1/openapi.yaml",
+  "https://coda.io/packs/build/latest/guides/basics/authentication/",
+  "https://coda.io/packs/build/latest/samples/topic/apis/",
+  "https://coda.io/resources",
+  "https://codaio.readthedocs.io/en/latest/",
+  "https://docs.coda.co/codapay/direct-api-integration/direct-api-integration-for-cards/getting-started",
+  "https://docs.coda.co/payout/integration-guides/api-reference",
+  "https://docs.superhuman.com/@oleg/getting-started-guide-coda-api",
+  "https://docs.superhuman.com/developers/apis/v1",
+  "https://github.com/licht1stein/codaio",
+  "https://rollout.com/integration-guides/coda/api-essentials",
+  "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+  "https://www.postman.com/codaio/coda-workspace/documentation/0vy7uxn/coda-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation",
+  "composio_auth_disagreement"
+ ]
+}

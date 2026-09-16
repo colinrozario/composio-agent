@@ -1,0 +1,96 @@
+{
+ "id": 35,
+ "slug": "mailchimp",
+ "name": "Mailchimp",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Marketing platform API for managing campaigns, contacts, audiences, and email automation workflows.",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/api/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/api/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/docs/fundamentals/"
+  },
+  "docs_url": {
+   "value": "https://mailchimp.com/developer/marketing/api/",
+   "confidence": "high",
+   "source_url": "https://mailchimp.com/developer/marketing/api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "official_mcp"
+ ],
+ "search_urls": [
+  "https://aeroleads.com/blog/getting-started-with-mailchimp-api-developer-documentation/",
+  "https://apitracker.io/a/mailchimp",
+  "https://mailchimp.com/developer/guides/mailchimp-api-overview/",
+  "https://mailchimp.com/developer/marketing/api/",
+  "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+  "https://mailchimp.com/developer/marketing/docs/integrations/",
+  "https://mailchimp.com/developer/marketing/docs/mobile-sdk/",
+  "https://public-api.org/api/131/mailchimp"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

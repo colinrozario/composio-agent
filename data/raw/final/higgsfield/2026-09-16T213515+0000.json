@@ -1,0 +1,101 @@
+{
+ "id": 97,
+ "slug": "higgsfield",
+ "name": "higgsfield",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Asynchronous API providing pay-as-you-go access to 50+ AI video and image models.",
+   "confidence": "high",
+   "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs"
+  },
+  "docs_url": {
+   "value": "https://docs.higgsfield.ai/docs",
+   "confidence": "high",
+   "source_url": "https://docs.higgsfield.ai/docs"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://cloud.higgsfield.ai/",
+  "https://deepwiki.com/higgsfield-ai/cli",
+  "https://deepwiki.com/higgsfield-ai/cli/2-cli-commands-and-flags",
+  "https://docs.higgsfield.ai/docs",
+  "https://docs.higgsfield.ai/docs/api-reference/overview",
+  "https://docs.higgsfield.ai/docs/authentication",
+  "https://docs.higgsfield.ai/docs/how-to/introduction",
+  "https://docs.higgsfield.ai/docs/llms-full.txt",
+  "https://docs.higgsfield.ai/docs/llms.txt",
+  "https://docs.higgsfield.ai/docs/quickstart",
+  "https://docsearch.algolia.com/mcp/docs/repo/higgsfield-ai/cli",
+  "https://github.com/donghaozhang/higgsfield-cli",
+  "https://github.com/higgsfield-ai/cli",
+  "https://github.com/higgsfield-ai/higgsfield-client",
+  "https://higgsfield.ai/blog/higgsfield-api",
+  "https://higgsfield.ai/cli",
+  "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+  "https://higgsfield.ai/higgsfield-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

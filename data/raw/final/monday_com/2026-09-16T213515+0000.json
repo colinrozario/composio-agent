@@ -1,0 +1,106 @@
+{
+ "id": 76,
+ "slug": "monday_com",
+ "name": "Monday.com",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Work OS platform for project management, workflows, and team collaboration via GraphQL API.",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/docs/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "med",
+   "source_url": "https://developer.monday.com/"
+  },
+  "api_type": {
+   "value": "graphql",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/reference/about-the-api-reference"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/apps/docs/mcp-servers"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/docs/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://developer.monday.com/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  },
+  "docs_url": {
+   "value": "https://developer.monday.com/api-reference/",
+   "confidence": "high",
+   "source_url": "https://developer.monday.com/api-reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/monday",
+  "https://developer-community.monday.com/api-apps-framework-4",
+  "https://developer-community.monday.com/p/resources",
+  "https://developer.monday.com/",
+  "https://developer.monday.com/api-reference/",
+  "https://developer.monday.com/api-reference/docs/authentication",
+  "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+  "https://developer.monday.com/api-reference/reference/about-the-api-reference",
+  "https://developer.monday.com/apps/docs/mcp-servers",
+  "https://developer.workday.com/documentation",
+  "https://lagrowthmachine.com/monday-mcp/",
+  "https://mcpservers.org/servers/mondaycom/mcp",
+  "https://monday.com/blog/ai-agents/what-is-mcp-explained/",
+  "https://monday.com/w/app-developers",
+  "https://monday.com/w/mcp",
+  "https://public-api.org/api/1556/monday",
+  "https://publicapis.io/monday-api",
+  "https://support.monday.com/hc/en-us/articles/28515034903314-Get-started-with-monday-MCP",
+  "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+  "https://support.monday.com/hc/en-us/sections/360003537260-API",
+  "https://www.usecarly.com/blog/monday-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

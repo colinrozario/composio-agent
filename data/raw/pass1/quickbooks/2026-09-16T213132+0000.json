@@ -1,0 +1,95 @@
+{
+ "id": 86,
+ "slug": "quickbooks",
+ "name": "QuickBooks",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:31:32+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud accounting software providing financial management, invoicing, expense tracking, and reporting capabilities.",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+  },
+  "docs_url": {
+   "value": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features",
+   "confidence": "high",
+   "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://dev.to/ilshadyx/quickbooks-api-integration-guide-for-developers-11m5",
+  "https://dev.to/zuplo/quickbooks-api-complete-developers-guide-2026-3l77",
+  "https://developer.intuit.com/",
+  "https://developer.intuit.com/app/developer/qbo/docs/develop",
+  "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground",
+  "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features",
+  "https://github.com/intuit/intuit-cli-for-quickbooks",
+  "https://help.developer.intuit.com/s/",
+  "https://help.developer.intuit.com/s/article/What-are-the-baseURLs-for-the-QuickBooks-Online-Accounting-and-QuickBooks-Payments-APIs",
+  "https://help.developer.intuit.com/s/topic/0TO0f0000004rtvGAA/base-url",
+  "https://satvasolutions.com/blog/quickbooks-online-api-guide",
+  "https://satvasolutions.com/blog/quickbooks-online-app-using-intuit-developer-portal",
+  "https://truto.one/blog/how-to-integrate-with-the-quickbooks-online-api-2026-guide",
+  "https://www.postman.com/intuit-developer/intuit-developer-quickbooks-online-accounting-api/overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ }
+}

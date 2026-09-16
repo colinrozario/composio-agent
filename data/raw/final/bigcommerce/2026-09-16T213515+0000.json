@@ -1,0 +1,108 @@
+{
+ "id": 43,
+ "slug": "bigcommerce",
+ "name": "BigCommerce",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Enterprise-grade ecommerce platform providing comprehensive REST and GraphQL APIs for store management and headless commerce.",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.bigcommerce.com/product/api/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+  },
+  "docs_url": {
+   "value": "https://docs.bigcommerce.com/developer/api-reference",
+   "confidence": "high",
+   "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://commerce-bots.com/directory/bigcommerce-storefront-mcp",
+  "https://deepwiki.com/bigcommerce/docs",
+  "https://docs.bigcommerce.com/",
+  "https://docs.bigcommerce.com/_mcp/server",
+  "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+  "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+  "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements",
+  "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
+  "https://ecommerce.folio3.com/blog/top-bigcommerce-marketplace-apps-for-transforming-e-commerce-store/",
+  "https://github.com/80mills/bigcomdocs",
+  "https://github.com/isaacgounton/bigcommerce-api-mcp",
+  "https://mymcptools.com/servers/bigcommerce-mcp",
+  "https://mymcptools.vercel.app/servers/bigcommerce",
+  "https://support.bigcommerce.com/s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel",
+  "https://support.bigcommerce.com/s/article/Managing-Reviews",
+  "https://support.bigcommerce.com/s/article/Store-API-Accounts",
+  "https://support.bigcommerce.com/s/topic/0TO1300000059cCGAQ/api-documentation",
+  "https://wiserreview.com/blog/bigcommerce-customer-reviews/",
+  "https://www.bigcommerce.com/apps/",
+  "https://www.bigcommerce.com/apps/categories/sales-channels/marketplaces/",
+  "https://www.bigcommerce.com/blog/storefront-mcp/",
+  "https://www.bigcommerce.com/product/api/",
+  "https://www.cdata.com/drivers/bigcommerce/docs/mcp/",
+  "https://www.postman.com/api-evangelist/bigcommerce/documentation/37xvhum/bigcommerce-api-v3"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,104 @@
+{
+ "id": 80,
+ "slug": "harvest",
+ "name": "Harvest",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Time tracking and project management platform with a comprehensive REST API for automation.",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  },
+  "docs_url": {
+   "value": "https://help.getharvest.com/api-v2/",
+   "confidence": "high",
+   "source_url": "https://help.getharvest.com/api-v2/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "api_type",
+  "api_breadth",
+  "official_mcp",
+  "base_url_model",
+  "toolkit_bucket",
+  "docs_quality",
+  "main_blocker",
+  "docs_url"
+ ],
+ "search_urls": [
+  "https://docs.harvestapi.io/guides/quickstart",
+  "https://github.com/harvesthq/api/blob/master/Authentication/OAuth%202.0.md",
+  "https://harvesthq.github.io/harvest_api_samples/",
+  "https://help.getharvest.com/api-v2/authentication-api/",
+  "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+  "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+  "https://support.greenhouse.io/hc/en-us/articles/360029266032-Harvest-API-overview",
+  "https://www.getharvest.com/blog/2017/09/introducing-harvest-api-v2"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

@@ -1,14 +1,14 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T21:23:43+00:00",
+  "generated_at": "2026-09-16T21:35:18+00:00",
   "demo": false,
   "repo": "https://github.com/colinrozario/composio-agent"
  },
  "headline": {
-  "apps": 76,
-  "in_composio": 47,
-  "not_in_composio": 29,
-  "buildable_now_not_in_composio": 13
+  "apps": 100,
+  "in_composio": 60,
+  "not_in_composio": 40,
+  "buildable_now_not_in_composio": 20
  },
  "patterns": [
   {
@@ -30,7 +30,7 @@
   },
   {
    "key": "paid_to_use",
-   "count": 19,
+   "count": 23,
    "apps": [
     "Ahrefs",
     "Aircall",
@@ -40,16 +40,20 @@
     "Close",
     "Copper",
     "DataForSEO",
+    "Datadog",
     "DealCloud",
+    "Devin",
     "Freshdesk",
     "Gladly",
     "GoHighLevel",
+    "Grain",
     "Intercom",
     "LiveAgent",
     "NotebookLM",
     "Pylon",
     "SE Ranking",
     "Smartsheet",
+    "YouTube Transcript",
     "fanbasis"
    ],
    "headline": "Free to read, paid to call",
@@ -57,8 +61,9 @@
   },
   {
    "key": "per_tenant_host",
-   "count": 17,
+   "count": 20,
    "apps": [
+    "BigCommerce",
     "DealCloud",
     "Ecwid",
     "Freshdesk",
@@ -70,9 +75,11 @@
     "Neo4j",
     "Pipedrive",
     "Pylon",
+    "QuickBooks",
     "Salesforce",
     "Salesforce Commerce Cloud",
     "Shopify",
+    "Snowflake",
     "Twenty",
     "WooCommerce",
     "Zendesk"
@@ -82,9 +89,10 @@
   },
   {
    "key": "graphql_only",
-   "count": 2,
+   "count": 3,
    "apps": [
     "Linear",
+    "Monday.com",
     "Plain"
    ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
@@ -92,24 +100,30 @@
   },
   {
    "key": "official_mcp",
-   "count": 40,
+   "count": 57,
    "apps": [
     "Ahrefs",
     "Aircall",
     "Apify",
     "Asana",
+    "BigCommerce",
+    "Brex",
     "Bright Data",
     "Clay",
     "ClickUp",
     "Close",
     "Cloudflare",
+    "Consensus",
     "DataForSEO",
+    "Datadog",
+    "Devin",
     "Firecrawl",
     "Freshdesk",
     "Front",
     "GitHub",
     "GoHighLevel",
     "Gorgias",
+    "Grain",
     "HubSpot",
     "Intercom",
     "Jira",
@@ -118,30 +132,42 @@
     "Linear",
     "Magento (Adobe Commerce)",
     "Meta Ads",
+    "Monday.com",
     "MongoDB Atlas",
     "MrScraper",
     "Neo4j",
+    "Netlify",
     "Notion",
     "Paygent Connect",
+    "Plaid",
     "Ramp",
+    "Reducto",
     "Salesforce",
+    "Sentry",
     "Shopify",
     "Slack",
     "Smartsheet",
+    "Snowflake",
+    "Stripe",
+    "Supabase",
     "Twenty",
     "Twilio",
     "Vercel",
     "Vonage",
     "WooCommerce",
-    "Xero"
+    "Xero",
+    "YouTube Transcript",
+    "Zoho CRM",
+    "iPayX"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
   },
   {
    "key": "local_toolkit",
-   "count": 1,
+   "count": 2,
    "apps": [
+    "Mermaid CLI",
     "Sherlock"
    ],
    "headline": "Not APIs at all: local toolkits",
@@ -149,9 +175,10 @@
   },
   {
    "key": "dark",
-   "count": 3,
+   "count": 4,
    "apps": [
     "Otter AI",
+    "PitchBook",
     "Salesforce Commerce Cloud",
     "Waterfall.io"
    ],
@@ -190,6 +217,11 @@
     "name": "Podio",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Zoho CRM",
+    "score": 9,
+    "in_composio": true
    },
    {
     "name": "Front",
@@ -292,7 +324,17 @@
     "in_composio": true
    },
    {
+    "name": "Netlify",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Cloudflare",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Supabase",
     "score": 9,
     "in_composio": true
    },
@@ -305,6 +347,11 @@
     "name": "MongoDB Atlas",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Sentry",
+    "score": 9,
+    "in_composio": true
    },
    {
     "name": "Notion",
@@ -332,7 +379,42 @@
     "in_composio": true
    },
    {
+    "name": "Monday.com",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "ClickUp",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Coda",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Harvest",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Stripe",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Plaid",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Binance",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "QuickBooks",
     "score": 9,
     "in_composio": true
    },
@@ -347,6 +429,11 @@
     "in_composio": true
    },
    {
+    "name": "Reducto",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Gorgias",
     "score": 8,
     "in_composio": true
@@ -357,7 +444,17 @@
     "in_composio": true
    },
    {
+    "name": "BigCommerce",
+    "score": 8,
+    "in_composio": false
+   },
+   {
     "name": "Ecwid",
+    "score": 8,
+    "in_composio": false
+   },
+   {
+    "name": "iPayX",
     "score": 8,
     "in_composio": false
    },
@@ -365,6 +462,16 @@
     "name": "Fathom",
     "score": 8,
     "in_composio": true
+   },
+   {
+    "name": "Consensus",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "higgsfield",
+    "score": 8,
+    "in_composio": false
    },
    {
     "name": "Zendesk",
@@ -427,9 +534,19 @@
     "in_composio": true
    },
    {
+    "name": "Snowflake",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "Paygent Connect",
     "score": 7,
     "in_composio": false
+   },
+   {
+    "name": "Brex",
+    "score": 7,
+    "in_composio": true
    }
   ],
   "build_with_friction": [
@@ -489,7 +606,22 @@
     "in_composio": false
    },
    {
+    "name": "Datadog",
+    "score": 6,
+    "in_composio": true
+   },
+   {
     "name": "Smartsheet",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "YouTube Transcript",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Grain",
     "score": 6,
     "in_composio": false
    },
@@ -524,7 +656,17 @@
     "in_composio": false
    },
    {
+    "name": "Devin",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "fanbasis",
+    "score": 4,
+    "in_composio": false
+   },
+   {
+    "name": "PitchBook",
     "score": 4,
     "in_composio": false
    },
@@ -546,21 +688,26 @@
     "name": "Sherlock",
     "score": 5,
     "in_composio": false
+   },
+   {
+    "name": "Mermaid CLI",
+    "score": 4,
+    "in_composio": false
    }
   ]
  },
  "auth": [
   [
    "oauth2",
-   47
+   61
   ],
   [
    "bearer_token",
-   34
+   50
   ],
   [
    "api_key",
-   31
+   42
   ],
   [
    "basic",
@@ -568,10 +715,14 @@
   ],
   [
    "jwt",
-   3
+   4
   ],
   [
    "hmac_signature",
+   3
+  ],
+  [
+   "none",
    2
   ],
   [
@@ -581,15 +732,11 @@
   [
    "token",
    1
-  ],
-  [
-   "none",
-   1
   ]
  ],
  "tier_by_category": {
   "CRM and Sales": {
-   "build_now": 6,
+   "build_now": 7,
    "build_with_friction": 3
   },
   "Support and Helpdesk": {
@@ -605,7 +752,7 @@
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_now": 6,
+   "build_now": 7,
    "build_with_friction": 3
   },
   "Data, SEO and Scraping": {
@@ -614,19 +761,22 @@
    "local_toolkit": 1
   },
   "Developer, Infra and Data platforms": {
-   "build_now": 5
+   "build_now": 9,
+   "build_with_friction": 1
   },
   "Productivity and Project Management": {
-   "build_now": 6,
+   "build_now": 9,
    "build_with_friction": 1
   },
   "Finance and Fintech": {
-   "build_now": 3
+   "build_now": 9,
+   "build_with_friction": 1
   },
   "AI, Research and Media-native": {
-   "build_with_friction": 1,
+   "build_with_friction": 4,
    "needs_outreach": 1,
-   "build_now": 1
+   "build_now": 4,
+   "local_toolkit": 1
   }
  },
  "weights": [
@@ -1155,6 +1305,89 @@
      "value": "https://developers.podio.com/",
      "confidence": "high",
      "source_url": "https://developers.podio.com/"
+    }
+   }
+  },
+  {
+   "id": 7,
+   "name": "Zoho CRM",
+   "slug": "zoho_crm",
+   "category": "CRM and Sales",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Comprehensive CRM platform with REST APIs and official MCP servers for AI agents.",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/mcp.html"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": null
+    },
+    "docs_url": {
+     "value": "https://www.zoho.com/crm/developer/docs/api/v8/",
+     "confidence": "high",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
     }
    }
   },
@@ -4117,6 +4350,90 @@
    }
   },
   {
+   "id": 43,
+   "name": "BigCommerce",
+   "slug": "bigcommerce",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Enterprise-grade ecommerce platform providing comprehensive REST and GraphQL APIs for store management and headless commerce.",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+    },
+    "api_type": {
+     "value": "rest_and_graphql",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://www.bigcommerce.com/product/api/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://support.bigcommerce.com/s/article/Store-API-Accounts"
+    },
+    "docs_url": {
+     "value": "https://docs.bigcommerce.com/developer/api-reference",
+     "confidence": "high",
+     "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+    }
+   }
+  },
+  {
    "id": 44,
    "name": "Salesforce Commerce Cloud",
    "slug": "salesforce_commerce_cloud",
@@ -5714,6 +6031,90 @@
    }
   },
   {
+   "id": 63,
+   "name": "Netlify",
+   "slug": "netlify",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Web hosting and serverless platform offering an API to manage atomic deploys, sites, and forms.",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://github.com/netlify/netlify-mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api"
+    },
+    "docs_url": {
+     "value": "https://open-api.netlify.com/",
+     "confidence": "high",
+     "source_url": "https://open-api.netlify.com/"
+    }
+   }
+  },
+  {
    "id": 64,
    "name": "Cloudflare",
    "slug": "cloudflare",
@@ -5794,6 +6195,91 @@
      "value": "https://developers.cloudflare.com/api/",
      "confidence": "high",
      "source_url": "https://developers.cloudflare.com/api/overview/"
+    }
+   }
+  },
+  {
+   "id": 65,
+   "name": "Supabase",
+   "slug": "supabase",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An open source Firebase alternative providing Postgres databases, auth, and APIs.",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "api_key",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://supabase.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/guides/ai-tools/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://supabase.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs"
+    },
+    "docs_url": {
+     "value": "https://supabase.com/docs/reference/api/introduction",
+     "confidence": "high",
+     "source_url": "https://supabase.com/docs/reference/api/introduction"
     }
    }
   },
@@ -5882,6 +6368,92 @@
    }
   },
   {
+   "id": 67,
+   "name": "Snowflake",
+   "slug": "snowflake",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 2,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based data platform providing SQL execution, analytics, and AI tooling via REST APIs.",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "jwt",
+      "bearer_token",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_trial",
+     "confidence": "high",
+     "source_url": "https://www.snowflake.com/en/snowflake-trial/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.snowflake.com/en/snowflake-trial/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.snowflake.com/en/snowflake-trial/"
+    },
+    "docs_url": {
+     "value": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+     "confidence": "high",
+     "source_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    }
+   }
+  },
+  {
    "id": 68,
    "name": "MongoDB Atlas",
    "slug": "mongodb_atlas",
@@ -5962,6 +6534,177 @@
      "value": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
      "confidence": "high",
      "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    }
+   }
+  },
+  {
+   "id": 69,
+   "name": "Datadog",
+   "slug": "datadog",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-scale monitoring and security platform providing metrics, logs, traces, and dashboards via API.",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/authentication/"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://www.datadoghq.com/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/mcp_server/"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/authentication/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    },
+    "docs_url": {
+     "value": "https://docs.datadoghq.com/api/latest/",
+     "confidence": "high",
+     "source_url": "https://docs.datadoghq.com/api/latest/"
+    }
+   }
+  },
+  {
+   "id": 70,
+   "name": "Sentry",
+   "slug": "sentry",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Application monitoring and error tracking platform for developers to diagnose crashes and trace performance.",
+     "confidence": "high",
+     "source_url": "https://github.com/sentry-pricing"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/auth/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://sentry.io/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://mcp.sentry.dev/"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://mcp.sentry.dev/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://sentry.io/pricing/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
+    },
+    "docs_url": {
+     "value": "https://docs.sentry.io/api/",
+     "confidence": "high",
+     "source_url": "https://docs.sentry.io/api/"
     }
    }
   },
@@ -6387,6 +7130,91 @@
    }
   },
   {
+   "id": 76,
+   "name": "Monday.com",
+   "slug": "monday_com",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Work OS platform for project management, workflows, and team collaboration via GraphQL API.",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "oauth2",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/docs/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "med",
+     "source_url": "https://developer.monday.com/"
+    },
+    "api_type": {
+     "value": "graphql",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/reference/about-the-api-reference"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/apps/docs/mcp-servers"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/docs/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "med",
+     "source_url": "https://developer.monday.com/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    },
+    "docs_url": {
+     "value": "https://developer.monday.com/api-reference/",
+     "confidence": "high",
+     "source_url": "https://developer.monday.com/api-reference/"
+    }
+   }
+  },
+  {
    "id": 77,
    "name": "ClickUp",
    "slug": "clickup",
@@ -6473,6 +7301,92 @@
    }
   },
   {
+   "id": 78,
+   "name": "Coda",
+   "slug": "coda",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation",
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Collaborative platform for building documents, apps, and data-driven projects.",
+     "confidence": "high",
+     "source_url": "https://coda.io/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://coda.io/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://coda.io/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    },
+    "docs_url": {
+     "value": "https://coda.io/developers",
+     "confidence": "high",
+     "source_url": "https://coda.io/developers"
+    }
+   }
+  },
+  {
    "id": 79,
    "name": "Smartsheet",
    "slug": "smartsheet",
@@ -6553,6 +7467,345 @@
      "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
      "confidence": "high",
      "source_url": "https://developers.smartsheet.com/"
+    }
+   }
+  },
+  {
+   "id": 80,
+   "name": "Harvest",
+   "slug": "harvest",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Time tracking and project management platform with a comprehensive REST API for automation.",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/introduction/overview/introduction/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    },
+    "docs_url": {
+     "value": "https://help.getharvest.com/api-v2/",
+     "confidence": "high",
+     "source_url": "https://help.getharvest.com/api-v2/"
+    }
+   }
+  },
+  {
+   "id": 81,
+   "name": "Stripe",
+   "slug": "stripe",
+   "category": "Finance and Fintech",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Online payment processing and financial infrastructure APIs for internet businesses.",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api/authentication"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    },
+    "docs_url": {
+     "value": "https://docs.stripe.com/api",
+     "confidence": "high",
+     "source_url": "https://docs.stripe.com/api"
+    }
+   }
+  },
+  {
+   "id": 82,
+   "name": "Plaid",
+   "slug": "plaid",
+   "category": "Finance and Fintech",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Connects user bank accounts and financial data securely to applications via API.",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://plaid.com/pricing/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://plaid.com/blog/plaid-mcp-ai-assistant-claude/"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://plaid.com/pricing/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://plaid.com/pricing/"
+    },
+    "docs_url": {
+     "value": "https://plaid.com/docs/api/",
+     "confidence": "high",
+     "source_url": "https://plaid.com/docs/api/"
+    }
+   }
+  },
+  {
+   "id": 83,
+   "name": "Binance",
+   "slug": "binance",
+   "category": "Finance and Fintech",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cryptocurrency exchange providing programmatic trading, wallet, and market data APIs.",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "hmac_signature",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/products/login/web-integration"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.binance.com/en/binance-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.binance.com/en/binance-api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.binance.com/en/binance-api"
+    },
+    "docs_url": {
+     "value": "https://developers.binance.com/en/docs/catalog",
+     "confidence": "high",
+     "source_url": "https://developers.binance.com/en/docs/catalog"
     }
    }
   },
@@ -6642,6 +7895,172 @@
    }
   },
   {
+   "id": 85,
+   "name": "iPayX",
+   "slug": "ipayx",
+   "category": "Finance and Fintech",
+   "in_composio": false,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 1,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Forensic FX audit engine detecting hidden bank spreads and fees for AI agents.",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "med",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    },
+    "docs_url": {
+     "value": "https://www.ipayx.ai/developers?lang=en",
+     "confidence": "high",
+     "source_url": "https://www.ipayx.ai/developers?lang=en"
+    }
+   }
+  },
+  {
+   "id": 86,
+   "name": "QuickBooks",
+   "slug": "quickbooks",
+   "category": "Finance and Fintech",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud accounting software providing financial management, invoicing, expense tracking, and reporting capabilities.",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0-playground"
+    },
+    "docs_url": {
+     "value": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features",
+     "confidence": "high",
+     "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+    }
+   }
+  },
+  {
    "id": 87,
    "name": "Xero",
    "slug": "xero",
@@ -6721,6 +8140,90 @@
      "value": "https://developer.xero.com/documentation/api/accounting/overview",
      "confidence": "high",
      "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    }
+   }
+  },
+  {
+   "id": 88,
+   "name": "Brex",
+   "slug": "brex",
+   "category": "Finance and Fintech",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 0
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Unified spend platform providing corporate cards, expense management, reimbursements, and travel APIs.",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/docs/mcp"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.brex.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/_bundle/openapi/team_api.json?download"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/docs/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/guides/authentication.md"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/guides/authentication.md"
+    },
+    "main_blocker": {
+     "value": "Requires an active Brex account and admin access to generate user tokens.",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/guides/authentication"
+    },
+    "docs_url": {
+     "value": "https://developer.brex.com/",
+     "confidence": "high",
+     "source_url": "https://developer.brex.com/"
     }
    }
   },
@@ -6805,6 +8308,91 @@
      "value": "https://docs.ramp.com/developer-api/v1/introduction",
      "confidence": "high",
      "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    }
+   }
+  },
+  {
+   "id": 90,
+   "name": "PitchBook",
+   "slug": "pitchbook",
+   "category": "Finance and Fintech",
+   "in_composio": false,
+   "score": {
+    "total": 4,
+    "parts": {
+     "credential": 0,
+     "docs": 1,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Access private and public market data, company profiles, and financial deals via API.",
+     "confidence": "high",
+     "source_url": "https://pitchbook.com/products/direct-access-data/api"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "access_path": {
+     "value": "partner_or_sales_gated",
+     "confidence": "high",
+     "source_url": "https://pitchbook.com/help/PitchBook-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": null
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://pitchbook.com/products/direct-access-data/api"
+    },
+    "docs_quality": {
+     "value": "partial_or_thin",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+    },
+    "main_blocker": {
+     "value": "API access requires a standalone contract agreement and direct coordination with PitchBook sales.",
+     "confidence": "high",
+     "source_url": "https://pitchbook.com/help/PitchBook-api"
+    },
+    "docs_url": {
+     "value": "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+     "confidence": "high",
+     "source_url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
     }
    }
   },
@@ -7059,6 +8647,593 @@
      "value": "https://developers.fathom.ai/",
      "confidence": "high",
      "source_url": "https://developers.fathom.ai/"
+    }
+   }
+  },
+  {
+   "id": 94,
+   "name": "Consensus",
+   "slug": "consensus",
+   "category": "AI, Research and Media-native",
+   "in_composio": true,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 1,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An API providing programmatic search and retrieval for over 220 million peer-reviewed academic papers.",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/api-get-started"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/api-get-started"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/api-get-started"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    },
+    "docs_url": {
+     "value": "https://docs.consensus.app/core-features/api",
+     "confidence": "high",
+     "source_url": "https://docs.consensus.app/core-features/api"
+    }
+   }
+  },
+  {
+   "id": 95,
+   "name": "Reducto",
+   "slug": "reducto",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An agentic platform to parse, extract, classify, and edit documents via API.",
+     "confidence": "high",
+     "source_url": "https://reducto.ai/developers"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://github.com/reductoai/reducto-python-sdk"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://reducto.ai/developers"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "med",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    },
+    "docs_url": {
+     "value": "https://docs.reducto.ai/quickstart",
+     "confidence": "high",
+     "source_url": "https://docs.reducto.ai/quickstart"
+    }
+   }
+  },
+  {
+   "id": 96,
+   "name": "Devin",
+   "slug": "devin",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 0
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An AI software engineer platform with a REST API for automation and integrations.",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://devin.ai/enterprise"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "med",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "med",
+     "source_url": "https://devin.ai/enterprise"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    },
+    "docs_url": {
+     "value": "https://docs.devin.ai/api-reference/overview",
+     "confidence": "high",
+     "source_url": "https://docs.devin.ai/api-reference/overview"
+    }
+   }
+  },
+  {
+   "id": 97,
+   "name": "higgsfield",
+   "slug": "higgsfield",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 1,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Asynchronous API providing pay-as-you-go access to 50+ AI video and image models.",
+     "confidence": "high",
+     "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://higgsfield.ai/blog/higgsfield-api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs"
+    },
+    "docs_url": {
+     "value": "https://docs.higgsfield.ai/docs",
+     "confidence": "high",
+     "source_url": "https://docs.higgsfield.ai/docs"
+    }
+   }
+  },
+  {
+   "id": 98,
+   "name": "Mermaid CLI",
+   "slug": "mermaid_cli",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 4,
+    "parts": {
+     "credential": 3,
+     "docs": 1,
+     "breadth": 0,
+     "test": 0
+    },
+    "tier": "local_toolkit"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Command-line tool to render Mermaid diagrams into SVG, PNG, or PDF files.",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "auth_methods": {
+     "value": [
+      "none"
+     ],
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "access_path": {
+     "value": "not_applicable_local",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "api_type": {
+     "value": "cli_only",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "api_breadth": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "base_url_model": {
+     "value": "not_applicable",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "toolkit_bucket": {
+     "value": "local_or_sandbox_toolkit",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "docs_quality": {
+     "value": "partial_or_thin",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "main_blocker": {
+     "value": "The app is a local command-line interface tool rather than a hosted web API.",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    },
+    "docs_url": {
+     "value": "https://github.com/mermaid-js/mermaid-cli",
+     "confidence": "high",
+     "source_url": "https://github.com/mermaid-js/mermaid-cli"
+    }
+   }
+  },
+  {
+   "id": 99,
+   "name": "YouTube Transcript",
+   "slug": "youtube_transcript",
+   "category": "AI, Research and Media-native",
+   "in_composio": true,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 1,
+     "test": 2
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "API and MCP server for extracting YouTube transcripts and metadata for AI agents.",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/getting-started/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "med",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/getting-started/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "med",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/getting-started/"
+    },
+    "docs_url": {
+     "value": "https://transcriptapi.com/docs/api/",
+     "confidence": "high",
+     "source_url": "https://transcriptapi.com/docs/api/"
+    }
+   }
+  },
+  {
+   "id": 100,
+   "name": "Grain",
+   "slug": "grain",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "AI-powered meeting recorder and transcription platform with developer API and MCP server.",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://support.grain.com/en/articles/15507288-grain-api"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://support.grain.com/en/articles/15507288-grain-api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
+    },
+    "docs_url": {
+     "value": "https://developers.grain.com/",
+     "confidence": "high",
+     "source_url": "https://developers.grain.com/"
     }
    }
   }

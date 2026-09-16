@@ -101,7 +101,7 @@ def backend(model: str) -> str:
 
 EXHAUSTED_MODELS: set[str] = set()  # models whose free daily quota ran out during this run
 
-async def ask(prompt_text: str, model: str, web_search: bool, max_uses: int = 6, retries: int = 4) -> tuple[str, dict]:
+async def ask(prompt_text: str, model: str, web_search: bool, max_uses: int = 6, retries: int = int(os.getenv("ASK_RETRIES", "4"))) -> tuple[str, dict]:
     """Call the model. Returns (final text, raw transcript dict with `search_urls` = URLs search really returned).
     `model` may be a comma-separated pool (e.g. two Gemini Flash-Lite models with separate daily quotas):
     when one hits its daily cap the whole call restarts on the next, so a transcript never mixes models."""

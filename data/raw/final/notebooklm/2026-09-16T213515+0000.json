@@ -1,0 +1,96 @@
+{
+ "id": 91,
+ "slug": "notebooklm",
+ "name": "NotebookLM",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Programmatic management of NotebookLM enterprise notebooks, data sources, and organizational content.",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": null
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "main_blocker": {
+   "value": "Requires a Google Cloud project with Gemini Notebook Enterprise licenses enabled.",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "docs_url": {
+   "value": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "confidence": "high",
+   "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://autocontentapi.com/blog/does-notebooklm-have-an-api",
+  "https://deepwiki.com/jacob-bd/notebooklm-mcp/7-notebooklm-api-reference",
+  "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084",
+  "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+  "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+  "https://github.com/gnh1201/notebooklm-rest-api",
+  "https://github.com/teng-lin/notebooklm-py",
+  "https://github.com/topics/notebooklm-api",
+  "https://javatechonline.com/how-to-use-notebooklm-as-a-developer/",
+  "https://roomi-fields.github.io/notebooklm-mcp/notebooklm-rest-api",
+  "https://www.communeify.com/en/blog/notebooklm-enterprise-api-programmatic-notes-workflow/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}

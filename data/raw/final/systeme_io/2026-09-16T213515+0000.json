@@ -1,0 +1,100 @@
+{
+ "id": 37,
+ "slug": "systeme_io",
+ "name": "systeme.io",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "All-in-one marketing platform for sales funnels, email marketing, website building, and automation.",
+   "confidence": "high",
+   "source_url": "https://systeme.io/en"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "base_url_model": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://systeme.io/en/login"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "docs_url": {
+   "value": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "confidence": "high",
+   "source_url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner"
+ ],
+ "search_urls": [
+  "https://docs.maton.ai/systeme",
+  "https://github.com/systemeio",
+  "https://grokipedia.com/page/Systemeio_API",
+  "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+  "https://help.systeme.io/article/2930-how-to-use-systeme-ios-webhook-service",
+  "https://join.systeme.io/home",
+  "https://roadmap.systeme.io/c/66-create-our-own-api",
+  "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-csharp",
+  "https://systeme.io/",
+  "https://systeme.io/en/login",
+  "https://systeme.io/help",
+  "https://unlimited.systeme.io/login-to-your-account",
+  "https://www.the-systemeio.com/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

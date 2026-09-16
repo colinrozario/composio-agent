@@ -1,0 +1,105 @@
+{
+ "id": 84,
+ "slug": "paygent_connect",
+ "name": "Paygent Connect",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Payment infrastructure allowing AI agents to create, fund, and manage virtual cards via MCP/API.",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "med",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "docs_quality": {
+   "value": "partial_or_thin",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  },
+  "docs_url": {
+   "value": "https://api.paygent.tech/docs",
+   "confidence": "high",
+   "source_url": "https://api.paygent.tech/docs"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.paygent.tech/",
+  "https://api.paygent.tech/docs",
+  "https://docs.paygent.to/reference/api-reference/",
+  "https://docs.paygent.to/reference/sdk-reference/",
+  "https://docs.withpaygent.com/",
+  "https://docs.withpaygent.com/api-reference/customers-api",
+  "https://docs.withpaygent.com/cli/get-started/quickstart",
+  "https://docs.withpaygent.com/documentation/guides/best-practices",
+  "https://docs.withpaygent.com/documentation/introduction/how-it-works",
+  "https://docs.withpaygent.com/documentation/introduction/key-features",
+  "https://docs.withpaygent.com/documentation/introduction/plans",
+  "https://docs.withpaygent.com/documentation/introduction/what-is-paygent",
+  "https://docs.withpaygent.com/documentation/introduction/who-should-use-paygent",
+  "https://gopaygent.com/",
+  "https://gopaygent.com/developers/sdk",
+  "https://paygent.tech/",
+  "https://paygent.tech/about",
+  "https://paygent.tech/contact",
+  "https://paygent.tech/paygent-token",
+  "https://paygent.tech/roadmap"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "second_model_disagreement:auth_methods,api_type,official_mcp,test_account"
+ ]
+}

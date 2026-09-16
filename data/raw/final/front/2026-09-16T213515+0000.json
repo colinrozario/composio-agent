@@ -1,0 +1,109 @@
+{
+ "id": 14,
+ "slug": "front",
+ "name": "Front",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Support and helpdesk platform featuring a robust Core REST API and MCP server.",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  },
+  "docs_url": {
+   "value": "https://dev.frontapp.com/docs/welcome",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+  "https://community.front.com/groups/beta-mcp-server-83",
+  "https://community.front.com/p/developers",
+  "https://dev.frontapp.com/docs/authentication",
+  "https://dev.frontapp.com/docs/core-api-overview",
+  "https://dev.frontapp.com/docs/mcp-server",
+  "https://dev.frontapp.com/docs/welcome",
+  "https://developer.frontify.com/",
+  "https://developer.frontsystems.com/",
+  "https://developer.workfront.com/",
+  "https://docs.agentfront.dev/frontmcp/getting-started/quickstart",
+  "https://front.com/pricing",
+  "https://frontegg.com/pricing",
+  "https://github.com/iktakahiro/frontapp-mcp-server",
+  "https://github.com/zqushair/Frontapp-MCP",
+  "https://help.front.com/en/articles/2178",
+  "https://help.front.com/en/articles/2309",
+  "https://help.front.com/en/articles/4883136",
+  "https://help.front.com/en/categories/326",
+  "https://manufact.com/mcp-catalog/front",
+  "https://www.buildmvpfast.com/api-costs/authentication",
+  "https://www.saaspricepulse.com/tools/front",
+  "https://zuplo.com/learning-center/api-authentication-pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}

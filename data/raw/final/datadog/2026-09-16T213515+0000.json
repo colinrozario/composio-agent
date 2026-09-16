@@ -1,0 +1,108 @@
+{
+ "id": 69,
+ "slug": "datadog",
+ "name": "Datadog",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:35:15+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-scale monitoring and security platform providing metrics, logs, traces, and dashboards via API.",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "bearer_token",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/authentication/"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://www.datadoghq.com/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/mcp_server/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/authentication/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  },
+  "docs_url": {
+   "value": "https://docs.datadoghq.com/api/latest/",
+   "confidence": "high",
+   "source_url": "https://docs.datadoghq.com/api/latest/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/datadog",
+  "https://datadoghq.dev/apps/",
+  "https://deepwiki.com/DataDog/documentation",
+  "https://docs.datadoghq.com/account_management/api-app-keys/",
+  "https://docs.datadoghq.com/api/latest/",
+  "https://docs.datadoghq.com/api/latest/authentication.md",
+  "https://docs.datadoghq.com/api/latest/authentication/",
+  "https://docs.datadoghq.com/api/latest/llm-observability/",
+  "https://docs.datadoghq.com/api/latest/llm-observability/create-an-llm-observability-experiment/",
+  "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints/?tab=authorizationendpoints",
+  "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md",
+  "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+  "https://docs.datadoghq.com/extend/integrations/api_integration/",
+  "https://docs.datadoghq.com/llm_observability/",
+  "https://docs.datadoghq.com/llm_observability/build_with_ai/",
+  "https://docs.datadoghq.com/llm_observability/build_with_ai/claude_code_skills/",
+  "https://docs.datadoghq.com/llm_observability/build_with_ai/mcp_server/?tab=remoteauthentication",
+  "https://docs.datadoghq.com/llm_observability/investigate/metrics/",
+  "https://docs.datadoghq.com/mcp_server/",
+  "https://docs.datadoghq.com/synthetics/guide/authentication-protocols/?tab=basicaccess",
+  "https://github.com/DataDog/pup",
+  "https://www.datadoghq.com/blog/datadog-api-authentication/",
+  "https://www.postman.com/datadog/datadog-s-public-workspace/overview"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

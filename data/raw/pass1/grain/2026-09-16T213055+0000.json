@@ -1,0 +1,111 @@
+{
+ "id": 100,
+ "slug": "grain",
+ "name": "Grain",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:30:55+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "AI-powered meeting recorder and transcription platform with developer API and MCP server.",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://support.grain.com/en/articles/15507288-grain-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://support.grain.com/en/articles/15507288-grain-api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  },
+  "docs_url": {
+   "value": "https://developers.grain.com/",
+   "confidence": "high",
+   "source_url": "https://developers.grain.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/grain-co",
+  "https://azure.microsoft.com/en-us/pricing/details/githubenterprise/",
+  "https://context7.com/websites/developers_grain/llms.txt",
+  "https://developers.grain.com/",
+  "https://developers.grain.com/mcp",
+  "https://docs.cloud.google.com/channel/docs/concepts/workspace/products-skus",
+  "https://docs.grainfinance.co/api-reference/introduction",
+  "https://docs.grainfinance.co/webhooks",
+  "https://docs.grainledger.com/intro",
+  "https://docs.grainledger.com/organizations",
+  "https://docs.grainledger.com/quickstart",
+  "https://github.com/BrainGridAI/grain-cli",
+  "https://github.com/enterprise/trial",
+  "https://github.com/organizations/enterprise_plan",
+  "https://grafana.com/docs/grafana/latest/introduction/grafana-enterprise/",
+  "https://grafana.com/pricing/",
+  "https://grain.com/integrations",
+  "https://grainvm.com/docs/main/",
+  "https://improvado.io/docs/grain",
+  "https://knowledge.workspace.google.com/admin/getting-started/editions/compare-enterprise-editions",
+  "https://mindcloud.co/docs/universal/rest/grain/latest/introduction/authentication",
+  "https://n8n.io/integrations/webhook/and/grain/",
+  "https://nango.mintlify.dev/docs/integrations/all/grain-api-key",
+  "https://semarize.com/resources/get-your-data/grain",
+  "https://support.grain.com/en/articles/15297887-export-meetings",
+  "https://support.grain.com/en/articles/15507288-grain-api",
+  "https://workspace.google.com/enterprise/",
+  "https://www.generalinput.com/apps/grain",
+  "https://www.workload.co/api/grain/integrations/webhook/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 6,
+  "read_pages": 1
+ }
+}

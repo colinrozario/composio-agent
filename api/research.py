@@ -3,6 +3,7 @@ Same prompt, schema and validation as the batch agent, but on the Gemini free ti
 a serverless function can't run the Claude Code CLI that the batch run used. In-memory cache + crude per-IP rate limit
 (best effort on serverless; put Upstash/KV behind it if you need it to be strict)."""
 import asyncio, json, os, re, sys, time
+os.environ.setdefault("ASK_RETRIES", "2")  # fail fast: a serverless request can't sit through long backoffs
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/"src"))
@@ -31,10 +32,16 @@ class handler(BaseHTTPRequestHandler):
             pass1_research.OUT = common.RAW/"pass1"
             app = {"id": 0, "slug": re.sub(r"[^a-z0-9]+", "_", key).strip("_"), "name": name,
                    "category": "unknown (live request)", "hint": "none given"}
-            model = os.getenv("LIVE_MODEL", "gemini-2.5-flash")
+            # A pool: when one free-tier model is out of daily quota the call moves to the next one.
+            model = os.getenv("LIVE_MODEL") or "gemini-3.1-flash-lite,gemini-3.5-flash-lite"
             rec = asyncio.run(pass1_research.research_one(app, model=model))
             out = {k: rec.get(k) for k in ("name", "model", "backend", "researched_at", "fields", "schema_problems", "uncited_sources")}
             CACHE[key] = out
             self._send(200, out)
-        except Exception as e:
-            self._send(500, {"error": type(e).__name__, "detail": str(e)[:200]})
+        except BaseException as e:  # SystemExit is raised for missing API keys; it must still produce a response
+            name, msg = type(e).__name__, str(e)
+            if "Set GEMINI_API_KEY" in msg or "Set COMPOSIO_API_KEY" in msg:
+                return self._send(503, {"error": "not_configured", "detail": msg[:200]})
+            if name in ("QuotaExhausted", "RateLimited") or "429" in msg:
+                return self._send(503, {"error": "model_busy", "detail": "The free model quota is used up or busy. Try again later."})
+            self._send(500, {"error": name, "detail": msg[:200]})

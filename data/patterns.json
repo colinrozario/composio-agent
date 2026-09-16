@@ -1,22 +1,22 @@
 {
  "totals": {
-  "apps": 76,
-  "in_composio": 47,
-  "not_in_composio": 29,
-  "buildable_now_not_in_composio": 13
+  "apps": 100,
+  "in_composio": 60,
+  "not_in_composio": 40,
+  "buildable_now_not_in_composio": 20
  },
  "auth": [
   [
    "oauth2",
-   47
+   61
   ],
   [
    "bearer_token",
-   34
+   50
   ],
   [
    "api_key",
-   31
+   42
   ],
   [
    "basic",
@@ -24,10 +24,14 @@
   ],
   [
    "jwt",
-   3
+   4
   ],
   [
    "hmac_signature",
+   3
+  ],
+  [
+   "none",
    2
   ],
   [
@@ -37,26 +41,22 @@
   [
    "token",
    1
-  ],
-  [
-   "none",
-   1
   ]
  ],
  "tiers": {
-  "build_now": 54,
-  "build_with_friction": 20,
-  "local_toolkit": 1,
+  "build_now": 72,
+  "build_with_friction": 25,
+  "local_toolkit": 2,
   "needs_outreach": 1
  },
  "access_path": [
   [
    "self_serve_free",
-   41
+   58
   ],
   [
    "paid_plan_required",
-   19
+   23
   ],
   [
    "app_review_required",
@@ -64,20 +64,20 @@
   ],
   [
    "self_serve_trial",
-   3
+   4
   ],
   [
    "partner_or_sales_gated",
-   3
+   4
   ],
   [
    "not_applicable_local",
-   1
+   2
   ]
  ],
  "tier_by_category": {
   "CRM and Sales": {
-   "build_now": 6,
+   "build_now": 7,
    "build_with_friction": 3
   },
   "Support and Helpdesk": {
@@ -93,7 +93,7 @@
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_now": 6,
+   "build_now": 7,
    "build_with_friction": 3
   },
   "Data, SEO and Scraping": {
@@ -102,19 +102,22 @@
    "local_toolkit": 1
   },
   "Developer, Infra and Data platforms": {
-   "build_now": 5
+   "build_now": 9,
+   "build_with_friction": 1
   },
   "Productivity and Project Management": {
-   "build_now": 6,
+   "build_now": 9,
    "build_with_friction": 1
   },
   "Finance and Fintech": {
-   "build_now": 3
+   "build_now": 9,
+   "build_with_friction": 1
   },
   "AI, Research and Media-native": {
-   "build_with_friction": 1,
+   "build_with_friction": 4,
    "needs_outreach": 1,
-   "build_now": 1
+   "build_now": 4,
+   "local_toolkit": 1
   }
  },
  "patterns": [
@@ -137,7 +140,7 @@
   },
   {
    "key": "paid_to_use",
-   "count": 19,
+   "count": 23,
    "apps": [
     "Ahrefs",
     "Aircall",
@@ -147,16 +150,20 @@
     "Close",
     "Copper",
     "DataForSEO",
+    "Datadog",
     "DealCloud",
+    "Devin",
     "Freshdesk",
     "Gladly",
     "GoHighLevel",
+    "Grain",
     "Intercom",
     "LiveAgent",
     "NotebookLM",
     "Pylon",
     "SE Ranking",
     "Smartsheet",
+    "YouTube Transcript",
     "fanbasis"
    ],
    "headline": "Free to read, paid to call",
@@ -164,8 +171,9 @@
   },
   {
    "key": "per_tenant_host",
-   "count": 17,
+   "count": 20,
    "apps": [
+    "BigCommerce",
     "DealCloud",
     "Ecwid",
     "Freshdesk",
@@ -177,9 +185,11 @@
     "Neo4j",
     "Pipedrive",
     "Pylon",
+    "QuickBooks",
     "Salesforce",
     "Salesforce Commerce Cloud",
     "Shopify",
+    "Snowflake",
     "Twenty",
     "WooCommerce",
     "Zendesk"
@@ -189,9 +199,10 @@
   },
   {
    "key": "graphql_only",
-   "count": 2,
+   "count": 3,
    "apps": [
     "Linear",
+    "Monday.com",
     "Plain"
    ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
@@ -199,24 +210,30 @@
   },
   {
    "key": "official_mcp",
-   "count": 40,
+   "count": 57,
    "apps": [
     "Ahrefs",
     "Aircall",
     "Apify",
     "Asana",
+    "BigCommerce",
+    "Brex",
     "Bright Data",
     "Clay",
     "ClickUp",
     "Close",
     "Cloudflare",
+    "Consensus",
     "DataForSEO",
+    "Datadog",
+    "Devin",
     "Firecrawl",
     "Freshdesk",
     "Front",
     "GitHub",
     "GoHighLevel",
     "Gorgias",
+    "Grain",
     "HubSpot",
     "Intercom",
     "Jira",
@@ -225,30 +242,42 @@
     "Linear",
     "Magento (Adobe Commerce)",
     "Meta Ads",
+    "Monday.com",
     "MongoDB Atlas",
     "MrScraper",
     "Neo4j",
+    "Netlify",
     "Notion",
     "Paygent Connect",
+    "Plaid",
     "Ramp",
+    "Reducto",
     "Salesforce",
+    "Sentry",
     "Shopify",
     "Slack",
     "Smartsheet",
+    "Snowflake",
+    "Stripe",
+    "Supabase",
     "Twenty",
     "Twilio",
     "Vercel",
     "Vonage",
     "WooCommerce",
-    "Xero"
+    "Xero",
+    "YouTube Transcript",
+    "Zoho CRM",
+    "iPayX"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
   },
   {
    "key": "local_toolkit",
-   "count": 1,
+   "count": 2,
    "apps": [
+    "Mermaid CLI",
     "Sherlock"
    ],
    "headline": "Not APIs at all: local toolkits",
@@ -256,9 +285,10 @@
   },
   {
    "key": "dark",
-   "count": 3,
+   "count": 4,
    "apps": [
     "Otter AI",
+    "PitchBook",
     "Salesforce Commerce Cloud",
     "Waterfall.io"
    ],
@@ -297,6 +327,11 @@
     "name": "Podio",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Zoho CRM",
+    "score": 9,
+    "in_composio": true
    },
    {
     "name": "Front",
@@ -399,7 +434,17 @@
     "in_composio": true
    },
    {
+    "name": "Netlify",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Cloudflare",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Supabase",
     "score": 9,
     "in_composio": true
    },
@@ -412,6 +457,11 @@
     "name": "MongoDB Atlas",
     "score": 9,
     "in_composio": false
+   },
+   {
+    "name": "Sentry",
+    "score": 9,
+    "in_composio": true
    },
    {
     "name": "Notion",
@@ -439,7 +489,42 @@
     "in_composio": true
    },
    {
+    "name": "Monday.com",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "ClickUp",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Coda",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Harvest",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Stripe",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Plaid",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Binance",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "QuickBooks",
     "score": 9,
     "in_composio": true
    },
@@ -454,6 +539,11 @@
     "in_composio": true
    },
    {
+    "name": "Reducto",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Gorgias",
     "score": 8,
     "in_composio": true
@@ -464,7 +554,17 @@
     "in_composio": true
    },
    {
+    "name": "BigCommerce",
+    "score": 8,
+    "in_composio": false
+   },
+   {
     "name": "Ecwid",
+    "score": 8,
+    "in_composio": false
+   },
+   {
+    "name": "iPayX",
     "score": 8,
     "in_composio": false
    },
@@ -472,6 +572,16 @@
     "name": "Fathom",
     "score": 8,
     "in_composio": true
+   },
+   {
+    "name": "Consensus",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "higgsfield",
+    "score": 8,
+    "in_composio": false
    },
    {
     "name": "Zendesk",
@@ -534,9 +644,19 @@
     "in_composio": true
    },
    {
+    "name": "Snowflake",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "Paygent Connect",
     "score": 7,
     "in_composio": false
+   },
+   {
+    "name": "Brex",
+    "score": 7,
+    "in_composio": true
    }
   ],
   "build_with_friction": [
@@ -596,7 +716,22 @@
     "in_composio": false
    },
    {
+    "name": "Datadog",
+    "score": 6,
+    "in_composio": true
+   },
+   {
     "name": "Smartsheet",
+    "score": 6,
+    "in_composio": false
+   },
+   {
+    "name": "YouTube Transcript",
+    "score": 6,
+    "in_composio": true
+   },
+   {
+    "name": "Grain",
     "score": 6,
     "in_composio": false
    },
@@ -631,7 +766,17 @@
     "in_composio": false
    },
    {
+    "name": "Devin",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "fanbasis",
+    "score": 4,
+    "in_composio": false
+   },
+   {
+    "name": "PitchBook",
     "score": 4,
     "in_composio": false
    },
@@ -652,6 +797,11 @@
    {
     "name": "Sherlock",
     "score": 5,
+    "in_composio": false
+   },
+   {
+    "name": "Mermaid CLI",
+    "score": 4,
     "in_composio": false
    }
   ]
