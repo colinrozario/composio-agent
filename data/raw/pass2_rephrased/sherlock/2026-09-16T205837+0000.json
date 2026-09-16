@@ -1,0 +1,65 @@
+{
+ "id": 58,
+ "slug": "sherlock",
+ "name": "Sherlock",
+ "pass": "pass2_rephrased",
+ "model": "sonnet",
+ "backend": "claude_cli",
+ "researched_at": "2026-09-16T20:58:37+00:00",
+ "fields": {
+  "auth_methods": {
+   "value": [
+    "none"
+   ],
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "access_path": {
+   "value": "no_public_api",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/api"
+  },
+  "api_type": {
+   "value": "cli_only",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project"
+  },
+  "base_url_model": {
+   "value": "not_applicable",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  }
+ },
+ "search_urls": [
+  "https://apify.com/crawlerbros/sherlock-scraper/api/mcp",
+  "https://apify.com/datacach/userrecon/api/mcp",
+  "https://apify.com/futurizerush/sherlock/api/mcp",
+  "https://en.wikipedia.org/wiki/Sherlock_(software)",
+  "https://github.com/Burnsedia/sherlock-mcp",
+  "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+  "https://github.com/jcucci/dotnet-sherlock-mcp",
+  "https://github.com/orgs/sherlock-project/repositories",
+  "https://github.com/p27ZuH6CNAdzr/dotnet-sherlock-mcp",
+  "https://github.com/polyfractal/sherlock",
+  "https://github.com/sherlock-project",
+  "https://github.com/sherlock-project/api",
+  "https://github.com/sherlock-project/api/blob/master/README.md",
+  "https://github.com/sherlock-project/api/packages",
+  "https://github.com/sherlock-project/api/projects",
+  "https://github.com/topics/sherlock-project",
+  "https://glama.ai/mcp/servers/@Burnsedia/sherlock-mcp",
+  "https://mcp.so/server/sherlock-mcp",
+  "https://www.nuget.org/packages/Sherlock.MCP.Server",
+  "https://www.nuget.org/packages/Sherlock.MCP.Server.linux-x64"
+ ]
+}
