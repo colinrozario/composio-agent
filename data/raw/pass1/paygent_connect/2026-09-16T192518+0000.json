@@ -1,0 +1,106 @@
+{
+ "id": 84,
+ "slug": "paygent_connect",
+ "name": "Paygent Connect",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T19:25:18+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Modern billing and subscription API platform for usage-based monetization.",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/getting-started/quickstart/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/getting-started/quickstart/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/getting-started/quickstart/"
+  },
+  "docs_url": {
+   "value": "https://docs.paygent.to/reference/api-reference/",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://docs.paygent.to/",
+  "https://docs.paygent.to/getting-started/assign-users-to-plans/",
+  "https://docs.paygent.to/getting-started/configure-first-plan/",
+  "https://docs.paygent.to/getting-started/quickstart/",
+  "https://docs.paygent.to/getting-started/verify-its-working/",
+  "https://docs.paygent.to/integration/webhooks/",
+  "https://docs.paygent.to/reference/api-reference/",
+  "https://docs.paygent.to/reference/sdk-reference-js/",
+  "https://docs.paygent.to/reference/sdk-reference/",
+  "https://docs.paygent.to/reference/troubleshooting/",
+  "https://documentation.ixopay.com/adapters/paygent-pci",
+  "https://github.com/jinzhu/paygent/blob/master/lib/paygent/service.rb",
+  "https://github.com/qor/gomerchant/blob/master/gateways/paygent/url.go",
+  "https://www.paygent.co.jp/column/netshop_opening/emv3ds",
+  "https://www.paygent.co.jp/payment_service/",
+  "https://www.paygent.co.jp/payment_service/connect/",
+  "https://www.paygent.co.jp/payment_service/connect/linktype_asp/",
+  "https://www.paygent.co.jp/payment_service/way_to_pay/id=89",
+  "https://www.paygent.co.jp/payment_service/way_to_pay/id=90",
+  "https://www.paygent.co.jp/recruit/recruit_interview/interview2vol.21",
+  "https://www.paygent.co.jp/service/credit_card/",
+  "https://www.paygent.co.jp/service/internet_banking/",
+  "https://www.paygent.co.jp/service/option/id=693",
+  "https://www.paygent.co.jp/service/package_cart/drupal/",
+  "https://www.welcart.com/docs/settlement/Paygent.pdf"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ }
+}

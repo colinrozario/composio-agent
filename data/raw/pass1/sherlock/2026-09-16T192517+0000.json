@@ -1,0 +1,96 @@
+{
+ "id": 58,
+ "slug": "sherlock",
+ "name": "Sherlock",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T19:25:17+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Hunt down social media accounts by username across social networks.",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "auth_methods": {
+   "value": [
+    "none"
+   ],
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "access_path": {
+   "value": "not_applicable_local",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_type": {
+   "value": "cli_only",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_breadth": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "base_url_model": {
+   "value": "not_applicable",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "toolkit_bucket": {
+   "value": "local_or_sandbox_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_url": {
+   "value": "https://github.com/sherlock-project/sherlock",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apify.com/scraper-engine/sherlock/api",
+  "https://developer.semrush.com/api/v4/seo/overview/",
+  "https://docs.apiverve.com/ref/seoscraper",
+  "https://docs.apiverve.com/ref/seoscraper/ai.md",
+  "https://docs.scraperapi.com/structured-data-endpoints/search-and-insights/google/google-serp-api",
+  "https://github.com/sherlock-project",
+  "https://github.com/sherlock-project/sherlock",
+  "https://github.com/sherlock-project/sherlock-project.github.io",
+  "https://github.com/sherlock-project/sherlock/blob/master/sherlock_project/sherlock.py",
+  "https://github.com/sherlock-project/sherlock/releases",
+  "https://github.com/sherlock-project/sherlock/releases/tag/v0.15.0",
+  "https://github.laiyagushi.com/hiibolt/sherlock-api",
+  "https://mcp.apify.com/?tools=misceres/sherlock",
+  "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+  "https://sherlockproject.xyz/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ }
+}

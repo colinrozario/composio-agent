@@ -1,0 +1,106 @@
+{
+ "id": 1,
+ "slug": "salesforce",
+ "name": "Salesforce",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T19:24:30+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based customer relationship management (CRM) platform providing enterprise sales, service, and marketing tools.",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/signup?d=70130000000EjH"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/signup?d=70130000000EjH"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/signup?d=70130000000EjH"
+  },
+  "docs_url": {
+   "value": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+   "confidence": "high",
+   "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://c1.sfdcstatic.com/content/dam/web/en_us/www/documents/legal/salesforce_Developer_MSA.pdf",
+  "https://developer.salesforce.com/",
+  "https://developer.salesforce.com/blogs/2025/03/introducing-the-new-salesforce-developer-edition-now-with-agentforce-and-data-cloud",
+  "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+  "https://developer.salesforce.com/blogs/2026/04/new-developer-edition-agentforce-vibes-claude-mcp",
+  "https://developer.salesforce.com/docs/atlas.en-us.api%5Frest.meta/api%5Frest/intro%5Funderstanding%5Fauthentication.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_oauth_and_connected_apps.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_sobject_relationships_delete.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.salesforce_scheduler_developer_guide.meta/salesforce_scheduler_developer_guide/uc8_scheduler_api_auth.htm",
+  "https://developer.salesforce.com/docs/atlas.en-us.workbook_isv.meta/workbook_isv/isv1_1.htm",
+  "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/custom-servers.html",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+  "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+  "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html",
+  "https://developer.salesforce.com/free-trials",
+  "https://developer.salesforce.com/signup?d=70130000000EjH",
+  "https://github.com/salesforcecli/mcp?tab=readme-ov-file",
+  "https://trailhead.salesforce.com/content/learn/modules/einstein-for-developers/supercharge-your-development-with-mcp-integration",
+  "https://trailhead.salesforce.com/content/learn/modules/headless-tools-and-functionality/explore-headless-tools-and-functionality",
+  "https://trailhead.salesforce.com/content/learn/modules/salesforce_heroku_integration/rest_apis_with_heroku",
+  "https://www.salesforce.com/agentforce/mcp-support/model-context-protocol/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 0
+ }
+}

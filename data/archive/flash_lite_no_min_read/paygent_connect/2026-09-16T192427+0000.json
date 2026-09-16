@@ -1,0 +1,89 @@
+{
+ "id": 84,
+ "slug": "paygent_connect",
+ "name": "Paygent Connect",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T19:24:27+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Usage-based billing and spending limits for AI agents and LLM applications.",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/getting-started/quickstart/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://docs.paygent.to/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/getting-started/quickstart/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  },
+  "docs_url": {
+   "value": "https://docs.paygent.to/reference/api-reference/",
+   "confidence": "high",
+   "source_url": "https://docs.paygent.to/reference/api-reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://docs.paygent.to/",
+  "https://docs.paygent.to/getting-started/assign-users-to-plans/",
+  "https://docs.paygent.to/getting-started/quickstart/",
+  "https://docs.paygent.to/integration/webhooks/",
+  "https://docs.paygent.to/reference/api-reference/",
+  "https://docs.paygent.to/reference/sdk-reference-js/",
+  "https://docs.paygent.to/reference/sdk-reference/",
+  "https://documentation.ixopay.com/adapters/paygent-pci"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ }
+}

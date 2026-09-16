@@ -18,8 +18,8 @@ FIELDS = SCHEMA["properties"]["fields"]["required"]
 GRADED_FIELDS = ["auth_methods", "access_path", "api_type", "api_breadth", "official_mcp",
                  "base_url_model", "toolkit_bucket", "docs_quality", "test_account"]
 
-MODEL_PRIMARY = os.getenv("MODEL_PRIMARY", "sonnet")               # Claude Code CLI alias -> subscription
-MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "gemini-2.5-flash")  # Gemini free tier
+MODEL_PRIMARY = os.getenv("MODEL_PRIMARY", "gemini-3.5-flash-lite,gemini-3.1-flash-lite")  # brain: Gemini free tier; hands: Composio
+MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "sonnet")  # second opinion: Claude Code CLI on a subscription
 CONCURRENCY = int(os.getenv("CONCURRENCY", "3"))
 
 def now() -> str: return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -89,33 +89,47 @@ def norm(field: str, value):
 
 # ---------- LLM ----------
 # Three interchangeable backends, picked from the model name:
-#   gemini-*                          Gemini API (free tier) with Google Search grounding
+#   gemini-*                          Gemini brain + Composio SDK hands (agent.py), both free tier
 #   claude-* AND ANTHROPIC_API_KEY    Anthropic API with the server-side web_search tool (paid credits)
 #   anything else (sonnet, opus)      Claude Code CLI in headless mode (`claude -p`), runs on a Claude subscription
-class RateLimited(Exception): pass
+from agent import RateLimited, QuotaExhausted  # noqa: E402  (agent.py has no import-time side effects)
 
 def backend(model: str) -> str:
     if model.startswith("gemini"): return "gemini"
     if model.startswith("claude-") and os.getenv("ANTHROPIC_API_KEY"): return "anthropic_api"
     return "claude_cli"
 
+EXHAUSTED_MODELS: set[str] = set()  # models whose free daily quota ran out during this run
+
 async def ask(prompt_text: str, model: str, web_search: bool, max_uses: int = 6, retries: int = 4) -> tuple[str, dict]:
-    """Call the model. Returns (final text, raw transcript dict with `search_urls` = URLs search really returned)."""
-    b = backend(model)
-    fn = {"gemini": _ask_gemini, "anthropic_api": _ask_anthropic_api, "claude_cli": _ask_claude_cli}[b]
-    for attempt in range(retries):
+    """Call the model. Returns (final text, raw transcript dict with `search_urls` = URLs search really returned).
+    `model` may be a comma-separated pool (e.g. two Gemini Flash-Lite models with separate daily quotas):
+    when one hits its daily cap the whole call restarts on the next, so a transcript never mixes models."""
+    pool = [m.strip() for m in model.split(",") if m.strip()]
+    for m in pool:
+        if m in EXHAUSTED_MODELS: continue
+        b = backend(m)
+        fn = {"gemini": _ask_gemini, "anthropic_api": _ask_anthropic_api, "claude_cli": _ask_claude_cli}[b]
         try:
-            text, raw = await fn(prompt_text, model, web_search, max_uses)
-            raw.update(backend=b, model=model)
-            return text, raw
-        except RateLimited as e:  # free tiers and subscriptions: back off hard
-            if attempt == retries - 1: raise
-            wait = 60 * (attempt + 1)
-            print(f"[{b}] rate limited ({e}); sleeping {wait}s")
-            await asyncio.sleep(wait)
-        except Exception:
-            if attempt == retries - 1: raise
-            await asyncio.sleep(2 ** attempt * 5)
+            for attempt in range(retries):
+                try:
+                    text, raw = await fn(prompt_text, m, web_search, max_uses)
+                    raw.update(backend=b, model=m)
+                    return text, raw
+                except (QuotaExhausted, SystemExit):
+                    raise
+                except RateLimited as e:  # per-minute limits and overload: back off hard
+                    if attempt == retries - 1: raise
+                    wait = 30 * (attempt + 1)
+                    print(f"[{m}] busy ({str(e)[:60]}); retry in {wait}s", flush=True)
+                    await asyncio.sleep(wait)
+                except Exception:
+                    if attempt == retries - 1: raise
+                    await asyncio.sleep(2 ** attempt * 5)
+        except QuotaExhausted:
+            if m not in EXHAUSTED_MODELS: print(f"[{m}] daily free quota used up; switching model", flush=True)
+            EXHAUSTED_MODELS.add(m)
+    raise QuotaExhausted(f"every model in the pool is out of daily quota: {pool}")
 
 # --- Claude Code CLI (subscription, no API credits) ---
 CLI_BLOCKED_TOOLS = ["Bash", "PowerShell", "Edit", "Write", "Read", "Glob", "Grep", "Agent", "Task",
@@ -180,30 +194,10 @@ async def _ask_claude_cli(prompt_text, model, web_search, max_uses):
     return final.get("result") or "", {"search_urls": sorted(set(search_urls)), "fetched_urls": sorted(set(fetched_urls)),
                                        "num_turns": final.get("num_turns"), "events": events}
 
-# --- Gemini API (free tier) ---
-_gemini = None
-GEMINI_SLOTS = asyncio.Semaphore(int(os.getenv("GEMINI_CONCURRENCY", "2")))
-
+# --- Gemini brain + Composio hands (free tier): see agent.py ---
 async def _ask_gemini(prompt_text, model, web_search, max_uses):
-    global _gemini
-    from google import genai
-    from google.genai import types, errors
-    if _gemini is None:
-        if not (os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")):
-            raise SystemExit("Set GEMINI_API_KEY in .env (free key from https://aistudio.google.com/apikey)")
-        _gemini = genai.Client()
-    cfg = types.GenerateContentConfig(tools=[types.Tool(google_search=types.GoogleSearch())] if web_search else None)
-    async with GEMINI_SLOTS:
-        try:
-            r = await _gemini.aio.models.generate_content(model=model, contents=prompt_text, config=cfg)
-        except errors.APIError as e:
-            if e.code == 429: raise RateLimited(str(e)[:120])
-            raise
-    gm = r.candidates[0].grounding_metadata if r.candidates else None
-    chunks = [{"uri": c.web.uri, "title": c.web.title, "domain": c.web.domain}
-              for c in (gm.grounding_chunks or []) if c.web] if gm else []
-    return r.text or "", {"search_queries": list(gm.web_search_queries or []) if gm else [],
-                          "grounding_chunks": chunks, "search_urls": [c["uri"] for c in chunks if c["uri"]]}
+    import agent
+    return await agent.run(prompt_text, model, use_tools=web_search, max_searches=max_uses)
 
 # --- Anthropic API (paid; only used if a key is set and a full claude-* model id is given) ---
 async def _ask_anthropic_api(prompt_text, model, web_search, max_uses):

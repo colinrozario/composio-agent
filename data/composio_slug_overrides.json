@@ -1,0 +1,6 @@
+{
+ "_comment": "Human decisions: seed slug -> Composio toolkit slug, or false = checked, not in Composio. Drafted by the assistant from the catalog; REVIEW before trusting.",
+ "zoho_crm": "zoho",
+ "monday_com": "monday",
+ "whatsapp_business": "whatsapp"
+}

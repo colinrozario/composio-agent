@@ -1,0 +1,111 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Salesforce\nCategory: CRM and Sales\nHint (may be misleading, verify it): salesforce.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://c1.sfdcstatic.com/content/dam/web/en_gb/www/datasheets/DS_SalesCloud_EdCompare.pdf",
+   "https://c1.sfdcstatic.com/content/dam/web/en_us/www/documents/pricing/DS_SalesCloud_EdCompare.pdf",
+   "https://c1.sfdcstatic.com/content/dam/web/en_us/www/documents/pricing/all-add-ons.pdf",
+   "https://developer.salesforce.com/blogs/2024/11/api-limits-and-monitoring-your-api-usage",
+   "https://developer.salesforce.com/blogs/2025/03/introducing-the-new-salesforce-developer-edition-now-with-agentforce-and-data-cloud",
+   "https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce",
+   "https://developer.salesforce.com/developeredition/index",
+   "https://developer.salesforce.com/docs",
+   "https://developer.salesforce.com/docs/apis",
+   "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_concepts_security.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_oauth_and_connected_apps.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/dev_packages_api_access.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/pricing_business_apis_rest_references.htm",
+   "https://developer.salesforce.com/docs/atlas.en-us.salesforce_scheduler_developer_guide.meta/salesforce_scheduler_developer_guide/uc7_scheduler_api_auth.htm",
+   "https://developer.salesforce.com/docs/marketing/mce-mcp/guide/mce-mcp.html",
+   "https://developer.salesforce.com/docs/platform/api-streaming/guide/code-sample-auth-dev-test.html",
+   "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/custom-servers.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+   "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/intro-de-sandbox.html",
+   "https://developer.salesforce.com/free-trials",
+   "https://developer.salesforce.com/signup?d=70130000000EjH",
+   "https://developer.sf.tumee.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_mcp_get_started.htm",
+   "https://github.com/forcedotcom/mcp-hosted",
+   "https://github.com/salesforcecli/mcp/tree/main",
+   "https://github.com/salesforcecli/mcp?tab=readme",
+   "https://github.com/salesforcecli/mcp?tab=readme-ov-file",
+   "https://help.salesforce.com/s/articleView?id=000326486&language=en_US&type=1",
+   "https://help.salesforce.com/s/articleView?id=005298906&language=en_US&type=1",
+   "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/installation.html",
+   "https://trailhead.salesforce.com/content/learn/modules/environments-for-developers/discover-developer-environments",
+   "https://trailhead.salesforce.com/content/learn/modules/headless-tools-and-functionality/explore-headless-tools-and-functionality",
+   "https://twelverays.agency/blog/salesforce-pricing",
+   "https://www.lopau.com/how-to-use-the-salesforce-dx-mcp-server-in-vs-code/",
+   "https://www.salesforce.com/agentforce/mcp-support/model-context-protocol/",
+   "https://www.salesforce.com/platform/sandboxes-environments/",
+   "https://www.salesforce.com/sales/pricing/"
+  ],
+  "fetched_urls": [
+   "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+   "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+   "https://www.salesforce.com/editions-pricing/sales-cloud/"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Salesforce API documentation developer guide authentication access path pricing"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Salesforce official MCP server Model Context Protocol"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Salesforce developer edition free account sandbox"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "Salesforce API access pricing plans Professional Enterprise"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "https://www.salesforce.com/editions-pricing/sales-cloud/"
+     ]
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "Salesforce official MCP server github or documentation"
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 5,
+   "read_pages": 1
+  },
+  "turns": 3,
+  "backend": "gemini",
+  "model": "gemini-3-flash-preview"
+ }
+}

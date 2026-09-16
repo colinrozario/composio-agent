@@ -1,0 +1,243 @@
+[
+ {
+  "slug": "podio",
+  "name": "Podio",
+  "candidates": []
+ },
+ {
+  "slug": "copper",
+  "name": "Copper",
+  "candidates": []
+ },
+ {
+  "slug": "dealcloud",
+  "name": "DealCloud",
+  "candidates": []
+ },
+ {
+  "slug": "pylon",
+  "name": "Pylon",
+  "candidates": [
+   "pylon_mcp"
+  ]
+ },
+ {
+  "slug": "liveagent",
+  "name": "LiveAgent",
+  "candidates": []
+ },
+ {
+  "slug": "gladly",
+  "name": "Gladly",
+  "candidates": []
+ },
+ {
+  "slug": "twilio",
+  "name": "Twilio",
+  "candidates": []
+ },
+ {
+  "slug": "zoho_cliq",
+  "name": "Zoho Cliq",
+  "candidates": []
+ },
+ {
+  "slug": "lark",
+  "name": "Lark (Larksuite)",
+  "candidates": []
+ },
+ {
+  "slug": "aircall",
+  "name": "Aircall",
+  "candidates": []
+ },
+ {
+  "slug": "vonage",
+  "name": "Vonage",
+  "candidates": []
+ },
+ {
+  "slug": "gohighlevel",
+  "name": "GoHighLevel",
+  "candidates": []
+ },
+ {
+  "slug": "systeme_io",
+  "name": "systeme.io",
+  "candidates": [
+   "hotspotsystem"
+  ]
+ },
+ {
+  "slug": "threads",
+  "name": "Threads (Meta)",
+  "candidates": []
+ },
+ {
+  "slug": "woocommerce",
+  "name": "WooCommerce",
+  "candidates": []
+ },
+ {
+  "slug": "bigcommerce",
+  "name": "BigCommerce",
+  "candidates": []
+ },
+ {
+  "slug": "salesforce_commerce_cloud",
+  "name": "Salesforce Commerce Cloud",
+  "candidates": [
+   "salesforce",
+   "salesflare",
+   "salesforce_service_cloud",
+   "salesmate",
+   "salesrobot"
+  ]
+ },
+ {
+  "slug": "magento",
+  "name": "Magento (Adobe Commerce)",
+  "candidates": [
+   "agencyzoom"
+  ]
+ },
+ {
+  "slug": "squarespace",
+  "name": "Squarespace",
+  "candidates": [
+   "square",
+   "foursquare",
+   "contentsquare_mcp",
+   "gosquared"
+  ]
+ },
+ {
+  "slug": "ecwid",
+  "name": "Ecwid",
+  "candidates": []
+ },
+ {
+  "slug": "amazon_selling_partner",
+  "name": "Amazon Selling Partner",
+  "candidates": []
+ },
+ {
+  "slug": "fanbasis",
+  "name": "fanbasis",
+  "candidates": []
+ },
+ {
+  "slug": "se_ranking",
+  "name": "SE Ranking",
+  "candidates": [
+   "anchor_browser"
+  ]
+ },
+ {
+  "slug": "sherlock",
+  "name": "Sherlock",
+  "candidates": []
+ },
+ {
+  "slug": "waterfall_io",
+  "name": "Waterfall.io",
+  "candidates": []
+ },
+ {
+  "slug": "clay",
+  "name": "Clay",
+  "candidates": [
+   "clay_mcp"
+  ]
+ },
+ {
+  "slug": "netlify",
+  "name": "Netlify",
+  "candidates": [
+   "labs64_netlicensing",
+   "netlicensing",
+   "netlify_mcp"
+  ]
+ },
+ {
+  "slug": "mongodb_atlas",
+  "name": "MongoDB Atlas",
+  "candidates": []
+ },
+ {
+  "slug": "smartsheet",
+  "name": "Smartsheet",
+  "candidates": [
+   "popupsmart",
+   "smartlead",
+   "smartproxy"
+  ]
+ },
+ {
+  "slug": "plaid",
+  "name": "Plaid",
+  "candidates": [
+   "plaid_mcp"
+  ]
+ },
+ {
+  "slug": "binance",
+  "name": "Binance",
+  "candidates": []
+ },
+ {
+  "slug": "paygent_connect",
+  "name": "Paygent Connect",
+  "candidates": []
+ },
+ {
+  "slug": "ipayx",
+  "name": "iPayX",
+  "candidates": []
+ },
+ {
+  "slug": "pitchbook",
+  "name": "PitchBook",
+  "candidates": []
+ },
+ {
+  "slug": "otter_ai",
+  "name": "Otter AI",
+  "candidates": [
+   "otter_ai_mcp",
+   "sslmate_cert_spotter_api",
+   "thoughtspot_spotter_mcp"
+  ]
+ },
+ {
+  "slug": "reducto",
+  "name": "Reducto",
+  "candidates": []
+ },
+ {
+  "slug": "devin",
+  "name": "Devin",
+  "candidates": [
+   "devin_mcp"
+  ]
+ },
+ {
+  "slug": "higgsfield",
+  "name": "higgsfield",
+  "candidates": [
+   "higgsfield_mcp"
+  ]
+ },
+ {
+  "slug": "mermaid_cli",
+  "name": "Mermaid CLI",
+  "candidates": [
+   "mermaid_chart_mcp"
+  ]
+ },
+ {
+  "slug": "grain",
+  "name": "Grain",
+  "candidates": []
+ }
+]

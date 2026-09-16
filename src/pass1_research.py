@@ -1,7 +1,7 @@
 """Pass 1: wide and cheap. One web-search agent call per app. Raw output is never overwritten."""
 import asyncio, sys
 from common import (RAW, MODEL_PRIMARY, seed, prompt, ask, extract_json, validate_fields,
-                    searched_urls, url_key, save, now, gather_limited, first)
+                    searched_urls, url_key, save, now, gather_limited, first, QuotaExhausted)
 
 OUT = RAW/"pass1"
 
@@ -20,18 +20,27 @@ async def research_one(app: dict, model: str = MODEL_PRIMARY) -> dict:
     rec["uncited_sources"] = [f for f, x in rec["fields"].items()
                               if isinstance(x, dict) and x.get("source_url") and url_key(x["source_url"]) not in seen]
     rec["search_urls"] = sorted(set(raw.get("search_urls", [])))
-    rec["backend"] = raw.get("backend")
+    rec["backend"], rec["model"] = raw.get("backend"), raw.get("model", model)
+    rec["tool_counts"] = raw.get("tool_counts")
     # Append-only: timestamped file per run, plus a raw transcript for audit.
     stamp = rec["researched_at"].replace(":", "")
     save(OUT/app["slug"]/f"{stamp}.json", rec)
     save(OUT/app["slug"]/f"{stamp}.raw.json", {"prompt": p, "response": raw})
-    print(f"[pass1] {app['name']:<28} problems={len(rec['schema_problems'])} uncited={len(rec['uncited_sources'])}")
+    tc = raw.get("tool_counts") or {}
+    print(f"[pass1] {app['name']:<28} problems={len(rec['schema_problems'])} uncited={len(rec['uncited_sources'])} "
+          f"searches={tc.get('web_search', '-')} reads={tc.get('read_pages', '-')}", flush=True)
     return rec
 
+STOP = {"reason": None}
+
 async def safe(app):
+    if STOP["reason"]: return None
     try: return await research_one(app)
+    except QuotaExhausted as e:  # free-tier daily cap: stop cleanly, rerun tomorrow resumes
+        STOP["reason"] = str(e)
+        print(f"[pass1] daily quota exhausted at {app['name']}; stopping. Rerun later to resume.")
     except (Exception, SystemExit) as e:  # one bad app must not kill the batch; rerun picks it up
-        print(f"[pass1] {app['name']:<28} FAILED {type(e).__name__}: {str(e)[:120]}")
+        print(f"[pass1] {app['name']:<28} FAILED {type(e).__name__}: {str(e)[:160]}")
 
 async def main(only: list[str] | None, redo: bool):
     apps = [a for a in seed() if not only or a["slug"] in only]

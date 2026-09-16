@@ -1,0 +1,1159 @@
+{
+ "salesforce": {
+  "composio_slug": "salesforce",
+  "composio_name": "Salesforce",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 185.0,
+  "triggers_count": 7.0,
+  "categories": [
+   "crm",
+   "contact management"
+  ]
+ },
+ "hubspot": {
+  "composio_slug": "hubspot",
+  "composio_name": "HubSpot",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 262.0,
+  "triggers_count": 2.0,
+  "categories": [
+   "crm",
+   "marketing automation"
+  ]
+ },
+ "pipedrive": {
+  "composio_slug": "pipedrive",
+  "composio_name": "Pipedrive",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 400.0,
+  "triggers_count": 3.0,
+  "categories": [
+   "crm",
+   "sales & crm"
+  ]
+ },
+ "attio": {
+  "composio_slug": "attio",
+  "composio_name": "Attio",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 100.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "crm"
+  ]
+ },
+ "twenty": {
+  "composio_slug": "twenty",
+  "composio_name": "Twenty",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 8.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "crm",
+   "contact management"
+  ]
+ },
+ "zoho_crm": {
+  "composio_slug": "zoho",
+  "composio_name": "Zoho",
+  "matched_by": "human_override",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 57.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "crm",
+   "marketing automation"
+  ]
+ },
+ "close": {
+  "composio_slug": "close",
+  "composio_name": "Close",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 14.0,
+  "triggers_count": 45.0,
+  "categories": [
+   "crm",
+   "drip emails"
+  ]
+ },
+ "zendesk": {
+  "composio_slug": "zendesk",
+  "composio_name": "Zendesk",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 456.0,
+  "triggers_count": 2.0,
+  "categories": [
+   "crm",
+   "customer support"
+  ]
+ },
+ "intercom": {
+  "composio_slug": "intercom",
+  "composio_name": "Intercom",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 133.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "customer support",
+   "crm"
+  ]
+ },
+ "freshdesk": {
+  "composio_slug": "freshdesk",
+  "composio_name": "Freshdesk",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 178.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "crm",
+   "customer support"
+  ]
+ },
+ "front": {
+  "composio_slug": "front",
+  "composio_name": "Front",
+  "matched_by": "slug",
+  "found_via": "direct_lookup",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": null,
+  "is_local_toolkit": false,
+  "tools_count": 0.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "CRM",
+   "Sales & Customer Support"
+  ]
+ },
+ "plain": {
+  "composio_slug": "plain",
+  "composio_name": "Plain",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 22.0,
+  "triggers_count": 11.0,
+  "categories": [
+   "customer support"
+  ]
+ },
+ "help_scout": {
+  "composio_slug": "help_scout",
+  "composio_name": "Help Scout",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 129.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "customer support",
+   "communication"
+  ]
+ },
+ "gorgias": {
+  "composio_slug": "gorgias",
+  "composio_name": "Gorgias",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 34.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "crm",
+   "customer support"
+  ]
+ },
+ "slack": {
+  "composio_slug": "slack",
+  "composio_name": "Slack",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 159.0,
+  "triggers_count": 9.0,
+  "categories": [
+   "team chat",
+   "team collaboration"
+  ]
+ },
+ "pumble": {
+  "composio_slug": "pumble",
+  "composio_name": "Pumble",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 9.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "team chat",
+   "team collaboration"
+  ]
+ },
+ "discord": {
+  "composio_slug": "discord",
+  "composio_name": "Discord",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 23.0,
+  "triggers_count": 1.0,
+  "categories": [
+   "team chat",
+   "team collaboration"
+  ]
+ },
+ "telegram": {
+  "composio_slug": "telegram",
+  "composio_name": "Telegram",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 18.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "team chat",
+   "notifications"
+  ]
+ },
+ "whatsapp_business": {
+  "composio_slug": "whatsapp",
+  "composio_name": "WhatsApp",
+  "matched_by": "human_override",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 58.0,
+  "triggers_count": 1.0,
+  "categories": [
+   "phone & sms",
+   "communication"
+  ]
+ },
+ "google_ads": {
+  "composio_slug": "googleads",
+  "composio_name": "Google Ads",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 28.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ads & conversion"
+  ]
+ },
+ "meta_ads": {
+  "composio_slug": "metaads",
+  "composio_name": "Meta Ads",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 65.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ads & conversion",
+   "social media marketing"
+  ]
+ },
+ "linkedin_ads": {
+  "composio_slug": "linkedin_ads",
+  "composio_name": "Linkedin Ads",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 28.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "marketing",
+   "ads & conversion"
+  ]
+ },
+ "mailchimp": {
+  "composio_slug": "mailchimp",
+  "composio_name": "Mailchimp",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 272.0,
+  "triggers_count": 4.0,
+  "categories": [
+   "email newsletters",
+   "marketing automation"
+  ]
+ },
+ "klaviyo": {
+  "composio_slug": "klaviyo",
+  "composio_name": "Klaviyo",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 225.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "marketing automation",
+   "email newsletters"
+  ]
+ },
+ "pinterest": {
+  "composio_slug": "pinterest",
+  "composio_name": "Pinterest",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 26.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "social media accounts",
+   "marketing"
+  ]
+ },
+ "sendgrid": {
+  "composio_slug": "sendgrid",
+  "composio_name": "SendGrid",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 359.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "transactional email",
+   "email newsletters"
+  ]
+ },
+ "shopify": {
+  "composio_slug": "shopify",
+  "composio_name": "Shopify",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2",
+   "S2S_OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 315.0,
+  "triggers_count": 45.0,
+  "categories": [
+   "ecommerce"
+  ]
+ },
+ "gumroad": {
+  "composio_slug": "gumroad",
+  "composio_name": "Gumroad",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 7.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ecommerce"
+  ]
+ },
+ "dataforseo": {
+  "composio_slug": "dataforseo",
+  "composio_name": "Dataforseo",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "BASIC"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 312.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "developer tools",
+   "marketing"
+  ]
+ },
+ "ahrefs": {
+  "composio_slug": "ahrefs",
+  "composio_name": "Ahrefs",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 40.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "marketing automation",
+   "analytics"
+  ]
+ },
+ "mrscraper": {
+  "composio_slug": "mrscraper",
+  "composio_name": "MrScraper",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 11.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ai web scraping",
+   "developer tools"
+  ]
+ },
+ "apify": {
+  "composio_slug": "apify",
+  "composio_name": "Apify",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 112.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ai web scraping",
+   "developer tools"
+  ]
+ },
+ "firecrawl": {
+  "composio_slug": "firecrawl",
+  "composio_name": "Firecrawl",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 29.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ai web scraping",
+   "developer tools"
+  ]
+ },
+ "bright_data": {
+  "composio_slug": "brightdata",
+  "composio_name": "Bright Data",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 10.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ai web scraping",
+   "developer tools"
+  ]
+ },
+ "github": {
+  "composio_slug": "github",
+  "composio_name": "GitHub",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 874.0,
+  "triggers_count": 46.0,
+  "categories": [
+   "developer tools"
+  ]
+ },
+ "vercel": {
+  "composio_slug": "vercel",
+  "composio_name": "Vercel",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 132.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "developer tools"
+  ]
+ },
+ "cloudflare": {
+  "composio_slug": "cloudflare",
+  "composio_name": "Cloudflare",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 20.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "security & identity tools",
+   "developer tools"
+  ]
+ },
+ "supabase": {
+  "composio_slug": "supabase",
+  "composio_name": "Supabase",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 124.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "developer tools",
+   "databases"
+  ]
+ },
+ "neo4j": {
+  "composio_slug": "neo4j",
+  "composio_name": "Neo4J",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "BASIC",
+   "API_KEY",
+   "S2S_OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 21.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "developer tools"
+  ]
+ },
+ "snowflake": {
+  "composio_slug": "snowflake",
+  "composio_name": "Snowflake",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 16.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "databases",
+   "analytics"
+  ]
+ },
+ "datadog": {
+  "composio_slug": "datadog",
+  "composio_name": "Datadog",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY",
+   "BEARER_TOKEN"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 64.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "server monitoring",
+   "developer tools"
+  ]
+ },
+ "sentry": {
+  "composio_slug": "sentry",
+  "composio_name": "Sentry",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 209.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "developer tools",
+   "server monitoring"
+  ]
+ },
+ "notion": {
+  "composio_slug": "notion",
+  "composio_name": "Notion",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 54.0,
+  "triggers_count": 8.0,
+  "categories": [
+   "notes",
+   "documents",
+   "project management"
+  ]
+ },
+ "airtable": {
+  "composio_slug": "airtable",
+  "composio_name": "Airtable",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 25.0,
+  "triggers_count": 6.0,
+  "categories": [
+   "productivity",
+   "spreadsheets",
+   "databases"
+  ]
+ },
+ "linear": {
+  "composio_slug": "linear",
+  "composio_name": "Linear",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 47.0,
+  "triggers_count": 12.0,
+  "categories": [
+   "project management",
+   "task management"
+  ]
+ },
+ "jira": {
+  "composio_slug": "jira",
+  "composio_name": "Jira",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "S2S_OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 98.0,
+  "triggers_count": 17.0,
+  "categories": [
+   "project management",
+   "task management"
+  ]
+ },
+ "asana": {
+  "composio_slug": "asana",
+  "composio_name": "Asana",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 153.0,
+  "triggers_count": 6.0,
+  "categories": [
+   "project management",
+   "task management"
+  ]
+ },
+ "monday_com": {
+  "composio_slug": "monday",
+  "composio_name": "Monday",
+  "matched_by": "human_override",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 122.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "project management",
+   "task management"
+  ]
+ },
+ "clickup": {
+  "composio_slug": "clickup",
+  "composio_name": "ClickUp",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 162.0,
+  "triggers_count": 21.0,
+  "categories": [
+   "productivity",
+   "project management",
+   "task management"
+  ]
+ },
+ "coda": {
+  "composio_slug": "coda",
+  "composio_name": "Coda",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 109.0,
+  "triggers_count": 4.0,
+  "categories": [
+   "productivity",
+   "project management"
+  ]
+ },
+ "harvest": {
+  "composio_slug": "harvest",
+  "composio_name": "Harvest",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 57.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "time tracking software",
+   "proposal & invoice management"
+  ]
+ },
+ "stripe": {
+  "composio_slug": "stripe",
+  "composio_name": "Stripe",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY",
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 426.0,
+  "triggers_count": 40.0,
+  "categories": [
+   "payment processing",
+   "ecommerce"
+  ]
+ },
+ "quickbooks": {
+  "composio_slug": "quickbooks",
+  "composio_name": "QuickBooks",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 114.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "accounting",
+   "payment processing"
+  ]
+ },
+ "xero": {
+  "composio_slug": "xero",
+  "composio_name": "Xero",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 53.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "accounting"
+  ]
+ },
+ "brex": {
+  "composio_slug": "brex",
+  "composio_name": "Brex",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 84.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "accounting"
+  ]
+ },
+ "ramp": {
+  "composio_slug": "ramp",
+  "composio_name": "Ramp",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 88.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "accounting"
+  ]
+ },
+ "notebooklm": {
+  "composio_slug": "notebook_lm",
+  "composio_name": "NotebookLM",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 11.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "ai assistants",
+   "notes",
+   "education"
+  ]
+ },
+ "fathom": {
+  "composio_slug": "fathom",
+  "composio_name": "Fathom",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "OAUTH2",
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [
+   "OAUTH2"
+  ],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 7.0,
+  "triggers_count": 1.0,
+  "categories": [
+   "ai meeting assistants",
+   "transcription"
+  ]
+ },
+ "consensus": {
+  "composio_slug": "consensus",
+  "composio_name": "Consensus",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 1.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "artificial intelligence",
+   "education"
+  ]
+ },
+ "youtube_transcript": {
+  "composio_slug": "youtube_transcript",
+  "composio_name": "YouTube Transcript",
+  "matched_by": "slug",
+  "found_via": "catalog_list",
+  "auth_schemes": [
+   "API_KEY"
+  ],
+  "composio_managed_auth_schemes": [],
+  "no_auth": false,
+  "is_local_toolkit": false,
+  "tools_count": 9.0,
+  "triggers_count": 0.0,
+  "categories": [
+   "transcription",
+   "video & audio"
+  ]
+ }
+}
