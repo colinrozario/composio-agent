@@ -1,0 +1,106 @@
+{
+ "id": 70,
+ "slug": "sentry",
+ "name": "Sentry",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:24:48+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Application monitoring and error tracking platform for developers to diagnose crashes and trace performance.",
+   "confidence": "high",
+   "source_url": "https://github.com/sentry-pricing"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/auth/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://sentry.io/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://mcp.sentry.dev/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://mcp.sentry.dev/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://sentry.io/pricing/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  },
+  "docs_url": {
+   "value": "https://docs.sentry.io/api/",
+   "confidence": "high",
+   "source_url": "https://docs.sentry.io/api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apicostcalc.com/sentry.html",
+  "https://apiterms.com/api/sentry.io/",
+  "https://cli.sentry.dev/commands/auth/",
+  "https://cli.sentry.dev/commands/docs/",
+  "https://costbench.com/software/developer-tools/sentry/",
+  "https://develop.sentry.dev/getting-started/",
+  "https://docs.sentry.io/api/",
+  "https://docs.sentry.io/api/auth/",
+  "https://docs.sentry.io/platforms/python/integrations/mcp/",
+  "https://docs.sentry.io/pricing/",
+  "https://docs.sentry.io/product/mcp-servers/",
+  "https://github.com/MCP-100/mcp-sentry",
+  "https://github.com/getsentry/sentry-docs",
+  "https://github.com/getsentry/sentry-mcp-stdio",
+  "https://github.com/sentry-pricing",
+  "https://markaicode.com/pricing/sentry-pricing/",
+  "https://mcp.sentry.dev/",
+  "https://mcp.so/servers/sentry",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+  "https://portal.sentryinteractive.com/docs/cloud-api/authentication/",
+  "https://saaspricehub.io/tools/sentry",
+  "https://sentry.io/pricing/",
+  "https://www.postman.com/sentryio/sentry-api-collection/documentation/xtzhckg/sentry-api",
+  "https://www.remote-mcp.com/servers/sentry"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}
