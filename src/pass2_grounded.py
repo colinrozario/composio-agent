@@ -97,7 +97,8 @@ async def regrade(c, app, rec, fields):
             previous=json.dumps({f: rec["fields"].get(f) for f in fields}, indent=1),
             pages="\n\n".join(f"### {u}\n{t}" for u, t in usable.items()), enums=enum_text())
         try:
-            text, _ = await ask(p, MODEL_PRIMARY, web_search=False)
+            text, raw = await ask(p, MODEL_PRIMARY, web_search=False)
+            out["model"] = raw.get("model")
             out["result"] = extract_json(text)
         except (Exception, SystemExit) as e:
             print(f"[grounded] {app['name']:<28} FAILED {type(e).__name__}: {str(e)[:120]}")

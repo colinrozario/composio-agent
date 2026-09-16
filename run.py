@@ -22,7 +22,7 @@ def main():
         step, extra = "pass1", extra or ["salesforce", "sherlock", "paygent_connect"]
     if step not in STEPS: sys.exit(__doc__)
     for script in STEPS[step]:
-        args = extra if script in ("pass1_research.py", "pass2_grounded.py") else []
+        args = extra if script in ("pass1_research.py", "pass2_grounded.py", "pass2_rephrased.py") else []
         print(f"\n== {script} {' '.join(args)}")
         if subprocess.run([sys.executable, script, *args], cwd=SRC).returncode: sys.exit(f"{script} failed")
 

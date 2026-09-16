@@ -18,13 +18,14 @@ async def second_opinion(app):
         return {"fields": {"_error": str(e)}}
     if not isinstance(fields, dict): fields = {"_error": "reply was not a JSON object"}
     rec = {"id": app["id"], "slug": app["slug"], "name": app["name"], "pass": "pass2_rephrased",
-           "model": MODEL_SECONDARY, "researched_at": now(), "fields": fields}
+           "model": raw.get("model"), "backend": raw.get("backend"), "researched_at": now(), "fields": fields,
+           "search_urls": raw.get("search_urls", [])}
     save(RAW/"pass2_rephrased"/app["slug"]/f"{rec['researched_at'].replace(':','')}.json", rec)
     print(f"[second] {app['name']:<28} ok")
     return rec
 
-async def main():
-    apps = seed()
+async def main(only):
+    apps = [a for a in seed() if not only or a["slug"] in only]
     seconds = await gather_limited([second_opinion(a) for a in apps])
     diffs = {}
     for app, s in zip(apps, seconds):
@@ -42,4 +43,6 @@ async def main():
                                      "apps_with_disagreement": len(diffs), "per_field": per_field, "by_app": diffs})
     print(f"{len(diffs)} apps disagree; per field: {per_field}")
 
-if __name__ == "__main__": asyncio.run(main())
+if __name__ == "__main__":
+    import sys
+    asyncio.run(main(sys.argv[1:] or None))
