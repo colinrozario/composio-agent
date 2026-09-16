@@ -1,0 +1,106 @@
+{
+ "id": 68,
+ "slug": "mongodb_atlas",
+ "name": "MongoDB Atlas",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:20:04+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Managed cloud database service with an extensive API for cluster and data management.",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "med",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+  },
+  "docs_url": {
+   "value": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+   "confidence": "high",
+   "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apiterms.com/api/mongodb.com/",
+  "https://atlasui.readthedocs.io/en/latest/service_accounts.html",
+  "https://github.com/mongodb-developer/mcp-mongodb-atlas",
+  "https://github.com/mongodb-js/mongodb-mcp-server",
+  "https://go-cloud.io/mongodb-pricing/",
+  "https://itsfree.dev/tools/mongodb-atlas",
+  "https://learn.mongodb.com/learn/course/secure-mongodb-atlas-authn-and-authz/secure-mongodb-atlas-authn-and-authz/conclusion",
+  "https://learn.mongodb.com/learn/course/secure-mongodb-atlas-authn-and-authz/secure-mongodb-atlas-authn-and-authz/implement-secure-authentication-and-authorization",
+  "https://manufact.com/mcp-catalog/mongodb-atlas",
+  "https://mcp.directory/servers/mongodb-atlas",
+  "https://mcpfind.org/blog/mongodb-mcp-server-guide",
+  "https://mongo.comcloud.xyz/docs/atlas/api/api-authentication/",
+  "https://pricingapis.com/databases/mongodb-atlas",
+  "https://staxly.dev/platforms/mongodb-atlas",
+  "https://techoral.com/db/mongo/mongodb-mcp-server.html",
+  "https://www.devopsschool.com/tutorials/mongodb-the-complete-mongodb-atlas-authentication-authorization-tutorial/",
+  "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+  "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+  "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+  "https://www.mongodb.com/docs/mcp-server/overview/",
+  "https://www.mongodb.com/pricing",
+  "https://www.mongodb.com/products/tools/mcp-server",
+  "https://www.postman.com/mongodb-devrel/mongodb-atlas-administration-apis/overview",
+  "https://www.spendflo.com/blog/mongodb-atlas-pricing-guide"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

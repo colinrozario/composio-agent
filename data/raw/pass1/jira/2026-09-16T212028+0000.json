@@ -1,0 +1,105 @@
+{
+ "id": 74,
+ "slug": "jira",
+ "name": "Jira",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:20:28+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Enterprise project management tool for tracking tasks, agile planning, and workflow automation.",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "basic",
+    "jwt"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "docs_url": {
+   "value": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+   "confidence": "high",
+   "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://community.atlassian.com/forums/App-Central-articles/Jira-MCP-Explained-What-It-Does-What-It-Doesn-t-and-How-to-Use/ba-p/3241874",
+  "https://community.developer.atlassian.com/t/requirements-and-typical-timeline-for-3lo-app-approval-before-commercial-distribution/102659",
+  "https://confluence.atlassian.com/display/AAR/App+Access+for+Jira+Cloud+REST+APIs",
+  "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+  "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+  "https://developer.atlassian.com/cloud/jira/software/rest/",
+  "https://developer.atlassian.com/cloud/rovo-mcp/",
+  "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1473.0/",
+  "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1609.0/",
+  "https://docs.atlassian.com/software/jira/docs/api/REST/1000.729.0/",
+  "https://docs.atlassian.com/software/jira/docs/api/REST/1000.824.0/",
+  "https://github.com/atlassian/atlassian-mcp-server",
+  "https://github.com/atlassian/atlassian-mcp-server/blob/main/README.md",
+  "https://jira.readthedocs.io/en/latest/api.html",
+  "https://mcp.directory/blog/jira-mcp-complete-guide-2026",
+  "https://moldstud.com/articles/p-jira-api-basics-essential-guide-every-developer-needs-to-know",
+  "https://ones.com/blog/mastering-jira-cloud-api-documentation-developers-guide/",
+  "https://releasemanagement.atlassian.net/wiki/spaces/RMC/pages/2445246483/Rest+API",
+  "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+  "https://www.atlassian.com/blog/confluence/remote-mcp-server",
+  "https://www.atlassian.com/platform/rovo-mcp",
+  "https://www.postman.com/postman/atlassian-jira-api/documentation/tdpgtl0/jira-software-cloud-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

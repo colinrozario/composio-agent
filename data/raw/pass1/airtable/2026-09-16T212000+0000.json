@@ -1,0 +1,90 @@
+{
+ "id": 72,
+ "slug": "airtable",
+ "name": "Airtable",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:20:00+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A low-code platform for building collaborative apps with a programmable REST API.",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  },
+  "docs_url": {
+   "value": "https://airtable.com/developers/web/api/introduction",
+   "confidence": "high",
+   "source_url": "https://airtable.com/developers/web/api/authentication"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://airtable.com/developers/web/api/authentication",
+  "https://airtable.com/developers/web/api/authentication.md",
+  "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+  "https://ones.com/blog/developers-quick-start-to-airtable-api-documentation/",
+  "https://support.airtable.com/articles/2022585894-airtable-enterprise-api",
+  "https://support.airtable.com/articles/6811769763-third-party-integrations-via-oauth-overview",
+  "https://www.apirefs.com/apps/airtable",
+  "https://www.business-automated.com/tutorials/airtable-api-beginners-guide"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ }
+}

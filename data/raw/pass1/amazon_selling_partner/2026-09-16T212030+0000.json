@@ -1,0 +1,98 @@
+{
+ "id": 49,
+ "slug": "amazon_selling_partner",
+ "name": "Amazon Selling Partner",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:20:30+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Programmatic access to Amazon sales, orders, inventory, fulfillment, and advertising data.",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "hmac_signature"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://sell.amazon.com/developers"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  },
+  "main_blocker": {
+   "value": "Requires a Professional seller account, developer profile submission, role approval, and application review.",
+   "confidence": "high",
+   "source_url": "https://sell.amazon.com/developers"
+  },
+  "docs_url": {
+   "value": "https://developer-docs.amazon/sp-api/",
+   "confidence": "high",
+   "source_url": "https://developer-docs.amazon/sp-api/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://developer-docs-amazon-shipping.readme.io/apis/docs/authorizing-selling-partner-api-applications",
+  "https://developer-docs-amazon-shipping.readme.io/apis/docs/connecting-to-the-selling-partner-api",
+  "https://developer-docs.amazon/",
+  "https://developer-docs.amazon/sp-api/",
+  "https://developer-docs.amazon/sp-api/docs/sp-api-sandbox",
+  "https://developer-docs.amazon/sp-api/lang-en_EN/",
+  "https://developer.amazonservices.com/",
+  "https://developer.amazonservices.com/sp-api-docs/",
+  "https://developer.amazonservices.com/start",
+  "https://developer.amazonservices.com/tools/solution-provider-portal",
+  "https://developer.amazonservices.com/us-support",
+  "https://docs.aws.amazon.com/partner-central/latest/developer-guide/access-control.html",
+  "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/data-sp-api.html",
+  "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+  "https://github.com/amzn/selling-partner-api-sdk",
+  "https://sell.amazon.com/developers"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 6,
+  "read_pages": 1
+ }
+}
