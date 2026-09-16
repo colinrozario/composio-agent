@@ -15,7 +15,7 @@ def main():
         "fields": {f: {"value": x.get("value"), "confidence": x.get("confidence"), "source_url": x.get("source_url")}
                    for f, x in p["fields"].items()},
     } for p in pub]
-    data = {"meta": {"generated_at": now(), "demo": False, "repo": "https://github.com/YOUR_USER/app-research"},
+    data = {"meta": {"generated_at": now(), "demo": False, "repo": "https://github.com/colinrozario/composio-agent"},
             "headline": pat["totals"], "patterns": pat["patterns"], "build_queue": pat["build_queue"],
             "auth": pat["auth"], "tier_by_category": pat["tier_by_category"],
             "weights": WEIGHTS_FOR_PAGE, "apps": apps, "verification": ver, "human_moments": moments,
@@ -42,6 +42,9 @@ def main():
         "- score.total 0-9 = credential(0-3) + docs(0-2) + breadth(0-2) + test account(0-2)",
         "- tiers: build_now 7-9, build_with_friction 4-6, needs_outreach 0-3, local_toolkit (CLI, no hosted API)",
     ]), encoding="utf-8")
+    web = ROOT/"web"  # standalone deployable page (web/index.html) reads the same files
+    if web.exists():
+        for name in ("data.json", "data.md", "llms.txt"): (web/name).write_bytes((SITE/name).read_bytes())
     print(f"site/data.json written ({len(apps)} apps)")
 
 if __name__ == "__main__": main()

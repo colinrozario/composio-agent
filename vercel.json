@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "site",
+  "outputDirectory": "web",
   "functions": { "api/research.py": { "maxDuration": 120 } },
   "headers": [{ "source": "/llms.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }]
 }

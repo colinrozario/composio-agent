@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Composio Build List</title>
+<meta name="description" content="Which SaaS apps Composio can build toolkits for next: auth, access gates, API surface and a 0-9 buildability score, researched by an agent with sources.">
+<link rel="alternate" type="application/json" href="data.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4F5F2; --panel:#FFFFFF; --ink:#16181D; --muted:#5D636C; --rule:#D8DBD4; --rule-2:#E8EAE5;
+  --link:#1D4ED8; --now:#177245; --friction:#A15C00; --outreach:#B02A22; --local:#4F5694;
+  --now-bg:#E3F1E8; --friction-bg:#F7EBD9; --outreach-bg:#F6E1DF; --local-bg:#E6E7F3;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121417; --panel:#1A1D21; --ink:#E7E9EC; --muted:#9AA1AB; --rule:#30353C; --rule-2:#252A30;
+  --link:#8AB0FF; --now:#6CC993; --friction:#E3A553; --outreach:#F08A82; --local:#A9AEE8;
+  --now-bg:#1B3226; --friction-bg:#382A17; --outreach-bg:#3C201E; --local-bg:#262946;}}
+:root[data-theme="dark"]{
+  --bg:#121417; --panel:#1A1D21; --ink:#E7E9EC; --muted:#9AA1AB; --rule:#30353C; --rule-2:#252A30;
+  --link:#8AB0FF; --now:#6CC993; --friction:#E3A553; --outreach:#F08A82; --local:#A9AEE8;
+  --now-bg:#1B3226; --friction-bg:#382A17; --outreach-bg:#3C201E; --local-bg:#262946;}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--sans)}
+a{color:var(--link);text-underline-offset:2px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.muted{color:var(--muted)}
+
+/* header */
+.top{border-bottom:1px solid var(--rule);background:var(--bg);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;flex-wrap:wrap}
+.brand{font-weight:600;font-size:14px;letter-spacing:.01em}
+.brand span{color:var(--muted);font-weight:400}
+.top nav{display:flex;gap:18px;font-size:13.5px;flex-wrap:wrap}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--ink)}
+
+/* answer block */
+.answer{padding-block:44px 36px;border-bottom:1px solid var(--rule)}
+.kicker{font:500 12px/1 var(--mono);color:var(--muted);margin:0 0 14px}
+.answer h1{font-size:clamp(24px,3.4vw,34px);line-height:1.2;font-weight:600;letter-spacing:-.01em;margin:0;max-width:30ch;text-wrap:balance}
+.answer p.lede{margin:14px 0 0;color:var(--muted);max-width:68ch;font-size:16px}
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:32px;border-top:1px solid var(--ink)}
+.fig{padding:14px 18px 0 0}
+.fig + .fig{padding-left:18px;border-left:1px solid var(--rule)}
+.fig b{display:block;font:500 30px/1.1 var(--mono)}
+.fig span{display:block;font-size:13px;color:var(--muted);margin-top:4px;max-width:24ch}
+@media (max-width:760px){.figures{grid-template-columns:repeat(2,minmax(0,1fr))}.fig:nth-child(3){padding-left:0;border-left:0}.fig:nth-child(n+3){border-top:1px solid var(--rule);margin-top:14px}}
+.status{margin-top:22px;font-size:13.5px;color:var(--muted);display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.status .pill{font:500 11.5px/1 var(--mono);padding:4px 7px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:3px}
+
+/* sections */
+section{padding-block:40px;border-bottom:1px solid var(--rule)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+h2{font-size:20px;font-weight:600;margin:0;letter-spacing:-.005em}
+.head p{margin:4px 0 0;color:var(--muted);max-width:70ch;font-size:14.5px}
+
+/* tier label */
+.tier{display:inline-block;font:500 11.5px/1 var(--mono);padding:4px 6px;border-radius:3px;white-space:nowrap}
+.t-build_now{color:var(--now);background:var(--now-bg)}
+.t-build_with_friction{color:var(--friction);background:var(--friction-bg)}
+.t-needs_outreach{color:var(--outreach);background:var(--outreach-bg)}
+.t-local_toolkit{color:var(--local);background:var(--local-bg)}
+
+/* score ticks: 9 cells, one per point */
+.score{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.ticks{display:inline-grid;grid-template-columns:repeat(9,6px);gap:2px}
+.ticks i{height:12px;background:var(--rule-2);border-radius:1px}
+.ticks i.on{background:var(--ink)}
+
+/* tables */
+.scroll{overflow-x:auto;background:var(--panel);border:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font:500 12px var(--mono);color:var(--muted);text-align:left;padding:10px 12px;border-bottom:1px solid var(--rule);white-space:nowrap;background:var(--panel)}
+td{padding:10px 12px;border-bottom:1px solid var(--rule-2);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+td.app{font-weight:600;white-space:nowrap}
+td.app small{display:block;font-weight:400;color:var(--muted);font-size:12.5px}
+.rank{font:500 12px var(--mono);color:var(--muted);width:36px}
+.empty{padding:18px;color:var(--muted)}
+
+/* blockers */
+.blockers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+@media (max-width:760px){.blockers{grid-template-columns:1fr}}
+.blk{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 14px;padding:14px 0;border-top:1px solid var(--rule)}
+.blk b{font:500 24px/1.1 var(--mono);grid-row:span 3}
+.blk h3{margin:0;font-size:15px;font-weight:600}
+.blk p{margin:0;font-size:13.5px;color:var(--muted)}
+.blk .bar{height:4px;background:var(--rule-2);margin-top:4px}
+.blk .bar i{display:block;height:100%;background:var(--ink)}
+.blk .names{font-size:12.5px;color:var(--muted);margin-top:6px;grid-column:2}
+
+/* all apps */
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.tools input,.tools select{font:inherit;font-size:14px;color:var(--ink);background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:7px 10px;min-height:36px}
+.tools input{flex:1 1 220px;min-width:0}
+.tools label{display:flex;align-items:center;gap:6px;font-size:13.5px;color:var(--muted)}
+.count{font:500 12px var(--mono);color:var(--muted);margin-left:auto}
+tr.row{cursor:pointer}
+tr.row:hover td{background:var(--bg)}
+tr.row td:first-child::before{content:"+";display:inline-block;width:14px;color:var(--muted);font-family:var(--mono)}
+tr.row.open td:first-child::before{content:"–"}
+tr.detail td{background:var(--bg);padding:14px 16px 18px}
+.dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px 24px}
+.dl div{border-top:1px solid var(--rule);padding-top:6px;min-width:0}
+.dl dt{font:500 11.5px var(--mono);color:var(--muted)}
+.dl dd{margin:2px 0 0;font-size:13.5px;overflow-wrap:anywhere}
+.conf{font:400 11.5px var(--mono);color:var(--muted);margin-left:6px}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.yes{color:var(--now)}.no{color:var(--muted)}
+
+/* try it */
+.try{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:32px}
+@media (max-width:860px){.try{grid-template-columns:1fr}}
+.try form{display:flex;gap:8px;flex-wrap:wrap}
+.try input{flex:1 1 200px;min-width:0;font:inherit;padding:9px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--panel);color:var(--ink);min-height:40px}
+button{font:500 14px var(--sans);padding:9px 16px;border-radius:4px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer;min-height:40px}
+button:disabled{opacity:.55;cursor:progress}
+.result{background:var(--panel);border:1px solid var(--rule);padding:16px;min-height:120px;font-size:14px}
+.result .msg{color:var(--muted)}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s}
+@media (max-width:860px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.step{padding:14px 18px 4px 0;border-top:2px solid var(--ink)}
+.step h3{margin:0 0 4px;font-size:14.5px;font-weight:600}
+.step h3::before{counter-increment:s;content:counter(s) "  ";font:500 12px var(--mono);color:var(--muted);white-space:pre}
+.step p{margin:0;font-size:13.5px;color:var(--muted)}
+.weights{margin-top:22px;font-size:13.5px}
+.weights td,.weights th{padding:7px 10px}
+
+footer{padding-block:28px 48px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;gap:10px 22px;flex-wrap:wrap;justify-content:space-between}
+footer nav{display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Composio Build List <span>· app research</span></div>
+    <nav aria-label="Sections">
+      <a href="#next">Build next</a><a href="#blockers">Blockers</a><a href="#apps">All apps</a><a href="#try">Try it</a><a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap answer">
+    <p class="kicker" id="kicker">Research snapshot</p>
+    <h1 id="headline">Loading results…</h1>
+    <p class="lede" id="lede"></p>
+    <div class="figures" id="figures"></div>
+    <div class="status" id="status"></div>
+  </div>
+
+  <section id="next"><div class="wrap">
+    <div class="head"><div>
+      <h2>Build next</h2>
+      <p>Apps Composio doesn't have a toolkit for yet, highest score first. Start at the top: these have self-serve keys, public docs and a free way to test.</p>
+    </div></div>
+    <div class="scroll"><table>
+      <thead><tr><th>#</th><th>App</th><th>Score</th><th>Tier</th><th>Auth</th><th>How to get access</th><th>What slows it down</th></tr></thead>
+      <tbody id="nextBody"></tbody>
+    </table></div>
+  </div></section>
+
+  <section id="blockers"><div class="wrap">
+    <div class="head"><div>
+      <h2>What stands in the way</h2>
+      <p>The same few obstacles repeat across apps. Each changes how a toolkit gets built or tested.</p>
+    </div></div>
+    <div class="blockers" id="blockerList"></div>
+  </div></section>
+
+  <section id="apps"><div class="wrap">
+    <div class="head"><div>
+      <h2>All researched apps</h2>
+      <p>Select a row to see every field with its source page and the agent's confidence.</p>
+    </div></div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search apps" aria-label="Search apps">
+      <select id="fCat" aria-label="Category"><option value="">All categories</option></select>
+      <select id="fTier" aria-label="Tier"><option value="">All tiers</option></select>
+      <label for="fMissing"><input id="fMissing" type="checkbox"> Not in Composio</label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="scroll"><table>
+      <thead><tr><th>App</th><th>In Composio</th><th>Score</th><th>Tier</th><th>Auth</th><th>Access</th><th>API</th><th>Vendor MCP</th></tr></thead>
+      <tbody id="appBody"></tbody>
+    </table></div>
+  </div></section>
+
+  <section id="try"><div class="wrap try">
+    <div>
+      <h2>Try it on any app</h2>
+      <p class="muted" style="margin:6px 0 16px;font-size:14.5px">Type an app that isn't on the list. The same agent searches the web, reads the docs and fills the same fields with sources. It takes 30 to 90 seconds, and runs are limited to a few per hour.</p>
+      <form id="tryForm">
+        <input id="tryName" name="tryName" placeholder="e.g. Calendly" aria-label="App name" maxlength="60" required>
+        <button type="submit" id="tryBtn">Research</button>
+      </form>
+    </div>
+    <div class="result" id="tryOut" aria-live="polite"><p class="msg">The result appears here.</p></div>
+  </div></section>
+
+  <section id="method"><div class="wrap">
+    <div class="head"><div>
+      <h2>How the list was made</h2>
+      <p>An agent does the research. Automated checks catch invented or wrong answers. People review a sample.</p>
+    </div></div>
+    <div class="steps">
+      <div class="step"><h3>Catalog</h3><p>Composio's toolkit catalog is pulled and matched against the 100 apps, so "already built" is a fact, not a guess.</p></div>
+      <div class="step"><h3>Research</h3><p>For each app the agent searches, reads the developer docs and fills 12 fields. Each field gets a source URL and a confidence level.</p></div>
+      <div class="step"><h3>Checks</h3><p>Every cited link is fetched. Auth is compared with Composio's catalog. Fields that look weak are re-asked using only the page text.</p></div>
+      <div class="step"><h3>Review</h3><p>A second model answers the same questions independently. People grade a random sample to measure accuracy.</p></div>
+    </div>
+    <table class="weights" aria-label="Score weights">
+      <thead><tr><th>Score part</th><th>Points</th><th>How points are given</th></tr></thead>
+      <tbody id="weights"></tbody>
+    </table>
+    <p class="note">Tiers: 7–9 build now, 4–6 build with friction, 0–3 needs outreach. Command-line tools with no hosted API are listed separately as local toolkits.</p>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <span id="generated"></span>
+  <nav><a href="data.json">data.json</a><a href="data.md">data.md</a><a href="llms.txt">llms.txt</a><a id="repo" href="#">Source code</a></nav>
+</div></footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+const TIER = {build_now:"Build now", build_with_friction:"With friction", needs_outreach:"Needs outreach", local_toolkit:"Local toolkit"};
+const LABEL = {
+  oauth2:"OAuth 2.0", api_key:"API key", basic:"Basic auth", bearer_token:"Bearer token", jwt:"JWT", hmac_signature:"HMAC signature", session_login:"Session login",
+  self_serve_free:"Self-serve, free", self_serve_trial:"Self-serve trial", paid_plan_required:"Paid plan required", app_review_required:"App review required",
+  partner_or_sales_gated:"Partner or sales only", no_public_api:"No public API", not_applicable_local:"Runs locally",
+  rest:"REST", graphql:"GraphQL", rest_and_graphql:"REST + GraphQL", rpc_or_sdk_only:"RPC or SDK only", cli_only:"CLI only",
+  broad:"Broad", narrow:"Narrow", single_endpoint:"Single endpoint",
+  official:"Official", community_only:"Community only", none_found:"None found",
+  fixed:"One fixed URL", per_tenant_subdomain:"Per-customer subdomain", self_hosted_or_customer_host:"Customer-hosted", regional:"Regional", not_applicable:"Not applicable",
+  remote_api_toolkit:"Hosted API toolkit", local_or_sandbox_toolkit:"Local or sandbox toolkit", wrap_existing_mcp:"Wrap existing MCP", not_buildable_yet:"Not buildable yet",
+  full_public_reference:"Full public reference", partial_or_thin:"Partial or thin", none_public:"None public",
+  free_tier_or_sandbox:"Free tier or sandbox", trial_only:"Trial only", none:"None", unknown:"Unknown",
+};
+const FIELD = [
+  ["auth_methods","Auth"],["access_path","Access"],["api_type","API type"],["api_breadth","API breadth"],["official_mcp","Vendor MCP server"],
+  ["base_url_model","Base URL"],["toolkit_bucket","Toolkit shape"],["docs_quality","Docs"],["test_account","Test account"],["main_blocker","Main blocker"],["docs_url","Docs link"],
+];
+const BLOCKER_NOTE = {
+  paid_to_use:"The API is documented publicly, but calling it needs a paid plan. Testing needs a paid seat or a partner account.",
+  per_tenant_host:"Each customer has their own base URL. The toolkit has to ask for the subdomain or host when someone connects.",
+  official_mcp:"The vendor already runs an MCP server. Wrapping it may be faster than building tools from scratch.",
+  app_review_gate:"Anyone can read the API docs, but production access waits on the vendor approving the app.",
+  graphql_only:"Auth is simple. The work is designing tools on top of a single GraphQL endpoint.",
+  local_toolkit:"A command-line tool or library with no hosted API. It fits a sandbox toolkit, not a remote one.",
+  dark:"No public API or docs found. Nothing can be built before talking to the vendor.",
+};
+
+const lab = v => Array.isArray(v) ? v.map(x => LABEL[x] ?? x).join(", ") : (LABEL[v] ?? v ?? "");
+const val = (a, f) => a.fields?.[f]?.value;
+const blocker = a => { const b = val(a, "main_blocker"); return b && b !== "none" ? b : ""; };
+
+function ticks(score){
+  const p = score.parts || {}, n = score.total;
+  const title = `Credential ${p.credential}/3 · Docs ${p.docs}/2 · Breadth ${p.breadth}/2 · Test account ${p.test}/2`;
+  let cells = ""; for (let i = 0; i < 9; i++) cells += `<i class="${i < n ? "on" : ""}"></i>`;
+  return `<span class="score" title="${title}"><span class="ticks" aria-hidden="true">${cells}</span><span class="mono">${n}/9</span></span>`;
+}
+const tier = t => `<span class="tier t-${t}">${TIER[t] || t}</span>`;
+
+async function load(){
+  const r = await fetch("data.json", {cache:"no-store"});
+  if (!r.ok) throw new Error("data.json not found next to this page");
+  return r.json();
+}
+
+function answer(d){
+  const apps = d.apps, n = apps.length;
+  const missing = apps.filter(a => !a.in_composio);
+  const readyMissing = missing.filter(a => a.score.tier === "build_now");
+  const gated = apps.filter(a => ["build_with_friction","needs_outreach"].includes(a.score.tier)).length;
+  $("#kicker").textContent = `Research snapshot · ${n} of 100 apps`;
+  $("#headline").textContent = readyMissing.length
+    ? `${readyMissing.length} of the apps Composio doesn't support yet can be built now, no partnership needed.`
+    : `None of the apps Composio is missing so far can be built without friction.`;
+  $("#lede").textContent = `Composio already has toolkits for ${n - missing.length} of the ${n} apps researched. For the other ${missing.length}, the list below ranks what to build first and says what slows the rest down: paid plans, per-customer hosts, app review or no public API.`;
+  const figs = [
+    [n, "apps researched, each field with a source link"],
+    [n - missing.length, "already have a Composio toolkit"],
+    [readyMissing.length, "missing from Composio and ready to build"],
+    [gated, "need a paid plan, review or outreach first"],
+  ];
+  $("#figures").innerHTML = figs.map(([b, s]) => `<div class="fig"><b>${b}</b><span>${esc(s)}</span></div>`).join("");
+  const v = d.verification || {};
+  const checks = ["cited links fetched", "auth compared with Composio"];
+  $("#status").innerHTML = `<span class="pill">${n < 100 ? "In progress" : "Complete"}</span> ${n} of 100 apps done. Checks run: ${checks.join(", ")}. ${
+    v.by_stratum ? `Human-graded accuracy: <span class="mono">${Math.round(v.by_stratum.random.final * 100)}%</span>.` : "Human-graded accuracy is still to come, so treat values as unverified."}`;
+}
+
+function buildNext(d){
+  const rows = d.apps.filter(a => !a.in_composio && a.score.tier !== "local_toolkit")
+    .sort((a, b) => b.score.total - a.score.total || a.name.localeCompare(b.name));
+  $("#nextBody").innerHTML = rows.length ? rows.map((a, i) => `<tr>
+    <td class="rank">${i + 1}</td>
+    <td class="app">${esc(a.name)}<small>${esc(a.category)}</small></td>
+    <td>${ticks(a.score)}</td><td>${tier(a.score.tier)}</td>
+    <td>${esc(lab(val(a, "auth_methods")))}</td>
+    <td>${esc(lab(val(a, "access_path")))}</td>
+    <td>${esc(blocker(a) || nextHint(a))}</td></tr>`).join("")
+    : `<tr><td colspan="7" class="empty">Every researched app already has a Composio toolkit.</td></tr>`;
+}
+function nextHint(a){
+  const hints = [];
+  if (val(a, "base_url_model") === "per_tenant_subdomain" || val(a, "base_url_model") === "self_hosted_or_customer_host") hints.push("each customer has their own host");
+  if (val(a, "test_account") === "trial_only") hints.push("trial account only");
+  if (val(a, "test_account") === "none") hints.push("no test account");
+  if (val(a, "docs_quality") === "partial_or_thin") hints.push("thin docs");
+  if (val(a, "api_breadth") === "narrow") hints.push("narrow API");
+  if (val(a, "official_mcp") === "official") hints.push("vendor MCP exists, could wrap it");
+  const s = hints.join("; ");
+  return s ? s[0].toUpperCase() + s.slice(1) : "Nothing major found";
+}
+
+function blockers(d){
+  const list = d.patterns.filter(p => p.count).sort((a, b) => b.count - a.count);
+  const n = d.apps.length;
+  $("#blockerList").innerHTML = list.map(p => `<div class="blk">
+    <b>${p.count}</b>
+    <h3>${esc(p.headline)}</h3>
+    <p>${esc(p.so_what || BLOCKER_NOTE[p.key] || "")}</p>
+    <div class="bar" aria-hidden="true"><i style="width:${p.count / n * 100}%"></i></div>
+    <div class="names">${esc(p.apps.join(", "))}</div></div>`).join("") || `<p class="empty">No blockers found yet.</p>`;
+}
+
+let open = new Set();
+function allApps(d){
+  const opt = (sel, items) => sel.insertAdjacentHTML("beforeend", items.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join(""));
+  opt($("#fCat"), [...new Set(d.apps.map(a => a.category))].map(c => [c, c]));
+  opt($("#fTier"), Object.entries(TIER).filter(([k]) => d.apps.some(a => a.score.tier === k)));
+  ["#q", "#fCat", "#fTier", "#fMissing"].forEach(s => $(s).addEventListener("input", () => renderApps(d)));
+  $("#appBody").addEventListener("click", e => {
+    const tr = e.target.closest("tr.row"); if (!tr || e.target.closest("a")) return;
+    const s = tr.dataset.slug; open.has(s) ? open.delete(s) : open.add(s); renderApps(d);
+  });
+  $("#appBody").addEventListener("keydown", e => {
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr.row")) { e.preventDefault(); e.target.click(); }
+  });
+  renderApps(d);
+}
+function renderApps(d){
+  const q = $("#q").value.trim().toLowerCase(), c = $("#fCat").value, t = $("#fTier").value, m = $("#fMissing").checked;
+  const rows = d.apps.filter(a => (!q || a.name.toLowerCase().includes(q)) && (!c || a.category === c) && (!t || a.score.tier === t) && (!m || !a.in_composio))
+    .sort((a, b) => b.score.total - a.score.total || a.name.localeCompare(b.name));
+  $("#count").textContent = `${rows.length} of ${d.apps.length}`;
+  $("#appBody").innerHTML = rows.map(a => {
+    const isOpen = open.has(a.slug);
+    const row = `<tr class="row${isOpen ? " open" : ""}" data-slug="${esc(a.slug)}" tabindex="0" aria-expanded="${isOpen}">
+      <td class="app">${esc(a.name)}<small>${esc(a.category)}</small></td>
+      <td class="${a.in_composio ? "yes" : "no"}">${a.in_composio ? "Yes" : "No"}</td>
+      <td>${ticks(a.score)}</td><td>${tier(a.score.tier)}</td>
+      <td>${esc(lab(val(a, "auth_methods")))}</td><td>${esc(lab(val(a, "access_path")))}</td>
+      <td>${esc(lab(val(a, "api_type")))}</td><td>${esc(lab(val(a, "official_mcp")))}</td></tr>`;
+    return isOpen ? row + `<tr class="detail"><td colspan="8">${details(a)}</td></tr>` : row;
+  }).join("") || `<tr><td colspan="8" class="empty">No apps match. Clear the search or filters.</td></tr>`;
+}
+function details(a){
+  const f = a.fields || {};
+  const items = FIELD.map(([k, name]) => {
+    const x = f[k] || {}; let v = x.value;
+    if (k === "docs_url") v = v ? `<a href="${esc(v)}" target="_blank" rel="noopener">${esc(v.replace(/^https?:\/\//, ""))}</a>` : "Not found";
+    else v = esc(k === "main_blocker" ? (v && v !== "none" ? v : "None found") : lab(v));
+    const src = x.source_url && k !== "docs_url" ? ` · <a href="${esc(x.source_url)}" target="_blank" rel="noopener">source</a>` : "";
+    return `<div><dt>${name}</dt><dd>${v}${x.confidence ? `<span class="conf">${x.confidence}${src}</span>` : ""}</dd></div>`;
+  }).join("");
+  const one = f.one_liner?.value ? `<p style="margin:0 0 12px">${esc(f.one_liner.value)}</p>` : "";
+  const flags = (a.needs_human || []).length ? `<p class="note">Flagged for a person to check: ${esc(a.needs_human.map(h => h.split(":")[0].replace(/_/g, " ")).join(", "))}.</p>` : "";
+  return one + `<dl class="dl">${items}</dl>` + flags;
+}
+
+function tryIt(){
+  $("#tryForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const name = $("#tryName").value.trim(); if (!name) return;
+    const out = $("#tryOut"), btn = $("#tryBtn");
+    btn.disabled = true; btn.textContent = "Researching…";
+    out.innerHTML = `<p class="msg">Researching ${esc(name)}. This usually takes 30 to 90 seconds.</p>`;
+    try {
+      const r = await fetch("/api/research", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({name})});
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        out.innerHTML = `<p class="msg">${r.status === 429 ? "Too many runs from this network. Try again in an hour." : `Research failed (${esc(j.error || r.status)}). Try again in a minute.`}</p>`;
+      } else {
+        const a = {fields: j.fields || {}};
+        out.innerHTML = `<p style="margin:0 0 4px;font-weight:600">${esc(j.name || name)}${j.cached ? ' <span class="conf">cached result</span>' : ""}</p>` + details(a) +
+          ((j.schema_problems || []).length ? `<p class="note">Some fields didn't match the schema: ${esc(j.schema_problems.join("; "))}</p>` : "");
+      }
+    } catch (err) {
+      out.innerHTML = `<p class="msg">The research service isn't reachable from here. It runs on the deployed site at /api/research.</p>`;
+    }
+    btn.disabled = false; btn.textContent = "Research";
+  });
+}
+
+function method(d){
+  $("#weights").innerHTML = (d.weights || []).map(([n, m, h]) => `<tr><td>${esc(n)}</td><td class="mono">${m}</td><td>${esc(h)}</td></tr>`).join("");
+  const g = d.meta?.generated_at ? new Date(d.meta.generated_at) : null;
+  $("#generated").textContent = g ? `Data generated ${g.toLocaleString(undefined, {dateStyle:"medium", timeStyle:"short"})}` : "";
+  if (d.meta?.repo && !d.meta.repo.includes("YOUR_USER")) $("#repo").href = d.meta.repo; else $("#repo").hidden = true;
+}
+
+tryIt();
+load().then(d => { answer(d); buildNext(d); blockers(d); allApps(d); method(d); })
+  .catch(err => { $("#headline").textContent = "Couldn't load the results."; $("#lede").textContent = `${err.message}. Run python run.py site, then serve this folder over HTTP.`; });
+</script>
+</body>
+</html>
