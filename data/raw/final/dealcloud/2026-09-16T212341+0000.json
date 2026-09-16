@@ -1,0 +1,114 @@
+{
+ "id": 10,
+ "slug": "dealcloud",
+ "name": "DealCloud",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "DealCloud is a deal, relationship, and CRM management platform for financial services.",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/token"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "official_mcp": {
+   "value": "community_only",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/token"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "med",
+   "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+  },
+  "main_blocker": {
+   "value": "Access requires an enterprise subscription and sales-gated API credentials since there is no self-serve free tier or trial.",
+   "confidence": "high",
+   "source_url": "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud"
+  },
+  "docs_url": {
+   "value": "https://api.docs.dealcloud.com/docs",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.docs.dealcloud.com/",
+  "https://api.docs.dealcloud.com/docs",
+  "https://api.docs.dealcloud.com/docs/data",
+  "https://api.docs.dealcloud.com/docs/token",
+  "https://api.docs.dealcloud.com/guides",
+  "https://api.docs.dealcloud.com/sdk",
+  "https://apiscout.dev/guides/api-authentication-oauth-apikeys-jwt-2026",
+  "https://apitracker.io/a/dealcloud",
+  "https://app.dealcloud.com/",
+  "https://auth.dealersocket.com/",
+  "https://dealcloud.hexdocs.pm/api-reference.html",
+  "https://developers.anduintransact.com/docs/dealcloud",
+  "https://developers.google.com/identity/authentication",
+  "https://developers.google.com/oauthplayground/",
+  "https://docs.cloud.google.com/docs/authentication/client-libraries",
+  "https://frontegg.com/guides/api-authentication-api-authorization",
+  "https://motioncre.com/resources/dealcloud-alternatives",
+  "https://pipelineroad.com/compare/pipelineroad-vs-dealcloud",
+  "https://pricingnow.com/question/dealcloud-pricing/",
+  "https://prospeo.io/s/intapp-pricing-reviews-pros-and-cons",
+  "https://publicapis.io/blog/api-authentication-methods",
+  "https://skycloak.io/blog/api-authentication-best-practices/",
+  "https://treblle.com/blog/api-authentication-methods",
+  "https://valueaddvc.com/blog/family-office-crm-and-deal-flow-management-top-platforms-compared",
+  "https://www.apideck.com/blog/api-auth-authentication-methods-and-examples",
+  "https://www.context.dev/blog/api-authentication-best-practices",
+  "https://www.knowi.com/blog/4-ways-of-rest-api-authentication-methods/",
+  "https://www.selecthub.com/p/financial-services-crm-software/dealcloud/",
+  "https://www.softwareadvice.com/marketing/dealcloud-profile/",
+  "https://www.spotsaas.com/product/dealcloud/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

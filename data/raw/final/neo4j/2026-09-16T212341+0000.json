@@ -1,0 +1,87 @@
+{
+ "id": 66,
+ "slug": "neo4j",
+ "name": "Neo4j",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A graph database platform for storing and querying highly connected data.",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/product/"
+  },
+  "auth_methods": {
+   "value": [
+    "basic",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/auth-providers/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+  },
+  "api_type": {
+   "value": "rpc_or_sdk_only",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+  },
+  "base_url_model": {
+   "value": "self_hosted_or_customer_host",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/driver-manual/current/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+  },
+  "docs_url": {
+   "value": "https://neo4j.com/docs/driver-manual/current/",
+   "confidence": "high",
+   "source_url": "https://neo4j.com/docs/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "docs_quality",
+  "docs_url"
+ ],
+ "search_urls": [],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 0,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

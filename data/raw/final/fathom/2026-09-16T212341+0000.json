@@ -1,0 +1,95 @@
+{
+ "id": 93,
+ "slug": "fathom",
+ "name": "Fathom",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "AI meeting assistant that automatically records, transcribes, and summarizes video calls.",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/faq"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/faq"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/api-overview"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/quickstart"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/quickstart"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/quickstart"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/faq"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/quickstart"
+  },
+  "docs_url": {
+   "value": "https://developers.fathom.ai/",
+   "confidence": "high",
+   "source_url": "https://developers.fathom.ai/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api-docs.fathom.global/index.html",
+  "https://api-docs.fathom.global/reference/rest.html",
+  "https://developers.fathom.ai/",
+  "https://developers.fathom.ai/api-overview",
+  "https://developers.fathom.ai/faq",
+  "https://developers.fathom.ai/quickstart",
+  "https://developers.fathom.ai/sdks",
+  "https://docs.cadense.io/tools/fathom",
+  "https://docs.fathom.one/",
+  "https://help.fathom.video/",
+  "https://help.fathom.video/en/articles/8368641"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,100 @@
+{
+ "id": 64,
+ "slug": "cloudflare",
+ "name": "Cloudflare",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Web infrastructure and security platform providing global DNS, CDN, Workers, and DDoS protection.",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://github.com/cloudflare/mcp-server-cloudflare"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  },
+  "docs_url": {
+   "value": "https://developers.cloudflare.com/api/",
+   "confidence": "high",
+   "source_url": "https://developers.cloudflare.com/api/overview/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://blog.cloudflare.com/mcp-v2/",
+  "https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/",
+  "https://cfapi.centminmod.com/",
+  "https://cloudflare-saas.readthedocs.io/en/latest/permissions_guide.html",
+  "https://cloudflare.apidocumentation.com/",
+  "https://cloudflare.github.io/node-cloudflare/",
+  "https://developers.cloudflare.com/agents/model-context-protocol/",
+  "https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/",
+  "https://developers.cloudflare.com/api/overview/",
+  "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+  "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/fundamentals/api/how-to/make-api-calls.mdx",
+  "https://github.com/cloudflare/mcp-server-cloudflare",
+  "https://github.com/cloudflare/mcp-server-cloudflare/blob/main/README.md",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
+  "https://tutorials.dodatech.com/cloudflare/api-tokens-intro/",
+  "https://www.cloudflare.com/en-gb/learning/ai/what-is-model-context-protocol-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

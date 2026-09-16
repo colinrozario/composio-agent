@@ -1,33 +1,41 @@
 {
  "totals": {
-  "apps": 53,
-  "in_composio": 33,
-  "not_in_composio": 20,
-  "buildable_now_not_in_composio": 8
+  "apps": 76,
+  "in_composio": 47,
+  "not_in_composio": 29,
+  "buildable_now_not_in_composio": 13
  },
  "auth": [
   [
    "oauth2",
-   30
-  ],
-  [
-   "api_key",
-   24
+   47
   ],
   [
    "bearer_token",
-   21
+   34
+  ],
+  [
+   "api_key",
+   31
   ],
   [
    "basic",
-   11
+   14
   ],
   [
    "jwt",
-   2
+   3
   ],
   [
    "hmac_signature",
+   2
+  ],
+  [
+   "oauth1",
+   1
+  ],
+  [
+   "token",
    1
   ],
   [
@@ -36,26 +44,31 @@
   ]
  ],
  "tiers": {
-  "build_now": 36,
-  "build_with_friction": 16,
-  "local_toolkit": 1
+  "build_now": 54,
+  "build_with_friction": 20,
+  "local_toolkit": 1,
+  "needs_outreach": 1
  },
  "access_path": [
   [
    "self_serve_free",
-   25
+   41
   ],
   [
    "paid_plan_required",
-   17
+   19
   ],
   [
    "app_review_required",
-   8
+   9
   ],
   [
    "self_serve_trial",
-   2
+   3
+  ],
+  [
+   "partner_or_sales_gated",
+   3
   ],
   [
    "not_applicable_local",
@@ -80,26 +93,36 @@
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_now": 2,
-   "build_with_friction": 2
+   "build_now": 6,
+   "build_with_friction": 3
   },
   "Data, SEO and Scraping": {
-   "build_now": 4,
-   "build_with_friction": 3,
+   "build_now": 5,
+   "build_with_friction": 4,
    "local_toolkit": 1
   },
   "Developer, Infra and Data platforms": {
-   "build_now": 1
+   "build_now": 5
+  },
+  "Productivity and Project Management": {
+   "build_now": 6,
+   "build_with_friction": 1
   },
   "Finance and Fintech": {
+   "build_now": 3
+  },
+  "AI, Research and Media-native": {
+   "build_with_friction": 1,
+   "needs_outreach": 1,
    "build_now": 1
   }
  },
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 8,
+   "count": 9,
    "apps": [
+    "Amazon Selling Partner",
     "Google Ads",
     "LinkedIn Ads",
     "Meta Ads",
@@ -114,7 +137,7 @@
   },
   {
    "key": "paid_to_use",
-   "count": 17,
+   "count": 19,
    "apps": [
     "Ahrefs",
     "Aircall",
@@ -130,8 +153,10 @@
     "GoHighLevel",
     "Intercom",
     "LiveAgent",
+    "NotebookLM",
     "Pylon",
     "SE Ranking",
+    "Smartsheet",
     "fanbasis"
    ],
    "headline": "Free to read, paid to call",
@@ -139,19 +164,24 @@
   },
   {
    "key": "per_tenant_host",
-   "count": 12,
+   "count": 17,
    "apps": [
     "DealCloud",
+    "Ecwid",
     "Freshdesk",
     "Gladly",
     "Gorgias",
+    "Jira",
     "LiveAgent",
+    "Magento (Adobe Commerce)",
     "Neo4j",
     "Pipedrive",
     "Pylon",
     "Salesforce",
+    "Salesforce Commerce Cloud",
     "Shopify",
     "Twenty",
+    "WooCommerce",
     "Zendesk"
    ],
    "headline": "Every customer has a different host",
@@ -159,8 +189,9 @@
   },
   {
    "key": "graphql_only",
-   "count": 1,
+   "count": 2,
    "apps": [
+    "Linear",
     "Plain"
    ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
@@ -168,33 +199,48 @@
   },
   {
    "key": "official_mcp",
-   "count": 25,
+   "count": 40,
    "apps": [
     "Ahrefs",
     "Aircall",
     "Apify",
+    "Asana",
     "Bright Data",
     "Clay",
+    "ClickUp",
     "Close",
+    "Cloudflare",
     "DataForSEO",
+    "Firecrawl",
     "Freshdesk",
     "Front",
+    "GitHub",
     "GoHighLevel",
     "Gorgias",
     "HubSpot",
     "Intercom",
+    "Jira",
     "Klaviyo",
     "Lark (Larksuite)",
+    "Linear",
+    "Magento (Adobe Commerce)",
     "Meta Ads",
+    "MongoDB Atlas",
     "MrScraper",
     "Neo4j",
+    "Notion",
     "Paygent Connect",
+    "Ramp",
     "Salesforce",
     "Shopify",
     "Slack",
+    "Smartsheet",
     "Twenty",
     "Twilio",
-    "Vonage"
+    "Vercel",
+    "Vonage",
+    "WooCommerce",
+    "Xero"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
@@ -210,8 +256,12 @@
   },
   {
    "key": "dark",
-   "count": 0,
-   "apps": [],
+   "count": 3,
+   "apps": [
+    "Otter AI",
+    "Salesforce Commerce Cloud",
+    "Waterfall.io"
+   ],
    "headline": "Close to no public developer surface",
    "so_what": "TODO"
   }
@@ -314,6 +364,16 @@
     "in_composio": true
    },
    {
+    "name": "WooCommerce",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Magento (Adobe Commerce)",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Gumroad",
     "score": 9,
     "in_composio": true
@@ -324,7 +384,72 @@
     "in_composio": true
    },
    {
+    "name": "Firecrawl",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "GitHub",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Vercel",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Cloudflare",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Neo4j",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "MongoDB Atlas",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Notion",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Airtable",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Linear",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Jira",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Asana",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "ClickUp",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Xero",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Ramp",
     "score": 9,
     "in_composio": true
    },
@@ -335,6 +460,16 @@
    },
    {
     "name": "Pumble",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "Ecwid",
+    "score": 8,
+    "in_composio": false
+   },
+   {
+    "name": "Fathom",
     "score": 8,
     "in_composio": true
    },
@@ -377,6 +512,11 @@
     "name": "Shopify",
     "score": 7,
     "in_composio": true
+   },
+   {
+    "name": "Amazon Selling Partner",
+    "score": 7,
+    "in_composio": false
    },
    {
     "name": "DataForSEO",
@@ -456,6 +596,11 @@
     "in_composio": false
    },
    {
+    "name": "Smartsheet",
+    "score": 6,
+    "in_composio": false
+   },
+   {
     "name": "DealCloud",
     "score": 5,
     "in_composio": false
@@ -471,17 +616,38 @@
     "in_composio": true
    },
    {
+    "name": "Salesforce Commerce Cloud",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "Ahrefs",
     "score": 5,
     "in_composio": true
    },
    {
+    "name": "Waterfall.io",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "fanbasis",
     "score": 4,
     "in_composio": false
+   },
+   {
+    "name": "NotebookLM",
+    "score": 4,
+    "in_composio": true
    }
   ],
-  "needs_outreach": [],
+  "needs_outreach": [
+   {
+    "name": "Otter AI",
+    "score": 2,
+    "in_composio": false
+   }
+  ],
   "local_toolkit": [
    {
     "name": "Sherlock",

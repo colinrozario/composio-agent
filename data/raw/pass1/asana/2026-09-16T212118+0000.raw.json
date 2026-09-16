@@ -1,0 +1,96 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Asana\nCategory: Productivity and Project Management\nHint (may be misleading, verify it): developers.asana.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://asana.com/developers",
+   "https://asana.com/resources/software-requirement-document-template",
+   "https://developers.asana.com/",
+   "https://developers.asana.com/docs/api-explorer",
+   "https://developers.asana.com/docs/api-features",
+   "https://developers.asana.com/docs/authentication",
+   "https://developers.asana.com/docs/mcp-server",
+   "https://developers.asana.com/docs/oauth",
+   "https://developers.asana.com/docs/overview",
+   "https://developers.asana.com/docs/using-asanas-mcp-server",
+   "https://developers.asana.com/jd/docs/overview",
+   "https://developers.asana.com/reference/rest-api-reference",
+   "https://forum.asana.com/c/forum-en/api/24",
+   "https://forum.asana.com/t/new-v2-mcp-server-now-generally-available/1122647",
+   "https://forum.asana.com/t/oauth-personal-access-token-api-key-how-to-get-connected-to-asana-through-our-api/814",
+   "https://github.com/Asana/openapi",
+   "https://help.asana.com/s/article/api?language=en_US",
+   "https://help.asana.com/s/article/how-to-use-asana-for-product-development?language=en_US",
+   "https://mcp.services/companies/asana/asana-mcp-server",
+   "https://mcp.so/servers/asana",
+   "https://mcpservers.org/servers/asana-mcp",
+   "https://primrose.dev/mcp/asana/auth",
+   "https://public-api.org/api/411/asana",
+   "https://tryglen.com/mcp/servers/asana",
+   "https://www.graphapp.ai/blog/unlocking-the-asana-developer-console-a-comprehensive-guide",
+   "https://www.postman.com/asana-team/asana-s-public-workspace/collection/j8tdhts/asana",
+   "https://www.usecarly.com/blog/asana-mcp/"
+  ],
+  "fetched_urls": [
+   "https://developers.asana.com/docs/authentication",
+   "https://developers.asana.com/docs/overview"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Asana API developer documentation"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Asana developer app review requirements"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Asana API authentication methods"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "does Asana have an official MCP server"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developers.asana.com/docs/authentication",
+      "https://developers.asana.com/docs/overview"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "turns": 4,
+  "backend": "gemini",
+  "model": "gemini-3.1-flash-lite"
+ }
+}

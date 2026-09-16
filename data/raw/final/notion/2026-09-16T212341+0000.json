@@ -1,0 +1,105 @@
+{
+ "id": 71,
+ "slug": "notion",
+ "name": "Notion",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A REST API to read, write, and manage Notion pages, databases, and blocks.",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/docs/authorization"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/docs/authorization"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/guides/mcp/overview"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  },
+  "docs_url": {
+   "value": "https://developers.notion.com/reference/intro",
+   "confidence": "high",
+   "source_url": "https://developers.notion.com/reference/intro"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/notion-api/",
+  "https://composio.dev/auth/notion",
+  "https://deepwiki.com/notion-dotnet/notion-sdk-net/1.2-authentication",
+  "https://developers.notion.com/guides/get-started/authorization",
+  "https://developers.notion.com/guides/get-started/overview",
+  "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+  "https://developers.notion.com/guides/mcp/overview",
+  "https://developers.notion.com/reference/authentication",
+  "https://github.com/makenotion/notion-mcp-server",
+  "https://github.com/mcp-research/makenotion__notion-mcp-server",
+  "https://help.moveworks.com/service-management/access-requirements/knowledge-base-systems/notion-access-requirements",
+  "https://mcp.so/servers/notion-mcp-server",
+  "https://mcpservers.org/remote-mcp-servers/notion",
+  "https://public-api.org/api/425/notion",
+  "https://sdk-php.notiondesk.help/en/articles/authentication",
+  "https://techconcepts.org/blog/notion-api-integration",
+  "https://truto.one/blog/how-to-integrate-with-the-notion-api-architecture-guide-for-b2b-saas/",
+  "https://www.notion.com/help/create-integrations-with-the-notion-api",
+  "https://www.notion.com/help/guides/connect-tools-to-notion-api",
+  "https://www.notion.com/help/notion-mcp",
+  "https://www.usecarly.com/blog/notion-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,106 @@
+{
+ "id": 79,
+ "slug": "smartsheet",
+ "name": "Smartsheet",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A cloud-based work management and collaboration platform with a robust REST API.",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "main_blocker": {
+   "value": "API access requires a paid Smartsheet plan (Business, Enterprise, or Advanced Work Management).",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  "docs_url": {
+   "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "confidence": "high",
+   "source_url": "https://developers.smartsheet.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apidog.com/blog/smartsheet-api-guide/",
+  "https://community.smartsheet.com/discussion/145032/can-i-use-the-api-without-a-business-plan-or-can-i-use-a-business-plan-for-a-short-while",
+  "https://community.smartsheet.com/en/discussion/84297/can-you-access-the-api-when-on-pro-plan/p1",
+  "https://dev.to/zuplo/a-developers-guide-to-the-smartsheet-api-23k9",
+  "https://developers.smartsheet.com/",
+  "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+  "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+  "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+  "https://developers.smartsheet.com/api/smartsheet/introduction",
+  "https://github.com/smartsheet-platform/smar-mcp",
+  "https://github.com/terilios/smartsheet-server",
+  "https://help.smartsheet.com/articles/2482389-generate-API-key",
+  "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+  "https://help.smartsheet.com/learning-track/system-admin-access-and-authentication/defining-your-authentication-methods",
+  "https://mcp.so/servers/smar-mcp",
+  "https://public-api.org/api/136/smartsheet",
+  "https://smartsheet.redoc.ly/?dlm=112&frame=0&nav=1",
+  "https://www.postman.com/api-reference-library/smartsheet/collection/x37d8df/smartsheet-api-reference",
+  "https://www.smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api",
+  "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+  "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+  "https://www.smartsheet.com/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

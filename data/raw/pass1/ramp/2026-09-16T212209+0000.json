@@ -1,0 +1,90 @@
+{
+ "id": 89,
+ "slug": "ramp",
+ "name": "Ramp",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:22:09+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Ramp provides a corporate card and spend management platform with robust developer API access.",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/api"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+  },
+  "docs_url": {
+   "value": "https://docs.ramp.com/developer-api/v1/introduction",
+   "confidence": "high",
+   "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://docs.ramp.com/developer-api/v1",
+  "https://docs.ramp.com/developer-api/v1/api",
+  "https://docs.ramp.com/developer-api/v1/getting-started",
+  "https://docs.ramp.com/developer-api/v1/introduction",
+  "https://docs.ramp.com/developer-api/v1/overview/getting-started",
+  "https://docs.ramp.com/developer/",
+  "https://ramp.com/developer-tools",
+  "https://support.ramp.com/integrations/set-up-workflow-and-productivity-integrations/accessing-the-developer-api/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ }
+}

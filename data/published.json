@@ -5,7 +5,7 @@
   "name": "Salesforce",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise customer relationship management platform with robust REST and GraphQL APIs.",
@@ -150,7 +150,7 @@
   "name": "HubSpot",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one CRM platform featuring APIs for managing contacts, deals, marketing, and customer service.",
@@ -287,7 +287,7 @@
   "name": "Pipedrive",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based sales platform and web/mobile CRM for managing leads and deals.",
@@ -429,7 +429,7 @@
   "name": "Attio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "A flexible, data-driven CRM platform with a robust REST API for managing custom objects and workflows.",
@@ -570,7 +570,7 @@
   "name": "Twenty",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Modern open-source CRM platform with customizable objects, views, workflows, and developer APIs.",
@@ -714,7 +714,7 @@
   "name": "Podio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Work management platform providing a complete REST API for workspaces, apps, and items.",
@@ -825,7 +825,7 @@
   "name": "Close",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Inside sales CRM featuring robust REST APIs and an official MCP server for AI agents.",
@@ -971,7 +971,7 @@
   "name": "Copper",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Google Workspace-integrated CRM with a REST API for managing sales pipelines and contacts.",
@@ -1100,7 +1100,7 @@
   "name": "DealCloud",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "DealCloud is a deal, relationship, and CRM management platform for financial services.",
@@ -1230,7 +1230,7 @@
   "name": "Zendesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support software platform featuring a comprehensive REST API for ticket management.",
@@ -1384,7 +1384,7 @@
   "name": "Intercom",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "AI-first customer service platform for messaging, support, and customer data management.",
@@ -1533,7 +1533,7 @@
   "name": "Freshdesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support platform with ticketing, knowledge base, and helpdesk automation.",
@@ -1674,7 +1674,7 @@
   "name": "Front",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Support and helpdesk platform featuring a robust Core REST API and MCP server.",
@@ -1816,7 +1816,7 @@
   "name": "Pylon",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Unified B2B customer support platform integrating tickets across Slack, email, and chat.",
@@ -1923,7 +1923,7 @@
   "name": "LiveAgent",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Help desk and customer support software with live chat, ticketing, and automation tools.",
@@ -2038,7 +2038,7 @@
   "name": "Plain",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "API-first customer support platform designed for B2B SaaS teams.",
@@ -2172,7 +2172,7 @@
   "name": "Help Scout",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer support platform providing APIs for mailboxes, chats, and help center documentation.",
@@ -2311,7 +2311,7 @@
   "name": "Gorgias",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Gorgias is an e-commerce helpdesk platform for managing customer support tickets and conversations.",
@@ -2454,7 +2454,7 @@
   "name": "Gladly",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer service platform API for managing customer profile data, conversations, and timelines.",
@@ -2581,7 +2581,7 @@
   "name": "Slack",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Team communication platform providing messaging, channels, file sharing, and developer APIs.",
@@ -2723,7 +2723,7 @@
   "name": "Twilio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud communications platform providing APIs for SMS, voice, video, and authentication.",
@@ -2849,7 +2849,7 @@
   "name": "Zoho Cliq",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Team collaboration software providing instant messaging, audio/video calls, and file sharing.",
@@ -2968,7 +2968,7 @@
   "name": "Lark (Larksuite)",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise collaboration platform combining chat, docs, calendar, and workflow automation tools.",
@@ -3085,7 +3085,7 @@
   "name": "Pumble",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Team collaboration and messaging app with REST API support.",
@@ -3213,7 +3213,7 @@
   "name": "Discord",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Messaging platform offering REST APIs for bots, webhooks, and user-authenticated social integrations.",
@@ -3348,7 +3348,7 @@
   "name": "Telegram",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based instant messaging service providing HTTP Bot API and MTProto API.",
@@ -3478,7 +3478,7 @@
   "name": "WhatsApp Business",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise messaging API for sending and receiving messages via the WhatsApp Business platform.",
@@ -3611,7 +3611,7 @@
   "name": "Aircall",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based phone system and call center software with a public REST API.",
@@ -3738,7 +3738,7 @@
   "name": "Vonage",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud communications platform providing APIs for voice, messaging, video, and identity verification.",
@@ -3855,7 +3855,7 @@
   "name": "Google Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Programmatically manage Google Ads campaigns, reporting, and account settings.",
@@ -3987,7 +3987,7 @@
   "name": "Meta Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Programmatic interface to manage, optimize, and analyze Meta advertising campaigns across Facebook and Instagram.",
@@ -4137,7 +4137,7 @@
   "name": "LinkedIn Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides programmatic access to manage, create, and report on LinkedIn advertising campaigns.",
@@ -4263,7 +4263,7 @@
   "name": "GoHighLevel",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one marketing and CRM platform providing automation, lead management, and communication tools.",
@@ -4390,7 +4390,7 @@
   "name": "Mailchimp",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Marketing platform API for managing campaigns, contacts, audiences, and email automation workflows.",
@@ -4521,7 +4521,7 @@
   "name": "Klaviyo",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Email and SMS marketing automation platform with a comprehensive developer API.",
@@ -4678,7 +4678,7 @@
   "name": "systeme.io",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one marketing platform for sales funnels, email marketing, website building, and automation.",
@@ -4794,7 +4794,7 @@
   "name": "Pinterest",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Manage pins, boards, ad campaigns, and merchant catalogs via Pinterest's REST API.",
@@ -4936,7 +4936,7 @@
   "name": "Threads (Meta)",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "API to publish posts, manage replies, and access insights on Meta Threads.",
@@ -5049,7 +5049,7 @@
   "name": "SendGrid",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based email delivery service for sending transactional and marketing emails at scale.",
@@ -5191,7 +5191,7 @@
   "name": "Shopify",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Ecommerce platform enabling merchants to build online stores, manage products, and process orders.",
@@ -5329,12 +5329,370 @@
   }
  },
  {
+  "id": 42,
+  "slug": "woocommerce",
+  "name": "WooCommerce",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "An open-source, customizable e-commerce platform built on WordPress.",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "oauth2",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/features/mcp/"
+   },
+   "base_url_model": {
+    "value": "self_hosted_or_customer_host",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+   },
+   "docs_url": {
+    "value": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "confidence": "high",
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://deepwiki.com/woocommerce/woocommerce-rest-api-docs",
+   "https://developer.woocommerce.com/docs/apis/rest-api/",
+   "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+   "https://developer.woocommerce.com/docs/features/mcp/",
+   "https://emaralive.github.io/woocommerce-rest-api-docs/",
+   "https://github.com/techspawn/woocommerce-mcp-server",
+   "https://github.com/wppoland/woocommerce-mcp",
+   "https://mcp.so/servers/mcp-woocommerce",
+   "https://tryglen.com/mcp/servers/woocommerce",
+   "https://woocommerce.com/document/b2b-for-woocommerce/how-to-connect-b2b-for-woocommerce-to-claude-and-codex-with-mcp/",
+   "https://woocommerce.com/document/w7s-mcp/",
+   "https://woocommerce.com/document/woocommerce-product-search/api/rest/",
+   "https://woocommerce.com/document/woocommerce-rest-api/",
+   "https://woocommerce.github.io/woocommerce-rest-api-docs/v2.html",
+   "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+   "https://www.openmodels.run/mcp/woocommerce"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "woocommerce.com/document/woocommerce-rest-api",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 44,
+  "slug": "salesforce_commerce_cloud",
+  "name": "Salesforce Commerce Cloud",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based e-commerce platform offering REST APIs for storefronts, orders, and products.",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+   },
+   "access_path": {
+    "value": "partner_or_sales_gated",
+    "confidence": "med",
+    "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c"
+   },
+   "main_blocker": {
+    "value": "Production API usage and environment provisioning require commercial partnership or enterprise sales engagement.",
+    "confidence": "med",
+    "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+   },
+   "docs_url": {
+    "value": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "confidence": "high",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/develop.html",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+   "https://developer.salesforce.com/docs/commerce/commerce-api/references",
+   "https://github.com/SalesforceCommerceCloud/commerce-sdk",
+   "https://help.salesforce.com/s/articleView?id=cc.b2c_shopping_agent_scapi_auth_intro.htm&language=en_US&type=5",
+   "https://help.salesforce.com/s/articleView?id=commerce.b2c_rn_26_1_unified_dev_doc.htm&language=en_US&type=5",
+   "https://help.salesforce.com/s/articleView?id=commerce.sf_commerce_api_release_notes.htm&language=en_US&type=5",
+   "https://salesforcecommercecloud.github.io/b2c-dev-doc/",
+   "https://salesforcecommercecloud.github.io/b2c-developer-tooling/cli/slas.html",
+   "https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication.html",
+   "https://salesforcecommercecloud.github.io/commerce-sdk/",
+   "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+   "https://trailhead.salesforce.com/content/learn/modules/guided-shopping-for-b2c-commerce-storefronts/connect-your-salesforce-org-to-b2c-commerce",
+   "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "developer.salesforce.com/docs/commerce",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 5,
+   "parts": {
+    "credential": 0,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 45,
+  "slug": "magento",
+  "name": "Magento (Adobe Commerce)",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Enterprise open-source and cloud ecommerce platform providing robust REST and GraphQL APIs.",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth1",
+     "oauth2",
+     "bearer_token",
+     "token"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/docs/"
+   },
+   "api_type": {
+    "value": "rest_and_graphql",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview"
+   },
+   "base_url_model": {
+    "value": "self_hosted_or_customer_host",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "med",
+    "source_url": "https://developer.adobe.com/commerce/docs/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/docs/"
+   },
+   "docs_url": {
+    "value": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "confidence": "high",
+    "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+   }
+  },
+  "schema_problems": [
+   "auth_methods: bad enum ['oauth1', 'oauth2', 'bearer_token', 'token']"
+  ],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html",
+   "https://business.adobe.com/products/commerce/ai-commerce.html",
+   "https://commercedeveloper.adobe.com/api-reference/",
+   "https://developer.adobe.com/commerce/docs/",
+   "https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication",
+   "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "https://developer.adobe.com/commerce/webapi/rest/reference/",
+   "https://developer.adobe.com/express/add-ons/docs/guides/getting-started/local-development/mcp-server",
+   "https://experienceleague.adobe.com/en/docs/commerce",
+   "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/magento-web-api",
+   "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/oauth",
+   "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+   "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis",
+   "https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview",
+   "https://github.com/AdobeDocs/commerce-webapi",
+   "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/index.md",
+   "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/server-to-server.md",
+   "https://github.com/AdobeDocs/commerce-webapi/tree/main",
+   "https://learn.microsoft.com/en-us/dynamics365/commerce/commerce-mcp",
+   "https://modelcontextprotocol.info/",
+   "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+   "https://www.magento-opensource.com/resources/resources-documentation",
+   "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/29/dynamics-365-commerce-introduces-agentic-capabilities-with-model-context-protocol-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "developer.adobe.com/commerce",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 46,
   "slug": "squarespace",
   "name": "Squarespace",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Platform for building websites, online stores, and managing commerce data via REST APIs.",
@@ -5449,12 +5807,141 @@
   }
  },
  {
+  "id": 47,
+  "slug": "ecwid",
+  "name": "Ecwid",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "E-commerce platform providing REST APIs to manage products, orders, customers, and store settings.",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "access_path": {
+    "value": "self_serve_trial",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.ecwid.com/"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+   },
+   "docs_url": {
+    "value": "https://docs.ecwid.com/api-reference",
+    "confidence": "high",
+    "source_url": "https://docs.ecwid.com/api-reference"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apitracker.io/a/ecwid",
+   "https://developers.ecwid.com/",
+   "https://developers.ecwid.com/build-apps",
+   "https://developers.ecwid.com/ecwid-css-framework/",
+   "https://developers.ecwid.com/site-templates",
+   "https://docs.ecwid.com/",
+   "https://docs.ecwid.com/api-reference",
+   "https://docs.ecwid.com/api-reference/rest-api/storefront-widget-details/sso-single-sign-on-for-websites/add-sso-to-the-website",
+   "https://docs.ecwid.com/changelog/march-2025/march-20/oauth-for-public-apps-get-request-type-changed-to-post",
+   "https://docs.ecwid.com/changelog/september-2025/september-19",
+   "https://docs.ecwid.com/changelog/september-2025/september-19/store-id-is-now-required-for-external-apps-authentication",
+   "https://docs.ecwid.com/develop-apps/app-settings",
+   "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "https://docs.ecwid.com/launch-apps/monetize-public-apps",
+   "https://docs.ecwid.com/launch-apps/native-and-external-apps",
+   "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+   "https://docs.ecwid.com/site-templates/launch-site-templates/step-by-step-publishing-guide-for-site-templates.md",
+   "https://docs.ecwid.com/site-themes/dev-launch-site-themes/technical-guide-for-publishing-site-themes",
+   "https://github.com/Ecwid/ecwid-api-docs",
+   "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+   "https://myaccount.microsoft.com/",
+   "https://myaccount.microsoft.com/login",
+   "https://store.steampowered.com/join/completesignup",
+   "https://www.amazon.com/gp/css/homepage.html",
+   "https://www.ecwid.com/pricing",
+   "https://www.facebook.com/login.php/",
+   "https://www.instagram.com/",
+   "https://www.netflix.com/",
+   "https://www.netflix.com/LOGIN?cookieCheck=true"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 6,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "api-docs.ecwid.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 8,
+   "parts": {
+    "credential": 2,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 48,
   "slug": "gumroad",
   "name": "Gumroad",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Gumroad provides a REST API for managing products, offer codes, sales, and account data.",
@@ -5575,12 +6062,128 @@
   }
  },
  {
+  "id": 49,
+  "slug": "amazon_selling_partner",
+  "name": "Amazon Selling Partner",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Programmatic access to Amazon sales, orders, inventory, fulfillment, and advertising data.",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "hmac_signature"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://sell.amazon.com/developers"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   },
+   "main_blocker": {
+    "value": "Requires a Professional seller account, developer profile submission, role approval, and application review.",
+    "confidence": "high",
+    "source_url": "https://sell.amazon.com/developers"
+   },
+   "docs_url": {
+    "value": "https://developer-docs.amazon/sp-api/",
+    "confidence": "high",
+    "source_url": "https://developer-docs.amazon/sp-api/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://developer-docs-amazon-shipping.readme.io/apis/docs/authorizing-selling-partner-api-applications",
+   "https://developer-docs-amazon-shipping.readme.io/apis/docs/connecting-to-the-selling-partner-api",
+   "https://developer-docs.amazon/",
+   "https://developer-docs.amazon/sp-api/",
+   "https://developer-docs.amazon/sp-api/docs/sp-api-sandbox",
+   "https://developer-docs.amazon/sp-api/lang-en_EN/",
+   "https://developer.amazonservices.com/",
+   "https://developer.amazonservices.com/sp-api-docs/",
+   "https://developer.amazonservices.com/start",
+   "https://developer.amazonservices.com/tools/solution-provider-portal",
+   "https://developer.amazonservices.com/us-support",
+   "https://docs.aws.amazon.com/partner-central/latest/developer-guide/access-control.html",
+   "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/data-sp-api.html",
+   "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+   "https://github.com/amzn/selling-partner-api-sdk",
+   "https://sell.amazon.com/developers"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 6,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "developer-docs.amazon.com/sp-api",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 50,
   "slug": "fanbasis",
   "name": "fanbasis",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "An API for managing fans, signups, and data for artists on the Fanbase platform.",
@@ -5687,7 +6290,7 @@
   "name": "DataForSEO",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides comprehensive SEO and marketing data APIs for search, keywords, and domain analysis.",
@@ -5827,7 +6430,7 @@
   "name": "SE Ranking",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides SEO data including rankings, backlinks, keyword research, and site audits via API.",
@@ -5936,7 +6539,7 @@
   "name": "Ahrefs",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Access SEO, backlink, keyword, and site audit data programmatically via REST API.",
@@ -6061,7 +6664,7 @@
   "name": "MrScraper",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Web scraping platform for structured data extraction using AI-powered and manual scraping tools.",
@@ -6193,7 +6796,7 @@
   "name": "Apify",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud platform for web scraping, data extraction, and automation using AI-powered tools.",
@@ -6330,12 +6933,146 @@
   }
  },
  {
+  "id": 56,
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Turns websites into clean Markdown and structured data for AI agents.",
+    "confidence": "high",
+    "source_url": "https://www.firecrawl.dev/"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://www.firecrawl.dev/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "med",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://github.com/firecrawl/firecrawl-mcp-server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://www.firecrawl.dev/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://www.firecrawl.dev/pricing"
+   },
+   "docs_url": {
+    "value": "https://docs.firecrawl.dev/api-reference/introduction",
+    "confidence": "high",
+    "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://crawlcrawl.com/blog/firecrawl-api",
+   "https://deepwiki.com/firecrawl/firecrawl-mcp-server",
+   "https://docs.firecrawl.dev/api-reference/introduction",
+   "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "https://docs.firecrawl.dev/mcp-server",
+   "https://docs.firecrawl.dev/use-cases/developers-mcp",
+   "https://firecrawldocs.com/",
+   "https://github.com/danieldunderfelt/documentation-mcp-server",
+   "https://github.com/firecrawl/firecrawl-mcp-server",
+   "https://mcpcursor.com/server/firecrawl-mcp",
+   "https://skillsplayground.com/mcps/firecrawl-firecrawl-mcp-server/",
+   "https://webscraping.ai/blog/firecrawl-guide",
+   "https://www.firecrawl.dev/",
+   "https://www.firecrawl.dev/blog/firecrawl-mcp-chatgpt",
+   "https://www.firecrawl.dev/pricing",
+   "https://www.modern-datatools.com/tools/firecrawl-cli/pricing"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "composio_auth_disagreement"
+  ],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "firecrawl.dev",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "firecrawl",
+   "composio_name": "Firecrawl",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 29.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ai web scraping",
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 57,
   "slug": "bright_data",
   "name": "Bright Data",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Web data platform providing proxies, scraping APIs, and AI-optimized tools for web extraction.",
@@ -6482,7 +7219,7 @@
   "name": "Sherlock",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Hunt down social media accounts by username across social networks.",
@@ -6586,12 +7323,133 @@
   }
  },
  {
+  "id": 59,
+  "slug": "waterfall_io",
+  "name": "Waterfall.io",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "B2B data enrichment API aggregating 30+ vendor data sources for maximum coverage.",
+    "confidence": "high",
+    "source_url": "https://www.waterfall.io/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/authentication"
+   },
+   "access_path": {
+    "value": "partner_or_sales_gated",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/book-demo"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/introduction"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/introduction"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://docs.waterfall.io/v1/skills-overview"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/introduction"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/introduction"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://docs.waterfall.io/v1/book-demo"
+   },
+   "main_blocker": {
+    "value": "API access requires booking a call with sales rather than a fully self-serve sign-up.",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/book-demo"
+   },
+   "docs_url": {
+    "value": "https://docs.waterfall.io/v1/introduction",
+    "confidence": "high",
+    "source_url": "https://docs.waterfall.io/v1/introduction"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apidocs.waterfall.com/#!/v2/reporting",
+   "https://docs.waterfall.io/v1/api-keys-create",
+   "https://docs.waterfall.io/v1/api-keys-list",
+   "https://docs.waterfall.io/v1/authentication",
+   "https://docs.waterfall.io/v1/book-demo",
+   "https://docs.waterfall.io/v1/company-enrichment-launcher",
+   "https://docs.waterfall.io/v1/company-reveal-launcher",
+   "https://docs.waterfall.io/v1/contact-enrichment-launcher",
+   "https://docs.waterfall.io/v1/introduction",
+   "https://docs.waterfall.io/v1/openapi-spec",
+   "https://docs.waterfall.io/v1/phone-enrichment-launcher",
+   "https://docs.waterfall.io/v1/prospector-location-filter",
+   "https://docs.waterfall.io/v1/skills-direct-api",
+   "https://docs.waterfall.io/v1/skills-overview",
+   "https://getwaterfall.org/docs/",
+   "https://github.com/PaperMC/Waterfall",
+   "https://jd.papermc.io/waterfall/1.21/help-doc.html",
+   "https://jd.papermc.io/waterfall/1.21/index.html",
+   "https://status.waterfall.io/incidents",
+   "https://status.waterfall.io/index.json",
+   "https://www.waterfall.io/",
+   "https://www.waterfall.io/book-a-call"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "waterfall.io (contact/company intel)",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 5,
+   "parts": {
+    "credential": 0,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
   "id": 60,
   "slug": "clay",
   "name": "Clay",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "GTM automation platform offering programmable workflows, data enrichment, and AI-powered research capabilities.",
@@ -6701,12 +7559,428 @@
   }
  },
  {
+  "id": 61,
+  "slug": "github",
+  "name": "GitHub",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based platform for Git repository hosting, code review, and project management workflows.",
+    "confidence": "high",
+    "source_url": "https://softverdict.com/github-pricing-2026/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://github.com/pricing.php"
+   },
+   "api_type": {
+    "value": "rest_and_graphql",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server?tool=vscode"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://github.com/pricing.php"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   },
+   "docs_url": {
+    "value": "https://docs.github.com/en/rest",
+    "confidence": "high",
+    "source_url": "https://docs.github.com/en/rest"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://deepwiki.com/modelcontextprotocol/servers",
+   "https://developer.github.com/v3/oauth_authorizations",
+   "https://docs.github.com/en/copilot/concepts/context/mcp",
+   "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server?tool=vscode",
+   "https://docs.github.com/en/get-started/learning-about-github/githubs-plans",
+   "https://docs.github.com/en/rest",
+   "https://docs.github.com/en/rest/authentication",
+   "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "https://git.scbeta.com/pricing",
+   "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/",
+   "https://github.com/github/docs/blob/main/content/rest/authentication/authenticating-to-the-rest-api.md",
+   "https://github.com/github/docs/blob/main/content/rest/using-the-rest-api/getting-started-with-the-rest-api.md",
+   "https://github.com/modelcontextprotocol",
+   "https://github.com/modelcontextprotocol/servers",
+   "https://github.com/pricing.php",
+   "https://github.github.com/gh-aw/guides/mcps/",
+   "https://mcpservers.org/servers/modelcontextprotocol/servers",
+   "https://octokit.github.io/routes/cache/api.github.com/v3/index.html",
+   "https://publicapis.io/github-api",
+   "https://softverdict.com/github-pricing-2026/",
+   "https://www.geeksforgeeks.org/git/getting-started-with-github-rest-api/",
+   "https://www.getpricepulse.com/blog/github-pricing-2026-complete-guide.html"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Developer, Infra and Data platforms",
+  "category_id": "dev_infra",
+  "hint": "docs.github.com/rest",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "github",
+   "composio_name": "GitHub",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 874.0,
+   "triggers_count": 46.0,
+   "categories": [
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 62,
+  "slug": "vercel",
+  "name": "Vercel",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud platform for frontend frameworks and static sites with serverless deployment.",
+    "confidence": "high",
+    "source_url": "https://vercel.com/pricing"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://vercel.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/agent-resources/vercel-mcp"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://vercel.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   },
+   "docs_url": {
+    "value": "https://vercel.com/docs/rest-api",
+    "confidence": "high",
+    "source_url": "https://vercel.com/docs/rest-api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "***REDACTED***",
+   "https://costbench.com/software/developer-tools/vercel/",
+   "https://deepwiki.com/vercel-labs/fx/7-model-context-protocol-(mcp)",
+   "https://examples.vercel.com/docs/agent-resources/vercel-mcp",
+   "https://github.com/Quegenx/vercel-mcp-server",
+   "https://github.com/jasona7/mcp-vercel-server",
+   "https://modelcontextprotocol.io/docs/2026-07-28/develop/build-server",
+   "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
+   "https://openapi-explorer.vercel.app/",
+   "https://pricepertoken.com/pricing-page/provider/vercel",
+   "https://real-api-pricing.vercel.app/",
+   "https://schematichq.com/blog/vercel-pricing",
+   "https://skillsplayground.com/mcps/comvercel-vercel-mcp/",
+   "https://tinkrd.com/vercel-pricing/",
+   "https://vercel.com/docs/accounts/access-tokens",
+   "https://vercel.com/docs/agent-resources/vercel-mcp",
+   "https://vercel.com/docs/agent-resources/vercel-mcp/tools",
+   "https://vercel.com/docs/cli/tokens",
+   "https://vercel.com/docs/mcp",
+   "https://vercel.com/docs/pricing",
+   "https://vercel.com/docs/rest-api",
+   "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+   "https://vercel.com/pricing",
+   "https://www.getaiperks.com/en/blogs/57-vercel-pricing-vs-alternatives-2026"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "composio_auth_disagreement"
+  ],
+  "human_corrected": [],
+  "category": "Developer, Infra and Data platforms",
+  "category_id": "dev_infra",
+  "hint": "vercel.com/docs/rest-api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "vercel",
+   "composio_name": "Vercel",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 132.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 64,
+  "slug": "cloudflare",
+  "name": "Cloudflare",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Web infrastructure and security platform providing global DNS, CDN, Workers, and DDoS protection.",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://github.com/cloudflare/mcp-server-cloudflare"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   },
+   "docs_url": {
+    "value": "https://developers.cloudflare.com/api/",
+    "confidence": "high",
+    "source_url": "https://developers.cloudflare.com/api/overview/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://blog.cloudflare.com/mcp-v2/",
+   "https://blog.cloudflare.com/remote-model-context-protocol-servers-mcp/",
+   "https://cfapi.centminmod.com/",
+   "https://cloudflare-saas.readthedocs.io/en/latest/permissions_guide.html",
+   "https://cloudflare.apidocumentation.com/",
+   "https://cloudflare.github.io/node-cloudflare/",
+   "https://developers.cloudflare.com/agents/model-context-protocol/",
+   "https://developers.cloudflare.com/agents/model-context-protocol/guides/remote-mcp-server/",
+   "https://developers.cloudflare.com/api/overview/",
+   "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+   "https://github.com/cloudflare/cloudflare-docs/blob/production/src/content/docs/fundamentals/api/how-to/make-api-calls.mdx",
+   "https://github.com/cloudflare/mcp-server-cloudflare",
+   "https://github.com/cloudflare/mcp-server-cloudflare/blob/main/README.md",
+   "https://modelcontextprotocol.io/docs/2026-07-28/learn/server-concepts",
+   "https://tutorials.dodatech.com/cloudflare/api-tokens-intro/",
+   "https://www.cloudflare.com/en-gb/learning/ai/what-is-model-context-protocol-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Developer, Infra and Data platforms",
+  "category_id": "dev_infra",
+  "hint": "developers.cloudflare.com/api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "cloudflare",
+   "composio_name": "Cloudflare",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 20.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "security & identity tools",
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 66,
   "slug": "neo4j",
   "name": "Neo4j",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "A graph database platform for storing and querying highly connected data.",
@@ -6823,12 +8097,1117 @@
   }
  },
  {
+  "id": 68,
+  "slug": "mongodb_atlas",
+  "name": "MongoDB Atlas",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Managed cloud database service with an extensive API for cluster and data management.",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "med",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+   },
+   "docs_url": {
+    "value": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "confidence": "high",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apiterms.com/api/mongodb.com/",
+   "https://atlasui.readthedocs.io/en/latest/service_accounts.html",
+   "https://github.com/mongodb-developer/mcp-mongodb-atlas",
+   "https://github.com/mongodb-js/mongodb-mcp-server",
+   "https://go-cloud.io/mongodb-pricing/",
+   "https://itsfree.dev/tools/mongodb-atlas",
+   "https://learn.mongodb.com/learn/course/secure-mongodb-atlas-authn-and-authz/secure-mongodb-atlas-authn-and-authz/conclusion",
+   "https://learn.mongodb.com/learn/course/secure-mongodb-atlas-authn-and-authz/secure-mongodb-atlas-authn-and-authz/implement-secure-authentication-and-authorization",
+   "https://manufact.com/mcp-catalog/mongodb-atlas",
+   "https://mcp.directory/servers/mongodb-atlas",
+   "https://mcpfind.org/blog/mongodb-mcp-server-guide",
+   "https://mongo.comcloud.xyz/docs/atlas/api/api-authentication/",
+   "https://pricingapis.com/databases/mongodb-atlas",
+   "https://staxly.dev/platforms/mongodb-atlas",
+   "https://techoral.com/db/mongo/mongodb-mcp-server.html",
+   "https://www.devopsschool.com/tutorials/mongodb-the-complete-mongodb-atlas-authentication-authorization-tutorial/",
+   "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+   "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+   "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+   "https://www.mongodb.com/docs/mcp-server/overview/",
+   "https://www.mongodb.com/pricing",
+   "https://www.mongodb.com/products/tools/mcp-server",
+   "https://www.postman.com/mongodb-devrel/mongodb-atlas-administration-apis/overview",
+   "https://www.spendflo.com/blog/mongodb-atlas-pricing-guide"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Developer, Infra and Data platforms",
+  "category_id": "dev_infra",
+  "hint": "mongodb.com/docs/atlas/api",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 71,
+  "slug": "notion",
+  "name": "Notion",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A REST API to read, write, and manage Notion pages, databases, and blocks.",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/docs/authorization"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/docs/authorization"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/guides/mcp/overview"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   },
+   "docs_url": {
+    "value": "https://developers.notion.com/reference/intro",
+    "confidence": "high",
+    "source_url": "https://developers.notion.com/reference/intro"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://agentsapis.com/notion-api/",
+   "https://composio.dev/auth/notion",
+   "https://deepwiki.com/notion-dotnet/notion-sdk-net/1.2-authentication",
+   "https://developers.notion.com/guides/get-started/authorization",
+   "https://developers.notion.com/guides/get-started/overview",
+   "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+   "https://developers.notion.com/guides/mcp/overview",
+   "https://developers.notion.com/reference/authentication",
+   "https://github.com/makenotion/notion-mcp-server",
+   "https://github.com/mcp-research/makenotion__notion-mcp-server",
+   "https://help.moveworks.com/service-management/access-requirements/knowledge-base-systems/notion-access-requirements",
+   "https://mcp.so/servers/notion-mcp-server",
+   "https://mcpservers.org/remote-mcp-servers/notion",
+   "https://public-api.org/api/425/notion",
+   "https://sdk-php.notiondesk.help/en/articles/authentication",
+   "https://techconcepts.org/blog/notion-api-integration",
+   "https://truto.one/blog/how-to-integrate-with-the-notion-api-architecture-guide-for-b2b-saas/",
+   "https://www.notion.com/help/create-integrations-with-the-notion-api",
+   "https://www.notion.com/help/guides/connect-tools-to-notion-api",
+   "https://www.notion.com/help/notion-mcp",
+   "https://www.usecarly.com/blog/notion-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "developers.notion.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "notion",
+   "composio_name": "Notion",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 54.0,
+   "triggers_count": 8.0,
+   "categories": [
+    "notes",
+    "documents",
+    "project management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 72,
+  "slug": "airtable",
+  "name": "Airtable",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A low-code platform for building collaborative apps with a programmable REST API.",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token",
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "med",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   },
+   "docs_url": {
+    "value": "https://airtable.com/developers/web/api/introduction",
+    "confidence": "high",
+    "source_url": "https://airtable.com/developers/web/api/authentication"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://airtable.com/developers/web/api/authentication",
+   "https://airtable.com/developers/web/api/authentication.md",
+   "https://community.airtable.com/announcements-6/new-beta-new-api-authentication-methods-endpoints-and-public-api-docs-1442",
+   "https://ones.com/blog/developers-quick-start-to-airtable-api-documentation/",
+   "https://support.airtable.com/articles/2022585894-airtable-enterprise-api",
+   "https://support.airtable.com/articles/6811769763-third-party-integrations-via-oauth-overview",
+   "https://www.apirefs.com/apps/airtable",
+   "https://www.business-automated.com/tutorials/airtable-api-beginners-guide"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "airtable.com/developers",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "airtable",
+   "composio_name": "Airtable",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 25.0,
+   "triggers_count": 6.0,
+   "categories": [
+    "productivity",
+    "spreadsheets",
+    "databases"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 73,
+  "slug": "linear",
+  "name": "Linear",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Linear is a streamlined issue tracking and project management tool for software teams.",
+    "confidence": "high",
+    "source_url": "https://linear.app/docs"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://linear.app/pricing"
+   },
+   "api_type": {
+    "value": "graphql",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://linear.app/docs/mcp"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://linear.app/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   },
+   "docs_url": {
+    "value": "https://linear.app/developers/graphql",
+    "confidence": "high",
+    "source_url": "https://linear.app/developers/graphql"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://aitoolpick.org/blog/linear-pricing-2026/",
+   "https://aitoolsatlas.ai/tools/linear-api",
+   "https://aitoolsatlas.ai/tools/linear-api/pricing",
+   "https://apiterms.com/api/linear.app/",
+   "https://blog.n8n.io/api-authentication-methods/",
+   "https://comparetiers.com/tools/linear",
+   "https://deepwiki.com/cline/linear-mcp/2.1-authentication-methods",
+   "https://devwithtools.org/blog/api-authentication-methods",
+   "https://github.com/ascend42/linear-cli-paradigm-version/blob/main/docs/authentication.md",
+   "https://github.com/jerhadf/linear-mcp-server",
+   "https://github.com/linear/linear",
+   "https://github.com/linear/linear/blob/master/docs/API.md",
+   "https://github.com/schpet/linear-cli/blob/main/docs/authentication.md",
+   "https://github.com/xuwenhao/x-linear-cli/blob/main/docs/authentication.md",
+   "https://growthmethod.com/linear-mcp-server/",
+   "https://linear.app/developers",
+   "https://linear.app/developers/advanced-usage",
+   "https://linear.app/developers/graphql",
+   "https://linear.app/developers/oauth-actor-authorization",
+   "https://linear.app/developers/sdk",
+   "https://linear.app/docs",
+   "https://linear.app/docs/api-and-webhooks",
+   "https://linear.app/docs/billing-and-plans",
+   "https://linear.app/docs/mcp",
+   "https://linear.app/docs/mcp.md",
+   "https://linear.app/pricing",
+   "https://mcpservers.org/remote-mcp-servers/linear",
+   "https://mcpservers.org/servers/linear-mcp",
+   "https://pricingping.com/linear-pricing/",
+   "https://www.gamut.so/blog/linear-mcp-server-guide",
+   "https://www.usecarly.com/blog/linear-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "developers.linear.app",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "linear",
+   "composio_name": "Linear",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 47.0,
+   "triggers_count": 12.0,
+   "categories": [
+    "project management",
+    "task management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 74,
+  "slug": "jira",
+  "name": "Jira",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Enterprise project management tool for tracking tasks, agile planning, and workflow automation.",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "basic",
+     "jwt"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   },
+   "docs_url": {
+    "value": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "confidence": "high",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://community.atlassian.com/forums/App-Central-articles/Jira-MCP-Explained-What-It-Does-What-It-Doesn-t-and-How-to-Use/ba-p/3241874",
+   "https://community.developer.atlassian.com/t/requirements-and-typical-timeline-for-3lo-app-approval-before-commercial-distribution/102659",
+   "https://confluence.atlassian.com/display/AAR/App+Access+for+Jira+Cloud+REST+APIs",
+   "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+   "https://developer.atlassian.com/cloud/jira/software/rest/",
+   "https://developer.atlassian.com/cloud/rovo-mcp/",
+   "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1473.0/",
+   "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1609.0/",
+   "https://docs.atlassian.com/software/jira/docs/api/REST/1000.729.0/",
+   "https://docs.atlassian.com/software/jira/docs/api/REST/1000.824.0/",
+   "https://github.com/atlassian/atlassian-mcp-server",
+   "https://github.com/atlassian/atlassian-mcp-server/blob/main/README.md",
+   "https://jira.readthedocs.io/en/latest/api.html",
+   "https://mcp.directory/blog/jira-mcp-complete-guide-2026",
+   "https://moldstud.com/articles/p-jira-api-basics-essential-guide-every-developer-needs-to-know",
+   "https://ones.com/blog/mastering-jira-cloud-api-documentation-developers-guide/",
+   "https://releasemanagement.atlassian.net/wiki/spaces/RMC/pages/2445246483/Rest+API",
+   "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+   "https://www.atlassian.com/blog/confluence/remote-mcp-server",
+   "https://www.atlassian.com/platform/rovo-mcp",
+   "https://www.postman.com/postman/atlassian-jira-api/documentation/tdpgtl0/jira-software-cloud-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "developer.atlassian.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "jira",
+   "composio_name": "Jira",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "S2S_OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 98.0,
+   "triggers_count": 17.0,
+   "categories": [
+    "project management",
+    "task management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 75,
+  "slug": "asana",
+  "name": "Asana",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Collaborative work management platform for planning, assigning, and tracking tasks across projects.",
+    "confidence": "high",
+    "source_url": "https://asana.com/developers"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/overview"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/api-features"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/mcp-server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/mcp-server"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/overview"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/docs/overview"
+   },
+   "docs_url": {
+    "value": "https://developers.asana.com/reference/rest-api-reference",
+    "confidence": "high",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://asana.com/developers",
+   "https://asana.com/resources/software-requirement-document-template",
+   "https://developers.asana.com/",
+   "https://developers.asana.com/docs/api-explorer",
+   "https://developers.asana.com/docs/api-features",
+   "https://developers.asana.com/docs/authentication",
+   "https://developers.asana.com/docs/mcp-server",
+   "https://developers.asana.com/docs/oauth",
+   "https://developers.asana.com/docs/overview",
+   "https://developers.asana.com/docs/using-asanas-mcp-server",
+   "https://developers.asana.com/jd/docs/overview",
+   "https://developers.asana.com/reference/rest-api-reference",
+   "https://forum.asana.com/c/forum-en/api/24",
+   "https://forum.asana.com/t/new-v2-mcp-server-now-generally-available/1122647",
+   "https://forum.asana.com/t/oauth-personal-access-token-api-key-how-to-get-connected-to-asana-through-our-api/814",
+   "https://github.com/Asana/openapi",
+   "https://help.asana.com/s/article/api?language=en_US",
+   "https://help.asana.com/s/article/how-to-use-asana-for-product-development?language=en_US",
+   "https://mcp.services/companies/asana/asana-mcp-server",
+   "https://mcp.so/servers/asana",
+   "https://mcpservers.org/servers/asana-mcp",
+   "https://primrose.dev/mcp/asana/auth",
+   "https://public-api.org/api/411/asana",
+   "https://tryglen.com/mcp/servers/asana",
+   "https://www.graphapp.ai/blog/unlocking-the-asana-developer-console-a-comprehensive-guide",
+   "https://www.postman.com/asana-team/asana-s-public-workspace/collection/j8tdhts/asana",
+   "https://www.usecarly.com/blog/asana-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "developers.asana.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "asana",
+   "composio_name": "Asana",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 153.0,
+   "triggers_count": 6.0,
+   "categories": [
+    "project management",
+    "task management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 77,
+  "slug": "clickup",
+  "name": "ClickUp",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A project management platform offering task tracking, documentation, and team collaboration via a REST API.",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/authentication"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/authentication"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": null
+   },
+   "docs_url": {
+    "value": "https://developer.clickup.com/docs/Getting%20Started",
+    "confidence": "high",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://clickup.com/api/clickupreference/operation/AddTagToTask/",
+   "https://clickup.com/api/clickupreference/operation/AddTaskLink/",
+   "https://clickup.com/api/clickupreference/operation/CreateList/",
+   "https://clickup.com/api/clickupreference/operation/DeleteSpace",
+   "https://clickup.com/api/clickupreference/operation/DeleteTaskLink/",
+   "https://clickup.com/api/developer-portal/customfields/",
+   "https://clickup.com/api/developer-portal/faq/",
+   "https://clickup.com/api/developer-portal/filter-views/",
+   "https://clickup.com/blog/how-to-use-clickup-mcp-server/",
+   "https://consultevo.com/clickup-api-authentication-guide-2/",
+   "https://consultevo.com/clickup-api-how-to-guide/",
+   "https://developer.clickup.com/docs/Getting%20Started",
+   "https://developer.clickup.com/docs/authentication",
+   "https://feedback.clickup.com/public-api/p/clickup-mcp-server-first-party-and-official",
+   "https://growthmethod.com/clickup-mcp-server/",
+   "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+   "https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP",
+   "https://help.clickup.com/hc/en-us/sections/6131847925911-API",
+   "https://mcpservers.org/servers/clickup-mcp",
+   "https://mcpservers.org/servers/clickup-remote-mcp",
+   "https://ones.com/blog/navigating-the-clickup-api-documentation-a-practical-walkthrough/",
+   "https://www.stitchflow.com/user-management/clickup/api",
+   "https://www.upsys-consulting.com/en/blog/clickup-api-guide",
+   "https://www.usecarly.com/blog/clickup-mcp/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "clickup.com/api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "clickup",
+   "composio_name": "ClickUp",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 162.0,
+   "triggers_count": 21.0,
+   "categories": [
+    "productivity",
+    "project management",
+    "task management"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 79,
+  "slug": "smartsheet",
+  "name": "Smartsheet",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A cloud-based work management and collaboration platform with a robust REST API.",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "main_blocker": {
+    "value": "API access requires a paid Smartsheet plan (Business, Enterprise, or Advanced Work Management).",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+   },
+   "docs_url": {
+    "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "confidence": "high",
+    "source_url": "https://developers.smartsheet.com/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apidog.com/blog/smartsheet-api-guide/",
+   "https://community.smartsheet.com/discussion/145032/can-i-use-the-api-without-a-business-plan-or-can-i-use-a-business-plan-for-a-short-while",
+   "https://community.smartsheet.com/en/discussion/84297/can-you-access-the-api-when-on-pro-plan/p1",
+   "https://dev.to/zuplo/a-developers-guide-to-the-smartsheet-api-23k9",
+   "https://developers.smartsheet.com/",
+   "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+   "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "https://developers.smartsheet.com/api/smartsheet/introduction",
+   "https://github.com/smartsheet-platform/smar-mcp",
+   "https://github.com/terilios/smartsheet-server",
+   "https://help.smartsheet.com/articles/2482389-generate-API-key",
+   "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+   "https://help.smartsheet.com/learning-track/system-admin-access-and-authentication/defining-your-authentication-methods",
+   "https://mcp.so/servers/smar-mcp",
+   "https://public-api.org/api/136/smartsheet",
+   "https://smartsheet.redoc.ly/?dlm=112&frame=0&nav=1",
+   "https://www.postman.com/api-reference-library/smartsheet/collection/x37d8df/smartsheet-api-reference",
+   "https://www.smartsheet.com/content-center/managing-work/it-management/authentication-mastery-smartsheet-api",
+   "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+   "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+   "https://www.smartsheet.com/pricing"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Productivity and Project Management",
+  "category_id": "productivity",
+  "hint": "smartsheet.com/developers",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
   "id": 84,
   "slug": "paygent_connect",
   "name": "Paygent Connect",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:18:46+00:00",
+  "researched_at": "2026-09-16T21:23:41+00:00",
   "fields": {
    "one_liner": {
     "value": "Payment infrastructure allowing AI agents to create, fund, and manage virtual cards via MCP/API.",
@@ -6937,6 +9316,640 @@
    "parts": {
     "credential": 3,
     "docs": 1,
+    "breadth": 1,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 87,
+  "slug": "xero",
+  "name": "Xero",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud-based accounting platform providing financial management APIs for businesses and developers.",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/guides/oauth2/overview/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://github.com/XeroAPI/xero-mcp-server"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+   },
+   "docs_url": {
+    "value": "https://developer.xero.com/documentation/api/accounting/overview",
+    "confidence": "high",
+    "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "auth_methods"
+  ],
+  "search_urls": [
+   "https://central.xero.com/s/article/Create-custom-integrations-and-apps-with-Xero",
+   "https://codelesssync.com/blog/xero-api-integration-guide",
+   "https://dev.to/webbycrownsolutions/xero-api-integration-guide-connect-automate-optimize-accounting-3h16",
+   "https://developer.xero.com/documentation/api/accounting/overview",
+   "https://developer.xero.com/documentation/getting-started-guide/",
+   "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/building-and-growing-your-app/",
+   "https://github.com/XeroAPI",
+   "https://github.com/XeroAPI/Api.Documentation",
+   "https://github.com/XeroAPI/xero-mcp-server",
+   "https://github.com/XeroAPI/xero-mcp-server/blob/main/README.md",
+   "https://mcp.so/servers/xero",
+   "https://mcpservers.org/remote-mcp-servers/xero",
+   "https://mcpservers.org/servers/xero-mcp",
+   "https://model-context-protocol.com/servers/xero-mcp-server-model-context-protocol",
+   "https://satvasolutions.com/blog/xero-api-integration-guide",
+   "https://truto.one/blog/how-do-i-integrate-with-the-xero-api-a-guide-for-b2b-saas/",
+   "https://www.mcpforge.tech/blog/xero-mcp-server-complete-guide",
+   "https://www.usecarly.com/blog/xero-mcp/",
+   "https://www.webnuz.com/article/2026-08-04/Xero%20API%20Integration%20Guide%20%282026%29%3A%20OAuth%2C%20Tenants%2C%20and%20Your%20First%20Query",
+   "https://xeroapi.github.io/Xero-NetStandard/accounting/index.html",
+   "https://xeroapi.github.io/xero-node/accounting/index.html"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Finance and Fintech",
+  "category_id": "finance",
+  "hint": "developer.xero.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "xero",
+   "composio_name": "Xero",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 53.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "accounting"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 89,
+  "slug": "ramp",
+  "name": "Ramp",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Ramp provides a corporate card and spend management platform with robust developer API access.",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/api"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "med",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+   },
+   "docs_url": {
+    "value": "https://docs.ramp.com/developer-api/v1/introduction",
+    "confidence": "high",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://docs.ramp.com/developer-api/v1",
+   "https://docs.ramp.com/developer-api/v1/api",
+   "https://docs.ramp.com/developer-api/v1/getting-started",
+   "https://docs.ramp.com/developer-api/v1/introduction",
+   "https://docs.ramp.com/developer-api/v1/overview/getting-started",
+   "https://docs.ramp.com/developer/",
+   "https://ramp.com/developer-tools",
+   "https://support.ramp.com/integrations/set-up-workflow-and-productivity-integrations/accessing-the-developer-api/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Finance and Fintech",
+  "category_id": "finance",
+  "hint": "docs.ramp.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "ramp",
+   "composio_name": "Ramp",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 88.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "accounting"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 91,
+  "slug": "notebooklm",
+  "name": "NotebookLM",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Programmatic management of NotebookLM enterprise notebooks, data sources, and organizational content.",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "med",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": null
+   },
+   "base_url_model": {
+    "value": "regional",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "test_account": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "main_blocker": {
+    "value": "Requires a Google Cloud project with Gemini Notebook Enterprise licenses enabled.",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   },
+   "docs_url": {
+    "value": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "confidence": "high",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://autocontentapi.com/blog/does-notebooklm-have-an-api",
+   "https://deepwiki.com/jacob-bd/notebooklm-mcp/7-notebooklm-api-reference",
+   "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+   "https://github.com/gnh1201/notebooklm-rest-api",
+   "https://github.com/teng-lin/notebooklm-py",
+   "https://github.com/topics/notebooklm-api",
+   "https://javatechonline.com/how-to-use-notebooklm-as-a-developer/",
+   "https://roomi-fields.github.io/notebooklm-mcp/notebooklm-rest-api",
+   "https://www.communeify.com/en/blog/notebooklm-enterprise-api-programmatic-notes-workflow/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "composio_auth_disagreement"
+  ],
+  "human_corrected": [],
+  "category": "AI, Research and Media-native",
+  "category_id": "ai_media",
+  "hint": "cloud.google.com/gemini (Enterprise API)",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "notebook_lm",
+   "composio_name": "NotebookLM",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 11.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ai assistants",
+    "notes",
+    "education"
+   ]
+  },
+  "score": {
+   "total": 4,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 1,
+    "test": 0
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 92,
+  "slug": "otter_ai",
+  "name": "Otter AI",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Enterprise-focused API for retrieving meeting transcripts, action items, and workspace conversation data.",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "access_path": {
+    "value": "partner_or_sales_gated",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "med",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "docs_quality": {
+    "value": "partial_or_thin",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   },
+   "test_account": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+   },
+   "main_blocker": {
+    "value": "Access is strictly limited to Enterprise workspace customers and requires direct coordination with an account manager.",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+   },
+   "docs_url": {
+    "value": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "confidence": "high",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://connect.tryotter.com/docs/",
+   "https://connect.tryotter.com/docs/api-reference/reference/otter-api/",
+   "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+   "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+   "https://helpdesk.tryotter.com/hc/en-us/articles/22694653065107-API-Documentation",
+   "https://otter-framework.dev/docs/documentations/",
+   "https://otter-framework.dev/docs/documentations/otter-api/",
+   "https://otter.ai/api/docs/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "dead_or_redirected_citation"
+  ],
+  "human_corrected": [],
+  "category": "AI, Research and Media-native",
+  "category_id": "ai_media",
+  "hint": "help.otter.ai (MCP server)",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 2,
+   "parts": {
+    "credential": 0,
+    "docs": 1,
+    "breadth": 1,
+    "test": 0
+   },
+   "tier": "needs_outreach"
+  }
+ },
+ {
+  "id": 93,
+  "slug": "fathom",
+  "name": "Fathom",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:23:41+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "AI meeting assistant that automatically records, transcribes, and summarizes video calls.",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/faq"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/faq"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/api-overview"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/quickstart"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/quickstart"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/quickstart"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/faq"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/quickstart"
+   },
+   "docs_url": {
+    "value": "https://developers.fathom.ai/",
+    "confidence": "high",
+    "source_url": "https://developers.fathom.ai/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://api-docs.fathom.global/index.html",
+   "https://api-docs.fathom.global/reference/rest.html",
+   "https://developers.fathom.ai/",
+   "https://developers.fathom.ai/api-overview",
+   "https://developers.fathom.ai/faq",
+   "https://developers.fathom.ai/quickstart",
+   "https://developers.fathom.ai/sdks",
+   "https://docs.cadense.io/tools/fathom",
+   "https://docs.fathom.one/",
+   "https://help.fathom.video/",
+   "https://help.fathom.video/en/articles/8368641"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "AI, Research and Media-native",
+  "category_id": "ai_media",
+  "hint": "fathom.video",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "fathom",
+   "composio_name": "Fathom",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 7.0,
+   "triggers_count": 1.0,
+   "categories": [
+    "ai meeting assistants",
+    "transcription"
+   ]
+  },
+  "score": {
+   "total": 8,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
     "breadth": 1,
     "test": 2
    },

@@ -1,6 +1,6 @@
 # App buildability research: 100 apps
 
-Generated 2026-09-16T21:18:47+00:00. Machine-readable: /data.json
+Generated 2026-09-16T21:23:43+00:00. Machine-readable: /data.json
 
 | App | Category | In Composio | Auth | Access | API | MCP | Score | Tier | Docs |
 |---|---|---|---|---|---|---|---|---|---|
@@ -44,16 +44,39 @@ Generated 2026-09-16T21:18:47+00:00. Machine-readable: /data.json
 | Threads (Meta) | Marketing, Ads, Email and Social | no | oauth2 | app_review_required | rest | none_found | 7 | build_now | https://developers.facebook.com/docs/threads/reference/ |
 | SendGrid | Marketing, Ads, Email and Social | yes | api_key, bearer_token, basic | self_serve_free | rest | community_only | 9 | build_now | https://www.twilio.com/docs/sendgrid/api-reference |
 | Shopify | Ecommerce | yes | oauth2, api_key, hmac_signature | app_review_required | rest_and_graphql | official | 7 | build_now | https://shopify.dev/docs/api |
+| WooCommerce | Ecommerce | no | api_key, oauth2, basic | self_serve_free | rest | official | 9 | build_now | https://developer.woocommerce.com/docs/apis/rest-api/v3/ |
+| Salesforce Commerce Cloud | Ecommerce | no | oauth2 | partner_or_sales_gated | rest | none_found | 5 | build_with_friction | https://developer.salesforce.com/docs/commerce/commerce-api/overview |
+| Magento (Adobe Commerce) | Ecommerce | no | oauth1, oauth2, bearer_token, token | self_serve_free | rest_and_graphql | official | 9 | build_now | https://developer.adobe.com/commerce/webapi/rest/reference/ |
 | Squarespace | Ecommerce | no | oauth2, api_key | app_review_required | rest | none_found | 6 | build_with_friction | https://developers.squarespace.com/ |
+| Ecwid | Ecommerce | no | oauth2, bearer_token | self_serve_trial | rest | none_found | 8 | build_now | https://docs.ecwid.com/api-reference |
 | Gumroad | Ecommerce | yes | oauth2, bearer_token | self_serve_free | rest | none_found | 9 | build_now | https://gumroad.com/api |
+| Amazon Selling Partner | Ecommerce | no | oauth2, hmac_signature | app_review_required | rest | none_found | 7 | build_now | https://developer-docs.amazon/sp-api/ |
 | fanbasis | Ecommerce | no | bearer_token | paid_plan_required | rest | none_found | 4 | build_with_friction | https://fanbaseapi.openstage.live/guides.html |
 | DataForSEO | Data, SEO and Scraping | yes | basic | paid_plan_required | rest | official | 7 | build_now | https://docs.dataforseo.com/v3/ |
 | SE Ranking | Data, SEO and Scraping | no | api_key | paid_plan_required | rest | none_found | 6 | build_with_friction | https://seranking.com/api/data/reference/ |
 | Ahrefs | Data, SEO and Scraping | yes | api_key | paid_plan_required | rest | official | 5 | build_with_friction | https://docs.ahrefs.com/en/api/docs/introduction |
 | MrScraper | Data, SEO and Scraping | yes | api_key | self_serve_free | rest | official | 9 | build_now | https://docs.mrscraper.com/docs/api/overview |
 | Apify | Data, SEO and Scraping | yes | bearer_token | paid_plan_required | rest | official | 7 | build_now | https://docs.apify.com/api/v2 |
+| Firecrawl | Data, SEO and Scraping | yes | bearer_token | self_serve_free | rest | official | 9 | build_now | https://docs.firecrawl.dev/api-reference/introduction |
 | Bright Data | Data, SEO and Scraping | yes | api_key, basic | paid_plan_required | rest | official | 7 | build_now | https://docs.brightdata.com/introduction |
 | Sherlock | Data, SEO and Scraping | no | none | not_applicable_local | cli_only | none_found | 5 | local_toolkit | https://github.com/sherlock-project/sherlock |
+| Waterfall.io | Data, SEO and Scraping | no | api_key | partner_or_sales_gated | rest | none_found | 5 | build_with_friction | https://docs.waterfall.io/v1/introduction |
 | Clay | Data, SEO and Scraping | no | api_key | paid_plan_required | rest | official | 6 | build_with_friction | https://developers.clay.com/ |
+| GitHub | Developer, Infra and Data platforms | yes | oauth2, bearer_token, basic | self_serve_free | rest_and_graphql | official | 9 | build_now | https://docs.github.com/en/rest |
+| Vercel | Developer, Infra and Data platforms | yes | bearer_token | self_serve_free | rest | official | 9 | build_now | https://vercel.com/docs/rest-api |
+| Cloudflare | Developer, Infra and Data platforms | yes | bearer_token, api_key | self_serve_free | rest | official | 9 | build_now | https://developers.cloudflare.com/api/ |
 | Neo4j | Developer, Infra and Data platforms | yes | basic, bearer_token | self_serve_free | rpc_or_sdk_only | official | 9 | build_now | https://neo4j.com/docs/driver-manual/current/ |
+| MongoDB Atlas | Developer, Infra and Data platforms | no | oauth2, api_key | self_serve_free | rest | official | 9 | build_now | https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/ |
+| Notion | Productivity and Project Management | yes | oauth2, bearer_token | self_serve_free | rest | official | 9 | build_now | https://developers.notion.com/reference/intro |
+| Airtable | Productivity and Project Management | yes | bearer_token, oauth2 | self_serve_free | rest | none_found | 9 | build_now | https://airtable.com/developers/web/api/introduction |
+| Linear | Productivity and Project Management | yes | oauth2, api_key | self_serve_free | graphql | official | 9 | build_now | https://linear.app/developers/graphql |
+| Jira | Productivity and Project Management | yes | oauth2, basic, jwt | self_serve_free | rest | official | 9 | build_now | https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/ |
+| Asana | Productivity and Project Management | yes | oauth2, bearer_token | self_serve_free | rest | official | 9 | build_now | https://developers.asana.com/reference/rest-api-reference |
+| ClickUp | Productivity and Project Management | yes | oauth2, api_key | self_serve_free | rest | official | 9 | build_now | https://developer.clickup.com/docs/Getting%20Started |
+| Smartsheet | Productivity and Project Management | no | oauth2, bearer_token | paid_plan_required | rest | official | 6 | build_with_friction | https://developers.smartsheet.com/api/smartsheet/introduction |
 | Paygent Connect | Finance and Fintech | no | api_key | self_serve_free | rest | official | 7 | build_now | https://api.paygent.tech/docs |
+| Xero | Finance and Fintech | yes | oauth2 | self_serve_free | rest | official | 9 | build_now | https://developer.xero.com/documentation/api/accounting/overview |
+| Ramp | Finance and Fintech | yes | oauth2, bearer_token | self_serve_free | rest | official | 9 | build_now | https://docs.ramp.com/developer-api/v1/introduction |
+| NotebookLM | AI, Research and Media-native | yes | bearer_token | paid_plan_required | rest | none_found | 4 | build_with_friction | https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks |
+| Otter AI | AI, Research and Media-native | no | bearer_token | partner_or_sales_gated | rest | none_found | 2 | needs_outreach | https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API |
+| Fathom | AI, Research and Media-native | yes | api_key, oauth2 | self_serve_free | rest | none_found | 8 | build_now | https://developers.fathom.ai/ |

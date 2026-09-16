@@ -1,0 +1,101 @@
+{
+ "id": 30,
+ "slug": "vonage",
+ "name": "Vonage",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud communications platform providing APIs for voice, messaging, video, and identity verification.",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "jwt",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/home"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/home"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/home"
+  },
+  "docs_url": {
+   "value": "https://developer.vonage.com/en/documentation",
+   "confidence": "high",
+   "source_url": "https://developer.vonage.com/en/documentation"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.support.vonage.com/hc/en-us/articles/21311937334812-How-to-generate-JWT-token-using-Vonage-Online-JWT-generator-tool",
+  "https://api.support.vonage.com/hc/en-us/articles/26835629333788-Deprecation-of-Query-Parameter-API-Authentication-Action-Required-Migration-to-Header-Based-Authentication",
+  "https://api.support.vonage.com/hc/en-us/categories/202622537-Developer-API",
+  "https://developer.vonage.com/en/application/overview",
+  "https://developer.vonage.com/en/documentation",
+  "https://developer.vonage.com/en/getting-started/concepts/authentication?source=messaging",
+  "https://developer.vonage.com/en/home",
+  "https://developer.vonage.com/en/verify/concepts/authentication",
+  "https://developer.vonage.com/en/voice/voice-api/overview",
+  "https://github.com/Vonage/vonage-ruby-sdk",
+  "https://github.com/vonage/vonage-jwt-jdk",
+  "https://tokbox.com/developer/",
+  "https://tokbox.com/developer/get-started/",
+  "https://vonage.github.io/vonage-go-sdk/examples/jwt",
+  "https://www.vonage.com/developer-center/",
+  "https://www.vonage.com/resources/articles/jwt-authentication-explained/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

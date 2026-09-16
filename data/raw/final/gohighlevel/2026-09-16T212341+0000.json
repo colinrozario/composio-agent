@@ -1,0 +1,111 @@
+{
+ "id": 34,
+ "slug": "gohighlevel",
+ "name": "GoHighLevel",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "All-in-one marketing and CRM platform providing automation, lead management, and communication tools.",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/intro/index.html"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.gohighlevel.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/"
+  },
+  "docs_url": {
+   "value": "https://marketplace.gohighlevel.com/docs/",
+   "confidence": "high",
+   "source_url": "https://marketplace.gohighlevel.com/docs/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "test_account"
+ ],
+ "search_urls": [
+  "https://developers.gohighlevel.com/",
+  "https://expertghldevelopers.com/gohighlevel-api-documentation-the-complete-beginners-guide-2026/",
+  "https://ghl-api.lovable.app/guide",
+  "https://ghlfocus.com/gohighlevel-api-v2-token-vs-oauth/",
+  "https://ghlmcp.io/gohighlevel-mcp",
+  "https://github.com/Abrahamshal/GHL-MCP",
+  "https://github.com/GoHighLevel/highlevel-api-docs",
+  "https://github.com/GoHighLevel/highlevel-api-sdk",
+  "https://github.com/Hollman18/mcpgohighlevel.com/",
+  "https://github.com/thinkbold-solutions/GHLDOCS",
+  "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace",
+  "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+  "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+  "https://help.gohighlevel.com/support/solutions/folders/48000668553",
+  "https://hylo.pro/guides/gohighlevel-api-authentication",
+  "https://ideas.gohighlevel.com/highlevel-mcp",
+  "https://marketplace.gohighlevel.com/docs/",
+  "https://marketplace.gohighlevel.com/docs/intro/index.html",
+  "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+  "https://marketplace.gohighlevel.com/docs/oauth/external-auth/OAuth2/index.html",
+  "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+  "https://supplygem.com/gohighlevel-developer/",
+  "https://www.gohighlevel.com/post/introducing-the-mcp-server",
+  "https://www.grow-highlevel.com/blog/gohighlevel-api-guide",
+  "https://www.usecarly.com/blog/gohighlevel-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

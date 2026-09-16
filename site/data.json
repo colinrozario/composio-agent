@@ -1,20 +1,21 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T21:18:47+00:00",
+  "generated_at": "2026-09-16T21:23:43+00:00",
   "demo": false,
   "repo": "https://github.com/colinrozario/composio-agent"
  },
  "headline": {
-  "apps": 53,
-  "in_composio": 33,
-  "not_in_composio": 20,
-  "buildable_now_not_in_composio": 8
+  "apps": 76,
+  "in_composio": 47,
+  "not_in_composio": 29,
+  "buildable_now_not_in_composio": 13
  },
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 8,
+   "count": 9,
    "apps": [
+    "Amazon Selling Partner",
     "Google Ads",
     "LinkedIn Ads",
     "Meta Ads",
@@ -29,7 +30,7 @@
   },
   {
    "key": "paid_to_use",
-   "count": 17,
+   "count": 19,
    "apps": [
     "Ahrefs",
     "Aircall",
@@ -45,8 +46,10 @@
     "GoHighLevel",
     "Intercom",
     "LiveAgent",
+    "NotebookLM",
     "Pylon",
     "SE Ranking",
+    "Smartsheet",
     "fanbasis"
    ],
    "headline": "Free to read, paid to call",
@@ -54,19 +57,24 @@
   },
   {
    "key": "per_tenant_host",
-   "count": 12,
+   "count": 17,
    "apps": [
     "DealCloud",
+    "Ecwid",
     "Freshdesk",
     "Gladly",
     "Gorgias",
+    "Jira",
     "LiveAgent",
+    "Magento (Adobe Commerce)",
     "Neo4j",
     "Pipedrive",
     "Pylon",
     "Salesforce",
+    "Salesforce Commerce Cloud",
     "Shopify",
     "Twenty",
+    "WooCommerce",
     "Zendesk"
    ],
    "headline": "Every customer has a different host",
@@ -74,8 +82,9 @@
   },
   {
    "key": "graphql_only",
-   "count": 1,
+   "count": 2,
    "apps": [
+    "Linear",
     "Plain"
    ],
    "headline": "GraphQL-only: easy auth, hard tool shapes",
@@ -83,33 +92,48 @@
   },
   {
    "key": "official_mcp",
-   "count": 25,
+   "count": 40,
    "apps": [
     "Ahrefs",
     "Aircall",
     "Apify",
+    "Asana",
     "Bright Data",
     "Clay",
+    "ClickUp",
     "Close",
+    "Cloudflare",
     "DataForSEO",
+    "Firecrawl",
     "Freshdesk",
     "Front",
+    "GitHub",
     "GoHighLevel",
     "Gorgias",
     "HubSpot",
     "Intercom",
+    "Jira",
     "Klaviyo",
     "Lark (Larksuite)",
+    "Linear",
+    "Magento (Adobe Commerce)",
     "Meta Ads",
+    "MongoDB Atlas",
     "MrScraper",
     "Neo4j",
+    "Notion",
     "Paygent Connect",
+    "Ramp",
     "Salesforce",
     "Shopify",
     "Slack",
+    "Smartsheet",
     "Twenty",
     "Twilio",
-    "Vonage"
+    "Vercel",
+    "Vonage",
+    "WooCommerce",
+    "Xero"
    ],
    "headline": "Vendor MCP already exists",
    "so_what": "TODO"
@@ -125,8 +149,12 @@
   },
   {
    "key": "dark",
-   "count": 0,
-   "apps": [],
+   "count": 3,
+   "apps": [
+    "Otter AI",
+    "Salesforce Commerce Cloud",
+    "Waterfall.io"
+   ],
    "headline": "Close to no public developer surface",
    "so_what": "TODO"
   }
@@ -229,6 +257,16 @@
     "in_composio": true
    },
    {
+    "name": "WooCommerce",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Magento (Adobe Commerce)",
+    "score": 9,
+    "in_composio": false
+   },
+   {
     "name": "Gumroad",
     "score": 9,
     "in_composio": true
@@ -239,7 +277,72 @@
     "in_composio": true
    },
    {
+    "name": "Firecrawl",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "GitHub",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Vercel",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Cloudflare",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Neo4j",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "MongoDB Atlas",
+    "score": 9,
+    "in_composio": false
+   },
+   {
+    "name": "Notion",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Airtable",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Linear",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Jira",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Asana",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "ClickUp",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Xero",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Ramp",
     "score": 9,
     "in_composio": true
    },
@@ -250,6 +353,16 @@
    },
    {
     "name": "Pumble",
+    "score": 8,
+    "in_composio": true
+   },
+   {
+    "name": "Ecwid",
+    "score": 8,
+    "in_composio": false
+   },
+   {
+    "name": "Fathom",
     "score": 8,
     "in_composio": true
    },
@@ -292,6 +405,11 @@
     "name": "Shopify",
     "score": 7,
     "in_composio": true
+   },
+   {
+    "name": "Amazon Selling Partner",
+    "score": 7,
+    "in_composio": false
    },
    {
     "name": "DataForSEO",
@@ -371,6 +489,11 @@
     "in_composio": false
    },
    {
+    "name": "Smartsheet",
+    "score": 6,
+    "in_composio": false
+   },
+   {
     "name": "DealCloud",
     "score": 5,
     "in_composio": false
@@ -386,17 +509,38 @@
     "in_composio": true
    },
    {
+    "name": "Salesforce Commerce Cloud",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "Ahrefs",
     "score": 5,
     "in_composio": true
    },
    {
+    "name": "Waterfall.io",
+    "score": 5,
+    "in_composio": false
+   },
+   {
     "name": "fanbasis",
     "score": 4,
     "in_composio": false
+   },
+   {
+    "name": "NotebookLM",
+    "score": 4,
+    "in_composio": true
    }
   ],
-  "needs_outreach": [],
+  "needs_outreach": [
+   {
+    "name": "Otter AI",
+    "score": 2,
+    "in_composio": false
+   }
+  ],
   "local_toolkit": [
    {
     "name": "Sherlock",
@@ -408,26 +552,34 @@
  "auth": [
   [
    "oauth2",
-   30
-  ],
-  [
-   "api_key",
-   24
+   47
   ],
   [
    "bearer_token",
-   21
+   34
+  ],
+  [
+   "api_key",
+   31
   ],
   [
    "basic",
-   11
+   14
   ],
   [
    "jwt",
-   2
+   3
   ],
   [
    "hmac_signature",
+   2
+  ],
+  [
+   "oauth1",
+   1
+  ],
+  [
+   "token",
    1
   ],
   [
@@ -453,18 +605,27 @@
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_now": 2,
-   "build_with_friction": 2
+   "build_now": 6,
+   "build_with_friction": 3
   },
   "Data, SEO and Scraping": {
-   "build_now": 4,
-   "build_with_friction": 3,
+   "build_now": 5,
+   "build_with_friction": 4,
    "local_toolkit": 1
   },
   "Developer, Infra and Data platforms": {
-   "build_now": 1
+   "build_now": 5
+  },
+  "Productivity and Project Management": {
+   "build_now": 6,
+   "build_with_friction": 1
   },
   "Finance and Fintech": {
+   "build_now": 3
+  },
+  "AI, Research and Media-native": {
+   "build_with_friction": 1,
+   "needs_outreach": 1,
    "build_now": 1
   }
  },
@@ -3871,6 +4032,260 @@
    }
   },
   {
+   "id": 42,
+   "name": "WooCommerce",
+   "slug": "woocommerce",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An open-source, customizable e-commerce platform built on WordPress.",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2",
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/features/mcp/"
+    },
+    "base_url_model": {
+     "value": "self_hosted_or_customer_host",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+    },
+    "docs_url": {
+     "value": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+     "confidence": "high",
+     "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+    }
+   }
+  },
+  {
+   "id": 44,
+   "name": "Salesforce Commerce Cloud",
+   "slug": "salesforce_commerce_cloud",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 0,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based e-commerce platform offering REST APIs for storefronts, orders, and products.",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+    },
+    "access_path": {
+     "value": "partner_or_sales_gated",
+     "confidence": "med",
+     "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c"
+    },
+    "main_blocker": {
+     "value": "Production API usage and environment provisioning require commercial partnership or enterprise sales engagement.",
+     "confidence": "med",
+     "source_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php"
+    },
+    "docs_url": {
+     "value": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+     "confidence": "high",
+     "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+    }
+   }
+  },
+  {
+   "id": 45,
+   "name": "Magento (Adobe Commerce)",
+   "slug": "magento",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Enterprise open-source and cloud ecommerce platform providing robust REST and GraphQL APIs.",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth1",
+      "oauth2",
+      "bearer_token",
+      "token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/docs/"
+    },
+    "api_type": {
+     "value": "rest_and_graphql",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview"
+    },
+    "base_url_model": {
+     "value": "self_hosted_or_customer_host",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "med",
+     "source_url": "https://developer.adobe.com/commerce/docs/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/docs/"
+    },
+    "docs_url": {
+     "value": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+     "confidence": "high",
+     "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+    }
+   }
+  },
+  {
    "id": 46,
    "name": "Squarespace",
    "slug": "squarespace",
@@ -3955,6 +4370,90 @@
    }
   },
   {
+   "id": 47,
+   "name": "Ecwid",
+   "slug": "ecwid",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 2,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "E-commerce platform providing REST APIs to manage products, orders, customers, and store settings.",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "access_path": {
+     "value": "self_serve_trial",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developers.ecwid.com/"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+    },
+    "docs_url": {
+     "value": "https://docs.ecwid.com/api-reference",
+     "confidence": "high",
+     "source_url": "https://docs.ecwid.com/api-reference"
+    }
+   }
+  },
+  {
    "id": 48,
    "name": "Gumroad",
    "slug": "gumroad",
@@ -4035,6 +4534,90 @@
      "value": "https://gumroad.com/api",
      "confidence": "high",
      "source_url": "https://gumroad.com/api"
+    }
+   }
+  },
+  {
+   "id": 49,
+   "name": "Amazon Selling Partner",
+   "slug": "amazon_selling_partner",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Programmatic access to Amazon sales, orders, inventory, fulfillment, and advertising data.",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "hmac_signature"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "access_path": {
+     "value": "app_review_required",
+     "confidence": "high",
+     "source_url": "https://sell.amazon.com/developers"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
+    },
+    "main_blocker": {
+     "value": "Requires a Professional seller account, developer profile submission, role approval, and application review.",
+     "confidence": "high",
+     "source_url": "https://sell.amazon.com/developers"
+    },
+    "docs_url": {
+     "value": "https://developer-docs.amazon/sp-api/",
+     "confidence": "high",
+     "source_url": "https://developer-docs.amazon/sp-api/"
     }
    }
   },
@@ -4541,6 +5124,91 @@
    }
   },
   {
+   "id": 56,
+   "name": "Firecrawl",
+   "slug": "firecrawl",
+   "category": "Data, SEO and Scraping",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Turns websites into clean Markdown and structured data for AI agents.",
+     "confidence": "high",
+     "source_url": "https://www.firecrawl.dev/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.firecrawl.dev/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "med",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://github.com/firecrawl/firecrawl-mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.firecrawl.dev/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.firecrawl.dev/pricing"
+    },
+    "docs_url": {
+     "value": "https://docs.firecrawl.dev/api-reference/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.firecrawl.dev/api-reference/introduction"
+    }
+   }
+  },
+  {
    "id": 57,
    "name": "Bright Data",
    "slug": "bright_data",
@@ -4710,6 +5378,89 @@
    }
   },
   {
+   "id": 59,
+   "name": "Waterfall.io",
+   "slug": "waterfall_io",
+   "category": "Data, SEO and Scraping",
+   "in_composio": false,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 0,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "B2B data enrichment API aggregating 30+ vendor data sources for maximum coverage.",
+     "confidence": "high",
+     "source_url": "https://www.waterfall.io/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/authentication"
+    },
+    "access_path": {
+     "value": "partner_or_sales_gated",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/book-demo"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/introduction"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://docs.waterfall.io/v1/skills-overview"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/introduction"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://docs.waterfall.io/v1/book-demo"
+    },
+    "main_blocker": {
+     "value": "API access requires booking a call with sales rather than a fully self-serve sign-up.",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/book-demo"
+    },
+    "docs_url": {
+     "value": "https://docs.waterfall.io/v1/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.waterfall.io/v1/introduction"
+    }
+   }
+  },
+  {
    "id": 60,
    "name": "Clay",
    "slug": "clay",
@@ -4789,6 +5540,260 @@
      "value": "https://developers.clay.com/",
      "confidence": "high",
      "source_url": "https://developers.clay.com/"
+    }
+   }
+  },
+  {
+   "id": 61,
+   "name": "GitHub",
+   "slug": "github",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based platform for Git repository hosting, code review, and project management workflows.",
+     "confidence": "high",
+     "source_url": "https://softverdict.com/github-pricing-2026/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token",
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://github.com/pricing.php"
+    },
+    "api_type": {
+     "value": "rest_and_graphql",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server?tool=vscode"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://github.com/pricing.php"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    },
+    "docs_url": {
+     "value": "https://docs.github.com/en/rest",
+     "confidence": "high",
+     "source_url": "https://docs.github.com/en/rest"
+    }
+   }
+  },
+  {
+   "id": 62,
+   "name": "Vercel",
+   "slug": "vercel",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud platform for frontend frameworks and static sites with serverless deployment.",
+     "confidence": "high",
+     "source_url": "https://vercel.com/pricing"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://vercel.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/agent-resources/vercel-mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://vercel.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    },
+    "docs_url": {
+     "value": "https://vercel.com/docs/rest-api",
+     "confidence": "high",
+     "source_url": "https://vercel.com/docs/rest-api"
+    }
+   }
+  },
+  {
+   "id": 64,
+   "name": "Cloudflare",
+   "slug": "cloudflare",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Web infrastructure and security platform providing global DNS, CDN, Workers, and DDoS protection.",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://github.com/cloudflare/mcp-server-cloudflare"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
+    },
+    "docs_url": {
+     "value": "https://developers.cloudflare.com/api/",
+     "confidence": "high",
+     "source_url": "https://developers.cloudflare.com/api/overview/"
     }
    }
   },
@@ -4877,6 +5882,681 @@
    }
   },
   {
+   "id": 68,
+   "name": "MongoDB Atlas",
+   "slug": "mongodb_atlas",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": false,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Managed cloud database service with an extensive API for cluster and data management.",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "med",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/products/tools/mcp-server"
+    },
+    "docs_url": {
+     "value": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+     "confidence": "high",
+     "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/"
+    }
+   }
+  },
+  {
+   "id": 71,
+   "name": "Notion",
+   "slug": "notion",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "A REST API to read, write, and manage Notion pages, databases, and blocks.",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/docs/authorization"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/docs/authorization"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/guides/mcp/overview"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    },
+    "docs_url": {
+     "value": "https://developers.notion.com/reference/intro",
+     "confidence": "high",
+     "source_url": "https://developers.notion.com/reference/intro"
+    }
+   }
+  },
+  {
+   "id": 72,
+   "name": "Airtable",
+   "slug": "airtable",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "A low-code platform for building collaborative apps with a programmable REST API.",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "med",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    },
+    "docs_url": {
+     "value": "https://airtable.com/developers/web/api/introduction",
+     "confidence": "high",
+     "source_url": "https://airtable.com/developers/web/api/authentication"
+    }
+   }
+  },
+  {
+   "id": 73,
+   "name": "Linear",
+   "slug": "linear",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Linear is a streamlined issue tracking and project management tool for software teams.",
+     "confidence": "high",
+     "source_url": "https://linear.app/docs"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://linear.app/pricing"
+    },
+    "api_type": {
+     "value": "graphql",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://linear.app/docs/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://linear.app/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    },
+    "docs_url": {
+     "value": "https://linear.app/developers/graphql",
+     "confidence": "high",
+     "source_url": "https://linear.app/developers/graphql"
+    }
+   }
+  },
+  {
+   "id": 74,
+   "name": "Jira",
+   "slug": "jira",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Enterprise project management tool for tracking tasks, agile planning, and workflow automation.",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "basic",
+      "jwt"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://github.com/atlassian/atlassian-mcp-server"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    },
+    "docs_url": {
+     "value": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+     "confidence": "high",
+     "source_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+    }
+   }
+  },
+  {
+   "id": 75,
+   "name": "Asana",
+   "slug": "asana",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Collaborative work management platform for planning, assigning, and tracking tasks across projects.",
+     "confidence": "high",
+     "source_url": "https://asana.com/developers"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/overview"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/api-features"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/reference/rest-api-reference"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/reference/rest-api-reference"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/mcp-server"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/reference/rest-api-reference"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/overview"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/docs/overview"
+    },
+    "docs_url": {
+     "value": "https://developers.asana.com/reference/rest-api-reference",
+     "confidence": "high",
+     "source_url": "https://developers.asana.com/reference/rest-api-reference"
+    }
+   }
+  },
+  {
+   "id": 77,
+   "name": "ClickUp",
+   "slug": "clickup",
+   "category": "Productivity and Project Management",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "A project management platform offering task tracking, documentation, and team collaboration via a REST API.",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/authentication"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/authentication"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": null
+    },
+    "docs_url": {
+     "value": "https://developer.clickup.com/docs/Getting%20Started",
+     "confidence": "high",
+     "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+    }
+   }
+  },
+  {
+   "id": 79,
+   "name": "Smartsheet",
+   "slug": "smartsheet",
+   "category": "Productivity and Project Management",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "A cloud-based work management and collaboration platform with a robust REST API.",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "main_blocker": {
+     "value": "API access requires a paid Smartsheet plan (Business, Enterprise, or Advanced Work Management).",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+    },
+    "docs_url": {
+     "value": "https://developers.smartsheet.com/api/smartsheet/introduction",
+     "confidence": "high",
+     "source_url": "https://developers.smartsheet.com/"
+    }
+   }
+  },
+  {
    "id": 84,
    "name": "Paygent Connect",
    "slug": "paygent_connect",
@@ -4960,6 +6640,427 @@
      "source_url": "https://api.paygent.tech/docs"
     }
    }
+  },
+  {
+   "id": 87,
+   "name": "Xero",
+   "slug": "xero",
+   "category": "Finance and Fintech",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud-based accounting platform providing financial management APIs for businesses and developers.",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/guides/oauth2/overview/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://github.com/XeroAPI/xero-mcp-server"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+    },
+    "docs_url": {
+     "value": "https://developer.xero.com/documentation/api/accounting/overview",
+     "confidence": "high",
+     "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+    }
+   }
+  },
+  {
+   "id": 89,
+   "name": "Ramp",
+   "slug": "ramp",
+   "category": "Finance and Fintech",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Ramp provides a corporate card and spend management platform with robust developer API access.",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/api"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "med",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/getting-started"
+    },
+    "docs_url": {
+     "value": "https://docs.ramp.com/developer-api/v1/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.ramp.com/developer-api/v1/introduction"
+    }
+   }
+  },
+  {
+   "id": 91,
+   "name": "NotebookLM",
+   "slug": "notebooklm",
+   "category": "AI, Research and Media-native",
+   "in_composio": true,
+   "score": {
+    "total": 4,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 1,
+     "test": 0
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Programmatic management of NotebookLM enterprise notebooks, data sources, and organizational content.",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "med",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": null
+    },
+    "base_url_model": {
+     "value": "regional",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "main_blocker": {
+     "value": "Requires a Google Cloud project with Gemini Notebook Enterprise licenses enabled.",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    },
+    "docs_url": {
+     "value": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "confidence": "high",
+     "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+    }
+   }
+  },
+  {
+   "id": 92,
+   "name": "Otter AI",
+   "slug": "otter_ai",
+   "category": "AI, Research and Media-native",
+   "in_composio": false,
+   "score": {
+    "total": 2,
+    "parts": {
+     "credential": 0,
+     "docs": 1,
+     "breadth": 1,
+     "test": 0
+    },
+    "tier": "needs_outreach"
+   },
+   "needs_human": [
+    "dead_or_redirected_citation"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Enterprise-focused API for retrieving meeting transcripts, action items, and workspace conversation data.",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "access_path": {
+     "value": "partner_or_sales_gated",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "med",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "docs_quality": {
+     "value": "partial_or_thin",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+    },
+    "main_blocker": {
+     "value": "Access is strictly limited to Enterprise workspace customers and requires direct coordination with an account manager.",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API"
+    },
+    "docs_url": {
+     "value": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+     "confidence": "high",
+     "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API"
+    }
+   }
+  },
+  {
+   "id": 93,
+   "name": "Fathom",
+   "slug": "fathom",
+   "category": "AI, Research and Media-native",
+   "in_composio": true,
+   "score": {
+    "total": 8,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 1,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "AI meeting assistant that automatically records, transcribes, and summarizes video calls.",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/faq"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/faq"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/api-overview"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/quickstart"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/quickstart"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/quickstart"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/faq"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/quickstart"
+    },
+    "docs_url": {
+     "value": "https://developers.fathom.ai/",
+     "confidence": "high",
+     "source_url": "https://developers.fathom.ai/"
+    }
+   }
   }
  ],
  "verification": {},
@@ -4974,6 +7075,608 @@
    "what_happened": "What the agent claimed",
    "reality": "What the evidence showed",
    "source_url": null
+  }
+ ],
+ "seed": [
+  {
+   "id": 1,
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 2,
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 3,
+   "slug": "pipedrive",
+   "name": "Pipedrive",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 4,
+   "slug": "attio",
+   "name": "Attio",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 5,
+   "slug": "twenty",
+   "name": "Twenty",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 6,
+   "slug": "podio",
+   "name": "Podio",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 7,
+   "slug": "zoho_crm",
+   "name": "Zoho CRM",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 8,
+   "slug": "close",
+   "name": "Close",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 9,
+   "slug": "copper",
+   "name": "Copper",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 10,
+   "slug": "dealcloud",
+   "name": "DealCloud",
+   "category": "CRM and Sales"
+  },
+  {
+   "id": 11,
+   "slug": "zendesk",
+   "name": "Zendesk",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 12,
+   "slug": "intercom",
+   "name": "Intercom",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 13,
+   "slug": "freshdesk",
+   "name": "Freshdesk",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 14,
+   "slug": "front",
+   "name": "Front",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 15,
+   "slug": "pylon",
+   "name": "Pylon",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 16,
+   "slug": "liveagent",
+   "name": "LiveAgent",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 17,
+   "slug": "plain",
+   "name": "Plain",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 18,
+   "slug": "help_scout",
+   "name": "Help Scout",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 19,
+   "slug": "gorgias",
+   "name": "Gorgias",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 20,
+   "slug": "gladly",
+   "name": "Gladly",
+   "category": "Support and Helpdesk"
+  },
+  {
+   "id": 21,
+   "slug": "slack",
+   "name": "Slack",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 22,
+   "slug": "twilio",
+   "name": "Twilio",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 23,
+   "slug": "zoho_cliq",
+   "name": "Zoho Cliq",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 24,
+   "slug": "lark",
+   "name": "Lark (Larksuite)",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 25,
+   "slug": "pumble",
+   "name": "Pumble",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 26,
+   "slug": "discord",
+   "name": "Discord",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 27,
+   "slug": "telegram",
+   "name": "Telegram",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 28,
+   "slug": "whatsapp_business",
+   "name": "WhatsApp Business",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 29,
+   "slug": "aircall",
+   "name": "Aircall",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 30,
+   "slug": "vonage",
+   "name": "Vonage",
+   "category": "Communications and Messaging"
+  },
+  {
+   "id": 31,
+   "slug": "google_ads",
+   "name": "Google Ads",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 32,
+   "slug": "meta_ads",
+   "name": "Meta Ads",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 33,
+   "slug": "linkedin_ads",
+   "name": "LinkedIn Ads",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 34,
+   "slug": "gohighlevel",
+   "name": "GoHighLevel",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 35,
+   "slug": "mailchimp",
+   "name": "Mailchimp",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 36,
+   "slug": "klaviyo",
+   "name": "Klaviyo",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 37,
+   "slug": "systeme_io",
+   "name": "systeme.io",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 38,
+   "slug": "pinterest",
+   "name": "Pinterest",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 39,
+   "slug": "threads",
+   "name": "Threads (Meta)",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 40,
+   "slug": "sendgrid",
+   "name": "SendGrid",
+   "category": "Marketing, Ads, Email and Social"
+  },
+  {
+   "id": 41,
+   "slug": "shopify",
+   "name": "Shopify",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 42,
+   "slug": "woocommerce",
+   "name": "WooCommerce",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 43,
+   "slug": "bigcommerce",
+   "name": "BigCommerce",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 44,
+   "slug": "salesforce_commerce_cloud",
+   "name": "Salesforce Commerce Cloud",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 45,
+   "slug": "magento",
+   "name": "Magento (Adobe Commerce)",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 46,
+   "slug": "squarespace",
+   "name": "Squarespace",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 47,
+   "slug": "ecwid",
+   "name": "Ecwid",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 48,
+   "slug": "gumroad",
+   "name": "Gumroad",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 49,
+   "slug": "amazon_selling_partner",
+   "name": "Amazon Selling Partner",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 50,
+   "slug": "fanbasis",
+   "name": "fanbasis",
+   "category": "Ecommerce"
+  },
+  {
+   "id": 51,
+   "slug": "dataforseo",
+   "name": "DataForSEO",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 52,
+   "slug": "se_ranking",
+   "name": "SE Ranking",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 53,
+   "slug": "ahrefs",
+   "name": "Ahrefs",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 54,
+   "slug": "mrscraper",
+   "name": "MrScraper",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 55,
+   "slug": "apify",
+   "name": "Apify",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 56,
+   "slug": "firecrawl",
+   "name": "Firecrawl",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 57,
+   "slug": "bright_data",
+   "name": "Bright Data",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 58,
+   "slug": "sherlock",
+   "name": "Sherlock",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 59,
+   "slug": "waterfall_io",
+   "name": "Waterfall.io",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 60,
+   "slug": "clay",
+   "name": "Clay",
+   "category": "Data, SEO and Scraping"
+  },
+  {
+   "id": 61,
+   "slug": "github",
+   "name": "GitHub",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 62,
+   "slug": "vercel",
+   "name": "Vercel",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 63,
+   "slug": "netlify",
+   "name": "Netlify",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 64,
+   "slug": "cloudflare",
+   "name": "Cloudflare",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 65,
+   "slug": "supabase",
+   "name": "Supabase",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 66,
+   "slug": "neo4j",
+   "name": "Neo4j",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 67,
+   "slug": "snowflake",
+   "name": "Snowflake",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 68,
+   "slug": "mongodb_atlas",
+   "name": "MongoDB Atlas",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 69,
+   "slug": "datadog",
+   "name": "Datadog",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 70,
+   "slug": "sentry",
+   "name": "Sentry",
+   "category": "Developer, Infra and Data platforms"
+  },
+  {
+   "id": 71,
+   "slug": "notion",
+   "name": "Notion",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 72,
+   "slug": "airtable",
+   "name": "Airtable",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 73,
+   "slug": "linear",
+   "name": "Linear",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 74,
+   "slug": "jira",
+   "name": "Jira",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 75,
+   "slug": "asana",
+   "name": "Asana",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 76,
+   "slug": "monday_com",
+   "name": "Monday.com",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 77,
+   "slug": "clickup",
+   "name": "ClickUp",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 78,
+   "slug": "coda",
+   "name": "Coda",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 79,
+   "slug": "smartsheet",
+   "name": "Smartsheet",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 80,
+   "slug": "harvest",
+   "name": "Harvest",
+   "category": "Productivity and Project Management"
+  },
+  {
+   "id": 81,
+   "slug": "stripe",
+   "name": "Stripe",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 82,
+   "slug": "plaid",
+   "name": "Plaid",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 83,
+   "slug": "binance",
+   "name": "Binance",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 84,
+   "slug": "paygent_connect",
+   "name": "Paygent Connect",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 85,
+   "slug": "ipayx",
+   "name": "iPayX",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 86,
+   "slug": "quickbooks",
+   "name": "QuickBooks",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 87,
+   "slug": "xero",
+   "name": "Xero",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 88,
+   "slug": "brex",
+   "name": "Brex",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 89,
+   "slug": "ramp",
+   "name": "Ramp",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 90,
+   "slug": "pitchbook",
+   "name": "PitchBook",
+   "category": "Finance and Fintech"
+  },
+  {
+   "id": 91,
+   "slug": "notebooklm",
+   "name": "NotebookLM",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 92,
+   "slug": "otter_ai",
+   "name": "Otter AI",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 93,
+   "slug": "fathom",
+   "name": "Fathom",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 94,
+   "slug": "consensus",
+   "name": "Consensus",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 95,
+   "slug": "reducto",
+   "name": "Reducto",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 96,
+   "slug": "devin",
+   "name": "Devin",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 97,
+   "slug": "higgsfield",
+   "name": "higgsfield",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 98,
+   "slug": "mermaid_cli",
+   "name": "Mermaid CLI",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 99,
+   "slug": "youtube_transcript",
+   "name": "YouTube Transcript",
+   "category": "AI, Research and Media-native"
+  },
+  {
+   "id": 100,
+   "slug": "grain",
+   "name": "Grain",
+   "category": "AI, Research and Media-native"
   }
  ]
 }

@@ -1,0 +1,110 @@
+{
+ "id": 77,
+ "slug": "clickup",
+ "name": "ClickUp",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "A project management platform offering task tracking, documentation, and team collaboration via a REST API.",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/authentication"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/authentication"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": null
+  },
+  "docs_url": {
+   "value": "https://developer.clickup.com/docs/Getting%20Started",
+   "confidence": "high",
+   "source_url": "https://developer.clickup.com/docs/Getting%20Started"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://clickup.com/api/clickupreference/operation/AddTagToTask/",
+  "https://clickup.com/api/clickupreference/operation/AddTaskLink/",
+  "https://clickup.com/api/clickupreference/operation/CreateList/",
+  "https://clickup.com/api/clickupreference/operation/DeleteSpace",
+  "https://clickup.com/api/clickupreference/operation/DeleteTaskLink/",
+  "https://clickup.com/api/developer-portal/customfields/",
+  "https://clickup.com/api/developer-portal/faq/",
+  "https://clickup.com/api/developer-portal/filter-views/",
+  "https://clickup.com/blog/how-to-use-clickup-mcp-server/",
+  "https://consultevo.com/clickup-api-authentication-guide-2/",
+  "https://consultevo.com/clickup-api-how-to-guide/",
+  "https://developer.clickup.com/docs/Getting%20Started",
+  "https://developer.clickup.com/docs/authentication",
+  "https://feedback.clickup.com/public-api/p/clickup-mcp-server-first-party-and-official",
+  "https://growthmethod.com/clickup-mcp-server/",
+  "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+  "https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP",
+  "https://help.clickup.com/hc/en-us/sections/6131847925911-API",
+  "https://mcpservers.org/servers/clickup-mcp",
+  "https://mcpservers.org/servers/clickup-remote-mcp",
+  "https://ones.com/blog/navigating-the-clickup-api-documentation-a-practical-walkthrough/",
+  "https://www.stitchflow.com/user-management/clickup/api",
+  "https://www.upsys-consulting.com/en/blog/clickup-api-guide",
+  "https://www.usecarly.com/blog/clickup-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

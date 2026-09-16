@@ -19,7 +19,8 @@ def main():
             "headline": pat["totals"], "patterns": pat["patterns"], "build_queue": pat["build_queue"],
             "auth": pat["auth"], "tier_by_category": pat["tier_by_category"],
             "weights": WEIGHTS_FOR_PAGE, "apps": apps, "verification": ver, "human_moments": moments,
-            "failures": load(DATA/"failures.json", [])}
+            "failures": load(DATA/"failures.json", []),
+            "seed": [{k: s[k] for k in ("id", "slug", "name", "category")} for s in load(DATA/"seed.json")]}
     save(SITE/"data.json", data)
 
     md = ["# App buildability research: 100 apps", "",

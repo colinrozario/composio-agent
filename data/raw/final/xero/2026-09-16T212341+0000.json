@@ -1,0 +1,106 @@
+{
+ "id": 87,
+ "slug": "xero",
+ "name": "Xero",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based accounting platform providing financial management APIs for businesses and developers.",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/guides/oauth2/overview/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://github.com/XeroAPI/xero-mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/getting-started-guide/"
+  },
+  "docs_url": {
+   "value": "https://developer.xero.com/documentation/api/accounting/overview",
+   "confidence": "high",
+   "source_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "auth_methods"
+ ],
+ "search_urls": [
+  "https://central.xero.com/s/article/Create-custom-integrations-and-apps-with-Xero",
+  "https://codelesssync.com/blog/xero-api-integration-guide",
+  "https://dev.to/webbycrownsolutions/xero-api-integration-guide-connect-automate-optimize-accounting-3h16",
+  "https://developer.xero.com/documentation/api/accounting/overview",
+  "https://developer.xero.com/documentation/getting-started-guide/",
+  "https://developer.xero.com/documentation/xero-app-store/app-partner-guides/building-and-growing-your-app/",
+  "https://github.com/XeroAPI",
+  "https://github.com/XeroAPI/Api.Documentation",
+  "https://github.com/XeroAPI/xero-mcp-server",
+  "https://github.com/XeroAPI/xero-mcp-server/blob/main/README.md",
+  "https://mcp.so/servers/xero",
+  "https://mcpservers.org/remote-mcp-servers/xero",
+  "https://mcpservers.org/servers/xero-mcp",
+  "https://model-context-protocol.com/servers/xero-mcp-server-model-context-protocol",
+  "https://satvasolutions.com/blog/xero-api-integration-guide",
+  "https://truto.one/blog/how-do-i-integrate-with-the-xero-api-a-guide-for-b2b-saas/",
+  "https://www.mcpforge.tech/blog/xero-mcp-server-complete-guide",
+  "https://www.usecarly.com/blog/xero-mcp/",
+  "https://www.webnuz.com/article/2026-08-04/Xero%20API%20Integration%20Guide%20%282026%29%3A%20OAuth%2C%20Tenants%2C%20and%20Your%20First%20Query",
+  "https://xeroapi.github.io/Xero-NetStandard/accounting/index.html",
+  "https://xeroapi.github.io/xero-node/accounting/index.html"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

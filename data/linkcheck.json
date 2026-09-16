@@ -1,5 +1,5 @@
 {
- "checked_urls": 209,
+ "checked_urls": 280,
  "needed_browser": 0,
  "by_app": {
   "salesforce": {
@@ -690,7 +690,7 @@
    "access_path": {
     "url": "https://www.zendesk.com/support/pricing/",
     "status": 200,
-    "final_url": "https://www.zendesk.com/in/pricing/#georedirect",
+    "final_url": "https://www.zendesk.com/pricing/",
     "flags": []
    },
    "api_type": {
@@ -735,7 +735,7 @@
    "test_account": {
     "url": "https://www.zendesk.com/support/pricing/",
     "status": 200,
-    "final_url": "https://www.zendesk.com/in/pricing/#georedirect",
+    "final_url": "https://www.zendesk.com/pricing/",
     "flags": []
    },
    "main_blocker": {
@@ -3071,6 +3071,232 @@
     "flags": []
    }
   },
+  "woocommerce": {
+   "one_liner": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "status": 200,
+    "final_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+    "flags": []
+   }
+  },
+  "salesforce_commerce_cloud": {
+   "one_liner": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+    "status": 200,
+    "final_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c",
+    "status": 200,
+    "final_url": "https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+    "status": 200,
+    "final_url": "https://sfcclearning.com/infocenter/content/b2c_commerce/topics/site_development/b2c_ccdc.php",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "flags": []
+   }
+  },
+  "magento": {
+   "one_liner": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.adobe.com/commerce/docs/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/docs/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+    "status": 200,
+    "final_url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.adobe.com/commerce/docs/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/docs/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.adobe.com/commerce/docs/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/docs/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "status": 200,
+    "final_url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "flags": []
+   }
+  },
   "squarespace": {
    "one_liner": {
     "url": "https://developers.squarespace.com/commerce-apis/overview",
@@ -3145,6 +3371,80 @@
     "flags": []
    }
   },
+  "ecwid": {
+   "one_liner": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.ecwid.com/",
+    "status": 200,
+    "final_url": "https://developers.ecwid.com/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+    "status": 200,
+    "final_url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.ecwid.com/api-reference",
+    "status": 200,
+    "final_url": "https://docs.ecwid.com/api-reference",
+    "flags": []
+   }
+  },
   "gumroad": {
    "one_liner": {
     "url": "https://gumroad.com/api",
@@ -3216,6 +3516,80 @@
     "url": "https://gumroad.com/api",
     "status": 200,
     "final_url": "https://gumroad.com/api",
+    "flags": []
+   }
+  },
+  "amazon_selling_partner": {
+   "one_liner": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://sell.amazon.com/developers",
+    "status": 200,
+    "final_url": "https://sell.amazon.com/developers",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://sell.amazon.com/developers",
+    "status": 200,
+    "final_url": "https://sell.amazon.com/developers",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer-docs.amazon/sp-api/",
+    "status": 200,
+    "final_url": "https://developer-docs.amazon/sp-api/",
     "flags": []
    }
   },
@@ -3683,6 +4057,82 @@
     "flags": []
    }
   },
+  "firecrawl": {
+   "one_liner": {
+    "url": "https://www.firecrawl.dev/",
+    "status": 200,
+    "final_url": "https://www.firecrawl.dev/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.firecrawl.dev/pricing",
+    "status": 200,
+    "final_url": "https://www.firecrawl.dev/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.firecrawl.dev/pricing",
+    "status": 200,
+    "final_url": "https://www.firecrawl.dev/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://www.firecrawl.dev/pricing",
+    "status": 200,
+    "final_url": "https://www.firecrawl.dev/pricing",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/introduction",
+    "flags": []
+   }
+  },
   "bright_data": {
    "one_liner": {
     "url": "https://brightdata.com/",
@@ -3833,6 +4283,82 @@
     "flags": []
    }
   },
+  "waterfall_io": {
+   "one_liner": {
+    "url": "https://www.waterfall.io/",
+    "status": 200,
+    "final_url": "https://www.waterfall.io/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.waterfall.io/v1/book-demo",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/book-demo",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.waterfall.io/v1/skills-overview",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/skills-overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.waterfall.io/v1/book-demo",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/book-demo",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.waterfall.io/v1/book-demo",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/book-demo",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction",
+    "flags": []
+   }
+  },
   "clay": {
    "one_liner": {
     "url": "https://developers.clay.com/",
@@ -3904,6 +4430,154 @@
     "url": "https://developers.clay.com/",
     "status": 200,
     "final_url": "https://developers.clay.com/",
+    "flags": []
+   }
+  },
+  "github": {
+   "one_liner": {
+    "url": "https://softverdict.com/github-pricing-2026/",
+    "status": 200,
+    "final_url": "https://softverdict.com/github-pricing-2026/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://github.com/pricing.php",
+    "status": 200,
+    "final_url": "https://github.com/pricing.php",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server?tool=vscode",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp-in-your-ide/set-up-the-github-mcp-server?tool=vscode",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://github.com/pricing.php",
+    "status": 200,
+    "final_url": "https://github.com/pricing.php",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.github.com/en/rest",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest",
+    "flags": []
+   }
+  },
+  "cloudflare": {
+   "one_liner": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "status": 200,
+    "final_url": "https://github.com/cloudflare/mcp-server-cloudflare",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.cloudflare.com/api/overview/",
+    "status": 200,
+    "final_url": "https://developers.cloudflare.com/api/overview/",
     "flags": []
    }
   },
@@ -3989,6 +4663,600 @@
     "flags": []
    }
   },
+  "mongodb_atlas": {
+   "one_liner": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.mongodb.com/pricing",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://www.mongodb.com/products/tools/mcp-server",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/products/tools/mcp-server",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://www.mongodb.com/products/tools/mcp-server",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/products/tools/mcp-server",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.mongodb.com/pricing",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://www.mongodb.com/products/tools/mcp-server",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/products/tools/mcp-server",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "status": 200,
+    "final_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "flags": []
+   }
+  },
+  "notion": {
+   "one_liner": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.notion.com/docs/authorization",
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/get-started/authorization",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.notion.com/docs/authorization",
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/get-started/authorization",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/mcp/overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.notion.com/reference/intro",
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro",
+    "flags": []
+   }
+  },
+  "airtable": {
+   "one_liner": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://airtable.com/developers/web/api/authentication",
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/authentication",
+    "flags": []
+   }
+  },
+  "linear": {
+   "one_liner": {
+    "url": "https://linear.app/docs",
+    "status": 200,
+    "final_url": "https://linear.app/docs",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://linear.app/pricing",
+    "status": 200,
+    "final_url": "https://linear.app/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://linear.app/docs/mcp",
+    "status": 200,
+    "final_url": "https://linear.app/docs/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://linear.app/pricing",
+    "status": 200,
+    "final_url": "https://linear.app/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://linear.app/developers/graphql",
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql",
+    "flags": []
+   }
+  },
+  "jira": {
+   "one_liner": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/atlassian/atlassian-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/atlassian/atlassian-mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://github.com/atlassian/atlassian-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/atlassian/atlassian-mcp-server",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "flags": []
+   }
+  },
+  "asana": {
+   "one_liner": {
+    "url": "https://asana.com/developers",
+    "status": 200,
+    "final_url": "https://asana.com/developers",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.asana.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.asana.com/docs/overview",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/overview",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.asana.com/docs/api-features",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/api-features",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "status": 200,
+    "final_url": "https://developers.asana.com/reference/rest-api-reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.asana.com/docs/mcp-server",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "status": 200,
+    "final_url": "https://developers.asana.com/reference/rest-api-reference",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.asana.com/docs/mcp-server",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/mcp-server",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "status": 200,
+    "final_url": "https://developers.asana.com/reference/rest-api-reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.asana.com/docs/overview",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/overview",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.asana.com/docs/overview",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/overview",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.asana.com/reference/rest-api-reference",
+    "status": 200,
+    "final_url": "https://developers.asana.com/reference/rest-api-reference",
+    "flags": []
+   }
+  },
+  "clickup": {
+   "one_liner": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.clickup.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.clickup.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/authentication",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+    "status": 403,
+    "final_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://developer.clickup.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.clickup.com/docs/authentication",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/authentication",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "flags": []
+   }
+  },
+  "smartsheet": {
+   "one_liner": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.smartsheet.com/",
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/",
+    "flags": []
+   }
+  },
   "paygent_connect": {
    "one_liner": {
     "url": "https://api.paygent.tech/docs",
@@ -4061,6 +5329,320 @@
     "status": 200,
     "final_url": "https://api.paygent.tech/docs",
     "flags": []
+   }
+  },
+  "xero": {
+   "one_liner": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/XeroAPI/xero-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/XeroAPI/xero-mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "flags": []
+   }
+  },
+  "ramp": {
+   "one_liner": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.ramp.com/developer-api/v1/api",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/api",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/getting-started",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "status": 200,
+    "final_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "flags": []
+   }
+  },
+  "notebooklm": {
+   "one_liner": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "status": 200,
+    "final_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "flags": []
+   }
+  },
+  "otter_ai": {
+   "one_liner": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "test_account": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_url": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
    }
   }
  },
@@ -4371,6 +5953,114 @@
     "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
     "status": 403,
     "final_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+    "flags": [
+     "http_403"
+    ]
+   }
+  },
+  "clickup": {
+   "official_mcp": {
+    "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+    "status": 403,
+    "final_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+    "flags": [
+     "http_403"
+    ]
+   }
+  },
+  "otter_ai": {
+   "one_liner": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "access_path": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_type": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "api_breadth": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "official_mcp": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "toolkit_bucket": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "test_account": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API",
+    "flags": [
+     "http_403"
+    ]
+   },
+   "docs_url": {
+    "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
     "flags": [
      "http_403"
     ]

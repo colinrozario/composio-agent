@@ -1,0 +1,99 @@
+{
+ "id": 54,
+ "slug": "mrscraper",
+ "name": "MrScraper",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Web scraping platform for structured data extraction using AI-powered and manual scraping tools.",
+   "confidence": "high",
+   "source_url": "https://mrscraper.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://mrscraper.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://mcp.ai/mrscraper"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.composio.dev/toolkits/mrscraper"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/overview"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://mrscraper.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://mrscraper.com/pricing"
+  },
+  "docs_url": {
+   "value": "https://docs.mrscraper.com/docs/api/overview",
+   "confidence": "high",
+   "source_url": "https://docs.mrscraper.com/docs/api/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://composio.dev/toolkits/mrscraper.md",
+  "https://docs.composio.dev/toolkits/mrscraper",
+  "https://docs.mrscraper.com/docs/api/authentication",
+  "https://docs.mrscraper.com/docs/api/overview",
+  "https://docs.mrscraper.com/docs/api/pagination",
+  "https://docs.mrscraper.com/docs/api/v3/result/all",
+  "https://docs.mrscraper.com/docs/api/v3/scraper/ai-init",
+  "https://docs.mrscraper.com/docs/features/activating-api",
+  "https://docs.mrscraper.com/docs/getting-started/overview",
+  "https://docs.mrscraper.com/docs/guides/programmatically",
+  "https://github.com/mrscraper-com/cli",
+  "https://github.com/mrscraper-com/sdk-node",
+  "https://mcp.ai/mrscraper",
+  "https://mrscraper.com/",
+  "https://pypi.org/project/mrscraper-sdk/",
+  "https://request.composio.dev/boards/tool-requests/posts/mrscraper"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

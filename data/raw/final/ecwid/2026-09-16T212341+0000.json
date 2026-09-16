@@ -1,0 +1,113 @@
+{
+ "id": 47,
+ "slug": "ecwid",
+ "name": "Ecwid",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:23:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "E-commerce platform providing REST APIs to manage products, orders, customers, and store settings.",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "access_path": {
+   "value": "self_serve_trial",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.ecwid.com/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app"
+  },
+  "docs_url": {
+   "value": "https://docs.ecwid.com/api-reference",
+   "confidence": "high",
+   "source_url": "https://docs.ecwid.com/api-reference"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/ecwid",
+  "https://developers.ecwid.com/",
+  "https://developers.ecwid.com/build-apps",
+  "https://developers.ecwid.com/ecwid-css-framework/",
+  "https://developers.ecwid.com/site-templates",
+  "https://docs.ecwid.com/",
+  "https://docs.ecwid.com/api-reference",
+  "https://docs.ecwid.com/api-reference/rest-api/storefront-widget-details/sso-single-sign-on-for-websites/add-sso-to-the-website",
+  "https://docs.ecwid.com/changelog/march-2025/march-20/oauth-for-public-apps-get-request-type-changed-to-post",
+  "https://docs.ecwid.com/changelog/september-2025/september-19",
+  "https://docs.ecwid.com/changelog/september-2025/september-19/store-id-is-now-required-for-external-apps-authentication",
+  "https://docs.ecwid.com/develop-apps/app-settings",
+  "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "https://docs.ecwid.com/launch-apps/monetize-public-apps",
+  "https://docs.ecwid.com/launch-apps/native-and-external-apps",
+  "https://docs.ecwid.com/launch-apps/steps-to-go-live-with-a-public-app",
+  "https://docs.ecwid.com/site-templates/launch-site-templates/step-by-step-publishing-guide-for-site-templates.md",
+  "https://docs.ecwid.com/site-themes/dev-launch-site-themes/technical-guide-for-publishing-site-themes",
+  "https://github.com/Ecwid/ecwid-api-docs",
+  "https://github.com/Ecwid/ecwid-api-docs/blob/master/includes/_authentication.md",
+  "https://myaccount.microsoft.com/",
+  "https://myaccount.microsoft.com/login",
+  "https://store.steampowered.com/join/completesignup",
+  "https://www.amazon.com/gp/css/homepage.html",
+  "https://www.ecwid.com/pricing",
+  "https://www.facebook.com/login.php/",
+  "https://www.instagram.com/",
+  "https://www.netflix.com/",
+  "https://www.netflix.com/LOGIN?cookieCheck=true"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 6,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}
