@@ -4,8 +4,7 @@ Gives two things: (1) the gap analysis (already shipped vs not) and
 (2) an authoritative auth oracle for every overlapping app.
 
 Endpoints (verify against current docs at docs.composio.dev before running):
-  GET  {BASE}/api/v3/toolkits            paginated catalog
-  POST {BASE}/api/v3/toolkits/multi      {"slugs": [...]}
+  GET  {BASE}/api/v3.1/toolkits          paginated catalog (falls back to /api/v3/toolkits)
 Header: x-api-key: $COMPOSIO_API_KEY
 """
 import os, re, httpx
@@ -20,16 +19,19 @@ SLUG_OVERRIDES = load(DATA/"composio_slug_overrides.json", {})
 def squash(s): return re.sub(r"[^a-z0-9]", "", s.lower())
 
 def fetch_catalog():
-    items, cursor = [], None
     with httpx.Client(base_url=BASE, headers={"x-api-key": KEY}, timeout=60) as c:
+        for path in ("/api/v3.1/toolkits", "/api/v3/toolkits"):
+            if c.get(path, params={"limit": 1}).status_code != 404: break
+        items, cursor, seen = [], None, set()
         while True:
-            params = {"limit": 1000}
+            params = {"limit": 500}
             if cursor: params["cursor"] = cursor
-            r = c.get("/api/v3/toolkits", params=params); r.raise_for_status()
+            r = c.get(path, params=params); r.raise_for_status()
             body = r.json()
             items += body.get("items", body if isinstance(body, list) else [])
             cursor = body.get("next_cursor") if isinstance(body, dict) else None
-            if not cursor: break
+            if not cursor or cursor in seen: break
+            seen.add(cursor)
     return items
 
 def main():

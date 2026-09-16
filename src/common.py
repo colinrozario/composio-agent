@@ -5,24 +5,30 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+import sys
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8", errors="replace")  # Windows cp1252 console
+try:  # load .env so scripts run without exporting vars (PowerShell has no `export`)
+    from dotenv import load_dotenv; load_dotenv(ROOT/".env")
+except ImportError:
+    pass
 DATA, RAW, PROMPTS, GT, SITE = ROOT/"data", ROOT/"data"/"raw", ROOT/"prompts", ROOT/"ground_truth", ROOT/"site"
-SCHEMA = json.loads((ROOT/"schema"/"app_record.schema.json").read_text())
+SCHEMA = json.loads((ROOT/"schema"/"app_record.schema.json").read_text(encoding="utf-8"))
 FIELDS = SCHEMA["properties"]["fields"]["required"]
 # Fields graded for accuracy (free-text fields are reviewed, not scored)
 GRADED_FIELDS = ["auth_methods", "access_path", "api_type", "api_breadth", "official_mcp",
                  "base_url_model", "toolkit_bucket", "docs_quality", "test_account"]
 
 MODEL_PRIMARY = os.getenv("MODEL_PRIMARY", "claude-sonnet-5")
-MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "claude-haiku-4-5-20251001")
+MODEL_SECONDARY = os.getenv("MODEL_SECONDARY", "claude-haiku-4-5")
 CONCURRENCY = int(os.getenv("CONCURRENCY", "6"))
 
 def now() -> str: return datetime.now(timezone.utc).isoformat(timespec="seconds")
 def load(p: Path, default=None):
-    return json.loads(p.read_text()) if p.exists() else default
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
 def save(p: Path, obj) -> None:
-    p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(obj, indent=1, ensure_ascii=False))
+    p.parent.mkdir(parents=True, exist_ok=True); p.write_text(json.dumps(obj, indent=1, ensure_ascii=False), encoding="utf-8")
 def seed() -> list[dict]: return load(DATA/"seed.json")
-def prompt(name: str) -> str: return (PROMPTS/name).read_text()
+def prompt(name: str) -> str: return (PROMPTS/name).read_text(encoding="utf-8")
 
 def enum_text() -> str:
     """Render allowed enum values from the schema so prompts and validation never drift."""
@@ -87,19 +93,34 @@ def client():
         _client = AsyncAnthropic()
     return _client
 
+def search_tool(model: str, max_uses: int) -> dict:
+    """Dynamic-filtering web search needs Sonnet/Opus 4.6+; Haiku 4.5 only has the basic variant."""
+    version = "web_search_20250305" if "haiku" in model else "web_search_20260209"
+    return {"type": version, "name": "web_search", "max_uses": max_uses}
+
 async def ask(prompt_text: str, model: str, web_search: bool, max_uses: int = 6, retries: int = 4) -> tuple[str, dict]:
-    """Call the model. Returns (final text, raw response dict). Web search uses the server tool."""
-    tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_uses}] if web_search else None
-    for attempt in range(retries):
-        try:
-            kw = dict(model=model, max_tokens=4000, messages=[{"role": "user", "content": prompt_text}])
-            if tools: kw["tools"] = tools
-            r = await client().messages.create(**kw)
-            text = "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
-            return text, r.model_dump()
-        except Exception as e:  # rate limits, overloads, transient network
-            if attempt == retries - 1: raise
-            await asyncio.sleep(2 ** attempt * 3)
+    """Call the model. Returns (final text, raw response dict). Web search uses the server tool.
+    Server tools can stop with pause_turn; we resend the partial turn until it finishes."""
+    tools = [search_tool(model, max_uses)] if web_search else None
+    messages = [{"role": "user", "content": prompt_text}]
+    blocks = []
+    for _ in range(5):  # pause_turn continuations
+        for attempt in range(retries):
+            try:
+                kw = dict(model=model, max_tokens=16000, messages=messages)
+                if tools: kw["tools"] = tools
+                r = await client().messages.create(**kw)
+                break
+            except Exception:  # rate limits, overloads, transient network (SDK already retried twice)
+                if attempt == retries - 1: raise
+                await asyncio.sleep(2 ** attempt * 5)
+        dump = r.model_dump()
+        blocks += dump["content"]
+        if r.stop_reason != "pause_turn": break
+        messages = [messages[0], {"role": "assistant", "content": r.content}]
+    dump["content"] = blocks  # full transcript across continuations, so searched_urls sees every result
+    text = "".join(b.get("text", "") for b in blocks if b.get("type") == "text")
+    return text, dump
 
 def searched_urls(raw: dict) -> set[str]:
     """URLs the web_search tool actually returned. Citing anything outside this set = likely invented."""

@@ -10,6 +10,7 @@ Questions, answer each from the vendor's current developer pages found by web se
 - Does every customer have their own host/subdomain? (base_url_model)
 - Can you test for free? (test_account)
 
-Use exactly the same JSON shape and enums as below and return ONLY JSON. Use "unknown" rather than guessing.
+Return ONLY a JSON object keyed by field name, each value shaped {{"value": ..., "confidence": "high|med|low", "source_url": "..."}}
+(auth_methods value is an array). Use "unknown" rather than guessing. Allowed values:
 {enums}
 Fields: auth_methods, access_path, api_type, official_mcp, base_url_model, test_account

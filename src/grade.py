@@ -8,7 +8,7 @@ def acc(rows, col):
     return round(sum(ok) / len(ok), 3) if ok else None
 
 def main():
-    rows = [r for r in csv.DictReader((GT/"human_review.csv").open()) if r["truth_value"].strip()]
+    rows = [r for r in csv.DictReader((GT/"human_review.csv").open(encoding="utf-8-sig", newline="")) if r["truth_value"].strip()]
     if not rows: raise SystemExit("ground_truth/human_review.csv has no truth_value filled in yet")
     out = {"n_rows": len(rows), "n_apps": len({r["slug"] for r in rows}), "overall": {}, "by_stratum": {}, "by_field": {}}
     block = lambda sub: {"pass1": acc(sub, "pass1_value"), "final": acc(sub, "final_value"), "n": len(sub)}

@@ -20,17 +20,57 @@ def flagged_fields(slug, rec, linkcheck, oracle) -> list[str]:
     if any(p.startswith("parse_error") for p in rec.get("schema_problems", [])): f |= set(GRADED_FIELDS)
     return sorted(f)
 
+def html_to_text(html: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
+    for t in soup(["script", "style", "nav", "footer", "svg"]): t.decompose()
+    return re.sub(r"\s+", " ", soup.get_text(" ")).strip()
+
+_browser, _browser_lock = None, asyncio.Lock()
+BROWSER_SLOTS = asyncio.Semaphore(3)
+
+async def browser():
+    """Lazily start one headless Chromium; None if Playwright isn't installed."""
+    global _browser
+    async with _browser_lock:
+        if _browser is None:
+            try:
+                from playwright.async_api import async_playwright
+                _browser = await (await async_playwright().start()).chromium.launch()
+            except Exception as e:
+                print(f"[grounded] no headless browser ({type(e).__name__}); JS-rendered docs go to a human")
+                _browser = False
+    return _browser or None
+
+async def rendered_text(url):
+    b = await browser()
+    if not b: return None
+    async with BROWSER_SLOTS:
+        page = await b.new_page()
+        try:
+            resp = await page.goto(url, wait_until="networkidle", timeout=30000)
+            if resp and resp.status >= 400: return None
+            return html_to_text(await page.content())
+        except Exception:
+            return None
+        finally:
+            await page.close()
+
+FETCH_MODE = {}  # url -> "http" | "browser", reported on the page
+
 async def page_text(c, url):
+    """Plain HTTP first; if the page is JS-rendered (near-empty text) or blocks bots, render it in Chromium."""
+    text = None
     try:
         r = await c.get(url, follow_redirects=True)
-        if r.status_code >= 400: return None
-        soup = BeautifulSoup(r.text, "html.parser")
-        for t in soup(["script", "style", "nav", "footer", "svg"]): t.decompose()
-        text = re.sub(r"\s+", " ", soup.get_text(" ")).strip()
-        # JS-rendered docs return near-empty text. Record it: that is a human-needed case.
-        return text[:MAX_CHARS_PER_PAGE] if len(text) > 400 else None
+        if r.status_code < 400: text = html_to_text(r.text)
     except Exception:
-        return None
+        pass
+    if text and len(text) > 400:
+        FETCH_MODE[url] = "http"; return text[:MAX_CHARS_PER_PAGE]
+    text = await rendered_text(url)
+    if text and len(text) > 400:
+        FETCH_MODE[url] = "browser"; return text[:MAX_CHARS_PER_PAGE]
+    return None  # still nothing: a human-needed case
 
 async def regrade(c, app, rec, fields):
     urls = {x["source_url"] for x in rec["fields"].values() if isinstance(x, dict) and x.get("source_url")}
@@ -67,5 +107,9 @@ async def main(only):
             if fields: jobs.append(regrade(c, app, rec, fields))
         print(f"{len(jobs)} apps flagged for grounded re-ask")
         await gather_limited(jobs)
+    modes = list(FETCH_MODE.values())
+    save(DATA/"fetch_modes.json", {"http": modes.count("http"), "browser": modes.count("browser"), "by_url": FETCH_MODE})
+    print(f"pages read: {modes.count('http')} via http, {modes.count('browser')} needed the headless browser")
+    if _browser: await _browser.close()
 
 if __name__ == "__main__": asyncio.run(main(sys.argv[1:] or None))

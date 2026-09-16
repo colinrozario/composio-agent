@@ -28,7 +28,7 @@ def main(seed_value=7, per_cat=2, max_targeted=15):
         strata[a["slug"]] = "targeted"
     GT.mkdir(exist_ok=True)
     path = GT/"human_review.csv"
-    with path.open("w", newline="") as fh:
+    with path.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["stratum", "slug", "app", "field", "pass1_value", "final_value", "final_source_url",
                     "truth_value", "truth_source_url", "human_note"])

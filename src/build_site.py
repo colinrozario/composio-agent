@@ -6,7 +6,7 @@ def cell(x): return x if not isinstance(x, list) else ", ".join(x)
 
 def main():
     pub = load(DATA/"published.json"); pat = load(DATA/"patterns.json"); ver = load(DATA/"verification.json", {})
-    moments = [l[2:].strip() for l in (GT/"human_log.md").read_text().splitlines() if l.startswith("- ")] \
+    moments = [l[2:].strip() for l in (GT/"human_log.md").read_text(encoding="utf-8").splitlines() if l.startswith("- ")] \
         if (GT/"human_log.md").exists() else []
     apps = [{
         "id": p["id"], "name": p["name"], "slug": p["slug"], "category": p["category"],
@@ -31,7 +31,7 @@ def main():
         md.append(f"| {a['name']} | {a['category']} | {'yes' if a['in_composio'] else 'no'} | {cell(f['auth_methods']['value'])} | "
                   f"{f['access_path']['value']} | {f['api_type']['value']} | {f['official_mcp']['value']} | "
                   f"{a['score']['total']} | {a['score']['tier']} | {f['docs_url']['value']} |")
-    (SITE/"data.md").write_text("\n".join(md))
+    (SITE/"data.md").write_text("\n".join(md), encoding="utf-8")
     (SITE/"llms.txt").write_text("\n".join([
         "# App buildability research (100 apps)",
         "> Auth, access gates, API surface and a 0-9 buildability score for 100 SaaS apps, "
@@ -41,7 +41,7 @@ def main():
         "## Schema", "- Each field: value, confidence (high|med|low), source_url",
         "- score.total 0-9 = credential(0-3) + docs(0-2) + breadth(0-2) + test account(0-2)",
         "- tiers: build_now 7-9, build_with_friction 4-6, needs_outreach 0-3, local_toolkit (CLI, no hosted API)",
-    ]))
+    ]), encoding="utf-8")
     print(f"site/data.json written ({len(apps)} apps)")
 
 if __name__ == "__main__": main()

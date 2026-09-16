@@ -21,7 +21,7 @@ def main():
         changed = []
         if g:
             for f, x in (g.get("result") or {}).items():
-                if f in auto["fields"] and isinstance(x, dict) and "value" in x:
+                if f in g.get("regraded_fields", []) and f in auto["fields"] and isinstance(x, dict) and "value" in x:
                     if x["value"] != auto["fields"][f].get("value"): changed.append(f)
                     auto["fields"][f] = {k: x.get(k) for k in ("value", "confidence", "source_url", "evidence_quote")}
         auto["grounded_changed"] = changed
