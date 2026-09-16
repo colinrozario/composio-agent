@@ -1,0 +1,112 @@
+{
+ "id": 96,
+ "slug": "devin",
+ "name": "Devin",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:29:45+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "An AI software engineer platform with a REST API for automation and integrations.",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://devin.ai/enterprise"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "med",
+   "source_url": "https://devin.ai/enterprise"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  },
+  "docs_url": {
+   "value": "https://docs.devin.ai/api-reference/overview",
+   "confidence": "high",
+   "source_url": "https://docs.devin.ai/api-reference/overview"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/devin-api/",
+  "https://coworker.ai/blog/enterprise-ai-pricing-comparison-2026",
+  "https://deepwiki.com/kevinhamza/Devin/9-api-documentation",
+  "https://devin.ai/",
+  "https://devin.ai/enterprise",
+  "https://docs.cloud.google.com/gemini/enterprise/docs/editions",
+  "https://docs.devin.ai/api-reference/authentication",
+  "https://docs.devin.ai/api-reference/common-flows",
+  "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+  "https://docs.devin.ai/api-reference/overview",
+  "https://docs.devin.ai/api-reference/v2/api-keys/provision-service-key",
+  "https://docs.devin.ai/api-reference/v3/code-scans/triggering-code-scans",
+  "https://docs.devin.ai/api-reference/v3/overview",
+  "https://docs.devin.ai/api-reference/v3/usage-examples",
+  "https://docs.devin.ai/cli/extensibility/mcp/overview",
+  "https://docs.devin.ai/desktop/accounts/api-reference/api-introduction",
+  "https://docs.devin.ai/desktop/cascade/mcp",
+  "https://docs.devin.ai/fr/work-with-devin/mcp",
+  "https://docs.devin.ai/integrations/overview",
+  "https://docs.devin.ai/windsurf/plugins/cascade/mcp",
+  "https://docs.devin.ai/work-with-devin/deepwiki-mcp",
+  "https://docs.devin.ai/work-with-devin/devin-mcp",
+  "https://docs.devin.fm/",
+  "https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/pricing.html",
+  "https://github.com/appwiz/devin-cli",
+  "https://github.com/enterprise",
+  "https://github.com/jigsaw-labs/Devin",
+  "https://myapplications.microsoft.com/",
+  "https://www.emburse.com/login",
+  "https://www.theaccessgroup.com/en-us/construction/pricing/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ }
+}

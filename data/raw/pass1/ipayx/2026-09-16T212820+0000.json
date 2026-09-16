@@ -1,0 +1,96 @@
+{
+ "id": 85,
+ "slug": "ipayx",
+ "name": "iPayX",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:28:20+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Forensic FX audit engine detecting hidden bank spreads and fees for AI agents.",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  },
+  "docs_url": {
+   "value": "https://www.ipayx.ai/developers?lang=en",
+   "confidence": "high",
+   "source_url": "https://www.ipayx.ai/developers?lang=en"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://github.com/IpayX-org/ipayx/tree/main",
+  "https://github.com/Ipayx",
+  "https://mcp.ipayx.ai/mcp",
+  "https://mcpmarket.com/server/ipayx-fx-auditor",
+  "https://www.ipayx.ai/",
+  "https://www.ipayx.ai/about",
+  "https://www.ipayx.ai/api-terms?lang=en",
+  "https://www.ipayx.ai/developers/sandbox",
+  "https://www.ipayx.ai/developers?lang=en",
+  "https://www.ipayx.ai/docs/api?lang=en",
+  "https://www.ipayx.ai/forensic-audit",
+  "https://www.ipayx.ai/fx-audit",
+  "https://www.ipayx.ai/mcp-marketplace",
+  "https://www.ipayx.ai/mcp-marketplace?lang=en",
+  "https://www.ipayx.ai/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

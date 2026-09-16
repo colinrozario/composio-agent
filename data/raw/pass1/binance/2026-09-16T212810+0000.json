@@ -1,0 +1,103 @@
+{
+ "id": 83,
+ "slug": "binance",
+ "name": "Binance",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:28:10+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cryptocurrency exchange providing programmatic trading, wallet, and market data APIs.",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "hmac_signature",
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/products/login/web-integration"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.binance.com/en/binance-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.binance.com/en/binance-api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.binance.com/en/binance-api"
+  },
+  "docs_url": {
+   "value": "https://developers.binance.com/en/docs/catalog",
+   "confidence": "high",
+   "source_url": "https://developers.binance.com/en/docs/catalog"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://deepwiki.com/binance/binance-spot-api-docs/10-testnet-environment",
+  "https://deepwiki.com/binance/binance-spot-api-docs/10.1-testnet-overview-and-access",
+  "https://developers.binance.com/docs/binance-spot-api-docs/testnet/",
+  "https://developers.binance.com/en",
+  "https://developers.binance.com/en/docs/catalog",
+  "https://developers.binance.com/en/docs/catalog/core-trading-spot-trading/api/ws-api/auth",
+  "https://developers.binance.com/en/docs/introduction",
+  "https://developers.binance.com/en/docs/products/binance-open-api/scopes",
+  "https://developers.binance.com/en/docs/products/connect-2.0/authentication-and-signing",
+  "https://developers.binance.com/en/docs/products/login/web-integration",
+  "https://developers.binance.com/en/docs/products/spot/testnet/general-info",
+  "https://developers.binance.com/en/docs/sdks-tools/connectors/java",
+  "https://developers.binance.info/docs/",
+  "https://developers.binance.info/en",
+  "https://docs.binance.us/",
+  "https://github.com/binance/binance-spot-api-docs",
+  "https://github.com/binance/binance-spot-api-docs/tree/master/testnet",
+  "https://web3.binance.com/en/dev-docs/authentication",
+  "https://www.binance.com/en/binance-api",
+  "https://www.binance.com/en/support/faq/detail/ab78f9a1b8824cf0a106b4229c76496d"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 0
+ }
+}
