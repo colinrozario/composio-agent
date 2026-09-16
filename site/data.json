@@ -1,23 +1,25 @@
 {
  "meta": {
-  "generated_at": "2026-09-16T21:16:31+00:00",
+  "generated_at": "2026-09-16T21:18:47+00:00",
   "demo": false,
   "repo": "https://github.com/colinrozario/composio-agent"
  },
  "headline": {
-  "apps": 44,
-  "in_composio": 26,
-  "not_in_composio": 18,
+  "apps": 53,
+  "in_composio": 33,
+  "not_in_composio": 20,
   "buildable_now_not_in_composio": 8
  },
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 6,
+   "count": 8,
    "apps": [
     "Google Ads",
     "LinkedIn Ads",
     "Meta Ads",
+    "Pinterest",
+    "Shopify",
     "Squarespace",
     "Threads (Meta)",
     "WhatsApp Business"
@@ -27,9 +29,13 @@
   },
   {
    "key": "paid_to_use",
-   "count": 12,
+   "count": 17,
    "apps": [
+    "Ahrefs",
     "Aircall",
+    "Apify",
+    "Bright Data",
+    "Clay",
     "Close",
     "Copper",
     "DataForSEO",
@@ -40,23 +46,26 @@
     "Intercom",
     "LiveAgent",
     "Pylon",
-    "SE Ranking"
+    "SE Ranking",
+    "fanbasis"
    ],
    "headline": "Free to read, paid to call",
    "so_what": "TODO"
   },
   {
    "key": "per_tenant_host",
-   "count": 10,
+   "count": 12,
    "apps": [
     "DealCloud",
     "Freshdesk",
     "Gladly",
     "Gorgias",
     "LiveAgent",
+    "Neo4j",
     "Pipedrive",
     "Pylon",
     "Salesforce",
+    "Shopify",
     "Twenty",
     "Zendesk"
    ],
@@ -74,9 +83,13 @@
   },
   {
    "key": "official_mcp",
-   "count": 18,
+   "count": 25,
    "apps": [
+    "Ahrefs",
     "Aircall",
+    "Apify",
+    "Bright Data",
+    "Clay",
     "Close",
     "DataForSEO",
     "Freshdesk",
@@ -88,8 +101,11 @@
     "Klaviyo",
     "Lark (Larksuite)",
     "Meta Ads",
+    "MrScraper",
+    "Neo4j",
     "Paygent Connect",
     "Salesforce",
+    "Shopify",
     "Slack",
     "Twenty",
     "Twilio",
@@ -218,6 +234,16 @@
     "in_composio": true
    },
    {
+    "name": "MrScraper",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Neo4j",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Gorgias",
     "score": 8,
     "in_composio": true
@@ -253,12 +279,32 @@
     "in_composio": true
    },
    {
+    "name": "Pinterest",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "Threads (Meta)",
     "score": 7,
     "in_composio": false
    },
    {
+    "name": "Shopify",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "DataForSEO",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Apify",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Bright Data",
     "score": 7,
     "in_composio": true
    },
@@ -320,6 +366,11 @@
     "in_composio": false
    },
    {
+    "name": "Clay",
+    "score": 6,
+    "in_composio": false
+   },
+   {
     "name": "DealCloud",
     "score": 5,
     "in_composio": false
@@ -333,6 +384,16 @@
     "name": "LinkedIn Ads",
     "score": 5,
     "in_composio": true
+   },
+   {
+    "name": "Ahrefs",
+    "score": 5,
+    "in_composio": true
+   },
+   {
+    "name": "fanbasis",
+    "score": 4,
+    "in_composio": false
    }
   ],
   "needs_outreach": [],
@@ -347,23 +408,27 @@
  "auth": [
   [
    "oauth2",
-   28
+   30
   ],
   [
    "api_key",
-   19
+   24
   ],
   [
    "bearer_token",
-   18
+   21
   ],
   [
    "basic",
-   9
+   11
   ],
   [
    "jwt",
    2
+  ],
+  [
+   "hmac_signature",
+   1
   ],
   [
    "none",
@@ -384,17 +449,20 @@
    "build_with_friction": 1
   },
   "Marketing, Ads, Email and Social": {
-   "build_now": 7,
+   "build_now": 8,
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_with_friction": 1,
-   "build_now": 1
+   "build_now": 2,
+   "build_with_friction": 2
   },
   "Data, SEO and Scraping": {
-   "build_now": 1,
-   "build_with_friction": 1,
+   "build_now": 4,
+   "build_with_friction": 3,
    "local_toolkit": 1
+  },
+  "Developer, Infra and Data platforms": {
+   "build_now": 1
   },
   "Finance and Fintech": {
    "build_now": 1
@@ -3467,6 +3535,89 @@
    }
   },
   {
+   "id": 38,
+   "name": "Pinterest",
+   "slug": "pinterest",
+   "category": "Marketing, Ads, Email and Social",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Manage pins, boards, ad campaigns, and merchant catalogs via Pinterest's REST API.",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+    },
+    "access_path": {
+     "value": "app_review_required",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/getting-started/getting-access/"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/api/v5/getting-started/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/developer-tools/sandbox/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    },
+    "docs_url": {
+     "value": "https://developers.pinterest.com/docs/",
+     "confidence": "high",
+     "source_url": "https://developers.pinterest.com/docs/"
+    }
+   }
+  },
+  {
    "id": 39,
    "name": "Threads (Meta)",
    "slug": "threads",
@@ -3631,6 +3782,91 @@
      "value": "https://www.twilio.com/docs/sendgrid/api-reference",
      "confidence": "high",
      "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+    }
+   }
+  },
+  {
+   "id": 41,
+   "name": "Shopify",
+   "slug": "shopify",
+   "category": "Ecommerce",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Ecommerce platform enabling merchants to build online stores, manage products, and process orders.",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "auth_methods": {
+     "value": [
+      "oauth2",
+      "api_key",
+      "hmac_signature"
+     ],
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api/usage/authentication"
+    },
+    "access_path": {
+     "value": "app_review_required",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process"
+    },
+    "api_type": {
+     "value": "rest_and_graphql",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+    },
+    "base_url_model": {
+     "value": "per_tenant_subdomain",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api/usage/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
+    },
+    "docs_url": {
+     "value": "https://shopify.dev/docs/api",
+     "confidence": "high",
+     "source_url": "https://shopify.dev/docs/api"
     }
    }
   },
@@ -3803,6 +4039,89 @@
    }
   },
   {
+   "id": 50,
+   "name": "fanbasis",
+   "slug": "fanbasis",
+   "category": "Ecommerce",
+   "in_composio": false,
+   "score": {
+    "total": 4,
+    "parts": {
+     "credential": 1,
+     "docs": 1,
+     "breadth": 1,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "An API for managing fans, signups, and data for artists on the Fanbase platform.",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "api_breadth": {
+     "value": "narrow",
+     "confidence": "med",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "official_mcp": {
+     "value": "none_found",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "docs_quality": {
+     "value": "partial_or_thin",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "med",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "main_blocker": {
+     "value": "Access is restricted to the 'Legendary' plan, requiring manual contact with an Artist Success Account Manager.",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    },
+    "docs_url": {
+     "value": "https://fanbaseapi.openstage.live/guides.html",
+     "confidence": "high",
+     "source_url": "https://fanbaseapi.openstage.live/guides.html"
+    }
+   }
+  },
+  {
    "id": 51,
    "name": "DataForSEO",
    "slug": "dataforseo",
@@ -3971,6 +4290,341 @@
    }
   },
   {
+   "id": 53,
+   "name": "Ahrefs",
+   "slug": "ahrefs",
+   "category": "Data, SEO and Scraping",
+   "in_composio": true,
+   "score": {
+    "total": 5,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 0
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Access SEO, backlink, keyword, and site audit data programmatically via REST API.",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "test_account": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    },
+    "main_blocker": {
+     "value": "Access requires a paid subscription (Lite plan or higher) as there is no public free tier or sandbox.",
+     "confidence": "high",
+     "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+    },
+    "docs_url": {
+     "value": "https://docs.ahrefs.com/en/api/docs/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+    }
+   }
+  },
+  {
+   "id": 54,
+   "name": "MrScraper",
+   "slug": "mrscraper",
+   "category": "Data, SEO and Scraping",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Web scraping platform for structured data extraction using AI-powered and manual scraping tools.",
+     "confidence": "high",
+     "source_url": "https://mrscraper.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://mrscraper.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/overview"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/overview"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://mcp.ai/mrscraper"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.composio.dev/toolkits/mrscraper"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/overview"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://mrscraper.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://mrscraper.com/pricing"
+    },
+    "docs_url": {
+     "value": "https://docs.mrscraper.com/docs/api/overview",
+     "confidence": "high",
+     "source_url": "https://docs.mrscraper.com/docs/api/overview"
+    }
+   }
+  },
+  {
+   "id": 55,
+   "name": "Apify",
+   "slug": "apify",
+   "category": "Data, SEO and Scraping",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [
+    "composio_auth_disagreement"
+   ],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Cloud platform for web scraping, data extraction, and automation using AI-powered tools.",
+     "confidence": "high",
+     "source_url": "https://apify.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://apify.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/integrations/mcp"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://apify.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    },
+    "docs_url": {
+     "value": "https://docs.apify.com/api/v2",
+     "confidence": "high",
+     "source_url": "https://docs.apify.com/api/v2/getting-started"
+    }
+   }
+  },
+  {
+   "id": 57,
+   "name": "Bright Data",
+   "slug": "bright_data",
+   "category": "Data, SEO and Scraping",
+   "in_composio": true,
+   "score": {
+    "total": 7,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "Web data platform providing proxies, scraping APIs, and AI-optimized tools for web extraction.",
+     "confidence": "high",
+     "source_url": "https://brightdata.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key",
+      "basic"
+     ],
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/api-reference/authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://brightdata.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/api-reference/authentication"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/introduction"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "med",
+     "source_url": "https://docs.brightdata.com/api-reference/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://github.com/brightdata/brightdata-mcp"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/introduction"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+    },
+    "docs_url": {
+     "value": "https://docs.brightdata.com/introduction",
+     "confidence": "high",
+     "source_url": "https://docs.brightdata.com/introduction"
+    }
+   }
+  },
+  {
    "id": 58,
    "name": "Sherlock",
    "slug": "sherlock",
@@ -4052,6 +4706,173 @@
      "value": "https://github.com/sherlock-project/sherlock",
      "confidence": "high",
      "source_url": "https://github.com/sherlock-project/sherlock"
+    }
+   }
+  },
+  {
+   "id": 60,
+   "name": "Clay",
+   "slug": "clay",
+   "category": "Data, SEO and Scraping",
+   "in_composio": false,
+   "score": {
+    "total": 6,
+    "parts": {
+     "credential": 1,
+     "docs": 2,
+     "breadth": 2,
+     "test": 1
+    },
+    "tier": "build_with_friction"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "GTM automation platform offering programmable workflows, data enrichment, and AI-powered research capabilities.",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/"
+    },
+    "auth_methods": {
+     "value": [
+      "api_key"
+     ],
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/public-api/authentication"
+    },
+    "access_path": {
+     "value": "paid_plan_required",
+     "confidence": "high",
+     "source_url": "https://www.clay.com/pricing"
+    },
+    "api_type": {
+     "value": "rest",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/public-api/authentication"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/quickstart"
+    },
+    "base_url_model": {
+     "value": "fixed",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/public-api/authentication"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/quickstart"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/quickstart"
+    },
+    "test_account": {
+     "value": "trial_only",
+     "confidence": "high",
+     "source_url": "https://www.clay.com/pricing"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/quickstart"
+    },
+    "docs_url": {
+     "value": "https://developers.clay.com/",
+     "confidence": "high",
+     "source_url": "https://developers.clay.com/"
+    }
+   }
+  },
+  {
+   "id": 66,
+   "name": "Neo4j",
+   "slug": "neo4j",
+   "category": "Developer, Infra and Data platforms",
+   "in_composio": true,
+   "score": {
+    "total": 9,
+    "parts": {
+     "credential": 3,
+     "docs": 2,
+     "breadth": 2,
+     "test": 2
+    },
+    "tier": "build_now"
+   },
+   "needs_human": [],
+   "human_corrected": [],
+   "fields": {
+    "one_liner": {
+     "value": "A graph database platform for storing and querying highly connected data.",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/product/"
+    },
+    "auth_methods": {
+     "value": [
+      "basic",
+      "bearer_token"
+     ],
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/auth-providers/"
+    },
+    "access_path": {
+     "value": "self_serve_free",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+    },
+    "api_type": {
+     "value": "rpc_or_sdk_only",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+    },
+    "api_breadth": {
+     "value": "broad",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+    },
+    "official_mcp": {
+     "value": "official",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+    },
+    "base_url_model": {
+     "value": "self_hosted_or_customer_host",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+    },
+    "toolkit_bucket": {
+     "value": "remote_api_toolkit",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+    },
+    "docs_quality": {
+     "value": "full_public_reference",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/driver-manual/current/"
+    },
+    "test_account": {
+     "value": "free_tier_or_sandbox",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+    },
+    "main_blocker": {
+     "value": "none",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+    },
+    "docs_url": {
+     "value": "https://neo4j.com/docs/driver-manual/current/",
+     "confidence": "high",
+     "source_url": "https://neo4j.com/docs/"
     }
    }
   },

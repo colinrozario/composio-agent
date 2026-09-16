@@ -1,30 +1,34 @@
 {
  "totals": {
-  "apps": 44,
-  "in_composio": 26,
-  "not_in_composio": 18,
+  "apps": 53,
+  "in_composio": 33,
+  "not_in_composio": 20,
   "buildable_now_not_in_composio": 8
  },
  "auth": [
   [
    "oauth2",
-   28
+   30
   ],
   [
    "api_key",
-   19
+   24
   ],
   [
    "bearer_token",
-   18
+   21
   ],
   [
    "basic",
-   9
+   11
   ],
   [
    "jwt",
    2
+  ],
+  [
+   "hmac_signature",
+   1
   ],
   [
    "none",
@@ -32,22 +36,22 @@
   ]
  ],
  "tiers": {
-  "build_now": 30,
-  "build_with_friction": 13,
+  "build_now": 36,
+  "build_with_friction": 16,
   "local_toolkit": 1
  },
  "access_path": [
   [
    "self_serve_free",
-   23
+   25
   ],
   [
    "paid_plan_required",
-   12
+   17
   ],
   [
    "app_review_required",
-   6
+   8
   ],
   [
    "self_serve_trial",
@@ -72,17 +76,20 @@
    "build_with_friction": 1
   },
   "Marketing, Ads, Email and Social": {
-   "build_now": 7,
+   "build_now": 8,
    "build_with_friction": 2
   },
   "Ecommerce": {
-   "build_with_friction": 1,
-   "build_now": 1
+   "build_now": 2,
+   "build_with_friction": 2
   },
   "Data, SEO and Scraping": {
-   "build_now": 1,
-   "build_with_friction": 1,
+   "build_now": 4,
+   "build_with_friction": 3,
    "local_toolkit": 1
+  },
+  "Developer, Infra and Data platforms": {
+   "build_now": 1
   },
   "Finance and Fintech": {
    "build_now": 1
@@ -91,11 +98,13 @@
  "patterns": [
   {
    "key": "app_review_gate",
-   "count": 6,
+   "count": 8,
    "apps": [
     "Google Ads",
     "LinkedIn Ads",
     "Meta Ads",
+    "Pinterest",
+    "Shopify",
     "Squarespace",
     "Threads (Meta)",
     "WhatsApp Business"
@@ -105,9 +114,13 @@
   },
   {
    "key": "paid_to_use",
-   "count": 12,
+   "count": 17,
    "apps": [
+    "Ahrefs",
     "Aircall",
+    "Apify",
+    "Bright Data",
+    "Clay",
     "Close",
     "Copper",
     "DataForSEO",
@@ -118,23 +131,26 @@
     "Intercom",
     "LiveAgent",
     "Pylon",
-    "SE Ranking"
+    "SE Ranking",
+    "fanbasis"
    ],
    "headline": "Free to read, paid to call",
    "so_what": "TODO"
   },
   {
    "key": "per_tenant_host",
-   "count": 10,
+   "count": 12,
    "apps": [
     "DealCloud",
     "Freshdesk",
     "Gladly",
     "Gorgias",
     "LiveAgent",
+    "Neo4j",
     "Pipedrive",
     "Pylon",
     "Salesforce",
+    "Shopify",
     "Twenty",
     "Zendesk"
    ],
@@ -152,9 +168,13 @@
   },
   {
    "key": "official_mcp",
-   "count": 18,
+   "count": 25,
    "apps": [
+    "Ahrefs",
     "Aircall",
+    "Apify",
+    "Bright Data",
+    "Clay",
     "Close",
     "DataForSEO",
     "Freshdesk",
@@ -166,8 +186,11 @@
     "Klaviyo",
     "Lark (Larksuite)",
     "Meta Ads",
+    "MrScraper",
+    "Neo4j",
     "Paygent Connect",
     "Salesforce",
+    "Shopify",
     "Slack",
     "Twenty",
     "Twilio",
@@ -296,6 +319,16 @@
     "in_composio": true
    },
    {
+    "name": "MrScraper",
+    "score": 9,
+    "in_composio": true
+   },
+   {
+    "name": "Neo4j",
+    "score": 9,
+    "in_composio": true
+   },
+   {
     "name": "Gorgias",
     "score": 8,
     "in_composio": true
@@ -331,12 +364,32 @@
     "in_composio": true
    },
    {
+    "name": "Pinterest",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "Threads (Meta)",
     "score": 7,
     "in_composio": false
    },
    {
+    "name": "Shopify",
+    "score": 7,
+    "in_composio": true
+   },
+   {
     "name": "DataForSEO",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Apify",
+    "score": 7,
+    "in_composio": true
+   },
+   {
+    "name": "Bright Data",
     "score": 7,
     "in_composio": true
    },
@@ -398,6 +451,11 @@
     "in_composio": false
    },
    {
+    "name": "Clay",
+    "score": 6,
+    "in_composio": false
+   },
+   {
     "name": "DealCloud",
     "score": 5,
     "in_composio": false
@@ -411,6 +469,16 @@
     "name": "LinkedIn Ads",
     "score": 5,
     "in_composio": true
+   },
+   {
+    "name": "Ahrefs",
+    "score": 5,
+    "in_composio": true
+   },
+   {
+    "name": "fanbasis",
+    "score": 4,
+    "in_composio": false
    }
   ],
   "needs_outreach": [],

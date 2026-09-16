@@ -1,0 +1,114 @@
+{
+ "id": 57,
+ "slug": "bright_data",
+ "name": "Bright Data",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Web data platform providing proxies, scraping APIs, and AI-optimized tools for web extraction.",
+   "confidence": "high",
+   "source_url": "https://brightdata.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/api-reference/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://brightdata.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/api-reference/authentication"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/introduction"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://docs.brightdata.com/api-reference/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/brightdata/brightdata-mcp"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/introduction"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+  },
+  "docs_url": {
+   "value": "https://docs.brightdata.com/introduction",
+   "confidence": "high",
+   "source_url": "https://docs.brightdata.com/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://bright.docs.aura-software.com/docs/api/",
+  "https://bright.docs.aura-software.com/docs/api/quick_start/",
+  "https://brightdata.com/",
+  "https://brightdata.com/ai/mcp-server",
+  "https://brightdata.com/blog/web-data/datasets-via-databricks",
+  "https://brightdata.com/glossary/api",
+  "https://brightdata.com/pricing",
+  "https://brightdata.com/pricing/mcp-server",
+  "https://brightdata.com/pricing/web-scraper",
+  "https://costbench.com/software/web-scraping/bright-data/",
+  "https://deepwiki.com/brightdata/skills/2.2-authentication-and-zone-management",
+  "https://developer.brightmls.com/",
+  "https://docs.brightdata.com/api-reference/authentication",
+  "https://docs.brightdata.com/api-reference/proxy-manager/generate_token_for_token_based_authentication",
+  "https://docs.brightdata.com/introduction",
+  "https://docs.brightdata.com/products/mcp-server/faqs",
+  "https://docs.brightdata.com/products/mcp-server/overview",
+  "https://docs.brightdata.com/products/serp-api/pricing-and-billing",
+  "https://docs.brightsec.com/docs/creating-authentication",
+  "https://dupple.com/pricing/bright-data",
+  "https://github.com/brightdata/brightdata-mcp",
+  "https://github.com/brightdata/cli",
+  "https://github.com/brightdata/sdk-python",
+  "https://mcp.umin.ai/server/bright_data",
+  "https://mcpservers.org/servers/brightdata/brightdata-mcp",
+  "https://tryglen.com/mcp/servers/bright-data",
+  "https://use-apify.com/blog/bright-data-pricing-guide-2026",
+  "https://www.postman.com/bright-data-api/bright-data-api/overview",
+  "https://www.saasworthy.com/product/bright-data/pricing",
+  "https://www.usagepricing.com/blueprint/bright-data"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 4,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,16 +1,16 @@
 {
  "summary": {
   "pass1": {
-   "n": 26,
-   "exact": 0.231,
-   "overlap": 0.846,
-   "oracle_subset": 0.769
+   "n": 33,
+   "exact": 0.242,
+   "overlap": 0.848,
+   "oracle_subset": 0.697
   },
   "final": {
-   "n": 26,
-   "exact": 0.231,
-   "overlap": 0.846,
-   "oracle_subset": 0.769
+   "n": 33,
+   "exact": 0.242,
+   "overlap": 0.848,
+   "oracle_subset": 0.697
   }
  },
  "by_app": {
@@ -622,6 +622,30 @@
     "composio_subset_of_agent": true
    }
   },
+  "pinterest": {
+   "pass1": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "oauth2"
+    ],
+    "composio": [
+     "oauth2"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
   "sendgrid": {
    "pass1": {
     "agent": [
@@ -648,6 +672,38 @@
     "exact": false,
     "overlap": true,
     "composio_subset_of_agent": true
+   }
+  },
+  "shopify": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "hmac_signature",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "hmac_signature",
+     "oauth2"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
    }
   },
   "gumroad": {
@@ -699,12 +755,145 @@
     "overlap": true,
     "composio_subset_of_agent": true
    }
+  },
+  "ahrefs": {
+   "pass1": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key",
+     "oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   }
+  },
+  "mrscraper": {
+   "pass1": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": true,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "apify": {
+   "pass1": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": false,
+    "composio_subset_of_agent": false
+   }
+  },
+  "bright_data": {
+   "pass1": {
+    "agent": [
+     "api_key",
+     "basic"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   },
+   "final": {
+    "agent": [
+     "api_key",
+     "basic"
+    ],
+    "composio": [
+     "api_key"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": true
+   }
+  },
+  "neo4j": {
+   "pass1": {
+    "agent": [
+     "basic",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key",
+     "basic",
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   },
+   "final": {
+    "agent": [
+     "basic",
+     "bearer_token"
+    ],
+    "composio": [
+     "api_key",
+     "basic",
+     "oauth2",
+     "s2s_oauth2"
+    ],
+    "exact": false,
+    "overlap": true,
+    "composio_subset_of_agent": false
+   }
   }
  },
  "needs_human": [
   "front",
   "plain",
   "gorgias",
-  "whatsapp_business"
+  "whatsapp_business",
+  "apify"
  ]
 }

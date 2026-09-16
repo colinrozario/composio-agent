@@ -1,0 +1,85 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Shopify\nCategory: Ecommerce\nHint (may be misleading, verify it): shopify.dev\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://blog.storecensus.com/shopify-api-authentication-best-practices/",
+   "https://blog.storecensus.com/shopify-apis-authentication-authorization/",
+   "https://github.com/antoineschaller/shopify-mcp-server",
+   "https://github.com/ptrcole/shopify-mcp",
+   "https://help.shopify.com/en/partners/build-integrate/making-apps",
+   "https://praella.com/blogs/shopify-insights/mastering-shopify-api-authentication-a-comprehensive-guide",
+   "https://qstomy.com/en/blog-posts/publish-your-app-on-the",
+   "https://shinedezigninfonet.com/blog/understanding-shopify-app-store-guidelines-what-you-need-to-know/",
+   "https://shopify.dev/docs/api",
+   "https://shopify.dev/docs/api/usage/authentication",
+   "https://shopify.dev/docs/apps/build/storefront-mcp",
+   "https://shopify.dev/docs/apps/build/storefront-mcp/servers/storefront",
+   "https://shopify.dev/docs/apps/launch/app-store-review/review-process",
+   "https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements",
+   "https://shopifylearner.com/shopify-public-app-requirements/",
+   "https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/",
+   "https://www.adsx.com/blog/shopify-app-store-review-process-guide",
+   "https://www.cleverence.com/articles/shopify-dev-documentation/authentication-and-authorization-shopify-dev-2938/",
+   "https://www.cleverence.com/articles/shopify-dev-documentation/shopify-api-access-scopes-4812/",
+   "https://www.codersy.com/blog/shopify-api-development-best-practices/shopify-app-store-guidelines-key-requirements",
+   "https://www.francescatabor.com/articles/2025/8/14/shopify-and-the-model-context-protocol-mcp-in-e-commerce",
+   "https://www.jakelabate.com/agentic-ai-protocols/mcp/shopify/",
+   "https://www.oscprofessionals.com/shopify-app/shopify-api-access-permissions",
+   "https://www.shopifyagentai.com/blog/shopify-mcp-server-explained-connectors/"
+  ],
+  "fetched_urls": [
+   "https://shopify.dev/docs/api",
+   "https://shopify.dev/docs/api/usage/authentication"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Shopify API documentation authentication access requirements"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Shopify Model Context Protocol MCP server"
+    },
+    "ok": true
+   },
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Shopify app store review process requirements public app API access"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://shopify.dev/docs/api/usage/authentication",
+      "https://shopify.dev/docs/api"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "turns": 4,
+  "backend": "gemini",
+  "model": "gemini-3.5-flash-lite"
+ }
+}

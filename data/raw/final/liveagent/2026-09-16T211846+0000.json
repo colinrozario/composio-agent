@@ -1,0 +1,99 @@
+{
+ "id": 16,
+ "slug": "liveagent",
+ "name": "LiveAgent",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Help desk and customer support software with live chat, ticketing, and automation tools.",
+   "confidence": "high",
+   "source_url": "https://www.liveagent.com/pricing/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/741982-API-key"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://www.liveagent.com/pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.liveagent.com/pricing/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  },
+  "docs_url": {
+   "value": "https://support.liveagent.com/docs/api/v3/",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/docs/api/v3/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/liveagent",
+  "https://faq.liveagent.com/640789-Where-Can-I-Find-the-LiveAgent-API-Documentation",
+  "https://github.com/QualityUnit/LiveAgent-api-python",
+  "https://softabase.com/pricing/liveagent",
+  "https://support.liveagent.com/177664-WhatsApp",
+  "https://support.liveagent.com/447485-360dialog-WhatsApp-integration-possible-problems",
+  "https://support.liveagent.com/454038-API-v3-tickets-list-filtering-limitation-from-version-551529",
+  "https://support.liveagent.com/513528-Filtering-API-v3-results",
+  "https://support.liveagent.com/741982-API-key",
+  "https://support.liveagent.com/802463-REST-API",
+  "https://support.liveagent.com/840770-Complete-API-reference",
+  "https://support.liveagent.com/?afmc=1s",
+  "https://support.liveagent.com/docs/api/v3/",
+  "https://support.liveagent.com/docs/api/v3/api-docs-generator.php?version=5.67.8.20260818122914",
+  "https://supportwire.ai/blog/liveagent-pricing",
+  "https://www.liveagent.com/pricing/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

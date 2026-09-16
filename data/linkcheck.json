@@ -1,6 +1,6 @@
 {
- "checked_urls": 158,
- "needed_browser": 1,
+ "checked_urls": 209,
+ "needed_browser": 0,
  "by_app": {
   "salesforce": {
    "one_liner": {
@@ -2079,6 +2079,80 @@
     "flags": []
    }
   },
+  "aircall": {
+   "one_liner": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://aircall.io/en-gb/pricing/",
+    "status": 200,
+    "final_url": "https://aircall.io/en-gb/pricing/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developer.aircall.io/docs/how-to-register",
+    "status": 200,
+    "final_url": "https://developer.aircall.io/docs/how-to-register",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developer.aircall.io/",
+    "status": 200,
+    "final_url": "https://developer.aircall.io/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.aircall.io/api-references",
+    "status": 200,
+    "final_url": "https://developers.aircall.io/api-references",
+    "flags": []
+   }
+  },
   "vonage": {
    "one_liner": {
     "url": "https://developer.vonage.com/en/documentation",
@@ -2559,8 +2633,7 @@
     "url": "https://developers.klaviyo.com/en",
     "status": 200,
     "final_url": "https://developers.klaviyo.com/en",
-    "flags": [],
-    "via": "browser"
+    "flags": []
    },
    "auth_methods": {
     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
@@ -2702,6 +2775,80 @@
     "flags": []
    }
   },
+  "pinterest": {
+   "one_liner": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://developers.pinterest.com/docs/getting-started/getting-access/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.pinterest.com/docs/api/v5/getting-started/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/api/v5/getting-started/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://developers.pinterest.com/docs/developer-tools/sandbox/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/developer-tools/sandbox/",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.pinterest.com/docs/",
+    "status": 200,
+    "final_url": "https://developers.pinterest.com/docs/",
+    "flags": []
+   }
+  },
   "threads": {
    "one_liner": {
     "url": "https://developers.facebook.com/docs/threads/overview/",
@@ -2773,6 +2920,154 @@
     "url": "https://developers.facebook.com/docs/threads/",
     "status": 200,
     "final_url": "https://developers.facebook.com/documentation/threads",
+    "flags": []
+   }
+  },
+  "sendgrid": {
+   "one_liner": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+    "status": 200,
+    "final_url": "https://www.twilio.com/en-us/products/email-api/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://github.com/recepyavuz0/sendgrid-mcp-server",
+    "status": 200,
+    "final_url": "https://github.com/recepyavuz0/sendgrid-mcp-server",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+    "status": 200,
+    "final_url": "https://www.twilio.com/en-us/products/email-api/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+    "flags": []
+   }
+  },
+  "shopify": {
+   "one_liner": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api/usage/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://shopify.dev/docs/apps/build/storefront-mcp",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/apps/build/storefront-mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api/usage/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://shopify.dev/docs/api",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api",
     "flags": []
    }
   },
@@ -2924,6 +3219,152 @@
     "flags": []
    }
   },
+  "fanbasis": {
+   "one_liner": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://fanbaseapi.openstage.live/guides.html",
+    "status": 200,
+    "final_url": "https://fanbaseapi.openstage.live/guides.html",
+    "flags": []
+   }
+  },
+  "dataforseo": {
+   "one_liner": {
+    "url": "https://dataforseo.com/apis",
+    "status": 200,
+    "final_url": "https://dataforseo.com/apis",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/auth/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://dataforseo.com/pricing",
+    "status": 200,
+    "final_url": "https://dataforseo.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.dataforseo.com/v3/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://dataforseo.com/apis",
+    "status": 200,
+    "final_url": "https://dataforseo.com/apis",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://dataforseo.com/model-context-protocol",
+    "status": 200,
+    "final_url": "https://dataforseo.com/model-context-protocol",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/auth/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://dataforseo.com/model-context-protocol",
+    "status": 200,
+    "final_url": "https://dataforseo.com/model-context-protocol",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_quality": {
+    "url": "https://docs.dataforseo.com/v3/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/auth/",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.dataforseo.com/v3/",
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/",
+    "flags": []
+   }
+  },
   "se_ranking": {
    "one_liner": {
     "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
@@ -3016,6 +3457,308 @@
     "flags": []
    }
   },
+  "ahrefs": {
+   "one_liner": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "flags": []
+   }
+  },
+  "mrscraper": {
+   "one_liner": {
+    "url": "https://mrscraper.com/",
+    "status": 200,
+    "final_url": "https://mrscraper.com/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://mrscraper.com/pricing",
+    "status": 200,
+    "final_url": "https://mrscraper.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/overview",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/overview",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://mcp.ai/mrscraper",
+    "status": 200,
+    "final_url": "https://mcp.ai/mrscraper",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "base_url_model": {
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.composio.dev/toolkits/mrscraper",
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/mrscraper",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/overview",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://mrscraper.com/pricing",
+    "status": 200,
+    "final_url": "https://mrscraper.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://mrscraper.com/pricing",
+    "status": 200,
+    "final_url": "https://mrscraper.com/pricing",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/overview",
+    "flags": []
+   }
+  },
+  "apify": {
+   "one_liner": {
+    "url": "https://apify.com/",
+    "status": 200,
+    "final_url": "https://apify.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://apify.com/pricing",
+    "status": 200,
+    "final_url": "https://apify.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.apify.com/integrations/mcp",
+    "status": 200,
+    "final_url": "https://docs.apify.com/integrations/mcp",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://apify.com/pricing",
+    "status": 200,
+    "final_url": "https://apify.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.apify.com/api/v2/getting-started",
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2/getting-started",
+    "flags": []
+   }
+  },
+  "bright_data": {
+   "one_liner": {
+    "url": "https://brightdata.com/",
+    "status": 200,
+    "final_url": "https://brightdata.com/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/api-reference/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://brightdata.com/pricing",
+    "status": 200,
+    "final_url": "https://brightdata.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/api-reference/authentication",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://docs.brightdata.com/introduction",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/introduction",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/api-reference/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://github.com/brightdata/brightdata-mcp",
+    "status": 200,
+    "final_url": "https://github.com/brightdata/brightdata-mcp",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://docs.brightdata.com/introduction",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/introduction",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/overview",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://docs.brightdata.com/introduction",
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/introduction",
+    "flags": []
+   }
+  },
   "sherlock": {
    "one_liner": {
     "url": "https://github.com/sherlock-project/sherlock",
@@ -3087,6 +3830,162 @@
     "url": "https://github.com/sherlock-project/sherlock",
     "status": 200,
     "final_url": "https://github.com/sherlock-project/sherlock",
+    "flags": []
+   }
+  },
+  "clay": {
+   "one_liner": {
+    "url": "https://developers.clay.com/",
+    "status": 200,
+    "final_url": "https://developers.clay.com/",
+    "flags": []
+   },
+   "auth_methods": {
+    "url": "https://developers.clay.com/public-api/authentication",
+    "status": 200,
+    "final_url": "https://developers.clay.com/public-api/authentication",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://www.clay.com/pricing",
+    "status": 200,
+    "final_url": "https://www.clay.com/pricing",
+    "flags": []
+   },
+   "api_type": {
+    "url": "https://developers.clay.com/public-api/authentication",
+    "status": 200,
+    "final_url": "https://developers.clay.com/public-api/authentication",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://developers.clay.com/",
+    "status": 200,
+    "final_url": "https://developers.clay.com/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://developers.clay.com/quickstart",
+    "status": 200,
+    "final_url": "https://developers.clay.com/quickstart",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://developers.clay.com/public-api/authentication",
+    "status": 200,
+    "final_url": "https://developers.clay.com/public-api/authentication",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://developers.clay.com/quickstart",
+    "status": 200,
+    "final_url": "https://developers.clay.com/quickstart",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://developers.clay.com/quickstart",
+    "status": 200,
+    "final_url": "https://developers.clay.com/quickstart",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://www.clay.com/pricing",
+    "status": 200,
+    "final_url": "https://www.clay.com/pricing",
+    "flags": []
+   },
+   "main_blocker": {
+    "url": "https://developers.clay.com/quickstart",
+    "status": 200,
+    "final_url": "https://developers.clay.com/quickstart",
+    "flags": []
+   },
+   "docs_url": {
+    "url": "https://developers.clay.com/",
+    "status": 200,
+    "final_url": "https://developers.clay.com/",
+    "flags": []
+   }
+  },
+  "neo4j": {
+   "one_liner": {
+    "url": "https://neo4j.com/product/",
+    "status": 200,
+    "final_url": "https://neo4j.com/product/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "auth_methods": {
+    "url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/auth-providers/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/auth-providers/",
+    "flags": []
+   },
+   "access_path": {
+    "url": "https://neo4j.com/cloud/platform/aura-graph-database/",
+    "status": 200,
+    "final_url": "https://neo4j.com/product/auradb/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "api_type": {
+    "url": "https://neo4j.com/docs/driver-manual/current/client-applications/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "api_breadth": {
+    "url": "https://neo4j.com/docs/driver-manual/current/client-applications/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "official_mcp": {
+    "url": "https://neo4j.com/docs/driver-manual/current/client-applications/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "base_url_model": {
+    "url": "https://neo4j.com/docs/driver-manual/current/client-applications/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "toolkit_bucket": {
+    "url": "https://neo4j.com/docs/driver-manual/current/client-applications/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "docs_quality": {
+    "url": "https://neo4j.com/docs/driver-manual/current/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/create-applications/",
+    "flags": []
+   },
+   "test_account": {
+    "url": "https://neo4j.com/cloud/platform/aura-graph-database/",
+    "status": 200,
+    "final_url": "https://neo4j.com/product/auradb/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "main_blocker": {
+    "url": "https://neo4j.com/cloud/platform/aura-graph-database/",
+    "status": 200,
+    "final_url": "https://neo4j.com/product/auradb/",
+    "flags": [
+     "not_docs_like"
+    ]
+   },
+   "docs_url": {
+    "url": "https://neo4j.com/docs/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/",
     "flags": []
    }
   },

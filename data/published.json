@@ -5,7 +5,7 @@
   "name": "Salesforce",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise customer relationship management platform with robust REST and GraphQL APIs.",
@@ -150,7 +150,7 @@
   "name": "HubSpot",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one CRM platform featuring APIs for managing contacts, deals, marketing, and customer service.",
@@ -287,7 +287,7 @@
   "name": "Pipedrive",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based sales platform and web/mobile CRM for managing leads and deals.",
@@ -429,7 +429,7 @@
   "name": "Attio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "A flexible, data-driven CRM platform with a robust REST API for managing custom objects and workflows.",
@@ -570,7 +570,7 @@
   "name": "Twenty",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Modern open-source CRM platform with customizable objects, views, workflows, and developer APIs.",
@@ -714,7 +714,7 @@
   "name": "Podio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Work management platform providing a complete REST API for workspaces, apps, and items.",
@@ -825,7 +825,7 @@
   "name": "Close",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Inside sales CRM featuring robust REST APIs and an official MCP server for AI agents.",
@@ -971,7 +971,7 @@
   "name": "Copper",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Google Workspace-integrated CRM with a REST API for managing sales pipelines and contacts.",
@@ -1100,7 +1100,7 @@
   "name": "DealCloud",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "DealCloud is a deal, relationship, and CRM management platform for financial services.",
@@ -1230,7 +1230,7 @@
   "name": "Zendesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support software platform featuring a comprehensive REST API for ticket management.",
@@ -1384,7 +1384,7 @@
   "name": "Intercom",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "AI-first customer service platform for messaging, support, and customer data management.",
@@ -1533,7 +1533,7 @@
   "name": "Freshdesk",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based customer support platform with ticketing, knowledge base, and helpdesk automation.",
@@ -1674,7 +1674,7 @@
   "name": "Front",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Support and helpdesk platform featuring a robust Core REST API and MCP server.",
@@ -1816,7 +1816,7 @@
   "name": "Pylon",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Unified B2B customer support platform integrating tickets across Slack, email, and chat.",
@@ -1923,7 +1923,7 @@
   "name": "LiveAgent",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Help desk and customer support software with live chat, ticketing, and automation tools.",
@@ -2038,7 +2038,7 @@
   "name": "Plain",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "API-first customer support platform designed for B2B SaaS teams.",
@@ -2172,7 +2172,7 @@
   "name": "Help Scout",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer support platform providing APIs for mailboxes, chats, and help center documentation.",
@@ -2311,7 +2311,7 @@
   "name": "Gorgias",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Gorgias is an e-commerce helpdesk platform for managing customer support tickets and conversations.",
@@ -2454,7 +2454,7 @@
   "name": "Gladly",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Customer service platform API for managing customer profile data, conversations, and timelines.",
@@ -2581,7 +2581,7 @@
   "name": "Slack",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Team communication platform providing messaging, channels, file sharing, and developer APIs.",
@@ -2723,7 +2723,7 @@
   "name": "Twilio",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud communications platform providing APIs for SMS, voice, video, and authentication.",
@@ -2849,7 +2849,7 @@
   "name": "Zoho Cliq",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Team collaboration software providing instant messaging, audio/video calls, and file sharing.",
@@ -2968,7 +2968,7 @@
   "name": "Lark (Larksuite)",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise collaboration platform combining chat, docs, calendar, and workflow automation tools.",
@@ -3085,7 +3085,7 @@
   "name": "Pumble",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Team collaboration and messaging app with REST API support.",
@@ -3213,7 +3213,7 @@
   "name": "Discord",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Messaging platform offering REST APIs for bots, webhooks, and user-authenticated social integrations.",
@@ -3348,7 +3348,7 @@
   "name": "Telegram",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based instant messaging service providing HTTP Bot API and MTProto API.",
@@ -3478,7 +3478,7 @@
   "name": "WhatsApp Business",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Enterprise messaging API for sending and receiving messages via the WhatsApp Business platform.",
@@ -3611,7 +3611,7 @@
   "name": "Aircall",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based phone system and call center software with a public REST API.",
@@ -3738,7 +3738,7 @@
   "name": "Vonage",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud communications platform providing APIs for voice, messaging, video, and identity verification.",
@@ -3855,7 +3855,7 @@
   "name": "Google Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Programmatically manage Google Ads campaigns, reporting, and account settings.",
@@ -3987,7 +3987,7 @@
   "name": "Meta Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Programmatic interface to manage, optimize, and analyze Meta advertising campaigns across Facebook and Instagram.",
@@ -4137,7 +4137,7 @@
   "name": "LinkedIn Ads",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides programmatic access to manage, create, and report on LinkedIn advertising campaigns.",
@@ -4263,7 +4263,7 @@
   "name": "GoHighLevel",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one marketing and CRM platform providing automation, lead management, and communication tools.",
@@ -4390,7 +4390,7 @@
   "name": "Mailchimp",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Marketing platform API for managing campaigns, contacts, audiences, and email automation workflows.",
@@ -4521,7 +4521,7 @@
   "name": "Klaviyo",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Email and SMS marketing automation platform with a comprehensive developer API.",
@@ -4678,7 +4678,7 @@
   "name": "systeme.io",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "All-in-one marketing platform for sales funnels, email marketing, website building, and automation.",
@@ -4789,12 +4789,154 @@
   }
  },
  {
+  "id": 38,
+  "slug": "pinterest",
+  "name": "Pinterest",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Manage pins, boards, ad campaigns, and merchant catalogs via Pinterest's REST API.",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/getting-started/getting-access/"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/api/v5/getting-started/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/developer-tools/sandbox/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   },
+   "docs_url": {
+    "value": "https://developers.pinterest.com/docs/",
+    "confidence": "high",
+    "source_url": "https://developers.pinterest.com/docs/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "***REDACTED***",
+   "https://dev.pinterest.com/docs/dev-tools/sdk/",
+   "https://dev.pinterest.com/docs/getting-started/authentication-and-scopes/",
+   "https://developers.pinterest.com/",
+   "https://developers.pinterest.com/?up_id=50969dc",
+   "https://developers.pinterest.com/apps/connect/",
+   "https://developers.pinterest.com/docs/",
+   "https://developers.pinterest.com/docs/api-reference/conversions-api/",
+   "https://developers.pinterest.com/docs/api/v5/getting-started/",
+   "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+   "https://developers.pinterest.com/docs/developer-tools/sandbox/",
+   "https://developers.pinterest.com/docs/faqs/faqs/",
+   "https://developers.pinterest.com/docs/getting-started/",
+   "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+   "https://developers.pinterest.com/docs/getting-started/authentication/",
+   "https://developers.pinterest.com/docs/getting-started/getting-access/",
+   "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+   "https://developers.pinterest.com/docs/w/",
+   "https://developers.pinterest.com/docs/work-with-ads/create-dynamic-ctas-in-ads/",
+   "https://developers.pinterest.com/llms.txt",
+   "https://github.com/pinterest/api-quickstart",
+   "https://github.com/pinterest/api-quickstart/blob/main/README.md",
+   "https://www.postman.com/pinterest/pinterest-collections/documentation/74drksn/pinterest-rest-api-5-4-1",
+   "https://zernio.com/blog/pinterest-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Marketing, Ads, Email and Social",
+  "category_id": "marketing",
+  "hint": "developers.pinterest.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "pinterest",
+   "composio_name": "Pinterest",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [
+    "OAUTH2"
+   ],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 26.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "social media accounts",
+    "marketing"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 39,
   "slug": "threads",
   "name": "Threads (Meta)",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "API to publish posts, manage replies, and access insights on Meta Threads.",
@@ -4907,7 +5049,7 @@
   "name": "SendGrid",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Cloud-based email delivery service for sending transactional and marketing emails at scale.",
@@ -5044,12 +5186,155 @@
   }
  },
  {
+  "id": 41,
+  "slug": "shopify",
+  "name": "Shopify",
+  "pass": "final",
+  "model": "gemini-3.5-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Ecommerce platform enabling merchants to build online stores, manage products, and process orders.",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "auth_methods": {
+    "value": [
+     "oauth2",
+     "api_key",
+     "hmac_signature"
+    ],
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api/usage/authentication"
+   },
+   "access_path": {
+    "value": "app_review_required",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process"
+   },
+   "api_type": {
+    "value": "rest_and_graphql",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+   },
+   "base_url_model": {
+    "value": "per_tenant_subdomain",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api/usage/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   },
+   "docs_url": {
+    "value": "https://shopify.dev/docs/api",
+    "confidence": "high",
+    "source_url": "https://shopify.dev/docs/api"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://blog.storecensus.com/shopify-api-authentication-best-practices/",
+   "https://blog.storecensus.com/shopify-apis-authentication-authorization/",
+   "https://github.com/antoineschaller/shopify-mcp-server",
+   "https://github.com/ptrcole/shopify-mcp",
+   "https://help.shopify.com/en/partners/build-integrate/making-apps",
+   "https://praella.com/blogs/shopify-insights/mastering-shopify-api-authentication-a-comprehensive-guide",
+   "https://qstomy.com/en/blog-posts/publish-your-app-on-the",
+   "https://shinedezigninfonet.com/blog/understanding-shopify-app-store-guidelines-what-you-need-to-know/",
+   "https://shopify.dev/docs/api",
+   "https://shopify.dev/docs/api/usage/authentication",
+   "https://shopify.dev/docs/apps/build/storefront-mcp",
+   "https://shopify.dev/docs/apps/build/storefront-mcp/servers/storefront",
+   "https://shopify.dev/docs/apps/launch/app-store-review/review-process",
+   "https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements",
+   "https://shopifylearner.com/shopify-public-app-requirements/",
+   "https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/",
+   "https://www.adsx.com/blog/shopify-app-store-review-process-guide",
+   "https://www.cleverence.com/articles/shopify-dev-documentation/authentication-and-authorization-shopify-dev-2938/",
+   "https://www.cleverence.com/articles/shopify-dev-documentation/shopify-api-access-scopes-4812/",
+   "https://www.codersy.com/blog/shopify-api-development-best-practices/shopify-app-store-guidelines-key-requirements",
+   "https://www.francescatabor.com/articles/2025/8/14/shopify-and-the-model-context-protocol-mcp-in-e-commerce",
+   "https://www.jakelabate.com/agentic-ai-protocols/mcp/shopify/",
+   "https://www.oscprofessionals.com/shopify-app/shopify-api-access-permissions",
+   "https://www.shopifyagentai.com/blog/shopify-mcp-server-explained-connectors/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "shopify.dev",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "shopify",
+   "composio_name": "Shopify",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY",
+    "OAUTH2",
+    "S2S_OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 315.0,
+   "triggers_count": 45.0,
+   "categories": [
+    "ecommerce"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 46,
   "slug": "squarespace",
   "name": "Squarespace",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Platform for building websites, online stores, and managing commerce data via REST APIs.",
@@ -5169,7 +5454,7 @@
   "name": "Gumroad",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Gumroad provides a REST API for managing products, offer codes, sales, and account data.",
@@ -5290,12 +5575,119 @@
   }
  },
  {
+  "id": 50,
+  "slug": "fanbasis",
+  "name": "fanbasis",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "An API for managing fans, signups, and data for artists on the Fanbase platform.",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "api_breadth": {
+    "value": "narrow",
+    "confidence": "med",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "official_mcp": {
+    "value": "none_found",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "docs_quality": {
+    "value": "partial_or_thin",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "med",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "main_blocker": {
+    "value": "Access is restricted to the 'Legendary' plan, requiring manual contact with an Artist Success Account Manager.",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   },
+   "docs_url": {
+    "value": "https://fanbaseapi.openstage.live/guides.html",
+    "confidence": "high",
+    "source_url": "https://fanbaseapi.openstage.live/guides.html"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apidocs.fan/",
+   "https://dev-docs.fanbasis.com/",
+   "https://docs.cdp.coinbase.com/",
+   "https://fanbaseapi.openstage.live/guides.html",
+   "https://github.com/Guilherme-CA-Dias/fanbasis-poc",
+   "https://github.com/Yourpropfirm-Fanbasis/plugin-documentation",
+   "https://github.com/nfrx1/fanbase-api",
+   "https://www.plan.fanbase.io/"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Ecommerce",
+  "category_id": "ecommerce",
+  "hint": "fanbasis.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 4,
+   "parts": {
+    "credential": 1,
+    "docs": 1,
+    "breadth": 1,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
   "id": 51,
   "slug": "dataforseo",
   "name": "DataForSEO",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides comprehensive SEO and marketing data APIs for search, keywords, and domain analysis.",
@@ -5435,7 +5827,7 @@
   "name": "SE Ranking",
   "pass": "final",
   "model": "gemini-3.1-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Provides SEO data including rankings, backlinks, keyword research, and site audits via API.",
@@ -5539,12 +5931,558 @@
   }
  },
  {
+  "id": 53,
+  "slug": "ahrefs",
+  "name": "Ahrefs",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Access SEO, backlink, keyword, and site audit data programmatically via REST API.",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "test_account": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   },
+   "main_blocker": {
+    "value": "Access requires a paid subscription (Lite plan or higher) as there is no public free tier or sandbox.",
+    "confidence": "high",
+    "source_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+   },
+   "docs_url": {
+    "value": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "confidence": "high",
+    "source_url": "https://docs.ahrefs.com/en/api/docs/introduction"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://ahrefs.com/academy/api-course",
+   "https://ahrefs.com/academy/api-course/lesson-1",
+   "https://apitracker.io/a/ahrefs",
+   "https://docs.ahrefs.com/",
+   "https://docs.ahrefs.com/en/ahrefs-connect/docs/api-guide",
+   "https://docs.ahrefs.com/en/api/docs/introduction",
+   "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+   "https://help.ahrefs.com/en/collections/87796-api"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 1,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "ahrefs.com/api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "ahrefs",
+   "composio_name": "Ahrefs",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY",
+    "OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 40.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "marketing automation",
+    "analytics"
+   ]
+  },
+  "score": {
+   "total": 5,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 0
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 54,
+  "slug": "mrscraper",
+  "name": "MrScraper",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Web scraping platform for structured data extraction using AI-powered and manual scraping tools.",
+    "confidence": "high",
+    "source_url": "https://mrscraper.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://mrscraper.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://mcp.ai/mrscraper"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.composio.dev/toolkits/mrscraper"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://mrscraper.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://mrscraper.com/pricing"
+   },
+   "docs_url": {
+    "value": "https://docs.mrscraper.com/docs/api/overview",
+    "confidence": "high",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://composio.dev/toolkits/mrscraper.md",
+   "https://docs.composio.dev/toolkits/mrscraper",
+   "https://docs.mrscraper.com/docs/api/authentication",
+   "https://docs.mrscraper.com/docs/api/overview",
+   "https://docs.mrscraper.com/docs/api/pagination",
+   "https://docs.mrscraper.com/docs/api/v3/result/all",
+   "https://docs.mrscraper.com/docs/api/v3/scraper/ai-init",
+   "https://docs.mrscraper.com/docs/features/activating-api",
+   "https://docs.mrscraper.com/docs/getting-started/overview",
+   "https://docs.mrscraper.com/docs/guides/programmatically",
+   "https://github.com/mrscraper-com/cli",
+   "https://github.com/mrscraper-com/sdk-node",
+   "https://mcp.ai/mrscraper",
+   "https://mrscraper.com/",
+   "https://pypi.org/project/mrscraper-sdk/",
+   "https://request.composio.dev/boards/tool-requests/posts/mrscraper"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 2,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "docs.mrscraper.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "mrscraper",
+   "composio_name": "MrScraper",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 11.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ai web scraping",
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 55,
+  "slug": "apify",
+  "name": "Apify",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Cloud platform for web scraping, data extraction, and automation using AI-powered tools.",
+    "confidence": "high",
+    "source_url": "https://apify.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://apify.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/integrations/mcp"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://apify.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   },
+   "docs_url": {
+    "value": "https://docs.apify.com/api/v2",
+    "confidence": "high",
+    "source_url": "https://docs.apify.com/api/v2/getting-started"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://apify.com/",
+   "https://apify.com/api",
+   "https://apify.com/mcp",
+   "https://apify.com/pricing",
+   "https://apify.com/pricing.md",
+   "https://apify.com/store/categories/mcp-servers",
+   "https://docs.apify.com/",
+   "https://docs.apify.com/api",
+   "https://docs.apify.com/api/v2",
+   "https://docs.apify.com/api/v2/getting-started",
+   "https://docs.apify.com/integrations/api",
+   "https://docs.apify.com/integrations/mcp",
+   "https://docs.apify.com/sdk/python/docs/guides/mcp-servers",
+   "https://github.com/apify/apify-docs",
+   "https://help.apify.com/en/collections/4082422-pricing-billing",
+   "https://mcp.apify.com/",
+   "https://mcp.apify.com/?tools=mcp-servers/microsoft-learn-mcp-server",
+   "https://mcpservers.org/servers/apify-mcp-server",
+   "https://use-apify.com/docs/apify-for-developers/apify-api-tutorial",
+   "https://use-apify.com/docs/what-is-apify/apify-free-plan",
+   "https://use-apify.com/docs/what-is-apify/apify-pricing",
+   "https://www.g2.com/products/apify/pricing",
+   "https://www.npmjs.com/package/@apify/actors-mcp-server",
+   "https://www.usagepricing.com/blueprint/apify"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [
+   "composio_auth_disagreement"
+  ],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "docs.apify.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "apify",
+   "composio_name": "Apify",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 112.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ai web scraping",
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
+  "id": 57,
+  "slug": "bright_data",
+  "name": "Bright Data",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "Web data platform providing proxies, scraping APIs, and AI-optimized tools for web extraction.",
+    "confidence": "high",
+    "source_url": "https://brightdata.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key",
+     "basic"
+    ],
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://brightdata.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/introduction"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "med",
+    "source_url": "https://docs.brightdata.com/api-reference/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://github.com/brightdata/brightdata-mcp"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/introduction"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/products/mcp-server/overview"
+   },
+   "docs_url": {
+    "value": "https://docs.brightdata.com/introduction",
+    "confidence": "high",
+    "source_url": "https://docs.brightdata.com/introduction"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://bright.docs.aura-software.com/docs/api/",
+   "https://bright.docs.aura-software.com/docs/api/quick_start/",
+   "https://brightdata.com/",
+   "https://brightdata.com/ai/mcp-server",
+   "https://brightdata.com/blog/web-data/datasets-via-databricks",
+   "https://brightdata.com/glossary/api",
+   "https://brightdata.com/pricing",
+   "https://brightdata.com/pricing/mcp-server",
+   "https://brightdata.com/pricing/web-scraper",
+   "https://costbench.com/software/web-scraping/bright-data/",
+   "https://deepwiki.com/brightdata/skills/2.2-authentication-and-zone-management",
+   "https://developer.brightmls.com/",
+   "https://docs.brightdata.com/api-reference/authentication",
+   "https://docs.brightdata.com/api-reference/proxy-manager/generate_token_for_token_based_authentication",
+   "https://docs.brightdata.com/introduction",
+   "https://docs.brightdata.com/products/mcp-server/faqs",
+   "https://docs.brightdata.com/products/mcp-server/overview",
+   "https://docs.brightdata.com/products/serp-api/pricing-and-billing",
+   "https://docs.brightsec.com/docs/creating-authentication",
+   "https://dupple.com/pricing/bright-data",
+   "https://github.com/brightdata/brightdata-mcp",
+   "https://github.com/brightdata/cli",
+   "https://github.com/brightdata/sdk-python",
+   "https://mcp.umin.ai/server/bright_data",
+   "https://mcpservers.org/servers/brightdata/brightdata-mcp",
+   "https://tryglen.com/mcp/servers/bright-data",
+   "https://use-apify.com/blog/bright-data-pricing-guide-2026",
+   "https://www.postman.com/bright-data-api/bright-data-api/overview",
+   "https://www.saasworthy.com/product/bright-data/pricing",
+   "https://www.usagepricing.com/blueprint/bright-data"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 4,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "brightdata.com",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "brightdata",
+   "composio_name": "Bright Data",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "API_KEY"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 10.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "ai web scraping",
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 7,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 58,
   "slug": "sherlock",
   "name": "Sherlock",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Hunt down social media accounts by username across social networks.",
@@ -5648,12 +6586,249 @@
   }
  },
  {
+  "id": 60,
+  "slug": "clay",
+  "name": "Clay",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "GTM automation platform offering programmable workflows, data enrichment, and AI-powered research capabilities.",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/"
+   },
+   "auth_methods": {
+    "value": [
+     "api_key"
+    ],
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/public-api/authentication"
+   },
+   "access_path": {
+    "value": "paid_plan_required",
+    "confidence": "high",
+    "source_url": "https://www.clay.com/pricing"
+   },
+   "api_type": {
+    "value": "rest",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/public-api/authentication"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/quickstart"
+   },
+   "base_url_model": {
+    "value": "fixed",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/public-api/authentication"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/quickstart"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/quickstart"
+   },
+   "test_account": {
+    "value": "trial_only",
+    "confidence": "high",
+    "source_url": "https://www.clay.com/pricing"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/quickstart"
+   },
+   "docs_url": {
+    "value": "https://developers.clay.com/",
+    "confidence": "high",
+    "source_url": "https://developers.clay.com/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [],
+  "search_urls": [
+   "https://api.clay.cl/v2/reference",
+   "https://apitracker.io/a/clay",
+   "https://community.clay.com/x/announcements/msg_AOMXLxnE9dgA/introducing-clays-api-and-cli-build-and-run-workfl",
+   "https://community.clay.com/x/content-and-events/msg_HKMsN4mDF2ST/use-http-api",
+   "https://developers.clay.com/",
+   "https://developers.clay.com/public-api/authentication",
+   "https://developers.clay.com/quickstart",
+   "https://developers.clay.com/routines/api",
+   "https://docs.clayplatform.io/clay/",
+   "https://reports.bankstreet.edu/clay-external-api-documentation-push-data-to-table/clay-api-automation-and-data-access-explained",
+   "https://resources.reachstream.com/clay-api/",
+   "https://university.clay.com/docs/clay-api-cli",
+   "https://university.clay.com/docs/guide-find-clay-api-key",
+   "https://university.clay.com/docs/http-api-integration-overview",
+   "https://www.automationjinn.com/blog/clay-api",
+   "https://www.clay.com/use-cases/data-enrichment"
+  ],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Data, SEO and Scraping",
+  "category_id": "data_seo",
+  "hint": "clay.com",
+  "in_composio": false,
+  "composio": null,
+  "score": {
+   "total": 6,
+   "parts": {
+    "credential": 1,
+    "docs": 2,
+    "breadth": 2,
+    "test": 1
+   },
+   "tier": "build_with_friction"
+  }
+ },
+ {
+  "id": 66,
+  "slug": "neo4j",
+  "name": "Neo4j",
+  "pass": "final",
+  "model": "gemini-3.1-flash-lite",
+  "researched_at": "2026-09-16T21:18:46+00:00",
+  "fields": {
+   "one_liner": {
+    "value": "A graph database platform for storing and querying highly connected data.",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/product/"
+   },
+   "auth_methods": {
+    "value": [
+     "basic",
+     "bearer_token"
+    ],
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/operations-manual/current/authentication-authorization/auth-providers/"
+   },
+   "access_path": {
+    "value": "self_serve_free",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+   },
+   "api_type": {
+    "value": "rpc_or_sdk_only",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+   },
+   "api_breadth": {
+    "value": "broad",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+   },
+   "official_mcp": {
+    "value": "official",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+   },
+   "base_url_model": {
+    "value": "self_hosted_or_customer_host",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+   },
+   "toolkit_bucket": {
+    "value": "remote_api_toolkit",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/client-applications/"
+   },
+   "docs_quality": {
+    "value": "full_public_reference",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/driver-manual/current/"
+   },
+   "test_account": {
+    "value": "free_tier_or_sandbox",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+   },
+   "main_blocker": {
+    "value": "none",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/cloud/platform/aura-graph-database/"
+   },
+   "docs_url": {
+    "value": "https://neo4j.com/docs/driver-manual/current/",
+    "confidence": "high",
+    "source_url": "https://neo4j.com/docs/"
+   }
+  },
+  "schema_problems": [],
+  "uncited_sources": [
+   "one_liner",
+   "docs_quality",
+   "docs_url"
+  ],
+  "search_urls": [],
+  "backend": "gemini",
+  "tool_counts": {
+   "web_search": 0,
+   "read_pages": 1
+  },
+  "grounded_changed": [],
+  "needs_human": [],
+  "human_corrected": [],
+  "category": "Developer, Infra and Data platforms",
+  "category_id": "dev_infra",
+  "hint": "neo4j.com/docs/api",
+  "in_composio": true,
+  "composio": {
+   "composio_slug": "neo4j",
+   "composio_name": "Neo4J",
+   "matched_by": "slug",
+   "found_via": "catalog_list",
+   "auth_schemes": [
+    "OAUTH2",
+    "BASIC",
+    "API_KEY",
+    "S2S_OAUTH2"
+   ],
+   "composio_managed_auth_schemes": [],
+   "no_auth": false,
+   "is_local_toolkit": false,
+   "tools_count": 21.0,
+   "triggers_count": 0.0,
+   "categories": [
+    "developer tools"
+   ]
+  },
+  "score": {
+   "total": 9,
+   "parts": {
+    "credential": 3,
+    "docs": 2,
+    "breadth": 2,
+    "test": 2
+   },
+   "tier": "build_now"
+  }
+ },
+ {
   "id": 84,
   "slug": "paygent_connect",
   "name": "Paygent Connect",
   "pass": "final",
   "model": "gemini-3.5-flash-lite",
-  "researched_at": "2026-09-16T21:16:29+00:00",
+  "researched_at": "2026-09-16T21:18:46+00:00",
   "fields": {
    "one_liner": {
     "value": "Payment infrastructure allowing AI agents to create, fund, and manage virtual cards via MCP/API.",

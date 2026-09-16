@@ -1,0 +1,107 @@
+{
+ "id": 41,
+ "slug": "shopify",
+ "name": "Shopify",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:01+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Ecommerce platform enabling merchants to build online stores, manage products, and process orders.",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "hmac_signature"
+   ],
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api/usage/authentication"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/apps/launch/app-store-review/review-process"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api/usage/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  },
+  "docs_url": {
+   "value": "https://shopify.dev/docs/api",
+   "confidence": "high",
+   "source_url": "https://shopify.dev/docs/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://blog.storecensus.com/shopify-api-authentication-best-practices/",
+  "https://blog.storecensus.com/shopify-apis-authentication-authorization/",
+  "https://github.com/antoineschaller/shopify-mcp-server",
+  "https://github.com/ptrcole/shopify-mcp",
+  "https://help.shopify.com/en/partners/build-integrate/making-apps",
+  "https://praella.com/blogs/shopify-insights/mastering-shopify-api-authentication-a-comprehensive-guide",
+  "https://qstomy.com/en/blog-posts/publish-your-app-on-the",
+  "https://shinedezigninfonet.com/blog/understanding-shopify-app-store-guidelines-what-you-need-to-know/",
+  "https://shopify.dev/docs/api",
+  "https://shopify.dev/docs/api/usage/authentication",
+  "https://shopify.dev/docs/apps/build/storefront-mcp",
+  "https://shopify.dev/docs/apps/build/storefront-mcp/servers/storefront",
+  "https://shopify.dev/docs/apps/launch/app-store-review/review-process",
+  "https://shopify.dev/docs/apps/launch/shopify-app-store/app-store-requirements",
+  "https://shopifylearner.com/shopify-public-app-requirements/",
+  "https://wearepresta.com/shopify-mcp-server-the-standardized-interface-for-agentic-commerce-2026/",
+  "https://www.adsx.com/blog/shopify-app-store-review-process-guide",
+  "https://www.cleverence.com/articles/shopify-dev-documentation/authentication-and-authorization-shopify-dev-2938/",
+  "https://www.cleverence.com/articles/shopify-dev-documentation/shopify-api-access-scopes-4812/",
+  "https://www.codersy.com/blog/shopify-api-development-best-practices/shopify-app-store-guidelines-key-requirements",
+  "https://www.francescatabor.com/articles/2025/8/14/shopify-and-the-model-context-protocol-mcp-in-e-commerce",
+  "https://www.jakelabate.com/agentic-ai-protocols/mcp/shopify/",
+  "https://www.oscprofessionals.com/shopify-app/shopify-api-access-permissions",
+  "https://www.shopifyagentai.com/blog/shopify-mcp-server-explained-connectors/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "id": 23,
+ "slug": "zoho_cliq",
+ "name": "Zoho Cliq",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Team collaboration software providing instant messaging, audio/video calls, and file sharing.",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  },
+  "docs_url": {
+   "value": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+   "confidence": "high",
+   "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apidocs.cliq.com/",
+  "https://apitracker.io/a/zoho-cliq",
+  "https://help.zoho.com/portal/en/community/topic/generating-an-oauth-2-token-for-cliq",
+  "https://help.zoho.com/portal/en/community/topic/re-introducing-zoho-cliq-rest-apis-the-much-needed-glow-up",
+  "https://www.zoho.com/cliq/help/developers.html",
+  "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html",
+  "https://www.zoho.com/cliq/help/restapi/v2/httpmethods/",
+  "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+  "https://www.zoho.com/cliq/help/restapi/v2/postman/",
+  "https://www.zoho.com/cliq/help/restapi/v2/registerclient/",
+  "https://www.zoho.com/cliq/help/restapi/v3/chats/",
+  "https://www.zoho.com/cliq/help/restapi/v3/datastores/",
+  "https://www.zoho.com/cliq/help/restapi/v3/glossary/",
+  "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+  "https://www.zoho.com/cliq/help/restapi/v3/messageformat/",
+  "https://www.zoho.com/cliq/help/restapi/v3/messages/",
+  "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+  "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+  "https://www.zoho.com/cliq/help/restapi/v3/postman/",
+  "https://www.zoho.com/cliq/help/restapi/v3/reminders/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

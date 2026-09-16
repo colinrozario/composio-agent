@@ -1,0 +1,95 @@
+{
+ "id": 25,
+ "slug": "pumble",
+ "name": "Pumble",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Team collaboration and messaging app with REST API support.",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "med",
+   "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "med",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://pumble.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  },
+  "docs_url": {
+   "value": "https://docs.pumble.com/",
+   "confidence": "high",
+   "source_url": "https://docs.pumble.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api-ga.pumble.com/v3/api-docs/Pumble-api-v1",
+  "https://dev-docs.marketplace.cake.com/pumble/build/api-client.html",
+  "https://docs.pumble.com/",
+  "https://github.com/CAKE-com/pumble-node-sdk",
+  "https://github.com/CAKE-com/pumble-node-sdk/blob/master/docs/getting-started.md",
+  "https://mindcloud.co/docs/universal/rest/pumble/latest",
+  "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/",
+  "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+  "https://pumble.com/integrations",
+  "https://pumble.com/pricing",
+  "https://www.npmjs.com/package/pumble-sdk"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

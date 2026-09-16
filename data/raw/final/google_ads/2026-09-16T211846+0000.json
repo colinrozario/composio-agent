@@ -1,0 +1,98 @@
+{
+ "id": 31,
+ "slug": "google_ads",
+ "name": "Google Ads",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Programmatically manage Google Ads campaigns, reporting, and account settings.",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/oauth/overview"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/rest/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/reference/rpc"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/rest/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/start"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+  },
+  "main_blocker": {
+   "value": "Accessing production accounts requires applying for Basic or Standard access, which involves a manual review process.",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api/docs/access-levels"
+  },
+  "docs_url": {
+   "value": "https://developers.google.com/google-ads/api/docs",
+   "confidence": "high",
+   "source_url": "https://developers.google.com/google-ads/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "api_type",
+  "api_breadth",
+  "base_url_model",
+  "docs_quality"
+ ],
+ "search_urls": [
+  "https://ads-developers.googleblog.com/2026/07/passkey-authentication-requirement-for.html",
+  "https://developers.google.com/google-ads/api",
+  "https://developers.google.com/google-ads/api/docs/oauth/overview",
+  "https://github.com/google/ads-api-report-fetcher/blob/main/docs/how-to-authenticate-ads-api.md",
+  "https://groups.google.com/g/adwords-api/c/NtV89PsnwBI",
+  "https://soku.ai/blog/google-ads-api-basic-vs-standard-access",
+  "https://support.google.com/adspolicy/answer/6169371?hl=en",
+  "https://support.google.com/google-ads/answer/15235?hl=en-419"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": 50,
+ "slug": "fanbasis",
+ "name": "fanbasis",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "An API for managing fans, signups, and data for artists on the Fanbase platform.",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "api_breadth": {
+   "value": "narrow",
+   "confidence": "med",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "docs_quality": {
+   "value": "partial_or_thin",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "main_blocker": {
+   "value": "Access is restricted to the 'Legendary' plan, requiring manual contact with an Artist Success Account Manager.",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  },
+  "docs_url": {
+   "value": "https://fanbaseapi.openstage.live/guides.html",
+   "confidence": "high",
+   "source_url": "https://fanbaseapi.openstage.live/guides.html"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apidocs.fan/",
+  "https://dev-docs.fanbasis.com/",
+  "https://docs.cdp.coinbase.com/",
+  "https://fanbaseapi.openstage.live/guides.html",
+  "https://github.com/Guilherme-CA-Dias/fanbasis-poc",
+  "https://github.com/Yourpropfirm-Fanbasis/plugin-documentation",
+  "https://github.com/nfrx1/fanbase-api",
+  "https://www.plan.fanbase.io/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

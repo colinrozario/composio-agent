@@ -1,0 +1,93 @@
+{
+ "id": 52,
+ "slug": "se_ranking",
+ "name": "SE Ranking",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Provides SEO data including rankings, backlinks, keyword research, and site audits via API.",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://github.com/seranking/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://seranking.com/api/data/reference/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  },
+  "docs_url": {
+   "value": "https://seranking.com/api/data/reference/",
+   "confidence": "high",
+   "source_url": "https://seranking.com/api/data/reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://github.com/seranking/",
+  "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+  "https://help.seranking.com/hc/en-us/categories/21700778374300-API",
+  "https://seranking.com/api.html",
+  "https://seranking.com/api/data/reference/",
+  "https://www.postman.com/serankingdev/se-ranking-developers/collection/h9m6hd7/data-api",
+  "https://www.postman.com/serankingdev/se-ranking-developers/overview",
+  "https://www.riffanalytics.ai/blog/se-ranking-api"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "dead_or_redirected_citation"
+ ]
+}

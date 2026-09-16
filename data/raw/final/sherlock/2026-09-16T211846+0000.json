@@ -1,0 +1,93 @@
+{
+ "id": 58,
+ "slug": "sherlock",
+ "name": "Sherlock",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Hunt down social media accounts by username across social networks.",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "auth_methods": {
+   "value": [
+    "none"
+   ],
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "access_path": {
+   "value": "not_applicable_local",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_type": {
+   "value": "cli_only",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "api_breadth": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "base_url_model": {
+   "value": "not_applicable",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "toolkit_bucket": {
+   "value": "local_or_sandbox_toolkit",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "main_blocker": {
+   "value": "Sherlock is a command-line utility and Python library without a hosted remote API.",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  },
+  "docs_url": {
+   "value": "https://github.com/sherlock-project/sherlock",
+   "confidence": "high",
+   "source_url": "https://github.com/sherlock-project/sherlock"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://github.com/orgs/sherlock-project/repositories",
+  "https://github.com/sherlock-project",
+  "https://github.com/sherlock-project/sherlock",
+  "https://github.com/sherlock-project/sherlock/releases",
+  "https://github.com/sherlock-project/sherlock/tree/master/.github",
+  "https://github.com/sherlock-project/sherlock/tree/master?search=1",
+  "https://sherlockproject.xyz/",
+  "https://sherlockproject.xyz/installation"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "second_model_disagreement:access_path,test_account"
+ ]
+}

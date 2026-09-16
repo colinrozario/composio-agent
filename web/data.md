@@ -1,6 +1,6 @@
 # App buildability research: 100 apps
 
-Generated 2026-09-16T21:16:31+00:00. Machine-readable: /data.json
+Generated 2026-09-16T21:18:47+00:00. Machine-readable: /data.json
 
 | App | Category | In Composio | Auth | Access | API | MCP | Score | Tier | Docs |
 |---|---|---|---|---|---|---|---|---|---|
@@ -40,11 +40,20 @@ Generated 2026-09-16T21:16:31+00:00. Machine-readable: /data.json
 | Mailchimp | Marketing, Ads, Email and Social | yes | oauth2, api_key, basic, bearer_token | self_serve_free | rest | none_found | 9 | build_now | https://mailchimp.com/developer/marketing/api/ |
 | Klaviyo | Marketing, Ads, Email and Social | yes | api_key, oauth2, bearer_token | self_serve_free | rest | official | 9 | build_now | https://developers.klaviyo.com/en/reference/api_overview |
 | systeme.io | Marketing, Ads, Email and Social | no | api_key | self_serve_free | rest | none_found | 9 | build_now | https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api |
+| Pinterest | Marketing, Ads, Email and Social | yes | oauth2 | app_review_required | rest | none_found | 7 | build_now | https://developers.pinterest.com/docs/ |
 | Threads (Meta) | Marketing, Ads, Email and Social | no | oauth2 | app_review_required | rest | none_found | 7 | build_now | https://developers.facebook.com/docs/threads/reference/ |
 | SendGrid | Marketing, Ads, Email and Social | yes | api_key, bearer_token, basic | self_serve_free | rest | community_only | 9 | build_now | https://www.twilio.com/docs/sendgrid/api-reference |
+| Shopify | Ecommerce | yes | oauth2, api_key, hmac_signature | app_review_required | rest_and_graphql | official | 7 | build_now | https://shopify.dev/docs/api |
 | Squarespace | Ecommerce | no | oauth2, api_key | app_review_required | rest | none_found | 6 | build_with_friction | https://developers.squarespace.com/ |
 | Gumroad | Ecommerce | yes | oauth2, bearer_token | self_serve_free | rest | none_found | 9 | build_now | https://gumroad.com/api |
+| fanbasis | Ecommerce | no | bearer_token | paid_plan_required | rest | none_found | 4 | build_with_friction | https://fanbaseapi.openstage.live/guides.html |
 | DataForSEO | Data, SEO and Scraping | yes | basic | paid_plan_required | rest | official | 7 | build_now | https://docs.dataforseo.com/v3/ |
 | SE Ranking | Data, SEO and Scraping | no | api_key | paid_plan_required | rest | none_found | 6 | build_with_friction | https://seranking.com/api/data/reference/ |
+| Ahrefs | Data, SEO and Scraping | yes | api_key | paid_plan_required | rest | official | 5 | build_with_friction | https://docs.ahrefs.com/en/api/docs/introduction |
+| MrScraper | Data, SEO and Scraping | yes | api_key | self_serve_free | rest | official | 9 | build_now | https://docs.mrscraper.com/docs/api/overview |
+| Apify | Data, SEO and Scraping | yes | bearer_token | paid_plan_required | rest | official | 7 | build_now | https://docs.apify.com/api/v2 |
+| Bright Data | Data, SEO and Scraping | yes | api_key, basic | paid_plan_required | rest | official | 7 | build_now | https://docs.brightdata.com/introduction |
 | Sherlock | Data, SEO and Scraping | no | none | not_applicable_local | cli_only | none_found | 5 | local_toolkit | https://github.com/sherlock-project/sherlock |
+| Clay | Data, SEO and Scraping | no | api_key | paid_plan_required | rest | official | 6 | build_with_friction | https://developers.clay.com/ |
+| Neo4j | Developer, Infra and Data platforms | yes | basic, bearer_token | self_serve_free | rpc_or_sdk_only | official | 9 | build_now | https://neo4j.com/docs/driver-manual/current/ |
 | Paygent Connect | Finance and Fintech | no | api_key | self_serve_free | rest | official | 7 | build_now | https://api.paygent.tech/docs |

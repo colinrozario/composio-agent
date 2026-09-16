@@ -1,0 +1,97 @@
+{
+ "id": 60,
+ "slug": "clay",
+ "name": "Clay",
+ "pass": "pass1",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:02+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "GTM automation platform offering programmable workflows, data enrichment, and AI-powered research capabilities.",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/public-api/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://www.clay.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/public-api/authentication"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/quickstart"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/public-api/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/quickstart"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/quickstart"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.clay.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/quickstart"
+  },
+  "docs_url": {
+   "value": "https://developers.clay.com/",
+   "confidence": "high",
+   "source_url": "https://developers.clay.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.clay.cl/v2/reference",
+  "https://apitracker.io/a/clay",
+  "https://community.clay.com/x/announcements/msg_AOMXLxnE9dgA/introducing-clays-api-and-cli-build-and-run-workfl",
+  "https://community.clay.com/x/content-and-events/msg_HKMsN4mDF2ST/use-http-api",
+  "https://developers.clay.com/",
+  "https://developers.clay.com/public-api/authentication",
+  "https://developers.clay.com/quickstart",
+  "https://developers.clay.com/routines/api",
+  "https://docs.clayplatform.io/clay/",
+  "https://reports.bankstreet.edu/clay-external-api-documentation-push-data-to-table/clay-api-automation-and-data-access-explained",
+  "https://resources.reachstream.com/clay-api/",
+  "https://university.clay.com/docs/clay-api-cli",
+  "https://university.clay.com/docs/guide-find-clay-api-key",
+  "https://university.clay.com/docs/http-api-integration-overview",
+  "https://www.automationjinn.com/blog/clay-api",
+  "https://www.clay.com/use-cases/data-enrichment"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}

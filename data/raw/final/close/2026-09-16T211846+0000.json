@@ -1,0 +1,113 @@
+{
+ "id": 8,
+ "slug": "close",
+ "name": "Close",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Inside sales CRM featuring robust REST APIs and an official MCP server for AI agents.",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview/oauth-authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://www.close.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://www.close.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "docs_url": {
+   "value": "https://developer.close.com/",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://aeroleads.com/blog/close-crm-api-build-custom-integrations-workflows/",
+  "https://apihunt.io/apis/close",
+  "https://apitracker.io/a/close",
+  "https://apitracker.io/a/closeio",
+  "https://developer.close.com/",
+  "https://developer.close.com/api/overview",
+  "https://developer.close.com/api/overview/api-key-authentication",
+  "https://developer.close.com/api/overview/changelog/2026/5/4",
+  "https://developer.close.com/api/overview/oauth-authentication",
+  "https://developer.close.com/api/resources/activities",
+  "https://developer.close.com/api/resources/dialers/get",
+  "https://developer.close.com/api/resources/playbooks",
+  "https://developer.close.com/integrations",
+  "https://developer.close.com/llms.txt",
+  "https://developer.close.com/mcp",
+  "https://developer.close.com/mcp/tools",
+  "https://docs.close.city/guide/authentication/",
+  "https://github.com/closeio/closeio-api",
+  "https://help.close.com/",
+  "https://help.close.com/getting-started/import-data-into-close/importing-other-data-into-close",
+  "https://help.close.com/integrations/api-keys-oauth",
+  "https://help.close.com/integrations/close-mcp-server/close-mcp-tools",
+  "https://help.close.com/integrations/communication/slack",
+  "https://help.close.com/integrations/zapier/zapier-api-keys-to-oauth",
+  "https://help.close.com/technical-support/script-installation-setup",
+  "https://help.close.com/v1/docs/api-keys-oauth",
+  "https://www.close.com/de/api",
+  "https://www.close.com/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 5,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

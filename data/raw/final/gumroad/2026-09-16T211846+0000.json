@@ -1,0 +1,92 @@
+{
+ "id": 48,
+ "slug": "gumroad",
+ "name": "Gumroad",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Gumroad provides a REST API for managing products, offer codes, sales, and account data.",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://gumroad.com/help/article/280-create-application-api"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/help/article/280-create-application-api"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://gumroad.com/api"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/help/article/280-create-application-api"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  },
+  "docs_url": {
+   "value": "https://gumroad.com/api",
+   "confidence": "high",
+   "source_url": "https://gumroad.com/api"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apihunt.io/apis/gumroad",
+  "https://apitracker.io/a/gumroad",
+  "https://gumroad.com/api",
+  "https://gumroad.com/help/article/280-create-application-api",
+  "https://help.gumroad.com/docs/api/01-overview",
+  "https://rollout.com/integration-guides/gumroad",
+  "https://rollout.com/integration-guides/gumroad/api-essentials",
+  "https://www.postman.com/api-evangelist/gumroad/documentation/0gu41wl/gumroad"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 1,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

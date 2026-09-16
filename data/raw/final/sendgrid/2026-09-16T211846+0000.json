@@ -1,0 +1,109 @@
+{
+ "id": 40,
+ "slug": "sendgrid",
+ "name": "SendGrid",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based email delivery service for sending transactional and marketing emails at scale.",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "bearer_token",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/en-us/products/email-api/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "official_mcp": {
+   "value": "community_only",
+   "confidence": "high",
+   "source_url": "https://github.com/recepyavuz0/sendgrid-mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/en-us/products/email-api/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  },
+  "docs_url": {
+   "value": "https://www.twilio.com/docs/sendgrid/api-reference",
+   "confidence": "high",
+   "source_url": "https://www.twilio.com/docs/sendgrid/api-reference"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+  "https://app.sendgrid.com/docs/API_Reference",
+  "https://app.sendgrid.com/docs/for_developers/sending_email/getting_started_with_sendgrid/",
+  "https://costbench.com/software/email-api/sendgrid/",
+  "https://costbench.com/software/email-api/sendgrid/free-plan/",
+  "https://github.com/modelcontextprotocol/servers",
+  "https://github.com/recepyavuz0/sendgrid-mcp-server",
+  "https://mcpservers.com/servers/garoth-sendgrid",
+  "https://mcpservers.org/servers/deyikong/sendgrid-mcp",
+  "https://mcpservers.org/servers/modelcontextprotocol/servers",
+  "https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture",
+  "https://public-api.org/api/450/sendgrid",
+  "https://publicapis.io/sendgrid-api",
+  "https://support.sendgrid.com/hc/en-us",
+  "https://www.emailsoftwareinsights.com/reviews/sendgrid/pricing/",
+  "https://www.getaiperks.com/en/ai/sendgrid-pricing-free-credits",
+  "https://www.getguru.com/reference/sendgrid-mcp",
+  "https://www.saaspricepulse.com/tools/sendgrid",
+  "https://www.sendx.io/blog/sendgrid-pricing",
+  "https://www.sequenzy.com/pricing/sendgrid",
+  "https://www.twilio.com/docs/sendgrid/api-reference",
+  "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication",
+  "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+  "https://www.twilio.com/en-us/products/email-api/pricing"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

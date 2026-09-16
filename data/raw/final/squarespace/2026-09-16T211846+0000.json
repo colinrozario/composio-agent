@@ -1,0 +1,104 @@
+{
+ "id": 46,
+ "slug": "squarespace",
+ "name": "Squarespace",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Platform for building websites, online stores, and managing commerce data via REST APIs.",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://www.squarespace.com/developer-policy"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/commerce-apis/overview"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/"
+  },
+  "docs_url": {
+   "value": "https://developers.squarespace.com/",
+   "confidence": "high",
+   "source_url": "https://developers.squarespace.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apihunt.io/apis/squarespace",
+  "https://apitracker.io/a/squarespace",
+  "https://claudecms.com/connect-squarespace",
+  "https://content.rollout.com/integration-guides/squarespace/sdk/step-by-step-guide-to-building-a-squarespace-api-integration-in-js",
+  "https://developer.squareup.com/docs/mcp",
+  "https://developers-preview.squarespace.com/commerce-apis/oauth.md",
+  "https://developers-preview.squarespace.com/mcp/mcp",
+  "https://developers-preview.squarespace.com/mcp/overview",
+  "https://developers.squarespace.com/",
+  "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+  "https://developers.squarespace.com/commerce-apis/overview",
+  "https://github.com/FloraSync/squarespace-mcp",
+  "https://github.com/square/square-mcp-server",
+  "https://manual.squarespace.com/developers/",
+  "https://mymcptools.com/servers/squarespace-mcp",
+  "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+  "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+  "https://whatsquare.space/blog/squarespace-api-integration",
+  "https://www.squarespace.com/developer-policy",
+  "https://www.usecarly.com/blog/square-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

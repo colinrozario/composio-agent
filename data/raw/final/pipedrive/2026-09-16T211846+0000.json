@@ -1,0 +1,108 @@
+{
+ "id": 3,
+ "slug": "pipedrive",
+ "name": "Pipedrive",
+ "pass": "final",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based sales platform and web/mobile CRM for managing leads and deals.",
+   "confidence": "high",
+   "source_url": "https://www.pipedrive.com/en/features/crm-api"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://developers.pipedrive.com/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://pipedrive.readme.io/docs/developer-sandbox-account"
+  },
+  "docs_url": {
+   "value": "https://developers.pipedrive.com/docs/api/v1",
+   "confidence": "high",
+   "source_url": "https://developers.pipedrive.com/docs/api/v1"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apihunt.io/apis/pipedrive",
+  "https://apitracker.io/a/pipedrive",
+  "https://cvshealth.sabacloud.com/",
+  "https://developers.linkapi.solutions/docs/pipedrive",
+  "https://developers.pipedrive.com/",
+  "https://developers.pipedrive.com/docs/api/v1",
+  "https://entrackr.com/news/cardless-payments-platform-piston-raises-15-mn-in-series-a-led-by-fpv-ventures-12516055",
+  "https://homepage-webapp.savvasrealize.com/",
+  "https://myaccount.elsevier.com/",
+  "https://myavailability.starbucks.com/",
+  "https://onlineaccess.edwardjones.com/",
+  "https://pipedrive.readme.io/do/docs/getting-started",
+  "https://pipedrive.readme.io/docs/about-the-marketplace",
+  "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+  "https://pipedrive.readme.io/docs/developer-hub",
+  "https://pipedrive.readme.io/docs/developer-sandbox-account",
+  "https://pipedrive.readme.io/docs/faq",
+  "https://pipedrive.readme.io/docs/getting-started",
+  "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+  "https://pipedrive.readme.io/docs/marketplace-registering-a-private-app",
+  "https://pipedrive.readme.io/docs/marketplace-registering-the-app",
+  "https://www.ezpassnh.com/login",
+  "https://www.pipedrive.com/en/features/crm-api",
+  "https://www.youtube.com/shorts/BNmC0IuBtt0"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": []
+}

@@ -1,0 +1,109 @@
+{
+ "id": 55,
+ "slug": "apify",
+ "name": "Apify",
+ "pass": "final",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-09-16T21:18:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud platform for web scraping, data extraction, and automation using AI-powered tools.",
+   "confidence": "high",
+   "source_url": "https://apify.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "high",
+   "source_url": "https://apify.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/integrations/mcp"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://apify.com/pricing"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  },
+  "docs_url": {
+   "value": "https://docs.apify.com/api/v2",
+   "confidence": "high",
+   "source_url": "https://docs.apify.com/api/v2/getting-started"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apify.com/",
+  "https://apify.com/api",
+  "https://apify.com/mcp",
+  "https://apify.com/pricing",
+  "https://apify.com/pricing.md",
+  "https://apify.com/store/categories/mcp-servers",
+  "https://docs.apify.com/",
+  "https://docs.apify.com/api",
+  "https://docs.apify.com/api/v2",
+  "https://docs.apify.com/api/v2/getting-started",
+  "https://docs.apify.com/integrations/api",
+  "https://docs.apify.com/integrations/mcp",
+  "https://docs.apify.com/sdk/python/docs/guides/mcp-servers",
+  "https://github.com/apify/apify-docs",
+  "https://help.apify.com/en/collections/4082422-pricing-billing",
+  "https://mcp.apify.com/",
+  "https://mcp.apify.com/?tools=mcp-servers/microsoft-learn-mcp-server",
+  "https://mcpservers.org/servers/apify-mcp-server",
+  "https://use-apify.com/docs/apify-for-developers/apify-api-tutorial",
+  "https://use-apify.com/docs/what-is-apify/apify-free-plan",
+  "https://use-apify.com/docs/what-is-apify/apify-pricing",
+  "https://www.g2.com/products/apify/pricing",
+  "https://www.npmjs.com/package/@apify/actors-mcp-server",
+  "https://www.usagepricing.com/blueprint/apify"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ },
+ "grounded_changed": [],
+ "needs_human": [
+  "composio_auth_disagreement"
+ ]
+}
