@@ -1,0 +1,119 @@
+{
+ "id": 15,
+ "slug": "pylon",
+ "name": "Pylon",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:49:44+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "B2B customer support platform unifying Slack, Teams, email, and chat into one ticketing system",
+   "confidence": "high",
+   "source_url": "https://github.com/api-evangelist/pylon"
+  },
+  "auth_methods": {
+   "value": [
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "low",
+   "source_url": "https://unthread.io/blog/pylon-pricing/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+  },
+  "test_account": {
+   "value": "unknown",
+   "confidence": "low",
+   "source_url": null
+  },
+  "main_blocker": {
+   "value": "API access appears limited to Professional/Enterprise paid plans, not the Starter tier, per third-party pricing breakdowns",
+   "confidence": "low",
+   "source_url": "https://unthread.io/blog/pylon-pricing/"
+  },
+  "docs_url": {
+   "value": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+   "confidence": "high",
+   "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/usepylon",
+  "https://app.usepylon.com/accounts",
+  "https://app.usepylon.com/customers/accounts",
+  "https://apps.make.com/pylon-k5ivxl",
+  "https://checkthat.ai/brands/pylon/pricing",
+  "https://context7.com/websites/usepylon_pylon-docs_developer_api",
+  "https://docs.pylonsync.com/auth/api-keys",
+  "https://docs.rs/pylon-runtime",
+  "https://docs.usepylon.com/pylon-docs/agents/support-agent/test",
+  "https://docs.usepylon.com/pylon-docs/developer/api",
+  "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+  "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts",
+  "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+  "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+  "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+  "https://docs.usepylon.com/pylon-docs/knowledge-base/overview",
+  "https://en.wikipedia.org/wiki/API_key",
+  "https://github.com/JustinBeckwith/pylon-mcp",
+  "https://github.com/api-evangelist/pylon",
+  "https://mcpservers.org/remote-mcp-servers/pylon",
+  "https://mcpservers.org/servers/pylon-remote-mcp",
+  "https://pylon.elevio.help/en/articles/178-how-do-i-generate-an-api-key",
+  "https://saleshive.com/vendors/pylon",
+  "https://scribehow.com/page/Pylon_Pricing_2026_Every_Plan_Broken_Down__Starter_Professional_Enterprise_and_Hidden_Costs__zLDONKazR7G-I-WoIUK-EA",
+  "https://sourceforge.net/software/product/Pylon-B2B/",
+  "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+  "https://support.usepylon.com/articles/3435685606-how-to-preview-your-customer-portal",
+  "https://unthread.io/blog/pylon-pricing/",
+  "https://www.c1.ai/docs/product/admin/mcp-server/pylon",
+  "https://www.crunchbase.com/organization/pylon-f27d",
+  "https://www.featurebase.app/blog/pylon-pricing",
+  "https://www.pulsemcp.com/servers/pylon",
+  "https://www.pylonlending.com/developers/",
+  "https://www.quantumdesk.com/blog/pylon-pricing",
+  "https://www.saasworthy.com/product/pylon/pricing",
+  "https://www.scalekit.com/blog/pylon-mcp-vs-api",
+  "https://www.usepylon.com/",
+  "https://www.usepylon.com/integrations/mcp",
+  "https://www.usepylon.com/pricing",
+  "https://www.usepylon.com/pricing?tab=platform",
+  "https://www.xpay.sh/saas-pricing/pylon/",
+  "https://zitadel.com/docs/examples/secure-api/pylon"
+ ],
+ "backend": "claude_cli"
+}

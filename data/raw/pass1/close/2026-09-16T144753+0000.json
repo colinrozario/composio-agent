@@ -1,0 +1,119 @@
+{
+ "id": 8,
+ "slug": "close",
+ "name": "Close",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:47:53+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Sales CRM with calling, email, and pipeline management for inside sales teams",
+   "confidence": "high",
+   "source_url": "https://close.com/api"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview/api-key-authentication"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "med",
+   "source_url": "https://help.close.com/docs/api-keys-oauth"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://help.close.com/docs/mcp-server"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/api/overview"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "high",
+   "source_url": "https://close.com/crm-trial"
+  },
+  "main_blocker": {
+   "value": "none - API keys are created instantly within any account (including the 14-day free trial) with no app review required for direct use",
+   "confidence": "med",
+   "source_url": "https://help.close.com/docs/api-keys-oauth"
+  },
+  "docs_url": {
+   "value": "https://developer.close.com/",
+   "confidence": "high",
+   "source_url": "https://developer.close.com/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/closeio",
+  "https://app.close.com/",
+  "https://app.close.com/signup/",
+  "https://apps.make.com/close-crm",
+  "https://capsulecrm.com/blog/close-crm-pricing/",
+  "https://close.com/api",
+  "https://close.com/crm-trial",
+  "https://close.com/integrations/close-mcp",
+  "https://close.com/pricing",
+  "https://developer.close.com/",
+  "https://developer.close.com/api",
+  "https://developer.close.com/api/overview",
+  "https://developer.close.com/api/overview/api-key-authentication",
+  "https://developer.close.com/api/overview/changelog",
+  "https://developer.close.com/api/overview/oauth-authentication",
+  "https://developer.close.com/api/resources/activities",
+  "https://developer.close.com/api/resources/leads",
+  "https://developer.close.com/changelog/",
+  "https://developer.close.com/topics/api-clients/",
+  "https://developer.close.com/topics/authentication-oauth2/",
+  "https://developers.apideck.com/apis/crm/close",
+  "https://dlthub.com/context/source/close-crm",
+  "https://fastmcp.me/mcp/details/1482/close",
+  "https://findapis.com/en/api/close-crm",
+  "https://github.com/bcharleson/close-crm-cli",
+  "https://github.com/calcom/cal.com/issues/12228",
+  "https://glama.ai/mcp/connectors/com.close/close-mcp",
+  "https://help.close.com/docs/api-keys-oauth",
+  "https://help.close.com/docs/mcp-server",
+  "https://mcp.pipedream.com/app/close",
+  "https://mcpservers.org/remote-mcp-servers/close",
+  "https://mcpservers.org/servers/close-remote-mcp",
+  "https://rollout.com/integration-guides/close/api-essentials",
+  "https://try.fm/business-productivity/close-crm/",
+  "https://www.apideck.com/integrations/close",
+  "https://www.capterra.com/p/132667/Close-io/",
+  "https://www.getknit.dev/blog/close-api-directory-bjpPxE",
+  "https://www.pulsemcp.com/servers/close",
+  "https://www.pulsemcp.com/servers/pipeworx-close-crm",
+  "https://zeeg.me/en/blog/post/close-crm-pricing"
+ ],
+ "backend": "claude_cli"
+}

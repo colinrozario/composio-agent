@@ -1,0 +1,111 @@
+{
+ "id": 13,
+ "slug": "freshdesk",
+ "name": "Freshdesk",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:48:41+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud-based customer support helpdesk and ticketing software for managing customer conversations",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://support.freshdesk.com/en/support/solutions/articles/50000003346-api-key-based-authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "med",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-"
+  },
+  "main_blocker": {
+   "value": "Free plan has no API access; API usage (and higher rate limits) requires a paid Growth/Pro/Enterprise plan or trial",
+   "confidence": "med",
+   "source_url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-"
+  },
+  "docs_url": {
+   "value": "https://developer.freshdesk.com/api/v1/",
+   "confidence": "high",
+   "source_url": "https://developer.freshdesk.com/api/v1/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.freshservice.com/",
+  "https://apis.io/apis/freshdesk/freshdesk-search-api/",
+  "https://apis.io/providers/freshdesk/",
+  "https://apis.io/rate-limits/freshdesk/freshdesk-rate-limits/",
+  "https://community.freshworks.com/api-and-webhooks-11406/api-ratelimit-growth-plan-32552",
+  "https://community.freshworks.dev/t/api-limit-issue/5871",
+  "https://community.freshworks.dev/t/how-to-use-oauth-authentication-mechanism-for-freshdesk-api/1691",
+  "https://crmsupport.freshworks.com/support/solutions/articles/50000010517-api-limits-for-sales-and-support-products-in-freshworks",
+  "https://developer.freshdesk.com/api/v1/",
+  "https://docs.n8n.io/integrations/builtin/credentials/freshdesk",
+  "https://github.com/effytech/freshdesk_mcp",
+  "https://github.com/sjkingo/python-freshdesk",
+  "https://mcp.directory/servers/freshdesk",
+  "https://mcp.so/server/freshdesk_mcp/effytech",
+  "https://mcpservers.org/servers/Enreign/freshdeck-mcp",
+  "https://mixedanalytics.com/knowledge-base/get-your-freshdesk-api-credentials/",
+  "https://rollout.com/integration-guides/freshdesk/api-essentials",
+  "https://support.freshdesk.com/en/support/solutions/articles/50000003346-api-key-based-authentication",
+  "https://support.freshdesk.com/support/solutions/159648",
+  "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+  "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+  "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk-",
+  "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+  "https://support.freshservice.com/support/solutions/articles/50000000293-what-is-the-rate-limit-for-apis-across-all-plans-",
+  "https://www.cdata.com/drivers/freshdesk/mcp/",
+  "https://www.eesel.ai/blog/freshdesk-api-rate-limits",
+  "https://www.getmacha.com/blog/freshdesk-api-explained",
+  "https://www.getmacha.com/blog/how-to-use-the-freshdesk-api",
+  "https://www.pulsemcp.com/servers/effytech-freshdesk",
+  "https://www.pulsemcp.com/servers/wyre-technology-freshdesk",
+  "https://www.stitchflow.com/user-management/freshdesk/api",
+  "https://www.workato.com/mcp/freshdesk",
+  "https://zapier.com/mcp/freshdesk"
+ ],
+ "backend": "claude_cli"
+}

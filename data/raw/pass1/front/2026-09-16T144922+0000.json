@@ -1,0 +1,137 @@
+{
+ "id": 14,
+ "slug": "front",
+ "name": "Front",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:49:22+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Front is a customer communication/helpdesk hub for shared inboxes and support workflows.",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/authentication"
+  },
+  "access_path": {
+   "value": "app_review_required",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/create-and-manage-apps"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/reference/introduction"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/core-api-overview"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://help.front.com/en/articles/4883136"
+  },
+  "base_url_model": {
+   "value": "fixed",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/fundamentals"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/reference/introduction"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/welcome"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://front.com/signup"
+  },
+  "main_blocker": {
+   "value": "API tokens work self-serve for single-account use, but publishing an OAuth app for other customers requires contacting Front's partnership team for review/approval.",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/docs/create-and-manage-apps"
+  },
+  "docs_url": {
+   "value": "https://dev.frontapp.com/reference/introduction",
+   "confidence": "high",
+   "source_url": "https://dev.frontapp.com/reference/introduction"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/front-app",
+  "https://chatarmin.com/en/blog/front-pricing",
+  "https://clearfeed.ai/blogs/front-pricing-guide",
+  "https://codilime.com/blog/model-context-protocol-explained/",
+  "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+  "https://dev.frontapp.com/docs/authentication",
+  "https://dev.frontapp.com/docs/core-api-getting-started",
+  "https://dev.frontapp.com/docs/core-api-overview",
+  "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+  "https://dev.frontapp.com/docs/creating-a-partner-channel",
+  "https://dev.frontapp.com/docs/fundamentals",
+  "https://dev.frontapp.com/docs/oauth",
+  "https://dev.frontapp.com/docs/sample-application",
+  "https://dev.frontapp.com/docs/welcome",
+  "https://dev.frontapp.com/reference/api-token-details",
+  "https://dev.frontapp.com/reference/conversations",
+  "https://dev.frontapp.com/reference/introduction",
+  "https://dev.frontapp.com/reference/links",
+  "https://dev.frontapp.com/reference/messages",
+  "https://dev.frontapp.com/reference/plugin-sdk-api",
+  "https://developer.apple.com/forums/thread/704836",
+  "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review/",
+  "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app/",
+  "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-purchase/",
+  "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app-on-the-app-store",
+  "https://developer.frontsystems.com/quickstart",
+  "https://developers.activecampaign.com/page/developer-sandbox-accounts",
+  "https://developers.google.com/workspace/marketplace/about-app-review",
+  "https://developers.redhat.com/developer-sandbox",
+  "https://en.wikipedia.org/wiki/IOS_app_approvals",
+  "https://experienceleaguecommunities-beta.adobe.com/adobe-experience-platform-18/can-i-apply-a-free-aep-trial-or-sandbox-111298",
+  "https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/can-i-apply-a-free-aep-trial-or-sandbox/m-p/782604",
+  "https://front.com/pricing",
+  "https://front.com/signup",
+  "https://github.com/modelcontextprotocol",
+  "https://github.com/modelcontextprotocol/servers",
+  "https://glama.ai/mcp/servers/@zqushair/Frontapp-MCP/blob/d272bbdb9a3570f3752add5d5a28091314fabe2d/FRONTAPP_API_ENDPOINTS.md",
+  "https://gotechsolutions.co/blog/apple-app-store-submission-guide-2026/",
+  "https://help.figma.com/hc/en-us/articles/35074258201495",
+  "https://help.front.com/en/articles/2309",
+  "https://help.front.com/en/articles/4883136",
+  "https://help.frontify.com/en/articles/14787214-frontify-mcp",
+  "https://help.salesforce.com/s/articleView?id=000372531&language=en_US&type=3",
+  "https://hiverhq.com/blog/front-pricing",
+  "https://learn.microsoft.com/en-gb/answers/questions/2108644/how-to-qualify-for-free-365-developer-sandbox-subs",
+  "https://learn.microsoft.com/en-us/entra/verified-id/how-to-create-a-free-developer-account",
+  "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount",
+  "https://premiumappdeveloper.com/how-to-submit-your-app-to-the-app-store/",
+  "https://rollout.com/integration-guides/front/api-essentials",
+  "https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f",
+  "https://www.anthropic.com/news/model-context-protocol",
+  "https://www.chargebee.com/trial-signup/",
+  "https://www.eesel.ai/blog/front-pricing",
+  "https://www.featurebase.app/blog/front-pricing",
+  "https://www.getmacha.com/blog/front-api-explained",
+  "https://www.getmacha.com/blog/front-pricing-explained",
+  "https://www.getmacha.com/blog/how-to-use-the-front-api",
+  "https://www.itqlick.com/front/pricing",
+  "https://zuplo.com/blog/api-monetization-pricing-plans-phases"
+ ],
+ "backend": "claude_cli"
+}

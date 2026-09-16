@@ -1,0 +1,115 @@
+{
+ "id": 12,
+ "slug": "intercom",
+ "name": "Intercom",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:48:46+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Customer messaging/support platform with a REST API for conversations, contacts, tickets, and help center content.",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://www.intercom.com/pricing"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/guides/mcp"
+  },
+  "base_url_model": {
+   "value": "regional",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.intercom.com/pricing"
+  },
+  "main_blocker": {
+   "value": "No permanent free tier — production API use requires a paid Intercom plan after the 14-day trial, and public multi-tenant OAuth apps additionally require Intercom's app review process.",
+   "confidence": "med",
+   "source_url": "https://developers.intercom.com/docs/publish-to-the-app-store/review-publish-your-app"
+  },
+  "docs_url": {
+   "value": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+   "confidence": "high",
+   "source_url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://agentsapis.com/intercom-api/",
+  "https://apigene.ai/mcp/official/intercom",
+  "https://cdn.cdata.com/help/FAG/api/intercom/pg_connectionprofile.htm",
+  "https://cdn.cdata.com/help/FAJ/api/intercom/pg_connectionprofile.htm",
+  "https://developers.intercom.com/docs",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/installing-uninstalling-apps",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/oauth-scopes",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth.md",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/building-successful-apps",
+  "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/sdks-plugins",
+  "https://developers.intercom.com/docs/guides/fin-agent-api/setup",
+  "https://developers.intercom.com/docs/guides/mcp",
+  "https://developers.intercom.com/docs/guides/mcp.md",
+  "https://developers.intercom.com/docs/publish-to-the-app-store/review-publish-your-app",
+  "https://developers.intercom.com/docs/references/2.8/rest-api/api.intercom.io/help-center/retrievehelpcenter",
+  "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+  "https://developers.intercom.com/docs/references/rest-api/api.intercom.io/messages/createmessage",
+  "https://growthmethod.com/intercom-mcp-server/",
+  "https://helpcrunch.com/blog/intercom-pricing/",
+  "https://intercom-developer-hub.readme.io/docs/authorization-faq",
+  "https://lagrowthmachine.com/intercom-mcp/",
+  "https://pipeline.zoominfo.com/sales/intercom-api",
+  "https://prismatic.io/docs/components/intercom/",
+  "https://thatmarketingbuddy.com/mcp/intercom",
+  "https://www.dragapp.com/blog/intercom-pricing/",
+  "https://www.getmacha.com/blog/intercom-pricing-explained",
+  "https://www.intercom.com/help/en/articles/8344190-pricing-faqs",
+  "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+  "https://www.intercom.com/pricing",
+  "https://www.pulsemcp.com/servers/intercom",
+  "https://www.robylon.ai/blog/intercom-pricing-breakdown-2026",
+  "https://www.spurnow.com/en/blogs/intercom-pricing",
+  "https://www.usecarly.com/blog/intercom-mcp/",
+  "https://www.vendr.com/marketplace/intercom"
+ ],
+ "backend": "claude_cli"
+}

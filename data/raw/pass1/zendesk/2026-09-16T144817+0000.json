@@ -1,0 +1,106 @@
+{
+ "id": 11,
+ "slug": "zendesk",
+ "name": "Zendesk",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:48:17+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Customer service/helpdesk platform for tickets, chat, and help center support",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  "access_path": {
+   "value": "self_serve_trial",
+   "confidence": "med",
+   "source_url": "https://developer.zendesk.com/documentation/api-basics/authentication/creating-and-using-oauth-tokens-with-the-api/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/ticketing/introduction/"
+  },
+  "official_mcp": {
+   "value": "none_found",
+   "confidence": "med",
+   "source_url": "https://www.zendesk.com/blog/zendesk-insights/innovation/zendesk-ai-mcp-client/"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/introduction/requests/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-zendesk-account-for-testing/"
+  },
+  "main_blocker": {
+   "value": "Production API use requires an active (paid) Zendesk subscription tied to a per-tenant subdomain; only a free trial is available for testing.",
+   "confidence": "med",
+   "source_url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-zendesk-account-for-testing/"
+  },
+  "docs_url": {
+   "value": "https://developer.zendesk.com/api-reference/",
+   "confidence": "high",
+   "source_url": "https://developer.zendesk.com/api-reference/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [
+  "one_liner",
+  "api_type",
+  "api_breadth",
+  "base_url_model",
+  "toolkit_bucket",
+  "docs_quality",
+  "test_account",
+  "main_blocker",
+  "docs_url"
+ ],
+ "search_urls": [
+  "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "https://developer.zendesk.com/api-reference/sales-crm/authentication/introduction/",
+  "https://developer.zendesk.com/api-reference/sales-crm/authentication/reference/",
+  "https://developer.zendesk.com/api-reference/ticketing/oauth/oauth_tokens/",
+  "https://developer.zendesk.com/documentation/api-basics/authentication/creating-and-using-oauth-tokens-with-the-api/",
+  "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+  "https://developer.zendesk.com/documentation/authentication/using-oauth-to-authenticate-zendesk-api-requests-in-a-web-app/",
+  "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+  "https://github.com/Radico/zendesk-mcp-server",
+  "https://github.com/reminia/zendesk-mcp-server",
+  "https://lobehub.com/mcp/digital4better-zendesk-mcp-server",
+  "https://mcpservers.org/servers/michaelrice/zendesk-mcp",
+  "https://support.zendesk.com/hc/en-us/articles/10497779528730-Connecting-to-MCP-servers-and-using-MCP-tools-in-action-flows",
+  "https://support.zendesk.com/hc/en-us/articles/4408845965210-Using-OAuth-authentication-with-your-application",
+  "https://swifteq.com/zendesk-mcp-server",
+  "https://www.zendesk.com/blog/zendesk-insights/innovation/zendesk-ai-mcp-client/",
+  "https://www.zendesk.com/marketplace/apps/support/1191848/mcp-server/"
+ ],
+ "backend": "claude_cli"
+}

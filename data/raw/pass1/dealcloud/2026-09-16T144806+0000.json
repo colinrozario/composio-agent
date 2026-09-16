@@ -1,0 +1,110 @@
+{
+ "id": 10,
+ "slug": "dealcloud",
+ "name": "DealCloud",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:48:06+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "DealCloud is a CRM and deal-management platform for private equity/investment banking relationship data.",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth2",
+    "api_key"
+   ],
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/token"
+  },
+  "access_path": {
+   "value": "partner_or_sales_gated",
+   "confidence": "med",
+   "source_url": "https://api.docs.dealcloud.com/docs/apikeys"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/data"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/schema"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/mcp"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/data"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/data"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs"
+  },
+  "test_account": {
+   "value": "none",
+   "confidence": "low",
+   "source_url": null
+  },
+  "main_blocker": {
+   "value": "No public self-serve signup or sandbox; you must be an existing DealCloud customer with admin rights to enable API access and generate a key, and pricing/plan tiers are not public.",
+   "confidence": "med",
+   "source_url": "https://api.docs.dealcloud.com/docs/apikeys"
+  },
+  "docs_url": {
+   "value": "https://api.docs.dealcloud.com/docs/data",
+   "confidence": "high",
+   "source_url": "https://api.docs.dealcloud.com/docs/data"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://api.docs.dealcloud.com/",
+  "https://api.docs.dealcloud.com/docs",
+  "https://api.docs.dealcloud.com/docs/apikeys",
+  "https://api.docs.dealcloud.com/docs/data",
+  "https://api.docs.dealcloud.com/docs/publications/getting_started",
+  "https://api.docs.dealcloud.com/docs/publications/types/data",
+  "https://api.docs.dealcloud.com/docs/schema",
+  "https://api.docs.dealcloud.com/docs/schema/entry_types",
+  "https://api.docs.dealcloud.com/docs/token",
+  "https://api.docs.dealcloud.com/guides",
+  "https://api.docs.dealcloud.com/mcp",
+  "https://api.docs.dealcloud.com/releases",
+  "https://api.docs.dealcloud.com/sdk/python/authentication",
+  "https://apitracker.io/a/dealcloud",
+  "https://cloud.google.com/discover/what-is-model-context-protocol",
+  "https://codilime.com/blog/model-context-protocol-explained/",
+  "https://developers.anduintransact.com/docs/step-1-retrieve-credentials-of-3rd-party-apps-7",
+  "https://github.com/modelcontextprotocol/servers",
+  "https://hexdocs.pm/dealcloud/api-reference.html",
+  "https://pypi.org/project/dealcloud-sdk/",
+  "https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f",
+  "https://unified.to/integrations/dealcloud",
+  "https://www.anthropic.com/news/model-context-protocol",
+  "https://www.capterra.com/p/139967/DealCloud/",
+  "https://www.capterra.com/p/139967/DealCloud/pricing/",
+  "https://www.databricks.com/blog/what-is-model-context-protocol",
+  "https://www.g2.com/products/dealcloud/pricing",
+  "https://www.getapp.com/operations-management-software/a/dealcloud/",
+  "https://www.getapp.com/operations-management-software/a/dealcloud/pricing/",
+  "https://www.softwareadvice.com/marketing/dealcloud-profile/",
+  "https://www.vendr.com/buyer-guides/dealcloud",
+  "https://www.workato.com/de-DE/integrations/deal-cloud~mcp"
+ ],
+ "backend": "claude_cli"
+}

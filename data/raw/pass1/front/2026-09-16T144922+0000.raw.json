@@ -1,0 +1,2000 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web search. Prefer the vendor's own developer docs,\nAPI reference, pricing page, and app-review/partner pages over blogs or aggregators.\n\nApp: Front\nCategory: Support and Helpdesk\nHint (may be misleading, verify it): front.com\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a page you actually saw in search results for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://apitracker.io/a/front-app",
+   "https://chatarmin.com/en/blog/front-pricing",
+   "https://clearfeed.ai/blogs/front-pricing-guide",
+   "https://codilime.com/blog/model-context-protocol-explained/",
+   "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+   "https://dev.frontapp.com/docs/authentication",
+   "https://dev.frontapp.com/docs/core-api-getting-started",
+   "https://dev.frontapp.com/docs/core-api-overview",
+   "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+   "https://dev.frontapp.com/docs/creating-a-partner-channel",
+   "https://dev.frontapp.com/docs/fundamentals",
+   "https://dev.frontapp.com/docs/oauth",
+   "https://dev.frontapp.com/docs/sample-application",
+   "https://dev.frontapp.com/docs/welcome",
+   "https://dev.frontapp.com/reference/api-token-details",
+   "https://dev.frontapp.com/reference/conversations",
+   "https://dev.frontapp.com/reference/introduction",
+   "https://dev.frontapp.com/reference/links",
+   "https://dev.frontapp.com/reference/messages",
+   "https://dev.frontapp.com/reference/plugin-sdk-api",
+   "https://developer.apple.com/forums/thread/704836",
+   "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review/",
+   "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app/",
+   "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-purchase/",
+   "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app-on-the-app-store",
+   "https://developer.frontsystems.com/quickstart",
+   "https://developers.activecampaign.com/page/developer-sandbox-accounts",
+   "https://developers.google.com/workspace/marketplace/about-app-review",
+   "https://developers.redhat.com/developer-sandbox",
+   "https://en.wikipedia.org/wiki/IOS_app_approvals",
+   "https://experienceleaguecommunities-beta.adobe.com/adobe-experience-platform-18/can-i-apply-a-free-aep-trial-or-sandbox-111298",
+   "https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/can-i-apply-a-free-aep-trial-or-sandbox/m-p/782604",
+   "https://front.com/pricing",
+   "https://front.com/signup",
+   "https://github.com/modelcontextprotocol",
+   "https://github.com/modelcontextprotocol/servers",
+   "https://glama.ai/mcp/servers/@zqushair/Frontapp-MCP/blob/d272bbdb9a3570f3752add5d5a28091314fabe2d/FRONTAPP_API_ENDPOINTS.md",
+   "https://gotechsolutions.co/blog/apple-app-store-submission-guide-2026/",
+   "https://help.figma.com/hc/en-us/articles/35074258201495",
+   "https://help.front.com/en/articles/2309",
+   "https://help.front.com/en/articles/4883136",
+   "https://help.frontify.com/en/articles/14787214-frontify-mcp",
+   "https://help.salesforce.com/s/articleView?id=000372531&language=en_US&type=3",
+   "https://hiverhq.com/blog/front-pricing",
+   "https://learn.microsoft.com/en-gb/answers/questions/2108644/how-to-qualify-for-free-365-developer-sandbox-subs",
+   "https://learn.microsoft.com/en-us/entra/verified-id/how-to-create-a-free-developer-account",
+   "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount",
+   "https://premiumappdeveloper.com/how-to-submit-your-app-to-the-app-store/",
+   "https://rollout.com/integration-guides/front/api-essentials",
+   "https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f",
+   "https://www.anthropic.com/news/model-context-protocol",
+   "https://www.chargebee.com/trial-signup/",
+   "https://www.eesel.ai/blog/front-pricing",
+   "https://www.featurebase.app/blog/front-pricing",
+   "https://www.getmacha.com/blog/front-api-explained",
+   "https://www.getmacha.com/blog/front-pricing-explained",
+   "https://www.getmacha.com/blog/how-to-use-the-front-api",
+   "https://www.itqlick.com/front/pricing",
+   "https://zuplo.com/blog/api-monetization-pricing-plans-phases"
+  ],
+  "fetched_urls": [
+   "https://dev.frontapp.com/docs/create-and-manage-apps",
+   "https://dev.frontapp.com/docs/oauth"
+  ],
+  "num_turns": 11,
+  "events": [
+   {
+    "type": "system",
+    "subtype": "init",
+    "cwd": "C:\\Users\\colin\\AppData\\Local\\Temp",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "tools": [
+     "CronCreate",
+     "CronDelete",
+     "CronList",
+     "DesignSync",
+     "EnterWorktree",
+     "ExitWorktree",
+     "ListAgents",
+     "Monitor",
+     "PushNotification",
+     "RemoteTrigger",
+     "ReportFindings",
+     "ScheduleWakeup",
+     "SendMessage",
+     "TaskOutput",
+     "TaskStop",
+     "ToolSearch",
+     "WebFetch",
+     "WebSearch"
+    ],
+    "mcp_servers": [
+     {
+      "name": "claude.ai Google Drive",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Gmail",
+      "status": "needs-auth"
+     },
+     {
+      "name": "claude.ai Google Calendar",
+      "status": "needs-auth"
+     }
+    ],
+    "model": "claude-sonnet-5",
+    "permissionMode": "default",
+    "slash_commands": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator",
+     "advisor",
+     "agents",
+     "auto-mode-setup",
+     "autocompact",
+     "clear",
+     "color",
+     "compact",
+     "config",
+     "output-style",
+     "context",
+     "effort",
+     "fast",
+     "heapdump",
+     "init",
+     "mcp",
+     "import",
+     "model",
+     "__remote-workflow",
+     "workflow-launch-exec",
+     "reload-plugins",
+     "reload-skills",
+     "rename",
+     "ultrareview",
+     "security-review",
+     "usage-credits",
+     "extra-usage",
+     "usage",
+     "insights",
+     "recap",
+     "skill-doctor",
+     "goal",
+     "design-consent",
+     "design-revoke",
+     "list-agents",
+     "team-onboarding"
+    ],
+    "terminal_slash_commands": [
+     "doctor",
+     "color",
+     "reload-plugins"
+    ],
+    "apiKeySource": "none",
+    "claude_code_version": "2.1.273",
+    "output_style": "default",
+    "agents": [
+     "claude",
+     "Explore",
+     "general-purpose",
+     "Plan",
+     "statusline-setup"
+    ],
+    "skills": [
+     "excalidraw-diagram",
+     "gepeto",
+     "pinokio",
+     "andrej-karpathy-skills:karpathy-guidelines",
+     "design",
+     "design-sync",
+     "dataviz",
+     "update-config",
+     "verify",
+     "debug",
+     "code-review",
+     "simplify",
+     "batch",
+     "fewer-permission-prompts",
+     "doctor",
+     "loop",
+     "schedule",
+     "claude-api",
+     "run",
+     "run-skill-generator"
+    ],
+    "plugins": [
+     {
+      "name": "andrej-karpathy-skills",
+      "path": "C:\\Users\\colin\\.claude\\plugins\\cache\\karpathy-skills\\andrej-karpathy-skills\\1.0.0",
+      "source": "andrej-karpathy-skills@karpathy-skills",
+      "version": "1.0.0"
+     }
+    ],
+    "capabilities": [
+     "interrupt_receipt_v1",
+     "interrupt_cancel_queued_v1",
+     "msg_lifecycle_v1"
+    ],
+    "analytics_disabled": false,
+    "product_feedback_disabled": false,
+    "uuid": "250636b3-6be7-47f4-8d2d-c823fc32b9d1",
+    "memory_paths": {
+     "auto": "C:\\Users\\colin\\.claude\\projects\\C--Users-colin-AppData-Local-Temp\\memory\\"
+    },
+    "messaging_socket_path": "\\\\.\\pipe\\LOCAL\\cc-msg-fbfc8c08d88c600791a4e464c4e0f72f",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "powershell_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.85,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "25678ab1-f376-4f7e-b7b5-2c79ac663d82",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JVTXLV8inzpw6Tmny7",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EqwCCqgBCBEYAipAR0xQuDL5plK2BbXHfuE4iyxQToIyN3t6ONaGaWJWZwETgCvHQzxh2R1oFQaYIGCRHE+Tt7/oWgPveDO63ZUBnTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAbbYqtUGsAECEgyndBHMXYq8U9qyg9EaDEXoC2zdtahyXMbasyIwAsYaGgiNuVDfcXVClKRKDsVzBbEuK4s1X6bE4YiU9k50VmbJ5IiyvhWVzZYLsYPuKjF0vgMHiruzIMg7xWW6yygeMGZ1fCpsRUKVRyrwM5+ZdX9uRbgRpHfM4u7Bk5kbArk7GAE="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2093,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2093
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "37607fc6-e065-49cb-9995-47efd8cb03d3",
+    "timestamp": "2026-09-16T14:48:20.329Z",
+    "request_id": "req_011Cf7JVT63ovJpKe3REGzFP"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JVTXLV8inzpw6Tmny7",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01U7PCQoGnruUhNjZydq97oa",
+       "name": "ToolSearch",
+       "input": {
+        "query": "select:WebSearch,WebFetch",
+        "max_results": 5
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2093,
+      "cache_read_input_tokens": 12307,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2093
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "494cee20-05ec-4b3c-85d9-9eb05b4ae90f",
+    "timestamp": "2026-09-16T14:48:20.888Z",
+    "request_id": "req_011Cf7JVT63ovJpKe3REGzFP",
+    "wire_tool_inputs": {
+     "toolu_01U7PCQoGnruUhNjZydq97oa": {
+      "query": "select:WebSearch,WebFetch",
+      "max_results": 5
+     }
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "type": "tool_result",
+       "tool_use_id": "toolu_01U7PCQoGnruUhNjZydq97oa",
+       "content": [
+        {
+         "type": "tool_reference",
+         "tool_name": "WebSearch"
+        },
+        {
+         "type": "tool_reference",
+         "tool_name": "WebFetch"
+        }
+       ]
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "6f8223b2-78e1-4b81-af01-3eec08ab1a97",
+    "timestamp": "2026-09-16T14:48:20.903Z",
+    "tool_use_result": {
+     "matches": [
+      "WebSearch",
+      "WebFetch"
+     ],
+     "query": "select:WebSearch,WebFetch",
+     "total_deferred_tools": 14
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.86,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "78bb817c-e120-4418-8bd2-0b9925392553",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JVcTNSvJxpJj1jMEzn",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01QVj3zR6pY1ewGDuHaUEhMK",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front API developer documentation authentication OAuth API key"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1556,
+      "cache_read_input_tokens": 14400,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1556
+      },
+      "output_tokens": 18,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "7e2f547c-6f90-4f8d-97e8-c5b3d0f70073",
+    "timestamp": "2026-09-16T14:48:22.633Z",
+    "request_id": "req_011Cf7JVc1paTd6VCAe1QMC5",
+    "wire_tool_inputs": {
+     "toolu_01QVj3zR6pY1ewGDuHaUEhMK": {
+      "query": "Front API developer documentation authentication OAuth API key"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JVcTNSvJxpJj1jMEzn",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01XUeQtSKBJg7BVzJCY3Hgck",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front API dev.frontapp.com reference resources"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1556,
+      "cache_read_input_tokens": 14400,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1556
+      },
+      "output_tokens": 18,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "4f4ed803-a337-4ae4-9818-780bf3a29fa9",
+    "timestamp": "2026-09-16T14:48:22.997Z",
+    "request_id": "req_011Cf7JVc1paTd6VCAe1QMC5",
+    "wire_tool_inputs": {
+     "toolu_01XUeQtSKBJg7BVzJCY3Hgck": {
+      "query": "Front API dev.frontapp.com reference resources"
+     }
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01XUeQtSKBJg7BVzJCY3Hgck",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front API dev.frontapp.com reference resources\"\n\nLinks: [{\"title\":\"Developer resources for building API integrations\",\"url\":\"https://help.front.com/en/articles/2309\"},{\"title\":\"Front API - Developer docs, APIs, SDKs, and auth. | API Tracker\",\"url\":\"https://apitracker.io/a/front-app\"},{\"title\":\"Context API\",\"url\":\"https://dev.frontapp.com/reference/plugin-sdk-api\"},{\"title\":\"Introduction\",\"url\":\"https://dev.frontapp.com/reference/introduction\"},{\"title\":\"Fundamentals\",\"url\":\"https://dev.frontapp.com/docs/fundamentals\"},{\"title\":\"Overview\",\"url\":\"https://dev.frontapp.com/docs/core-api-overview\"},{\"title\":\"Links\",\"url\":\"https://dev.frontapp.com/reference/links\"},{\"title\":\"API Token details\",\"url\":\"https://dev.frontapp.com/reference/api-token-details\"},{\"title\":\"Front's API documentation\",\"url\":\"https://dev.frontapp.com/docs/welcome\"}]\n\nBased on the search results, here's information about Front API resources at dev.frontapp.com:\n\n## Overview\n\nThe Developer Portal contains documentation for the Front Platform APIs and SDKs, as well as sample code and useful tools for development. You can access it at https://dev.frontapp.com.\n\n## Core API\n\nFront's Core API is a backend API that gives comprehensive control over all entities in Front from Contacts to Comments. The Core API allows developers to access core data and actions within Front, enabling custom logic to assign messages, update contact info, manage user access, and auto-tag conversations.\n\n## Key Reference Documentation\n\nThe developer portal includes several important sections:\n\n- Fundamental concepts including API Terminology 101, Base URL, Rate limits, Pagination, Search, Query object 'q', Resource Aliases, Attachments, Webhooks, Deprecation Policy, and Application Triggers.\n- Guides covering Getting Started, Fundamentals, Tools, Sample Application, and API Terminology 101.\n- Front supports OAuth2.0 as well as API Tokens for authentication.\n\n## Additional Resources\n\nFor AI agents, there's an index of all pages at https://dev.frontapp.com/llms.txt formatted in Markdown and endpoints in OpenAPI, and you can append .md to any documentation page URL to get its markdown version.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "340fb444-f27d-4c3e-9e78-b91bfc205d1d",
+    "timestamp": "2026-09-16T14:48:30.363Z",
+    "tool_use_result": {
+     "query": "Front API dev.frontapp.com reference resources",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01W5P3XFYN8229LKLi3ec4Gb",
+       "content": [
+        {
+         "title": "Developer resources for building API integrations",
+         "url": "https://help.front.com/en/articles/2309"
+        },
+        {
+         "title": "Front API - Developer docs, APIs, SDKs, and auth. | API Tracker",
+         "url": "https://apitracker.io/a/front-app"
+        },
+        {
+         "title": "Context API",
+         "url": "https://dev.frontapp.com/reference/plugin-sdk-api"
+        },
+        {
+         "title": "Introduction",
+         "url": "https://dev.frontapp.com/reference/introduction"
+        },
+        {
+         "title": "Fundamentals",
+         "url": "https://dev.frontapp.com/docs/fundamentals"
+        },
+        {
+         "title": "Overview",
+         "url": "https://dev.frontapp.com/docs/core-api-overview"
+        },
+        {
+         "title": "Links",
+         "url": "https://dev.frontapp.com/reference/links"
+        },
+        {
+         "title": "API Token details",
+         "url": "https://dev.frontapp.com/reference/api-token-details"
+        },
+        {
+         "title": "Front's API documentation",
+         "url": "https://dev.frontapp.com/docs/welcome"
+        }
+       ]
+      },
+      "Based on the search results, here's information about Front API resources at dev.frontapp.com:\n\n## Overview\n\nThe Developer Portal contains documentation for the Front Platform APIs and SDKs, as well as sample code and useful tools for development. You can access it at https://dev.frontapp.com.\n\n## Core API\n\nFront's Core API is a backend API that gives comprehensive control over all entities in Front from Contacts to Comments. The Core API allows developers to access core data and actions within Front, enabling custom logic to assign messages, update contact info, manage user access, and auto-tag conversations.\n\n## Key Reference Documentation\n\nThe developer portal includes several important sections:\n\n- Fundamental concepts including API Terminology 101, Base URL, Rate limits, Pagination, Search, Query object 'q', Resource Aliases, Attachments, Webhooks, Deprecation Policy, and Application Triggers.\n- Guides covering Getting Started, Fundamentals, Tools, Sample Application, and API Terminology 101.\n- Front supports OAuth2.0 as well as API Tokens for authentication.\n\n## Additional Resources\n\nFor AI agents, there's an index of all pages at https://dev.frontapp.com/llms.txt formatted in Markdown and endpoints in OpenAPI, and you can append .md to any documentation page URL to get its markdown version."
+     ],
+     "durationSeconds": 7.3617108,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01QVj3zR6pY1ewGDuHaUEhMK",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front API developer documentation authentication OAuth API key\"\n\nLinks: [{\"title\":\"How to Use the Front API (2026): Auth, Endpoints & Examples\",\"url\":\"https://www.getmacha.com/blog/how-to-use-the-front-api\"},{\"title\":\"Front API Essential Guide - Rollout\",\"url\":\"https://rollout.com/integration-guides/front/api-essentials\"},{\"title\":\"Front API Explained (Auth, Rate Limits & Core Endpoints)\",\"url\":\"https://www.getmacha.com/blog/front-api-explained\"},{\"title\":\"Quickstart guide - Front Systems API - Developer Portal\",\"url\":\"https://developer.frontsystems.com/quickstart\"},{\"title\":\"Authentication\",\"url\":\"https://dev.frontapp.com/docs/authentication\"},{\"title\":\"API tokens\",\"url\":\"https://dev.frontapp.com/docs/create-and-revoke-api-tokens\"},{\"title\":\"Introduction\",\"url\":\"https://dev.frontapp.com/reference/introduction\"},{\"title\":\"Getting Started with the Core API\",\"url\":\"https://dev.frontapp.com/docs/core-api-getting-started\"},{\"title\":\"OAuth\",\"url\":\"https://dev.frontapp.com/docs/oauth\"},{\"title\":\"Fundamentals of Application Channels\",\"url\":\"https://dev.frontapp.com/docs/creating-a-partner-channel\"}]\n\nBased on the search results, here's information about Front API authentication:\n\n## Authentication Methods\n\nFront supports OAuth 2.0 and API Tokens for authentication.\n\n### API Tokens\n\nYou create an API token in the Front app under Settings → Developers → API Tokens tab → Create API token. The Core API uses Bearer tokens to authenticate its user. You MUST send the token for each request in the Authorization header.\n\nFront recommends API tokens for testing and for single-customer integrations — anything where you control both ends and just need to talk to one Front company.\n\n### OAuth\n\nOAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way. OAuth is the other route, and it's the one Front recommends (and often requires) for public integrations or anything built on its application framework — an app that other companies install and that acts on their behalf. OAuth trades a longer setup for the ability to serve many customers without each of them minting a raw token.\n\nEach OAuth application is assigned a unique Client ID and Client Secret which will be used in the authorization flow.\n\n## API Base URL\n\nAPI calls will always work with https://api2.frontapp.com as the base URL.\n\nFor more detailed information, you can visit the official Front developer documentation at dev.frontapp.com.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "8963b8c3-1272-41b7-b6cc-8b8d69225c9c",
+    "timestamp": "2026-09-16T14:48:30.461Z",
+    "tool_use_result": {
+     "query": "Front API developer documentation authentication OAuth API key",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_019Xoadzv7guNGDo3KHuByWv",
+       "content": [
+        {
+         "title": "How to Use the Front API (2026): Auth, Endpoints & Examples",
+         "url": "https://www.getmacha.com/blog/how-to-use-the-front-api"
+        },
+        {
+         "title": "Front API Essential Guide - Rollout",
+         "url": "https://rollout.com/integration-guides/front/api-essentials"
+        },
+        {
+         "title": "Front API Explained (Auth, Rate Limits & Core Endpoints)",
+         "url": "https://www.getmacha.com/blog/front-api-explained"
+        },
+        {
+         "title": "Quickstart guide - Front Systems API - Developer Portal",
+         "url": "https://developer.frontsystems.com/quickstart"
+        },
+        {
+         "title": "Authentication",
+         "url": "https://dev.frontapp.com/docs/authentication"
+        },
+        {
+         "title": "API tokens",
+         "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens"
+        },
+        {
+         "title": "Introduction",
+         "url": "https://dev.frontapp.com/reference/introduction"
+        },
+        {
+         "title": "Getting Started with the Core API",
+         "url": "https://dev.frontapp.com/docs/core-api-getting-started"
+        },
+        {
+         "title": "OAuth",
+         "url": "https://dev.frontapp.com/docs/oauth"
+        },
+        {
+         "title": "Fundamentals of Application Channels",
+         "url": "https://dev.frontapp.com/docs/creating-a-partner-channel"
+        }
+       ]
+      },
+      "Based on the search results, here's information about Front API authentication:\n\n## Authentication Methods\n\nFront supports OAuth 2.0 and API Tokens for authentication.\n\n### API Tokens\n\nYou create an API token in the Front app under Settings → Developers → API Tokens tab → Create API token. The Core API uses Bearer tokens to authenticate its user. You MUST send the token for each request in the Authorization header.\n\nFront recommends API tokens for testing and for single-customer integrations — anything where you control both ends and just need to talk to one Front company.\n\n### OAuth\n\nOAuth 2.0 is a protocol that lets external applications request authorization to API access in a secure way. OAuth is the other route, and it's the one Front recommends (and often requires) for public integrations or anything built on its application framework — an app that other companies install and that acts on their behalf. OAuth trades a longer setup for the ability to serve many customers without each of them minting a raw token.\n\nEach OAuth application is assigned a unique Client ID and Client Secret which will be used in the authorization flow.\n\n## API Base URL\n\nAPI calls will always work with https://api2.frontapp.com as the base URL.\n\nFor more detailed information, you can visit the official Front developer documentation at dev.frontapp.com."
+     ],
+     "durationSeconds": 7.8206326,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "726c68cb-a1b9-4e04-9b6a-de11b849e28d"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 109,
+    "estimated_tokens_delta": 59,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "8932cff5-6062-4662-8ba5-004c6343311b"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWJpF8VkENMYRXMcBN",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "Eq4DCqgBCBEYAipAviB2+/uZj1VuUmSI3bGZ2olQJSTwvW6Q/Hw43S72hPZaw8btJXPM1VgBLgH7exjEHYUH21GhvLBkxyrAq+2rTjIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAcLYqtUGsAECEgzYYP66/0OzDoBbGZsaDOUUSZ4Xuw+gxGeOzCIwOLw6DqhG/Bfm1VSn6CckfO3OfermS7iIXvrVy3Ru9Cz8/yEfZBnTz6BTe//YNrRWKrIBpOMt8i4Q8JJXRwrKKEbgBlkvKGLrgRtUJrOODq2HO+eqb1W6B6gx5t41r9tE962N5L57QZGbVYJt9ORfSn7mMkZyYh3aH0nKm/0HegcfZdK0tImWVFfvQgVN4rAvyRwQ8hyNMu87aHm9VXzwdAWDM2FqqWMaWGJFj7nrKu67+lSVWJUTWPlKqWYr1Fb5vZQQ75PxewRWR05Qw7AlZgRg2IYnKGrE1bb8rcQGEbB+C6qRVRgB"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1984,
+      "cache_read_input_tokens": 15956,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1984
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "7dcc334a-9409-4714-bd64-b894a66f6b11",
+    "timestamp": "2026-09-16T14:48:32.230Z",
+    "request_id": "req_011Cf7JWJKj9rHsULEeaCyxQ"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWJpF8VkENMYRXMcBN",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01NEDXUHPsm7vqAXMh23yGxQ",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front app store review approval publish OAuth application submission"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1984,
+      "cache_read_input_tokens": 15956,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1984
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "e08b8744-82f6-4c4f-bc91-7119558850d8",
+    "timestamp": "2026-09-16T14:48:32.638Z",
+    "request_id": "req_011Cf7JWJKj9rHsULEeaCyxQ",
+    "wire_tool_inputs": {
+     "toolu_01NEDXUHPsm7vqAXMh23yGxQ": {
+      "query": "Front app store review approval publish OAuth application submission"
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWJpF8VkENMYRXMcBN",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01KSBtwZ2oMHHb7Bo4EC7d5c",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front MCP server official Model Context Protocol"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1984,
+      "cache_read_input_tokens": 15956,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1984
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "fa059d27-652a-4112-b796-95a6b2305cac",
+    "timestamp": "2026-09-16T14:48:33.015Z",
+    "request_id": "req_011Cf7JWJKj9rHsULEeaCyxQ",
+    "wire_tool_inputs": {
+     "toolu_01KSBtwZ2oMHHb7Bo4EC7d5c": {
+      "query": "Front MCP server official Model Context Protocol"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.87,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "e953776e-80a0-4909-8456-b9bc794c6cef",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.88,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "37686e45-7e18-4fb6-8b08-81be49a1b8ea",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01NEDXUHPsm7vqAXMh23yGxQ",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front app store review approval publish OAuth application submission\"\n\nLinks: [{\"title\":\"App review process and requirements for the Google Workspace Marketplace | Google for Developers\",\"url\":\"https://developers.google.com/workspace/marketplace/about-app-review\"},{\"title\":\"How to prepare app for submission … | Apple Developer Forums\",\"url\":\"https://developer.apple.com/forums/thread/704836\"},{\"title\":\"Overview of submitting for review - Manage submissions to App Review - App Store Connect - Help - Apple Developer\",\"url\":\"https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review/\"},{\"title\":\"Overview of publishing your app on the App Store - Manage your app's availability - App Store Connect - Help - Apple Developer\",\"url\":\"https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app-on-the-app-store\"},{\"title\":\"IOS app approvals\",\"url\":\"https://en.wikipedia.org/wiki/IOS_app_approvals\"},{\"title\":\"Submit an In-App Purchase - Manage submissions to App Review - App Store Connect - Help - Apple Developer\",\"url\":\"https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-purchase/\"},{\"title\":\"Submit an app - Manage submissions to App Review - App Store Connect - Help - Apple Developer\",\"url\":\"https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app/\"},{\"title\":\"How to Submit Your App to the App Store [ 2026 Best Guide ]\",\"url\":\"https://premiumappdeveloper.com/how-to-submit-your-app-to-the-app-store/\"},{\"title\":\"Apple App Store Submission Guide 2026: Step-by-Step Checklist With Screenshots\",\"url\":\"https://gotechsolutions.co/blog/apple-app-store-submission-guide-2026/\"},{\"title\":\"help.figma.com\",\"url\":\"https://help.figma.com/hc/en-us/articles/35074258201495\"}]\n\nI've performed a web search for \"Front app store review approval publish OAuth application submission.\" The results show information about app store review processes from several major platforms:\n\n**Apple App Store:**\nTo submit your app for review to start the App Review process and make it available on the App Store, you need to complete all required metadata, and decide whether to release your app manually, automatically, or in phases. If the review team approves your app, it's automatically published and you receive a notification email.\n\n**Google Workspace Marketplace:**\nDevelopers submitting apps to the Google Workspace Marketplace must undergo a review process where the app's name, developer information, and description must be accurate and follow specific guidelines, and the app must be fully functional, bug-free, and offer a positive user experience.\n\n**Figma Community:**\nWhen you publish your app, Figma will review the listing and test the app's functionality, and at the end of the configuration flow, you'll submit your app and community listing for review by Figma. Once approved, your app will appear in the Figma Community.\n\nThe search results also include information about iOS app submissions and the general requirements for OAuth applications across different platforms, covering review processes, approval workflows, and publishing procedures.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "db1e9eab-09bc-468e-97cc-3f0fd64c6681",
+    "timestamp": "2026-09-16T14:48:39.011Z",
+    "tool_use_result": {
+     "query": "Front app store review approval publish OAuth application submission",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01KCs16jmg3mi9qW7VqnH4Zh",
+       "content": [
+        {
+         "title": "App review process and requirements for the Google Workspace Marketplace | Google for Developers",
+         "url": "https://developers.google.com/workspace/marketplace/about-app-review"
+        },
+        {
+         "title": "How to prepare app for submission … | Apple Developer Forums",
+         "url": "https://developer.apple.com/forums/thread/704836"
+        },
+        {
+         "title": "Overview of submitting for review - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+         "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review/"
+        },
+        {
+         "title": "Overview of publishing your app on the App Store - Manage your app's availability - App Store Connect - Help - Apple Developer",
+         "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app-on-the-app-store"
+        },
+        {
+         "title": "IOS app approvals",
+         "url": "https://en.wikipedia.org/wiki/IOS_app_approvals"
+        },
+        {
+         "title": "Submit an In-App Purchase - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+         "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-purchase/"
+        },
+        {
+         "title": "Submit an app - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+         "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app/"
+        },
+        {
+         "title": "How to Submit Your App to the App Store [ 2026 Best Guide ]",
+         "url": "https://premiumappdeveloper.com/how-to-submit-your-app-to-the-app-store/"
+        },
+        {
+         "title": "Apple App Store Submission Guide 2026: Step-by-Step Checklist With Screenshots",
+         "url": "https://gotechsolutions.co/blog/apple-app-store-submission-guide-2026/"
+        },
+        {
+         "title": "help.figma.com",
+         "url": "https://help.figma.com/hc/en-us/articles/35074258201495"
+        }
+       ]
+      },
+      "I've performed a web search for \"Front app store review approval publish OAuth application submission.\" The results show information about app store review processes from several major platforms:\n\n**Apple App Store:**\nTo submit your app for review to start the App Review process and make it available on the App Store, you need to complete all required metadata, and decide whether to release your app manually, automatically, or in phases. If the review team approves your app, it's automatically published and you receive a notification email.\n\n**Google Workspace Marketplace:**\nDevelopers submitting apps to the Google Workspace Marketplace must undergo a review process where the app's name, developer information, and description must be accurate and follow specific guidelines, and the app must be fully functional, bug-free, and offer a positive user experience.\n\n**Figma Community:**\nWhen you publish your app, Figma will review the listing and test the app's functionality, and at the end of the configuration flow, you'll submit your app and community listing for review by Figma. Once approved, your app will appear in the Figma Community.\n\nThe search results also include information about iOS app submissions and the general requirements for OAuth applications across different platforms, covering review processes, approval workflows, and publishing procedures."
+     ],
+     "durationSeconds": 6.367346300000001,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01KSBtwZ2oMHHb7Bo4EC7d5c",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front MCP server official Model Context Protocol\"\n\nLinks: [{\"title\":\"Frontify MCP | Frontify Knowledge Base\",\"url\":\"https://help.frontify.com/en/articles/14787214-frontify-mcp\"},{\"title\":\"Get started with Front's MCP server [beta]\",\"url\":\"https://help.front.com/en/articles/4883136\"},{\"title\":\"The Front MCP Server is here (beta) | Community\",\"url\":\"https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712\"},{\"title\":\"GitHub - modelcontextprotocol/servers: Model Context Protocol Servers · GitHub\",\"url\":\"https://github.com/modelcontextprotocol/servers\"},{\"title\":\"Model Context Protocol · GitHub\",\"url\":\"https://github.com/modelcontextprotocol\"},{\"title\":\"Model Context Protocol (MCP) explained: A practical technical overview for developers and architects\",\"url\":\"https://codilime.com/blog/model-context-protocol-explained/\"},{\"title\":\"Introducing the Model Context Protocol \\\\ Anthropic\",\"url\":\"https://www.anthropic.com/news/model-context-protocol\"},{\"title\":\"the model context protocol mcp 79ffd74da18f\",\"url\":\"https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f\"}]\n\nBased on the search results, here's what I found about the Front MCP server and the Model Context Protocol:\n\n## Front MCP Server\n\nMCP (Model Context Protocol) is an open standard that lets AI assistants connect to external tools, and the MCP server specifically enables external AI assistants to access a predetermined set of Front data and actions. With the Front MCP server, AI-powered tools like Claude, Cursor, Windsurf, and others can interact directly with your Front account and API documentation using natural language.\n\nThe feature is currently in open beta, with everyone having access, though bug fixes and improvements are still being worked on.\n\n## Model Context Protocol Overview\n\nThe Model Context Protocol is a new standard for connecting AI assistants to the systems where data lives, including content repositories, business tools, and development environments. It was published by Anthropic in November 2024 and is now maintained as an open-source specification on GitHub.\n\nMCP is an open standard that enables developers to build secure, two-way connections between their data sources and AI-powered tools, with a straightforward architecture where developers can either expose their data through MCP servers or build AI applications that connect to these servers.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "619dd2ae-18b3-4d6e-9371-4876097652a6",
+    "timestamp": "2026-09-16T14:48:39.420Z",
+    "tool_use_result": {
+     "query": "Front MCP server official Model Context Protocol",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01Lf7daKY97cGSfpWpYFoyw4",
+       "content": [
+        {
+         "title": "Frontify MCP | Frontify Knowledge Base",
+         "url": "https://help.frontify.com/en/articles/14787214-frontify-mcp"
+        },
+        {
+         "title": "Get started with Front's MCP server [beta]",
+         "url": "https://help.front.com/en/articles/4883136"
+        },
+        {
+         "title": "The Front MCP Server is here (beta) | Community",
+         "url": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712"
+        },
+        {
+         "title": "GitHub - modelcontextprotocol/servers: Model Context Protocol Servers · GitHub",
+         "url": "https://github.com/modelcontextprotocol/servers"
+        },
+        {
+         "title": "Model Context Protocol · GitHub",
+         "url": "https://github.com/modelcontextprotocol"
+        },
+        {
+         "title": "Model Context Protocol (MCP) explained: A practical technical overview for developers and architects",
+         "url": "https://codilime.com/blog/model-context-protocol-explained/"
+        },
+        {
+         "title": "Introducing the Model Context Protocol \\ Anthropic",
+         "url": "https://www.anthropic.com/news/model-context-protocol"
+        },
+        {
+         "title": "the model context protocol mcp 79ffd74da18f",
+         "url": "https://senoritadeveloper.medium.com/the-model-context-protocol-mcp-79ffd74da18f"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about the Front MCP server and the Model Context Protocol:\n\n## Front MCP Server\n\nMCP (Model Context Protocol) is an open standard that lets AI assistants connect to external tools, and the MCP server specifically enables external AI assistants to access a predetermined set of Front data and actions. With the Front MCP server, AI-powered tools like Claude, Cursor, Windsurf, and others can interact directly with your Front account and API documentation using natural language.\n\nThe feature is currently in open beta, with everyone having access, though bug fixes and improvements are still being worked on.\n\n## Model Context Protocol Overview\n\nThe Model Context Protocol is a new standard for connecting AI assistants to the systems where data lives, including content repositories, business tools, and development environments. It was published by Anthropic in November 2024 and is now maintained as an open-source specification on GitHub.\n\nMCP is an open standard that enables developers to build secure, two-way connections between their data sources and AI-powered tools, with a straightforward architecture where developers can either expose their data through MCP servers or build AI applications that connect to these servers."
+     ],
+     "durationSeconds": 6.400122599999999,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "966b7080-e731-424f-bc14-fa7dc27c7ff7"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 163,
+    "estimated_tokens_delta": 113,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "5b2fd89d-86e2-4f27-b151-1b94a7d54619"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWyA6CVt9WDrqJQ9oE",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EoQFCqgBCBEYAipA2MuWE1e1KdfDDhFQHfCIscB26fzMSYxrXsRl/kVvcC+vtdpJeF+oDyukum7vXfTuo7btB+ExRuSDR/iWACuoeTIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAcvYqtUGsAECEgwTdHfYcFNS40UcUzwaDIa+FlC/KtKVa9F1DiIwZqrk1NzwcpSZn8fvPTIFOgjDoaqg6xiywJ25fbvyaBD+RC/oMnO1rYssUUaWa4PeKogDIgl9K+esemNgE3ymWcJ685fafoW9EIgdkqMYTK3CZXnetYlsDdUk//nSOPH22mhVkn/nwzgJWDLIwS8tSqVG8zeUGvbkgbM1pOB44LfTZ9NM9p0rU2KY/KAbHZAtPRbrtBoF4d3c+ZHQLqzo7XjHdDhUs1rLMwjLINEA/VUoyuYLf6nxqu3mTHEMzErd7frabzPwKiArbkiXczI7nWPfZLQ2mt4ZrXBcMBs2sJkIZSc45s55hcWrdUxMK2tM4VsC9RqyHL1hqTKN05XMOTCThYIGe5kWG2xSsOUM5Y4p3LEoLdBhMJG4hk1pt5pf3ZCl6rcl6wJ7i02utRic8I88guu4hby73jxpOOMgPylOKLaICGAnjgjMuNumrsGeNlEvGKEPpv0A4pfWRTQQyGeXRVdqPf+5YOgi7IPZMetSj3flccOczZdXLL75qUhm4fcj9fUqD+KoNrjoVNx3cals/ky7itXjj1nE9QB8HQNqKSP/XvgcAHrI2I7yPVg8JdySSG338Leo1u8YAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2297,
+      "cache_read_input_tokens": 17940,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2297
+      },
+      "output_tokens": 10,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "a7f1c09f-2a04-4248-a574-408c0c16b941",
+    "timestamp": "2026-09-16T14:48:41.614Z",
+    "request_id": "req_011Cf7JWxhYafRovV3uQCG6R"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWyA6CVt9WDrqJQ9oE",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01KTsxnqur9tcddLU12vwQ8u",
+       "name": "WebFetch",
+       "input": {
+        "url": "https://dev.frontapp.com/docs/oauth",
+        "prompt": "Does Front require an app review or approval process before an OAuth app can be used in production with real customers? Describe the process for creating and publishing an OAuth app."
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2297,
+      "cache_read_input_tokens": 17940,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2297
+      },
+      "output_tokens": 10,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "ecff9747-a84b-4b41-8763-c78e48e60cb2",
+    "timestamp": "2026-09-16T14:48:42.585Z",
+    "request_id": "req_011Cf7JWxhYafRovV3uQCG6R",
+    "wire_tool_inputs": {
+     "toolu_01KTsxnqur9tcddLU12vwQ8u": {
+      "url": "https://dev.frontapp.com/docs/oauth",
+      "prompt": "Does Front require an app review or approval process before an OAuth app can be used in production with real customers? Describe the process for creating and publishing an OAuth app."
+     }
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JWyA6CVt9WDrqJQ9oE",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01UJEYLCcU61BGXvkVh9X8Vf",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front pricing plan API access included which plan"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2297,
+      "cache_read_input_tokens": 17940,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 2297
+      },
+      "output_tokens": 10,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "15f1e868-5022-4335-bc1a-2644243edfa5",
+    "timestamp": "2026-09-16T14:48:42.941Z",
+    "request_id": "req_011Cf7JWxhYafRovV3uQCG6R",
+    "wire_tool_inputs": {
+     "toolu_01UJEYLCcU61BGXvkVh9X8Vf": {
+      "query": "Front pricing plan API access included which plan"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "overageStatus": "rejected",
+     "overageDisabledReason": "org_level_disabled",
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.89,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.05,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "de7be66a-cb82-4280-9340-f412cca9d4cb",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.9,
+     "isUsingOverage": false,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.9,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "7f4ad70b-f572-4642-99ca-3b95fc51a5fb",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01KTsxnqur9tcddLU12vwQ8u",
+       "type": "tool_result",
+       "content": "# Front OAuth App Review and Publishing Process\n\nBased on the provided documentation, I cannot find specific information about an app review or approval process for OAuth applications before production use with real customers.\n\nThe documentation mentions that \"OAuth is required for public integrations available to all Front customers unless you obtain an exception from us\" and references a separate page on \"[Create, manage, and publish apps](https://dev.frontapp.com/docs/create-and-manage-apps#obtain-oauth-credentials-for-your-app)\" for details about obtaining OAuth credentials.\n\nTo get comprehensive information about Front's app review and publishing requirements, you would need to consult that linked documentation page. The current OAuth overview focuses on the technical implementation of the authorization flow rather than the operational approval process for bringing applications to production."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "8ec77a0e-6c70-4e13-b79f-cadfb223e55c",
+    "timestamp": "2026-09-16T14:48:46.887Z",
+    "tool_use_result": {
+     "bytes": 10730,
+     "code": 200,
+     "codeText": "OK",
+     "result": "# Front OAuth App Review and Publishing Process\n\nBased on the provided documentation, I cannot find specific information about an app review or approval process for OAuth applications before production use with real customers.\n\nThe documentation mentions that \"OAuth is required for public integrations available to all Front customers unless you obtain an exception from us\" and references a separate page on \"[Create, manage, and publish apps](https://dev.frontapp.com/docs/create-and-manage-apps#obtain-oauth-credentials-for-your-app)\" for details about obtaining OAuth credentials.\n\nTo get comprehensive information about Front's app review and publishing requirements, you would need to consult that linked documentation page. The current OAuth overview focuses on the technical implementation of the authorization flow rather than the operational approval process for bringing applications to production.",
+     "durationMs": 4298,
+     "url": "https://dev.frontapp.com/docs/oauth"
+    }
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01UJEYLCcU61BGXvkVh9X8Vf",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front pricing plan API access included which plan\"\n\nLinks: [{\"title\":\"Front Pricing 2026: Plans, Real Costs & What Teams Actually Pay\",\"url\":\"https://hiverhq.com/blog/front-pricing\"},{\"title\":\"Front Pricing 2026: Is It Worth It?\",\"url\":\"https://www.featurebase.app/blog/front-pricing\"},{\"title\":\"Front Pricing and Plans | Front\",\"url\":\"https://front.com/pricing\"},{\"title\":\"Front Pricing: How Much Does It Really Cost in 2026?\",\"url\":\"https://clearfeed.ai/blogs/front-pricing-guide\"},{\"title\":\"Front pricing in 2026: plans, AI add-ons, and real costs | eesel AI\",\"url\":\"https://www.eesel.ai/blog/front-pricing\"},{\"title\":\"Front Pricing 2026: Checking Plans, Add-ons & Real Costs | Chatarmin\",\"url\":\"https://chatarmin.com/en/blog/front-pricing\"},{\"title\":\"Front Pricing Explained (2026): Plans & Real Costs\",\"url\":\"https://www.getmacha.com/blog/front-pricing-explained\"},{\"title\":\"API Pricing Plans, Phases, and Rate Cards Explained - Zuplo\",\"url\":\"https://zuplo.com/blog/api-monetization-pricing-plans-phases\"},{\"title\":\"Front Pricing Plans Vs. Alternatives - Why 2.8/10? (Jun 2025) | ITQlick\",\"url\":\"https://www.itqlick.com/front/pricing\"}]\n\nBased on the search results, here's what I found about Front's API access across their pricing plans:\n\nFront includes API access on all plans, with usage limits based on the plan tier. Specifically:\n\n- **Starter plan**: Includes basic API access with standard rate limits\n- **Professional plan**: Higher API rate limits of 100 requests per minute\n- **Enterprise plan**: Higher API rate limits of 200 requests per minute\n\nIt's important to note that extra API capacity can be billed separately from the subscription. API rate-limit increases cost roughly $200 per additional 100 API requests/minute per month for high-volume integrations.\n\nSo to directly answer your question: API access is included in **all Front plans** (Starter, Professional, and Enterprise), but the rate limits vary by plan, and you can purchase additional API capacity as an add-on if needed.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "58bd9908-78f3-4b2a-b888-6f27479d664e",
+    "timestamp": "2026-09-16T14:48:47.996Z",
+    "tool_use_result": {
+     "query": "Front pricing plan API access included which plan",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_018yyrDMzTeJJGCYxjEZWQPj",
+       "content": [
+        {
+         "title": "Front Pricing 2026: Plans, Real Costs & What Teams Actually Pay",
+         "url": "https://hiverhq.com/blog/front-pricing"
+        },
+        {
+         "title": "Front Pricing 2026: Is It Worth It?",
+         "url": "https://www.featurebase.app/blog/front-pricing"
+        },
+        {
+         "title": "Front Pricing and Plans | Front",
+         "url": "https://front.com/pricing"
+        },
+        {
+         "title": "Front Pricing: How Much Does It Really Cost in 2026?",
+         "url": "https://clearfeed.ai/blogs/front-pricing-guide"
+        },
+        {
+         "title": "Front pricing in 2026: plans, AI add-ons, and real costs | eesel AI",
+         "url": "https://www.eesel.ai/blog/front-pricing"
+        },
+        {
+         "title": "Front Pricing 2026: Checking Plans, Add-ons & Real Costs | Chatarmin",
+         "url": "https://chatarmin.com/en/blog/front-pricing"
+        },
+        {
+         "title": "Front Pricing Explained (2026): Plans & Real Costs",
+         "url": "https://www.getmacha.com/blog/front-pricing-explained"
+        },
+        {
+         "title": "API Pricing Plans, Phases, and Rate Cards Explained - Zuplo",
+         "url": "https://zuplo.com/blog/api-monetization-pricing-plans-phases"
+        },
+        {
+         "title": "Front Pricing Plans Vs. Alternatives - Why 2.8/10? (Jun 2025) | ITQlick",
+         "url": "https://www.itqlick.com/front/pricing"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about Front's API access across their pricing plans:\n\nFront includes API access on all plans, with usage limits based on the plan tier. Specifically:\n\n- **Starter plan**: Includes basic API access with standard rate limits\n- **Professional plan**: Higher API rate limits of 100 requests per minute\n- **Enterprise plan**: Higher API rate limits of 200 requests per minute\n\nIt's important to note that extra API capacity can be billed separately from the subscription. API rate-limit increases cost roughly $200 per additional 100 API requests/minute per month for high-volume integrations.\n\nSo to directly answer your question: API access is included in **all Front plans** (Starter, Professional, and Enterprise), but the rate limits vary by plan, and you can purchase additional API capacity as an add-on if needed."
+     ],
+     "durationSeconds": 5.048215199999999,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "06c8548c-5538-4b55-85d4-4f947065b376"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 112,
+    "estimated_tokens_delta": 62,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "f6288f6f-0687-45c8-abac-6631e00a025e"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JXc1P4YH7R9UvuQJtp",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "ErgDCqgBCBEYAipATHbzb59hURglP/O4q+BCORM7SINtkgwpsMCLD/KW51NB95IMK+el6PQ6oon0Ukj4n1GeXdncALuzKYw6aZMOvzIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAdPYqtUGsAECEgz+lnWirf7Tj5XoXeYaDO8PB34p+hqla80MxiIwyZvVvQr/3UUAARI03OnzF7taGRmqX2XthVeFhHEFWhja/nzhdecXa/ekVax17+E3KrwBbscQdZ1dw5dpC44TjYo1B4zIpLHeF50MPOlAeOIsuQ/mDBKAD5rDX9oPCTeuGMFUW7iHFApkDAs0PBRgI8OMITS7aDucWug6tdgIFoWnhJXG44itjji6fC6scIwBcB9VJ4YzhOMJToGmrOzUoKIoi9k39SL8y2wOJ+x5//nQKPna6cAClxMVm2NzqJyAIC2EpMjYfCqP8vdyevJn1VZ38jwM0tEo0bDct8MPJq7IIopNgzFOR2Xbk+y88eEYAQ=="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1525,
+      "cache_read_input_tokens": 20237,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1525
+      },
+      "output_tokens": 4,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "d837f2cc-95ba-4e98-b967-f986ef7fdda5",
+    "timestamp": "2026-09-16T14:48:50.135Z",
+    "request_id": "req_011Cf7JXbRA2Y7fCFpf4YVy4"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JXc1P4YH7R9UvuQJtp",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01WbACSwb7utWswKv5EwXsEo",
+       "name": "WebFetch",
+       "input": {
+        "url": "https://dev.frontapp.com/docs/create-and-manage-apps",
+        "prompt": "Describe the process to obtain OAuth credentials and publish an app to production, including any Front review/approval step required before other companies can install the app."
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1525,
+      "cache_read_input_tokens": 20237,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1525
+      },
+      "output_tokens": 4,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "7ec896c3-4a5c-41a7-94ef-5db4a4f49cc9",
+    "timestamp": "2026-09-16T14:48:51.280Z",
+    "request_id": "req_011Cf7JXbRA2Y7fCFpf4YVy4",
+    "wire_tool_inputs": {
+     "toolu_01WbACSwb7utWswKv5EwXsEo": {
+      "url": "https://dev.frontapp.com/docs/create-and-manage-apps",
+      "prompt": "Describe the process to obtain OAuth credentials and publish an app to production, including any Front review/approval step required before other companies can install the app."
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.9,
+     "isUsingOverage": false,
+     "surpassedThreshold": 0.9,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.9,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "e313f580-e376-47a1-9bda-c259faca89b2",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01WbACSwb7utWswKv5EwXsEo",
+       "type": "tool_result",
+       "content": "# Obtaining OAuth Credentials and Publishing to Production\n\n## Getting OAuth Credentials\n\nTo obtain OAuth credentials for your app:\n\n1. Navigate to your app's **Features** tab\n2. Click **Add feature** → **OAuth** → **Enable OAuth**\n3. Note your **Client ID** and **Client secret**\n4. Add redirect URLs by clicking **Add Redirect URL** (you can add multiple)\n5. Configure the specific features, namespaces, and permissions your token requires\n\nAccording to the documentation, \"Front recommends that you implement OAuth for apps that need to fetch or update data from Front on behalf of a Front user.\"\n\n## Publishing to Production\n\nThe publication process involves:\n\n1. **Create and test your app privately** - Apps are private by default within your Front instance\n2. **Contact Front's partnership team** - As stated: \"To publish your app, notify our team as described in the Partnering with Front topic\"\n3. **Await Front approval** - The documentation notes \"Once your app is published to all customers, you cannot make direct changes to it\"\n\nThe documentation indicates there is a review step managed through email communication with Front's team, though specific approval criteria aren't detailed in this content. Once approved, your app displays in the App Store and on Front's integration website.\n\n**Important note:** OAuth becomes mandatory for published apps that use the Core API or webhooks for customer data."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "fe0a5ef9-071e-4ac4-bbee-c0320f30dc2e",
+    "timestamp": "2026-09-16T14:48:56.769Z",
+    "tool_use_result": {
+     "bytes": 34934,
+     "code": 200,
+     "codeText": "OK",
+     "result": "# Obtaining OAuth Credentials and Publishing to Production\n\n## Getting OAuth Credentials\n\nTo obtain OAuth credentials for your app:\n\n1. Navigate to your app's **Features** tab\n2. Click **Add feature** → **OAuth** → **Enable OAuth**\n3. Note your **Client ID** and **Client secret**\n4. Add redirect URLs by clicking **Add Redirect URL** (you can add multiple)\n5. Configure the specific features, namespaces, and permissions your token requires\n\nAccording to the documentation, \"Front recommends that you implement OAuth for apps that need to fetch or update data from Front on behalf of a Front user.\"\n\n## Publishing to Production\n\nThe publication process involves:\n\n1. **Create and test your app privately** - Apps are private by default within your Front instance\n2. **Contact Front's partnership team** - As stated: \"To publish your app, notify our team as described in the Partnering with Front topic\"\n3. **Await Front approval** - The documentation notes \"Once your app is published to all customers, you cannot make direct changes to it\"\n\nThe documentation indicates there is a review step managed through email communication with Front's team, though specific approval criteria aren't detailed in this content. Once approved, your app displays in the App Store and on Front's integration website.\n\n**Important note:** OAuth becomes mandatory for published apps that use the Core API or webhooks for customer data.",
+     "durationMs": 5484,
+     "url": "https://dev.frontapp.com/docs/create-and-manage-apps"
+    }
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 50,
+    "estimated_tokens_delta": 50,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "15f2b329-07ba-4d61-acc2-6f8be873cdff"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 150,
+    "estimated_tokens_delta": 100,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "4dabcb8a-c013-401c-a8bd-be06ad4d27da"
+   },
+   {
+    "type": "system",
+    "subtype": "thinking_tokens",
+    "estimated_tokens": 231,
+    "estimated_tokens_delta": 81,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "908f3e64-c2ca-4d32-86cd-9d0bc94805c4"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JYFReuEZt6dwUzWNvu",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "thinking",
+       "thinking": "",
+       "signature": "EpYHCqgBCBEYAipA3l9g4/U7k3ewH+XozqxpNAvkJtNHt0Y8iXSbT/TzWKNgdjuHtuhTv2HvH4EVMt6yIzenPGgTZCEWK0OH44zgsjIPY2xhdWRlLXNvbm5ldC01OABCCHRoaW5raW5nWiRmMjk4MjkyMS04NjUxLTRjNWQtOWI5My04ZGExYjNiNDRiYWFyENDXheYtRIVesnIMgKblogmIAQGoAd7YqtUGsAECEgzLnpOBzusFJRIZBuMaDMd/NxnRIZ5ZSRtO4SIw9KZuJJUQIO2WIbb6BQB18BohkMwfztOVvKx9csCMNOjTT1M926A30cLPpm9hUGz9KpoFj6pdVYoaRL5dW3kIlJZliVbvj8M3e+QXjTLC2IKKYO1zwesLRSnPE6QDDZzTvpryMZI8p4HOsy1eQT6lvqZ4azLcWQ4li8FvFwkyg1CL/Woam0ASsVzG3seu20SctiKB8tpjUb8YWOHrCrGLpoPelQhidbnL7Tfv3SCsN0vqt/+MXkk1xUKN7PI+MnMGwrw9fPPIc2NtWslQdWRM+9XFyeUBwWEk+ZV+D/naZhQLdEEV2r0ywImRqkLQRXlojVxzfygY3BUe+7D4oiGiO/t7+dak01mf/aEfjangVKYQaRPtX7zm+w/bV1/hu8D9ZSThMWI0Ff81g3RSoMa1yYbuuwGDSdJD5Lr3smLMjpT6rIEZwiI8B57e068Ejr9YTMzyPQuK8FbLzlsx2oZIdusI2PiQn8CKrINM+2thUOTvHgAqE78iBTLZjtFlySx2EGUHaTGxhu6vKYZvwCSPT+IIdwk/d7UR09mJ8NJSYNLjsLPqid/cq/7rs0/OwLpz11u4fXl5SBVstIW6dSqWk4o892BOOq17PS36dMesxW17LeAiUKiATitpTtjhtyczuhPcHPZ+77gzlrgjHqS9mDLlMJFkgsDeYHduzFLnen7nmfYnIEjExAr2/Qil/T8R0OhJqTTdSXdpYrMo2Rq7ZHETKqRdx/HDCNr0xlKVsLly9x5HXzgzt6EJh8/rALcW2SHUyKK2hUaYhRTRuIdMF9WjaBFkMvdaHyxp0e2+cCDFHCyPqJVXMJV3Tf3rHZZlNBamKGR47y5/5mc2HWvFvMM3GE26fyhlii5k5Bgmeffep6VVI/uMdRK8dplL1vuSlMPO+9uDJMhOUPummVUxOvrigaqdVwlrH+0qe6tewbikhLAZ7Zh1Qls7gEMYGAE="
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 692,
+      "cache_read_input_tokens": 21762,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 692
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "74f5bc50-db47-454a-8120-6092305576fb",
+    "timestamp": "2026-09-16T14:49:00.330Z",
+    "request_id": "req_011Cf7JYEvtWHknGheT8Mtw9"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JYFReuEZt6dwUzWNvu",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01AZCHzCnDMwyNZLtfrT5YQ3",
+       "name": "WebSearch",
+       "input": {
+        "query": "Front free trial sandbox developer test account signup"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 692,
+      "cache_read_input_tokens": 21762,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 692
+      },
+      "output_tokens": 2,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "5f563a8d-b017-4bd5-8656-33f672015ba5",
+    "timestamp": "2026-09-16T14:49:00.658Z",
+    "request_id": "req_011Cf7JYEvtWHknGheT8Mtw9",
+    "wire_tool_inputs": {
+     "toolu_01AZCHzCnDMwyNZLtfrT5YQ3": {
+      "query": "Front free trial sandbox developer test account signup"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.91,
+     "isUsingOverage": false,
+     "surpassedThreshold": 0.9,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.91,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "e9f3efaf-be01-42fd-9163-6860b59b7873",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01AZCHzCnDMwyNZLtfrT5YQ3",
+       "type": "tool_result",
+       "content": "Web search results for query: \"Front free trial sandbox developer test account signup\"\n\nLinks: [{\"title\":\"Sign Up - Get Your Free Sandbox - Chargebee\",\"url\":\"https://www.chargebee.com/trial-signup/\"},{\"title\":\"Front | Free Trial\",\"url\":\"https://front.com/signup\"},{\"title\":\"Developer Sandbox Accounts\",\"url\":\"https://developers.activecampaign.com/page/developer-sandbox-accounts\"},{\"title\":\"Create a Microsoft Entra developer tenant - Microsoft Entra Verified ID | Microsoft Learn\",\"url\":\"https://learn.microsoft.com/en-us/entra/verified-id/how-to-create-a-free-developer-account\"},{\"title\":\"Can I have a free trial of a Salesforce Sandbox?\",\"url\":\"https://help.salesforce.com/s/articleView?id=000372531&language=en_US&type=3\"},{\"title\":\"Developer Sandbox | Red Hat Developer\",\"url\":\"https://developers.redhat.com/developer-sandbox\"},{\"title\":\"How to qualify for free 365 developer sandbox subscription?\",\"url\":\"https://learn.microsoft.com/en-gb/answers/questions/2108644/how-to-qualify-for-free-365-developer-sandbox-subs\"},{\"title\":\"Can I apply a free AEP trial or sandbox? | Community\",\"url\":\"https://experienceleaguecommunities-beta.adobe.com/adobe-experience-platform-18/can-i-apply-a-free-aep-trial-or-sandbox-111298\"},{\"title\":\"experienceleaguecommunities.adobe.com\",\"url\":\"https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/can-i-apply-a-free-aep-trial-or-sandbox/m-p/782604\"},{\"title\":\"marketplace.gohighlevel.com\",\"url\":\"https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount\"}]\n\nBased on the search results, here's what I found:\n\n## Front Free Trial\n\nFront offers a free trial where you can \"Sign up today and try Front for free.\" You can access the signup page at front.com/signup.\n\n## Other Developer Sandbox Options\n\nThe search results also returned information about sandbox and trial accounts for other platforms:\n\n- **ActiveCampaign**: To request a Developer Sandbox Account, you need to fill out their request form. Developer Sandbox Accounts are free and expire two years from their creation date.\n\n- **HighLevel**: A Sandbox account is a non-production HighLevel environment created for Marketplace developers to build, test, and validate apps and integrations without affecting production systems or customer data.\n\n- **Microsoft 365 Developer Program**: You can join the Microsoft 365 Developer Program to get a sandbox tenant with E5 licenses, configured users, groups, and mailboxes.\n\nIf you're specifically looking for Front's developer sandbox or API documentation, you may want to visit their developer portal or contact their support team directly for more detailed information.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "5e51d9ee-6e17-439b-a3a9-2584d5453259",
+    "timestamp": "2026-09-16T14:49:06.240Z",
+    "tool_use_result": {
+     "query": "Front free trial sandbox developer test account signup",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01B5dgDXGrnZELRpfyE8PdiW",
+       "content": [
+        {
+         "title": "Sign Up - Get Your Free Sandbox - Chargebee",
+         "url": "https://www.chargebee.com/trial-signup/"
+        },
+        {
+         "title": "Front | Free Trial",
+         "url": "https://front.com/signup"
+        },
+        {
+         "title": "Developer Sandbox Accounts",
+         "url": "https://developers.activecampaign.com/page/developer-sandbox-accounts"
+        },
+        {
+         "title": "Create a Microsoft Entra developer tenant - Microsoft Entra Verified ID | Microsoft Learn",
+         "url": "https://learn.microsoft.com/en-us/entra/verified-id/how-to-create-a-free-developer-account"
+        },
+        {
+         "title": "Can I have a free trial of a Salesforce Sandbox?",
+         "url": "https://help.salesforce.com/s/articleView?id=000372531&language=en_US&type=3"
+        },
+        {
+         "title": "Developer Sandbox | Red Hat Developer",
+         "url": "https://developers.redhat.com/developer-sandbox"
+        },
+        {
+         "title": "How to qualify for free 365 developer sandbox subscription?",
+         "url": "https://learn.microsoft.com/en-gb/answers/questions/2108644/how-to-qualify-for-free-365-developer-sandbox-subs"
+        },
+        {
+         "title": "Can I apply a free AEP trial or sandbox? | Community",
+         "url": "https://experienceleaguecommunities-beta.adobe.com/adobe-experience-platform-18/can-i-apply-a-free-aep-trial-or-sandbox-111298"
+        },
+        {
+         "title": "experienceleaguecommunities.adobe.com",
+         "url": "https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/can-i-apply-a-free-aep-trial-or-sandbox/m-p/782604"
+        },
+        {
+         "title": "marketplace.gohighlevel.com",
+         "url": "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found:\n\n## Front Free Trial\n\nFront offers a free trial where you can \"Sign up today and try Front for free.\" You can access the signup page at front.com/signup.\n\n## Other Developer Sandbox Options\n\nThe search results also returned information about sandbox and trial accounts for other platforms:\n\n- **ActiveCampaign**: To request a Developer Sandbox Account, you need to fill out their request form. Developer Sandbox Accounts are free and expire two years from their creation date.\n\n- **HighLevel**: A Sandbox account is a non-production HighLevel environment created for Marketplace developers to build, test, and validate apps and integrations without affecting production systems or customer data.\n\n- **Microsoft 365 Developer Program**: You can join the Microsoft 365 Developer Program to get a sandbox tenant with E5 licenses, configured users, groups, and mailboxes.\n\nIf you're specifically looking for Front's developer sandbox or API documentation, you may want to visit their developer portal or contact their support team directly for more detailed information."
+     ],
+     "durationSeconds": 5.579548500000004,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JYwUvoJBGsKcvm1Sg3",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text",
+       "text": "Front offers a free trial (front.com/signup), confirmed via vendor page. I have sufficient info now to compile the answer."
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1394,
+      "cache_read_input_tokens": 22454,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1394
+      },
+      "output_tokens": 9,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "1428243a-be86-4477-894e-74cb30df8948",
+    "timestamp": "2026-09-16T14:49:07.724Z",
+    "request_id": "req_011Cf7JYwBpkRc2Vmzd4xJFv"
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JYwUvoJBGsKcvm1Sg3",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "tool_use",
+       "id": "toolu_01DcdyK7Der1rcXr1CUJZ16f",
+       "name": "WebSearch",
+       "input": {
+        "query": "\"dev.frontapp.com\" \"Getting Started with the Core API\" contacts conversations messages tags endpoints"
+       },
+       "caller": {
+        "type": "direct"
+       }
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1394,
+      "cache_read_input_tokens": 22454,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1394
+      },
+      "output_tokens": 9,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "f7b7cacc-711e-4cd1-9b27-64e79f00ede1",
+    "timestamp": "2026-09-16T14:49:08.017Z",
+    "request_id": "req_011Cf7JYwBpkRc2Vmzd4xJFv",
+    "wire_tool_inputs": {
+     "toolu_01DcdyK7Der1rcXr1CUJZ16f": {
+      "query": "\"dev.frontapp.com\" \"Getting Started with the Core API\" contacts conversations messages tags endpoints"
+     }
+    }
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.92,
+     "isUsingOverage": false,
+     "surpassedThreshold": 0.9,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.92,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "69950bda-c6d5-4c91-9721-80903af557cd",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.93,
+     "isUsingOverage": false,
+     "surpassedThreshold": 0.9,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.93,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "ff894144-4516-4511-89cf-1e283cd581e3",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "type": "user",
+    "message": {
+     "role": "user",
+     "content": [
+      {
+       "tool_use_id": "toolu_01DcdyK7Der1rcXr1CUJZ16f",
+       "type": "tool_result",
+       "content": "Web search results for query: \"\"dev.frontapp.com\" \"Getting Started with the Core API\" contacts conversations messages tags endpoints\"\n\nLinks: [{\"title\":\"Front API Explained (Auth, Rate Limits & Core Endpoints)\",\"url\":\"https://www.getmacha.com/blog/front-api-explained\"},{\"title\":\"Overview\",\"url\":\"https://dev.frontapp.com/docs/core-api-overview\"},{\"title\":\"Conversations\",\"url\":\"https://dev.frontapp.com/reference/conversations\"},{\"title\":\"Getting Started with the Core API\",\"url\":\"https://dev.frontapp.com/docs/core-api-getting-started\"},{\"title\":\"Sample Applications\",\"url\":\"https://dev.frontapp.com/docs/sample-application\"},{\"title\":\"Authentication\",\"url\":\"https://dev.frontapp.com/docs/authentication\"},{\"title\":\"Introduction\",\"url\":\"https://dev.frontapp.com/reference/introduction\"},{\"title\":\"Messages\",\"url\":\"https://dev.frontapp.com/reference/messages\"},{\"title\":\"# Complete Frontapp API Endpoints Reference\",\"url\":\"https://glama.ai/mcp/servers/@zqushair/Frontapp-MCP/blob/d272bbdb9a3570f3752add5d5a28091314fabe2d/FRONTAPP_API_ENDPOINTS.md\"}]\n\nBased on the search results, here's what I found about the dev.frontapp.com documentation for \"Getting Started with the Core API\" and the related endpoints:\n\n## Getting Started with the Core API\n\nThe tutorial demonstrates a simple use case for the Core API where you will create a contact via the API, and then update the contact you created. A contact in Front is a person or entity with whom you can communicate with via any supported Front channel (email, phone, social media, etc.). After completing this tutorial, you will be ready to build your own integration using the Core API endpoints.\n\n## Core Endpoints\n\nThe search results reference several key endpoint categories:\n\n**Contacts**: You can create and update the people (and their handles) your conversations are with; the natural sync point between Front and your CRM.\n\n**Conversations**: A conversation is a unique thread of messages that can appear in one or more inboxes (eg: if you receive an email on contact@ where support@ is CC'd).\n\n**Messages**: A message is a resource which can be either received or sent via an inbox and messages are grouped by conversations. A message can be either inbound (received) or outbound (sent).\n\n**Tags**: Tags round out the surface for routing, internal notes, and reporting.\n\nYou can use your own custom logic to assign messages, update contact info, manage user access, and auto-tag conversations.\n\n\nREMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks."
+      }
+     ]
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "cd0bb6bd-9a43-4e92-a54e-2b1b8c973cd0",
+    "timestamp": "2026-09-16T14:49:15.950Z",
+    "tool_use_result": {
+     "query": "\"dev.frontapp.com\" \"Getting Started with the Core API\" contacts conversations messages tags endpoints",
+     "results": [
+      {
+       "tool_use_id": "srvtoolu_01BMiWhC7ahUSyToUE5ArSiG",
+       "content": [
+        {
+         "title": "Front API Explained (Auth, Rate Limits & Core Endpoints)",
+         "url": "https://www.getmacha.com/blog/front-api-explained"
+        },
+        {
+         "title": "Overview",
+         "url": "https://dev.frontapp.com/docs/core-api-overview"
+        },
+        {
+         "title": "Conversations",
+         "url": "https://dev.frontapp.com/reference/conversations"
+        },
+        {
+         "title": "Getting Started with the Core API",
+         "url": "https://dev.frontapp.com/docs/core-api-getting-started"
+        },
+        {
+         "title": "Sample Applications",
+         "url": "https://dev.frontapp.com/docs/sample-application"
+        },
+        {
+         "title": "Authentication",
+         "url": "https://dev.frontapp.com/docs/authentication"
+        },
+        {
+         "title": "Introduction",
+         "url": "https://dev.frontapp.com/reference/introduction"
+        },
+        {
+         "title": "Messages",
+         "url": "https://dev.frontapp.com/reference/messages"
+        },
+        {
+         "title": "# Complete Frontapp API Endpoints Reference",
+         "url": "https://glama.ai/mcp/servers/@zqushair/Frontapp-MCP/blob/d272bbdb9a3570f3752add5d5a28091314fabe2d/FRONTAPP_API_ENDPOINTS.md"
+        }
+       ]
+      },
+      "Based on the search results, here's what I found about the dev.frontapp.com documentation for \"Getting Started with the Core API\" and the related endpoints:\n\n## Getting Started with the Core API\n\nThe tutorial demonstrates a simple use case for the Core API where you will create a contact via the API, and then update the contact you created. A contact in Front is a person or entity with whom you can communicate with via any supported Front channel (email, phone, social media, etc.). After completing this tutorial, you will be ready to build your own integration using the Core API endpoints.\n\n## Core Endpoints\n\nThe search results reference several key endpoint categories:\n\n**Contacts**: You can create and update the people (and their handles) your conversations are with; the natural sync point between Front and your CRM.\n\n**Conversations**: A conversation is a unique thread of messages that can appear in one or more inboxes (eg: if you receive an email on contact@ where support@ is CC'd).\n\n**Messages**: A message is a resource which can be either received or sent via an inbox and messages are grouped by conversations. A message can be either inbound (received) or outbound (sent).\n\n**Tags**: Tags round out the surface for routing, internal notes, and reporting.\n\nYou can use your own custom logic to assign messages, update contact info, manage user access, and auto-tag conversations."
+     ],
+     "durationSeconds": 7.9244801,
+     "searchCount": 1
+    }
+   },
+   {
+    "type": "assistant",
+    "message": {
+     "model": "claude-sonnet-5",
+     "id": "msg_011Cf7JZfUJQNUfYgfmGesBT",
+     "type": "message",
+     "role": "assistant",
+     "content": [
+      {
+       "type": "text",
+       "text": "Confirmed broad API breadth (Contacts, Conversations, Messages, Tags, Inboxes, Teammates, Comments, Channels, Webhooks). Now compiling final JSON.\n\n```json\n{\n  \"one_liner\": {\"value\": \"Front is a customer communication/helpdesk hub for shared inboxes and support workflows.\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/core-api-overview\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"bearer_token\"], \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/authentication\"},\n  \"access_path\": {\"value\": \"app_review_required\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/create-and-manage-apps\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/core-api-overview\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://help.front.com/en/articles/4883136\"},\n  \"base_url_model\": {\"value\": \"fixed\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/fundamentals\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/welcome\"},\n  \"test_account\": {\"value\": \"trial_only\", \"confidence\": \"med\", \"source_url\": \"https://front.com/signup\"},\n  \"main_blocker\": {\"value\": \"API tokens work self-serve for single-account use, but publishing an OAuth app for other customers requires contacting Front's partnership team for review/approval.\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/create-and-manage-apps\"},\n  \"docs_url\": {\"value\": \"https://dev.frontapp.com/reference/introduction\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"}\n}\n```"
+      }
+     ],
+     "container": null,
+     "stop_reason": null,
+     "stop_sequence": null,
+     "stop_details": null,
+     "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1089,
+      "cache_read_input_tokens": 23848,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 1089
+      },
+      "output_tokens": 9,
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+     },
+     "diagnostics": null,
+     "context_management": null
+    },
+    "parent_tool_use_id": null,
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "uuid": "754d8b41-a51d-42a9-be53-f41cae88233a",
+    "timestamp": "2026-09-16T14:49:21.961Z",
+    "request_id": "req_011Cf7JZf2W2jg7o42ZgcWjh"
+   },
+   {
+    "type": "rate_limit_event",
+    "rate_limit_info": {
+     "status": "allowed_warning",
+     "resetsAt": 1789585200,
+     "rateLimitType": "five_hour",
+     "utilization": 0.94,
+     "isUsingOverage": false,
+     "surpassedThreshold": 0.9,
+     "unifiedWindows": {
+      "five_hour": {
+       "utilization": 0.94,
+       "resetsAt": 1789585200
+      },
+      "seven_day": {
+       "utilization": 0.06,
+       "resetsAt": 1789855200
+      }
+     }
+    },
+    "uuid": "79dbca4c-c06d-484c-8dbc-e728550e99a6",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb"
+   },
+   {
+    "duration_api_ms": 80643,
+    "stop_reason": "end_turn",
+    "session_id": "269a2c6d-6041-4df5-861e-550429978ccb",
+    "total_cost_usd": 0.2776628,
+    "usage": {
+     "input_tokens": 16,
+     "cache_creation_input_tokens": 12630,
+     "cache_read_input_tokens": 148904,
+     "output_tokens": 2147,
+     "output_tokens_details": {
+      "thinking_tokens": 480
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 12630,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 806,
+       "cache_read_input_tokens": 23848,
+       "cache_creation_input_tokens": 1089,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1089
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "modelUsage": {
+     "claude-haiku-4-5-20251001": {
+      "inputTokens": 88840,
+      "outputTokens": 3404,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 7,
+      "costUSD": 0.17586000000000002,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 0,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     },
+     "claude-sonnet-5": {
+      "inputTokens": 16,
+      "outputTokens": 2147,
+      "cacheReadInputTokens": 148904,
+      "cacheCreationInputTokens": 12630,
+      "webSearchRequests": 0,
+      "costUSD": 0.1018028,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 480,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+     }
+    },
+    "permission_denials": [],
+    "terminal_reason": "completed",
+    "fast_mode_state": "off",
+    "fast_mode_disabled_reason": "sdk_opt_in_required",
+    "subagent_stats": {
+     "spawned": 0,
+     "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+     },
+     "started_in_background": 0,
+     "max_depth": 0,
+     "spawned_by_subagents": 0,
+     "completed": 0,
+     "failed": 0,
+     "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+     },
+     "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+     },
+     "by_type": {}
+    },
+    "is_error": false,
+    "num_turns": 11,
+    "subtype": "success",
+    "api_error_status": null,
+    "result": "Confirmed broad API breadth (Contacts, Conversations, Messages, Tags, Inboxes, Teammates, Comments, Channels, Webhooks). Now compiling final JSON.\n\n```json\n{\n  \"one_liner\": {\"value\": \"Front is a customer communication/helpdesk hub for shared inboxes and support workflows.\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/core-api-overview\"},\n  \"auth_methods\": {\"value\": [\"oauth2\", \"bearer_token\"], \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/authentication\"},\n  \"access_path\": {\"value\": \"app_review_required\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/create-and-manage-apps\"},\n  \"api_type\": {\"value\": \"rest\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"},\n  \"api_breadth\": {\"value\": \"broad\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/core-api-overview\"},\n  \"official_mcp\": {\"value\": \"official\", \"confidence\": \"high\", \"source_url\": \"https://help.front.com/en/articles/4883136\"},\n  \"base_url_model\": {\"value\": \"fixed\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/fundamentals\"},\n  \"toolkit_bucket\": {\"value\": \"remote_api_toolkit\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"},\n  \"docs_quality\": {\"value\": \"full_public_reference\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/welcome\"},\n  \"test_account\": {\"value\": \"trial_only\", \"confidence\": \"med\", \"source_url\": \"https://front.com/signup\"},\n  \"main_blocker\": {\"value\": \"API tokens work self-serve for single-account use, but publishing an OAuth app for other customers requires contacting Front's partnership team for review/approval.\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/docs/create-and-manage-apps\"},\n  \"docs_url\": {\"value\": \"https://dev.frontapp.com/reference/introduction\", \"confidence\": \"high\", \"source_url\": \"https://dev.frontapp.com/reference/introduction\"}\n}\n```",
+    "ttft_ms": 1530,
+    "type": "result",
+    "duration_ms": 63201,
+    "uuid": "94eb68cd-d199-442f-8f40-04f85de1d882",
+    "ttft_stream_ms": 1018,
+    "time_to_request_ms": 56,
+    "first_content_frame_ms": 1019,
+    "queued_turn_count": 0,
+    "result_index": 0
+   }
+  ],
+  "backend": "claude_cli",
+  "model": "sonnet"
+ }
+}

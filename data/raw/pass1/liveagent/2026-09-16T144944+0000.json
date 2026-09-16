@@ -1,0 +1,120 @@
+{
+ "id": 16,
+ "slug": "liveagent",
+ "name": "LiveAgent",
+ "pass": "pass1",
+ "model": "sonnet",
+ "researched_at": "2026-09-16T14:49:44+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Cloud helpdesk/ticketing, live chat, and call center software for customer support teams.",
+   "confidence": "high",
+   "source_url": "https://www.liveagent.com/features/api/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2",
+    "bearer_token"
+   ],
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/741982-API-key"
+  },
+  "access_path": {
+   "value": "paid_plan_required",
+   "confidence": "med",
+   "source_url": "https://support.liveagent.com/629047-Limitations-of-different-subscription-plans"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/802463-REST-API"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/840770-Complete-API-reference"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+  },
+  "base_url_model": {
+   "value": "per_tenant_subdomain",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/066804-LiveAgent-API"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/802463-REST-API"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "med",
+   "source_url": "https://support.liveagent.com/840770-Complete-API-reference"
+  },
+  "test_account": {
+   "value": "trial_only",
+   "confidence": "med",
+   "source_url": "https://www.liveagent.com/trial/"
+  },
+  "main_blocker": {
+   "value": "The full interactive APIv3 reference is only viewable inside a logged-in account (Config > System > API), and production API access requires a paid plan or the 30-day trial rather than the free plan, which excludes integrations/automation.",
+   "confidence": "med",
+   "source_url": "https://support.liveagent.com/629047-Limitations-of-different-subscription-plans"
+  },
+  "docs_url": {
+   "value": "https://support.liveagent.com/802463-REST-API",
+   "confidence": "high",
+   "source_url": "https://support.liveagent.com/802463-REST-API"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://apitracker.io/a/liveagent",
+  "https://docs.cognigy.com/live-agent/api",
+  "https://en.wikipedia.org/wiki/API_key",
+  "https://en.wikipedia.org/wiki/Live_Connect",
+  "https://faq.liveagent.com/233241-Does-LiveAgent-offer-a-Free-plan",
+  "https://faq.liveagent.com/575658-API?r=1",
+  "https://github.com/QualityUnit/liveagent-mcp-server",
+  "https://github.com/pavolbiely/liveagent",
+  "https://help.simplesat.io/en/articles/6302178-liveagent-integrations",
+  "https://support.liveagent.com/066804-LiveAgent-API",
+  "https://support.liveagent.com/167733-Documentation",
+  "https://support.liveagent.com/567924-Documentation--examples",
+  "https://support.liveagent.com/578762-MCP-Tools-Reference",
+  "https://support.liveagent.com/629047-Limitations-of-different-subscription-plans",
+  "https://support.liveagent.com/642739-API-v1",
+  "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+  "https://support.liveagent.com/741982-API-key",
+  "https://support.liveagent.com/741982-API-key?r=1",
+  "https://support.liveagent.com/802463-REST-API",
+  "https://support.liveagent.com/840770-Complete-API-reference",
+  "https://support.liveagent.com/979899-Getting-Started",
+  "https://tekpon.com/deals/liveagent-free-trial/",
+  "https://viasocket.com/mcp/liveagent",
+  "https://videosdk.live/developer-hub/ai_agent/live-agent-api",
+  "https://www.capterra.com/p/102188/LiveAgent/",
+  "https://www.flowhunt.io/mcp-servers/liveagent/",
+  "https://www.klavis.ai/mcp-server-connections/github--liveagent",
+  "https://www.klavis.ai/mcp-server-connections/liveagent",
+  "https://www.liveagent.com/",
+  "https://www.liveagent.com/blog/liveagent-may-2026-product-update/",
+  "https://www.liveagent.com/customer-support-glossary/free-trial/",
+  "https://www.liveagent.com/features/agent-availability/",
+  "https://www.liveagent.com/features/api/",
+  "https://www.liveagent.com/free-plan/",
+  "https://www.liveagent.com/pricing/",
+  "https://www.liveagent.com/terms-and-conditions/",
+  "https://www.liveagent.com/tour/",
+  "https://www.liveagent.com/trial/",
+  "https://www.mcplane.com/mcp_servers/liveagentserver",
+  "https://www.saasworthy.com/product/liveagent/pricing",
+  "https://zapier.com/mcp/liveagent"
+ ],
+ "backend": "claude_cli"
+}
