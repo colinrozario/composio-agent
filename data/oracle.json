@@ -14,7 +14,6 @@
   "salesforce": {
    "pass1": {
     "agent": [
-     "jwt",
      "oauth2"
     ],
     "composio": [

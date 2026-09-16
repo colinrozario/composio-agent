@@ -1,43 +1,37 @@
 {
- "checked_urls": 8,
+ "checked_urls": 4,
  "needed_browser": 0,
  "by_app": {
   "salesforce": {
    "one_liner": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    },
    "auth_methods": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
     "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "flags": []
    },
    "access_path": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "flags": []
    },
    "api_type": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    },
    "api_breadth": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    },
    "official_mcp": {
     "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
@@ -46,46 +40,40 @@
     "flags": []
    },
    "base_url_model": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "flags": []
    },
    "toolkit_bucket": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    },
    "docs_quality": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    },
    "test_account": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "flags": []
    },
    "main_blocker": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/quickstart.htm",
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "status": 200,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
     "flags": []
    },
    "docs_url": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "status": 200,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "flags": []
    }
   },
   "sherlock": {
@@ -164,129 +152,78 @@
   },
   "paygent_connect": {
    "one_liner": {
-    "url": "https://docs.paygent.to/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "auth_methods": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "access_path": {
-    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "api_type": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "api_breadth": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "official_mcp": {
-    "url": "https://docs.paygent.to/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "base_url_model": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "toolkit_bucket": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "docs_quality": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "test_account": {
-    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "main_blocker": {
-    "url": "https://docs.paygent.to/getting-started/quickstart/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/getting-started/quickstart/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    },
    "docs_url": {
-    "url": "https://docs.paygent.to/reference/api-reference/",
+    "url": "https://api.paygent.tech/docs",
     "status": 200,
-    "final_url": "https://docs.paygent.to/reference/api-reference/",
+    "final_url": "https://api.paygent.tech/docs",
     "flags": []
    }
   }
  },
- "flagged": {
-  "salesforce": {
-   "one_liner": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   },
-   "api_type": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   },
-   "api_breadth": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   },
-   "toolkit_bucket": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   },
-   "docs_quality": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   },
-   "docs_url": {
-    "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/sforce_rest_api.htm",
-    "status": 404,
-    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/sforce-rest-api.html",
-    "flags": [
-     "http_404"
-    ]
-   }
-  }
- }
+ "flagged": {}
 }
