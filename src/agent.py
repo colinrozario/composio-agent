@@ -2,8 +2,9 @@
 
 Brain  Gemini API (free tier). Decides what to search, which pages to read, and fills the schema.
 Hands  Composio Python SDK. Every web action is a Composio tool call:
-         COMPOSIO_SEARCH_WEB                web search (Exa), returns an answer plus cited URLs
-         COMPOSIO_SEARCH_FETCH_URL_CONTENT  reads docs pages as clean markdown
+         COMPOSIO_SEARCH_DUCK_DUCK_GO       web search: ranked links + snippets (standard tool call)
+         COMPOSIO_SEARCH_FETCH_URL_CONTENT  reads docs pages as clean markdown (premium, Exa-backed)
+         COMPOSIO_SEARCH_WEB                Exa web search, premium: only a fallback if DuckDuckGo fails
        Composio's own toolkit catalog is read with the same SDK in pass0_composio.py.
 
 The loop is manual rather than Gemini's automatic function calling so that every tool call is logged
@@ -13,11 +14,35 @@ from __future__ import annotations
 import asyncio, json, os, time
 
 COMPOSIO_USER = os.getenv("COMPOSIO_USER_ID", "research-agent")
-SEARCH, FETCH = "COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"
+SEARCH, SEARCH_PREMIUM, FETCH = "COMPOSIO_SEARCH_DUCK_DUCK_GO", "COMPOSIO_SEARCH_WEB", "COMPOSIO_SEARCH_FETCH_URL_CONTENT"
 MAX_TURNS = int(os.getenv("AGENT_MAX_TURNS", "6"))
 PAGE_CHARS = int(os.getenv("AGENT_PAGE_CHARS", "6000"))
 
 class RateLimited(Exception): pass
+
+# Composio's free (Hobby) plan is hard-capped and includes ~$2/month of premium tool usage (Exa-backed search and
+# page reads). We keep our own conservative ledger and stop using premium tools before that allowance runs out.
+from pathlib import Path
+from datetime import date
+PREMIUM_PRICE = {SEARCH_PREMIUM: 0.008, FETCH: 0.0011}  # USD per search / per page, incl. Composio's 5% fee (rounded up)
+PREMIUM_BUDGET = float(os.getenv("COMPOSIO_PREMIUM_BUDGET_USD", "1.60"))
+LEDGER = Path(__file__).resolve().parents[1]/"data"/"composio_usage.json"
+
+def _ledger() -> dict:
+    month = date.today().strftime("%Y-%m")
+    try: d = json.loads(LEDGER.read_text(encoding="utf-8"))
+    except Exception: d = {}
+    return d if d.get("month") == month else {"month": month, "calls": {}, "premium_usd": 0.0}
+
+def premium_left() -> float:
+    return PREMIUM_BUDGET - _ledger()["premium_usd"]
+
+def _record(slug: str, units: int = 1):
+    d = _ledger()
+    d["calls"][slug] = d["calls"].get(slug, 0) + units
+    d["premium_usd"] = round(d["premium_usd"] + PREMIUM_PRICE.get(slug, 0) * units, 4)
+    LEDGER.parent.mkdir(parents=True, exist_ok=True)
+    LEDGER.write_text(json.dumps(d, indent=1), encoding="utf-8")
 class QuotaExhausted(Exception):
     """Daily free-tier quota is gone. Batches stop cleanly and resume tomorrow."""
 
@@ -58,20 +83,30 @@ async def composio_execute(slug: str, arguments: dict, retries: int = 3) -> dict
     return r
 
 async def web_search(query: str) -> tuple[dict, list[str]]:
-    """Returns (compact result for the brain, cited URLs for the citation check)."""
+    """Returns (compact result for the brain, result URLs for the citation check)."""
     r = await composio_execute(SEARCH, {"query": query})
+    _record(SEARCH)
+    if r.get("successful"):
+        hits = [{"url": x.get("link"), "title": x.get("title"), "snippet": (x.get("snippet") or "")[:300]}
+                for x in (r.get("data") or {}).get("results", []) or [] if x.get("link")][:8]
+        if hits: return {"results": hits}, [h["url"] for h in hits]
+    if premium_left() < PREMIUM_PRICE[SEARCH_PREMIUM]:
+        return {"error": "search returned nothing"}, []
+    r = await composio_execute(SEARCH_PREMIUM, {"query": query})  # fallback: Exa
+    _record(SEARCH_PREMIUM)
     if not r.get("successful"): return {"error": str(r.get("error"))[:300]}, []
     d = r.get("data") or {}
     cites = [{"url": c.get("url"), "title": c.get("title")} for c in d.get("citations", []) if c.get("url")]
-    for x in d.get("results", []) or []:  # some responses carry raw results instead of / as well as citations
-        if isinstance(x, dict) and x.get("url"): cites.append({"url": x["url"], "title": x.get("title")})
-    return {"answer": str(d.get("answer", ""))[:2500], "results": cites[:10]}, [c["url"] for c in cites]
+    return {"answer": str(d.get("answer", ""))[:2000], "results": cites[:8]}, [c["url"] for c in cites]
 
 async def fetch_pages(urls: list[str]) -> tuple[dict, list[str]]:
     """Returns (compact page texts for the brain, URLs that actually returned text)."""
     urls = [u for u in urls if isinstance(u, str) and u.startswith("http")][:3]
     if not urls: return {"error": "no valid http(s) urls"}, []
+    if premium_left() < PREMIUM_PRICE[FETCH] * len(urls):
+        return {"error": "page-reading budget for this month is used up; answer from search results"}, []
     r = await composio_execute(FETCH, {"urls": urls, "text": True, "max_characters": PAGE_CHARS})
+    _record(FETCH, len(urls))
     if not r.get("successful"): return {"error": str(r.get("error"))[:300]}, []
     pages, ok = [], []
     for x in (r.get("data") or {}).get("results", []) or []:
@@ -99,8 +134,8 @@ def _declarations():
     return [types.Tool(function_declarations=[
         types.FunctionDeclaration(
             name="web_search",
-            description="Search the web through Composio (COMPOSIO_SEARCH_WEB). Returns a short synthesized answer "
-                        "plus result URLs. Treat the answer as a lead; confirm important facts by reading the page.",
+            description="Search the web through Composio (DuckDuckGo). Returns ranked result links with snippets. "
+                        "Snippets are leads; confirm important facts by reading the page.",
             parameters_json_schema={"type": "object", "required": ["query"],
                                     "properties": {"query": {"type": "string", "description": "Search query"}}}),
         types.FunctionDeclaration(
