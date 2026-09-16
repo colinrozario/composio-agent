@@ -1,0 +1,84 @@
+{
+ "prompt": "You are a developer-relations researcher at a company that turns SaaS apps into tools AI agents can call.\nResearch ONE app and fill a strict JSON schema. Use web_search to find pages and read_pages to read them.\nPrefer the vendor's own developer docs, API reference, pricing page, and app-review/partner pages over blogs or aggregators.\nRead the key vendor pages (API auth docs, pricing or developer access page) before deciding access_path.\n\nApp: Magento (Adobe Commerce)\nCategory: Ecommerce\nHint (may be misleading, verify it): developer.adobe.com/commerce\n\nRules\n1. Every field is an object: {\"value\": ..., \"confidence\": \"high|med|low\", \"source_url\": \"...\"}.\n2. source_url must be a URL returned by web_search or read with read_pages for THIS field. Never construct or guess a URL.\n   If you did not find one, set value \"unknown\", confidence \"low\", source_url null.\n3. \"unknown\" is a correct, rewarded answer. An invented answer is the worst possible answer.\n4. access_path = the most restrictive step needed to use the API in production, not just to read docs.\n   Self-serve OAuth client + mandatory app review for production scopes => \"app_review_required\".\n   Free docs but the useful endpoints need a paid plan => \"paid_plan_required\".\n5. If the thing is a command-line tool or library with no hosted API, use api_type \"cli_only\",\n   auth_methods [\"none\"], access_path \"not_applicable_local\", toolkit_bucket \"local_or_sandbox_toolkit\".\n6. If the hint names a different product than the app (e.g. a parent platform), research the app itself and say so in main_blocker.\n7. \"OAuth requested\" or \"coming soon\" is NOT shipped. Only report auth that is documented as available.\n8. official_mcp = \"official\" only if the vendor itself publishes or documents the MCP server.\n9. confidence: high = stated explicitly on a vendor docs page; med = inferred from vendor pages; low = third-party or memory.\n\nAllowed enums\nauth_methods (array): oauth2, api_key, basic, bearer_token, jwt, hmac_signature, session_login, none, unknown\naccess_path: self_serve_free, self_serve_trial, paid_plan_required, app_review_required, partner_or_sales_gated, no_public_api, not_applicable_local, unknown\napi_type: rest, graphql, rest_and_graphql, rpc_or_sdk_only, cli_only, none, unknown\napi_breadth: broad (CRUD across many objects), narrow (a few resources), single_endpoint, none, unknown\nofficial_mcp: official, community_only, none_found, unknown\nbase_url_model: fixed, per_tenant_subdomain, self_hosted_or_customer_host, regional, not_applicable, unknown\ntoolkit_bucket: remote_api_toolkit, local_or_sandbox_toolkit, wrap_existing_mcp, not_buildable_yet, unknown\ndocs_quality: full_public_reference, partial_or_thin, none_public, unknown\ntest_account: free_tier_or_sandbox, trial_only, none, unknown\n\nReturn ONLY this JSON, no prose, no markdown fences:\n{\n  \"one_liner\": {...},        // what it does, max 15 words\n  \"auth_methods\": {...},\n  \"access_path\": {...},\n  \"api_type\": {...},\n  \"api_breadth\": {...},\n  \"official_mcp\": {...},\n  \"base_url_model\": {...},\n  \"toolkit_bucket\": {...},\n  \"docs_quality\": {...},\n  \"test_account\": {...},\n  \"main_blocker\": {...},     // one sentence; \"none\" if buildable today\n  \"docs_url\": {...}          // primary API reference URL\n}\n",
+ "response": {
+  "search_urls": [
+   "https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html",
+   "https://business.adobe.com/products/commerce/ai-commerce.html",
+   "https://commercedeveloper.adobe.com/api-reference/",
+   "https://developer.adobe.com/commerce/docs/",
+   "https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication",
+   "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+   "https://developer.adobe.com/commerce/webapi/rest/reference/",
+   "https://developer.adobe.com/express/add-ons/docs/guides/getting-started/local-development/mcp-server",
+   "https://experienceleague.adobe.com/en/docs/commerce",
+   "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/magento-web-api",
+   "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/oauth",
+   "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+   "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis",
+   "https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview",
+   "https://github.com/AdobeDocs/commerce-webapi",
+   "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/index.md",
+   "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/server-to-server.md",
+   "https://github.com/AdobeDocs/commerce-webapi/tree/main",
+   "https://learn.microsoft.com/en-us/dynamics365/commerce/commerce-mcp",
+   "https://modelcontextprotocol.info/",
+   "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+   "https://www.magento-opensource.com/resources/resources-documentation",
+   "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/29/dynamics-365-commerce-introduces-agentic-capabilities-with-model-context-protocol-mcp/"
+  ],
+  "fetched_urls": [
+   "https://developer.adobe.com/commerce/docs/",
+   "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token"
+  ],
+  "tool_calls": [
+   {
+    "turn": 0,
+    "tool": "web_search",
+    "args": {
+     "query": "Magento Adobe Commerce developer documentation API reference auth"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "Adobe Commerce REST API authentication token developer.adobe.com"
+    },
+    "ok": true
+   },
+   {
+    "turn": 1,
+    "tool": "web_search",
+    "args": {
+     "query": "Adobe Commerce Model Context Protocol MCP official"
+    },
+    "ok": true
+   },
+   {
+    "turn": 2,
+    "tool": "_pushback",
+    "args": {},
+    "ok": true
+   },
+   {
+    "turn": 3,
+    "tool": "read_pages",
+    "args": {
+     "urls": [
+      "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+      "https://developer.adobe.com/commerce/docs/"
+     ]
+    },
+    "ok": true
+   }
+  ],
+  "tool_counts": {
+   "web_search": 3,
+   "read_pages": 1
+  },
+  "turns": 5,
+  "backend": "gemini",
+  "model": "gemini-3.5-flash-lite"
+ }
+}

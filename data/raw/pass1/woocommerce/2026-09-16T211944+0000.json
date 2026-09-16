@@ -1,0 +1,99 @@
+{
+ "id": 42,
+ "slug": "woocommerce",
+ "name": "WooCommerce",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:19:44+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "An open-source, customizable e-commerce platform built on WordPress.",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "auth_methods": {
+   "value": [
+    "api_key",
+    "oauth2",
+    "basic"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "api_type": {
+   "value": "rest",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/features/mcp/"
+  },
+  "base_url_model": {
+   "value": "self_hosted_or_customer_host",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/"
+  },
+  "docs_url": {
+   "value": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+   "confidence": "high",
+   "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/"
+  }
+ },
+ "schema_problems": [],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://deepwiki.com/woocommerce/woocommerce-rest-api-docs",
+  "https://developer.woocommerce.com/docs/apis/rest-api/",
+  "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+  "https://developer.woocommerce.com/docs/features/mcp/",
+  "https://emaralive.github.io/woocommerce-rest-api-docs/",
+  "https://github.com/techspawn/woocommerce-mcp-server",
+  "https://github.com/wppoland/woocommerce-mcp",
+  "https://mcp.so/servers/mcp-woocommerce",
+  "https://tryglen.com/mcp/servers/woocommerce",
+  "https://woocommerce.com/document/b2b-for-woocommerce/how-to-connect-b2b-for-woocommerce-to-claude-and-codex-with-mcp/",
+  "https://woocommerce.com/document/w7s-mcp/",
+  "https://woocommerce.com/document/woocommerce-product-search/api/rest/",
+  "https://woocommerce.com/document/woocommerce-rest-api/",
+  "https://woocommerce.github.io/woocommerce-rest-api-docs/v2.html",
+  "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+  "https://www.openmodels.run/mcp/woocommerce"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 2,
+  "read_pages": 1
+ }
+}

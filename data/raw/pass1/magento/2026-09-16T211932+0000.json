@@ -1,0 +1,109 @@
+{
+ "id": 45,
+ "slug": "magento",
+ "name": "Magento (Adobe Commerce)",
+ "pass": "pass1",
+ "model": "gemini-3.5-flash-lite",
+ "researched_at": "2026-09-16T21:19:32+00:00",
+ "fields": {
+  "one_liner": {
+   "value": "Enterprise open-source and cloud ecommerce platform providing robust REST and GraphQL APIs.",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "auth_methods": {
+   "value": [
+    "oauth1",
+    "oauth2",
+    "bearer_token",
+    "token"
+   ],
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token"
+  },
+  "access_path": {
+   "value": "self_serve_free",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/docs/"
+  },
+  "api_type": {
+   "value": "rest_and_graphql",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "api_breadth": {
+   "value": "broad",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "official_mcp": {
+   "value": "official",
+   "confidence": "high",
+   "source_url": "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview"
+  },
+  "base_url_model": {
+   "value": "self_hosted_or_customer_host",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "toolkit_bucket": {
+   "value": "remote_api_toolkit",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "docs_quality": {
+   "value": "full_public_reference",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  },
+  "test_account": {
+   "value": "free_tier_or_sandbox",
+   "confidence": "med",
+   "source_url": "https://developer.adobe.com/commerce/docs/"
+  },
+  "main_blocker": {
+   "value": "none",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/docs/"
+  },
+  "docs_url": {
+   "value": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+   "confidence": "high",
+   "source_url": "https://developer.adobe.com/commerce/webapi/rest/reference/"
+  }
+ },
+ "schema_problems": [
+  "auth_methods: bad enum ['oauth1', 'oauth2', 'bearer_token', 'token']"
+ ],
+ "uncited_sources": [],
+ "search_urls": [
+  "https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html",
+  "https://business.adobe.com/products/commerce/ai-commerce.html",
+  "https://commercedeveloper.adobe.com/api-reference/",
+  "https://developer.adobe.com/commerce/docs/",
+  "https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication",
+  "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+  "https://developer.adobe.com/commerce/webapi/rest/reference/",
+  "https://developer.adobe.com/express/add-ons/docs/guides/getting-started/local-development/mcp-server",
+  "https://experienceleague.adobe.com/en/docs/commerce",
+  "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/magento-web-api",
+  "https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/oauth",
+  "https://experienceleague.adobe.com/en/docs/commerce-learn/ai-and-agentic-commerce/commerce-mcp/commerce-mcp-overview",
+  "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis",
+  "https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview",
+  "https://github.com/AdobeDocs/commerce-webapi",
+  "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/index.md",
+  "https://github.com/AdobeDocs/commerce-webapi/blob/main/src/pages/rest/authentication/server-to-server.md",
+  "https://github.com/AdobeDocs/commerce-webapi/tree/main",
+  "https://learn.microsoft.com/en-us/dynamics365/commerce/commerce-mcp",
+  "https://modelcontextprotocol.info/",
+  "https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro",
+  "https://www.magento-opensource.com/resources/resources-documentation",
+  "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/06/29/dynamics-365-commerce-introduces-agentic-capabilities-with-model-context-protocol-mcp/"
+ ],
+ "backend": "gemini",
+ "tool_counts": {
+  "web_search": 3,
+  "read_pages": 1
+ }
+}
